@@ -57,9 +57,7 @@
             "532bc566.df7b1c"
         ],
         "x": 14,
-        "y": 199,
-        "w": 812,
-        "h": 502
+        "y": 199
     },
     {
         "id": "7d3411b0.20fc7",
@@ -79,9 +77,7 @@
             "2a103049.f6a29"
         ],
         "x": 14,
-        "y": 39,
-        "w": 892,
-        "h": 142
+        "y": 39
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -103,7 +99,7 @@
         ],
         "x": 24,
         "y": 639,
-        "w": 462,
+        "w": 542,
         "h": 382
     },
     {
@@ -194,9 +190,7 @@
             "1dea714a.68511f"
         ],
         "x": 14,
-        "y": 19,
-        "w": 1182,
-        "h": 482
+        "y": 19
     },
     {
         "id": "18ca9346.bdbedd",
@@ -236,9 +230,7 @@
             "6e793f78.19688"
         ],
         "x": 24,
-        "y": 536.5,
-        "w": 1502,
-        "h": 524.5
+        "y": 536.5
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -333,7 +325,8 @@
         "y": 61,
         "wires": [
             [
-                "6a1827c1.d350e8"
+                "6a1827c1.d350e8",
+                "e414ce6.6f20c3"
             ]
         ]
     },
@@ -553,8 +546,7 @@
         "y": 61,
         "wires": [
             [
-                "15f6ffc8.eb6d3",
-                "e414ce6.6f20c3"
+                "15f6ffc8.eb6d3"
             ]
         ]
     },
@@ -611,11 +603,11 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "",
-        "topic": "ValvPos",
+        "topic": "ValveControl/SetPos",
         "qos": "0",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 400,
+        "x": 440,
         "y": 740,
         "wires": []
     },
@@ -625,14 +617,19 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "ValvPos",
-        "payload": "3000",
+        "topic": "",
+        "payload": "4",
         "payloadType": "num",
-        "x": 140,
+        "x": 120,
         "y": 920,
         "wires": [
             [
@@ -646,14 +643,19 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "ValvPos",
-        "payload": "4095",
+        "topic": "",
+        "payload": "5",
         "payloadType": "num",
-        "x": 140,
+        "x": 120,
         "y": 980,
         "wires": [
             [
@@ -667,14 +669,19 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "ValvPos",
-        "payload": "2048",
+        "topic": "",
+        "payload": "3",
         "payloadType": "num",
-        "x": 140,
+        "x": 120,
         "y": 860,
         "wires": [
             [
@@ -688,6 +695,15 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
@@ -709,14 +725,19 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "ValvPos",
-        "payload": "1000",
+        "topic": "",
+        "payload": "2",
         "payloadType": "num",
-        "x": 140,
+        "x": 120,
         "y": 800,
         "wires": [
             [
@@ -730,14 +751,19 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "ValvPos",
-        "payload": "500",
+        "topic": "",
+        "payload": "1",
         "payloadType": "num",
-        "x": 140,
+        "x": 120,
         "y": 740,
         "wires": [
             [
@@ -1146,7 +1172,7 @@
         "z": "511989b1.670cc8",
         "g": "5c041b39.d836b4",
         "name": "progress printing",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1201,7 +1227,7 @@
         "z": "511989b1.670cc8",
         "g": "5c041b39.d836b4",
         "name": "mqtt_test_pub",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1275,7 +1301,10 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
         "x": 1040,
         "y": 81,
         "wires": []
@@ -1304,7 +1333,7 @@
         "z": "511989b1.670cc8",
         "g": "5c041b39.d836b4",
         "name": "PrintControlOutput",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2867,5 +2896,39 @@
                 "550eb938.78f938"
             ]
         ]
+    },
+    {
+        "id": "c772a959.162c98",
+        "type": "mqtt in",
+        "z": "6f61cfd3.3d721",
+        "name": "",
+        "topic": "ValveControl/+",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 670,
+        "y": 580,
+        "wires": [
+            [
+                "3bb0fb40.e717e4"
+            ]
+        ]
+    },
+    {
+        "id": "3bb0fb40.e717e4",
+        "type": "debug",
+        "z": "6f61cfd3.3d721",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 600,
+        "wires": []
     }
 ]
