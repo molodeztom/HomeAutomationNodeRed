@@ -57,7 +57,9 @@
             "532bc566.df7b1c"
         ],
         "x": 14,
-        "y": 199
+        "y": 199,
+        "w": 812,
+        "h": 502
     },
     {
         "id": "7d3411b0.20fc7",
@@ -77,7 +79,9 @@
             "2a103049.f6a29"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 892,
+        "h": 142
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -190,7 +194,9 @@
             "1dea714a.68511f"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 1182,
+        "h": 482
     },
     {
         "id": "18ca9346.bdbedd",
@@ -230,7 +236,9 @@
             "6e793f78.19688"
         ],
         "x": 24,
-        "y": 536.5
+        "y": 536.5,
+        "w": 1502,
+        "h": 524.5
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -522,6 +530,8 @@
         "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor1/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"Sensor1/fTempB\":\n        msg.payload={\n            fTempB: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"Sensor1/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor1/fVolt\":\n        msg.payload={\n            fVolt: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor1/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
         "x": 350,
         "y": 121,
         "wires": [
@@ -2910,7 +2920,8 @@
         "y": 580,
         "wires": [
             [
-                "3bb0fb40.e717e4"
+                "3bb0fb40.e717e4",
+                "d5959449.a47808"
             ]
         ]
     },
@@ -2929,6 +2940,75 @@
         "statusType": "auto",
         "x": 1060,
         "y": 600,
+        "wires": []
+    },
+    {
+        "id": "cb6213d.83258f",
+        "type": "mqtt out",
+        "z": "6f61cfd3.3d721",
+        "name": "",
+        "topic": "ValveControl/SetInt",
+        "qos": "0",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 460,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "97b9ac13.ca45c",
+        "type": "inject",
+        "z": "6f61cfd3.3d721",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "60",
+        "payloadType": "num",
+        "x": 140,
+        "y": 1160,
+        "wires": [
+            [
+                "cb6213d.83258f"
+            ]
+        ]
+    },
+    {
+        "id": "d5959449.a47808",
+        "type": "function",
+        "z": "6f61cfd3.3d721",
+        "name": "",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"ValveControl/TempIn\":\n        msg.payload={\n            TempIn: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"ValveControl/TempOut\":\n        msg.payload={\n            TempOut: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"ValveControl/ActPos\":\n        msg.payload={\n            ValveVolt: Number(msg.payload),\n        }\n        return msg;\n    case \"ValveControl/Mode\":\n        msg.payload={\n            ValveMode: Number(msg.payload),\n        }\n        return msg;\n    case \"ValveControl/Light\":\n        msg.payload={\n            WVLight: Number(msg.payload),\n        }\n        return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 930,
+        "y": 780,
+        "wires": [
+            [
+                "ecec7acf.215678"
+            ]
+        ]
+    },
+    {
+        "id": "ecec7acf.215678",
+        "type": "influxdb out",
+        "z": "6f61cfd3.3d721",
+        "influxdb": "e3f4c3e8.b52ee",
+        "name": "ValveControl",
+        "measurement": "ValveControl",
+        "precision": "",
+        "retentionPolicy": "",
+        "x": 1200,
+        "y": 800,
         "wires": []
     }
 ]
