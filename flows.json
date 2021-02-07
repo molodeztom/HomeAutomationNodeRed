@@ -617,6 +617,17 @@
         "collapse": false
     },
     {
+        "id": "a8a74e77.bc32f",
+        "type": "ui_group",
+        "z": "",
+        "name": "Wohnzimmer Türe",
+        "tab": "b735724.619b39",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
         "id": "49e2646f.c4941c",
         "type": "mqtt out",
         "z": "6f61cfd3.3d721",
@@ -6791,8 +6802,8 @@
         "label": "Status",
         "format": "{{msg.blindCtrl.reason.description}}",
         "layout": "row-center",
-        "x": 770,
-        "y": 1260,
+        "x": 750,
+        "y": 1240,
         "wires": []
     },
     {
@@ -7341,7 +7352,7 @@
         "type": "ui_text",
         "z": "7e5a345d.05161c",
         "group": "8e157408.1ce3a8",
-        "order": 2,
+        "order": 3,
         "width": 0,
         "height": 0,
         "name": "",
@@ -7370,18 +7381,13 @@
         "blindPosReverse": false,
         "blindPosDefault": "open (max)",
         "blindPosDefaultType": "levelFixed",
-        "overwriteExpire": "1800000",
+        "overwriteExpire": "1200000",
         "rules": [
             {
                 "index": 0,
                 "name": "HolidayWeekend",
-                "isValid": true,
-                "valid": {
-                    "validTimeReg": true,
-                    "validLevel": true,
-                    "validOperand1A": true,
-                    "validOperand1B": true
-                },
+                "isValid": false,
+                "valid": {},
                 "timeValue": "8:15",
                 "timeType": "entered",
                 "timeOp": 0,
@@ -7426,7 +7432,9 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>8:15</var> - 00:00</div><div>↕  Absolut <var>geschlossen (min)</var></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>8:15</var> - 00:00</div><div>↕  Absolut <var>geschlossen (min)</var></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
             },
             {
                 "index": 1,
@@ -7503,7 +7511,7 @@
                 "offsetMinValue": "",
                 "offsetMinType": "none",
                 "multiplierMin": 60000,
-                "timeMaxValue": "22:00",
+                "timeMaxValue": "22:30",
                 "timeMaxType": "entered",
                 "offsetMaxValue": "",
                 "offsetMaxType": "none",
@@ -7529,20 +7537,15 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div>↕  Absolut <var>33%</var></div>",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:30</var></div></div><div>↕  Absolut <var>33%</var></div>",
                 "timeMinOp": 0,
                 "timeMaxOp": 0
             },
             {
                 "index": 3,
                 "name": "WochenendeGeschlossen",
-                "isValid": true,
-                "valid": {
-                    "validTimeReg": true,
-                    "validLevel": true,
-                    "validOperand1A": true,
-                    "validOperand1B": true
-                },
+                "isValid": false,
+                "valid": {},
                 "timeValue": "22:30",
                 "timeType": "entered",
                 "timeOp": 1,
@@ -7587,17 +7590,15 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:30</var></div><div>↕  Absolut <var>geschlossen (min)</var></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:30</var></div><div>↕  Absolut <var>geschlossen (min)</var></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
             },
             {
                 "index": 4,
                 "name": "WochentagGeschlossen",
-                "isValid": true,
-                "valid": {
-                    "validTimeReg": true,
-                    "validLevel": true,
-                    "validOperand1A": true
-                },
+                "isValid": false,
+                "valid": {},
                 "timeValue": "22:00",
                 "timeType": "entered",
                 "timeOp": 1,
@@ -7642,7 +7643,9 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div>↕  Absolut <var>geschlossen (min)</var></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div>↕  Absolut <var>geschlossen (min)</var></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
             }
         ],
         "sunControlMode": "0",
@@ -7726,7 +7729,7 @@
         "id": "31ef75a9.d9e27a",
         "type": "ui_text",
         "z": "7e5a345d.05161c",
-        "group": "8e157408.1ce3a8",
+        "group": "a8a74e77.bc32f",
         "order": 2,
         "width": "6",
         "height": "2",
@@ -7894,6 +7897,48 @@
         "payloadType": "str",
         "x": 110,
         "y": 2240,
+        "wires": [
+            [
+                "1a538972.87cf07"
+            ]
+        ]
+    },
+    {
+        "id": "a74fc78c.af3c88",
+        "type": "mqtt in",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "topic": "stat/RolloTuere/SHUTTER1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 160,
+        "y": 2320,
+        "wires": [
+            [
+                "fb2be545.fa3808"
+            ]
+        ]
+    },
+    {
+        "id": "fb2be545.fa3808",
+        "type": "ui_slider",
+        "z": "7e5a345d.05161c",
+        "name": "RolloTürePosition",
+        "label": "Position",
+        "tooltip": "",
+        "group": "a8a74e77.bc32f",
+        "order": 1,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "outs": "end",
+        "topic": "cmnd/RolloTuere/ShutterPosition",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 490,
+        "y": 2320,
         "wires": [
             [
                 "1a538972.87cf07"
