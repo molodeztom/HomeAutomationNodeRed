@@ -42,6 +42,13 @@
         "info": ""
     },
     {
+        "id": "a550fc48.7ba33",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "b83af794.4bec68",
         "type": "group",
         "z": "9963931.9232c7",
@@ -120,7 +127,9 @@
             "130dd598.a91e6a"
         ],
         "x": 14,
-        "y": 619
+        "y": 619,
+        "w": 472,
+        "h": 502
     },
     {
         "id": "584f76f1.996908",
@@ -155,7 +164,9 @@
             "7a71ee5f.b5c6f"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 1012,
+        "h": 423
     },
     {
         "id": "2f27dc68.9ff574",
@@ -174,7 +185,9 @@
             "64c76441.d5f36c"
         ],
         "x": 14,
-        "y": 459
+        "y": 459,
+        "w": 432,
+        "h": 142
     },
     {
         "id": "5c041b39.d836b4",
@@ -265,7 +278,9 @@
             "ecec7acf.215678"
         ],
         "x": 454,
-        "y": 459
+        "y": 459,
+        "w": 572,
+        "h": 122
     },
     {
         "id": "1df9ccb1.d6a403",
@@ -290,7 +305,9 @@
             "1048bdd7.1dd462"
         ],
         "x": 14,
-        "y": 579
+        "y": 579,
+        "w": 672,
+        "h": 402
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -447,6 +464,157 @@
         "simulation_mode": false,
         "scope": "Dishwasher",
         "callback_url": "http://192.168.178.53:1880/homeconnect/auth/callback"
+    },
+    {
+        "id": "b735724.619b39",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Rollosteuerung",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5fe3e6db.1c65c8",
+        "type": "ui_link",
+        "name": "Link 2",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 2
+    },
+    {
+        "id": "8e157408.1ce3a8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Wetter",
+        "tab": "b735724.619b39",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "99a4dc86.46d248",
+        "type": "ui_group",
+        "z": "",
+        "name": "Masterswitches",
+        "tab": "258c6649.0213da",
+        "order": 6,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b12941f.1cd05c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Condition",
+        "tab": "eb94216d.968598",
+        "order": 5,
+        "disp": false,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "8da50f69.44fe38",
+        "type": "ui_group",
+        "z": "",
+        "name": "Wind",
+        "tab": "eb94216d.968598",
+        "order": 4,
+        "disp": false,
+        "width": "4",
+        "collapse": false
+    },
+    {
+        "id": "5a4d76d2.5ae128",
+        "type": "ui_group",
+        "z": "",
+        "name": "Luftfeuchtigkeit",
+        "tab": "258c6649.0213da",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "14584712.7a2929",
+        "type": "ui_group",
+        "z": "",
+        "name": "Condition",
+        "tab": "eb94216d.968598",
+        "order": 2,
+        "disp": false,
+        "width": "2",
+        "collapse": false
+    },
+    {
+        "id": "5e0d6747.b726b",
+        "type": "ui_group",
+        "z": "",
+        "name": "Forecast",
+        "tab": "eb94216d.968598",
+        "order": 6,
+        "disp": false,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "258c6649.0213da",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "home",
+        "order": 1
+    },
+    {
+        "id": "eb94216d.968598",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Wetterstation",
+        "icon": "fa-thermometer-half",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f1d00d27.bf03a",
+        "type": "ui_tab",
+        "name": "Tab 5",
+        "icon": "dashboard",
+        "order": 5
+    },
+    {
+        "id": "ad5a1117.c1459",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "8e157408.1ce3a8",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "17ad1f32.34c9c1",
+        "type": "ui_group",
+        "z": "",
+        "name": "Wohnzimmer Fenster",
+        "tab": "b735724.619b39",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "391335a9.6fc52a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Esstisch",
+        "tab": "b735724.619b39",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
     },
     {
         "id": "49e2646f.c4941c",
@@ -1451,8 +1619,8 @@
         "y": 401,
         "wires": [
             [
-                "95b11563.82c788",
-                "d0849bc.1c43168"
+                "d0849bc.1c43168",
+                "95b11563.82c788"
             ]
         ]
     },
@@ -4031,8 +4199,8 @@
         "settingkey": "",
         "statuskey": "BSH.Common.Status.RemoteControlStartAllowed",
         "imagekey": "",
-        "x": 370,
-        "y": 100,
+        "x": 340,
+        "y": 80,
         "wires": [
             [
                 "4dd95472.f323ec"
@@ -4143,8 +4311,8 @@
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 940,
-        "y": 340,
+        "x": 1120,
+        "y": 680,
         "wires": []
     },
     {
@@ -4169,7 +4337,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "RolloEsstisch Status",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4418,7 +4586,7 @@
         "id": "6ac2e536.abb7ec",
         "type": "blind-control",
         "z": "7e5a345d.05161c",
-        "name": "",
+        "name": "RolloEsstisch",
         "topic": "",
         "positionConfig": "9a5a8534.25d4d8",
         "outputs": "1",
@@ -4426,7 +4594,7 @@
         "autoTriggerTime": "600000",
         "startDelayTime": 10000,
         "storeName": "",
-        "blindIncrement": "10",
+        "blindIncrement": "1",
         "blindOpenPos": "100",
         "blindClosedPos": "0",
         "blindPosReverse": false,
@@ -4439,7 +4607,7 @@
                 "name": "HolidayWeekend",
                 "isValid": false,
                 "valid": {},
-                "timeValue": "8:00",
+                "timeValue": "8:15",
                 "timeType": "entered",
                 "timeOp": 0,
                 "timeOpText": "↥ bis",
@@ -4468,6 +4636,7 @@
                 "levelOpText": "↕  Absolut",
                 "topic": "",
                 "importance": 0,
+                "resetOverwrite": false,
                 "validOperandAValue": "day.today.isWeekendOrHoliday",
                 "validOperandAType": "global",
                 "validOperator": "true",
@@ -4482,7 +4651,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>8:00</var> - 00:00</div><div>↕  Absolut <var>geschlossen (min)</var></div>",
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>8:15</var> - 00:00</div><div>↕  Absolut <var>geschlossen (min)</var></div>",
                 "timeMinOp": 0,
                 "timeMaxOp": 0
             },
@@ -4541,15 +4710,8 @@
             {
                 "index": 2,
                 "name": "Wetter Regen",
-                "isValid": true,
-                "valid": {
-                    "validTimeReg": true,
-                    "validLevel": true,
-                    "validOperand1A": true,
-                    "validOperand1B": true,
-                    "validOperand2A": true,
-                    "validOperand2B": true
-                },
+                "isValid": false,
+                "valid": {},
                 "timeValue": "",
                 "timeType": "none",
                 "timeOp": 0,
@@ -4593,20 +4755,15 @@
                 "valid2OperatorText": "<",
                 "valid2OperandBValue": "600",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 502<br/><strong>und</strong> <var>msg.WeatherID</var> < 600</div><div>↕  Absolut <var>33%</var><div class=\"indent-topic-text\"> <span>Topic: </span> <var>Weather Rain Condition</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 502<br/><strong>und</strong> <var>msg.WeatherID</var> < 600</div><div>↕  Absolut <var>33%</var><div class=\"indent-topic-text\"> <span>Topic: </span> <var>Weather Rain Condition</var></div></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
             },
             {
                 "index": 3,
                 "name": "Wetter Gewitter",
-                "isValid": true,
-                "valid": {
-                    "validTimeReg": true,
-                    "validLevel": true,
-                    "validOperand1A": true,
-                    "validOperand1B": true,
-                    "validOperand2A": true,
-                    "validOperand2B": true
-                },
+                "isValid": false,
+                "valid": {},
                 "timeValue": "",
                 "timeType": "none",
                 "timeOp": 0,
@@ -4650,20 +4807,15 @@
                 "valid2OperatorText": "<",
                 "valid2OperandBValue": "230",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 201<br/><strong>und</strong> <var>msg.WeatherID</var> < 230</div><div>↕  Absolut <var>25%</var><div class=\"indent-topic-text\"> <span>Topic: </span> <var>Weather Thunderstorm Condition</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 201<br/><strong>und</strong> <var>msg.WeatherID</var> < 230</div><div>↕  Absolut <var>25%</var><div class=\"indent-topic-text\"> <span>Topic: </span> <var>Weather Thunderstorm Condition</var></div></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
             },
             {
                 "index": 4,
                 "name": "Wetter Schnee",
-                "isValid": true,
-                "valid": {
-                    "validTimeReg": true,
-                    "validLevel": true,
-                    "validOperand1A": true,
-                    "validOperand1B": true,
-                    "validOperand2A": true,
-                    "validOperand2B": true
-                },
+                "isValid": false,
+                "valid": {},
                 "timeValue": "",
                 "timeType": "none",
                 "timeOp": 0,
@@ -4707,7 +4859,9 @@
                 "valid2OperatorText": "<",
                 "valid2OperandBValue": "700",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 601<br/><strong>und</strong> <var>msg.WeatherID</var> < 700</div><div>↕  Absolut <var>50%</var><div class=\"indent-topic-text\"> <span>Topic: </span> <var>Weather Snow Condition</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 601<br/><strong>und</strong> <var>msg.WeatherID</var> < 700</div><div>↕  Absolut <var>50%</var><div class=\"indent-topic-text\"> <span>Topic: </span> <var>Weather Snow Condition</var></div></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
             },
             {
                 "index": 5,
@@ -4737,7 +4891,7 @@
                 "offsetMaxValue": "",
                 "offsetMaxType": "none",
                 "multiplierMax": 60000,
-                "levelValue": "66%",
+                "levelValue": "75%",
                 "levelType": "levelFixed",
                 "levelOp": 0,
                 "levelOpText": "↕  Absolut",
@@ -4757,7 +4911,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Goldene Abendstunde Begin</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>15:30</var></div></div><div>↕  Absolut <var>66%</var></div>",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Goldene Abendstunde Begin</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>15:30</var></div></div><div>↕  Absolut <var>75%</var></div>",
                 "timeMinOp": 0,
                 "timeMaxOp": 0
             },
@@ -4770,7 +4924,7 @@
                 "timeType": "pdsTime",
                 "timeOp": 1,
                 "timeOpText": "↧ von",
-                "offsetValue": "10",
+                "offsetValue": "30",
                 "offsetType": "num",
                 "multiplier": 60000,
                 "timeDays": "*",
@@ -4809,34 +4963,34 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div>↕  Absolut <var>geschlossen (min)</var></div>",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:30<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div>↕  Absolut <var>geschlossen (min)</var></div>",
                 "timeMinOp": 0,
                 "timeMaxOp": 0
             }
         ],
         "sunControlMode": "2",
-        "sunFloorLength": "2",
-        "sunMinAltitude": "",
-        "sunMinDelta": "10",
-        "blindPosMin": "closed (min)",
+        "sunFloorLength": "800",
+        "sunMinAltitude": "2",
+        "sunMinDelta": "5",
+        "blindPosMin": "25%",
         "blindPosMinType": "levelFixed",
         "blindPosMax": "open (max)",
         "blindPosMaxType": "levelFixed",
-        "smoothTime": "600000",
-        "sunTopic": "",
+        "smoothTime": "",
+        "sunTopic": "SunShading",
         "windowTop": "205",
         "windowBottom": "100",
-        "windowAzimuthStart": "223.5",
-        "windowAzimuthEnd": "288",
-        "oversteerValue": "payload.clouds",
+        "windowAzimuthStart": "208",
+        "windowAzimuthEnd": "245",
+        "oversteerValue": "clouds",
         "oversteerValueType": "msg",
         "oversteerCompare": "gte",
-        "oversteerThreshold": "40",
+        "oversteerThreshold": "50",
         "oversteerThresholdType": "num",
         "oversteerBlindPos": "open (max)",
         "oversteerBlindPosType": "levelFixed",
-        "oversteer2Value": "payload.id",
-        "oversteer2ValueType": "msg",
+        "oversteer2Value": "",
+        "oversteer2ValueType": "none",
         "oversteer2Compare": "equal",
         "oversteer2Threshold": "502",
         "oversteer2ThresholdType": "num",
@@ -4849,13 +5003,15 @@
         "oversteer3ThresholdType": "num",
         "oversteer3BlindPos": "open (max)",
         "oversteer3BlindPosType": "levelFixed",
-        "oversteerTopic": "",
-        "x": 690,
-        "y": 340,
+        "oversteerTopic": "CloudsOverwrite",
+        "x": 800,
+        "y": 700,
         "wires": [
             [
                 "5eac9c57.76c314",
-                "302bd89a.fafcc8"
+                "302bd89a.fafcc8",
+                "3c0c4256.7b9c2e",
+                "938edda3.2a1e5"
             ]
         ]
     },
@@ -5150,17 +5306,17 @@
         "id": "302bd89a.fafcc8",
         "type": "debug",
         "z": "7e5a345d.05161c",
-        "name": "",
-        "active": true,
+        "name": "Esstisch Steuerung Output",
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 940,
-        "y": 440,
+        "x": 1100,
+        "y": 760,
         "wires": []
     },
     {
@@ -5180,7 +5336,9 @@
             [
                 "fbedad10.48c1b",
                 "b907c2ad.b1417",
-                "e5d7026a.0a239"
+                "e5d7026a.0a239",
+                "7e9cc06d.dd14c",
+                "fd0a15dc.298558"
             ]
         ]
     },
@@ -5189,7 +5347,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "Nur Clouds",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5238,7 +5396,7 @@
         "to": "",
         "reg": false,
         "x": 590,
-        "y": 780,
+        "y": 800,
         "wires": [
             [
                 "54ec2f51.f58c5"
@@ -5257,6 +5415,13 @@
                 "pt": "msg",
                 "to": "WeatherID",
                 "tot": "msg"
+            },
+            {
+                "t": "move",
+                "p": "payload.clouds",
+                "pt": "msg",
+                "to": "clouds",
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -5269,7 +5434,10 @@
         "wires": [
             [
                 "48947d58.eae5c4",
-                "6ac2e536.abb7ec"
+                "6ac2e536.abb7ec",
+                "b7edd92c.12aaf8",
+                "d26a7c85.ed299",
+                "7c0e361f.f82ce8"
             ]
         ]
     },
@@ -5286,8 +5454,2450 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 860,
-        "y": 860,
+        "x": 830,
+        "y": 840,
         "wires": []
+    },
+    {
+        "id": "b7edd92c.12aaf8",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "name": "Msg Clouds",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "clouds",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "4fbc55c0.c9f85c",
+        "type": "ui_slider",
+        "z": "7e5a345d.05161c",
+        "name": "RolloEsstischPos",
+        "label": "Position",
+        "tooltip": "",
+        "group": "391335a9.6fc52a",
+        "order": 1,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "outs": "end",
+        "topic": "cmnd/RolloEsstisch/ShutterPosition",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 610,
+        "y": 520,
+        "wires": [
+            [
+                "200ebf4e.96e24"
+            ]
+        ]
+    },
+    {
+        "id": "7bd02856.8f5288",
+        "type": "mqtt in",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "topic": "stat/RolloEsstisch/SHUTTER1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 360,
+        "y": 520,
+        "wires": [
+            [
+                "4fbc55c0.c9f85c"
+            ]
+        ]
+    },
+    {
+        "id": "7e9cc06d.dd14c",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "name": "WeatherDetail",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.detail",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "ff60156e.8cd9b8",
+        "type": "delay",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "pauseType": "delayv",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 960,
+        "y": 600,
+        "wires": [
+            [
+                "1aa9db05.9ae8c5"
+            ]
+        ]
+    },
+    {
+        "id": "8b2ceb4a.1135d8",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "delay",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "SetDelay",
+        "payloadType": "str",
+        "x": 770,
+        "y": 600,
+        "wires": [
+            [
+                "ff60156e.8cd9b8"
+            ]
+        ]
+    },
+    {
+        "id": "1aa9db05.9ae8c5",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "name": "message delay",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "68ef1efa.8555c",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Trigger",
+        "payloadType": "str",
+        "x": 760,
+        "y": 660,
+        "wires": [
+            [
+                "ff60156e.8cd9b8"
+            ]
+        ]
+    },
+    {
+        "id": "eb760bbb.8e5ec",
+        "type": "inject",
+        "z": "a550fc48.7ba33",
+        "name": "Refresh Timer",
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "Refresh Timer",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "e54c1170.c13488",
+                "f6657c5c.2621a8"
+            ]
+        ]
+    },
+    {
+        "id": "74cb77c.92dd108",
+        "type": "ui_button",
+        "z": "a550fc48.7ba33",
+        "name": "Weather Refresh",
+        "group": "99a4dc86.46d248",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Aktualisieren",
+        "tooltip": "Wetterdaten aktualisieren",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-refresh",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "e54c1170.c13488",
+                "f6657c5c.2621a8"
+            ]
+        ]
+    },
+    {
+        "id": "4d90e53a.37962c",
+        "type": "ui_text",
+        "z": "a550fc48.7ba33",
+        "group": "b12941f.1cd05c",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "name": "Condition Txt",
+        "label": "",
+        "format": "{{msg.payload.detail}}",
+        "layout": "row-center",
+        "x": 990,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "89a4bed9.5b467",
+        "type": "function",
+        "z": "a550fc48.7ba33",
+        "name": "Prepare Dashboard Data",
+        "func": "var windDirection = {};\nvar windDirectionIcon = {};\nvar windSpeed = {};\nvar windSpeedIcon = {};\nvar sunRise = {};\nvar sunSet = {};\nvar conditionIcon = {};\nvar date = new Date ();\n\n/* function for converting meteorogical degree to text */\n\nvar degToCard = function(deg){\nif (deg>11.25 && deg<=33.75){\nreturn \"Nord-Nord-Ost\";\n  }else if (deg>33.75 && deg<56.25){\nreturn \"Nord-Ost\";\n  }else if (deg>56.25 && deg<78.75){\nreturn \"Ost-Nord-Ost\";\n  }else if (deg>78.75 && deg<101.25){\nreturn \"Ost\";\n  }else if (deg>101.25 && deg<123.75){\nreturn \"Ost-Süd-Ost\";\n  }else if (deg>123.75 && deg<146.25){\nreturn \"Süd-Ost\";\n  }else if (deg>146.25 && deg<168.75){\nreturn \"Süd-Süd-Ost\";\n  }else if (deg>168.75 && deg<191.25){\nreturn \"Süd\";\n  }else if (deg>191.25 && deg<213.75){\nreturn \"Süd-Süd-West\";\n  }else if (deg>213.75 && deg<236.25){\nreturn \"Süd-West\";\n  }else if (deg>236.25 && deg<258.75){\nreturn \"West-Süd-West\";\n  }else if (deg>258.75 && deg<281.25){\nreturn \"West\";\n  }else if (deg>281.25 && deg<303.75){\nreturn \"West-Nord-West\";\n  }else if (deg>303.75 && deg<326.25){\nreturn \"Nord-West\";\n  }else if (deg>326.25 && deg<348.75){\nreturn \"Nord-Nord-West\";\n  }else{\nreturn \"Nord\"; \n  }\n}\n\n/* function for converting meteorogical degree to weather icons */\n\nvar degToCardIcon = function(deg){\nif (deg>11.25 && deg<=33.75){\nreturn \"wi-from-nne\";\n  }else if (deg>33.75 && deg<56.25){\nreturn \"wi-from-ne\";\n  }else if (deg>56.25 && deg<78.75){\nreturn \"wi-from-ene\";\n  }else if (deg>78.75 && deg<101.25){\nreturn \"wi-from-e\";\n  }else if (deg>101.25 && deg<123.75){\nreturn \"wi-from-ese\";\n  }else if (deg>123.75 && deg<146.25){\nreturn \"wi-from-se\";\n  }else if (deg>146.25 && deg<168.75){\nreturn \"wi-from-sse\";\n  }else if (deg>168.75 && deg<191.25){\nreturn \"wi-from-s\";\n  }else if (deg>191.25 && deg<213.75){\nreturn \"wi-from-ssw\";\n  }else if (deg>213.75 && deg<236.25){\nreturn \"wi-from-sw\";\n  }else if (deg>236.25 && deg<258.75){\nreturn \"wi-from-wsw\";\n  }else if (deg>258.75 && deg<281.25){\nreturn \"wi-from-w\";\n  }else if (deg>281.25 && deg<303.75){\nreturn \"wi-from-wnw\";\n  }else if (deg>303.75 && deg<326.25){\nreturn \"wi-from-nw\";\n  }else if (deg>326.25 && deg<348.75){\nreturn \"wi-from-nnw\";\n  }else{\nreturn \"wi-from-n\"; \n  }\n}\n\n/* Function for converting wind speed into Beaufort scale icon */\n\nvar speedToCardIcon = function(speed){\nif (speed>0.5 && speed<=1.5){\nreturn \"wi-wind-beaufort-1\";\n  }else if (speed>1.5 && speed<=3.3){\nreturn \"wi-wind-beaufort-2\";\n  }else if (speed>3.3 && speed<=5.5){\nreturn \"wi-wind-beaufort-3\";\n  }else if (speed>5.5 && speed<=7.9){\nreturn \"wi-wind-beaufort-4\";\n  }else if (speed>7.9 && speed<=10.7){\nreturn \"wi-wind-beaufort-5\";\n  }else if (speed>10.7 && speed<=13.8){\nreturn \"wi-wind-beaufort-6\";\n  }else if (speed>13.8 && speed<=17.1){\nreturn \"wi-wind-beaufort-7\";\n  }else if (speed>17.1 && speed<=20.7){\nreturn \"wi-wind-beaufort-8\";\n  }else if (speed>20.7 && speed<=24.4){\nreturn \"wi-wind-beaufort-9\";\n  }else if (speed>24.4 && speed<=28.4){\nreturn \"wi-wind-beaufort-10\";\n  }else if (speed>28.4 && speed<=32.6){\nreturn \"wi-wind-beaufort-11\";\n  }else if (speed>32.6){\nreturn \"wi-wind-beaufort-12\";\n  }else{\nreturn \"wi-wind-beaufort-0\"; \n  }\n}\n\n/* Function for Time Conversions */\n\nfunction timeConverter(UNIX_timestamp){\n  var a = new Date(UNIX_timestamp * 1000);\n  var hour = a.getHours();\n  var min = a.getMinutes();\n  if (min < 10) {min = \"0\" + min;}\n    else {min = min;}\n  var sec = a.getSeconds();\n  if (sec < 10) {sec = \"0\" + sec;}\n    else {sec = sec;}\n    \n  var time = hour + ':' + min + ':' + sec ;\n  return time;\n}\n\n/* Convert OpenWeeather Map Icon to https://erikflowers.github.io/weather-icons/ */\n\nconst owIconMap = new Map();\n\nowIconMap.set('01d', 'wi-day-sunny'); // clear sky\nowIconMap.set('02d', 'wi-day-cloudy'); // few clouds\nowIconMap.set('03d', 'wi-cloud'); // scattered clouds\nowIconMap.set('04d', 'wi-cloudy'); // broken clouds\nowIconMap.set('09d', 'wi-day-showers'); // shower rain\nowIconMap.set('10d', 'wi-day-rain'); // rain\nowIconMap.set('11d', 'wi-thunderstorm'); // thunderstorm\nowIconMap.set('13d', 'wi-snow'); // snow\nowIconMap.set('50d', 'wi-fog'); // mist\nowIconMap.set('01n', 'wi-night-clear'); // clear sky\nowIconMap.set('02n', 'wi-night-alt-cloudy'); // few clouds\nowIconMap.set('03n', 'wi-cloud'); // scattered clouds\nowIconMap.set('04n', 'wi-cloudy'); // broken clouds\nowIconMap.set('09n', 'wi-night-alt-showers'); // shower rain\nowIconMap.set('10n', 'wi-night-alt-rain'); // rain\nowIconMap.set('11n', 'wi-thunderstorm'); // thunderstorm\nowIconMap.set('13n', 'wi-snow'); // snow\nowIconMap.set('50n', 'wi-fog'); // mist\n\nconditionIcon.topic = \"ConditionIcon\";\nconditionIcon.payload = owIconMap.get(msg.payload.icon);\n\nwindDirection.topic = \"WindDirection\";\nwindDirection.payload = degToCard(msg.payload.winddirection);\n\nwindDirectionIcon.topic = \"WindDirectionIcon\";\nwindDirectionIcon.payload = degToCardIcon(msg.payload.winddirection);\n\nwindSpeed.topic = \"WindSpeed\";\nwindSpeed.payload = msg.payload.windspeed +  \" m/s\"; /* \" + windDirection.payload; */\n\nwindSpeedIcon.topic = \"WindSpeedIcon\";\nwindSpeedIcon.payload = speedToCardIcon(msg.payload.windspeed);\n\nsunRise.topic = \"SunRise\";\nsunRise.payload = timeConverter(msg.payload.sunrise);\n\nsunSet.topic = \"SunRet\";\nsunSet.payload = timeConverter(msg.payload.sunset);\n\nowIconMap.clear(); //freeing resource\n\nreturn [conditionIcon, windSpeedIcon, windSpeed, windDirection, windDirectionIcon, sunRise, sunSet];",
+        "outputs": 7,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 680,
+        "y": 340,
+        "wires": [
+            [
+                "d0990bb3.6ee1f8"
+            ],
+            [
+                "6bfd9bef.141194"
+            ],
+            [
+                "49e2e33e.486c14"
+            ],
+            [],
+            [
+                "a8c65467.d3352"
+            ],
+            [
+                "393c1d0b.05766a"
+            ],
+            [
+                "d2011150.f678f"
+            ]
+        ]
+    },
+    {
+        "id": "49e2e33e.486c14",
+        "type": "ui_text",
+        "z": "a550fc48.7ba33",
+        "group": "8da50f69.44fe38",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "name": "WindSpeed",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 980,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "393c1d0b.05766a",
+        "type": "ui_text",
+        "z": "a550fc48.7ba33",
+        "group": "5a4d76d2.5ae128",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "name": "Sunrise",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 970,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "d2011150.f678f",
+        "type": "ui_text",
+        "z": "a550fc48.7ba33",
+        "group": "5a4d76d2.5ae128",
+        "order": 6,
+        "width": "2",
+        "height": "1",
+        "name": "Sunset",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 970,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "a767f2cc.5f3478",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "5a4d76d2.5ae128",
+        "name": "Sunrise Icon",
+        "order": 3,
+        "width": "1",
+        "height": "1",
+        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: left;align-items: center;\">\n<i class=\"fa-2x wi wi-sunrise\"></i>\n</div> ",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7dfa615d.50546",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "5a4d76d2.5ae128",
+        "name": "Sunset Icon",
+        "order": 5,
+        "width": "1",
+        "height": "1",
+        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: left;align-items: center;\">\n<i class=\"fa-2x wi wi-sunset\"></i>\n</div> ",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a8c65467.d3352",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "8da50f69.44fe38",
+        "name": "WindDirection icon",
+        "order": 3,
+        "width": "1",
+        "height": "1",
+        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons-wind.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-2x wi wi-wind {{msg.payload}}\"></i>\n</div> ",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 1000,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e54c1170.c13488",
+        "type": "openweathermap",
+        "z": "a550fc48.7ba33",
+        "name": "Current Weather",
+        "wtype": "current",
+        "lon": "11.061859",
+        "lat": "49.460983",
+        "city": "",
+        "country": "",
+        "language": "de",
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "89a4bed9.5b467",
+                "4d90e53a.37962c"
+            ]
+        ]
+    },
+    {
+        "id": "6bfd9bef.141194",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "8da50f69.44fe38",
+        "name": "WindSpeed Icon",
+        "order": 1,
+        "width": "1",
+        "height": "1",
+        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons-wind.css\">\n<div style=\"display: flex;height: 100%;justify-content: left;align-items: center;\">\n<i class=\"fa-2x wi wi-wind {{msg.payload}}\"></i>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 1000,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "480a6cbf.880804",
+        "type": "debug",
+        "z": "a550fc48.7ba33",
+        "name": "Forecast debug",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 990,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "5af8efb7.126a98",
+        "type": "comment",
+        "z": "a550fc48.7ba33",
+        "name": "Open Weather API für aktuelles Wetter und Forecast",
+        "info": "",
+        "x": 480,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d0990bb3.6ee1f8",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "14584712.7a2929",
+        "name": "Condition Icon",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-4x wi {{msg.payload}}\"></i>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 990,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6657c5c.2621a8",
+        "type": "openweathermap",
+        "z": "a550fc48.7ba33",
+        "name": "5 Day Forecast",
+        "wtype": "forecast",
+        "lon": "11.061859",
+        "lat": "49.460983",
+        "city": "",
+        "country": "",
+        "language": "de",
+        "x": 350,
+        "y": 640,
+        "wires": [
+            [
+                "25b2dc06.cd7bdc",
+                "e58a247.3094b58",
+                "c5b71946.ca4de",
+                "480a6cbf.880804"
+            ]
+        ]
+    },
+    {
+        "id": "25b2dc06.cd7bdc",
+        "type": "function",
+        "z": "a550fc48.7ba33",
+        "name": "Prepare Forecast Icon",
+        "func": "var wfcIcon1 = {};\nvar wfcIcon2 = {}; \nvar wfcIcon3 = {};\nvar wfcIcon4 = {};\nvar wfcIcon5 = {};\nvar wfcIcon6 = {};\nvar wfcIcon7 = {};\nvar wfcIcon8 = {};\n\n\nvar date = new Date ();\n\n/* Function for Time Conversions */\n\nfunction timeConverter(UNIX_timestamp){\n  var a = new Date(UNIX_timestamp * 1000);\n  var hour = a.getHours();\n  var min = a.getMinutes();\n  if (min < 10) {min = \"0\" + min;}\n    else {min = min;}\n  var sec = a.getSeconds();\n  if (sec < 10) {sec = \"0\" + sec;}\n    else {sec = sec;}\n    \n  var time = hour + ':' + min; /* + ':' + sec ;*/\n  return time;\n}\n\n/* Convert OpenWeeather Map Icon to https://erikflowers.github.io/weather-icons/ */\n\nconst owIconMap = new Map();\n\nowIconMap.set('01d', 'wi-day-sunny'); // clear sky\nowIconMap.set('02d', 'wi-day-cloudy'); // few clouds\nowIconMap.set('03d', 'wi-cloud'); // scattered clouds\nowIconMap.set('04d', 'wi-cloudy'); // broken clouds\nowIconMap.set('09d', 'wi-day-showers'); // shower rain\nowIconMap.set('10d', 'wi-day-rain'); // rain\nowIconMap.set('11d', 'wi-thunderstorm'); // thunderstorm\nowIconMap.set('13d', 'wi-snow'); // snow\nowIconMap.set('50d', 'wi-fog'); // mist\nowIconMap.set('01n', 'wi-night-clear'); // clear sky\nowIconMap.set('02n', 'wi-night-alt-cloudy'); // few clouds\nowIconMap.set('03n', 'wi-cloud'); // scattered clouds\nowIconMap.set('04n', 'wi-cloudy'); // broken clouds\nowIconMap.set('09n', 'wi-night-alt-showers'); // shower rain\nowIconMap.set('10n', 'wi-night-alt-rain'); // rain\nowIconMap.set('11n', 'wi-thunderstorm'); // thunderstorm\nowIconMap.set('13n', 'wi-snow'); // snow\nowIconMap.set('50n', 'wi-fog'); // mist\n\nwfcIcon1.topic = msg.payload[0].dt_txt;\nwfcIcon1.payload = owIconMap.get(msg.payload[0].weather[0].icon);\n\nwfcIcon2.topic = msg.payload[1].dt_txt;\nwfcIcon2.payload = owIconMap.get(msg.payload[1].weather[0].icon);\n\nwfcIcon3.topic = msg.payload[2].dt_txt;\nwfcIcon3.payload = owIconMap.get(msg.payload[2].weather[0].icon);\n\nwfcIcon4.topic = msg.payload[3].dt_txt;\nwfcIcon4.payload = owIconMap.get(msg.payload[3].weather[0].icon);\n\nwfcIcon5.topic = msg.payload[4].dt_txt;\nwfcIcon5.payload = owIconMap.get(msg.payload[4].weather[0].icon);\n\nwfcIcon6.topic = msg.payload[5].dt_txt;\nwfcIcon6.payload = owIconMap.get(msg.payload[5].weather[0].icon);\n\nwfcIcon7.topic = msg.payload[6].dt_txt;\nwfcIcon7.payload = owIconMap.get(msg.payload[6].weather[0].icon);\n\nwfcIcon8.topic = msg.payload[7].dt_txt;\nwfcIcon8.payload = owIconMap.get(msg.payload[7].weather[0].icon);\n\n\nowIconMap.clear(); //freeing resource\n\nreturn [wfcIcon1, wfcIcon2, wfcIcon3, wfcIcon4, wfcIcon5, wfcIcon6, wfcIcon7, wfcIcon8];",
+        "outputs": 8,
+        "noerr": 0,
+        "x": 690,
+        "y": 700,
+        "wires": [
+            [
+                "39139188.be2256"
+            ],
+            [
+                "c24820ec.48ca8"
+            ],
+            [
+                "764a58c0.442438"
+            ],
+            [
+                "6eab6954.c57d38"
+            ],
+            [
+                "c756059d.18796"
+            ],
+            [
+                "53046826.3645"
+            ],
+            [
+                "229014e6.b0e14c"
+            ],
+            [
+                "fd1a001d.2fc35"
+            ]
+        ]
+    },
+    {
+        "id": "39139188.be2256",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "5e0d6747.b726b",
+        "name": "WFc Icon 1",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c24820ec.48ca8",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "5e0d6747.b726b",
+        "name": "WFc Icon 2",
+        "order": 3,
+        "width": "1",
+        "height": "1",
+        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "764a58c0.442438",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "5e0d6747.b726b",
+        "name": "WFc Icon 3",
+        "order": 4,
+        "width": "1",
+        "height": "1",
+        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6eab6954.c57d38",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "5e0d6747.b726b",
+        "name": "WFc Icon 4",
+        "order": 5,
+        "width": "1",
+        "height": "1",
+        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c756059d.18796",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "5e0d6747.b726b",
+        "name": "WFc Icon 5",
+        "order": 6,
+        "width": "1",
+        "height": "1",
+        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53046826.3645",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "5e0d6747.b726b",
+        "name": "WFc Icon 6",
+        "order": 7,
+        "width": "1",
+        "height": "1",
+        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "229014e6.b0e14c",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "5e0d6747.b726b",
+        "name": "WFc Icon 7",
+        "order": 8,
+        "width": "1",
+        "height": "1",
+        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd1a001d.2fc35",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "5e0d6747.b726b",
+        "name": "WFc Icon 8",
+        "order": 9,
+        "width": "1",
+        "height": "1",
+        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 980,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e58a247.3094b58",
+        "type": "function",
+        "z": "a550fc48.7ba33",
+        "name": "Prepare Forecast Data",
+        "func": "var fcdata = {};\n\nfcdata.payload = {\n  forecast: {\n    dt00: {\n      dt_txt: msg.payload[0].dt_txt,\n      temp_min: msg.payload[0].main.temp_min,\n      temp_max: msg.payload[0].main.temp_max,\n      temp: msg.payload[0].main.temp,\n      desc: msg.payload[0].weather[0].description\n    },\n    dt01: {\n      dt_txt: msg.payload[1].dt_txt,\n      temp_min: msg.payload[1].main.temp_min,\n      temp_max: msg.payload[1].main.temp_max,\n      temp: msg.payload[1].main.temp,\n      desc: msg.payload[1].weather[0].description\n    },\n    dt02: {\n      dt_txt: msg.payload[2].dt_txt,\n      temp_min: msg.payload[2].main.temp_min,\n      temp_max: msg.payload[2].main.temp_max,\n      temp: msg.payload[2].main.temp,\n      desc: msg.payload[2].weather[0].description\n    },\n    dt03: {\n      dt_txt: msg.payload[3].dt_txt,\n      temp_min: msg.payload[3].main.temp_min,\n      temp_max: msg.payload[3].main.temp_max,\n      temp: msg.payload[3].main.temp,\n      desc: msg.payload[3].weather[0].description\n    },\n    dt04: {\n      dt_txt: msg.payload[4].dt_txt,\n      temp_min: msg.payload[4].main.temp_min,\n      temp_max: msg.payload[4].main.temp_max,\n      temp: msg.payload[4].main.temp,\n      desc: msg.payload[4].weather[0].description\n    },\n    dt05: {\n      dt_txt: msg.payload[5].dt_txt,\n      temp_min: msg.payload[5].main.temp_min,\n      temp_max: msg.payload[5].main.temp_max,\n      temp: msg.payload[5].main.temp,\n      desc: msg.payload[5].weather[0].description\n    },\n    dt06: {\n      dt_txt: msg.payload[6].dt_txt,\n      temp_min: msg.payload[6].main.temp_min,\n      temp_max: msg.payload[6].main.temp_max,\n      temp: msg.payload[6].main.temp,\n      desc: msg.payload[6].weather[0].description\n    },\n    dt07: {\n      dt_txt: msg.payload[7].dt_txt,\n      temp_min: msg.payload[7].main.temp_min,\n      temp_max: msg.payload[7].main.temp_max,\n      temp: msg.payload[7].main.temp,\n      desc: msg.payload[7].weather[0].description\n    }\n  }\n}\n\n\n\nreturn fcdata;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 690,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "770400c.08ade8",
+        "type": "ui_template",
+        "z": "a550fc48.7ba33",
+        "group": "5e0d6747.b726b",
+        "name": "Forecast",
+        "order": 1,
+        "width": "8",
+        "height": "1",
+        "format": "<div layout=\"row\" layout-align=\"space-around start\" ng-repeat=\"data in msg.payload.row\">\n  <span flex style=\"color: white\">{{data.cell01}}</span>\n  <span flex style=\"color: white\">{{data.cell02}}</span>\n  <span flex style=\"color: white\">{{data.cell03}}</span>\n  <span flex style=\"color: white\">{{data.cell04}}</span>\n  <span flex style=\"color: white\">{{data.cell05}}</span>\n  <span flex style=\"color: white\">{{data.cell06}}</span>\n  <span flex style=\"color: white\">{{data.cell07}}</span>\n  <span flex style=\"color: white\">{{data.cell08}}</span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 970,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5b71946.ca4de",
+        "type": "function",
+        "z": "a550fc48.7ba33",
+        "name": "Prepare forecast for UI widget",
+        "func": "var fcdata = {};\n\n// prepare forecast data for CSS based ui widget\n\nfcdata.payload = {\n  row: {\n  \tdata01: {\n  \t\tcell01: msg.payload[0].dt_txt.substring(11, 16),\n  \t\tcell02: msg.payload[1].dt_txt.substring(11, 16),\n  \t\tcell03: msg.payload[2].dt_txt.substring(11, 16),\n  \t\tcell04: msg.payload[3].dt_txt.substring(11, 16),\n  \t\tcell05: msg.payload[4].dt_txt.substring(11, 16),\n  \t\tcell06: msg.payload[5].dt_txt.substring(11, 16),\n  \t\tcell07: msg.payload[6].dt_txt.substring(11, 16),\n  \t\tcell08: msg.payload[7].dt_txt.substring(11, 16)\n  \t},\n  \tdata02: {\n  \t\tcell01: msg.payload[0].main.temp,\n  \t\tcell02: msg.payload[1].main.temp,\n  \t\tcell03: msg.payload[2].main.temp,\n  \t\tcell04: msg.payload[3].main.temp,\n  \t\tcell05: msg.payload[4].main.temp,\n  \t\tcell06: msg.payload[5].main.temp,\n  \t\tcell07: msg.payload[6].main.temp,\n  \t\tcell08: msg.payload[7].main.temp\n  \t}\n  }\n}\n\nreturn fcdata;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 730,
+        "y": 1120,
+        "wires": [
+            [
+                "770400c.08ade8"
+            ]
+        ]
+    },
+    {
+        "id": "fd0a15dc.298558",
+        "type": "ui_text",
+        "z": "7e5a345d.05161c",
+        "group": "8e157408.1ce3a8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Wetter",
+        "format": "{{msg.payload.detail}}",
+        "layout": "row-spread",
+        "x": 370,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "3c0c4256.7b9c2e",
+        "type": "ui_text",
+        "z": "7e5a345d.05161c",
+        "group": "391335a9.6fc52a",
+        "order": 2,
+        "width": "6",
+        "height": "2",
+        "name": "",
+        "label": "Status",
+        "format": "{{msg.blindCtrl.reason.description}}",
+        "layout": "row-spread",
+        "x": 1070,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "938edda3.2a1e5",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "name": "EsstischReason",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "blindCtrl.reason.description",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "1f1a9b31.1e6da5",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "setSunDataMinAltitude",
+        "payload": "40",
+        "payloadType": "num",
+        "x": 470,
+        "y": 680,
+        "wires": [
+            [
+                "6ac2e536.abb7ec"
+            ]
+        ]
+    },
+    {
+        "id": "b71e2911.a2d248",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "setSunDataMinAltitude",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 470,
+        "y": 720,
+        "wires": [
+            [
+                "6ac2e536.abb7ec"
+            ]
+        ]
+    },
+    {
+        "id": "967f00fa.1ae43",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "setSunDataMinAltitude",
+        "payload": "400",
+        "payloadType": "num",
+        "x": 460,
+        "y": 760,
+        "wires": [
+            [
+                "6ac2e536.abb7ec"
+            ]
+        ]
+    },
+    {
+        "id": "719dd77e.126428",
+        "type": "mqtt out",
+        "z": "7e5a345d.05161c",
+        "name": "ShutterPosition",
+        "topic": "cmnd/RolloWohnzimmer/ShutterPosition",
+        "qos": "",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 820,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "7c0e361f.f82ce8",
+        "type": "blind-control",
+        "z": "7e5a345d.05161c",
+        "name": "RolloWohnzimmer",
+        "topic": "",
+        "positionConfig": "9a5a8534.25d4d8",
+        "outputs": "1",
+        "autoTrigger": true,
+        "autoTriggerTime": "600000",
+        "startDelayTime": 10000,
+        "storeName": "",
+        "blindIncrement": "1",
+        "blindOpenPos": "100",
+        "blindClosedPos": "0",
+        "blindPosReverse": false,
+        "blindPosDefault": "open (max)",
+        "blindPosDefaultType": "levelFixed",
+        "overwriteExpire": "1800000",
+        "rules": [
+            {
+                "index": 0,
+                "name": "HolidayWeekend",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "8:15",
+                "timeType": "entered",
+                "timeOp": 0,
+                "timeOpText": "↥ bis",
+                "offsetValue": "",
+                "offsetType": "num",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "",
+                "timeMinType": "none",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "",
+                "timeMaxType": "none",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "closed (min)",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "validOperandAValue": "day.today.isWeekendOrHoliday",
+                "validOperandAType": "global",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>8:15</var> - 00:00</div><div>↕  Absolut <var>geschlossen (min)</var></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
+            },
+            {
+                "index": 1,
+                "name": "SonAufgAuf ",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "sunrise",
+                "timeType": "pdsTime",
+                "timeOp": 0,
+                "timeOpText": "↥ bis",
+                "offsetValue": "10",
+                "offsetType": "num",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "7:00",
+                "timeMinType": "entered",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "9:00",
+                "timeMaxType": "entered",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "closed (min)",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "validOperandAValue": "",
+                "validOperandAType": "none",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Begin</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>7:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var></div></div><div>↕  Absolut <var>geschlossen (min)</var></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
+            },
+            {
+                "index": 2,
+                "name": "Wetter Regen",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "",
+                "timeType": "none",
+                "timeOp": 0,
+                "timeOpText": "↥ bis",
+                "offsetValue": "",
+                "offsetType": "none",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "",
+                "timeMinType": "none",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "",
+                "timeMaxType": "none",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "33%",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "Weather Rain Condition",
+                "importance": 0,
+                "validOperandAValue": "WeatherID",
+                "validOperandAType": "msg",
+                "validOperator": "gte",
+                "validOperatorText": ">=",
+                "validOperandBValue": "502",
+                "validOperandBType": "num",
+                "valid2LogOperator": 2,
+                "valid2LogOperatorText": "und",
+                "valid2OperandAValue": "WeatherID",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "lt",
+                "valid2OperatorText": "<",
+                "valid2OperandBValue": "600",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 502<br/><strong>und</strong> <var>msg.WeatherID</var> < 600</div><div>↕  Absolut <var>33%</var><div class=\"indent-topic-text\"> <span>Topic: </span> <var>Weather Rain Condition</var></div></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
+            },
+            {
+                "index": 3,
+                "name": "Wetter Gewitter",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "",
+                "timeType": "none",
+                "timeOp": 0,
+                "timeOpText": "↥ bis",
+                "offsetValue": "",
+                "offsetType": "none",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "",
+                "timeMinType": "none",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "",
+                "timeMaxType": "none",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "25%",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "Weather Thunderstorm Condition",
+                "importance": 0,
+                "validOperandAValue": "WeatherID",
+                "validOperandAType": "msg",
+                "validOperator": "gte",
+                "validOperatorText": ">=",
+                "validOperandBValue": "201",
+                "validOperandBType": "num",
+                "valid2LogOperator": 2,
+                "valid2LogOperatorText": "und",
+                "valid2OperandAValue": "WeatherID",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "lt",
+                "valid2OperatorText": "<",
+                "valid2OperandBValue": "230",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 201<br/><strong>und</strong> <var>msg.WeatherID</var> < 230</div><div>↕  Absolut <var>25%</var><div class=\"indent-topic-text\"> <span>Topic: </span> <var>Weather Thunderstorm Condition</var></div></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
+            },
+            {
+                "index": 4,
+                "name": "Wetter Schnee",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "",
+                "timeType": "none",
+                "timeOp": 0,
+                "timeOpText": "↥ bis",
+                "offsetValue": "",
+                "offsetType": "none",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "",
+                "timeMinType": "none",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "",
+                "timeMaxType": "none",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "50%",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "Weather Snow Condition",
+                "importance": 0,
+                "validOperandAValue": "WeatherID",
+                "validOperandAType": "msg",
+                "validOperator": "gte",
+                "validOperatorText": ">=",
+                "validOperandBValue": "601",
+                "validOperandBType": "num",
+                "valid2LogOperator": 2,
+                "valid2LogOperatorText": "und",
+                "valid2OperandAValue": "WeatherID",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "lt",
+                "valid2OperatorText": "<",
+                "valid2OperandBValue": "700",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 601<br/><strong>und</strong> <var>msg.WeatherID</var> < 700</div><div>↕  Absolut <var>50%</var><div class=\"indent-topic-text\"> <span>Topic: </span> <var>Weather Snow Condition</var></div></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
+            },
+            {
+                "index": 5,
+                "name": "AbendsFastZu",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "sunsetStart",
+                "timeType": "pdsTime",
+                "timeOp": 1,
+                "timeOpText": "↧ von",
+                "offsetValue": "10",
+                "offsetType": "num",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "15:30",
+                "timeMinType": "entered",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "",
+                "timeMaxType": "none",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "75%",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "validOperandAValue": "",
+                "validOperandAType": "none",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Begin</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>15:30</var></div></div><div>↕  Absolut <var>75%</var></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
+            },
+            {
+                "index": 6,
+                "name": "SonnenuntergangZu",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "sunset",
+                "timeType": "pdsTime",
+                "timeOp": 1,
+                "timeOpText": "↧ von",
+                "offsetValue": "30",
+                "offsetType": "num",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "16:30",
+                "timeMinType": "entered",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "22:00",
+                "timeMaxType": "entered",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "closed (min)",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "validOperandAValue": "",
+                "validOperandAType": "none",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:30<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div>↕  Absolut <var>geschlossen (min)</var></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
+            }
+        ],
+        "sunControlMode": "2",
+        "sunFloorLength": "500",
+        "sunMinAltitude": "15",
+        "sunMinDelta": "5",
+        "blindPosMin": "25%",
+        "blindPosMinType": "levelFixed",
+        "blindPosMax": "open (max)",
+        "blindPosMaxType": "levelFixed",
+        "smoothTime": "",
+        "sunTopic": "SunShading",
+        "windowTop": "205",
+        "windowBottom": "100",
+        "windowAzimuthStart": "118",
+        "windowAzimuthEnd": "230",
+        "oversteerValue": "clouds",
+        "oversteerValueType": "msg",
+        "oversteerCompare": "gte",
+        "oversteerThreshold": "40",
+        "oversteerThresholdType": "num",
+        "oversteerBlindPos": "open (max)",
+        "oversteerBlindPosType": "levelFixed",
+        "oversteer2Value": "",
+        "oversteer2ValueType": "none",
+        "oversteer2Compare": "equal",
+        "oversteer2Threshold": "502",
+        "oversteer2ThresholdType": "num",
+        "oversteer2BlindPos": "25%",
+        "oversteer2BlindPosType": "levelFixed",
+        "oversteer3Value": "",
+        "oversteer3ValueType": "none",
+        "oversteer3Compare": "gte",
+        "oversteer3Threshold": "",
+        "oversteer3ThresholdType": "num",
+        "oversteer3BlindPos": "open (max)",
+        "oversteer3BlindPosType": "levelFixed",
+        "oversteerTopic": "CloudsOverwrite",
+        "x": 470,
+        "y": 1080,
+        "wires": [
+            [
+                "7ca250e2.e6cc5",
+                "4e597d09.2aedb4",
+                "1d3825cc.3067ba",
+                "719dd77e.126428"
+            ]
+        ]
+    },
+    {
+        "id": "7ca250e2.e6cc5",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "name": "Wohnz Rolladensteuerung Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "4e597d09.2aedb4",
+        "type": "ui_text",
+        "z": "7e5a345d.05161c",
+        "group": "17ad1f32.34c9c1",
+        "order": 2,
+        "width": "6",
+        "height": "2",
+        "name": "",
+        "label": "Status",
+        "format": "{{msg.blindCtrl.reason.description}}",
+        "layout": "row-center",
+        "x": 770,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "1d3825cc.3067ba",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "name": "WohnzReason",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "blindCtrl.reason.description",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "18b04498.89bb7b",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "setSunDataMinAltitude",
+        "payload": "40",
+        "payloadType": "num",
+        "x": 170,
+        "y": 1100,
+        "wires": [
+            [
+                "7c0e361f.f82ce8"
+            ]
+        ]
+    },
+    {
+        "id": "55fe76a1.962bf8",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "setSunDataMinAltitude",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 170,
+        "y": 1140,
+        "wires": [
+            [
+                "7c0e361f.f82ce8"
+            ]
+        ]
+    },
+    {
+        "id": "ac11dbc3.138ca8",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "setSunDataMinAltitude",
+        "payload": "400",
+        "payloadType": "num",
+        "x": 160,
+        "y": 1180,
+        "wires": [
+            [
+                "7c0e361f.f82ce8"
+            ]
+        ]
+    },
+    {
+        "id": "631e7cf3.cc1784",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "20",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "cmnd/RolloEsstisch/ShutterPosition",
+        "payload": "20",
+        "payloadType": "num",
+        "x": 150,
+        "y": 1240,
+        "wires": [
+            [
+                "719dd77e.126428"
+            ]
+        ]
+    },
+    {
+        "id": "42ea334b.231bcc",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "cmnd/RolloEsstisch/ShutterPosition",
+        "payload": "40",
+        "payloadType": "num",
+        "x": 150,
+        "y": 1280,
+        "wires": [
+            [
+                "719dd77e.126428"
+            ]
+        ]
+    },
+    {
+        "id": "1eb0396c.c17e47",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "cmnd/RolloEsstisch/ShutterPosition",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1320,
+        "wires": [
+            [
+                "719dd77e.126428"
+            ]
+        ]
+    },
+    {
+        "id": "8853f5a8.8b4f48",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "cmnd/RolloEsstisch/ShutterPosition",
+        "payload": "80",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1360,
+        "wires": [
+            [
+                "719dd77e.126428"
+            ]
+        ]
+    },
+    {
+        "id": "709d5bcd.8d1b54",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "Open",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "cmnd/RolloEsstisch/ShutterPosition",
+        "payload": "100",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1400,
+        "wires": [
+            [
+                "719dd77e.126428"
+            ]
+        ]
+    },
+    {
+        "id": "9691e1aa.10ca5",
+        "type": "mqtt in",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "topic": "stat/RolloWohnzimmer/SHUTTER1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 500,
+        "y": 1420,
+        "wires": [
+            [
+                "bfcba13f.cd988"
+            ]
+        ]
+    },
+    {
+        "id": "bfcba13f.cd988",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "name": "RolloWohnzimmerStatus",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "cd81506e.47c21",
+        "type": "mqtt out",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "topic": "cmnd/RolloWohnzimmer/ShutterPosition",
+        "qos": "",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 540,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "a1e19928.f8da38",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "20",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "20",
+        "payloadType": "num",
+        "x": 130,
+        "y": 1540,
+        "wires": [
+            [
+                "cd81506e.47c21"
+            ]
+        ]
+    },
+    {
+        "id": "ae596784.c4d848",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "Open",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "100",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1700,
+        "wires": [
+            [
+                "cd81506e.47c21"
+            ]
+        ]
+    },
+    {
+        "id": "216e065e.8c8ffa",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "cmnd/RolloEsstisch/ShutterChange",
+        "payload": "-30",
+        "payloadType": "num",
+        "x": 130,
+        "y": 1760,
+        "wires": [
+            [
+                "cd81506e.47c21"
+            ]
+        ]
+    },
+    {
+        "id": "630153d9.09e9cc",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "40",
+        "payloadType": "num",
+        "x": 130,
+        "y": 1580,
+        "wires": [
+            [
+                "cd81506e.47c21"
+            ]
+        ]
+    },
+    {
+        "id": "37bcbeec.6fd7c2",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1620,
+        "wires": [
+            [
+                "cd81506e.47c21"
+            ]
+        ]
+    },
+    {
+        "id": "fb2b775f.3234f8",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "80",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1660,
+        "wires": [
+            [
+                "cd81506e.47c21"
+            ]
+        ]
+    },
+    {
+        "id": "542c8b32.221d54",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "Closed",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 130,
+        "y": 1500,
+        "wires": [
+            [
+                "cd81506e.47c21"
+            ]
+        ]
+    },
+    {
+        "id": "97695071.468dc",
+        "type": "ui_slider",
+        "z": "7e5a345d.05161c",
+        "name": "RolloWohnzimmerPosition",
+        "label": "Position",
+        "tooltip": "",
+        "group": "17ad1f32.34c9c1",
+        "order": 1,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "outs": "end",
+        "topic": "cmnd/RolloWohnzimmer/ShutterPosition",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 740,
+        "y": 1780,
+        "wires": [
+            [
+                "cd81506e.47c21"
+            ]
+        ]
+    },
+    {
+        "id": "ced3fe1b.5db5b",
+        "type": "mqtt in",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "topic": "stat/RolloWohnzimmer/SHUTTER1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 400,
+        "y": 1780,
+        "wires": [
+            [
+                "97695071.468dc"
+            ]
+        ]
+    },
+    {
+        "id": "d26a7c85.ed299",
+        "type": "ui_text",
+        "z": "7e5a345d.05161c",
+        "group": "8e157408.1ce3a8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Wolken",
+        "format": "{{msg.clouds}}",
+        "layout": "row-spread",
+        "x": 660,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "b0373bec.1ade48",
+        "type": "blind-control",
+        "z": "7e5a345d.05161c",
+        "name": "RolloTüre",
+        "topic": "",
+        "positionConfig": "9a5a8534.25d4d8",
+        "outputs": "1",
+        "autoTrigger": true,
+        "autoTriggerTime": "600000",
+        "startDelayTime": 10000,
+        "storeName": "",
+        "blindIncrement": "1",
+        "blindOpenPos": "100",
+        "blindClosedPos": "0",
+        "blindPosReverse": false,
+        "blindPosDefault": "open (max)",
+        "blindPosDefaultType": "levelFixed",
+        "overwriteExpire": "1800000",
+        "rules": [
+            {
+                "index": 0,
+                "name": "HolidayWeekend",
+                "isValid": true,
+                "valid": {
+                    "validTimeReg": true,
+                    "validLevel": true,
+                    "validOperand1A": true,
+                    "validOperand1B": true
+                },
+                "timeValue": "8:15",
+                "timeType": "entered",
+                "timeOp": 0,
+                "timeOpText": "↥ bis",
+                "offsetValue": "",
+                "offsetType": "num",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "",
+                "timeMinType": "none",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "",
+                "timeMaxType": "none",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "closed (min)",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "validOperandAValue": "day.today.isWeekendOrHoliday",
+                "validOperandAType": "global",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>8:15</var> - 00:00</div><div>↕  Absolut <var>geschlossen (min)</var></div>"
+            },
+            {
+                "index": 1,
+                "name": "SonAufgAuf ",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "sunrise",
+                "timeType": "pdsTime",
+                "timeOp": 0,
+                "timeOpText": "↥ bis",
+                "offsetValue": "10",
+                "offsetType": "num",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "7:00",
+                "timeMinType": "entered",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "9:00",
+                "timeMaxType": "entered",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "closed (min)",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "validOperandAValue": "",
+                "validOperandAType": "none",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Begin</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>7:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var></div></div><div>↕  Absolut <var>geschlossen (min)</var></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
+            },
+            {
+                "index": 2,
+                "name": "SonnenuntergangZu",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "sunset",
+                "timeType": "pdsTime",
+                "timeOp": 1,
+                "timeOpText": "↧ von",
+                "offsetValue": "0",
+                "offsetType": "num",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "16:30",
+                "timeMinType": "entered",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "22:00",
+                "timeMaxType": "entered",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "33%",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "validOperandAValue": "",
+                "validOperandAType": "none",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div>↕  Absolut <var>33%</var></div>",
+                "timeMinOp": 0,
+                "timeMaxOp": 0
+            },
+            {
+                "index": 3,
+                "name": "WochenendeGeschlossen",
+                "isValid": true,
+                "valid": {
+                    "validTimeReg": true,
+                    "validLevel": true,
+                    "validOperand1A": true,
+                    "validOperand1B": true
+                },
+                "timeValue": "22:30",
+                "timeType": "entered",
+                "timeOp": 1,
+                "timeOpText": "↧ von",
+                "offsetValue": "",
+                "offsetType": "none",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "",
+                "timeMinType": "none",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "",
+                "timeMaxType": "none",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "closed (min)",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "validOperandAValue": "day.today.isWeekendOrHoliday",
+                "validOperandAType": "global",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:30</var></div><div>↕  Absolut <var>geschlossen (min)</var></div>"
+            },
+            {
+                "index": 4,
+                "name": "WochentagGeschlossen",
+                "isValid": true,
+                "valid": {
+                    "validTimeReg": true,
+                    "validLevel": true,
+                    "validOperand1A": true
+                },
+                "timeValue": "22:00",
+                "timeType": "entered",
+                "timeOp": 1,
+                "timeOpText": "↧ von",
+                "offsetValue": "",
+                "offsetType": "none",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "",
+                "timeMinType": "none",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "",
+                "timeMaxType": "none",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "closed (min)",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "validOperandAValue": "",
+                "validOperandAType": "none",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div>↕  Absolut <var>geschlossen (min)</var></div>"
+            }
+        ],
+        "sunControlMode": "0",
+        "sunFloorLength": "500",
+        "sunMinAltitude": "15",
+        "sunMinDelta": "5",
+        "blindPosMin": "25%",
+        "blindPosMinType": "levelFixed",
+        "blindPosMax": "open (max)",
+        "blindPosMaxType": "levelFixed",
+        "smoothTime": "",
+        "sunTopic": "SunShading",
+        "windowTop": "205",
+        "windowBottom": "100",
+        "windowAzimuthStart": "118",
+        "windowAzimuthEnd": "230",
+        "oversteerValue": "clouds",
+        "oversteerValueType": "msg",
+        "oversteerCompare": "gte",
+        "oversteerThreshold": "40",
+        "oversteerThresholdType": "num",
+        "oversteerBlindPos": "open (max)",
+        "oversteerBlindPosType": "levelFixed",
+        "oversteer2Value": "",
+        "oversteer2ValueType": "none",
+        "oversteer2Compare": "equal",
+        "oversteer2Threshold": "502",
+        "oversteer2ThresholdType": "num",
+        "oversteer2BlindPos": "25%",
+        "oversteer2BlindPosType": "levelFixed",
+        "oversteer3Value": "",
+        "oversteer3ValueType": "none",
+        "oversteer3Compare": "gte",
+        "oversteer3Threshold": "",
+        "oversteer3ThresholdType": "num",
+        "oversteer3BlindPos": "open (max)",
+        "oversteer3BlindPosType": "levelFixed",
+        "oversteerTopic": "CloudsOverwrite",
+        "x": 400,
+        "y": 1920,
+        "wires": [
+            [
+                "ff3966aa.bbc898",
+                "31ef75a9.d9e27a",
+                "c64a6a11.71f278",
+                "1a538972.87cf07"
+            ]
+        ]
+    },
+    {
+        "id": "1a538972.87cf07",
+        "type": "mqtt out",
+        "z": "7e5a345d.05161c",
+        "name": "ShutterPosition",
+        "topic": "cmnd/RolloTuere/ShutterPosition",
+        "qos": "",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 780,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "ff3966aa.bbc898",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "name": "Wohnz Rolladensteuerung Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "31ef75a9.d9e27a",
+        "type": "ui_text",
+        "z": "7e5a345d.05161c",
+        "group": "8e157408.1ce3a8",
+        "order": 2,
+        "width": "6",
+        "height": "2",
+        "name": "",
+        "label": "Status",
+        "format": "{{msg.blindCtrl.reason.description}}",
+        "layout": "row-center",
+        "x": 730,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "c64a6a11.71f278",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "name": "WohnzReason",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "blindCtrl.reason.description",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "5ff98951.59e088",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "20",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "cmnd/RolloEsstisch/ShutterPosition",
+        "payload": "20",
+        "payloadType": "num",
+        "x": 110,
+        "y": 2080,
+        "wires": [
+            [
+                "1a538972.87cf07"
+            ]
+        ]
+    },
+    {
+        "id": "81558e32.4aede",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "cmnd/RolloEsstisch/ShutterPosition",
+        "payload": "40",
+        "payloadType": "num",
+        "x": 110,
+        "y": 2120,
+        "wires": [
+            [
+                "1a538972.87cf07"
+            ]
+        ]
+    },
+    {
+        "id": "8e4390a2.51add",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "cmnd/RolloEsstisch/ShutterPosition",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 110,
+        "y": 2160,
+        "wires": [
+            [
+                "1a538972.87cf07"
+            ]
+        ]
+    },
+    {
+        "id": "ce2fc08.dce774",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "cmnd/RolloEsstisch/ShutterPosition",
+        "payload": "80",
+        "payloadType": "str",
+        "x": 110,
+        "y": 2200,
+        "wires": [
+            [
+                "1a538972.87cf07"
+            ]
+        ]
+    },
+    {
+        "id": "cfcad29b.0834",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "Open",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "cmnd/RolloEsstisch/ShutterPosition",
+        "payload": "100",
+        "payloadType": "str",
+        "x": 110,
+        "y": 2240,
+        "wires": [
+            [
+                "1a538972.87cf07"
+            ]
+        ]
     }
 ]
