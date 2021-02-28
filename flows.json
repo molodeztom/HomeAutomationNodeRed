@@ -42,13 +42,6 @@
         "info": ""
     },
     {
-        "id": "a550fc48.7ba33",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": ""
-    },
-    {
         "id": "b83af794.4bec68",
         "type": "group",
         "z": "9963931.9232c7",
@@ -312,9 +305,8 @@
     {
         "id": "19cf2a10.f9d4a6",
         "type": "mqtt-broker",
-        "z": "",
         "name": "",
-        "broker": "mosquitto",
+        "broker": "192.168.178.53/",
         "port": "1883",
         "clientid": "",
         "usetls": false,
@@ -337,19 +329,18 @@
     {
         "id": "e3f4c3e8.b52ee",
         "type": "influxdb",
-        "z": "",
         "hostname": "influxdb",
         "port": "8086",
         "protocol": "http",
         "database": "HomeAutomation",
         "name": "HomeAutomation",
         "usetls": false,
-        "tls": ""
+        "tls": "",
+        "influxdbVersion": "1.x"
     },
     {
         "id": "9a5a8534.25d4d8",
         "type": "position-config",
-        "z": "",
         "name": "HOME",
         "isValide": "true",
         "longitude": "0",
@@ -459,16 +450,14 @@
     {
         "id": "3778d06e.5d445",
         "type": "home-connect-auth",
-        "z": "",
         "name": "HomeConnectAuth",
         "simulation_mode": false,
-        "scope": "Dishwasher",
+        "scope": "Settings",
         "callback_url": "http://192.168.178.53:1880/homeconnect/auth/callback"
     },
     {
         "id": "b735724.619b39",
         "type": "ui_tab",
-        "z": "",
         "name": "Rollosteuerung",
         "icon": "dashboard",
         "order": 1,
@@ -486,7 +475,6 @@
     {
         "id": "8e157408.1ce3a8",
         "type": "ui_group",
-        "z": "",
         "name": "Wetter",
         "tab": "b735724.619b39",
         "order": 1,
@@ -497,7 +485,6 @@
     {
         "id": "99a4dc86.46d248",
         "type": "ui_group",
-        "z": "",
         "name": "Masterswitches",
         "tab": "258c6649.0213da",
         "order": 6,
@@ -508,7 +495,6 @@
     {
         "id": "b12941f.1cd05c",
         "type": "ui_group",
-        "z": "",
         "name": "Condition",
         "tab": "eb94216d.968598",
         "order": 5,
@@ -519,7 +505,6 @@
     {
         "id": "8da50f69.44fe38",
         "type": "ui_group",
-        "z": "",
         "name": "Wind",
         "tab": "eb94216d.968598",
         "order": 4,
@@ -530,7 +515,6 @@
     {
         "id": "5a4d76d2.5ae128",
         "type": "ui_group",
-        "z": "",
         "name": "Luftfeuchtigkeit",
         "tab": "258c6649.0213da",
         "order": 4,
@@ -541,7 +525,6 @@
     {
         "id": "14584712.7a2929",
         "type": "ui_group",
-        "z": "",
         "name": "Condition",
         "tab": "eb94216d.968598",
         "order": 2,
@@ -552,7 +535,6 @@
     {
         "id": "5e0d6747.b726b",
         "type": "ui_group",
-        "z": "",
         "name": "Forecast",
         "tab": "eb94216d.968598",
         "order": 6,
@@ -563,7 +545,6 @@
     {
         "id": "258c6649.0213da",
         "type": "ui_tab",
-        "z": "",
         "name": "Home",
         "icon": "home",
         "order": 1
@@ -571,19 +552,11 @@
     {
         "id": "eb94216d.968598",
         "type": "ui_tab",
-        "z": "",
         "name": "Wetterstation",
         "icon": "fa-thermometer-half",
         "order": 5,
         "disabled": false,
         "hidden": false
-    },
-    {
-        "id": "f1d00d27.bf03a",
-        "type": "ui_tab",
-        "name": "Tab 5",
-        "icon": "dashboard",
-        "order": 5
     },
     {
         "id": "ad5a1117.c1459",
@@ -597,7 +570,6 @@
     {
         "id": "17ad1f32.34c9c1",
         "type": "ui_group",
-        "z": "",
         "name": "Wohnzimmer Fenster",
         "tab": "b735724.619b39",
         "order": 2,
@@ -608,7 +580,6 @@
     {
         "id": "391335a9.6fc52a",
         "type": "ui_group",
-        "z": "",
         "name": "Esstisch",
         "tab": "b735724.619b39",
         "order": 3,
@@ -619,13 +590,55 @@
     {
         "id": "a8a74e77.bc32f",
         "type": "ui_group",
-        "z": "",
         "name": "Wohnzimmer Türe",
         "tab": "b735724.619b39",
         "order": 4,
         "disp": true,
         "width": "6",
         "collapse": false
+    },
+    {
+        "id": "1890881e.83819",
+        "type": "ui_group",
+        "name": "Col1",
+        "tab": "c3173234.2636e",
+        "order": 1,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "c5f1b8aa.45bc08",
+        "type": "ui_group",
+        "name": "Actions",
+        "tab": "c3173234.2636e",
+        "order": 4,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "9a96a8b1.92db78",
+        "type": "ui_group",
+        "name": "Col2",
+        "tab": "c3173234.2636e",
+        "order": 2,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "72fc319.cc425d",
+        "type": "ui_group",
+        "name": "Col3",
+        "tab": "c3173234.2636e",
+        "order": 3,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "c3173234.2636e",
+        "type": "ui_tab",
+        "name": "RPi Control",
+        "icon": "dashboard",
+        "order": 1
     },
     {
         "id": "49e2646f.c4941c",
@@ -4201,8 +4214,8 @@
         "z": "8c0dc70a.3a1008",
         "auth": "3778d06e.5d445",
         "name": "Spülmaschine",
-        "tag": "status_events",
-        "operationId": "get_status",
+        "tag": "settings",
+        "operationId": "get_settings",
         "haid": "011010386568004449",
         "body": "",
         "optionkey": "",
@@ -4256,23 +4269,7 @@
         "y": 100,
         "wires": [
             [
-                "b20b772d.b858d8",
-                "541926fd.840d58"
-            ]
-        ]
-    },
-    {
-        "id": "115371e9.b0d62e",
-        "type": "home-connect-event",
-        "z": "8c0dc70a.3a1008",
-        "auth": "3778d06e.5d445",
-        "name": "IDDishwasher",
-        "haid": "011010386568004449",
-        "x": 420,
-        "y": 220,
-        "wires": [
-            [
-                "dec25022.30146"
+                "b20b772d.b858d8"
             ]
         ]
     },
@@ -4310,7 +4307,9 @@
         "x": 250,
         "y": 300,
         "wires": [
-            []
+            [
+                "dec25022.30146"
+            ]
         ]
     },
     {
@@ -4856,11 +4855,12 @@
                 "levelOpText": "↕  Absolut",
                 "topic": "Weather Snow Condition",
                 "importance": 0,
+                "resetOverwrite": false,
                 "validOperandAValue": "WeatherID",
                 "validOperandAType": "msg",
                 "validOperator": "gte",
                 "validOperatorText": ">=",
-                "validOperandBValue": "601",
+                "validOperandBValue": "602",
                 "validOperandBType": "num",
                 "valid2LogOperator": 2,
                 "valid2LogOperatorText": "und",
@@ -4870,7 +4870,7 @@
                 "valid2OperatorText": "<",
                 "valid2OperandBValue": "700",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 601<br/><strong>und</strong> <var>msg.WeatherID</var> < 700</div><div>↕  Absolut <var>50%</var><div class=\"indent-topic-text\"> <span>Topic: </span> <var>Weather Snow Condition</var></div></div>",
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 602<br/><strong>und</strong> <var>msg.WeatherID</var> < 700</div><div>↕  Absolut <var>50%</var><div class=\"indent-topic-text\"> <span>Topic:</span> <var>Weather Snow Condition</var></div></div>",
                 "timeMinOp": 0,
                 "timeMaxOp": 0
             },
@@ -4879,7 +4879,7 @@
                 "name": "AbendsFastZu",
                 "isValid": false,
                 "valid": {},
-                "timeValue": "goldenHourDuskStart",
+                "timeValue": "sunsetStart",
                 "timeType": "pdsTime",
                 "timeOp": 1,
                 "timeOpText": "↧ von",
@@ -4902,12 +4902,13 @@
                 "offsetMaxValue": "",
                 "offsetMaxType": "none",
                 "multiplierMax": 60000,
-                "levelValue": "75%",
+                "levelValue": "66%",
                 "levelType": "levelFixed",
                 "levelOp": 0,
                 "levelOpText": "↕  Absolut",
                 "topic": "",
                 "importance": 0,
+                "resetOverwrite": false,
                 "validOperandAValue": "",
                 "validOperandAType": "none",
                 "validOperator": "true",
@@ -4922,7 +4923,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Goldene Abendstunde Begin</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>15:30</var></div></div><div>↕  Absolut <var>75%</var></div>",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Begin</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>15:30</var></div></div><div>↕  Absolut <var>66%</var></div>",
                 "timeMinOp": 0,
                 "timeMaxOp": 0
             },
@@ -4980,8 +4981,8 @@
             }
         ],
         "sunControlMode": "2",
-        "sunFloorLength": "800",
-        "sunMinAltitude": "2",
+        "sunFloorLength": "330",
+        "sunMinAltitude": "14",
         "sunMinDelta": "5",
         "blindPosMin": "25%",
         "blindPosMinType": "levelFixed",
@@ -4991,12 +4992,12 @@
         "sunTopic": "SunShading",
         "windowTop": "205",
         "windowBottom": "100",
-        "windowAzimuthStart": "208",
+        "windowAzimuthStart": "206",
         "windowAzimuthEnd": "245",
         "oversteerValue": "clouds",
         "oversteerValueType": "msg",
         "oversteerCompare": "gte",
-        "oversteerThreshold": "50",
+        "oversteerThreshold": "25",
         "oversteerThresholdType": "num",
         "oversteerBlindPos": "open (max)",
         "oversteerBlindPosType": "levelFixed",
@@ -5318,7 +5319,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "Esstisch Steuerung Output",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5645,552 +5646,6 @@
         ]
     },
     {
-        "id": "eb760bbb.8e5ec",
-        "type": "inject",
-        "z": "a550fc48.7ba33",
-        "name": "Refresh Timer",
-        "repeat": "3600",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "",
-        "topic": "Refresh Timer",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 140,
-        "y": 180,
-        "wires": [
-            [
-                "e54c1170.c13488",
-                "f6657c5c.2621a8"
-            ]
-        ]
-    },
-    {
-        "id": "74cb77c.92dd108",
-        "type": "ui_button",
-        "z": "a550fc48.7ba33",
-        "name": "Weather Refresh",
-        "group": "99a4dc86.46d248",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Aktualisieren",
-        "tooltip": "Wetterdaten aktualisieren",
-        "color": "",
-        "bgcolor": "",
-        "icon": "fa-refresh",
-        "payload": "true",
-        "payloadType": "bool",
-        "topic": "",
-        "x": 110,
-        "y": 260,
-        "wires": [
-            [
-                "e54c1170.c13488",
-                "f6657c5c.2621a8"
-            ]
-        ]
-    },
-    {
-        "id": "4d90e53a.37962c",
-        "type": "ui_text",
-        "z": "a550fc48.7ba33",
-        "group": "b12941f.1cd05c",
-        "order": 1,
-        "width": "4",
-        "height": "1",
-        "name": "Condition Txt",
-        "label": "",
-        "format": "{{msg.payload.detail}}",
-        "layout": "row-center",
-        "x": 990,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "89a4bed9.5b467",
-        "type": "function",
-        "z": "a550fc48.7ba33",
-        "name": "Prepare Dashboard Data",
-        "func": "var windDirection = {};\nvar windDirectionIcon = {};\nvar windSpeed = {};\nvar windSpeedIcon = {};\nvar sunRise = {};\nvar sunSet = {};\nvar conditionIcon = {};\nvar date = new Date ();\n\n/* function for converting meteorogical degree to text */\n\nvar degToCard = function(deg){\nif (deg>11.25 && deg<=33.75){\nreturn \"Nord-Nord-Ost\";\n  }else if (deg>33.75 && deg<56.25){\nreturn \"Nord-Ost\";\n  }else if (deg>56.25 && deg<78.75){\nreturn \"Ost-Nord-Ost\";\n  }else if (deg>78.75 && deg<101.25){\nreturn \"Ost\";\n  }else if (deg>101.25 && deg<123.75){\nreturn \"Ost-Süd-Ost\";\n  }else if (deg>123.75 && deg<146.25){\nreturn \"Süd-Ost\";\n  }else if (deg>146.25 && deg<168.75){\nreturn \"Süd-Süd-Ost\";\n  }else if (deg>168.75 && deg<191.25){\nreturn \"Süd\";\n  }else if (deg>191.25 && deg<213.75){\nreturn \"Süd-Süd-West\";\n  }else if (deg>213.75 && deg<236.25){\nreturn \"Süd-West\";\n  }else if (deg>236.25 && deg<258.75){\nreturn \"West-Süd-West\";\n  }else if (deg>258.75 && deg<281.25){\nreturn \"West\";\n  }else if (deg>281.25 && deg<303.75){\nreturn \"West-Nord-West\";\n  }else if (deg>303.75 && deg<326.25){\nreturn \"Nord-West\";\n  }else if (deg>326.25 && deg<348.75){\nreturn \"Nord-Nord-West\";\n  }else{\nreturn \"Nord\"; \n  }\n}\n\n/* function for converting meteorogical degree to weather icons */\n\nvar degToCardIcon = function(deg){\nif (deg>11.25 && deg<=33.75){\nreturn \"wi-from-nne\";\n  }else if (deg>33.75 && deg<56.25){\nreturn \"wi-from-ne\";\n  }else if (deg>56.25 && deg<78.75){\nreturn \"wi-from-ene\";\n  }else if (deg>78.75 && deg<101.25){\nreturn \"wi-from-e\";\n  }else if (deg>101.25 && deg<123.75){\nreturn \"wi-from-ese\";\n  }else if (deg>123.75 && deg<146.25){\nreturn \"wi-from-se\";\n  }else if (deg>146.25 && deg<168.75){\nreturn \"wi-from-sse\";\n  }else if (deg>168.75 && deg<191.25){\nreturn \"wi-from-s\";\n  }else if (deg>191.25 && deg<213.75){\nreturn \"wi-from-ssw\";\n  }else if (deg>213.75 && deg<236.25){\nreturn \"wi-from-sw\";\n  }else if (deg>236.25 && deg<258.75){\nreturn \"wi-from-wsw\";\n  }else if (deg>258.75 && deg<281.25){\nreturn \"wi-from-w\";\n  }else if (deg>281.25 && deg<303.75){\nreturn \"wi-from-wnw\";\n  }else if (deg>303.75 && deg<326.25){\nreturn \"wi-from-nw\";\n  }else if (deg>326.25 && deg<348.75){\nreturn \"wi-from-nnw\";\n  }else{\nreturn \"wi-from-n\"; \n  }\n}\n\n/* Function for converting wind speed into Beaufort scale icon */\n\nvar speedToCardIcon = function(speed){\nif (speed>0.5 && speed<=1.5){\nreturn \"wi-wind-beaufort-1\";\n  }else if (speed>1.5 && speed<=3.3){\nreturn \"wi-wind-beaufort-2\";\n  }else if (speed>3.3 && speed<=5.5){\nreturn \"wi-wind-beaufort-3\";\n  }else if (speed>5.5 && speed<=7.9){\nreturn \"wi-wind-beaufort-4\";\n  }else if (speed>7.9 && speed<=10.7){\nreturn \"wi-wind-beaufort-5\";\n  }else if (speed>10.7 && speed<=13.8){\nreturn \"wi-wind-beaufort-6\";\n  }else if (speed>13.8 && speed<=17.1){\nreturn \"wi-wind-beaufort-7\";\n  }else if (speed>17.1 && speed<=20.7){\nreturn \"wi-wind-beaufort-8\";\n  }else if (speed>20.7 && speed<=24.4){\nreturn \"wi-wind-beaufort-9\";\n  }else if (speed>24.4 && speed<=28.4){\nreturn \"wi-wind-beaufort-10\";\n  }else if (speed>28.4 && speed<=32.6){\nreturn \"wi-wind-beaufort-11\";\n  }else if (speed>32.6){\nreturn \"wi-wind-beaufort-12\";\n  }else{\nreturn \"wi-wind-beaufort-0\"; \n  }\n}\n\n/* Function for Time Conversions */\n\nfunction timeConverter(UNIX_timestamp){\n  var a = new Date(UNIX_timestamp * 1000);\n  var hour = a.getHours();\n  var min = a.getMinutes();\n  if (min < 10) {min = \"0\" + min;}\n    else {min = min;}\n  var sec = a.getSeconds();\n  if (sec < 10) {sec = \"0\" + sec;}\n    else {sec = sec;}\n    \n  var time = hour + ':' + min + ':' + sec ;\n  return time;\n}\n\n/* Convert OpenWeeather Map Icon to https://erikflowers.github.io/weather-icons/ */\n\nconst owIconMap = new Map();\n\nowIconMap.set('01d', 'wi-day-sunny'); // clear sky\nowIconMap.set('02d', 'wi-day-cloudy'); // few clouds\nowIconMap.set('03d', 'wi-cloud'); // scattered clouds\nowIconMap.set('04d', 'wi-cloudy'); // broken clouds\nowIconMap.set('09d', 'wi-day-showers'); // shower rain\nowIconMap.set('10d', 'wi-day-rain'); // rain\nowIconMap.set('11d', 'wi-thunderstorm'); // thunderstorm\nowIconMap.set('13d', 'wi-snow'); // snow\nowIconMap.set('50d', 'wi-fog'); // mist\nowIconMap.set('01n', 'wi-night-clear'); // clear sky\nowIconMap.set('02n', 'wi-night-alt-cloudy'); // few clouds\nowIconMap.set('03n', 'wi-cloud'); // scattered clouds\nowIconMap.set('04n', 'wi-cloudy'); // broken clouds\nowIconMap.set('09n', 'wi-night-alt-showers'); // shower rain\nowIconMap.set('10n', 'wi-night-alt-rain'); // rain\nowIconMap.set('11n', 'wi-thunderstorm'); // thunderstorm\nowIconMap.set('13n', 'wi-snow'); // snow\nowIconMap.set('50n', 'wi-fog'); // mist\n\nconditionIcon.topic = \"ConditionIcon\";\nconditionIcon.payload = owIconMap.get(msg.payload.icon);\n\nwindDirection.topic = \"WindDirection\";\nwindDirection.payload = degToCard(msg.payload.winddirection);\n\nwindDirectionIcon.topic = \"WindDirectionIcon\";\nwindDirectionIcon.payload = degToCardIcon(msg.payload.winddirection);\n\nwindSpeed.topic = \"WindSpeed\";\nwindSpeed.payload = msg.payload.windspeed +  \" m/s\"; /* \" + windDirection.payload; */\n\nwindSpeedIcon.topic = \"WindSpeedIcon\";\nwindSpeedIcon.payload = speedToCardIcon(msg.payload.windspeed);\n\nsunRise.topic = \"SunRise\";\nsunRise.payload = timeConverter(msg.payload.sunrise);\n\nsunSet.topic = \"SunRet\";\nsunSet.payload = timeConverter(msg.payload.sunset);\n\nowIconMap.clear(); //freeing resource\n\nreturn [conditionIcon, windSpeedIcon, windSpeed, windDirection, windDirectionIcon, sunRise, sunSet];",
-        "outputs": 7,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 680,
-        "y": 340,
-        "wires": [
-            [
-                "d0990bb3.6ee1f8"
-            ],
-            [
-                "6bfd9bef.141194"
-            ],
-            [
-                "49e2e33e.486c14"
-            ],
-            [],
-            [
-                "a8c65467.d3352"
-            ],
-            [
-                "393c1d0b.05766a"
-            ],
-            [
-                "d2011150.f678f"
-            ]
-        ]
-    },
-    {
-        "id": "49e2e33e.486c14",
-        "type": "ui_text",
-        "z": "a550fc48.7ba33",
-        "group": "8da50f69.44fe38",
-        "order": 2,
-        "width": "2",
-        "height": "1",
-        "name": "WindSpeed",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "x": 980,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "393c1d0b.05766a",
-        "type": "ui_text",
-        "z": "a550fc48.7ba33",
-        "group": "5a4d76d2.5ae128",
-        "order": 4,
-        "width": "2",
-        "height": "1",
-        "name": "Sunrise",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "x": 970,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "d2011150.f678f",
-        "type": "ui_text",
-        "z": "a550fc48.7ba33",
-        "group": "5a4d76d2.5ae128",
-        "order": 6,
-        "width": "2",
-        "height": "1",
-        "name": "Sunset",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "x": 970,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "a767f2cc.5f3478",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "5a4d76d2.5ae128",
-        "name": "Sunrise Icon",
-        "order": 3,
-        "width": "1",
-        "height": "1",
-        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: left;align-items: center;\">\n<i class=\"fa-2x wi wi-sunrise\"></i>\n</div> ",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 980,
-        "y": 440,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7dfa615d.50546",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "5a4d76d2.5ae128",
-        "name": "Sunset Icon",
-        "order": 5,
-        "width": "1",
-        "height": "1",
-        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: left;align-items: center;\">\n<i class=\"fa-2x wi wi-sunset\"></i>\n</div> ",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 980,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a8c65467.d3352",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "8da50f69.44fe38",
-        "name": "WindDirection icon",
-        "order": 3,
-        "width": "1",
-        "height": "1",
-        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons-wind.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-2x wi wi-wind {{msg.payload}}\"></i>\n</div> ",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 1000,
-        "y": 380,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e54c1170.c13488",
-        "type": "openweathermap",
-        "z": "a550fc48.7ba33",
-        "name": "Current Weather",
-        "wtype": "current",
-        "lon": "11.061859",
-        "lat": "49.460983",
-        "city": "",
-        "country": "",
-        "language": "de",
-        "x": 370,
-        "y": 180,
-        "wires": [
-            [
-                "89a4bed9.5b467",
-                "4d90e53a.37962c"
-            ]
-        ]
-    },
-    {
-        "id": "6bfd9bef.141194",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "8da50f69.44fe38",
-        "name": "WindSpeed Icon",
-        "order": 1,
-        "width": "1",
-        "height": "1",
-        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons-wind.css\">\n<div style=\"display: flex;height: 100%;justify-content: left;align-items: center;\">\n<i class=\"fa-2x wi wi-wind {{msg.payload}}\"></i>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 1000,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "480a6cbf.880804",
-        "type": "debug",
-        "z": "a550fc48.7ba33",
-        "name": "Forecast debug",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "x": 990,
-        "y": 980,
-        "wires": []
-    },
-    {
-        "id": "5af8efb7.126a98",
-        "type": "comment",
-        "z": "a550fc48.7ba33",
-        "name": "Open Weather API für aktuelles Wetter und Forecast",
-        "info": "",
-        "x": 480,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "d0990bb3.6ee1f8",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "14584712.7a2929",
-        "name": "Condition Icon",
-        "order": 1,
-        "width": "2",
-        "height": "2",
-        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-4x wi {{msg.payload}}\"></i>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 990,
-        "y": 220,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f6657c5c.2621a8",
-        "type": "openweathermap",
-        "z": "a550fc48.7ba33",
-        "name": "5 Day Forecast",
-        "wtype": "forecast",
-        "lon": "11.061859",
-        "lat": "49.460983",
-        "city": "",
-        "country": "",
-        "language": "de",
-        "x": 350,
-        "y": 640,
-        "wires": [
-            [
-                "25b2dc06.cd7bdc",
-                "e58a247.3094b58",
-                "c5b71946.ca4de",
-                "480a6cbf.880804"
-            ]
-        ]
-    },
-    {
-        "id": "25b2dc06.cd7bdc",
-        "type": "function",
-        "z": "a550fc48.7ba33",
-        "name": "Prepare Forecast Icon",
-        "func": "var wfcIcon1 = {};\nvar wfcIcon2 = {}; \nvar wfcIcon3 = {};\nvar wfcIcon4 = {};\nvar wfcIcon5 = {};\nvar wfcIcon6 = {};\nvar wfcIcon7 = {};\nvar wfcIcon8 = {};\n\n\nvar date = new Date ();\n\n/* Function for Time Conversions */\n\nfunction timeConverter(UNIX_timestamp){\n  var a = new Date(UNIX_timestamp * 1000);\n  var hour = a.getHours();\n  var min = a.getMinutes();\n  if (min < 10) {min = \"0\" + min;}\n    else {min = min;}\n  var sec = a.getSeconds();\n  if (sec < 10) {sec = \"0\" + sec;}\n    else {sec = sec;}\n    \n  var time = hour + ':' + min; /* + ':' + sec ;*/\n  return time;\n}\n\n/* Convert OpenWeeather Map Icon to https://erikflowers.github.io/weather-icons/ */\n\nconst owIconMap = new Map();\n\nowIconMap.set('01d', 'wi-day-sunny'); // clear sky\nowIconMap.set('02d', 'wi-day-cloudy'); // few clouds\nowIconMap.set('03d', 'wi-cloud'); // scattered clouds\nowIconMap.set('04d', 'wi-cloudy'); // broken clouds\nowIconMap.set('09d', 'wi-day-showers'); // shower rain\nowIconMap.set('10d', 'wi-day-rain'); // rain\nowIconMap.set('11d', 'wi-thunderstorm'); // thunderstorm\nowIconMap.set('13d', 'wi-snow'); // snow\nowIconMap.set('50d', 'wi-fog'); // mist\nowIconMap.set('01n', 'wi-night-clear'); // clear sky\nowIconMap.set('02n', 'wi-night-alt-cloudy'); // few clouds\nowIconMap.set('03n', 'wi-cloud'); // scattered clouds\nowIconMap.set('04n', 'wi-cloudy'); // broken clouds\nowIconMap.set('09n', 'wi-night-alt-showers'); // shower rain\nowIconMap.set('10n', 'wi-night-alt-rain'); // rain\nowIconMap.set('11n', 'wi-thunderstorm'); // thunderstorm\nowIconMap.set('13n', 'wi-snow'); // snow\nowIconMap.set('50n', 'wi-fog'); // mist\n\nwfcIcon1.topic = msg.payload[0].dt_txt;\nwfcIcon1.payload = owIconMap.get(msg.payload[0].weather[0].icon);\n\nwfcIcon2.topic = msg.payload[1].dt_txt;\nwfcIcon2.payload = owIconMap.get(msg.payload[1].weather[0].icon);\n\nwfcIcon3.topic = msg.payload[2].dt_txt;\nwfcIcon3.payload = owIconMap.get(msg.payload[2].weather[0].icon);\n\nwfcIcon4.topic = msg.payload[3].dt_txt;\nwfcIcon4.payload = owIconMap.get(msg.payload[3].weather[0].icon);\n\nwfcIcon5.topic = msg.payload[4].dt_txt;\nwfcIcon5.payload = owIconMap.get(msg.payload[4].weather[0].icon);\n\nwfcIcon6.topic = msg.payload[5].dt_txt;\nwfcIcon6.payload = owIconMap.get(msg.payload[5].weather[0].icon);\n\nwfcIcon7.topic = msg.payload[6].dt_txt;\nwfcIcon7.payload = owIconMap.get(msg.payload[6].weather[0].icon);\n\nwfcIcon8.topic = msg.payload[7].dt_txt;\nwfcIcon8.payload = owIconMap.get(msg.payload[7].weather[0].icon);\n\n\nowIconMap.clear(); //freeing resource\n\nreturn [wfcIcon1, wfcIcon2, wfcIcon3, wfcIcon4, wfcIcon5, wfcIcon6, wfcIcon7, wfcIcon8];",
-        "outputs": 8,
-        "noerr": 0,
-        "x": 690,
-        "y": 700,
-        "wires": [
-            [
-                "39139188.be2256"
-            ],
-            [
-                "c24820ec.48ca8"
-            ],
-            [
-                "764a58c0.442438"
-            ],
-            [
-                "6eab6954.c57d38"
-            ],
-            [
-                "c756059d.18796"
-            ],
-            [
-                "53046826.3645"
-            ],
-            [
-                "229014e6.b0e14c"
-            ],
-            [
-                "fd1a001d.2fc35"
-            ]
-        ]
-    },
-    {
-        "id": "39139188.be2256",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "5e0d6747.b726b",
-        "name": "WFc Icon 1",
-        "order": 2,
-        "width": "1",
-        "height": "1",
-        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 980,
-        "y": 640,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c24820ec.48ca8",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "5e0d6747.b726b",
-        "name": "WFc Icon 2",
-        "order": 3,
-        "width": "1",
-        "height": "1",
-        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 980,
-        "y": 680,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "764a58c0.442438",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "5e0d6747.b726b",
-        "name": "WFc Icon 3",
-        "order": 4,
-        "width": "1",
-        "height": "1",
-        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 980,
-        "y": 720,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6eab6954.c57d38",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "5e0d6747.b726b",
-        "name": "WFc Icon 4",
-        "order": 5,
-        "width": "1",
-        "height": "1",
-        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 980,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c756059d.18796",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "5e0d6747.b726b",
-        "name": "WFc Icon 5",
-        "order": 6,
-        "width": "1",
-        "height": "1",
-        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 980,
-        "y": 800,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "53046826.3645",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "5e0d6747.b726b",
-        "name": "WFc Icon 6",
-        "order": 7,
-        "width": "1",
-        "height": "1",
-        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 980,
-        "y": 840,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "229014e6.b0e14c",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "5e0d6747.b726b",
-        "name": "WFc Icon 7",
-        "order": 8,
-        "width": "1",
-        "height": "1",
-        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 980,
-        "y": 880,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fd1a001d.2fc35",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "5e0d6747.b726b",
-        "name": "WFc Icon 8",
-        "order": 9,
-        "width": "1",
-        "height": "1",
-        "format": "<link rel=\"stylesheet\" href=\"/weather-icons/mycss/weather-icons.min.css\">\n<div style=\"display: flex;height: 100%;justify-content: center;align-items: center;\">\n<i class=\"fa-1x wi {{msg.payload}}\"></i>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 980,
-        "y": 920,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e58a247.3094b58",
-        "type": "function",
-        "z": "a550fc48.7ba33",
-        "name": "Prepare Forecast Data",
-        "func": "var fcdata = {};\n\nfcdata.payload = {\n  forecast: {\n    dt00: {\n      dt_txt: msg.payload[0].dt_txt,\n      temp_min: msg.payload[0].main.temp_min,\n      temp_max: msg.payload[0].main.temp_max,\n      temp: msg.payload[0].main.temp,\n      desc: msg.payload[0].weather[0].description\n    },\n    dt01: {\n      dt_txt: msg.payload[1].dt_txt,\n      temp_min: msg.payload[1].main.temp_min,\n      temp_max: msg.payload[1].main.temp_max,\n      temp: msg.payload[1].main.temp,\n      desc: msg.payload[1].weather[0].description\n    },\n    dt02: {\n      dt_txt: msg.payload[2].dt_txt,\n      temp_min: msg.payload[2].main.temp_min,\n      temp_max: msg.payload[2].main.temp_max,\n      temp: msg.payload[2].main.temp,\n      desc: msg.payload[2].weather[0].description\n    },\n    dt03: {\n      dt_txt: msg.payload[3].dt_txt,\n      temp_min: msg.payload[3].main.temp_min,\n      temp_max: msg.payload[3].main.temp_max,\n      temp: msg.payload[3].main.temp,\n      desc: msg.payload[3].weather[0].description\n    },\n    dt04: {\n      dt_txt: msg.payload[4].dt_txt,\n      temp_min: msg.payload[4].main.temp_min,\n      temp_max: msg.payload[4].main.temp_max,\n      temp: msg.payload[4].main.temp,\n      desc: msg.payload[4].weather[0].description\n    },\n    dt05: {\n      dt_txt: msg.payload[5].dt_txt,\n      temp_min: msg.payload[5].main.temp_min,\n      temp_max: msg.payload[5].main.temp_max,\n      temp: msg.payload[5].main.temp,\n      desc: msg.payload[5].weather[0].description\n    },\n    dt06: {\n      dt_txt: msg.payload[6].dt_txt,\n      temp_min: msg.payload[6].main.temp_min,\n      temp_max: msg.payload[6].main.temp_max,\n      temp: msg.payload[6].main.temp,\n      desc: msg.payload[6].weather[0].description\n    },\n    dt07: {\n      dt_txt: msg.payload[7].dt_txt,\n      temp_min: msg.payload[7].main.temp_min,\n      temp_max: msg.payload[7].main.temp_max,\n      temp: msg.payload[7].main.temp,\n      desc: msg.payload[7].weather[0].description\n    }\n  }\n}\n\n\n\nreturn fcdata;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 690,
-        "y": 980,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "770400c.08ade8",
-        "type": "ui_template",
-        "z": "a550fc48.7ba33",
-        "group": "5e0d6747.b726b",
-        "name": "Forecast",
-        "order": 1,
-        "width": "8",
-        "height": "1",
-        "format": "<div layout=\"row\" layout-align=\"space-around start\" ng-repeat=\"data in msg.payload.row\">\n  <span flex style=\"color: white\">{{data.cell01}}</span>\n  <span flex style=\"color: white\">{{data.cell02}}</span>\n  <span flex style=\"color: white\">{{data.cell03}}</span>\n  <span flex style=\"color: white\">{{data.cell04}}</span>\n  <span flex style=\"color: white\">{{data.cell05}}</span>\n  <span flex style=\"color: white\">{{data.cell06}}</span>\n  <span flex style=\"color: white\">{{data.cell07}}</span>\n  <span flex style=\"color: white\">{{data.cell08}}</span>\n</div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 970,
-        "y": 1100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c5b71946.ca4de",
-        "type": "function",
-        "z": "a550fc48.7ba33",
-        "name": "Prepare forecast for UI widget",
-        "func": "var fcdata = {};\n\n// prepare forecast data for CSS based ui widget\n\nfcdata.payload = {\n  row: {\n  \tdata01: {\n  \t\tcell01: msg.payload[0].dt_txt.substring(11, 16),\n  \t\tcell02: msg.payload[1].dt_txt.substring(11, 16),\n  \t\tcell03: msg.payload[2].dt_txt.substring(11, 16),\n  \t\tcell04: msg.payload[3].dt_txt.substring(11, 16),\n  \t\tcell05: msg.payload[4].dt_txt.substring(11, 16),\n  \t\tcell06: msg.payload[5].dt_txt.substring(11, 16),\n  \t\tcell07: msg.payload[6].dt_txt.substring(11, 16),\n  \t\tcell08: msg.payload[7].dt_txt.substring(11, 16)\n  \t},\n  \tdata02: {\n  \t\tcell01: msg.payload[0].main.temp,\n  \t\tcell02: msg.payload[1].main.temp,\n  \t\tcell03: msg.payload[2].main.temp,\n  \t\tcell04: msg.payload[3].main.temp,\n  \t\tcell05: msg.payload[4].main.temp,\n  \t\tcell06: msg.payload[5].main.temp,\n  \t\tcell07: msg.payload[6].main.temp,\n  \t\tcell08: msg.payload[7].main.temp\n  \t}\n  }\n}\n\nreturn fcdata;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 730,
-        "y": 1120,
-        "wires": [
-            [
-                "770400c.08ade8"
-            ]
-        ]
-    },
-    {
         "id": "fd0a15dc.298558",
         "type": "ui_text",
         "z": "7e5a345d.05161c",
@@ -6258,7 +5713,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "setSunDataMinAltitude",
-        "payload": "40",
+        "payload": "10",
         "payloadType": "num",
         "x": 470,
         "y": 680,
@@ -6602,11 +6057,12 @@
                 "levelOpText": "↕  Absolut",
                 "topic": "Weather Snow Condition",
                 "importance": 0,
+                "resetOverwrite": false,
                 "validOperandAValue": "WeatherID",
                 "validOperandAType": "msg",
                 "validOperator": "gte",
                 "validOperatorText": ">=",
-                "validOperandBValue": "601",
+                "validOperandBValue": "602",
                 "validOperandBType": "num",
                 "valid2LogOperator": 2,
                 "valid2LogOperatorText": "und",
@@ -6616,7 +6072,7 @@
                 "valid2OperatorText": "<",
                 "valid2OperandBValue": "700",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 601<br/><strong>und</strong> <var>msg.WeatherID</var> < 700</div><div>↕  Absolut <var>50%</var><div class=\"indent-topic-text\"> <span>Topic: </span> <var>Weather Snow Condition</var></div></div>",
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 602<br/><strong>und</strong> <var>msg.WeatherID</var> < 700</div><div>↕  Absolut <var>50%</var><div class=\"indent-topic-text\"> <span>Topic:</span> <var>Weather Snow Condition</var></div></div>",
                 "timeMinOp": 0,
                 "timeMaxOp": 0
             },
@@ -6629,7 +6085,7 @@
                 "timeType": "pdsTime",
                 "timeOp": 1,
                 "timeOpText": "↧ von",
-                "offsetValue": "10",
+                "offsetValue": "20",
                 "offsetType": "num",
                 "multiplier": 60000,
                 "timeDays": "*",
@@ -6669,7 +6125,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Begin</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>15:30</var></div></div><div>↕  Absolut <var>75%</var></div>",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Begin</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>15:30</var></div></div><div>↕  Absolut <var>75%</var></div>",
                 "timeMinOp": 0,
                 "timeMaxOp": 0
             },
@@ -6727,10 +6183,10 @@
             }
         ],
         "sunControlMode": "2",
-        "sunFloorLength": "500",
-        "sunMinAltitude": "15",
+        "sunFloorLength": "300",
+        "sunMinAltitude": "5",
         "sunMinDelta": "5",
-        "blindPosMin": "25%",
+        "blindPosMin": "10%",
         "blindPosMinType": "levelFixed",
         "blindPosMax": "open (max)",
         "blindPosMaxType": "levelFixed",
@@ -6738,12 +6194,12 @@
         "sunTopic": "SunShading",
         "windowTop": "205",
         "windowBottom": "100",
-        "windowAzimuthStart": "118",
-        "windowAzimuthEnd": "230",
+        "windowAzimuthStart": "153",
+        "windowAzimuthEnd": "210",
         "oversteerValue": "clouds",
         "oversteerValueType": "msg",
         "oversteerCompare": "gte",
-        "oversteerThreshold": "40",
+        "oversteerThreshold": "25",
         "oversteerThresholdType": "num",
         "oversteerBlindPos": "open (max)",
         "oversteerBlindPosType": "levelFixed",
@@ -7491,13 +6947,17 @@
             {
                 "index": 2,
                 "name": "SonnenuntergangZu",
-                "isValid": false,
-                "valid": {},
+                "isValid": true,
+                "valid": {
+                    "validTimeReg": 60000,
+                    "validLevel": true,
+                    "validOperand1A": true
+                },
                 "timeValue": "sunset",
                 "timeType": "pdsTime",
                 "timeOp": 1,
                 "timeOpText": "↧ von",
-                "offsetValue": "0",
+                "offsetValue": "30",
                 "offsetType": "num",
                 "multiplier": 60000,
                 "timeDays": "*",
@@ -7537,16 +6997,14 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:30</var></div></div><div>↕  Absolut <var>33%</var></div>",
-                "timeMinOp": 0,
-                "timeMaxOp": 0
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:30<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:30</var></div></div><div>↕  Absolut <var>33%</var></div>"
             },
             {
                 "index": 3,
                 "name": "WochenendeGeschlossen",
                 "isValid": false,
                 "valid": {},
-                "timeValue": "22:30",
+                "timeValue": "22:00",
                 "timeType": "entered",
                 "timeOp": 1,
                 "timeOpText": "↧ von",
@@ -7590,7 +7048,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:30</var></div><div>↕  Absolut <var>geschlossen (min)</var></div>",
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div>↕  Absolut <var>geschlossen (min)</var></div>",
                 "timeMinOp": 0,
                 "timeMaxOp": 0
             },
@@ -7599,7 +7057,7 @@
                 "name": "WochentagGeschlossen",
                 "isValid": false,
                 "valid": {},
-                "timeValue": "22:00",
+                "timeValue": "21:45",
                 "timeType": "entered",
                 "timeOp": 1,
                 "timeOpText": "↧ von",
@@ -7643,7 +7101,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div>↕  Absolut <var>geschlossen (min)</var></div>",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>21:45</var></div><div>↕  Absolut <var>geschlossen (min)</var></div>",
                 "timeMinOp": 0,
                 "timeMaxOp": 0
             }
