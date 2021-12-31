@@ -124,12 +124,17 @@
             "8583dd1c.64052",
             "97b9ac13.ca45c",
             "cb6213d.83258f",
-            "130dd598.a91e6a"
+            "130dd598.a91e6a",
+            "3c079b7c.3bb374",
+            "a0fe78c.bc5a188",
+            "4f746528.3b88cc",
+            "8823d2b3.3d2ab",
+            "d715f111.57f18"
         ],
-        "x": 14,
-        "y": 619,
-        "w": 472,
-        "h": 502
+        "x": 24,
+        "y": 639,
+        "w": 842,
+        "h": 562
     },
     {
         "id": "584f76f1.996908",
@@ -965,8 +970,8 @@
         "qos": "0",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 340,
-        "y": 660,
+        "x": 740,
+        "y": 920,
         "wires": []
     },
     {
@@ -988,7 +993,7 @@
         "payload": "4",
         "payloadType": "num",
         "x": 120,
-        "y": 900,
+        "y": 920,
         "wires": [
             [
                 "17a551f9.bcd59e"
@@ -1014,7 +1019,7 @@
         "payload": "5",
         "payloadType": "num",
         "x": 120,
-        "y": 960,
+        "y": 980,
         "wires": [
             [
                 "17a551f9.bcd59e"
@@ -1040,7 +1045,7 @@
         "payload": "3",
         "payloadType": "num",
         "x": 120,
-        "y": 840,
+        "y": 860,
         "wires": [
             [
                 "17a551f9.bcd59e"
@@ -1070,7 +1075,7 @@
         "payload": "0",
         "payloadType": "str",
         "x": 130,
-        "y": 660,
+        "y": 680,
         "wires": [
             [
                 "17a551f9.bcd59e"
@@ -1096,7 +1101,7 @@
         "payload": "2",
         "payloadType": "num",
         "x": 120,
-        "y": 780,
+        "y": 800,
         "wires": [
             [
                 "17a551f9.bcd59e"
@@ -1122,7 +1127,7 @@
         "payload": "1",
         "payloadType": "num",
         "x": 120,
-        "y": 720,
+        "y": 740,
         "wires": [
             [
                 "17a551f9.bcd59e"
@@ -1730,7 +1735,7 @@
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nflow.set(\"status\", \"Init\");",
         "finalize": "",
-        "x": 560,
+        "x": 540,
         "y": 400,
         "wires": [
             [
@@ -1780,8 +1785,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 500,
-        "y": 320,
+        "x": 580,
+        "y": 300,
         "wires": [
             [
                 "76804725.6ac1f8",
@@ -3305,7 +3310,7 @@
         "z": "6f61cfd3.3d721",
         "g": "73d12632.94b388",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3327,8 +3332,8 @@
         "qos": "0",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 350,
-        "y": 1080,
+        "x": 370,
+        "y": 1160,
         "wires": []
     },
     {
@@ -3349,8 +3354,8 @@
         "topic": "",
         "payload": "1000",
         "payloadType": "num",
-        "x": 110,
-        "y": 1080,
+        "x": 130,
+        "y": 1160,
         "wires": [
             [
                 "cb6213d.83258f"
@@ -3363,7 +3368,7 @@
         "z": "6f61cfd3.3d721",
         "g": "73d12632.94b388",
         "name": "",
-        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"ValveControl/TempIn\":\n        msg.payload={\n            TempIn: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"ValveControl/TempOut\":\n        msg.payload={\n            TempOut: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"ValveControl/ActPos\":\n        msg.payload={\n            ValveVolt: Number(msg.payload),\n        }\n        return msg;\n    case \"ValveControl/Mode\":\n        msg.payload={\n            ValveMode: Number(msg.payload),\n        }\n        return msg;\n    case \"ValveControl/Light\":\n        msg.payload={\n            WVLight: Number(msg.payload),\n        }\n        return msg;\n}\n",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"ValveControl/TempIn\":\n        msg.payload={\n            TempIn: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"ValveControl/TempOut\":\n        msg.payload={\n            TempOut: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"ValveControl/ActPos\":\n        msg.payload={\n            ValveVolt: Number(msg.payload),\n        }\n        return msg;\n    case \"ValveControl/Mode\":\n        msg.payload={\n            ValveMode: Number(msg.payload),\n        }\n        return msg;\n    case \"ValveControl/ManAuto\":\n        msg.payload={\n            ValveControl: msg.payload,\n        }\n        return msg;\n    case \"ValveControl/Light\":\n        msg.payload={\n            WVLight: Number(msg.payload),\n        }\n        return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3443,8 +3448,9 @@
                 "payloadOffsetType": "none",
                 "payloadOffsetMultiplier": 60000,
                 "payloadFormat": 99,
-                "topic": "",
+                "topic": "ClockValvePos",
                 "importance": 0,
+                "resetOverwrite": false,
                 "validOperandAValue": "",
                 "validOperandAType": "none",
                 "validOperator": "true",
@@ -3459,9 +3465,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>6:15</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"5\"</var></div></div>",
-                "timeMinOp": 0,
-                "timeMaxOp": 0
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>6:15</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"5\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
             },
             {
                 "index": 1,
@@ -3497,8 +3501,9 @@
                 "payloadOffsetType": "none",
                 "payloadOffsetMultiplier": 60000,
                 "payloadFormat": 99,
-                "topic": "",
+                "topic": "ClockValvePos",
                 "importance": 0,
+                "resetOverwrite": false,
                 "validOperandAValue": "",
                 "validOperandAType": "none",
                 "validOperator": "true",
@@ -3513,7 +3518,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>9:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>9:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
             },
             {
                 "index": 2,
@@ -3549,8 +3554,9 @@
                 "payloadOffsetType": "none",
                 "payloadOffsetMultiplier": 60000,
                 "payloadFormat": 99,
-                "topic": "",
+                "topic": "ClockValvePos",
                 "importance": 0,
+                "resetOverwrite": false,
                 "validOperandAValue": "",
                 "validOperandAType": "none",
                 "validOperator": "true",
@@ -3565,9 +3571,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>11:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"5\"</var></div></div>",
-                "timeMinOp": 0,
-                "timeMaxOp": 0
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>11:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"5\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
             },
             {
                 "index": 3,
@@ -3603,8 +3607,9 @@
                 "payloadOffsetType": "none",
                 "payloadOffsetMultiplier": 60000,
                 "payloadFormat": 99,
-                "topic": "",
+                "topic": "ClockValvePos",
                 "importance": 0,
+                "resetOverwrite": false,
                 "validOperandAValue": "",
                 "validOperandAType": "none",
                 "validOperator": "true",
@@ -3619,9 +3624,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>12:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"3\"</var></div></div>",
-                "timeMinOp": 0,
-                "timeMaxOp": 0
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>12:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"3\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
             },
             {
                 "index": 4,
@@ -3657,8 +3660,9 @@
                 "payloadOffsetType": "none",
                 "payloadOffsetMultiplier": 60000,
                 "payloadFormat": 99,
-                "topic": "",
+                "topic": "ClockValvePos",
                 "importance": 0,
+                "resetOverwrite": false,
                 "validOperandAValue": "",
                 "validOperandAType": "none",
                 "validOperator": "true",
@@ -3673,9 +3677,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>16:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div></div>",
-                "timeMinOp": 0,
-                "timeMaxOp": 0
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>16:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
             },
             {
                 "index": 5,
@@ -3711,8 +3713,9 @@
                 "payloadOffsetType": "none",
                 "payloadOffsetMultiplier": 60000,
                 "payloadFormat": 99,
-                "topic": "",
+                "topic": "ClockValvePos",
                 "importance": 0,
+                "resetOverwrite": false,
                 "validOperandAValue": "",
                 "validOperandAType": "none",
                 "validOperator": "true",
@@ -3727,9 +3730,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"2\"</var></div></div>",
-                "timeMinOp": 0,
-                "timeMaxOp": 0
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"2\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
             },
             {
                 "index": 6,
@@ -3765,8 +3766,9 @@
                 "payloadOffsetType": "none",
                 "payloadOffsetMultiplier": 60000,
                 "payloadFormat": 99,
-                "topic": "",
+                "topic": "ClockValvePos",
                 "importance": 0,
+                "resetOverwrite": false,
                 "validOperandAValue": "",
                 "validOperandAType": "none",
                 "validOperator": "true",
@@ -3781,9 +3783,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>23:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"0\"</var></div></div>",
-                "timeMinOp": 0,
-                "timeMaxOp": 0
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>23:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"0\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
             }
         ],
         "payloadDefault": "",
@@ -3793,11 +3793,11 @@
         "payloadDefaultOffsetType": "none",
         "payloadDefaultOffsetMultiplier": 60000,
         "x": 120,
-        "y": 1020,
+        "y": 1040,
         "wires": [
             [
                 "8583dd1c.64052",
-                "17a551f9.bcd59e"
+                "3c079b7c.3bb374"
             ]
         ]
     },
@@ -3815,8 +3815,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 320,
-        "y": 720,
+        "x": 720,
+        "y": 980,
         "wires": []
     },
     {
@@ -3826,8 +3826,8 @@
         "g": "5d7bb23e.6c04ec",
         "name": "Intervall Stufe 1 und 2",
         "info": "Intervall für Stufe 1/2",
-        "x": 360,
-        "y": 1020,
+        "x": 520,
+        "y": 740,
         "wires": []
     },
     {
@@ -8067,6 +8067,98 @@
         "bucket": "bucket",
         "x": 820,
         "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3c079b7c.3bb374",
+        "type": "function",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "ValveCalculation",
+        "func": "var TempOut = 11;\nvar ClockPos = 0;\nvar fTemp = 0;\nvar payload;\nvar o=msg.payload;\n\nswitch (msg.topic){\n    case \"ClockValvePos\":\n        ClockPos = msg.payload;\n    break;\n    case \"Sensor1/fTempA\":\n        TempOut = msg.payload;\n        fTemp = Number(TempOut);\n        global.set(\"TempOut\",fTemp);\n        return 0;\n    break;\n    default:\n    break;\n}\n\n    if (global.get(\"TempOut\") <= '14'){\n      msg.payload = ClockPos ;\n    }    \n    else\n    {\n    msg.payload = '0';\n    }\n    return msg;\n ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 510,
+        "y": 1040,
+        "wires": [
+            [
+                "4f746528.3b88cc",
+                "17a551f9.bcd59e"
+            ]
+        ]
+    },
+    {
+        "id": "a0fe78c.bc5a188",
+        "type": "mqtt in",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "topic": "Sensor1/fTempA",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 140,
+        "y": 1100,
+        "wires": [
+            [
+                "8823d2b3.3d2ab"
+            ]
+        ]
+    },
+    {
+        "id": "4f746528.3b88cc",
+        "type": "debug",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "TestCalc",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "8823d2b3.3d2ab",
+        "type": "json",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "fTempA",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 320,
+        "y": 1100,
+        "wires": [
+            [
+                "3c079b7c.3bb374",
+                "d715f111.57f18"
+            ]
+        ]
+    },
+    {
+        "id": "d715f111.57f18",
+        "type": "debug",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "TestJsonConvOut",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 1100,
         "wires": []
     }
 ]
