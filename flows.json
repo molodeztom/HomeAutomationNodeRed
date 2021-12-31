@@ -42,6 +42,13 @@
         "info": ""
     },
     {
+        "id": "b85baf22.3cc35",
+        "type": "tab",
+        "label": "Gewittersensor",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "b83af794.4bec68",
         "type": "group",
         "z": "9963931.9232c7",
@@ -158,7 +165,7 @@
         ],
         "x": 14,
         "y": 19,
-        "w": 1012,
+        "w": 992,
         "h": 423
     },
     {
@@ -209,10 +216,13 @@
             "7b1463f8.f8e4cc",
             "c4532342.dddc2",
             "ff6b7215.93de5",
-            "1dea714a.68511f"
+            "1dea714a.68511f",
+            "a30d9009.4e13b"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 1182,
+        "h": 502
     },
     {
         "id": "18ca9346.bdbedd",
@@ -252,7 +262,9 @@
             "6e793f78.19688"
         ],
         "x": 24,
-        "y": 536.5
+        "y": 536.5,
+        "w": 1502,
+        "h": 524.5
     },
     {
         "id": "73d12632.94b388",
@@ -493,36 +505,6 @@
         "collapse": false
     },
     {
-        "id": "b12941f.1cd05c",
-        "type": "ui_group",
-        "name": "Condition",
-        "tab": "eb94216d.968598",
-        "order": 5,
-        "disp": false,
-        "width": "4",
-        "collapse": false
-    },
-    {
-        "id": "8da50f69.44fe38",
-        "type": "ui_group",
-        "name": "Wind",
-        "tab": "eb94216d.968598",
-        "order": 4,
-        "disp": false,
-        "width": "4",
-        "collapse": false
-    },
-    {
-        "id": "5a4d76d2.5ae128",
-        "type": "ui_group",
-        "name": "Luftfeuchtigkeit",
-        "tab": "258c6649.0213da",
-        "order": 4,
-        "disp": false,
-        "width": "6",
-        "collapse": false
-    },
-    {
         "id": "14584712.7a2929",
         "type": "ui_group",
         "name": "Condition",
@@ -663,7 +645,11 @@
         "name": "SensorLoc HomAut",
         "measurement": "SensorLoc",
         "precision": "",
-        "retentionPolicy": "two_hours",
+        "retentionPolicy": "two_month",
+        "database": "",
+        "retentionPolicyV18Flux": "",
+        "org": "",
+        "bucket": "",
         "x": 670,
         "y": 60,
         "wires": []
@@ -682,8 +668,7 @@
         "y": 61,
         "wires": [
             [
-                "6a1827c1.d350e8",
-                "e414ce6.6f20c3"
+                "6a1827c1.d350e8"
             ]
         ]
     },
@@ -768,7 +753,11 @@
         "name": "sSens1 HomAut",
         "measurement": "sSens1",
         "precision": "",
-        "retentionPolicy": "two_hours",
+        "retentionPolicy": "two_month",
+        "database": "",
+        "retentionPolicyV18Flux": "",
+        "org": "",
+        "bucket": "",
         "x": 660,
         "y": 121,
         "wires": []
@@ -782,7 +771,11 @@
         "name": "sSens2 HomAut",
         "measurement": "sSens2",
         "precision": "",
-        "retentionPolicy": "two_hours",
+        "retentionPolicy": "two_month",
+        "database": "",
+        "retentionPolicyV18Flux": "",
+        "org": "",
+        "bucket": "",
         "x": 660,
         "y": 181,
         "wires": []
@@ -796,7 +789,11 @@
         "name": "sSens3 HomeAut",
         "measurement": "sSens3",
         "precision": "",
-        "retentionPolicy": "two_hours",
+        "retentionPolicy": "two_month",
+        "database": "",
+        "retentionPolicyV18Flux": "",
+        "org": "",
+        "bucket": "",
         "x": 670,
         "y": 241,
         "wires": []
@@ -839,9 +836,11 @@
         "z": "6f61cfd3.3d721",
         "g": "584f76f1.996908",
         "name": "Sensor3 switch/convert",
-        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor3/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"Sensor3/fVolt\":\n        msg.payload={\n            fVolt: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor3/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor3/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"Sensor3/fVolt\":\n        msg.payload={\n            fVolt: Number(msg.payload),\n        }\n        msg.retentionPolicy= \"half_year\"\n        return msg;\n    case \"Sensor3/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
         "x": 350,
         "y": 241,
         "wires": [
@@ -857,7 +856,7 @@
         "z": "6f61cfd3.3d721",
         "g": "584f76f1.996908",
         "name": "Sensor2 switch/convert",
-        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor2/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"Sensor2/fTempB\":\n        msg.payload={\n            fTempB: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor2/fVolt\":\n        msg.payload={\n            fVolt: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor2/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor2/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"Sensor2/fTempB\":\n        msg.payload={\n            fTempB: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor2/fVolt\":\n        msg.payload={\n            fVolt: Number(msg.payload),\n        }\n        msg.retentionPolicy= \"half_year\"\n        return msg;\n    case \"Sensor2/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -876,7 +875,7 @@
         "z": "6f61cfd3.3d721",
         "g": "584f76f1.996908",
         "name": "Sensor1 switch/convert",
-        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor1/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"Sensor1/fTempB\":\n        msg.payload={\n            fTempB: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"Sensor1/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor1/fVolt\":\n        msg.payload={\n            fVolt: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor1/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor1/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload) \n            \n        }\n\n        return msg;\n    case \"Sensor1/fTempB\":\n        msg.payload={\n            fTempB: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"Sensor1/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor1/fVolt\":\n        msg.payload={\n            fVolt: Number(msg.payload),\n        }\n        msg.retentionPolicy= \"half_year\"\n        return msg;\n    case \"Sensor1/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n        \n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -886,7 +885,7 @@
         "wires": [
             [
                 "3b080467.ae49dc",
-                "7a71ee5f.b5c6f"
+                "e414ce6.6f20c3"
             ]
         ]
     },
@@ -919,8 +918,8 @@
         "measurement": "sSens1",
         "precision": "",
         "retentionPolicy": "",
-        "x": 890,
-        "y": 120,
+        "x": 870,
+        "y": 140,
         "wires": []
     },
     {
@@ -1634,7 +1633,7 @@
         "z": "6f61cfd3.3d721",
         "g": "584f76f1.996908",
         "name": "Sensor5 switch/convert",
-        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor5/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"Sensor5/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor5/fVolt\":\n        msg.payload={\n            fVolt: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor5/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor5/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"Sensor5/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor5/fVolt\":\n        msg.payload={\n            fVolt: Number(msg.payload),\n        }\n        msg.retentionPolicy= \"half_year\"\n        return msg;\n    case \"Sensor5/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1657,7 +1656,11 @@
         "name": "sSens5 HomeAut",
         "measurement": "sSens5",
         "precision": "",
-        "retentionPolicy": "",
+        "retentionPolicy": "two_month",
+        "database": "",
+        "retentionPolicyV18Flux": "",
+        "org": "",
+        "bucket": "",
         "x": 670,
         "y": 401,
         "wires": []
@@ -1704,7 +1707,7 @@
         "z": "511989b1.670cc8",
         "g": "5c041b39.d836b4",
         "name": "PrintControlOutput",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1735,7 +1738,8 @@
                 "c963b96.8ceb748",
                 "823d7203.adc6f",
                 "c60a1a40.b2a698",
-                "1dea714a.68511f"
+                "1dea714a.68511f",
+                "a30d9009.4e13b"
             ]
         ]
     },
@@ -1830,7 +1834,7 @@
         "name": "",
         "topic": "cmnd/SONOFFI3/Power",
         "qos": "1",
-        "retain": "",
+        "retain": "false",
         "broker": "19cf2a10.f9d4a6",
         "x": 1380,
         "y": 1020,
@@ -2635,6 +2639,10 @@
         "measurement": "AnyI3Power",
         "precision": "",
         "retentionPolicy": "",
+        "database": "",
+        "retentionPolicyV18Flux": "",
+        "org": "",
+        "bucket": "",
         "x": 790,
         "y": 80,
         "wires": []
@@ -2654,7 +2662,8 @@
         "y": 80,
         "wires": [
             [
-                "2a103049.f6a29"
+                "2a103049.f6a29",
+                "f571eda1.7d3f5"
             ]
         ]
     },
@@ -2680,7 +2689,6 @@
         "y": 140,
         "wires": [
             [
-                "f571eda1.7d3f5",
                 "3a6c508.ebe3cb"
             ]
         ]
@@ -2750,6 +2758,10 @@
         "measurement": "AnyI3Temp",
         "precision": "",
         "retentionPolicy": "",
+        "database": "",
+        "retentionPolicyV18Flux": "",
+        "org": "",
+        "bucket": "",
         "x": 1090,
         "y": 280,
         "wires": []
@@ -3293,7 +3305,7 @@
         "z": "6f61cfd3.3d721",
         "g": "73d12632.94b388",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3373,7 +3385,11 @@
         "name": "ValveControl",
         "measurement": "ValveControl",
         "precision": "",
-        "retentionPolicy": "",
+        "retentionPolicy": "two_month",
+        "database": "",
+        "retentionPolicyV18Flux": "",
+        "org": "",
+        "bucket": "",
         "x": 930,
         "y": 500,
         "wires": []
@@ -3450,12 +3466,8 @@
             {
                 "index": 1,
                 "name": "Tag Absenkung ",
-                "isValid": true,
-                "valid": {
-                    "validTimeReg": true,
-                    "validPayload": true,
-                    "validOperand1A": true
-                },
+                "isValid": false,
+                "valid": {},
                 "timeValue": "9:30",
                 "timeType": "entered",
                 "timeOp": 1,
@@ -3484,7 +3496,7 @@
                 "payloadOffsetValue": "",
                 "payloadOffsetType": "none",
                 "payloadOffsetMultiplier": 60000,
-                "payloadFormat": "",
+                "payloadFormat": 99,
                 "topic": "",
                 "importance": 0,
                 "validOperandAValue": "",
@@ -4582,7 +4594,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "0",
+        "payload": "100",
         "payloadType": "num",
         "x": 110,
         "y": 240,
@@ -4617,7 +4629,7 @@
                 "name": "HolidayWeekend",
                 "isValid": false,
                 "valid": {},
-                "timeValue": "8:15",
+                "timeValue": "7:45",
                 "timeType": "entered",
                 "timeOp": 0,
                 "timeOpText": "↥ bis",
@@ -4661,9 +4673,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>8:15</var> - 00:00</div><div>↕  Absolut <var>geschlossen (min)</var></div>",
-                "timeMinOp": 0,
-                "timeMaxOp": 0
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>7:45</var> - 00:00</div><div>↕  Absolut <var>geschlossen (min)</var></div>"
             },
             {
                 "index": 1,
@@ -4803,6 +4813,7 @@
                 "levelOpText": "↕  Absolut",
                 "topic": "Weather Thunderstorm Condition",
                 "importance": 0,
+                "resetOverwrite": false,
                 "validOperandAValue": "WeatherID",
                 "validOperandAType": "msg",
                 "validOperator": "gte",
@@ -4815,11 +4826,9 @@
                 "valid2OperandAType": "msg",
                 "valid2Operator": "lt",
                 "valid2OperatorText": "<",
-                "valid2OperandBValue": "230",
+                "valid2OperandBValue": "235",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 201<br/><strong>und</strong> <var>msg.WeatherID</var> < 230</div><div>↕  Absolut <var>25%</var><div class=\"indent-topic-text\"> <span>Topic: </span> <var>Weather Thunderstorm Condition</var></div></div>",
-                "timeMinOp": 0,
-                "timeMaxOp": 0
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 201<br/><strong>und</strong> <var>msg.WeatherID</var> < 235</div><div>↕  Absolut <var>25%</var><div class=\"indent-topic-text\"> <span>Topic:</span> <var>Weather Thunderstorm Condition</var></div></div>"
             },
             {
                 "index": 4,
@@ -4902,7 +4911,7 @@
                 "offsetMaxValue": "",
                 "offsetMaxType": "none",
                 "multiplierMax": 60000,
-                "levelValue": "66%",
+                "levelValue": "33%",
                 "levelType": "levelFixed",
                 "levelOp": 0,
                 "levelOpText": "↕  Absolut",
@@ -4923,9 +4932,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Begin</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>15:30</var></div></div><div>↕  Absolut <var>66%</var></div>",
-                "timeMinOp": 0,
-                "timeMaxOp": 0
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Begin</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>15:30</var></div></div><div>↕  Absolut <var>33%</var></div>"
             },
             {
                 "index": 6,
@@ -4981,19 +4988,19 @@
             }
         ],
         "sunControlMode": "2",
-        "sunFloorLength": "330",
-        "sunMinAltitude": "14",
+        "sunFloorLength": "180",
+        "sunMinAltitude": "5",
         "sunMinDelta": "5",
-        "blindPosMin": "25%",
-        "blindPosMinType": "levelFixed",
+        "blindPosMin": "15",
+        "blindPosMinType": "num",
         "blindPosMax": "open (max)",
         "blindPosMaxType": "levelFixed",
         "smoothTime": "",
         "sunTopic": "SunShading",
         "windowTop": "205",
         "windowBottom": "100",
-        "windowAzimuthStart": "206",
-        "windowAzimuthEnd": "245",
+        "windowAzimuthStart": "204",
+        "windowAzimuthEnd": "274",
         "oversteerValue": "clouds",
         "oversteerValueType": "msg",
         "oversteerCompare": "gte",
@@ -5017,13 +5024,14 @@
         "oversteer3BlindPosType": "levelFixed",
         "oversteerTopic": "CloudsOverwrite",
         "x": 800,
-        "y": 700,
+        "y": 720,
         "wires": [
             [
                 "5eac9c57.76c314",
                 "302bd89a.fafcc8",
                 "3c0c4256.7b9c2e",
-                "938edda3.2a1e5"
+                "938edda3.2a1e5",
+                "52b02b7f.eddd84"
             ]
         ]
     },
@@ -5682,7 +5690,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "EsstischReason",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5713,7 +5721,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "setSunDataMinAltitude",
-        "payload": "10",
+        "payload": "50",
         "payloadType": "num",
         "x": 470,
         "y": 680,
@@ -5771,7 +5779,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "setSunDataMinAltitude",
-        "payload": "400",
+        "payload": "30",
         "payloadType": "num",
         "x": 460,
         "y": 760,
@@ -5812,14 +5820,14 @@
         "blindPosReverse": false,
         "blindPosDefault": "open (max)",
         "blindPosDefaultType": "levelFixed",
-        "overwriteExpire": "1800000",
+        "overwriteExpire": "",
         "rules": [
             {
                 "index": 0,
                 "name": "HolidayWeekend",
                 "isValid": false,
                 "valid": {},
-                "timeValue": "8:15",
+                "timeValue": "7:45",
                 "timeType": "entered",
                 "timeOp": 0,
                 "timeOpText": "↥ bis",
@@ -5863,9 +5871,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>8:15</var> - 00:00</div><div>↕  Absolut <var>geschlossen (min)</var></div>",
-                "timeMinOp": 0,
-                "timeMaxOp": 0
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>7:45</var> - 00:00</div><div>↕  Absolut <var>geschlossen (min)</var></div>"
             },
             {
                 "index": 1,
@@ -6085,7 +6091,7 @@
                 "timeType": "pdsTime",
                 "timeOp": 1,
                 "timeOpText": "↧ von",
-                "offsetValue": "20",
+                "offsetValue": "10",
                 "offsetType": "num",
                 "multiplier": 60000,
                 "timeDays": "*",
@@ -6104,7 +6110,7 @@
                 "offsetMaxValue": "",
                 "offsetMaxType": "none",
                 "multiplierMax": 60000,
-                "levelValue": "75%",
+                "levelValue": "33%",
                 "levelType": "levelFixed",
                 "levelOp": 0,
                 "levelOpText": "↕  Absolut",
@@ -6125,9 +6131,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Begin</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>15:30</var></div></div><div>↕  Absolut <var>75%</var></div>",
-                "timeMinOp": 0,
-                "timeMaxOp": 0
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Begin</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>15:30</var></div></div><div>↕  Absolut <var>33%</var></div>"
             },
             {
                 "index": 6,
@@ -6183,7 +6187,7 @@
             }
         ],
         "sunControlMode": "2",
-        "sunFloorLength": "300",
+        "sunFloorLength": "200",
         "sunMinAltitude": "5",
         "sunMinDelta": "5",
         "blindPosMin": "10%",
@@ -6218,8 +6222,8 @@
         "oversteer3BlindPos": "open (max)",
         "oversteer3BlindPosType": "levelFixed",
         "oversteerTopic": "CloudsOverwrite",
-        "x": 470,
-        "y": 1080,
+        "x": 450,
+        "y": 1100,
         "wires": [
             [
                 "7ca250e2.e6cc5",
@@ -6356,7 +6360,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "setSunDataMinAltitude",
-        "payload": "400",
+        "payload": "20",
         "payloadType": "num",
         "x": 160,
         "y": 1180,
@@ -6582,9 +6586,7 @@
         "x": 130,
         "y": 1540,
         "wires": [
-            [
-                "cd81506e.47c21"
-            ]
+            []
         ]
     },
     {
@@ -6611,9 +6613,7 @@
         "x": 130,
         "y": 1700,
         "wires": [
-            [
-                "cd81506e.47c21"
-            ]
+            []
         ]
     },
     {
@@ -6640,9 +6640,7 @@
         "x": 130,
         "y": 1760,
         "wires": [
-            [
-                "cd81506e.47c21"
-            ]
+            []
         ]
     },
     {
@@ -6669,9 +6667,7 @@
         "x": 130,
         "y": 1580,
         "wires": [
-            [
-                "cd81506e.47c21"
-            ]
+            []
         ]
     },
     {
@@ -6698,9 +6694,7 @@
         "x": 130,
         "y": 1620,
         "wires": [
-            [
-                "cd81506e.47c21"
-            ]
+            []
         ]
     },
     {
@@ -6727,9 +6721,7 @@
         "x": 130,
         "y": 1660,
         "wires": [
-            [
-                "cd81506e.47c21"
-            ]
+            []
         ]
     },
     {
@@ -6756,9 +6748,7 @@
         "x": 130,
         "y": 1500,
         "wires": [
-            [
-                "cd81506e.47c21"
-            ]
+            []
         ]
     },
     {
@@ -6844,7 +6834,7 @@
                 "name": "HolidayWeekend",
                 "isValid": false,
                 "valid": {},
-                "timeValue": "8:15",
+                "timeValue": "7:45",
                 "timeType": "entered",
                 "timeOp": 0,
                 "timeOpText": "↥ bis",
@@ -6888,9 +6878,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>8:15</var> - 00:00</div><div>↕  Absolut <var>geschlossen (min)</var></div>",
-                "timeMinOp": 0,
-                "timeMaxOp": 0
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>7:45</var> - 00:00</div><div>↕  Absolut <var>geschlossen (min)</var></div>"
             },
             {
                 "index": 1,
@@ -6953,11 +6941,11 @@
                     "validLevel": true,
                     "validOperand1A": true
                 },
-                "timeValue": "sunset",
+                "timeValue": "sunsetEnd",
                 "timeType": "pdsTime",
                 "timeOp": 1,
                 "timeOpText": "↧ von",
-                "offsetValue": "30",
+                "offsetValue": "10",
                 "offsetType": "num",
                 "multiplier": 60000,
                 "timeDays": "*",
@@ -6971,12 +6959,12 @@
                 "offsetMinValue": "",
                 "offsetMinType": "none",
                 "multiplierMin": 60000,
-                "timeMaxValue": "22:30",
+                "timeMaxValue": "21:00",
                 "timeMaxType": "entered",
                 "offsetMaxValue": "",
                 "offsetMaxType": "none",
                 "multiplierMax": 60000,
-                "levelValue": "33%",
+                "levelValue": "50%",
                 "levelType": "levelFixed",
                 "levelOp": 0,
                 "levelOpText": "↕  Absolut",
@@ -6997,7 +6985,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:30<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:30</var></div></div><div>↕  Absolut <var>33%</var></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:00</var></div></div><div>↕  Absolut <var>50%</var></div>"
             },
             {
                 "index": 3,
@@ -7171,7 +7159,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "Wohnz Rolladensteuerung Output",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7204,7 +7192,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "WohnzReason",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7402,5 +7390,683 @@
                 "1a538972.87cf07"
             ]
         ]
+    },
+    {
+        "id": "58fd50a.ed2c7b",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1130,
+        "y": 1060,
+        "wires": [
+            [
+                "3249e313.66ef5c"
+            ]
+        ]
+    },
+    {
+        "id": "3249e313.66ef5c",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1310,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "d3cd8ba2.f50dc8",
+        "type": "mqtt in",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "topic": "stat/RolloOlga/SHUTTER1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 280,
+        "y": 2540,
+        "wires": [
+            [
+                "5708f59d.13a2ec"
+            ]
+        ]
+    },
+    {
+        "id": "9541504a.3de58",
+        "type": "mqtt out",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "topic": "cmnd/RolloOlga/ShutterPosition",
+        "qos": "",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 980,
+        "y": 2540,
+        "wires": []
+    },
+    {
+        "id": "5f48bf54.11e1a",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "20",
+        "payloadType": "num",
+        "x": 660,
+        "y": 2540,
+        "wires": [
+            [
+                "9541504a.3de58"
+            ]
+        ]
+    },
+    {
+        "id": "115b1c5e.ab26e4",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "num",
+        "x": 660,
+        "y": 2640,
+        "wires": [
+            [
+                "9541504a.3de58"
+            ]
+        ]
+    },
+    {
+        "id": "fbe2336b.e78ca",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "100",
+        "payloadType": "num",
+        "x": 680,
+        "y": 2740,
+        "wires": [
+            [
+                "9541504a.3de58"
+            ]
+        ]
+    },
+    {
+        "id": "5708f59d.13a2ec",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "name": "RolloOlga Status",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 2700,
+        "wires": []
+    },
+    {
+        "id": "e9f25740.8e0928",
+        "type": "blind-control",
+        "z": "7e5a345d.05161c",
+        "name": "RolloOlga",
+        "topic": "",
+        "positionConfig": "9a5a8534.25d4d8",
+        "outputs": "1",
+        "autoTrigger": true,
+        "autoTriggerTime": "600000",
+        "startDelayTime": 10000,
+        "storeName": "",
+        "blindIncrement": "1",
+        "blindOpenPos": "100",
+        "blindClosedPos": 0,
+        "blindPosReverse": false,
+        "blindPosDefault": "open (max)",
+        "blindPosDefaultType": "levelFixed",
+        "overwriteExpire": "1200000",
+        "rules": [
+            {
+                "index": 0,
+                "name": "HolidayWeekend",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "7:45",
+                "timeType": "entered",
+                "timeOp": 0,
+                "timeOpText": "↥ bis",
+                "offsetValue": "",
+                "offsetType": "none",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "",
+                "timeMinType": "none",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "",
+                "timeMaxType": "none",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "closed (min)",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "validOperandAValue": "day.today.isWeekendOrHoliday",
+                "validOperandAType": "global",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>7:45</var></div><div>↕  Absolut <var>geschlossen (min)</var></div>"
+            },
+            {
+                "index": 1,
+                "name": "SonAufAuf",
+                "isValid": true,
+                "valid": {
+                    "validTimeReg": 60000,
+                    "validLevel": true,
+                    "validOperand1A": true
+                },
+                "timeValue": "sunriseStart",
+                "timeType": "pdsTime",
+                "timeOp": 0,
+                "timeOpText": "↥ bis",
+                "offsetValue": "10",
+                "offsetType": "num",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "6:00",
+                "timeMinType": "entered",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "6:45",
+                "timeMaxType": "entered",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "closed (min)",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "validOperandAValue": "",
+                "validOperandAType": "none",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Begin</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>6:45</var></div></div><div>↕  Absolut <var>geschlossen (min)</var></div>"
+            },
+            {
+                "index": 2,
+                "name": "SonnenuntergangZu",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "sunsetEnd",
+                "timeType": "pdsTime",
+                "timeOp": 1,
+                "timeOpText": "↧ von",
+                "offsetValue": "15",
+                "offsetType": "num",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "",
+                "timeMinType": "none",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "21:00",
+                "timeMaxType": "entered",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "50%",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "validOperandAValue": "",
+                "validOperandAType": "none",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:15<div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:00</var></div></div><div>↕  Absolut <var>50%</var></div>"
+            },
+            {
+                "index": 3,
+                "name": "WochenendeGeschlossen",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "22:00",
+                "timeType": "entered",
+                "timeOp": 1,
+                "timeOpText": "↧ von",
+                "offsetValue": "",
+                "offsetType": "none",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "",
+                "timeMinType": "none",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "",
+                "timeMaxType": "none",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "closed (min)",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "validOperandAValue": "day.today.isWeekendOrHoliday",
+                "validOperandAType": "global",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div>↕  Absolut <var>geschlossen (min)</var></div>"
+            },
+            {
+                "index": 4,
+                "name": "WochentagGeschlossen",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "21:45",
+                "timeType": "entered",
+                "timeOp": 1,
+                "timeOpText": "↧ von",
+                "offsetValue": "",
+                "offsetType": "none",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "",
+                "timeMinType": "none",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "",
+                "timeMaxType": "none",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "levelValue": "closed (min)",
+                "levelType": "levelFixed",
+                "levelOp": 0,
+                "levelOpText": "↕  Absolut",
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "validOperandAValue": "",
+                "validOperandAType": "none",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>21:45</var></div><div>↕  Absolut <var>geschlossen (min)</var></div>"
+            }
+        ],
+        "sunControlMode": "0",
+        "sunFloorLength": "",
+        "sunMinAltitude": "",
+        "sunMinDelta": "",
+        "blindPosMin": "closed (min)",
+        "blindPosMinType": "levelFixed",
+        "blindPosMax": "open (max)",
+        "blindPosMaxType": "levelFixed",
+        "smoothTime": "",
+        "sunTopic": "",
+        "windowTop": "",
+        "windowBottom": "",
+        "windowAzimuthStart": "",
+        "windowAzimuthEnd": "",
+        "oversteerValue": "",
+        "oversteerValueType": "none",
+        "oversteerCompare": "gte",
+        "oversteerThreshold": "",
+        "oversteerThresholdType": "num",
+        "oversteerBlindPos": "open (max)",
+        "oversteerBlindPosType": "levelFixed",
+        "oversteer2Value": "",
+        "oversteer2ValueType": "none",
+        "oversteer2Compare": "gte",
+        "oversteer2Threshold": "",
+        "oversteer2ThresholdType": "num",
+        "oversteer2BlindPos": "open (max)",
+        "oversteer2BlindPosType": "levelFixed",
+        "oversteer3Value": "",
+        "oversteer3ValueType": "none",
+        "oversteer3Compare": "gte",
+        "oversteer3Threshold": "",
+        "oversteer3ThresholdType": "num",
+        "oversteer3BlindPos": "open (max)",
+        "oversteer3BlindPosType": "levelFixed",
+        "oversteerTopic": "",
+        "x": 520,
+        "y": 2460,
+        "wires": [
+            [
+                "9541504a.3de58",
+                "700de909.9aed38"
+            ]
+        ]
+    },
+    {
+        "id": "700de909.9aed38",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "name": "OlgaRolladensteuerung Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 2460,
+        "wires": []
+    },
+    {
+        "id": "a30d9009.4e13b",
+        "type": "file",
+        "z": "511989b1.670cc8",
+        "g": "5c041b39.d836b4",
+        "name": "Printerlog",
+        "filename": "PrinterLog",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 890,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52b02b7f.eddd84",
+        "type": "file",
+        "z": "7e5a345d.05161c",
+        "name": "LogEsstisch",
+        "filename": "LogEsstisch.txt",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1240,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9579ffbb.2b15d",
+        "type": "mqtt in",
+        "z": "b85baf22.3cc35",
+        "name": "Lightning",
+        "topic": "sensors/+",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "e0aff261.64836",
+                "62736dfc.b3d2f4"
+            ]
+        ]
+    },
+    {
+        "id": "e0aff261.64836",
+        "type": "debug",
+        "z": "b85baf22.3cc35",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e691064e.2845e8",
+        "type": "debug",
+        "z": "b85baf22.3cc35",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.energy",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "62736dfc.b3d2f4",
+        "type": "json",
+        "z": "b85baf22.3cc35",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 520,
+        "y": 460,
+        "wires": [
+            [
+                "e691064e.2845e8",
+                "c4c24f29.e1186",
+                "693e04ee.1819cc",
+                "31962824.976f98"
+            ]
+        ]
+    },
+    {
+        "id": "c4c24f29.e1186",
+        "type": "influxdb out",
+        "z": "b85baf22.3cc35",
+        "influxdb": "e3f4c3e8.b52ee",
+        "name": "Lightning Energy",
+        "measurement": "LightningEnergy",
+        "precision": "",
+        "retentionPolicy": "two_month",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 800,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "693e04ee.1819cc",
+        "type": "debug",
+        "z": "b85baf22.3cc35",
+        "name": "LightningDistance",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.distance",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "31962824.976f98",
+        "type": "influxdb out",
+        "z": "b85baf22.3cc35",
+        "influxdb": "e3f4c3e8.b52ee",
+        "name": "LightningDistance",
+        "measurement": " distance",
+        "precision": "",
+        "retentionPolicy": "two_month",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 820,
+        "y": 280,
+        "wires": []
     }
 ]
