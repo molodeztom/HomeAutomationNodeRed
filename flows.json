@@ -49,6 +49,13 @@
         "info": ""
     },
     {
+        "id": "fd3d6f52.8b9e7",
+        "type": "tab",
+        "label": "Beleuchtung Wohnzimmer",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "b83af794.4bec68",
         "type": "group",
         "z": "9963931.9232c7",
@@ -129,12 +136,13 @@
             "a0fe78c.bc5a188",
             "4f746528.3b88cc",
             "8823d2b3.3d2ab",
-            "d715f111.57f18"
+            "d715f111.57f18",
+            "ed0d92d3.e506c"
         ],
         "x": 24,
         "y": 639,
         "w": 842,
-        "h": 562
+        "h": 602
     },
     {
         "id": "584f76f1.996908",
@@ -225,9 +233,7 @@
             "a30d9009.4e13b"
         ],
         "x": 14,
-        "y": 19,
-        "w": 1182,
-        "h": 502
+        "y": 19
     },
     {
         "id": "18ca9346.bdbedd",
@@ -264,12 +270,11 @@
             "550eb938.78f938",
             "54087a9f.9d1c24",
             "f665e232.83018",
-            "6e793f78.19688"
+            "6e793f78.19688",
+            "b8c299bc.8c4e18"
         ],
         "x": 24,
-        "y": 536.5,
-        "w": 1502,
-        "h": 524.5
+        "y": 536.5
     },
     {
         "id": "73d12632.94b388",
@@ -285,12 +290,14 @@
             "3bb0fb40.e717e4",
             "c772a959.162c98",
             "d5959449.a47808",
-            "ecec7acf.215678"
+            "ecec7acf.215678",
+            "9c8627c.7dea4d8",
+            "541cf4bd.ec76dc"
         ],
         "x": 454,
         "y": 459,
         "w": 572,
-        "h": 122
+        "h": 182
     },
     {
         "id": "1df9ccb1.d6a403",
@@ -315,9 +322,7 @@
             "1048bdd7.1dd462"
         ],
         "x": 14,
-        "y": 579,
-        "w": 672,
-        "h": 402
+        "y": 579
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -967,8 +972,8 @@
         "g": "5d7bb23e.6c04ec",
         "name": "",
         "topic": "ValveControl/SetPos",
-        "qos": "0",
-        "retain": "",
+        "qos": "1",
+        "retain": "true",
         "broker": "19cf2a10.f9d4a6",
         "x": 740,
         "y": 920,
@@ -3352,7 +3357,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "1000",
+        "payload": "3",
         "payloadType": "num",
         "x": 130,
         "y": 1160,
@@ -3442,7 +3447,7 @@
                 "offsetMaxValue": "",
                 "offsetMaxType": "none",
                 "multiplierMax": 60000,
-                "payloadValue": "5",
+                "payloadValue": "4",
                 "payloadType": "str",
                 "payloadOffsetValue": "",
                 "payloadOffsetType": "none",
@@ -3465,7 +3470,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>6:15</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"5\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>6:15</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
             },
             {
                 "index": 1,
@@ -3473,6 +3478,59 @@
                 "isValid": false,
                 "valid": {},
                 "timeValue": "9:30",
+                "timeType": "entered",
+                "timeOp": 1,
+                "timeOpText": "↧ von",
+                "offsetValue": "",
+                "offsetType": "none",
+                "multiplier": 60000,
+                "timeDays": "*",
+                "timeMonths": "*",
+                "timeOnlyEvenDays": false,
+                "timeOnlyOddDays": false,
+                "timeDateStart": "",
+                "timeDateEnd": "",
+                "timeMinValue": "",
+                "timeMinType": "none",
+                "offsetMinValue": "",
+                "offsetMinType": "none",
+                "multiplierMin": 60000,
+                "timeMaxValue": "",
+                "timeMaxType": "none",
+                "offsetMaxValue": "",
+                "offsetMaxType": "none",
+                "multiplierMax": 60000,
+                "payloadValue": "3",
+                "payloadType": "str",
+                "payloadOffsetValue": "",
+                "payloadOffsetType": "none",
+                "payloadOffsetMultiplier": 60000,
+                "payloadFormat": 99,
+                "topic": "ClockValvePos",
+                "importance": 0,
+                "resetOverwrite": false,
+                "validOperandAValue": "",
+                "validOperandAType": "none",
+                "validOperator": "true",
+                "validOperatorText": "ist true",
+                "validOperandBValue": "",
+                "validOperandBType": "num",
+                "valid2LogOperator": 0,
+                "valid2LogOperatorText": "N/A",
+                "valid2OperandAValue": "",
+                "valid2OperandAType": "msg",
+                "valid2Operator": "true",
+                "valid2OperatorText": "ist true",
+                "valid2OperandBValue": "",
+                "valid2OperandBType": "num",
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>9:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"3\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
+            },
+            {
+                "index": 2,
+                "name": "Mittag Aufheizen",
+                "isValid": false,
+                "valid": {},
+                "timeValue": "11:30",
                 "timeType": "entered",
                 "timeOp": 1,
                 "timeOpText": "↧ von",
@@ -3518,60 +3576,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>9:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
-            },
-            {
-                "index": 2,
-                "name": "Mittag Aufheizen",
-                "isValid": false,
-                "valid": {},
-                "timeValue": "11:30",
-                "timeType": "entered",
-                "timeOp": 1,
-                "timeOpText": "↧ von",
-                "offsetValue": "",
-                "offsetType": "none",
-                "multiplier": 60000,
-                "timeDays": "*",
-                "timeMonths": "*",
-                "timeOnlyEvenDays": false,
-                "timeOnlyOddDays": false,
-                "timeDateStart": "",
-                "timeDateEnd": "",
-                "timeMinValue": "",
-                "timeMinType": "none",
-                "offsetMinValue": "",
-                "offsetMinType": "none",
-                "multiplierMin": 60000,
-                "timeMaxValue": "",
-                "timeMaxType": "none",
-                "offsetMaxValue": "",
-                "offsetMaxType": "none",
-                "multiplierMax": 60000,
-                "payloadValue": "5",
-                "payloadType": "str",
-                "payloadOffsetValue": "",
-                "payloadOffsetType": "none",
-                "payloadOffsetMultiplier": 60000,
-                "payloadFormat": 99,
-                "topic": "ClockValvePos",
-                "importance": 0,
-                "resetOverwrite": false,
-                "validOperandAValue": "",
-                "validOperandAType": "none",
-                "validOperator": "true",
-                "validOperatorText": "ist true",
-                "validOperandBValue": "",
-                "validOperandBType": "num",
-                "valid2LogOperator": 0,
-                "valid2LogOperatorText": "N/A",
-                "valid2OperandAValue": "",
-                "valid2OperandAType": "msg",
-                "valid2Operator": "true",
-                "valid2OperatorText": "ist true",
-                "valid2OperandBValue": "",
-                "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>11:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"5\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>11:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
             },
             {
                 "index": 3,
@@ -3631,7 +3636,7 @@
                 "name": "Abend",
                 "isValid": false,
                 "valid": {},
-                "timeValue": "16:00",
+                "timeValue": "15:45",
                 "timeType": "entered",
                 "timeOp": 1,
                 "timeOpText": "↧ von",
@@ -3677,7 +3682,7 @@
                 "valid2OperatorText": "ist true",
                 "valid2OperandBValue": "",
                 "valid2OperandBType": "num",
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>16:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>15:45</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div><div class=\"indent-topic-text\"> <span>Topic:</span> <var>ClockValvePos</var></div></div>"
             },
             {
                 "index": 5,
@@ -3807,7 +3812,7 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "Heating Timer",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5327,7 +5332,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "Esstisch Steuerung Output",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5384,7 +5389,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5466,7 +5471,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "WeatherID",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5483,7 +5488,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "Msg Clouds",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5542,7 +5547,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "WeatherDetail",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5690,7 +5695,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "EsstischReason",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6238,7 +6243,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "Wohnz Rolladensteuerung Output",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6271,7 +6276,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "WohnzReason",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -6537,7 +6542,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "RolloWohnzimmerStatus",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7392,51 +7397,6 @@
         ]
     },
     {
-        "id": "58fd50a.ed2c7b",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1130,
-        "y": 1060,
-        "wires": [
-            [
-                "3249e313.66ef5c"
-            ]
-        ]
-    },
-    {
-        "id": "3249e313.66ef5c",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1310,
-        "y": 1060,
-        "wires": []
-    },
-    {
         "id": "d3cd8ba2.f50dc8",
         "type": "mqtt in",
         "z": "7e5a345d.05161c",
@@ -7900,7 +7860,7 @@
         "type": "debug",
         "z": "7e5a345d.05161c",
         "name": "OlgaRolladensteuerung Output",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8113,7 +8073,7 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "TestCalc",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8159,6 +8119,277 @@
         "statusType": "auto",
         "x": 730,
         "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "ed0d92d3.e506c",
+        "type": "inject",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 130,
+        "y": 1200,
+        "wires": [
+            [
+                "cb6213d.83258f"
+            ]
+        ]
+    },
+    {
+        "id": "2e597129.8d3a6e",
+        "type": "mqtt out",
+        "z": "fd3d6f52.8b9e7",
+        "name": "Wohnzimmerlampe",
+        "topic": "shellies/Wohnzimmerlampe/light/0/set",
+        "qos": "",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 340,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "de8379d8.148638",
+        "type": "mqtt in",
+        "z": "fd3d6f52.8b9e7",
+        "name": "Wohnzimmerlampe Input",
+        "topic": "shellies/Wohnzimmerlampe/light/0/status",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 380,
+        "y": 280,
+        "wires": [
+            [
+                "a6d26347.76c2b"
+            ]
+        ]
+    },
+    {
+        "id": "a6d26347.76c2b",
+        "type": "debug",
+        "z": "fd3d6f52.8b9e7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "7f95dc4.1bd8624",
+        "type": "inject",
+        "z": "fd3d6f52.8b9e7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            [
+                "2e597129.8d3a6e"
+            ]
+        ]
+    },
+    {
+        "id": "793d7a03.8f10e4",
+        "type": "inject",
+        "z": "fd3d6f52.8b9e7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 100,
+        "y": 280,
+        "wires": [
+            [
+                "2e597129.8d3a6e"
+            ]
+        ]
+    },
+    {
+        "id": "4f763efb.267f5",
+        "type": "inject",
+        "z": "fd3d6f52.8b9e7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"brightness\":10,\"turn\":\"on\"}",
+        "payloadType": "json",
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "2e597129.8d3a6e"
+            ]
+        ]
+    },
+    {
+        "id": "614f3e55.8403",
+        "type": "inject",
+        "z": "fd3d6f52.8b9e7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"brightness\":80,\"turn\":\"toggle\",\"transition\":5000}",
+        "payloadType": "json",
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "2e597129.8d3a6e"
+            ]
+        ]
+    },
+    {
+        "id": "10bce59a.3b7c6a",
+        "type": "mqtt in",
+        "z": "fd3d6f52.8b9e7",
+        "name": "",
+        "topic": "shellies/Wohnzimmerlampe/light/0/power",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 470,
+        "y": 420,
+        "wires": [
+            [
+                "a6d26347.76c2b"
+            ]
+        ]
+    },
+    {
+        "id": "b8c299bc.8c4e18",
+        "type": "inject",
+        "z": "511989b1.670cc8",
+        "g": "18ca9346.bdbedd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ShutdownOctopi",
+        "payloadType": "str",
+        "x": 1390,
+        "y": 880,
+        "wires": [
+            [
+                "550eb938.78f938",
+                "acfc89f6.5dc368"
+            ]
+        ]
+    },
+    {
+        "id": "9c8627c.7dea4d8",
+        "type": "mqtt in",
+        "z": "6f61cfd3.3d721",
+        "g": "73d12632.94b388",
+        "name": "Error Text",
+        "topic": "ValveControl/Err",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 540,
+        "y": 580,
+        "wires": [
+            [
+                "541cf4bd.ec76dc"
+            ]
+        ]
+    },
+    {
+        "id": "541cf4bd.ec76dc",
+        "type": "debug",
+        "z": "6f61cfd3.3d721",
+        "g": "73d12632.94b388",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 600,
         "wires": []
     }
 ]
