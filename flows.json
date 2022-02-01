@@ -322,7 +322,9 @@
             "1048bdd7.1dd462"
         ],
         "x": 14,
-        "y": 579
+        "y": 579,
+        "w": 672,
+        "h": 402
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -1607,7 +1609,7 @@
         "z": "511989b1.670cc8",
         "g": "5c041b39.d836b4",
         "name": "mqtt_test_pub",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3812,7 +3814,7 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "Heating Timer",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8073,7 +8075,7 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "TestCalc",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8182,7 +8184,7 @@
         "type": "debug",
         "z": "fd3d6f52.8b9e7",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8391,5 +8393,36 @@
         "x": 910,
         "y": 600,
         "wires": []
+    },
+    {
+        "id": "661d8f67.a64fd",
+        "type": "mqtt out",
+        "z": "fd3d6f52.8b9e7",
+        "name": "",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 550,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "cb2fab73.3e4b88",
+        "type": "function",
+        "z": "fd3d6f52.8b9e7",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 600,
+        "wires": [
+            [
+                "661d8f67.a64fd"
+            ]
+        ]
     }
 ]
