@@ -592,26 +592,6 @@
         "collapse": false
     },
     {
-        "id": "14584712.7a2929",
-        "type": "ui_group",
-        "name": "Condition",
-        "tab": "eb94216d.968598",
-        "order": 2,
-        "disp": false,
-        "width": "2",
-        "collapse": false
-    },
-    {
-        "id": "5e0d6747.b726b",
-        "type": "ui_group",
-        "name": "Forecast",
-        "tab": "eb94216d.968598",
-        "order": 6,
-        "disp": false,
-        "width": "8",
-        "collapse": false
-    },
-    {
         "id": "258c6649.0213da",
         "type": "ui_tab",
         "name": "Home",
@@ -665,42 +645,6 @@
         "disp": true,
         "width": "6",
         "collapse": false
-    },
-    {
-        "id": "1890881e.83819",
-        "type": "ui_group",
-        "name": "Col1",
-        "tab": "c3173234.2636e",
-        "order": 1,
-        "disp": false,
-        "width": "6"
-    },
-    {
-        "id": "c5f1b8aa.45bc08",
-        "type": "ui_group",
-        "name": "Actions",
-        "tab": "c3173234.2636e",
-        "order": 4,
-        "disp": true,
-        "width": "6"
-    },
-    {
-        "id": "9a96a8b1.92db78",
-        "type": "ui_group",
-        "name": "Col2",
-        "tab": "c3173234.2636e",
-        "order": 2,
-        "disp": false,
-        "width": "6"
-    },
-    {
-        "id": "72fc319.cc425d",
-        "type": "ui_group",
-        "name": "Col3",
-        "tab": "c3173234.2636e",
-        "order": 3,
-        "disp": false,
-        "width": "6"
     },
     {
         "id": "c3173234.2636e",
