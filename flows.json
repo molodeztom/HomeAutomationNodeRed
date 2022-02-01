@@ -49,9 +49,9 @@
         "info": ""
     },
     {
-        "id": "fd3d6f52.8b9e7",
+        "id": "303a8ac7.4ea1c6",
         "type": "tab",
-        "label": "Beleuchtung Wohnzimmer",
+        "label": "Wohnzimmer Beleuchtung",
         "disabled": false,
         "info": ""
     },
@@ -88,7 +88,9 @@
             "532bc566.df7b1c"
         ],
         "x": 14,
-        "y": 199
+        "y": 199,
+        "w": 812,
+        "h": 502
     },
     {
         "id": "7d3411b0.20fc7",
@@ -108,7 +110,9 @@
             "2a103049.f6a29"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 892,
+        "h": 142
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -233,7 +237,9 @@
             "a30d9009.4e13b"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 1182,
+        "h": 502
     },
     {
         "id": "18ca9346.bdbedd",
@@ -274,7 +280,9 @@
             "b8c299bc.8c4e18"
         ],
         "x": 24,
-        "y": 536.5
+        "y": 536.5,
+        "w": 1502,
+        "h": 524.5
     },
     {
         "id": "73d12632.94b388",
@@ -321,10 +329,87 @@
             "4863a60b.b49858",
             "1048bdd7.1dd462"
         ],
-        "x": 14,
-        "y": 579,
+        "x": 34,
+        "y": 559,
         "w": 672,
         "h": 402
+    },
+    {
+        "id": "875b7fad.bef24",
+        "type": "group",
+        "z": "303a8ac7.4ea1c6",
+        "name": "Regalbeleuchtung",
+        "style": {
+            "stroke": "#3f93cf",
+            "fill": "#ffff7f",
+            "label": true
+        },
+        "nodes": [
+            "cc3c23a7.cde0c",
+            "6f653dba.45b264",
+            "fb5cff5c.b5669",
+            "ec444cf1.0f441",
+            "4a72d2bb.8a626c",
+            "1dc7e978.c48077",
+            "b8aa167e.038cf8",
+            "8d25df5c.ebd85",
+            "114319b2.da6366"
+        ],
+        "x": 34,
+        "y": 499,
+        "w": 912,
+        "h": 282
+    },
+    {
+        "id": "1b82c7fb.e55448",
+        "type": "group",
+        "z": "303a8ac7.4ea1c6",
+        "name": "Jalousie Zentralschalter",
+        "style": {
+            "stroke": "#b797cf",
+            "fill": "#ffdf7f",
+            "label": true,
+            "color": "#001f60"
+        },
+        "nodes": [
+            "70c7fcfe.4a18a4",
+            "e5cb0df.5f800f",
+            "9d5588be.cd9ff8",
+            "90164b1.c8cd0b8",
+            "e62cdee5.0ac4a",
+            "692cb70c.99c928",
+            "89de660e.32b288"
+        ],
+        "x": 34,
+        "y": 299,
+        "w": 992,
+        "h": 162
+    },
+    {
+        "id": "25c55a9c.73b9c6",
+        "type": "group",
+        "z": "303a8ac7.4ea1c6",
+        "name": "Wohnzimmer Deckenlampe",
+        "style": {
+            "stroke": "#92d04f",
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "e093d6cc.660ef8",
+            "c4729f96.429f3",
+            "e698cc28.6d655",
+            "f394341d.b4ebf8",
+            "78b4e8db.f77fb8",
+            "923ccc32.a66e2",
+            "47fa255b.9cef7c",
+            "d5fc8000.9e0ab"
+        ],
+        "x": 34,
+        "y": 19,
+        "w": 752,
+        "h": 262
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -503,16 +588,6 @@
         "tab": "b735724.619b39",
         "order": 1,
         "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "99a4dc86.46d248",
-        "type": "ui_group",
-        "name": "Masterswitches",
-        "tab": "258c6649.0213da",
-        "order": 6,
-        "disp": false,
         "width": "6",
         "collapse": false
     },
@@ -1213,8 +1288,8 @@
         "qos": "1",
         "datatype": "utf8",
         "broker": "19cf2a10.f9d4a6",
-        "x": 160,
-        "y": 240,
+        "x": 140,
+        "y": 220,
         "wires": [
             [
                 "18fef629.91877a"
@@ -1609,7 +1684,7 @@
         "z": "511989b1.670cc8",
         "g": "5c041b39.d836b4",
         "name": "mqtt_test_pub",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1719,7 +1794,7 @@
         "z": "511989b1.670cc8",
         "g": "5c041b39.d836b4",
         "name": "PrintControlOutput",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3859,8 +3934,8 @@
         "topic": "",
         "payload": "10",
         "payloadType": "str",
-        "x": 110,
-        "y": 620,
+        "x": 130,
+        "y": 600,
         "wires": [
             [
                 "f67b9f12.7be84"
@@ -3889,8 +3964,8 @@
         "topic": "",
         "payload": "40",
         "payloadType": "num",
-        "x": 110,
-        "y": 660,
+        "x": 130,
+        "y": 640,
         "wires": [
             [
                 "f67b9f12.7be84"
@@ -3919,8 +3994,8 @@
         "topic": "",
         "payload": "100",
         "payloadType": "num",
-        "x": 110,
-        "y": 700,
+        "x": 130,
+        "y": 680,
         "wires": [
             [
                 "f67b9f12.7be84"
@@ -3937,8 +4012,8 @@
         "qos": "2",
         "datatype": "utf8",
         "broker": "19cf2a10.f9d4a6",
-        "x": 120,
-        "y": 760,
+        "x": 140,
+        "y": 740,
         "wires": [
             [
                 "1859d091.dd706f"
@@ -4001,8 +4076,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 430,
-        "y": 760,
+        "x": 450,
+        "y": 740,
         "wires": []
     },
     {
@@ -4057,8 +4132,8 @@
         "qos": "2",
         "datatype": "utf8",
         "broker": "19cf2a10.f9d4a6",
-        "x": 180,
-        "y": 820,
+        "x": 200,
+        "y": 800,
         "wires": [
             [
                 "b33c68f6.15ed68"
@@ -4133,8 +4208,8 @@
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 490,
-        "y": 660,
+        "x": 510,
+        "y": 640,
         "wires": []
     },
     {
@@ -4147,8 +4222,8 @@
         "qos": "2",
         "datatype": "json",
         "broker": "19cf2a10.f9d4a6",
-        "x": 190,
-        "y": 880,
+        "x": 210,
+        "y": 860,
         "wires": [
             [
                 "4863a60b.b49858"
@@ -4165,8 +4240,8 @@
         "qos": "2",
         "datatype": "json",
         "broker": "19cf2a10.f9d4a6",
-        "x": 190,
-        "y": 940,
+        "x": 210,
+        "y": 920,
         "wires": [
             [
                 "1048bdd7.1dd462"
@@ -4187,8 +4262,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 430,
-        "y": 820,
+        "x": 450,
+        "y": 800,
         "wires": []
     },
     {
@@ -4205,8 +4280,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 430,
-        "y": 880,
+        "x": 450,
+        "y": 860,
         "wires": []
     },
     {
@@ -4223,8 +4298,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 430,
-        "y": 940,
+        "x": 450,
+        "y": 920,
         "wires": []
     },
     {
@@ -8150,185 +8225,6 @@
         ]
     },
     {
-        "id": "2e597129.8d3a6e",
-        "type": "mqtt out",
-        "z": "fd3d6f52.8b9e7",
-        "name": "Wohnzimmerlampe",
-        "topic": "shellies/Wohnzimmerlampe/light/0/set",
-        "qos": "",
-        "retain": "",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 340,
-        "y": 180,
-        "wires": []
-    },
-    {
-        "id": "de8379d8.148638",
-        "type": "mqtt in",
-        "z": "fd3d6f52.8b9e7",
-        "name": "Wohnzimmerlampe Input",
-        "topic": "shellies/Wohnzimmerlampe/light/0/status",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 380,
-        "y": 280,
-        "wires": [
-            [
-                "a6d26347.76c2b"
-            ]
-        ]
-    },
-    {
-        "id": "a6d26347.76c2b",
-        "type": "debug",
-        "z": "fd3d6f52.8b9e7",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 660,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "7f95dc4.1bd8624",
-        "type": "inject",
-        "z": "fd3d6f52.8b9e7",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "off",
-        "payloadType": "str",
-        "x": 120,
-        "y": 200,
-        "wires": [
-            [
-                "2e597129.8d3a6e"
-            ]
-        ]
-    },
-    {
-        "id": "793d7a03.8f10e4",
-        "type": "inject",
-        "z": "fd3d6f52.8b9e7",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "on",
-        "payloadType": "str",
-        "x": 100,
-        "y": 280,
-        "wires": [
-            [
-                "2e597129.8d3a6e"
-            ]
-        ]
-    },
-    {
-        "id": "4f763efb.267f5",
-        "type": "inject",
-        "z": "fd3d6f52.8b9e7",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"brightness\":10,\"turn\":\"on\"}",
-        "payloadType": "json",
-        "x": 110,
-        "y": 400,
-        "wires": [
-            [
-                "2e597129.8d3a6e"
-            ]
-        ]
-    },
-    {
-        "id": "614f3e55.8403",
-        "type": "inject",
-        "z": "fd3d6f52.8b9e7",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"brightness\":80,\"turn\":\"toggle\",\"transition\":5000}",
-        "payloadType": "json",
-        "x": 110,
-        "y": 480,
-        "wires": [
-            [
-                "2e597129.8d3a6e"
-            ]
-        ]
-    },
-    {
-        "id": "10bce59a.3b7c6a",
-        "type": "mqtt in",
-        "z": "fd3d6f52.8b9e7",
-        "name": "",
-        "topic": "shellies/Wohnzimmerlampe/light/0/power",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 470,
-        "y": 420,
-        "wires": [
-            [
-                "a6d26347.76c2b"
-            ]
-        ]
-    },
-    {
         "id": "b8c299bc.8c4e18",
         "type": "inject",
         "z": "511989b1.670cc8",
@@ -8395,34 +8291,547 @@
         "wires": []
     },
     {
-        "id": "661d8f67.a64fd",
-        "type": "mqtt out",
-        "z": "fd3d6f52.8b9e7",
+        "id": "3e77c285.5cb8de",
+        "type": "inject",
+        "z": "511989b1.670cc8",
         "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
         "topic": "",
+        "payload": "test Tom",
+        "payloadType": "str",
+        "x": 1250,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd62f2d7.c32f7",
+        "type": "link in",
+        "z": "7e5a345d.05161c",
+        "name": "Rollo Esstisch",
+        "links": [
+            "89de660e.32b288"
+        ],
+        "x": 95,
+        "y": 1460,
+        "wires": [
+            [
+                "719dd77e.126428",
+                "5eac9c57.76c314",
+                "1a538972.87cf07"
+            ]
+        ]
+    },
+    {
+        "id": "e093d6cc.660ef8",
+        "type": "mqtt out",
+        "z": "303a8ac7.4ea1c6",
+        "g": "25c55a9c.73b9c6",
+        "name": "Wohnzimmerlampe",
+        "topic": "shellies/Wohnzimmerlampe/light/0/set",
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 550,
-        "y": 600,
+        "x": 330,
+        "y": 60,
         "wires": []
     },
     {
-        "id": "cb2fab73.3e4b88",
-        "type": "function",
-        "z": "fd3d6f52.8b9e7",
+        "id": "c4729f96.429f3",
+        "type": "mqtt in",
+        "z": "303a8ac7.4ea1c6",
+        "g": "25c55a9c.73b9c6",
+        "name": "Wohnzimmerlampe Status",
+        "topic": "shellies/Wohnzimmerlampe/light/0/status",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 350,
+        "y": 120,
+        "wires": [
+            [
+                "e698cc28.6d655"
+            ]
+        ]
+    },
+    {
+        "id": "e698cc28.6d655",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "g": "25c55a9c.73b9c6",
         "name": "",
-        "func": "\nreturn msg;",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "f394341d.b4ebf8",
+        "type": "inject",
+        "z": "303a8ac7.4ea1c6",
+        "g": "25c55a9c.73b9c6",
+        "name": "OFF",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"brightness\":100,\"turn\":\"off\"}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "e093d6cc.660ef8"
+            ]
+        ]
+    },
+    {
+        "id": "78b4e8db.f77fb8",
+        "type": "inject",
+        "z": "303a8ac7.4ea1c6",
+        "g": "25c55a9c.73b9c6",
+        "name": "ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"brightness\":100,\"turn\":\"on\"}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "e093d6cc.660ef8"
+            ]
+        ]
+    },
+    {
+        "id": "923ccc32.a66e2",
+        "type": "inject",
+        "z": "303a8ac7.4ea1c6",
+        "g": "25c55a9c.73b9c6",
+        "name": "30%",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"brightness\":30,\"turn\":\"on\"}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "e093d6cc.660ef8"
+            ]
+        ]
+    },
+    {
+        "id": "47fa255b.9cef7c",
+        "type": "inject",
+        "z": "303a8ac7.4ea1c6",
+        "g": "25c55a9c.73b9c6",
+        "name": "80%",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"brightness\":80,\"turn\":\"on\",\"transition\":5000}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "e093d6cc.660ef8"
+            ]
+        ]
+    },
+    {
+        "id": "d5fc8000.9e0ab",
+        "type": "mqtt in",
+        "z": "303a8ac7.4ea1c6",
+        "g": "25c55a9c.73b9c6",
+        "name": "",
+        "topic": "shellies/Wohnzimmerlampe/light/0/power",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "e698cc28.6d655"
+            ]
+        ]
+    },
+    {
+        "id": "70c7fcfe.4a18a4",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "g": "1b82c7fb.e55448",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e5cb0df.5f800f",
+        "type": "mqtt in",
+        "z": "303a8ac7.4ea1c6",
+        "g": "1b82c7fb.e55448",
+        "name": "",
+        "topic": "shellies/Wohnzimmerschalter/input_event/0",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 220,
+        "y": 420,
+        "wires": [
+            [
+                "70c7fcfe.4a18a4",
+                "9d5588be.cd9ff8"
+            ]
+        ]
+    },
+    {
+        "id": "cc3c23a7.cde0c",
+        "type": "mqtt in",
+        "z": "303a8ac7.4ea1c6",
+        "g": "875b7fad.bef24",
+        "name": "",
+        "topic": "shellies/Wohnzimmerschalter/input_event/2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 220,
+        "y": 620,
+        "wires": [
+            [
+                "b8aa167e.038cf8"
+            ]
+        ]
+    },
+    {
+        "id": "9d5588be.cd9ff8",
+        "type": "json",
+        "z": "303a8ac7.4ea1c6",
+        "g": "1b82c7fb.e55448",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 470,
+        "y": 420,
+        "wires": [
+            [
+                "90164b1.c8cd0b8",
+                "e62cdee5.0ac4a"
+            ]
+        ]
+    },
+    {
+        "id": "90164b1.c8cd0b8",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "g": "1b82c7fb.e55448",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e62cdee5.0ac4a",
+        "type": "function",
+        "z": "303a8ac7.4ea1c6",
+        "g": "1b82c7fb.e55448",
+        "name": "",
+        "func": "switch (msg.payload.event){\n    case \"S\":\n        msg.payload = \"0\";\n        break;\n    case \"SS\":\n        msg.payload = \"50\";\n        break;\n    case \"SSS\":\n        msg.payload = \"100\";\n        break;\n    default:\n        msg.payload = \"anderes event\"\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 310,
-        "y": 600,
+        "x": 640,
+        "y": 420,
         "wires": [
             [
-                "661d8f67.a64fd"
+                "692cb70c.99c928",
+                "89de660e.32b288"
             ]
         ]
+    },
+    {
+        "id": "692cb70c.99c928",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "g": "1b82c7fb.e55448",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "89de660e.32b288",
+        "type": "link out",
+        "z": "303a8ac7.4ea1c6",
+        "g": "1b82c7fb.e55448",
+        "name": "Schalter Out",
+        "links": [
+            "fd62f2d7.c32f7"
+        ],
+        "x": 815,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "6f653dba.45b264",
+        "type": "mqtt out",
+        "z": "303a8ac7.4ea1c6",
+        "g": "875b7fad.bef24",
+        "name": "Regal Wohnzimmer Ein Aus",
+        "topic": "shellies/Regalbeleuchtung/color/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 360,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "fb5cff5c.b5669",
+        "type": "inject",
+        "z": "303a8ac7.4ea1c6",
+        "g": "875b7fad.bef24",
+        "name": "ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 130,
+        "y": 680,
+        "wires": [
+            [
+                "6f653dba.45b264"
+            ]
+        ]
+    },
+    {
+        "id": "ec444cf1.0f441",
+        "type": "inject",
+        "z": "303a8ac7.4ea1c6",
+        "g": "875b7fad.bef24",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 130,
+        "y": 740,
+        "wires": [
+            [
+                "6f653dba.45b264"
+            ]
+        ]
+    },
+    {
+        "id": "4a72d2bb.8a626c",
+        "type": "inject",
+        "z": "303a8ac7.4ea1c6",
+        "g": "875b7fad.bef24",
+        "name": "Regalbeleuchtung JSON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"mode\":\"color\",\"red\":255,\"green\":255,\"blue\":255,\"gain\":100,\"white\":0,\"effect\":0,\"turn\":\"on\",\"transition\":500}",
+        "payloadType": "json",
+        "x": 550,
+        "y": 540,
+        "wires": [
+            [
+                "1dc7e978.c48077"
+            ]
+        ]
+    },
+    {
+        "id": "1dc7e978.c48077",
+        "type": "mqtt out",
+        "z": "303a8ac7.4ea1c6",
+        "g": "875b7fad.bef24",
+        "name": "Regalbeleuchtung Set",
+        "topic": "shellies/Regalbeleuchtung/color/0/set",
+        "qos": "",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 820,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "b8aa167e.038cf8",
+        "type": "json",
+        "z": "303a8ac7.4ea1c6",
+        "g": "875b7fad.bef24",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 470,
+        "y": 620,
+        "wires": [
+            [
+                "8d25df5c.ebd85"
+            ]
+        ]
+    },
+    {
+        "id": "8d25df5c.ebd85",
+        "type": "function",
+        "z": "303a8ac7.4ea1c6",
+        "g": "875b7fad.bef24",
+        "name": "",
+        "func": "switch (msg.payload.event){\n    case \"S\":\n        msg.payload = \n        {\n    \"mode\": \"color\",\n    \"red\": 255,\n    \"green\": 255,\n    \"blue\": 255,\n    \"gain\": 100,\n    \"turn\": \"toggle\",\n    \"transition\": 500\n}\n        break;\n    case \"SS\":\n        msg.payload = \n                {\n    \"mode\": \"color\",\n    \"red\": 80,\n    \"green\": 255,\n    \"blue\": 255,\n    \"gain\": 50,\n    \"turn\": \"on\",\n    \"transition\": 500\n                }\n        break;\n    case \"SSS\":\n        msg.payload = \n                {\n    \"mode\": \"color\",\n    \"red\": 255,\n    \"green\": 255,\n    \"blue\": 255,\n    \"gain\": 100,\n    \"turn\": \"on\",\n    \"transition\": 100\n}\n        break;\n    default:\n        msg.payload = \"anderes event\"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 620,
+        "y": 620,
+        "wires": [
+            [
+                "1dc7e978.c48077",
+                "114319b2.da6366"
+            ]
+        ]
+    },
+    {
+        "id": "114319b2.da6366",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "g": "875b7fad.bef24",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 580,
+        "wires": []
     }
 ]
