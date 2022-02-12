@@ -147,7 +147,7 @@
             "ed0d92d3.e506c"
         ],
         "x": 24,
-        "y": 639,
+        "y": 719,
         "w": 842,
         "h": 602
     },
@@ -181,12 +181,15 @@
             "eced108b.5f3cd",
             "95b11563.82c788",
             "e414ce6.6f20c3",
-            "7a71ee5f.b5c6f"
+            "7a71ee5f.b5c6f",
+            "3bd8ac1b.081bb4",
+            "3ad0e3f6.35a08c",
+            "f5d3faae.391998"
         ],
         "x": 14,
         "y": 19,
         "w": 992,
-        "h": 423
+        "h": 482
     },
     {
         "id": "2f27dc68.9ff574",
@@ -204,8 +207,8 @@
             "ea688e79.cf481",
             "64c76441.d5f36c"
         ],
-        "x": 14,
-        "y": 459,
+        "x": 34,
+        "y": 559,
         "w": 432,
         "h": 142
     },
@@ -305,8 +308,8 @@
             "9c8627c.7dea4d8",
             "541cf4bd.ec76dc"
         ],
-        "x": 454,
-        "y": 459,
+        "x": 494,
+        "y": 519,
         "w": 572,
         "h": 182
     },
@@ -637,8 +640,8 @@
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 360,
-        "y": 560,
+        "x": 380,
+        "y": 660,
         "wires": []
     },
     {
@@ -705,8 +708,8 @@
         "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 120,
-        "y": 500,
+        "x": 140,
+        "y": 600,
         "wires": [
             [
                 "64c76441.d5f36c"
@@ -723,8 +726,8 @@
         "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 120,
-        "y": 560,
+        "x": 140,
+        "y": 660,
         "wires": [
             [
                 "49e2646f.c4941c"
@@ -813,8 +816,8 @@
         "qos": "0",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 350,
-        "y": 500,
+        "x": 370,
+        "y": 600,
         "wires": []
     },
     {
@@ -971,7 +974,7 @@
         "retain": "true",
         "broker": "19cf2a10.f9d4a6",
         "x": 740,
-        "y": 920,
+        "y": 1000,
         "wires": []
     },
     {
@@ -993,7 +996,7 @@
         "payload": "4",
         "payloadType": "num",
         "x": 120,
-        "y": 920,
+        "y": 1000,
         "wires": [
             [
                 "17a551f9.bcd59e"
@@ -1019,7 +1022,7 @@
         "payload": "5",
         "payloadType": "num",
         "x": 120,
-        "y": 980,
+        "y": 1060,
         "wires": [
             [
                 "17a551f9.bcd59e"
@@ -1045,7 +1048,7 @@
         "payload": "3",
         "payloadType": "num",
         "x": 120,
-        "y": 860,
+        "y": 940,
         "wires": [
             [
                 "17a551f9.bcd59e"
@@ -1075,7 +1078,7 @@
         "payload": "0",
         "payloadType": "str",
         "x": 130,
-        "y": 680,
+        "y": 760,
         "wires": [
             [
                 "17a551f9.bcd59e"
@@ -1101,7 +1104,7 @@
         "payload": "2",
         "payloadType": "num",
         "x": 120,
-        "y": 800,
+        "y": 880,
         "wires": [
             [
                 "17a551f9.bcd59e"
@@ -1127,7 +1130,7 @@
         "payload": "1",
         "payloadType": "num",
         "x": 120,
-        "y": 740,
+        "y": 820,
         "wires": [
             [
                 "17a551f9.bcd59e"
@@ -1140,7 +1143,7 @@
         "z": "6f61cfd3.3d721",
         "g": "584f76f1.996908",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3295,8 +3298,8 @@
         "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 560,
-        "y": 500,
+        "x": 600,
+        "y": 560,
         "wires": [
             [
                 "3bb0fb40.e717e4",
@@ -3318,8 +3321,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 910,
-        "y": 540,
+        "x": 950,
+        "y": 600,
         "wires": []
     },
     {
@@ -3333,7 +3336,7 @@
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
         "x": 370,
-        "y": 1160,
+        "y": 1240,
         "wires": []
     },
     {
@@ -3355,7 +3358,7 @@
         "payload": "3",
         "payloadType": "num",
         "x": 130,
-        "y": 1160,
+        "y": 1240,
         "wires": [
             [
                 "cb6213d.83258f"
@@ -3373,8 +3376,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 760,
-        "y": 500,
+        "x": 800,
+        "y": 560,
         "wires": [
             [
                 "ecec7acf.215678"
@@ -3395,8 +3398,8 @@
         "retentionPolicyV18Flux": "",
         "org": "",
         "bucket": "",
-        "x": 930,
-        "y": 500,
+        "x": 970,
+        "y": 560,
         "wires": []
     },
     {
@@ -3793,7 +3796,7 @@
         "payloadDefaultOffsetType": "none",
         "payloadDefaultOffsetMultiplier": 60000,
         "x": 120,
-        "y": 1040,
+        "y": 1120,
         "wires": [
             [
                 "8583dd1c.64052",
@@ -3816,7 +3819,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 720,
-        "y": 980,
+        "y": 1060,
         "wires": []
     },
     {
@@ -3827,7 +3830,7 @@
         "name": "Intervall Stufe 1 und 2",
         "info": "Intervall für Stufe 1/2",
         "x": 520,
-        "y": 740,
+        "y": 820,
         "wires": []
     },
     {
@@ -8036,7 +8039,7 @@
         "initialize": "",
         "finalize": "",
         "x": 510,
-        "y": 1040,
+        "y": 1120,
         "wires": [
             [
                 "4f746528.3b88cc",
@@ -8055,7 +8058,7 @@
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
         "x": 140,
-        "y": 1100,
+        "y": 1180,
         "wires": [
             [
                 "8823d2b3.3d2ab"
@@ -8077,7 +8080,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 700,
-        "y": 1040,
+        "y": 1120,
         "wires": []
     },
     {
@@ -8090,7 +8093,7 @@
         "action": "",
         "pretty": false,
         "x": 320,
-        "y": 1100,
+        "y": 1180,
         "wires": [
             [
                 "3c079b7c.3bb374",
@@ -8113,7 +8116,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 730,
-        "y": 1100,
+        "y": 1180,
         "wires": []
     },
     {
@@ -8135,7 +8138,7 @@
         "payload": "1",
         "payloadType": "num",
         "x": 130,
-        "y": 1200,
+        "y": 1280,
         "wires": [
             [
                 "cb6213d.83258f"
@@ -8183,8 +8186,8 @@
         "qos": "2",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 540,
-        "y": 580,
+        "x": 580,
+        "y": 640,
         "wires": [
             [
                 "541cf4bd.ec76dc"
@@ -8204,8 +8207,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 910,
-        "y": 600,
+        "x": 950,
+        "y": 660,
         "wires": []
     },
     {
@@ -8816,7 +8819,7 @@
         "retentionPolicyV18Flux": "",
         "org": "organisation",
         "bucket": "bucket",
-        "x": 550,
+        "x": 630,
         "y": 480,
         "wires": []
     },
@@ -8825,12 +8828,12 @@
         "type": "function",
         "z": "265d3756.5a1d68",
         "name": "",
-        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Hom/stat/Wohnz/iVentEck\":\n        msg.payload={\n            iVentEck: Number(msg.payload) \n            \n        }\n        return msg;\n   case \"Hom/stat/Wohnz/iVentEss\":\n        msg.payload={\n            iVentEss: Number(msg.payload) \n            \n        }\n        return msg;\n    case \"Hom/stat/Wohnz/iSetTemp\":\n        msg.payload={\n            iVentEss: Number(msg.payload) \n            \n        }\n        return msg;\n   \n}\n",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Hom/stat/Wohnz/iVentEck\":\n        msg.payload={\n            iVentEck: Number(msg.payload) \n            \n        }\n        return msg;\n   case \"Hom/stat/Wohnz/iVentEss\":\n        msg.payload={\n            iVentEss: Number(msg.payload) \n            \n        }\n        return msg;\n    case \"Hom/stat/Wohnz/iSetTemp\":\n        msg.payload={\n            iSetTemp: Number(msg.payload) \n            \n        }\n        return msg;\n   \n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 330,
+        "x": 380,
         "y": 480,
         "wires": [
             [
@@ -8843,14 +8846,17 @@
         "type": "mqtt in",
         "z": "265d3756.5a1d68",
         "name": "",
-        "topic": "Hom/cmd/Olga/iSetTemp",
-        "qos": "2",
+        "topic": "Hom/stat/Olga/+",
+        "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 160,
-        "y": 580,
+        "x": 120,
+        "y": 560,
         "wires": [
-            []
+            [
+                "acdf657a.72a3b8",
+                "d1b63ad3.ccfa68"
+            ]
         ]
     },
     {
@@ -8872,7 +8878,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "Hom/cmd/Wohnz/iSetTemp",
-        "payload": "20",
+        "payload": "23",
         "payloadType": "str",
         "x": 160,
         "y": 700,
@@ -8881,5 +8887,98 @@
                 "404dde09.449bf"
             ]
         ]
+    },
+    {
+        "id": "acdf657a.72a3b8",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Hom/stat/Olga/iVent\":\n        msg.payload={\n            iVent: Number(msg.payload) \n            \n        }\n        return msg;\n   case \"Hom/stat/Olga/iSetTemp\":\n        msg.payload={\n            iSetTemp: Number(msg.payload) \n            \n        }\n        return msg;\n\n   \n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 380,
+        "y": 560,
+        "wires": [
+            [
+                "e1622e38.47b46"
+            ]
+        ]
+    },
+    {
+        "id": "e1622e38.47b46",
+        "type": "influxdb out",
+        "z": "265d3756.5a1d68",
+        "influxdb": "e3f4c3e8.b52ee",
+        "name": "HomeMatic Olga",
+        "measurement": "Olga",
+        "precision": "",
+        "retentionPolicy": "two_month",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 610,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "3bd8ac1b.081bb4",
+        "type": "mqtt in",
+        "z": "6f61cfd3.3d721",
+        "g": "584f76f1.996908",
+        "name": "",
+        "topic": "Hom/stat/Olga/iActTemp",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 150,
+        "y": 460,
+        "wires": [
+            [
+                "3ad0e3f6.35a08c"
+            ]
+        ]
+    },
+    {
+        "id": "3ad0e3f6.35a08c",
+        "type": "function",
+        "z": "6f61cfd3.3d721",
+        "g": "584f76f1.996908",
+        "name": "Hom Olga switch/convert",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Hom/stat/Olga/iActTemp\":\n        msg.payload={\n            iActTemp: Number(msg.payload) \n            \n        }\n        return msg;\n\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 390,
+        "y": 460,
+        "wires": [
+            [
+                "f5d3faae.391998",
+                "d0849bc.1c43168"
+            ]
+        ]
+    },
+    {
+        "id": "f5d3faae.391998",
+        "type": "influxdb out",
+        "z": "6f61cfd3.3d721",
+        "g": "584f76f1.996908",
+        "influxdb": "e3f4c3e8.b52ee",
+        "name": "Olga",
+        "measurement": "Olga",
+        "precision": "",
+        "retentionPolicy": "two_month",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 640,
+        "y": 460,
+        "wires": []
     }
 ]
