@@ -589,22 +589,6 @@
         "collapse": false
     },
     {
-        "id": "258c6649.0213da",
-        "type": "ui_tab",
-        "name": "Home",
-        "icon": "home",
-        "order": 1
-    },
-    {
-        "id": "eb94216d.968598",
-        "type": "ui_tab",
-        "name": "Wetterstation",
-        "icon": "fa-thermometer-half",
-        "order": 5,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "ad5a1117.c1459",
         "type": "ui_spacer",
         "name": "spacer",
@@ -642,40 +626,6 @@
         "disp": true,
         "width": "6",
         "collapse": false
-    },
-    {
-        "id": "c3173234.2636e",
-        "type": "ui_tab",
-        "name": "RPi Control",
-        "icon": "dashboard",
-        "order": 1
-    },
-    {
-        "id": "5963a29e.7b8eec",
-        "type": "ccu-connection",
-        "name": "192.168.178.70",
-        "host": "192.168.178.70",
-        "regaEnabled": true,
-        "bcrfEnabled": true,
-        "iprfEnabled": true,
-        "virtEnabled": true,
-        "bcwiEnabled": false,
-        "cuxdEnabled": false,
-        "regaPoll": true,
-        "regaInterval": "30",
-        "rpcPingTimeout": "60",
-        "rpcInitAddress": "192.168.178.70",
-        "rpcServerHost": "172.18.0.4",
-        "rpcBinPort": "2047",
-        "rpcXmlPort": "2048",
-        "tls": false,
-        "inSecure": false,
-        "authentication": true,
-        "username": "Admin",
-        "password": "q6yQQUMv0gi0wFIEwmfI",
-        "queueTimeout": "5000",
-        "queuePause": "250",
-        "contextStore": ""
     },
     {
         "id": "49e2646f.c4941c",
@@ -8779,13 +8729,13 @@
         "id": "404dde09.449bf",
         "type": "mqtt out",
         "z": "265d3756.5a1d68",
-        "name": "Set Temp Olga",
+        "name": "Homematic Command Out",
         "topic": "",
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 400,
-        "y": 620,
+        "x": 480,
+        "y": 760,
         "wires": []
     },
     {
@@ -8806,11 +8756,11 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "hom/set/OlgaTemp",
+        "topic": "Hom/cmd/Olga/iSetTemp",
         "payload": "22",
         "payloadType": "str",
         "x": 160,
-        "y": 620,
+        "y": 760,
         "wires": [
             [
                 "404dde09.449bf"
@@ -8839,11 +8789,11 @@
         "type": "mqtt in",
         "z": "265d3756.5a1d68",
         "name": "",
-        "topic": "Hom/Wohnz/+",
+        "topic": "Hom/stat/Wohnz/+",
         "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 110,
+        "x": 130,
         "y": 480,
         "wires": [
             [
@@ -8875,7 +8825,7 @@
         "type": "function",
         "z": "265d3756.5a1d68",
         "name": "",
-        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Hom/Wohnz/iVentEck\":\n        msg.payload={\n            iVentEck: Number(msg.payload) \n            \n        }\n        return msg;\n   case \"Hom/Wohnz/iVentEss\":\n        msg.payload={\n            iVentEss: Number(msg.payload) \n            \n        }\n        return msg;\n   \n}\n",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Hom/stat/Wohnz/iVentEck\":\n        msg.payload={\n            iVentEck: Number(msg.payload) \n            \n        }\n        return msg;\n   case \"Hom/stat/Wohnz/iVentEss\":\n        msg.payload={\n            iVentEss: Number(msg.payload) \n            \n        }\n        return msg;\n    case \"Hom/stat/Wohnz/iSetTemp\":\n        msg.payload={\n            iVentEss: Number(msg.payload) \n            \n        }\n        return msg;\n   \n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8885,6 +8835,50 @@
         "wires": [
             [
                 "17d18fc0.b21c7"
+            ]
+        ]
+    },
+    {
+        "id": "5c3137f1.b5ec18",
+        "type": "mqtt in",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "topic": "Hom/cmd/Olga/iSetTemp",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 160,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b10b7ee5.2ca7",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Hom/cmd/Wohnz/iSetTemp",
+        "payload": "20",
+        "payloadType": "str",
+        "x": 160,
+        "y": 700,
+        "wires": [
+            [
+                "404dde09.449bf"
             ]
         ]
     }
