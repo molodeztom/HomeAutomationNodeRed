@@ -56,6 +56,13 @@
         "info": ""
     },
     {
+        "id": "265d3756.5a1d68",
+        "type": "tab",
+        "label": "Homematic",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "b83af794.4bec68",
         "type": "group",
         "z": "9963931.9232c7",
@@ -642,6 +649,33 @@
         "name": "RPi Control",
         "icon": "dashboard",
         "order": 1
+    },
+    {
+        "id": "5963a29e.7b8eec",
+        "type": "ccu-connection",
+        "name": "192.168.178.70",
+        "host": "192.168.178.70",
+        "regaEnabled": true,
+        "bcrfEnabled": true,
+        "iprfEnabled": true,
+        "virtEnabled": true,
+        "bcwiEnabled": false,
+        "cuxdEnabled": false,
+        "regaPoll": true,
+        "regaInterval": "30",
+        "rpcPingTimeout": "60",
+        "rpcInitAddress": "192.168.178.70",
+        "rpcServerHost": "172.18.0.4",
+        "rpcBinPort": "2047",
+        "rpcXmlPort": "2048",
+        "tls": false,
+        "inSecure": false,
+        "authentication": true,
+        "username": "Admin",
+        "password": "q6yQQUMv0gi0wFIEwmfI",
+        "queueTimeout": "5000",
+        "queuePause": "250",
+        "contextStore": ""
     },
     {
         "id": "49e2646f.c4941c",
@@ -8740,5 +8774,118 @@
         "x": 790,
         "y": 580,
         "wires": []
+    },
+    {
+        "id": "404dde09.449bf",
+        "type": "mqtt out",
+        "z": "265d3756.5a1d68",
+        "name": "Set Temp Olga",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 400,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "5020ea0c.680624",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "hom/set/OlgaTemp",
+        "payload": "22",
+        "payloadType": "str",
+        "x": 160,
+        "y": 620,
+        "wires": [
+            [
+                "404dde09.449bf"
+            ]
+        ]
+    },
+    {
+        "id": "d1b63ad3.ccfa68",
+        "type": "debug",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "9ed6a24d.c8feb",
+        "type": "mqtt in",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "topic": "Hom/Wohnz/+",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "d1b63ad3.ccfa68",
+                "c12c999c.1ace08"
+            ]
+        ]
+    },
+    {
+        "id": "17d18fc0.b21c7",
+        "type": "influxdb out",
+        "z": "265d3756.5a1d68",
+        "influxdb": "e3f4c3e8.b52ee",
+        "name": "Homematic Wohnzimmer",
+        "measurement": "Wohnz",
+        "precision": "",
+        "retentionPolicy": "two_month",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 550,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "c12c999c.1ace08",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Hom/Wohnz/iVentEck\":\n        msg.payload={\n            iVentEck: Number(msg.payload) \n            \n        }\n        return msg;\n   case \"Hom/Wohnz/iVentEss\":\n        msg.payload={\n            iVentEss: Number(msg.payload) \n            \n        }\n        return msg;\n   \n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 330,
+        "y": 480,
+        "wires": [
+            [
+                "17d18fc0.b21c7"
+            ]
+        ]
     }
 ]
