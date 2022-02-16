@@ -568,18 +568,10 @@
         "hidden": false
     },
     {
-        "id": "5fe3e6db.1c65c8",
-        "type": "ui_link",
-        "name": "Link 2",
-        "icon": "open_in_browser",
-        "target": "newtab",
-        "order": 2
-    },
-    {
         "id": "8e157408.1ce3a8",
         "type": "ui_group",
         "name": "Wetter",
-        "tab": "b735724.619b39",
+        "tab": "a55bdb3c.3fd318",
         "order": 1,
         "disp": true,
         "width": "6",
@@ -599,7 +591,7 @@
         "type": "ui_group",
         "name": "Wohnzimmer Fenster",
         "tab": "b735724.619b39",
-        "order": 2,
+        "order": 3,
         "disp": true,
         "width": "6",
         "collapse": false
@@ -609,7 +601,7 @@
         "type": "ui_group",
         "name": "Esstisch",
         "tab": "b735724.619b39",
-        "order": 3,
+        "order": 4,
         "disp": true,
         "width": "6",
         "collapse": false
@@ -619,9 +611,27 @@
         "type": "ui_group",
         "name": "Wohnzimmer Türe",
         "tab": "b735724.619b39",
-        "order": 4,
+        "order": 5,
         "disp": true,
         "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a55bdb3c.3fd318",
+        "type": "ui_tab",
+        "name": "Heizung",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5b512b5d.99aec4",
+        "type": "ui_group",
+        "name": "Heizung",
+        "tab": "b735724.619b39",
+        "order": 1,
+        "disp": true,
+        "width": "7",
         "collapse": false
     },
     {
@@ -8731,38 +8741,9 @@
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 480,
-        "y": 760,
+        "x": 880,
+        "y": 620,
         "wires": []
-    },
-    {
-        "id": "5020ea0c.680624",
-        "type": "inject",
-        "z": "265d3756.5a1d68",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "Hom/cmd/Olga/iSetTemp",
-        "payload": "19",
-        "payloadType": "str",
-        "x": 160,
-        "y": 760,
-        "wires": [
-            [
-                "404dde09.449bf"
-            ]
-        ]
     },
     {
         "id": "d1b63ad3.ccfa68",
@@ -8850,35 +8831,6 @@
             [
                 "acdf657a.72a3b8",
                 "d1b63ad3.ccfa68"
-            ]
-        ]
-    },
-    {
-        "id": "b10b7ee5.2ca7",
-        "type": "inject",
-        "z": "265d3756.5a1d68",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "Hom/cmd/Wohnz/iSetTemp",
-        "payload": "20.5",
-        "payloadType": "str",
-        "x": 170,
-        "y": 660,
-        "wires": [
-            [
-                "404dde09.449bf"
             ]
         ]
     },
@@ -8976,159 +8928,11 @@
         "wires": []
     },
     {
-        "id": "5324c8ea.094bb8",
-        "type": "inject",
-        "z": "265d3756.5a1d68",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "Hom/cmd/Wohnz/iSetTemp",
-        "payload": "19",
-        "payloadType": "str",
-        "x": 160,
-        "y": 620,
-        "wires": [
-            [
-                "404dde09.449bf",
-                "5f1b2cc9.b70fd4"
-            ]
-        ]
-    },
-    {
-        "id": "360eb994.5b3dd6",
-        "type": "inject",
-        "z": "265d3756.5a1d68",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "Hom/cmd/Wohnz/iSetTemp",
-        "payload": "20",
-        "payloadType": "str",
-        "x": 160,
-        "y": 700,
-        "wires": [
-            [
-                "404dde09.449bf",
-                "5f1b2cc9.b70fd4"
-            ]
-        ]
-    },
-    {
-        "id": "222b1589.9a83ca",
-        "type": "time-inject",
-        "z": "265d3756.5a1d68",
-        "name": "20:00 21 Grad",
-        "nameInt": "Hom/cmd/Wohnz/iSetTemp:⏲ 20:40 = \"19\"",
-        "positionConfig": "9a5a8534.25d4d8",
-        "props": [
-            {
-                "p": "",
-                "pt": "msgPayload",
-                "v": "19",
-                "vt": "str",
-                "o": "",
-                "oT": "none",
-                "oM": "60000",
-                "f": 0,
-                "fS": 0,
-                "fT": "Millisekunden UNIX-Zeit",
-                "fI": "0",
-                "next": true,
-                "days": "",
-                "months": "",
-                "onlyOddDays": false,
-                "onlyEvenDays": false
-            },
-            {
-                "p": "",
-                "pt": "msgTopic",
-                "v": "Hom/cmd/Wohnz/iSetTemp",
-                "vt": "str",
-                "o": "",
-                "oT": "none",
-                "oM": "60000",
-                "f": 0,
-                "fS": 0,
-                "fT": "Millisekunden UNIX-Zeit",
-                "fI": "0",
-                "next": false,
-                "days": "",
-                "months": "",
-                "onlyOddDays": false,
-                "onlyEvenDays": false
-            }
-        ],
-        "injectTypeSelect": "time",
-        "intervalCount": 1,
-        "intervalCountType": "num",
-        "intervalCountMultiplier": 60000,
-        "time": "20:40",
-        "timeType": "entered",
-        "offset": 0,
-        "offsetType": "none",
-        "offsetMultiplier": 60000,
-        "timeEnd": "",
-        "timeEndType": "entered",
-        "timeEndOffset": 0,
-        "timeEndOffsetType": "none",
-        "timeEndOffsetMultiplier": 60000,
-        "timeDays": "*",
-        "timeOnlyOddDays": false,
-        "timeOnlyEvenDays": false,
-        "timeMonths": "*",
-        "timedatestart": "",
-        "timedateend": "",
-        "property": "",
-        "propertyType": "none",
-        "propertyCompare": "true",
-        "propertyThreshold": "",
-        "propertyThresholdType": "num",
-        "timeAlt": "",
-        "timeAltType": "entered",
-        "timeAltDays": "*",
-        "timeAltOnlyOddDays": false,
-        "timeAltOnlyEvenDays": false,
-        "timeAltMonths": "*",
-        "timeAltOffset": 0,
-        "timeAltOffsetType": "none",
-        "timeAltOffsetMultiplier": 60000,
-        "once": false,
-        "onceDelay": 0.1,
-        "recalcTime": 2,
-        "x": 130,
-        "y": 920,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "5f1b2cc9.b70fd4",
         "type": "debug",
         "z": "265d3756.5a1d68",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9136,8 +8940,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 410,
-        "y": 840,
+        "x": 810,
+        "y": 740,
         "wires": []
     },
     {
@@ -9369,12 +9173,8 @@
             {
                 "index": 4,
                 "name": "20:00 21 Grad",
-                "isValid": true,
-                "valid": {
-                    "validTimeReg": true,
-                    "validPayload": true,
-                    "validOperand1A": true
-                },
+                "isValid": false,
+                "valid": {},
                 "timeValue": "20:00",
                 "timeType": "entered",
                 "timeOp": 1,
@@ -9403,7 +9203,7 @@
                 "payloadOffsetValue": "",
                 "payloadOffsetType": "none",
                 "payloadOffsetMultiplier": 60000,
-                "payloadFormat": "",
+                "payloadFormat": 99,
                 "topic": "Hom/cmd/Wohnz/iSetTemp",
                 "importance": 0,
                 "resetOverwrite": false,
@@ -9483,8 +9283,57 @@
         "payloadDefaultOffset": 0,
         "payloadDefaultOffsetType": "none",
         "payloadDefaultOffsetMultiplier": 60000,
-        "x": 170,
-        "y": 840,
+        "x": 130,
+        "y": 720,
+        "wires": [
+            [
+                "404dde09.449bf"
+            ]
+        ]
+    },
+    {
+        "id": "da4ddf2c.99695",
+        "type": "switch",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 440,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1df28e68.76cf02",
+        "type": "ui_slider",
+        "z": "265d3756.5a1d68",
+        "name": "WohnzimmerTemp",
+        "label": "Wohnz",
+        "tooltip": "",
+        "group": "5b512b5d.99aec4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "Hom/cmd/Wohnz/iSetTemp",
+        "topicType": "str",
+        "min": "10",
+        "max": "30",
+        "step": "0.5",
+        "x": 130,
+        "y": 640,
         "wires": [
             [
                 "404dde09.449bf",
@@ -9493,31 +9342,29 @@
         ]
     },
     {
-        "id": "4971ce9c.4f2e6",
-        "type": "inject",
+        "id": "f05b3b99.e44618",
+        "type": "ui_slider",
         "z": "265d3756.5a1d68",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
+        "name": "OlgaSetTemp",
+        "label": "Olga",
+        "tooltip": "",
+        "group": "5b512b5d.99aec4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "Hom/cmd/Olga/iSetTemp",
+        "topicType": "str",
+        "min": "15",
+        "max": "30",
+        "step": "0.5",
         "x": 120,
-        "y": 1020,
+        "y": 680,
         "wires": [
             [
-                "5734478e.ed65c8"
+                "404dde09.449bf",
+                "5f1b2cc9.b70fd4"
             ]
         ]
     }
