@@ -95,7 +95,9 @@
             "532bc566.df7b1c"
         ],
         "x": 14,
-        "y": 199
+        "y": 199,
+        "w": 812,
+        "h": 502
     },
     {
         "id": "7d3411b0.20fc7",
@@ -115,7 +117,9 @@
             "2a103049.f6a29"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 892,
+        "h": 142
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -243,7 +247,9 @@
             "a30d9009.4e13b"
         ],
         "x": 34,
-        "y": -1
+        "y": -1,
+        "w": 1182,
+        "h": 502
     },
     {
         "id": "18ca9346.bdbedd",
@@ -284,7 +290,9 @@
             "b8c299bc.8c4e18"
         ],
         "x": 24,
-        "y": 536.5
+        "y": 536.5,
+        "w": 1502,
+        "h": 524.5
     },
     {
         "id": "73d12632.94b388",
@@ -332,7 +340,9 @@
             "1048bdd7.1dd462"
         ],
         "x": 34,
-        "y": 559
+        "y": 559,
+        "w": 672,
+        "h": 402
     },
     {
         "id": "875b7fad.bef24",
@@ -353,10 +363,13 @@
             "1dc7e978.c48077",
             "b8aa167e.038cf8",
             "8d25df5c.ebd85",
-            "114319b2.da6366"
+            "114319b2.da6366",
+            "8781afa3.b22fa"
         ],
         "x": 34,
-        "y": 499
+        "y": 499,
+        "w": 912,
+        "h": 302
     },
     {
         "id": "1b82c7fb.e55448",
@@ -379,7 +392,9 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299
+        "y": 299,
+        "w": 992,
+        "h": 162
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -403,7 +418,9 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 752,
+        "h": 262
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -570,8 +587,8 @@
     {
         "id": "8e157408.1ce3a8",
         "type": "ui_group",
-        "name": "Wetter",
-        "tab": "a55bdb3c.3fd318",
+        "name": "Regalbeleuchtung",
+        "tab": "b735724.619b39",
         "order": 1,
         "disp": true,
         "width": "6",
@@ -633,6 +650,15 @@
         "disp": true,
         "width": "7",
         "collapse": false
+    },
+    {
+        "id": "d3280bd.1460df8",
+        "type": "samsung-tv",
+        "name": "Samsung TV",
+        "model": "8002",
+        "ip": "192.168.178.32",
+        "mac": "5C:49:7D:52:36:8A",
+        "token": ""
     },
     {
         "id": "49e2646f.c4941c",
@@ -5516,6 +5542,7 @@
         "passthru": true,
         "outs": "end",
         "topic": "cmnd/RolloEsstisch/ShutterPosition",
+        "topicType": "str",
         "min": 0,
         "max": "100",
         "step": 1,
@@ -6772,6 +6799,7 @@
         "passthru": true,
         "outs": "end",
         "topic": "cmnd/RolloWohnzimmer/ShutterPosition",
+        "topicType": "str",
         "min": 0,
         "max": "100",
         "step": 1,
@@ -6942,12 +6970,8 @@
             {
                 "index": 2,
                 "name": "SonnenuntergangZu",
-                "isValid": true,
-                "valid": {
-                    "validTimeReg": 60000,
-                    "validLevel": true,
-                    "validOperand1A": true
-                },
+                "isValid": false,
+                "valid": {},
                 "timeValue": "sunsetEnd",
                 "timeType": "pdsTime",
                 "timeOp": 1,
@@ -8741,25 +8765,8 @@
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 880,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "d1b63ad3.ccfa68",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 510,
-        "y": 380,
+        "x": 1000,
+        "y": 480,
         "wires": []
     },
     {
@@ -8772,11 +8779,12 @@
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
         "x": 130,
-        "y": 480,
+        "y": 400,
         "wires": [
             [
-                "d1b63ad3.ccfa68",
-                "c12c999c.1ace08"
+                "c12c999c.1ace08",
+                "8de8f997.bf7e18",
+                "c4905a6b.e33638"
             ]
         ]
     },
@@ -8795,7 +8803,7 @@
         "org": "organisation",
         "bucket": "bucket",
         "x": 630,
-        "y": 480,
+        "y": 400,
         "wires": []
     },
     {
@@ -8809,7 +8817,7 @@
         "initialize": "",
         "finalize": "",
         "x": 380,
-        "y": 480,
+        "y": 400,
         "wires": [
             [
                 "17d18fc0.b21c7"
@@ -8830,7 +8838,7 @@
         "wires": [
             [
                 "acdf657a.72a3b8",
-                "d1b63ad3.ccfa68"
+                "130b2e36.ca9eb2"
             ]
         ]
     },
@@ -8932,7 +8940,7 @@
         "type": "debug",
         "z": "265d3756.5a1d68",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8940,8 +8948,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 810,
-        "y": 740,
+        "x": 950,
+        "y": 620,
         "wires": []
     },
     {
@@ -8953,10 +8961,10 @@
         "positionConfig": "9a5a8534.25d4d8",
         "outputs": "1",
         "autoTrigger": true,
-        "autoTriggerTime": 1200000,
+        "autoTriggerTime": "600000",
         "startDelayTime": 10000,
         "storeName": "",
-        "overwriteExpire": "",
+        "overwriteExpire": "1200000",
         "rules": [
             {
                 "index": 0,
@@ -9283,35 +9291,12 @@
         "payloadDefaultOffset": 0,
         "payloadDefaultOffsetType": "none",
         "payloadDefaultOffsetMultiplier": 60000,
-        "x": 130,
-        "y": 720,
+        "x": 610,
+        "y": 440,
         "wires": [
             [
-                "404dde09.449bf"
+                "5f1b2cc9.b70fd4"
             ]
-        ]
-    },
-    {
-        "id": "da4ddf2c.99695",
-        "type": "switch",
-        "z": "265d3756.5a1d68",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 440,
-        "y": 980,
-        "wires": [
-            []
         ]
     },
     {
@@ -9332,12 +9317,12 @@
         "min": "10",
         "max": "30",
         "step": "0.5",
-        "x": 130,
-        "y": 640,
+        "x": 390,
+        "y": 480,
         "wires": [
             [
-                "404dde09.449bf",
-                "5f1b2cc9.b70fd4"
+                "5f1b2cc9.b70fd4",
+                "404dde09.449bf"
             ]
         ]
     },
@@ -9359,13 +9344,590 @@
         "min": "15",
         "max": "30",
         "step": "0.5",
-        "x": 120,
-        "y": 680,
+        "x": 600,
+        "y": 620,
         "wires": [
             [
                 "404dde09.449bf",
                 "5f1b2cc9.b70fd4"
             ]
         ]
+    },
+    {
+        "id": "8781afa3.b22fa",
+        "type": "ui_slider",
+        "z": "303a8ac7.4ea1c6",
+        "g": "875b7fad.bef24",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "8e157408.1ce3a8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "RegalWohnz",
+        "topicType": "str",
+        "min": 0,
+        "max": "100",
+        "step": "10",
+        "x": 270,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6693313c.9b041",
+        "type": "samsung-tv-send",
+        "z": "8c0dc70a.3a1008",
+        "device": "d3280bd.1460df8",
+        "name": "",
+        "key": "KEY_VOLDOWN",
+        "x": 260,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be3398e9.139348",
+        "type": "samsung-tv-token",
+        "z": "8c0dc70a.3a1008",
+        "device": "d3280bd.1460df8",
+        "name": "Samsung Fernseher",
+        "x": 310,
+        "y": 540,
+        "wires": [
+            [
+                "ec60b9ae.61c308"
+            ]
+        ]
+    },
+    {
+        "id": "ec60b9ae.61c308",
+        "type": "debug",
+        "z": "8c0dc70a.3a1008",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "b621889a.7a8198",
+        "type": "inject",
+        "z": "8c0dc70a.3a1008",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 620,
+        "wires": [
+            [
+                "be3398e9.139348"
+            ]
+        ]
+    },
+    {
+        "id": "8de8f997.bf7e18",
+        "type": "switch",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Hom/stat/Wohnz/iSetTemp",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 210,
+        "y": 480,
+        "wires": [
+            [
+                "1df28e68.76cf02",
+                "d912f054.71448"
+            ]
+        ]
+    },
+    {
+        "id": "dbb3fcbb.281df",
+        "type": "samsung-tv-isalive",
+        "z": "8c0dc70a.3a1008",
+        "device": "d3280bd.1460df8",
+        "name": "",
+        "x": 550,
+        "y": 420,
+        "wires": [
+            [
+                "11294d5a.bc9e03"
+            ],
+            [
+                "efc18443.e7a378"
+            ]
+        ]
+    },
+    {
+        "id": "11294d5a.bc9e03",
+        "type": "debug",
+        "z": "8c0dc70a.3a1008",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "efc18443.e7a378",
+        "type": "debug",
+        "z": "8c0dc70a.3a1008",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "ddee4222.dcb21",
+        "type": "inject",
+        "z": "8c0dc70a.3a1008",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 400,
+        "wires": [
+            [
+                "6693313c.9b041"
+            ]
+        ]
+    },
+    {
+        "id": "130b2e36.ca9eb2",
+        "type": "switch",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Hom/stat/Olga/iSetTemp",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 620,
+        "wires": [
+            [
+                "f05b3b99.e44618"
+            ]
+        ]
+    },
+    {
+        "id": "d9f1bf04.de446",
+        "type": "newSamsungTV",
+        "z": "8c0dc70a.3a1008",
+        "ip": "192.168.178.32",
+        "command": "KEY_VOLUP",
+        "name": "",
+        "x": 280,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "733737d6.42bfc8",
+        "type": "new-samsung-tv-isalive",
+        "z": "8c0dc70a.3a1008",
+        "ip": "192.168.178.32",
+        "name": "",
+        "x": 550,
+        "y": 760,
+        "wires": [
+            [
+                "1dee6c7f.98aac4"
+            ],
+            [
+                "e1ffda1f.f1e228"
+            ]
+        ]
+    },
+    {
+        "id": "e6457d9b.d82c8",
+        "type": "inject",
+        "z": "8c0dc70a.3a1008",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 800,
+        "wires": [
+            [
+                "d9f1bf04.de446"
+            ]
+        ]
+    },
+    {
+        "id": "1dee6c7f.98aac4",
+        "type": "debug",
+        "z": "8c0dc70a.3a1008",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "e1ffda1f.f1e228",
+        "type": "debug",
+        "z": "8c0dc70a.3a1008",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "e35749e2.bdfdd8",
+        "type": "new-samsung-tv-isalive",
+        "z": "303a8ac7.4ea1c6",
+        "ip": "192.168.178.32",
+        "name": "Samsung TV On",
+        "x": 160,
+        "y": 900,
+        "wires": [
+            [
+                "8f2949e8.868d18"
+            ],
+            [
+                "a3233a67.d08488"
+            ]
+        ]
+    },
+    {
+        "id": "8f2949e8.868d18",
+        "type": "change",
+        "z": "303a8ac7.4ea1c6",
+        "name": "Full Light",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"mode\":\"color\",\"red\":255,\"green\":255,\"blue\":255,\"gain\":100,\"turn\":\"toggle\",\"transition\":500}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 880,
+        "wires": [
+            [
+                "1dc7e978.c48077"
+            ]
+        ]
+    },
+    {
+        "id": "a3233a67.d08488",
+        "type": "change",
+        "z": "303a8ac7.4ea1c6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"mode\":\"color\",\"red\":80,\"green\":255,\"blue\":255,\"gain\":50,\"turn\":\"on\",\"transition\":500}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 920,
+        "wires": [
+            [
+                "1dc7e978.c48077"
+            ]
+        ]
+    },
+    {
+        "id": "9742d791.e68298",
+        "type": "inject",
+        "z": "8c0dc70a.3a1008",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 410,
+        "y": 820,
+        "wires": [
+            [
+                "733737d6.42bfc8"
+            ]
+        ]
+    },
+    {
+        "id": "c4905a6b.e33638",
+        "type": "debug",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "d912f054.71448",
+        "type": "debug",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "b2eaa5c4.14f408",
+        "type": "mqtt in",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "topic": "Hom/stat/Tom/+",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 130,
+        "y": 740,
+        "wires": [
+            [
+                "e016da34.64e308",
+                "aa219fc1.1a6e2"
+            ]
+        ]
+    },
+    {
+        "id": "e016da34.64e308",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Hom/stat/Tom/iVent\":\n        msg.payload={\n            iVent: Number(msg.payload) \n            \n        }\n        return msg;\n   case \"Hom/stat/Tom/iSetTemp\":\n        msg.payload={\n            iSetTemp: Number(msg.payload) \n            \n        }\n        return msg;\n\n   \n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 390,
+        "y": 740,
+        "wires": [
+            [
+                "65e988da.f6b958"
+            ]
+        ]
+    },
+    {
+        "id": "65e988da.f6b958",
+        "type": "influxdb out",
+        "z": "265d3756.5a1d68",
+        "influxdb": "e3f4c3e8.b52ee",
+        "name": "HomeMatic Tom",
+        "measurement": "Tom",
+        "precision": "",
+        "retentionPolicy": "two_month",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 600,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "aa219fc1.1a6e2",
+        "type": "switch",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Hom/stat/Tom/iSetTemp",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 820,
+        "wires": [
+            [
+                "3954e69e.21d60a"
+            ]
+        ]
+    },
+    {
+        "id": "3954e69e.21d60a",
+        "type": "ui_slider",
+        "z": "265d3756.5a1d68",
+        "name": "TomSetTemp",
+        "label": "Tom",
+        "tooltip": "",
+        "group": "5b512b5d.99aec4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "Hom/cmd/Tom/iSetTemp",
+        "topicType": "str",
+        "min": "15",
+        "max": "30",
+        "step": "0.5",
+        "x": 590,
+        "y": 820,
+        "wires": [
+            [
+                "404dde09.449bf",
+                "ae0f7157.7d2e7"
+            ]
+        ]
+    },
+    {
+        "id": "ae0f7157.7d2e7",
+        "type": "debug",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 820,
+        "wires": []
     }
 ]
