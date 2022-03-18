@@ -341,7 +341,9 @@
             "1048bdd7.1dd462"
         ],
         "x": 34,
-        "y": 559
+        "y": 559,
+        "w": 672,
+        "h": 402
     },
     {
         "id": "875b7fad.bef24",
@@ -1700,7 +1702,7 @@
         "z": "511989b1.670cc8",
         "g": "5c041b39.d836b4",
         "name": "mqtt_test_pub",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2802,7 +2804,7 @@
         "z": "511989b1.670cc8",
         "g": "18ca9346.bdbedd",
         "name": "Sonoff OFF / Shutdown",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3764,7 +3766,8 @@
             [
                 "8583dd1c.64052",
                 "3c079b7c.3bb374"
-            ]
+            ],
+            []
         ]
     },
     {
@@ -4943,7 +4946,7 @@
         "windowAzimuthEnd": "274",
         "oversteers": [
             {
-                "mode": 2,
+                "mode": 1,
                 "valueType": "pdsCalcElevation",
                 "value": "",
                 "operator": "lt",
@@ -4989,7 +4992,8 @@
                 "3c0c4256.7b9c2e",
                 "938edda3.2a1e5",
                 "52b02b7f.eddd84"
-            ]
+            ],
+            []
         ]
     },
     {
@@ -6178,7 +6182,8 @@
                 "4e597d09.2aedb4",
                 "1d3825cc.3067ba",
                 "719dd77e.126428"
-            ]
+            ],
+            []
         ]
     },
     {
@@ -7119,7 +7124,8 @@
                 "31ef75a9.d9e27a",
                 "c64a6a11.71f278",
                 "1a538972.87cf07"
-            ]
+            ],
+            []
         ]
     },
     {
@@ -7790,7 +7796,8 @@
             [
                 "9541504a.3de58",
                 "700de909.9aed38"
-            ]
+            ],
+            []
         ]
     },
     {
@@ -7973,7 +7980,7 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "ValveCalculation",
-        "func": "var TempOut = 11;\nvar ClockPos = 0;\nvar fTemp = 0;\nvar payload;\nvar o=msg.payload;\n\nswitch (msg.topic){\n    case \"ClockValvePos\":\n        ClockPos = msg.payload;\n        global.set(\"HeaterVentPos\",ClockPos);\n    break;\n    case \"Sensor1/fTempA\":\n        TempOut = msg.payload;\n        fTemp = Number(TempOut);\n        global.set(\"TempOut\",fTemp);\n        return 0;\n    case \"HeaterNeeded\":\n        if (msg.payload == \"false\") msg.payload = '1'\n        else msg.payload = global.get(\"HeaterVentPos\");\n        if (global.get(\"HeaterVentPos\") == '0' ) msg.payload = 0; \n         break;\n    default:\n    break;\n}\n/*\n    if (global.get(\"TempOut\") <= '14'){\n      msg.payload = ClockPos ;\n    }    \n    else\n    {\n    msg.payload = '0';\n    }\n    */\n    return msg;\n ",
+        "func": "var TempOut = 11;\nvar ClockPos = 0;\nvar fTemp = 0;\nvar payload;\nvar o=msg.payload;\n\nswitch (msg.topic){\n    case \"ClockValvePos\":\n        ClockPos = msg.payload;\n        global.set(\"HeaterVentPos\",ClockPos);\n        if(ClockPos == 0) msg.payload  = '0'\n        else return 0;\n        break;\n    case \"Sensor1/fTempA\":\n        TempOut = msg.payload;\n        fTemp = Number(TempOut);\n        global.set(\"TempOut\",fTemp);\n        return 0;\n    case \"HeaterNeeded\":\n        if (msg.payload == \"false\") msg.payload = '0'\n        else msg.payload = global.get(\"HeaterVentPos\");\n        if (global.get(\"HeaterVentPos\") == '0' ) msg.payload = 0; \n         break;\n    default:\n    break;\n}\n/*\n    if (global.get(\"TempOut\") <= '14'){\n      msg.payload = ClockPos ;\n    }    \n    else\n    {\n    msg.payload = '0';\n    }\n    */\n    return msg;\n ",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8015,8 +8022,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
         "x": 700,
@@ -9663,6 +9670,7 @@
         "x": 670,
         "y": 140,
         "wires": [
+            [],
             []
         ]
     },
@@ -9844,7 +9852,7 @@
         "type": "debug",
         "z": "265d3756.5a1d68",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9926,7 +9934,7 @@
         "type": "debug",
         "z": "6f61cfd3.3d721",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9993,17 +10001,16 @@
         "id": "ddb9da78.77be18",
         "type": "function",
         "z": "265d3756.5a1d68",
-        "name": "",
+        "name": "Heater Needed",
         "func": "var topic=msg.topic;\nvar i = 0;\nswitch(topic){\n    case \"Hom/stat/Wohnz/iVentEck\":\n    case \"Hom/stat/Wohnz/iVentEss\":\n    case \"Hom/stat/Olga/iVent\":\n    case \"Hom/stat/Tom/iVent\":\n       i = flow.get(\"iVentEss\") + flow.get(\"iVentEck\")\n       + flow.get(\"iVentTom\")  + flow.get(\"iVentOlga\")\n       if (i > 0) msg.payload= \"true\"\n       else msg.payload = \"false\"\n       msg.value = i;\n    return msg;\n   \n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 300,
+        "x": 320,
         "y": 760,
         "wires": [
             [
-                "89c04ca8.7c10c",
                 "f0b72f63.75383"
             ]
         ]
@@ -10021,7 +10028,7 @@
         "y": 760,
         "wires": [
             [
-                "ddb9da78.77be18"
+                "77634598.aeeb5c"
             ]
         ]
     },
@@ -10038,7 +10045,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 480,
+        "x": 720,
         "y": 800,
         "wires": []
     },
@@ -10090,11 +10097,35 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 480,
+        "x": 520,
         "y": 760,
         "wires": [
             [
-                "7fce1939.2cfb98"
+                "7fce1939.2cfb98",
+                "89c04ca8.7c10c"
+            ]
+        ]
+    },
+    {
+        "id": "77634598.aeeb5c",
+        "type": "delay",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 250,
+        "y": 800,
+        "wires": [
+            [
+                "ddb9da78.77be18"
             ]
         ]
     }
