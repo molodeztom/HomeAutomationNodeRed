@@ -95,9 +95,7 @@
             "532bc566.df7b1c"
         ],
         "x": 14,
-        "y": 199,
-        "w": 812,
-        "h": 502
+        "y": 199
     },
     {
         "id": "7d3411b0.20fc7",
@@ -117,9 +115,7 @@
             "2a103049.f6a29"
         ],
         "x": 14,
-        "y": 39,
-        "w": 892,
-        "h": 142
+        "y": 39
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -288,12 +284,14 @@
             "54087a9f.9d1c24",
             "f665e232.83018",
             "6e793f78.19688",
-            "b8c299bc.8c4e18"
+            "b8c299bc.8c4e18",
+            "bb147727.808968",
+            "997e000a.2be07"
         ],
-        "x": 24,
-        "y": 536.5,
-        "w": 1502,
-        "h": 524.5
+        "x": 54,
+        "y": 516.5,
+        "w": 1632,
+        "h": 604.5
     },
     {
         "id": "73d12632.94b388",
@@ -341,9 +339,7 @@
             "1048bdd7.1dd462"
         ],
         "x": 34,
-        "y": 559,
-        "w": 672,
-        "h": 402
+        "y": 559
     },
     {
         "id": "875b7fad.bef24",
@@ -484,12 +480,36 @@
             "e6e8fe31.e3e38",
             "38d7b5c0.b2603a",
             "e38e18ad.3476f8",
-            "3d0abac7.6df4e6"
+            "3d0abac7.6df4e6",
+            "7365b52e.c6858c",
+            "529c3dd9.9b5374"
         ],
-        "x": 34,
-        "y": -1,
+        "x": 14,
+        "y": 19,
         "w": 732,
         "h": 362
+    },
+    {
+        "id": "5e94d88a.fb01e8",
+        "type": "group",
+        "z": "265d3756.5a1d68",
+        "name": "Bedarfsberechnung",
+        "style": {
+            "fill": "#ffcf3f",
+            "label": true
+        },
+        "nodes": [
+            "ddb9da78.77be18",
+            "2a95bc9b.1c66a4",
+            "89c04ca8.7c10c",
+            "7fce1939.2cfb98",
+            "f0b72f63.75383",
+            "77634598.aeeb5c"
+        ],
+        "x": 14,
+        "y": 719,
+        "w": 1072,
+        "h": 142
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -1683,11 +1703,11 @@
         "z": "511989b1.670cc8",
         "g": "5c041b39.d836b4",
         "name": "",
-        "topic": "octoprint/plugin/mqtt_test/pub",
+        "topic": "octoprint/event/Shutdown",
         "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 180,
+        "x": 170,
         "y": 160,
         "wires": [
             [
@@ -1701,8 +1721,8 @@
         "type": "debug",
         "z": "511989b1.670cc8",
         "g": "5c041b39.d836b4",
-        "name": "mqtt_test_pub",
-        "active": false,
+        "name": "octoprint shutdown",
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1710,7 +1730,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
+        "x": 570,
         "y": 160,
         "wires": []
     },
@@ -1868,8 +1888,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 960,
+        "x": 550,
+        "y": 940,
         "wires": [
             [
                 "9bea78c2.290f98"
@@ -1941,8 +1961,8 @@
         "qos": "1",
         "retain": "false",
         "broker": "19cf2a10.f9d4a6",
-        "x": 1380,
-        "y": 1020,
+        "x": 1410,
+        "y": 1000,
         "wires": []
     },
     {
@@ -1981,12 +2001,12 @@
         "z": "511989b1.670cc8",
         "g": "18ca9346.bdbedd",
         "name": "Octoprint Shutdown",
-        "topic": "octoprint/plugin/mqtt_test/sub",
+        "topic": "",
         "qos": "0",
         "retain": "false",
         "broker": "19cf2a10.f9d4a6",
-        "x": 1360,
-        "y": 960,
+        "x": 1570,
+        "y": 940,
         "wires": []
     },
     {
@@ -2007,12 +2027,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1080,
-        "y": 960,
+        "x": 1110,
+        "y": 940,
         "wires": [
             [
                 "acfc89f6.5dc368",
-                "550eb938.78f938"
+                "997e000a.2be07"
             ]
         ]
     },
@@ -2063,8 +2083,8 @@
         "ignoreCase": false,
         "repeat": false,
         "again": false,
-        "x": 690,
-        "y": 620,
+        "x": 720,
+        "y": 600,
         "wires": [
             [
                 "15937479.cc992c"
@@ -2092,8 +2112,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
-        "y": 580,
+        "x": 540,
+        "y": 560,
         "wires": [
             [
                 "f46b4697.85a528"
@@ -2138,8 +2158,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 5,
-        "x": 190,
-        "y": 600,
+        "x": 220,
+        "y": 580,
         "wires": [
             [
                 "ab040656.4d62c8"
@@ -2178,8 +2198,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
-        "y": 620,
+        "x": 530,
+        "y": 600,
         "wires": [
             [
                 "f46b4697.85a528"
@@ -2217,8 +2237,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 890,
-        "y": 620,
+        "x": 920,
+        "y": 600,
         "wires": [
             [
                 "76804725.6ac1f8"
@@ -2242,8 +2262,8 @@
         "ignoreCase": false,
         "repeat": false,
         "again": false,
-        "x": 720,
-        "y": 700,
+        "x": 750,
+        "y": 680,
         "wires": [
             [
                 "3b6104fe.71eecc"
@@ -2294,8 +2314,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 6,
-        "x": 200,
-        "y": 720,
+        "x": 230,
+        "y": 700,
         "wires": [
             [
                 "c85e3aa6.8a06d8",
@@ -2342,8 +2362,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 660,
+        "x": 520,
+        "y": 640,
         "wires": [
             [
                 "47ac10c5.af1f3"
@@ -2370,8 +2390,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 720,
+        "x": 550,
+        "y": 700,
         "wires": [
             [
                 "47ac10c5.af1f3"
@@ -2409,8 +2429,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 930,
-        "y": 700,
+        "x": 960,
+        "y": 680,
         "wires": [
             [
                 "76804725.6ac1f8"
@@ -2437,8 +2457,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
-        "y": 1020,
+        "x": 530,
+        "y": 1000,
         "wires": [
             [
                 "acfc89f6.5dc368",
@@ -2469,8 +2489,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 220,
-        "y": 900,
+        "x": 250,
+        "y": 880,
         "wires": [
             [
                 "31b9404d.230c",
@@ -2498,8 +2518,8 @@
         "ignoreCase": false,
         "repeat": false,
         "again": false,
-        "x": 740,
-        "y": 900,
+        "x": 770,
+        "y": 880,
         "wires": [
             [
                 "339b0b7.0a49bf4"
@@ -2538,8 +2558,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1090,
-        "y": 900,
+        "x": 1120,
+        "y": 880,
         "wires": [
             [
                 "76804725.6ac1f8"
@@ -2593,8 +2613,8 @@
         "ignoreCase": false,
         "repeat": false,
         "again": false,
-        "x": 710,
-        "y": 800,
+        "x": 740,
+        "y": 780,
         "wires": [
             [
                 "19c8b5c0.3dcaca"
@@ -2623,8 +2643,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 490,
-        "y": 800,
+        "x": 520,
+        "y": 780,
         "wires": [
             [
                 "c0b2e11c.f580f"
@@ -2662,8 +2682,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 950,
-        "y": 800,
+        "x": 980,
+        "y": 780,
         "wires": [
             [
                 "76804725.6ac1f8"
@@ -2690,8 +2710,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 500,
-        "y": 840,
+        "x": 530,
+        "y": 820,
         "wires": [
             [
                 "c0b2e11c.f580f"
@@ -2812,8 +2832,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1370,
-        "y": 820,
+        "x": 1400,
+        "y": 800,
         "wires": []
     },
     {
@@ -3348,8 +3368,8 @@
         "topic": "",
         "payload": "OFF",
         "payloadType": "str",
-        "x": 130,
-        "y": 980,
+        "x": 160,
+        "y": 960,
         "wires": [
             [
                 "54087a9f.9d1c24"
@@ -3361,7 +3381,7 @@
         "type": "inject",
         "z": "511989b1.670cc8",
         "g": "18ca9346.bdbedd",
-        "name": "Reboot",
+        "name": "Set Bedtemp",
         "props": [
             {
                 "p": "payload"
@@ -3375,11 +3395,11 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "",
-        "payload": "OFF",
-        "payloadType": "str",
-        "x": 130,
-        "y": 940,
+        "topic": "octoprint/bedtemp",
+        "payload": "{\"temp\":30}",
+        "payloadType": "json",
+        "x": 960,
+        "y": 1080,
         "wires": [
             [
                 "550eb938.78f938"
@@ -3776,7 +3796,7 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "Heating Timer",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8018,7 +8038,7 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "TestCalc",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8111,11 +8131,11 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "",
+        "topic": "octoprint/system",
         "payload": "ShutdownOctopi",
         "payloadType": "str",
-        "x": 1390,
-        "y": 880,
+        "x": 1470,
+        "y": 860,
         "wires": [
             [
                 "550eb938.78f938",
@@ -9341,7 +9361,7 @@
         "z": "265d3756.5a1d68",
         "g": "b9a71c35.b8ccf",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9363,8 +9383,8 @@
         "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 150,
-        "y": 40,
+        "x": 130,
+        "y": 60,
         "wires": [
             [
                 "c12c999c.1ace08",
@@ -9391,8 +9411,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 270,
-        "y": 100,
+        "x": 250,
+        "y": 120,
         "wires": [
             [
                 "38d7b5c0.b2603a"
@@ -9410,8 +9430,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 380,
-        "y": 40,
+        "x": 360,
+        "y": 60,
         "wires": [
             [
                 "17d18fc0.b21c7",
@@ -9434,8 +9454,8 @@
         "retentionPolicyV18Flux": "",
         "org": "organisation",
         "bucket": "bucket",
-        "x": 630,
-        "y": 40,
+        "x": 610,
+        "y": 60,
         "wires": []
     },
     {
@@ -9667,8 +9687,8 @@
         "payloadDefaultOffset": 0,
         "payloadDefaultOffsetType": "none",
         "payloadDefaultOffsetMultiplier": 60000,
-        "x": 670,
-        "y": 140,
+        "x": 650,
+        "y": 160,
         "wires": [
             [],
             []
@@ -9693,12 +9713,11 @@
         "min": "15",
         "max": "30",
         "step": "0.5",
-        "x": 610,
-        "y": 200,
+        "x": 590,
+        "y": 220,
         "wires": [
             [
-                "404dde09.449bf",
-                "d3315865.011748"
+                "404dde09.449bf"
             ]
         ]
     },
@@ -9712,8 +9731,8 @@
         "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 210,
-        "y": 320,
+        "x": 190,
+        "y": 340,
         "wires": [
             [
                 "e6e8fe31.e3e38",
@@ -9734,8 +9753,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 610,
-        "y": 320,
+        "x": 590,
+        "y": 340,
         "wires": []
     },
     {
@@ -9758,8 +9777,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 430,
-        "y": 100,
+        "x": 410,
+        "y": 120,
         "wires": [
             []
         ]
@@ -9773,8 +9792,8 @@
         "links": [
             "18eca755.0bbeb9"
         ],
-        "x": 455,
-        "y": 280,
+        "x": 435,
+        "y": 300,
         "wires": []
     },
     {
@@ -9838,8 +9857,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 270,
-        "y": 200,
+        "x": 250,
+        "y": 220,
         "wires": [
             [
                 "1df28e68.76cf02",
@@ -9851,23 +9870,7 @@
         "id": "529c3dd9.9b5374",
         "type": "debug",
         "z": "265d3756.5a1d68",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 990,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "d3315865.011748",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
+        "g": "3644af6d.d42f6",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -9877,8 +9880,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
-        "y": 420,
+        "x": 370,
+        "y": 180,
         "wires": []
     },
     {
@@ -9946,44 +9949,10 @@
         "wires": []
     },
     {
-        "id": "9033ac9d.9e065",
-        "type": "function",
-        "z": "265d3756.5a1d68",
-        "name": "",
-        "func": "var topic=msg.topic;\nvar i;\nswitch(topic){\n    case \"Hom/stat/Wohnz/iVentEck\":\n       intValue = Number(msg.payload)\n       msg.payload=intValue;\n       flow.set(\"iVentEck\",intValue)\n    return msg;\n    case \"Hom/stat/Wohnz/iVentEss\":\n       intValue = Number(msg.payload)\n       msg.payload=intValue;\n       flow.set(\"iVentEss\",intValue)\n    return msg;\n   \n}\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 960,
-        "y": 40,
-        "wires": [
-            [
-                "303e473b.be4108"
-            ]
-        ]
-    },
-    {
-        "id": "303e473b.be4108",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1110,
-        "y": 40,
-        "wires": []
-    },
-    {
         "id": "7365b52e.c6858c",
         "type": "debug",
         "z": "265d3756.5a1d68",
+        "g": "3644af6d.d42f6",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -9993,21 +9962,22 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 990,
-        "y": 200,
+        "x": 570,
+        "y": 100,
         "wires": []
     },
     {
         "id": "ddb9da78.77be18",
         "type": "function",
         "z": "265d3756.5a1d68",
+        "g": "5e94d88a.fb01e8",
         "name": "Heater Needed",
         "func": "var topic=msg.topic;\nvar i = 0;\nswitch(topic){\n    case \"Hom/stat/Wohnz/iVentEck\":\n    case \"Hom/stat/Wohnz/iVentEss\":\n    case \"Hom/stat/Olga/iVent\":\n    case \"Hom/stat/Tom/iVent\":\n       i = flow.get(\"iVentEss\") + flow.get(\"iVentEck\")\n       + flow.get(\"iVentTom\")  + flow.get(\"iVentOlga\")\n       if (i > 0) msg.payload= \"true\"\n       else msg.payload = \"false\"\n       msg.value = i;\n    return msg;\n   \n}\n",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "",
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\n flow.set(\"iVentEss\", 0)\n flow.set(\"iVentEck\", 0)\n flow.set(\"iVentOlga\", 0)\n flow.set(\"iVentTom\", 0)",
         "finalize": "",
-        "x": 320,
+        "x": 480,
         "y": 760,
         "wires": [
             [
@@ -10019,13 +9989,14 @@
         "id": "2a95bc9b.1c66a4",
         "type": "mqtt in",
         "z": "265d3756.5a1d68",
+        "g": "5e94d88a.fb01e8",
         "name": "",
         "topic": "Hom/stat/#",
         "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 120,
-        "y": 760,
+        "x": 100,
+        "y": 780,
         "wires": [
             [
                 "77634598.aeeb5c"
@@ -10036,6 +10007,7 @@
         "id": "89c04ca8.7c10c",
         "type": "debug",
         "z": "265d3756.5a1d68",
+        "g": "5e94d88a.fb01e8",
         "name": "Heater needed",
         "active": true,
         "tosidebar": true,
@@ -10045,20 +10017,21 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 800,
+        "x": 960,
+        "y": 820,
         "wires": []
     },
     {
         "id": "7fce1939.2cfb98",
         "type": "link out",
         "z": "265d3756.5a1d68",
+        "g": "5e94d88a.fb01e8",
         "name": "",
         "links": [
             "6c8377f8.cdd248"
         ],
-        "x": 675,
-        "y": 760,
+        "x": 895,
+        "y": 780,
         "wires": []
     },
     {
@@ -10082,6 +10055,7 @@
         "id": "f0b72f63.75383",
         "type": "change",
         "z": "265d3756.5a1d68",
+        "g": "5e94d88a.fb01e8",
         "name": "",
         "rules": [
             {
@@ -10097,8 +10071,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
-        "y": 760,
+        "x": 680,
+        "y": 780,
         "wires": [
             [
                 "7fce1939.2cfb98",
@@ -10110,6 +10084,7 @@
         "id": "77634598.aeeb5c",
         "type": "delay",
         "z": "265d3756.5a1d68",
+        "g": "5e94d88a.fb01e8",
         "name": "",
         "pauseType": "delay",
         "timeout": "10",
@@ -10121,8 +10096,188 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 250,
-        "y": 800,
+        "x": 290,
+        "y": 780,
+        "wires": [
+            [
+                "ddb9da78.77be18"
+            ]
+        ]
+    },
+    {
+        "id": "bb147727.808968",
+        "type": "inject",
+        "z": "511989b1.670cc8",
+        "g": "18ca9346.bdbedd",
+        "name": "Shutdown",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "octoprint/system",
+        "payload": "shutdown",
+        "payloadType": "str",
+        "x": 960,
+        "y": 1040,
+        "wires": [
+            [
+                "550eb938.78f938"
+            ]
+        ]
+    },
+    {
+        "id": "997e000a.2be07",
+        "type": "change",
+        "z": "511989b1.670cc8",
+        "g": "18ca9346.bdbedd",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "octoprint/system",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1340,
+        "y": 920,
+        "wires": [
+            [
+                "550eb938.78f938"
+            ]
+        ]
+    },
+    {
+        "id": "66335075.9471e",
+        "type": "blind-control",
+        "z": "7e5a345d.05161c",
+        "name": "RolloTom",
+        "topic": "",
+        "addIdType": "none",
+        "addId": "",
+        "positionConfig": "9a5a8534.25d4d8",
+        "autoTrigger": true,
+        "autoTriggerTime": 3600000,
+        "startDelayTime": 10000,
+        "contextStore": "",
+        "results": [
+            {
+                "p": "",
+                "pt": "msgTopic",
+                "v": "",
+                "vt": "topic"
+            },
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "",
+                "vt": "level"
+            },
+            {
+                "p": "slat",
+                "pt": "msg",
+                "v": "",
+                "vt": "slat"
+            },
+            {
+                "p": "blindCtrl",
+                "pt": "msg",
+                "v": "",
+                "vt": "ctrlObj"
+            }
+        ],
+        "blindIncrement": 0.01,
+        "blindOpenPos": 1,
+        "blindClosedPos": 0,
+        "blindPosReverse": false,
+        "blindPosDefault": "open (max)",
+        "blindPosDefaultType": "levelFixed",
+        "slatPosDefault": "",
+        "slatPosDefaultType": "none",
+        "overwriteExpire": "",
+        "rules": [],
+        "sunControlMode": "0",
+        "sunFloorLengthType": "num",
+        "sunFloorLength": "",
+        "sunMinDelta": "",
+        "blindPosMin": "closed (min)",
+        "blindPosMinType": "levelFixed",
+        "blindPosMax": "open (max)",
+        "blindPosMaxType": "levelFixed",
+        "blindOpenPosOffset": 0,
+        "blindClosedPosOffset": 0,
+        "sunSlat": "",
+        "sunSlatType": "none",
+        "smoothTime": "",
+        "sunTopic": "",
+        "windowTopType": "num",
+        "windowTop": "",
+        "windowBottomType": "num",
+        "windowBottom": "",
+        "windowAzimuthStartType": "numAzimuth",
+        "windowAzimuthStart": "",
+        "windowAzimuthEndType": "numAzimuth",
+        "windowAzimuthEnd": "",
+        "oversteers": [],
+        "oversteerTopic": "",
+        "x": 530,
+        "y": 2820,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b9f43bc.ca86bc8",
+        "type": "mqtt out",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "topic": "cmnd/RolloTom/ShutterPosition",
+        "qos": "",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 970,
+        "y": 2780,
+        "wires": []
+    },
+    {
+        "id": "52626602.a80e18",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Hom/stat/Wohnz/iVentEck",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 270,
+        "y": 940,
         "wires": [
             [
                 "ddb9da78.77be18"
