@@ -512,6 +512,95 @@
         "h": 142
     },
     {
+        "id": "bec8f6bc.d0d348",
+        "type": "group",
+        "z": "7e5a345d.05161c",
+        "name": "Holiday Calculation",
+        "style": {
+            "stroke": "#ff0000",
+            "fill": "#ff7f7f",
+            "label": true
+        },
+        "nodes": [
+            "f2c7f904.d08ef8",
+            "6e5f1bdf.1f22e4",
+            "73de636f.d668ec",
+            "eb31c6ef.67a2f8"
+        ],
+        "x": 34,
+        "y": 59,
+        "w": 592,
+        "h": 122
+    },
+    {
+        "id": "35db94c.3bef86c",
+        "type": "group",
+        "z": "7e5a345d.05161c",
+        "name": "Test Status",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "58bf6223.bb576c",
+            "890df71e.b306e8",
+            "fd873bd.c5447c8",
+            "1de0c489.49f2fb"
+        ],
+        "x": 734,
+        "y": 59,
+        "w": 492,
+        "h": 142
+    },
+    {
+        "id": "7ce4548d.b8ed0c",
+        "type": "group",
+        "z": "7e5a345d.05161c",
+        "name": "Rollo Tom",
+        "style": {
+            "stroke": "#3f5787",
+            "fill": "#c8e7a7",
+            "fill-opacity": "0.76",
+            "label": true
+        },
+        "nodes": [
+            "66335075.9471e",
+            "b9f43bc.ca86bc8",
+            "833077af.3ad7e8",
+            "92d65e6b.520fb",
+            "efee2e6a.18bbf",
+            "29e92fc.65284d",
+            "bc21088d.1042d8"
+        ],
+        "x": 54,
+        "y": 2799,
+        "w": 852,
+        "h": 282
+    },
+    {
+        "id": "c1953c38.acea1",
+        "type": "group",
+        "z": "7e5a345d.05161c",
+        "name": "Rollo Olga",
+        "style": {
+            "stroke": "#92d04f",
+            "fill": "#ffefbf",
+            "label": true
+        },
+        "nodes": [
+            "9541504a.3de58",
+            "5f48bf54.11e1a",
+            "115b1c5e.ab26e4",
+            "fbe2336b.e78ca",
+            "e9f25740.8e0928",
+            "7fb09d6a.3d4694",
+            "5f0f2d7a.f23d34"
+        ],
+        "x": 54,
+        "y": 2499,
+        "w": 852,
+        "h": 262
+    },
+    {
         "id": "19cf2a10.f9d4a6",
         "type": "mqtt-broker",
         "name": "",
@@ -676,66 +765,19 @@
     {
         "id": "8e157408.1ce3a8",
         "type": "ui_group",
-        "name": "Regalbeleuchtung",
+        "name": "Wetter",
         "tab": "b735724.619b39",
         "order": 1,
         "disp": true,
         "width": "6",
         "collapse": false
-    },
-    {
-        "id": "ad5a1117.c1459",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "8e157408.1ce3a8",
-        "order": 2,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "17ad1f32.34c9c1",
-        "type": "ui_group",
-        "name": "Wohnzimmer Fenster",
-        "tab": "b735724.619b39",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "391335a9.6fc52a",
-        "type": "ui_group",
-        "name": "Esstisch",
-        "tab": "b735724.619b39",
-        "order": 4,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "a8a74e77.bc32f",
-        "type": "ui_group",
-        "name": "Wohnzimmer Türe",
-        "tab": "b735724.619b39",
-        "order": 5,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "a55bdb3c.3fd318",
-        "type": "ui_tab",
-        "name": "Heizung",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "5b512b5d.99aec4",
         "type": "ui_group",
         "name": "Heizung",
         "tab": "b735724.619b39",
-        "order": 1,
+        "order": 2,
         "disp": true,
         "width": "7",
         "collapse": false
@@ -748,6 +790,16 @@
         "ip": "192.168.178.32",
         "mac": "5C:49:7D:52:36:8A",
         "token": ""
+    },
+    {
+        "id": "13a03688.c43e99",
+        "type": "ui_group",
+        "name": "Jalousien",
+        "tab": "b735724.619b39",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
     },
     {
         "id": "49e2646f.c4941c",
@@ -4322,21 +4374,22 @@
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 1120,
-        "y": 680,
+        "x": 940,
+        "y": 740,
         "wires": []
     },
     {
         "id": "58bf6223.bb576c",
         "type": "mqtt in",
         "z": "7e5a345d.05161c",
+        "g": "35db94c.3bef86c",
         "name": "",
         "topic": "stat/RolloEsstisch/+",
         "qos": "0",
         "datatype": "utf8",
         "broker": "19cf2a10.f9d4a6",
-        "x": 150,
-        "y": 120,
+        "x": 850,
+        "y": 100,
         "wires": [
             [
                 "890df71e.b306e8"
@@ -4347,6 +4400,7 @@
         "id": "890df71e.b306e8",
         "type": "debug",
         "z": "7e5a345d.05161c",
+        "g": "35db94c.3bef86c",
         "name": "RolloEsstisch Status",
         "active": false,
         "tosidebar": true,
@@ -4356,21 +4410,22 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 380,
-        "y": 120,
+        "x": 1080,
+        "y": 100,
         "wires": []
     },
     {
         "id": "fd873bd.c5447c8",
         "type": "mqtt in",
         "z": "7e5a345d.05161c",
+        "g": "35db94c.3bef86c",
         "name": "",
         "topic": "tele/RolloEsstisch/+",
         "qos": "1",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 150,
-        "y": 180,
+        "x": 850,
+        "y": 160,
         "wires": [
             [
                 "1de0c489.49f2fb"
@@ -4386,212 +4441,9 @@
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 410,
-        "y": 320,
+        "x": 810,
+        "y": 340,
         "wires": []
-    },
-    {
-        "id": "6df77e84.d553a",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "20",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "20",
-        "payloadType": "num",
-        "x": 110,
-        "y": 280,
-        "wires": [
-            [
-                "200ebf4e.96e24"
-            ]
-        ]
-    },
-    {
-        "id": "75fc1e70.95f69",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "Closed",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "100",
-        "payloadType": "str",
-        "x": 110,
-        "y": 440,
-        "wires": [
-            [
-                "200ebf4e.96e24"
-            ]
-        ]
-    },
-    {
-        "id": "7d6d48cb.4edaf8",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterChange",
-        "payload": "-30",
-        "payloadType": "num",
-        "x": 110,
-        "y": 500,
-        "wires": [
-            [
-                "200ebf4e.96e24"
-            ]
-        ]
-    },
-    {
-        "id": "267fca1c.5f7696",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "40",
-        "payloadType": "num",
-        "x": 110,
-        "y": 320,
-        "wires": [
-            [
-                "200ebf4e.96e24"
-            ]
-        ]
-    },
-    {
-        "id": "8bd31129.f81f2",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "50",
-        "payloadType": "str",
-        "x": 110,
-        "y": 360,
-        "wires": [
-            [
-                "200ebf4e.96e24"
-            ]
-        ]
-    },
-    {
-        "id": "35bab64.c84184a",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "80",
-        "payloadType": "str",
-        "x": 110,
-        "y": 400,
-        "wires": [
-            [
-                "200ebf4e.96e24"
-            ]
-        ]
-    },
-    {
-        "id": "fc4c6c26.efd38",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "Opened",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "100",
-        "payloadType": "num",
-        "x": 110,
-        "y": 240,
-        "wires": [
-            [
-                "200ebf4e.96e24"
-            ]
-        ]
     },
     {
         "id": "6ac2e536.abb7ec",
@@ -4966,6 +4818,24 @@
         "windowAzimuthEnd": "274",
         "oversteers": [
             {
+                "mode": 0,
+                "valueType": "global",
+                "value": "TempOut",
+                "operator": "lt",
+                "operatorText": "<",
+                "thresholdType": "num",
+                "threshold": "18",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            },
+            {
                 "mode": 1,
                 "valueType": "pdsCalcElevation",
                 "value": "",
@@ -5003,15 +4873,14 @@
             }
         ],
         "oversteerTopic": "CloudsOverwrite",
-        "x": 800,
-        "y": 720,
+        "x": 600,
+        "y": 740,
         "wires": [
             [
                 "5eac9c57.76c314",
                 "302bd89a.fafcc8",
                 "3c0c4256.7b9c2e",
-                "938edda3.2a1e5",
-                "52b02b7f.eddd84"
+                "938edda3.2a1e5"
             ],
             []
         ]
@@ -5020,6 +4889,7 @@
         "id": "1de0c489.49f2fb",
         "type": "debug",
         "z": "7e5a345d.05161c",
+        "g": "35db94c.3bef86c",
         "name": "RolloEsstisch Tele",
         "active": false,
         "tosidebar": true,
@@ -5029,14 +4899,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 370,
-        "y": 180,
+        "x": 1070,
+        "y": 160,
         "wires": []
     },
     {
         "id": "73de636f.d668ec",
         "type": "german-holidays",
         "z": "7e5a345d.05161c",
+        "g": "bec8f6bc.d0d348",
         "name": "",
         "topic": "",
         "region": "",
@@ -5212,8 +5083,8 @@
                 "plValue": ""
             }
         ],
-        "x": 300,
-        "y": 620,
+        "x": 340,
+        "y": 100,
         "wires": [
             [
                 "eb31c6ef.67a2f8"
@@ -5224,6 +5095,7 @@
         "id": "f2c7f904.d08ef8",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "bec8f6bc.d0d348",
         "name": "",
         "props": [
             {
@@ -5241,8 +5113,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 620,
+        "x": 150,
+        "y": 100,
         "wires": [
             [
                 "73de636f.d668ec"
@@ -5253,6 +5125,7 @@
         "id": "6e5f1bdf.1f22e4",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "bec8f6bc.d0d348",
         "name": "",
         "props": [
             {
@@ -5270,8 +5143,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 660,
+        "x": 150,
+        "y": 140,
         "wires": [
             [
                 "73de636f.d668ec"
@@ -5282,6 +5155,7 @@
         "id": "eb31c6ef.67a2f8",
         "type": "change",
         "z": "7e5a345d.05161c",
+        "g": "bec8f6bc.d0d348",
         "name": "Set Global Day",
         "rules": [
             {
@@ -5297,8 +5171,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 480,
-        "y": 620,
+        "x": 520,
+        "y": 100,
         "wires": [
             []
         ]
@@ -5316,8 +5190,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1100,
-        "y": 760,
+        "x": 980,
+        "y": 620,
         "wires": []
     },
     {
@@ -5331,14 +5205,12 @@
         "city": "",
         "country": "",
         "language": "de",
-        "x": 180,
-        "y": 780,
+        "x": 100,
+        "y": 460,
         "wires": [
             [
-                "fbedad10.48c1b",
                 "b907c2ad.b1417",
                 "e5d7026a.0a239",
-                "7e9cc06d.dd14c",
                 "fd0a15dc.298558"
             ]
         ]
@@ -5356,25 +5228,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 830,
-        "y": 780,
-        "wires": []
-    },
-    {
-        "id": "fbedad10.48c1b",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 390,
-        "y": 860,
+        "x": 570,
+        "y": 460,
         "wires": []
     },
     {
@@ -5396,8 +5251,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 590,
-        "y": 800,
+        "x": 350,
+        "y": 460,
         "wires": [
             [
                 "54ec2f51.f58c5"
@@ -5430,15 +5285,14 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 600,
-        "y": 840,
+        "x": 350,
+        "y": 500,
         "wires": [
             [
                 "48947d58.eae5c4",
                 "6ac2e536.abb7ec",
-                "b7edd92c.12aaf8",
                 "d26a7c85.ed299",
-                "7c0e361f.f82ce8"
+                "f69a51fd.3a899"
             ]
         ]
     },
@@ -5455,25 +5309,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 830,
-        "y": 840,
-        "wires": []
-    },
-    {
-        "id": "b7edd92c.12aaf8",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "Msg Clouds",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "clouds",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 830,
-        "y": 880,
+        "x": 570,
+        "y": 500,
         "wires": []
     },
     {
@@ -5481,10 +5318,10 @@
         "type": "ui_slider",
         "z": "7e5a345d.05161c",
         "name": "RolloEsstischPos",
-        "label": "Position",
+        "label": "Esstisch",
         "tooltip": "",
-        "group": "391335a9.6fc52a",
-        "order": 1,
+        "group": "13a03688.c43e99",
+        "order": 3,
         "width": "6",
         "height": "2",
         "passthru": true,
@@ -5494,8 +5331,8 @@
         "min": 0,
         "max": "100",
         "step": 1,
-        "x": 610,
-        "y": 520,
+        "x": 490,
+        "y": 340,
         "wires": [
             [
                 "200ebf4e.96e24"
@@ -5511,127 +5348,11 @@
         "qos": "2",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 360,
-        "y": 520,
+        "x": 160,
+        "y": 340,
         "wires": [
             [
                 "4fbc55c0.c9f85c"
-            ]
-        ]
-    },
-    {
-        "id": "7e9cc06d.dd14c",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "WeatherDetail",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload.detail",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 410,
-        "y": 920,
-        "wires": []
-    },
-    {
-        "id": "ff60156e.8cd9b8",
-        "type": "delay",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "pauseType": "delayv",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 960,
-        "y": 600,
-        "wires": [
-            [
-                "1aa9db05.9ae8c5"
-            ]
-        ]
-    },
-    {
-        "id": "8b2ceb4a.1135d8",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "delay",
-                "v": "1",
-                "vt": "num"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "SetDelay",
-        "payloadType": "str",
-        "x": 770,
-        "y": 600,
-        "wires": [
-            [
-                "ff60156e.8cd9b8"
-            ]
-        ]
-    },
-    {
-        "id": "1aa9db05.9ae8c5",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "message delay",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1120,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "68ef1efa.8555c",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "Trigger",
-        "payloadType": "str",
-        "x": 760,
-        "y": 660,
-        "wires": [
-            [
-                "ff60156e.8cd9b8"
             ]
         ]
     },
@@ -5640,31 +5361,31 @@
         "type": "ui_text",
         "z": "7e5a345d.05161c",
         "group": "8e157408.1ce3a8",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
         "label": "Wetter",
         "format": "{{msg.payload.detail}}",
         "layout": "row-spread",
-        "x": 370,
-        "y": 960,
+        "x": 330,
+        "y": 540,
         "wires": []
     },
     {
         "id": "3c0c4256.7b9c2e",
         "type": "ui_text",
         "z": "7e5a345d.05161c",
-        "group": "391335a9.6fc52a",
-        "order": 2,
+        "group": "13a03688.c43e99",
+        "order": 4,
         "width": "6",
-        "height": "2",
+        "height": "1",
         "name": "",
-        "label": "Status",
+        "label": "Status Esstisch",
         "format": "{{msg.blindCtrl.reason.description}}",
         "layout": "row-spread",
-        "x": 1070,
-        "y": 840,
+        "x": 940,
+        "y": 700,
         "wires": []
     },
     {
@@ -5680,8 +5401,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1060,
-        "y": 920,
+        "x": 940,
+        "y": 660,
         "wires": []
     },
     {
@@ -5705,8 +5426,8 @@
         "topic": "setSunDataMinAltitude",
         "payload": "50",
         "payloadType": "num",
-        "x": 470,
-        "y": 680,
+        "x": 150,
+        "y": 780,
         "wires": [
             [
                 "6ac2e536.abb7ec"
@@ -5734,8 +5455,8 @@
         "topic": "setSunDataMinAltitude",
         "payload": "5",
         "payloadType": "num",
-        "x": 470,
-        "y": 720,
+        "x": 150,
+        "y": 700,
         "wires": [
             [
                 "6ac2e536.abb7ec"
@@ -5763,8 +5484,8 @@
         "topic": "setSunDataMinAltitude",
         "payload": "30",
         "payloadType": "num",
-        "x": 460,
-        "y": 760,
+        "x": 150,
+        "y": 740,
         "wires": [
             [
                 "6ac2e536.abb7ec"
@@ -6160,10 +5881,10 @@
                 "mode": 0,
                 "valueType": "global",
                 "value": "TempOut",
-                "operator": "gt",
-                "operatorText": ">",
+                "operator": "lt",
+                "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "10",
+                "threshold": "15",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -6212,8 +5933,8 @@
             }
         ],
         "oversteerTopic": "CloudsOverwrite",
-        "x": 450,
-        "y": 1100,
+        "x": 610,
+        "y": 860,
         "wires": [
             [
                 "7ca250e2.e6cc5",
@@ -6245,15 +5966,15 @@
         "id": "4e597d09.2aedb4",
         "type": "ui_text",
         "z": "7e5a345d.05161c",
-        "group": "17ad1f32.34c9c1",
-        "order": 2,
+        "group": "13a03688.c43e99",
+        "order": 6,
         "width": "6",
-        "height": "2",
+        "height": "1",
         "name": "",
-        "label": "Status",
+        "label": "Status Fenster",
         "format": "{{msg.blindCtrl.reason.description}}",
         "layout": "row-center",
-        "x": 750,
+        "x": 780,
         "y": 1240,
         "wires": []
     },
@@ -6747,10 +6468,10 @@
         "type": "ui_slider",
         "z": "7e5a345d.05161c",
         "name": "RolloWohnzimmerPosition",
-        "label": "Position",
+        "label": "Wohnz Fenster",
         "tooltip": "",
-        "group": "17ad1f32.34c9c1",
-        "order": 1,
+        "group": "13a03688.c43e99",
+        "order": 5,
         "width": "6",
         "height": "2",
         "passthru": true,
@@ -6797,8 +6518,8 @@
         "label": "Wolken",
         "format": "{{msg.clouds}}",
         "layout": "row-spread",
-        "x": 660,
-        "y": 1000,
+        "x": 560,
+        "y": 540,
         "wires": []
     },
     {
@@ -7200,15 +6921,15 @@
         "id": "31ef75a9.d9e27a",
         "type": "ui_text",
         "z": "7e5a345d.05161c",
-        "group": "a8a74e77.bc32f",
+        "group": "13a03688.c43e99",
         "order": 2,
         "width": "6",
-        "height": "2",
+        "height": "1",
         "name": "",
-        "label": "Status",
+        "label": "Status Türe",
         "format": "{{msg.blindCtrl.reason.description}}",
         "layout": "row-center",
-        "x": 730,
+        "x": 750,
         "y": 2100,
         "wires": []
     },
@@ -7396,15 +7117,16 @@
         "type": "ui_slider",
         "z": "7e5a345d.05161c",
         "name": "RolloTürePosition",
-        "label": "Position",
+        "label": "Wohnz Türe",
         "tooltip": "",
-        "group": "a8a74e77.bc32f",
+        "group": "13a03688.c43e99",
         "order": 1,
         "width": "6",
         "height": "2",
         "passthru": true,
         "outs": "end",
         "topic": "cmnd/RolloTuere/ShutterPosition",
+        "topicType": "str",
         "min": 0,
         "max": "100",
         "step": 1,
@@ -7417,32 +7139,16 @@
         ]
     },
     {
-        "id": "d3cd8ba2.f50dc8",
-        "type": "mqtt in",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "topic": "stat/RolloOlga/SHUTTER1",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 280,
-        "y": 2540,
-        "wires": [
-            [
-                "5708f59d.13a2ec"
-            ]
-        ]
-    },
-    {
         "id": "9541504a.3de58",
         "type": "mqtt out",
         "z": "7e5a345d.05161c",
+        "g": "c1953c38.acea1",
         "name": "",
         "topic": "cmnd/RolloOlga/ShutterPosition",
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 980,
+        "x": 750,
         "y": 2540,
         "wires": []
     },
@@ -7450,6 +7156,7 @@
         "id": "5f48bf54.11e1a",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "c1953c38.acea1",
         "name": "",
         "props": [
             {
@@ -7465,10 +7172,10 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "20",
+        "payload": "0",
         "payloadType": "num",
-        "x": 660,
-        "y": 2540,
+        "x": 410,
+        "y": 2640,
         "wires": [
             [
                 "9541504a.3de58"
@@ -7479,6 +7186,7 @@
         "id": "115b1c5e.ab26e4",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "c1953c38.acea1",
         "name": "",
         "props": [
             {
@@ -7496,8 +7204,8 @@
         "topic": "",
         "payload": "50",
         "payloadType": "num",
-        "x": 660,
-        "y": 2640,
+        "x": 410,
+        "y": 2680,
         "wires": [
             [
                 "9541504a.3de58"
@@ -7508,6 +7216,7 @@
         "id": "fbe2336b.e78ca",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "c1953c38.acea1",
         "name": "",
         "props": [
             {
@@ -7525,8 +7234,8 @@
         "topic": "",
         "payload": "100",
         "payloadType": "num",
-        "x": 680,
-        "y": 2740,
+        "x": 410,
+        "y": 2720,
         "wires": [
             [
                 "9541504a.3de58"
@@ -7534,26 +7243,10 @@
         ]
     },
     {
-        "id": "5708f59d.13a2ec",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "RolloOlga Status",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 440,
-        "y": 2700,
-        "wires": []
-    },
-    {
         "id": "e9f25740.8e0928",
         "type": "blind-control",
         "z": "7e5a345d.05161c",
+        "g": "c1953c38.acea1",
         "name": "RolloOlga",
         "topic": "",
         "addIdType": "none",
@@ -7828,32 +7521,14 @@
         "windowAzimuthEnd": "",
         "oversteers": [],
         "oversteerTopic": "",
-        "x": 520,
-        "y": 2460,
+        "x": 400,
+        "y": 2580,
         "wires": [
             [
-                "9541504a.3de58",
-                "700de909.9aed38"
+                "9541504a.3de58"
             ],
             []
         ]
-    },
-    {
-        "id": "700de909.9aed38",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "OlgaRolladensteuerung Output",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1000,
-        "y": 2460,
-        "wires": []
     },
     {
         "id": "a30d9009.4e13b",
@@ -7868,22 +7543,6 @@
         "encoding": "none",
         "x": 910,
         "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "52b02b7f.eddd84",
-        "type": "file",
-        "z": "7e5a345d.05161c",
-        "name": "LogEsstisch",
-        "filename": "LogEsstisch.txt",
-        "appendNewline": true,
-        "createDir": false,
-        "overwriteFile": "false",
-        "encoding": "none",
-        "x": 1240,
-        "y": 840,
         "wires": [
             []
         ]
@@ -8209,7 +7868,6 @@
         "wires": [
             [
                 "719dd77e.126428",
-                "5eac9c57.76c314",
                 "1a538972.87cf07"
             ]
         ]
@@ -8535,7 +8193,8 @@
         "g": "1b82c7fb.e55448",
         "name": "Schalter Out",
         "links": [
-            "fd62f2d7.c32f7"
+            "fd62f2d7.c32f7",
+            "e1e1185c.2c8d88"
         ],
         "x": 815,
         "y": 420,
@@ -8865,31 +8524,6 @@
             [
                 "404dde09.449bf"
             ]
-        ]
-    },
-    {
-        "id": "8781afa3.b22fa",
-        "type": "ui_slider",
-        "z": "303a8ac7.4ea1c6",
-        "g": "875b7fad.bef24",
-        "name": "",
-        "label": "slider",
-        "tooltip": "",
-        "group": "8e157408.1ce3a8",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "end",
-        "topic": "RegalWohnz",
-        "topicType": "str",
-        "min": 0,
-        "max": "100",
-        "step": "10",
-        "x": 270,
-        "y": 760,
-        "wires": [
-            []
         ]
     },
     {
@@ -10184,6 +9818,7 @@
         "id": "66335075.9471e",
         "type": "blind-control",
         "z": "7e5a345d.05161c",
+        "g": "7ce4548d.b8ed0c",
         "name": "RolloTom",
         "topic": "",
         "addIdType": "none",
@@ -10458,8 +10093,8 @@
         "windowAzimuthEnd": "",
         "oversteers": [],
         "oversteerTopic": "",
-        "x": 520,
-        "y": 2800,
+        "x": 400,
+        "y": 2900,
         "wires": [
             [
                 "b9f43bc.ca86bc8"
@@ -10471,13 +10106,14 @@
         "id": "b9f43bc.ca86bc8",
         "type": "mqtt out",
         "z": "7e5a345d.05161c",
+        "g": "7ce4548d.b8ed0c",
         "name": "",
         "topic": "cmnd/RolloTom/ShutterPosition",
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 970,
-        "y": 2780,
+        "x": 750,
+        "y": 2900,
         "wires": []
     },
     {
@@ -10513,6 +10149,7 @@
         "id": "833077af.3ad7e8",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "7ce4548d.b8ed0c",
         "name": "",
         "props": [
             {
@@ -10530,8 +10167,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "str",
-        "x": 720,
-        "y": 2920,
+        "x": 410,
+        "y": 2960,
         "wires": [
             [
                 "b9f43bc.ca86bc8"
@@ -10542,6 +10179,7 @@
         "id": "92d65e6b.520fb",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "7ce4548d.b8ed0c",
         "name": "",
         "props": [
             {
@@ -10559,8 +10197,8 @@
         "topic": "",
         "payload": "100",
         "payloadType": "str",
-        "x": 720,
-        "y": 3000,
+        "x": 410,
+        "y": 3040,
         "wires": [
             [
                 "b9f43bc.ca86bc8"
@@ -10571,6 +10209,7 @@
         "id": "efee2e6a.18bbf",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "7ce4548d.b8ed0c",
         "name": "",
         "props": [
             {
@@ -10588,12 +10227,187 @@
         "topic": "",
         "payload": "50",
         "payloadType": "str",
-        "x": 710,
-        "y": 2960,
+        "x": 410,
+        "y": 3000,
         "wires": [
             [
                 "b9f43bc.ca86bc8"
             ]
         ]
+    },
+    {
+        "id": "fbb3d4c7.4328d8",
+        "type": "link in",
+        "z": "7e5a345d.05161c",
+        "name": "WeatherID",
+        "links": [
+            "f69a51fd.3a899"
+        ],
+        "x": 415,
+        "y": 860,
+        "wires": [
+            [
+                "7c0e361f.f82ce8"
+            ]
+        ]
+    },
+    {
+        "id": "f69a51fd.3a899",
+        "type": "link out",
+        "z": "7e5a345d.05161c",
+        "name": "WeatherID",
+        "links": [
+            "fbb3d4c7.4328d8"
+        ],
+        "x": 515,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "e1e1185c.2c8d88",
+        "type": "link in",
+        "z": "7e5a345d.05161c",
+        "name": "Wohnzimmer Zentralschalter",
+        "links": [
+            "89de660e.32b288"
+        ],
+        "x": 675,
+        "y": 800,
+        "wires": [
+            [
+                "5eac9c57.76c314"
+            ]
+        ]
+    },
+    {
+        "id": "29e92fc.65284d",
+        "type": "ui_slider",
+        "z": "7e5a345d.05161c",
+        "g": "7ce4548d.b8ed0c",
+        "name": "Rollo Tom Position",
+        "label": "Tom",
+        "tooltip": "",
+        "group": "13a03688.c43e99",
+        "order": 7,
+        "width": "6",
+        "height": "1",
+        "passthru": true,
+        "outs": "end",
+        "topic": "cmd/RolloTom/ShutterPosition",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 430,
+        "y": 2840,
+        "wires": [
+            [
+                "b9f43bc.ca86bc8"
+            ]
+        ]
+    },
+    {
+        "id": "bc21088d.1042d8",
+        "type": "mqtt in",
+        "z": "7e5a345d.05161c",
+        "g": "7ce4548d.b8ed0c",
+        "name": "",
+        "topic": "stat/RolloTom/SHUTTER1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 190,
+        "y": 2840,
+        "wires": [
+            [
+                "29e92fc.65284d"
+            ]
+        ]
+    },
+    {
+        "id": "7fb09d6a.3d4694",
+        "type": "ui_slider",
+        "z": "7e5a345d.05161c",
+        "g": "c1953c38.acea1",
+        "name": "Rollo Olga Position",
+        "label": "Olga",
+        "tooltip": "",
+        "group": "13a03688.c43e99",
+        "order": 8,
+        "width": "6",
+        "height": "1",
+        "passthru": true,
+        "outs": "end",
+        "topic": "cmd/RolloOlga/ShutterPosition",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 430,
+        "y": 2540,
+        "wires": [
+            [
+                "9541504a.3de58"
+            ]
+        ]
+    },
+    {
+        "id": "5f0f2d7a.f23d34",
+        "type": "mqtt in",
+        "z": "7e5a345d.05161c",
+        "g": "c1953c38.acea1",
+        "name": "",
+        "topic": "stat/RolloOlga/SHUTTER1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 190,
+        "y": 2540,
+        "wires": [
+            [
+                "7fb09d6a.3d4694"
+            ]
+        ]
+    },
+    {
+        "id": "44ca9388.fa0d3c",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "TempOut",
+        "payloadType": "global",
+        "x": 330,
+        "y": 420,
+        "wires": [
+            [
+                "243db6c7.15d31a"
+            ]
+        ]
+    },
+    {
+        "id": "243db6c7.15d31a",
+        "type": "ui_text",
+        "z": "7e5a345d.05161c",
+        "group": "8e157408.1ce3a8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Balkon Temp",
+        "format": "{{msg.payload}} °C  ",
+        "layout": "row-spread",
+        "x": 590,
+        "y": 420,
+        "wires": []
     }
 ]
