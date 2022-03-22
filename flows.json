@@ -6158,12 +6158,30 @@
         "oversteers": [
             {
                 "mode": 0,
+                "valueType": "global",
+                "value": "TempOut",
+                "operator": "gt",
+                "operatorText": ">",
+                "thresholdType": "num",
+                "threshold": "10",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            },
+            {
+                "mode": 0,
                 "valueType": "pdsCalcElevation",
                 "value": "",
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "numAltitude",
-                "threshold": "5",
+                "threshold": "15",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -10201,16 +10219,221 @@
                 "vt": "ctrlObj"
             }
         ],
-        "blindIncrement": 0.01,
-        "blindOpenPos": 1,
+        "blindIncrement": "1",
+        "blindOpenPos": "100",
         "blindClosedPos": 0,
         "blindPosReverse": false,
         "blindPosDefault": "open (max)",
         "blindPosDefaultType": "levelFixed",
         "slatPosDefault": "",
         "slatPosDefaultType": "none",
-        "overwriteExpire": "",
-        "rules": [],
+        "overwriteExpire": "1200000",
+        "rules": [
+            {
+                "index": 0,
+                "name": "HolidayWeekend",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "day.today.isWeekendOrHoliday",
+                        "operator": "true",
+                        "operatorText": "ist true",
+                        "thresholdType": "num",
+                        "threshold": 0
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "entered",
+                    "value": "7:45",
+                    "operator": 0,
+                    "operatorText": "↥ bis",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>7:45</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 1,
+                "name": "Sonnenaufgang",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "pdsTime",
+                    "value": "sunriseStart",
+                    "operator": 0,
+                    "operatorText": "↥ bis",
+                    "offsetType": "num",
+                    "offset": "10",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "timeMin": {
+                    "type": "entered",
+                    "value": "6:00",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000
+                },
+                "timeMax": {
+                    "type": "entered",
+                    "value": "8:00",
+                    "offsetType": "randmNumCachedDay",
+                    "offset": "30",
+                    "multiplier": 60000
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Beginn</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>8:00</var> offset <var>zufällig (täglich) bis 30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 2,
+                "name": "Sonnenuntergang",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "33%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "pdsTime",
+                    "value": "sunsetEnd",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "num",
+                    "offset": "15",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "timeMax": {
+                    "type": "entered",
+                    "value": "21:00",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:15<div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
+            },
+            {
+                "index": 3,
+                "name": "WochenendeGeschlossen",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "day.today.isWeekendOrHoliday",
+                        "operator": "true",
+                        "operatorText": "ist true",
+                        "thresholdType": "num",
+                        "threshold": 0
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "entered",
+                    "value": "22:00",
+                    "operator": 0,
+                    "operatorText": "↥ bis",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>22:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 4,
+                "name": "WochentagGeschlossen",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "entered",
+                    "value": "21:45",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>21:45</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            }
+        ],
         "sunControlMode": "0",
         "sunFloorLengthType": "num",
         "sunFloorLength": "",
@@ -10235,10 +10458,12 @@
         "windowAzimuthEnd": "",
         "oversteers": [],
         "oversteerTopic": "",
-        "x": 530,
-        "y": 2820,
+        "x": 520,
+        "y": 2800,
         "wires": [
-            [],
+            [
+                "b9f43bc.ca86bc8"
+            ],
             []
         ]
     },
@@ -10281,6 +10506,93 @@
         "wires": [
             [
                 "ddb9da78.77be18"
+            ]
+        ]
+    },
+    {
+        "id": "833077af.3ad7e8",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 720,
+        "y": 2920,
+        "wires": [
+            [
+                "b9f43bc.ca86bc8"
+            ]
+        ]
+    },
+    {
+        "id": "92d65e6b.520fb",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "100",
+        "payloadType": "str",
+        "x": 720,
+        "y": 3000,
+        "wires": [
+            [
+                "b9f43bc.ca86bc8"
+            ]
+        ]
+    },
+    {
+        "id": "efee2e6a.18bbf",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "50",
+        "payloadType": "str",
+        "x": 710,
+        "y": 2960,
+        "wires": [
+            [
+                "b9f43bc.ca86bc8"
             ]
         ]
     }
