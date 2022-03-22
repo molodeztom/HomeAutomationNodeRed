@@ -571,8 +571,8 @@
             "29e92fc.65284d",
             "bc21088d.1042d8"
         ],
-        "x": 54,
-        "y": 2799,
+        "x": 34,
+        "y": 1639,
         "w": 852,
         "h": 282
     },
@@ -595,10 +595,117 @@
             "7fb09d6a.3d4694",
             "5f0f2d7a.f23d34"
         ],
-        "x": 54,
-        "y": 2499,
+        "x": 34,
+        "y": 1339,
         "w": 852,
         "h": 262
+    },
+    {
+        "id": "4cff6fb8.ecd81",
+        "type": "group",
+        "z": "7e5a345d.05161c",
+        "name": "Wetterdaten",
+        "style": {
+            "stroke": "#001f60",
+            "fill": "#3f5787",
+            "label": true
+        },
+        "nodes": [
+            "ceb59201.0651d",
+            "54ec2f51.f58c5",
+            "b907c2ad.b1417",
+            "e5d7026a.0a239",
+            "48947d58.eae5c4",
+            "fd0a15dc.298558",
+            "d26a7c85.ed299",
+            "f69a51fd.3a899",
+            "44ca9388.fa0d3c",
+            "243db6c7.15d31a"
+        ],
+        "x": 34,
+        "y": 239,
+        "w": 692,
+        "h": 242
+    },
+    {
+        "id": "6666fbc0.896914",
+        "type": "group",
+        "z": "7e5a345d.05161c",
+        "name": "Rollo Essecke",
+        "style": {
+            "label": true,
+            "stroke": "#ffff3f",
+            "fill": "#ffcf3f"
+        },
+        "nodes": [
+            "5eac9c57.76c314",
+            "6ac2e536.abb7ec",
+            "3c0c4256.7b9c2e",
+            "1f1a9b31.1e6da5",
+            "b71e2911.a2d248",
+            "967f00fa.1ae43",
+            "e1e1185c.2c8d88",
+            "f525cf20.f74e1",
+            "4fbc55c0.c9f85c",
+            "7bd02856.8f5288"
+        ],
+        "x": 34,
+        "y": 499,
+        "w": 952,
+        "h": 262
+    },
+    {
+        "id": "3f11d194.8d04ee",
+        "type": "group",
+        "z": "7e5a345d.05161c",
+        "name": "Rollo Wohnzimmer",
+        "style": {
+            "stroke": "#7fb7df",
+            "fill": "#ff7f7f",
+            "label": true
+        },
+        "nodes": [
+            "719dd77e.126428",
+            "7c0e361f.f82ce8",
+            "4e597d09.2aedb4",
+            "18b04498.89bb7b",
+            "55fe76a1.962bf8",
+            "ac11dbc3.138ca8",
+            "cd81506e.47c21",
+            "97695071.468dc",
+            "ced3fe1b.5db5b",
+            "fbb3d4c7.4328d8",
+            "1f2409.3d5e7bf8"
+        ],
+        "x": 34,
+        "y": 799,
+        "w": 952,
+        "h": 262
+    },
+    {
+        "id": "c87697c7.9b9e58",
+        "type": "group",
+        "z": "7e5a345d.05161c",
+        "name": "Wohnzimmer Türe",
+        "style": {
+            "stroke": "#a4a4a4",
+            "fill": "#bfdbef",
+            "label": true
+        },
+        "nodes": [
+            "b0373bec.1ade48",
+            "1a538972.87cf07",
+            "31ef75a9.d9e27a",
+            "a74fc78c.af3c88",
+            "fb2be545.fa3808",
+            "fd62f2d7.c32f7",
+            "18eca755.0bbeb9",
+            "2d76da21.b8b846"
+        ],
+        "x": 34,
+        "y": 1099,
+        "w": 952,
+        "h": 202
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -4369,13 +4476,14 @@
         "id": "5eac9c57.76c314",
         "type": "mqtt out",
         "z": "7e5a345d.05161c",
+        "g": "6666fbc0.896914",
         "name": "ShutterPosition",
         "topic": "cmnd/RolloEsstisch/ShutterPosition",
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 940,
-        "y": 740,
+        "x": 880,
+        "y": 660,
         "wires": []
     },
     {
@@ -4433,22 +4541,10 @@
         ]
     },
     {
-        "id": "200ebf4e.96e24",
-        "type": "mqtt out",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "topic": "",
-        "qos": "",
-        "retain": "",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 810,
-        "y": 340,
-        "wires": []
-    },
-    {
         "id": "6ac2e536.abb7ec",
         "type": "blind-control",
         "z": "7e5a345d.05161c",
+        "g": "6666fbc0.896914",
         "name": "RolloEsstisch",
         "topic": "",
         "addIdType": "none",
@@ -4824,7 +4920,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "18",
+                "threshold": "20",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -4873,14 +4969,12 @@
             }
         ],
         "oversteerTopic": "CloudsOverwrite",
-        "x": 600,
-        "y": 740,
+        "x": 480,
+        "y": 600,
         "wires": [
             [
                 "5eac9c57.76c314",
-                "302bd89a.fafcc8",
-                "3c0c4256.7b9c2e",
-                "938edda3.2a1e5"
+                "3c0c4256.7b9c2e"
             ],
             []
         ]
@@ -5178,26 +5272,10 @@
         ]
     },
     {
-        "id": "302bd89a.fafcc8",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "Esstisch Steuerung Output",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 620,
-        "wires": []
-    },
-    {
         "id": "ceb59201.0651d",
         "type": "openweathermap in",
         "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
         "name": "Home Weather",
         "wtype": "current",
         "lon": "11.061859",
@@ -5205,8 +5283,8 @@
         "city": "",
         "country": "",
         "language": "de",
-        "x": 100,
-        "y": 460,
+        "x": 140,
+        "y": 320,
         "wires": [
             [
                 "b907c2ad.b1417",
@@ -5219,6 +5297,7 @@
         "id": "54ec2f51.f58c5",
         "type": "debug",
         "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
         "name": "Nur Clouds",
         "active": false,
         "tosidebar": true,
@@ -5228,14 +5307,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 570,
-        "y": 460,
+        "x": 610,
+        "y": 320,
         "wires": []
     },
     {
         "id": "b907c2ad.b1417",
         "type": "change",
         "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
         "name": "Only Clouds",
         "rules": [
             {
@@ -5251,8 +5331,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 350,
-        "y": 460,
+        "x": 390,
+        "y": 320,
         "wires": [
             [
                 "54ec2f51.f58c5"
@@ -5263,6 +5343,7 @@
         "id": "e5d7026a.0a239",
         "type": "change",
         "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
         "name": "WeatherID",
         "rules": [
             {
@@ -5285,12 +5366,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 350,
-        "y": 500,
+        "x": 390,
+        "y": 360,
         "wires": [
             [
                 "48947d58.eae5c4",
-                "6ac2e536.abb7ec",
                 "d26a7c85.ed299",
                 "f69a51fd.3a899"
             ]
@@ -5300,6 +5380,7 @@
         "id": "48947d58.eae5c4",
         "type": "debug",
         "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
         "name": "WeatherID",
         "active": false,
         "tosidebar": true,
@@ -5309,14 +5390,15 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 570,
-        "y": 500,
+        "x": 610,
+        "y": 360,
         "wires": []
     },
     {
         "id": "4fbc55c0.c9f85c",
         "type": "ui_slider",
         "z": "7e5a345d.05161c",
+        "g": "6666fbc0.896914",
         "name": "RolloEsstischPos",
         "label": "Esstisch",
         "tooltip": "",
@@ -5331,11 +5413,11 @@
         "min": 0,
         "max": "100",
         "step": 1,
-        "x": 490,
-        "y": 340,
+        "x": 510,
+        "y": 720,
         "wires": [
             [
-                "200ebf4e.96e24"
+                "5eac9c57.76c314"
             ]
         ]
     },
@@ -5343,13 +5425,14 @@
         "id": "7bd02856.8f5288",
         "type": "mqtt in",
         "z": "7e5a345d.05161c",
+        "g": "6666fbc0.896914",
         "name": "",
         "topic": "stat/RolloEsstisch/SHUTTER1",
         "qos": "2",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 160,
-        "y": 340,
+        "x": 180,
+        "y": 720,
         "wires": [
             [
                 "4fbc55c0.c9f85c"
@@ -5360,6 +5443,7 @@
         "id": "fd0a15dc.298558",
         "type": "ui_text",
         "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
         "group": "8e157408.1ce3a8",
         "order": 2,
         "width": 0,
@@ -5368,14 +5452,15 @@
         "label": "Wetter",
         "format": "{{msg.payload.detail}}",
         "layout": "row-spread",
-        "x": 330,
-        "y": 540,
+        "x": 370,
+        "y": 400,
         "wires": []
     },
     {
         "id": "3c0c4256.7b9c2e",
         "type": "ui_text",
         "z": "7e5a345d.05161c",
+        "g": "6666fbc0.896914",
         "group": "13a03688.c43e99",
         "order": 4,
         "width": "6",
@@ -5384,31 +5469,15 @@
         "label": "Status Esstisch",
         "format": "{{msg.blindCtrl.reason.description}}",
         "layout": "row-spread",
-        "x": 940,
-        "y": 700,
-        "wires": []
-    },
-    {
-        "id": "938edda3.2a1e5",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "EsstischReason",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "blindCtrl.reason.description",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 940,
-        "y": 660,
+        "x": 880,
+        "y": 620,
         "wires": []
     },
     {
         "id": "1f1a9b31.1e6da5",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "6666fbc0.896914",
         "name": "",
         "props": [
             {
@@ -5426,8 +5495,8 @@
         "topic": "setSunDataMinAltitude",
         "payload": "50",
         "payloadType": "num",
-        "x": 150,
-        "y": 780,
+        "x": 190,
+        "y": 660,
         "wires": [
             [
                 "6ac2e536.abb7ec"
@@ -5438,6 +5507,7 @@
         "id": "b71e2911.a2d248",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "6666fbc0.896914",
         "name": "",
         "props": [
             {
@@ -5455,8 +5525,8 @@
         "topic": "setSunDataMinAltitude",
         "payload": "5",
         "payloadType": "num",
-        "x": 150,
-        "y": 700,
+        "x": 190,
+        "y": 580,
         "wires": [
             [
                 "6ac2e536.abb7ec"
@@ -5467,6 +5537,7 @@
         "id": "967f00fa.1ae43",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "6666fbc0.896914",
         "name": "",
         "props": [
             {
@@ -5484,8 +5555,8 @@
         "topic": "setSunDataMinAltitude",
         "payload": "30",
         "payloadType": "num",
-        "x": 150,
-        "y": 740,
+        "x": 190,
+        "y": 620,
         "wires": [
             [
                 "6ac2e536.abb7ec"
@@ -5496,19 +5567,21 @@
         "id": "719dd77e.126428",
         "type": "mqtt out",
         "z": "7e5a345d.05161c",
+        "g": "3f11d194.8d04ee",
         "name": "ShutterPosition",
         "topic": "cmnd/RolloWohnzimmer/ShutterPosition",
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 820,
-        "y": 1100,
+        "x": 880,
+        "y": 940,
         "wires": []
     },
     {
         "id": "7c0e361f.f82ce8",
         "type": "blind-control",
         "z": "7e5a345d.05161c",
+        "g": "3f11d194.8d04ee",
         "name": "RolloWohnzimmer",
         "topic": "",
         "addIdType": "none",
@@ -5933,39 +6006,21 @@
             }
         ],
         "oversteerTopic": "CloudsOverwrite",
-        "x": 610,
-        "y": 860,
+        "x": 470,
+        "y": 900,
         "wires": [
             [
-                "7ca250e2.e6cc5",
                 "4e597d09.2aedb4",
-                "1d3825cc.3067ba",
                 "719dd77e.126428"
             ],
             []
         ]
     },
     {
-        "id": "7ca250e2.e6cc5",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "Wohnz Rolladensteuerung Output",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 820,
-        "y": 1180,
-        "wires": []
-    },
-    {
         "id": "4e597d09.2aedb4",
         "type": "ui_text",
         "z": "7e5a345d.05161c",
+        "g": "3f11d194.8d04ee",
         "group": "13a03688.c43e99",
         "order": 6,
         "width": "6",
@@ -5974,31 +6029,15 @@
         "label": "Status Fenster",
         "format": "{{msg.blindCtrl.reason.description}}",
         "layout": "row-center",
-        "x": 780,
-        "y": 1240,
-        "wires": []
-    },
-    {
-        "id": "1d3825cc.3067ba",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "WohnzReason",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "blindCtrl.reason.description",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 760,
-        "y": 1340,
+        "x": 880,
+        "y": 900,
         "wires": []
     },
     {
         "id": "18b04498.89bb7b",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "3f11d194.8d04ee",
         "name": "",
         "props": [
             {
@@ -6016,8 +6055,8 @@
         "topic": "setSunDataMinAltitude",
         "payload": "40",
         "payloadType": "num",
-        "x": 170,
-        "y": 1100,
+        "x": 190,
+        "y": 960,
         "wires": [
             [
                 "7c0e361f.f82ce8"
@@ -6028,6 +6067,7 @@
         "id": "55fe76a1.962bf8",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "3f11d194.8d04ee",
         "name": "",
         "props": [
             {
@@ -6045,8 +6085,8 @@
         "topic": "setSunDataMinAltitude",
         "payload": "5",
         "payloadType": "num",
-        "x": 170,
-        "y": 1140,
+        "x": 190,
+        "y": 880,
         "wires": [
             [
                 "7c0e361f.f82ce8"
@@ -6057,6 +6097,7 @@
         "id": "ac11dbc3.138ca8",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "3f11d194.8d04ee",
         "name": "",
         "props": [
             {
@@ -6074,8 +6115,8 @@
         "topic": "setSunDataMinAltitude",
         "payload": "20",
         "payloadType": "num",
-        "x": 160,
-        "y": 1180,
+        "x": 190,
+        "y": 920,
         "wires": [
             [
                 "7c0e361f.f82ce8"
@@ -6083,390 +6124,10 @@
         ]
     },
     {
-        "id": "631e7cf3.cc1784",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "20",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "20",
-        "payloadType": "num",
-        "x": 150,
-        "y": 1240,
-        "wires": [
-            [
-                "719dd77e.126428"
-            ]
-        ]
-    },
-    {
-        "id": "42ea334b.231bcc",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "40",
-        "payloadType": "num",
-        "x": 150,
-        "y": 1280,
-        "wires": [
-            [
-                "719dd77e.126428"
-            ]
-        ]
-    },
-    {
-        "id": "1eb0396c.c17e47",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "50",
-        "payloadType": "str",
-        "x": 150,
-        "y": 1320,
-        "wires": [
-            [
-                "719dd77e.126428"
-            ]
-        ]
-    },
-    {
-        "id": "8853f5a8.8b4f48",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "80",
-        "payloadType": "str",
-        "x": 150,
-        "y": 1360,
-        "wires": [
-            [
-                "719dd77e.126428"
-            ]
-        ]
-    },
-    {
-        "id": "709d5bcd.8d1b54",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "Open",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "100",
-        "payloadType": "str",
-        "x": 150,
-        "y": 1400,
-        "wires": [
-            [
-                "719dd77e.126428"
-            ]
-        ]
-    },
-    {
-        "id": "9691e1aa.10ca5",
-        "type": "mqtt in",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "topic": "stat/RolloWohnzimmer/SHUTTER1",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 500,
-        "y": 1420,
-        "wires": [
-            [
-                "bfcba13f.cd988"
-            ]
-        ]
-    },
-    {
-        "id": "bfcba13f.cd988",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "RolloWohnzimmerStatus",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 820,
-        "y": 1440,
-        "wires": []
-    },
-    {
-        "id": "cd81506e.47c21",
-        "type": "mqtt out",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "topic": "cmnd/RolloWohnzimmer/ShutterPosition",
-        "qos": "",
-        "retain": "",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 540,
-        "y": 1580,
-        "wires": []
-    },
-    {
-        "id": "a1e19928.f8da38",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "20",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "20",
-        "payloadType": "num",
-        "x": 130,
-        "y": 1540,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ae596784.c4d848",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "Open",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "100",
-        "payloadType": "str",
-        "x": 130,
-        "y": 1700,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "216e065e.8c8ffa",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterChange",
-        "payload": "-30",
-        "payloadType": "num",
-        "x": 130,
-        "y": 1760,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "630153d9.09e9cc",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "40",
-        "payloadType": "num",
-        "x": 130,
-        "y": 1580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "37bcbeec.6fd7c2",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "50",
-        "payloadType": "str",
-        "x": 130,
-        "y": 1620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fb2b775f.3234f8",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "80",
-        "payloadType": "str",
-        "x": 130,
-        "y": 1660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "542c8b32.221d54",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "Closed",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 130,
-        "y": 1500,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "97695071.468dc",
         "type": "ui_slider",
         "z": "7e5a345d.05161c",
+        "g": "3f11d194.8d04ee",
         "name": "RolloWohnzimmerPosition",
         "label": "Wohnz Fenster",
         "tooltip": "",
@@ -6481,11 +6142,11 @@
         "min": 0,
         "max": "100",
         "step": 1,
-        "x": 740,
-        "y": 1780,
+        "x": 500,
+        "y": 1020,
         "wires": [
             [
-                "cd81506e.47c21"
+                "719dd77e.126428"
             ]
         ]
     },
@@ -6493,13 +6154,14 @@
         "id": "ced3fe1b.5db5b",
         "type": "mqtt in",
         "z": "7e5a345d.05161c",
+        "g": "3f11d194.8d04ee",
         "name": "",
         "topic": "stat/RolloWohnzimmer/SHUTTER1",
         "qos": "2",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 400,
-        "y": 1780,
+        "x": 200,
+        "y": 1020,
         "wires": [
             [
                 "97695071.468dc"
@@ -6510,6 +6172,7 @@
         "id": "d26a7c85.ed299",
         "type": "ui_text",
         "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
         "group": "8e157408.1ce3a8",
         "order": 3,
         "width": 0,
@@ -6518,14 +6181,15 @@
         "label": "Wolken",
         "format": "{{msg.clouds}}",
         "layout": "row-spread",
-        "x": 560,
-        "y": 540,
+        "x": 600,
+        "y": 400,
         "wires": []
     },
     {
         "id": "b0373bec.1ade48",
         "type": "blind-control",
         "z": "7e5a345d.05161c",
+        "g": "c87697c7.9b9e58",
         "name": "RolloTüre",
         "topic": "",
         "addIdType": "none",
@@ -6875,13 +6539,11 @@
             }
         ],
         "oversteerTopic": "CloudsOverwrite",
-        "x": 410,
-        "y": 1840,
+        "x": 440,
+        "y": 1140,
         "wires": [
             [
-                "ff3966aa.bbc898",
                 "31ef75a9.d9e27a",
-                "c64a6a11.71f278",
                 "1a538972.87cf07"
             ],
             []
@@ -6891,36 +6553,21 @@
         "id": "1a538972.87cf07",
         "type": "mqtt out",
         "z": "7e5a345d.05161c",
+        "g": "c87697c7.9b9e58",
         "name": "ShutterPosition",
         "topic": "cmnd/RolloTuere/ShutterPosition",
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 780,
-        "y": 1940,
-        "wires": []
-    },
-    {
-        "id": "ff3966aa.bbc898",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "Wohnz Rolladensteuerung Output",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 780,
-        "y": 2020,
+        "x": 880,
+        "y": 1180,
         "wires": []
     },
     {
         "id": "31ef75a9.d9e27a",
         "type": "ui_text",
         "z": "7e5a345d.05161c",
+        "g": "c87697c7.9b9e58",
         "group": "13a03688.c43e99",
         "order": 2,
         "width": "6",
@@ -6929,183 +6576,22 @@
         "label": "Status Türe",
         "format": "{{msg.blindCtrl.reason.description}}",
         "layout": "row-center",
-        "x": 750,
-        "y": 2100,
+        "x": 870,
+        "y": 1140,
         "wires": []
-    },
-    {
-        "id": "c64a6a11.71f278",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "name": "WohnzReason",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "blindCtrl.reason.description",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 2180,
-        "wires": []
-    },
-    {
-        "id": "5ff98951.59e088",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "20",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "20",
-        "payloadType": "num",
-        "x": 110,
-        "y": 2080,
-        "wires": [
-            [
-                "1a538972.87cf07"
-            ]
-        ]
-    },
-    {
-        "id": "81558e32.4aede",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "40",
-        "payloadType": "num",
-        "x": 110,
-        "y": 2120,
-        "wires": [
-            [
-                "1a538972.87cf07"
-            ]
-        ]
-    },
-    {
-        "id": "8e4390a2.51add",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "50",
-        "payloadType": "str",
-        "x": 110,
-        "y": 2160,
-        "wires": [
-            [
-                "1a538972.87cf07"
-            ]
-        ]
-    },
-    {
-        "id": "ce2fc08.dce774",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "80",
-        "payloadType": "str",
-        "x": 110,
-        "y": 2200,
-        "wires": [
-            [
-                "1a538972.87cf07"
-            ]
-        ]
-    },
-    {
-        "id": "cfcad29b.0834",
-        "type": "inject",
-        "z": "7e5a345d.05161c",
-        "name": "Open",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "cmnd/RolloEsstisch/ShutterPosition",
-        "payload": "100",
-        "payloadType": "str",
-        "x": 110,
-        "y": 2240,
-        "wires": [
-            [
-                "1a538972.87cf07"
-            ]
-        ]
     },
     {
         "id": "a74fc78c.af3c88",
         "type": "mqtt in",
         "z": "7e5a345d.05161c",
+        "g": "c87697c7.9b9e58",
         "name": "",
         "topic": "stat/RolloTuere/SHUTTER1",
         "qos": "2",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 160,
-        "y": 2320,
+        "x": 180,
+        "y": 1260,
         "wires": [
             [
                 "fb2be545.fa3808"
@@ -7116,6 +6602,7 @@
         "id": "fb2be545.fa3808",
         "type": "ui_slider",
         "z": "7e5a345d.05161c",
+        "g": "c87697c7.9b9e58",
         "name": "RolloTürePosition",
         "label": "Wohnz Türe",
         "tooltip": "",
@@ -7130,8 +6617,8 @@
         "min": 0,
         "max": "100",
         "step": 1,
-        "x": 490,
-        "y": 2320,
+        "x": 470,
+        "y": 1260,
         "wires": [
             [
                 "1a538972.87cf07"
@@ -7148,8 +6635,8 @@
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 750,
-        "y": 2540,
+        "x": 730,
+        "y": 1380,
         "wires": []
     },
     {
@@ -7174,8 +6661,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 410,
-        "y": 2640,
+        "x": 390,
+        "y": 1480,
         "wires": [
             [
                 "9541504a.3de58"
@@ -7204,8 +6691,8 @@
         "topic": "",
         "payload": "50",
         "payloadType": "num",
-        "x": 410,
-        "y": 2680,
+        "x": 390,
+        "y": 1520,
         "wires": [
             [
                 "9541504a.3de58"
@@ -7234,8 +6721,8 @@
         "topic": "",
         "payload": "100",
         "payloadType": "num",
-        "x": 410,
-        "y": 2720,
+        "x": 390,
+        "y": 1560,
         "wires": [
             [
                 "9541504a.3de58"
@@ -7521,8 +7008,8 @@
         "windowAzimuthEnd": "",
         "oversteers": [],
         "oversteerTopic": "",
-        "x": 400,
-        "y": 2580,
+        "x": 380,
+        "y": 1420,
         "wires": [
             [
                 "9541504a.3de58"
@@ -7859,15 +7346,15 @@
         "id": "fd62f2d7.c32f7",
         "type": "link in",
         "z": "7e5a345d.05161c",
+        "g": "c87697c7.9b9e58",
         "name": "Rollo Esstisch",
         "links": [
             "89de660e.32b288"
         ],
-        "x": 95,
-        "y": 1460,
+        "x": 495,
+        "y": 1200,
         "wires": [
             [
-                "719dd77e.126428",
                 "1a538972.87cf07"
             ]
         ]
@@ -8194,7 +7681,8 @@
         "name": "Schalter Out",
         "links": [
             "fd62f2d7.c32f7",
-            "e1e1185c.2c8d88"
+            "e1e1185c.2c8d88",
+            "1f2409.3d5e7bf8"
         ],
         "x": 815,
         "y": 420,
@@ -9452,12 +8940,13 @@
         "id": "18eca755.0bbeb9",
         "type": "link in",
         "z": "7e5a345d.05161c",
-        "name": "",
+        "g": "c87697c7.9b9e58",
+        "name": "Türe offen",
         "links": [
             "e38e18ad.3476f8"
         ],
-        "x": 75,
-        "y": 1840,
+        "x": 95,
+        "y": 1140,
         "wires": [
             [
                 "2d76da21.b8b846"
@@ -9468,6 +8957,7 @@
         "id": "2d76da21.b8b846",
         "type": "change",
         "z": "7e5a345d.05161c",
+        "g": "c87697c7.9b9e58",
         "name": "",
         "rules": [
             {
@@ -9483,8 +8973,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 210,
-        "y": 1840,
+        "x": 230,
+        "y": 1140,
         "wires": [
             [
                 "b0373bec.1ade48"
@@ -10093,8 +9583,8 @@
         "windowAzimuthEnd": "",
         "oversteers": [],
         "oversteerTopic": "",
-        "x": 400,
-        "y": 2900,
+        "x": 380,
+        "y": 1740,
         "wires": [
             [
                 "b9f43bc.ca86bc8"
@@ -10112,8 +9602,8 @@
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 750,
-        "y": 2900,
+        "x": 730,
+        "y": 1740,
         "wires": []
     },
     {
@@ -10167,8 +9657,8 @@
         "topic": "",
         "payload": "0",
         "payloadType": "str",
-        "x": 410,
-        "y": 2960,
+        "x": 390,
+        "y": 1800,
         "wires": [
             [
                 "b9f43bc.ca86bc8"
@@ -10197,8 +9687,8 @@
         "topic": "",
         "payload": "100",
         "payloadType": "str",
-        "x": 410,
-        "y": 3040,
+        "x": 390,
+        "y": 1880,
         "wires": [
             [
                 "b9f43bc.ca86bc8"
@@ -10227,8 +9717,8 @@
         "topic": "",
         "payload": "50",
         "payloadType": "str",
-        "x": 410,
-        "y": 3000,
+        "x": 390,
+        "y": 1840,
         "wires": [
             [
                 "b9f43bc.ca86bc8"
@@ -10239,12 +9729,13 @@
         "id": "fbb3d4c7.4328d8",
         "type": "link in",
         "z": "7e5a345d.05161c",
+        "g": "3f11d194.8d04ee",
         "name": "WeatherID",
         "links": [
             "f69a51fd.3a899"
         ],
-        "x": 415,
-        "y": 860,
+        "x": 275,
+        "y": 840,
         "wires": [
             [
                 "7c0e361f.f82ce8"
@@ -10255,24 +9746,27 @@
         "id": "f69a51fd.3a899",
         "type": "link out",
         "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
         "name": "WeatherID",
         "links": [
-            "fbb3d4c7.4328d8"
+            "fbb3d4c7.4328d8",
+            "f525cf20.f74e1"
         ],
-        "x": 515,
-        "y": 580,
+        "x": 555,
+        "y": 440,
         "wires": []
     },
     {
         "id": "e1e1185c.2c8d88",
         "type": "link in",
         "z": "7e5a345d.05161c",
+        "g": "6666fbc0.896914",
         "name": "Wohnzimmer Zentralschalter",
         "links": [
             "89de660e.32b288"
         ],
-        "x": 675,
-        "y": 800,
+        "x": 555,
+        "y": 660,
         "wires": [
             [
                 "5eac9c57.76c314"
@@ -10298,8 +9792,8 @@
         "min": 0,
         "max": "100",
         "step": 1,
-        "x": 430,
-        "y": 2840,
+        "x": 410,
+        "y": 1680,
         "wires": [
             [
                 "b9f43bc.ca86bc8"
@@ -10316,8 +9810,8 @@
         "qos": "2",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 190,
-        "y": 2840,
+        "x": 170,
+        "y": 1680,
         "wires": [
             [
                 "29e92fc.65284d"
@@ -10343,8 +9837,8 @@
         "min": 0,
         "max": "100",
         "step": 1,
-        "x": 430,
-        "y": 2540,
+        "x": 410,
+        "y": 1380,
         "wires": [
             [
                 "9541504a.3de58"
@@ -10361,8 +9855,8 @@
         "qos": "2",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 190,
-        "y": 2540,
+        "x": 170,
+        "y": 1380,
         "wires": [
             [
                 "7fb09d6a.3d4694"
@@ -10373,6 +9867,7 @@
         "id": "44ca9388.fa0d3c",
         "type": "inject",
         "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
         "name": "",
         "props": [
             {
@@ -10386,8 +9881,8 @@
         "topic": "",
         "payload": "TempOut",
         "payloadType": "global",
-        "x": 330,
-        "y": 420,
+        "x": 370,
+        "y": 280,
         "wires": [
             [
                 "243db6c7.15d31a"
@@ -10398,6 +9893,7 @@
         "id": "243db6c7.15d31a",
         "type": "ui_text",
         "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
         "group": "8e157408.1ce3a8",
         "order": 1,
         "width": 0,
@@ -10406,8 +9902,42 @@
         "label": "Balkon Temp",
         "format": "{{msg.payload}} °C  ",
         "layout": "row-spread",
-        "x": 590,
-        "y": 420,
+        "x": 630,
+        "y": 280,
         "wires": []
+    },
+    {
+        "id": "f525cf20.f74e1",
+        "type": "link in",
+        "z": "7e5a345d.05161c",
+        "g": "6666fbc0.896914",
+        "name": "",
+        "links": [
+            "f69a51fd.3a899"
+        ],
+        "x": 275,
+        "y": 540,
+        "wires": [
+            [
+                "6ac2e536.abb7ec"
+            ]
+        ]
+    },
+    {
+        "id": "1f2409.3d5e7bf8",
+        "type": "link in",
+        "z": "7e5a345d.05161c",
+        "g": "3f11d194.8d04ee",
+        "name": "",
+        "links": [
+            "89de660e.32b288"
+        ],
+        "x": 555,
+        "y": 960,
+        "wires": [
+            [
+                "719dd77e.126428"
+            ]
+        ]
     }
 ]
