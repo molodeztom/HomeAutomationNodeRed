@@ -63,6 +63,13 @@
         "info": ""
     },
     {
+        "id": "1d446fc4.18a0d",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "b83af794.4bec68",
         "type": "group",
         "z": "9963931.9232c7",
@@ -114,12 +121,13 @@
             "3a6c508.ebe3cb",
             "f571eda1.7d3f5",
             "1a1c6586.ce182a",
-            "2a103049.f6a29"
+            "2a103049.f6a29",
+            "a7423ddf.3105"
         ],
         "x": 14,
-        "y": 39,
+        "y": 19,
         "w": 892,
-        "h": 142
+        "h": 162
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -152,9 +160,7 @@
             "6c8377f8.cdd248"
         ],
         "x": 24,
-        "y": 719,
-        "w": 842,
-        "h": 642
+        "y": 719
     },
     {
         "id": "584f76f1.996908",
@@ -192,9 +198,7 @@
             "f5d3faae.391998"
         ],
         "x": 14,
-        "y": 19,
-        "w": 992,
-        "h": 482
+        "y": 19
     },
     {
         "id": "2f27dc68.9ff574",
@@ -213,9 +217,7 @@
             "64c76441.d5f36c"
         ],
         "x": 34,
-        "y": 519,
-        "w": 432,
-        "h": 142
+        "y": 519
     },
     {
         "id": "5c041b39.d836b4",
@@ -248,9 +250,7 @@
             "a30d9009.4e13b"
         ],
         "x": 34,
-        "y": -1,
-        "w": 1182,
-        "h": 502
+        "y": -1
     },
     {
         "id": "18ca9346.bdbedd",
@@ -293,9 +293,7 @@
             "997e000a.2be07"
         ],
         "x": 54,
-        "y": 516.5,
-        "w": 1632,
-        "h": 604.5
+        "y": 516.5
     },
     {
         "id": "73d12632.94b388",
@@ -316,36 +314,7 @@
             "541cf4bd.ec76dc"
         ],
         "x": 494,
-        "y": 519,
-        "w": 572,
-        "h": 182
-    },
-    {
-        "id": "875b7fad.bef24",
-        "type": "group",
-        "z": "303a8ac7.4ea1c6",
-        "name": "Regalbeleuchtung",
-        "style": {
-            "stroke": "#3f93cf",
-            "fill": "#ffff7f",
-            "label": true
-        },
-        "nodes": [
-            "cc3c23a7.cde0c",
-            "6f653dba.45b264",
-            "fb5cff5c.b5669",
-            "ec444cf1.0f441",
-            "4a72d2bb.8a626c",
-            "1dc7e978.c48077",
-            "b8aa167e.038cf8",
-            "8d25df5c.ebd85",
-            "114319b2.da6366",
-            "8781afa3.b22fa"
-        ],
-        "x": null,
-        "y": null,
-        "w": null,
-        "h": null
+        "y": 519
     },
     {
         "id": "1b82c7fb.e55448",
@@ -418,9 +387,7 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 559,
-        "w": 852,
-        "h": 162
+        "y": 559
     },
     {
         "id": "40936a6d.e4bc64",
@@ -440,9 +407,7 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 399,
-        "w": 712,
-        "h": 142
+        "y": 399
     },
     {
         "id": "3644af6d.d42f6",
@@ -470,9 +435,7 @@
             "529c3dd9.9b5374"
         ],
         "x": 14,
-        "y": 19,
-        "w": 732,
-        "h": 362
+        "y": 19
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -493,9 +456,7 @@
             "52626602.a80e18"
         ],
         "x": 14,
-        "y": 739,
-        "w": 1072,
-        "h": 162
+        "y": 739
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -514,9 +475,7 @@
             "eb31c6ef.67a2f8"
         ],
         "x": 34,
-        "y": 59,
-        "w": 592,
-        "h": 122
+        "y": 59
     },
     {
         "id": "35db94c.3bef86c",
@@ -533,9 +492,7 @@
             "1de0c489.49f2fb"
         ],
         "x": 734,
-        "y": 59,
-        "w": 492,
-        "h": 142
+        "y": 59
     },
     {
         "id": "7ce4548d.b8ed0c",
@@ -555,9 +512,7 @@
             "bc21088d.1042d8"
         ],
         "x": 34,
-        "y": 1499,
-        "w": 852,
-        "h": 142
+        "y": 1499
     },
     {
         "id": "c1953c38.acea1",
@@ -576,9 +531,7 @@
             "5f0f2d7a.f23d34"
         ],
         "x": 34,
-        "y": 1339,
-        "w": 852,
-        "h": 122
+        "y": 1339
     },
     {
         "id": "4cff6fb8.ecd81",
@@ -603,9 +556,7 @@
             "243db6c7.15d31a"
         ],
         "x": 34,
-        "y": 239,
-        "w": 692,
-        "h": 242
+        "y": 239
     },
     {
         "id": "6666fbc0.896914",
@@ -630,9 +581,7 @@
             "7bd02856.8f5288"
         ],
         "x": 34,
-        "y": 499,
-        "w": 952,
-        "h": 262
+        "y": 499
     },
     {
         "id": "3f11d194.8d04ee",
@@ -651,16 +600,13 @@
             "18b04498.89bb7b",
             "55fe76a1.962bf8",
             "ac11dbc3.138ca8",
-            "cd81506e.47c21",
             "97695071.468dc",
             "ced3fe1b.5db5b",
             "fbb3d4c7.4328d8",
             "1f2409.3d5e7bf8"
         ],
         "x": 34,
-        "y": 799,
-        "w": 952,
-        "h": 262
+        "y": 799
     },
     {
         "id": "c87697c7.9b9e58",
@@ -683,9 +629,38 @@
             "2d76da21.b8b846"
         ],
         "x": 34,
-        "y": 1099,
-        "w": 952,
-        "h": 202
+        "y": 1099
+    },
+    {
+        "id": "d8d1de94.dfe9",
+        "type": "group",
+        "z": "303a8ac7.4ea1c6",
+        "name": "Regalbeleuchtung",
+        "style": {
+            "stroke": "#9363b7",
+            "fill": "#c8e7a7",
+            "label": true
+        },
+        "nodes": [
+            "9f8b174e.db7128",
+            "1268a437.7e39bc",
+            "cc16c88b.fcf548",
+            "725e03a5.ae6a1c",
+            "1c7e85b9.7a139a",
+            "afd3f744.eebe38",
+            "3b653b55.378c04",
+            "cc3c23a7.cde0c",
+            "b8aa167e.038cf8",
+            "175136f.5bb36c9",
+            "4a72d2bb.8a626c",
+            "8d25df5c.ebd85",
+            "1dc7e978.c48077",
+            "114319b2.da6366"
+        ],
+        "x": 34,
+        "y": 499,
+        "w": 1292,
+        "h": 302
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -873,7 +848,7 @@
         "id": "d3280bd.1460df8",
         "type": "samsung-tv",
         "name": "Samsung TV",
-        "model": "8002",
+        "model": "8001",
         "ip": "192.168.178.32",
         "mac": "5C:49:7D:52:36:8A",
         "token": ""
@@ -897,6 +872,24 @@
         "disp": true,
         "width": "6",
         "collapse": false
+    },
+    {
+        "id": "67365e98.aacf3",
+        "type": "ui_group",
+        "name": "TV Remote",
+        "tab": "42f15bd.59322a4",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": true
+    },
+    {
+        "id": "42f15bd.59322a4",
+        "type": "ui_tab",
+        "name": "TV Remote",
+        "icon": "fa-tv",
+        "disabled": false,
+        "hidden": false
     },
     {
         "id": "49e2646f.c4941c",
@@ -1838,7 +1831,7 @@
         "z": "511989b1.670cc8",
         "g": "5c041b39.d836b4",
         "name": "octoprint shutdown",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2884,7 +2877,7 @@
         "retentionPolicyV18Flux": "",
         "org": "",
         "bucket": "",
-        "x": 790,
+        "x": 810,
         "y": 80,
         "wires": []
     },
@@ -2903,8 +2896,7 @@
         "y": 80,
         "wires": [
             [
-                "2a103049.f6a29",
-                "f571eda1.7d3f5"
+                "2a103049.f6a29"
             ]
         ]
     },
@@ -2926,11 +2918,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 630,
-        "y": 140,
+        "x": 650,
+        "y": 80,
         "wires": [
             [
-                "3a6c508.ebe3cb"
+                "3a6c508.ebe3cb",
+                "f571eda1.7d3f5"
             ]
         ]
     },
@@ -3178,7 +3171,7 @@
         "z": "9963931.9232c7",
         "g": "b83af794.4bec68",
         "name": "TOHCounter",
-        "func": "var status = flow.get(\"status\")  || \"stop\";\nvar nozzlecount  = flow.get(\"nozzlecount\");\nvar heatbreakcount  = flow.get(\"heatbreakcount\") ;\nvar PTFECount  = flow.get(\"PTFECount\") || 0;\nvar MaintenanceCount  = flow.get(\"MaintenanceCount\") || 0;\n\nvar JsonObj;\n\nif (status == \"run\"){\n    nozzlecount = nozzlecount +1;\n    heatbreakcount = heatbreakcount +1;\n    PTFECount = PTFECount +1;\n    MaintenanceCount = MaintenanceCount +1;\n}\n\nflow.set(\"nozzlecount\",nozzlecount);\nflow.set(\"heatbreakcount\",heatbreakcount);\nflow.set(\"PTFECount\",PTFECount);\nflow.set(\"MaintenanceCount\",MaintenanceCount);\n\nmsg.mystatus = status;\n\nmsg.payload = {\n    AnycubicHNozzle: Number(nozzlecount), \n    AnycubicHHeatbreak: Number(heatbreakcount),\n    AnycubicHPTFE: Number(PTFECount),\n    AnycubicMaintenance: Number(MaintenanceCount)\n}; \nnode.status({fill:\"green\",shape:\"ring\",text: status});\nreturn msg;\n\n",
+        "func": "var status = flow.get(\"status\") || \"stop\";\nvar nozzlecount  = flow.get(\"nozzlecount\");\nvar heatbreakcount  = flow.get(\"heatbreakcount\") ;\nvar PTFECount  = flow.get(\"PTFECount\") || 0;\nvar MaintenanceCount  = flow.get(\"MaintenanceCount\") || 0;\n\nvar JsonObj;\n\nif (status == \"run\"){\n    nozzlecount = nozzlecount +1;\n    heatbreakcount = heatbreakcount +1;\n    PTFECount = PTFECount +1;\n    MaintenanceCount = MaintenanceCount +1;\n\n\nflow.set(\"nozzlecount\",nozzlecount);\nflow.set(\"heatbreakcount\",heatbreakcount);\nflow.set(\"PTFECount\",PTFECount);\nflow.set(\"MaintenanceCount\",MaintenanceCount);\n\nmsg.mystatus = status;\n\nmsg.payload = {\n    AnycubicHNozzle: Number(nozzlecount), \n    AnycubicHHeatbreak: Number(heatbreakcount),\n    AnycubicHPTFE: Number(PTFECount),\n    AnycubicMaintenance: Number(MaintenanceCount)\n}; \nnode.status({fill:\"green\",shape:\"ring\",text: status});\nreturn msg;\n}\nelse node.status({fill:\"green\",shape:\"ring\",text: status});\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3324,7 +3317,7 @@
         "timeout": "5",
         "timeoutUnits": "seconds",
         "rate": "1",
-        "nbRateUnits": "5",
+        "nbRateUnits": "1",
         "rateUnits": "minute",
         "randomFirst": "1",
         "randomLast": "5",
@@ -3386,7 +3379,7 @@
         "g": "b83af794.4bec68",
         "influxdb": "e3f4c3e8.b52ee",
         "name": "Read From DB",
-        "query": "select max(*) FROM autogen.AnyI3Hours",
+        "query": "select last(*) FROM autogen.AnyI3Hours",
         "rawOutput": false,
         "precision": "",
         "retentionPolicy": "",
@@ -3436,7 +3429,7 @@
         "z": "9963931.9232c7",
         "g": "b83af794.4bec68",
         "name": "Set Flow Values",
-        "func": "    flow.set(\"nozzlecount\",msg.payload[0].max_AnycubicHNozzle);\n    flow.set(\"heatbreakcount\",msg.payload[0].max_AnycubicHHeatbreak);\n    flow.set(\"PTFECount\",msg.payload[0].max_AnycubicHPTFE);\n    flow.set(\"MaintenanceCount\",msg.payload[0].max_AnycubicMaintenance);\n   \n",
+        "func": "    flow.set(\"nozzlecount\",msg.payload[0].last_AnycubicHNozzle);\n    flow.set(\"heatbreakcount\",msg.payload[0].last_AnycubicHHeatbreak);\n    flow.set(\"PTFECount\",msg.payload[0].last_AnycubicHPTFE);\n    flow.set(\"MaintenanceCount\",msg.payload[0].last_AnycubicMaintenance);\n   \n",
         "outputs": 0,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is deployed.\n// Code added here will be run once\n// whenever the node is deployed.\n",
@@ -4737,7 +4730,7 @@
                 "nameAlt": "",
                 "character": 8,
                 "month": 1,
-                "day": 12,
+                "day": 13,
                 "nth": 1,
                 "dow": 5,
                 "plType": "none",
@@ -5524,7 +5517,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "15",
+                "threshold": "20",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -7071,14 +7064,14 @@
         "id": "cc3c23a7.cde0c",
         "type": "mqtt in",
         "z": "303a8ac7.4ea1c6",
-        "g": "875b7fad.bef24",
+        "g": "d8d1de94.dfe9",
         "name": "",
         "topic": "shellies/Wohnzimmerschalter/input_event/2",
         "qos": "2",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
         "x": 220,
-        "y": 620,
+        "y": 600,
         "wires": [
             [
                 "b8aa167e.038cf8"
@@ -7173,84 +7166,10 @@
         "wires": []
     },
     {
-        "id": "6f653dba.45b264",
-        "type": "mqtt out",
-        "z": "303a8ac7.4ea1c6",
-        "g": "875b7fad.bef24",
-        "name": "Regal Wohnzimmer Ein Aus",
-        "topic": "shellies/Regalbeleuchtung/color/0/command",
-        "qos": "",
-        "retain": "",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 360,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "fb5cff5c.b5669",
-        "type": "inject",
-        "z": "303a8ac7.4ea1c6",
-        "g": "875b7fad.bef24",
-        "name": "ON",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "on",
-        "payloadType": "str",
-        "x": 130,
-        "y": 680,
-        "wires": [
-            [
-                "6f653dba.45b264"
-            ]
-        ]
-    },
-    {
-        "id": "ec444cf1.0f441",
-        "type": "inject",
-        "z": "303a8ac7.4ea1c6",
-        "g": "875b7fad.bef24",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "off",
-        "payloadType": "str",
-        "x": 130,
-        "y": 740,
-        "wires": [
-            [
-                "6f653dba.45b264"
-            ]
-        ]
-    },
-    {
         "id": "4a72d2bb.8a626c",
         "type": "inject",
         "z": "303a8ac7.4ea1c6",
-        "g": "875b7fad.bef24",
+        "g": "d8d1de94.dfe9",
         "name": "Regalbeleuchtung JSON",
         "props": [
             {
@@ -7268,8 +7187,8 @@
         "topic": "",
         "payload": "{\"mode\":\"color\",\"red\":255,\"green\":255,\"blue\":255,\"gain\":100,\"white\":0,\"effect\":0,\"turn\":\"on\",\"transition\":500}",
         "payloadType": "json",
-        "x": 530,
-        "y": 520,
+        "x": 930,
+        "y": 540,
         "wires": [
             [
                 "1dc7e978.c48077"
@@ -7280,27 +7199,27 @@
         "id": "1dc7e978.c48077",
         "type": "mqtt out",
         "z": "303a8ac7.4ea1c6",
-        "g": "875b7fad.bef24",
+        "g": "d8d1de94.dfe9",
         "name": "Regalbeleuchtung Set",
         "topic": "shellies/Regalbeleuchtung/color/0/set",
         "qos": "",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 1100,
-        "y": 620,
+        "x": 1200,
+        "y": 600,
         "wires": []
     },
     {
         "id": "b8aa167e.038cf8",
         "type": "json",
         "z": "303a8ac7.4ea1c6",
-        "g": "875b7fad.bef24",
+        "g": "d8d1de94.dfe9",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
         "x": 470,
-        "y": 620,
+        "y": 600,
         "wires": [
             [
                 "175136f.5bb36c9"
@@ -7311,15 +7230,15 @@
         "id": "8d25df5c.ebd85",
         "type": "function",
         "z": "303a8ac7.4ea1c6",
-        "g": "875b7fad.bef24",
+        "g": "d8d1de94.dfe9",
         "name": "",
         "func": "switch (msg.payload){\n    case \"S\":\n        msg.payload = \n        {\n    \"mode\": \"color\",\n    \"red\": 255,\n    \"green\": 255,\n    \"blue\": 255,\n    \"gain\": 100,\n    \"turn\": \"toggle\",\n    \"transition\": 500\n}\n        break;\n    case \"SS\":\n        msg.payload = \n                {\n    \"mode\": \"color\",\n    \"red\": 80,\n    \"green\": 255,\n    \"blue\": 255,\n    \"gain\": 50,\n    \"turn\": \"on\",\n    \"transition\": 500\n                }\n        break;\n    case \"SSS\":\n        msg.payload = \n                {\n    \"mode\": \"color\",\n    \"red\": 255,\n    \"green\": 255,\n    \"blue\": 255,\n    \"gain\": 100,\n    \"turn\": \"on\",\n    \"transition\": 100\n}\n        break;\n    default:\n        msg.payload = \"anderes event\"\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 820,
-        "y": 620,
+        "x": 1000,
+        "y": 600,
         "wires": [
             [
                 "1dc7e978.c48077",
@@ -7331,7 +7250,7 @@
         "id": "114319b2.da6366",
         "type": "debug",
         "z": "303a8ac7.4ea1c6",
-        "g": "875b7fad.bef24",
+        "g": "d8d1de94.dfe9",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -7340,8 +7259,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1070,
-        "y": 560,
+        "x": 1190,
+        "y": 540,
         "wires": []
     },
     {
@@ -7769,23 +7688,6 @@
         "wires": []
     },
     {
-        "id": "e35749e2.bdfdd8",
-        "type": "new-samsung-tv-isalive",
-        "z": "303a8ac7.4ea1c6",
-        "ip": "192.168.178.32",
-        "name": "Samsung TV On",
-        "x": 160,
-        "y": 900,
-        "wires": [
-            [
-                "8f2949e8.868d18"
-            ],
-            [
-                "a3233a67.d08488"
-            ]
-        ]
-    },
-    {
         "id": "8f2949e8.868d18",
         "type": "change",
         "z": "303a8ac7.4ea1c6",
@@ -7795,8 +7697,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"mode\":\"color\",\"red\":255,\"green\":255,\"blue\":255,\"gain\":100,\"turn\":\"toggle\",\"transition\":500}",
-                "tot": "json"
+                "to": "SSS",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -7804,12 +7706,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 370,
-        "y": 880,
+        "x": 440,
+        "y": 960,
         "wires": [
-            [
-                "1dc7e978.c48077"
-            ]
+            []
         ]
     },
     {
@@ -7822,8 +7722,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"mode\":\"color\",\"red\":80,\"green\":255,\"blue\":255,\"gain\":50,\"turn\":\"on\",\"transition\":500}",
-                "tot": "json"
+                "to": "SS",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -7831,12 +7731,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 390,
-        "y": 920,
+        "x": 460,
+        "y": 1000,
         "wires": [
-            [
-                "1dc7e978.c48077"
-            ]
+            []
         ]
     },
     {
@@ -8838,7 +8736,7 @@
                 "importance": 0,
                 "time": {
                     "type": "pdsTime",
-                    "value": "civilDawn",
+                    "value": "goldenHourDawnStart",
                     "operator": 0,
                     "operatorText": "↥ bis",
                     "offsetType": "num",
@@ -8861,7 +8759,7 @@
                     "offset": "30",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>bürgerliche Morgendämmerung</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>8:00</var> offset <var>zufällig (täglich) bis 30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Goldene Morgenstunde Beginn</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>8:00</var> offset <var>zufällig (täglich) bis 30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
                 "index": 2,
@@ -8966,8 +8864,8 @@
                 "resetOverwrite": false,
                 "importance": 0,
                 "time": {
-                    "type": "entered",
-                    "value": "21:00",
+                    "type": "pdsTime",
+                    "value": "amateurDusk",
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "none",
@@ -8976,7 +8874,14 @@
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>21:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "timeMax": {
+                    "type": "entered",
+                    "value": "22:00",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>amateur Abenddämmerung</var><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             }
         ],
         "sunControlMode": "0",
@@ -9275,6 +9180,7 @@
         "id": "9f8b174e.db7128",
         "type": "ui_button",
         "z": "303a8ac7.4ea1c6",
+        "g": "d8d1de94.dfe9",
         "name": "Regal Ein/Aus",
         "group": "ae60322a.3a15c",
         "order": 0,
@@ -9290,8 +9196,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 860,
-        "y": 820,
+        "x": 720,
+        "y": 680,
         "wires": [
             [
                 "8d25df5c.ebd85"
@@ -9302,6 +9208,7 @@
         "id": "175136f.5bb36c9",
         "type": "change",
         "z": "303a8ac7.4ea1c6",
+        "g": "d8d1de94.dfe9",
         "name": "",
         "rules": [
             {
@@ -9318,42 +9225,25 @@
         "to": "",
         "reg": false,
         "x": 650,
-        "y": 620,
+        "y": 600,
         "wires": [
             [
-                "7c844c52.083654",
                 "8d25df5c.ebd85"
             ]
         ]
     },
     {
-        "id": "7c844c52.083654",
-        "type": "debug",
-        "z": "303a8ac7.4ea1c6",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 650,
-        "y": 700,
-        "wires": []
-    },
-    {
         "id": "1268a437.7e39bc",
         "type": "mqtt in",
         "z": "303a8ac7.4ea1c6",
+        "g": "d8d1de94.dfe9",
         "name": "Shelly On Off Status",
         "topic": "shellies/Regalbeleuchtung/color/0/status",
         "qos": "2",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 320,
-        "y": 1060,
+        "x": 150,
+        "y": 660,
         "wires": [
             [
                 "cc16c88b.fcf548"
@@ -9361,36 +9251,19 @@
         ]
     },
     {
-        "id": "a2c241a0.b54b9",
-        "type": "debug",
-        "z": "303a8ac7.4ea1c6",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 530,
-        "y": 1200,
-        "wires": []
-    },
-    {
         "id": "cc16c88b.fcf548",
         "type": "json",
         "z": "303a8ac7.4ea1c6",
+        "g": "d8d1de94.dfe9",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 510,
-        "y": 1060,
+        "x": 210,
+        "y": 740,
         "wires": [
             [
-                "725e03a5.ae6a1c",
-                "a2c241a0.b54b9"
+                "725e03a5.ae6a1c"
             ]
         ]
     },
@@ -9398,6 +9271,7 @@
         "id": "725e03a5.ae6a1c",
         "type": "change",
         "z": "303a8ac7.4ea1c6",
+        "g": "d8d1de94.dfe9",
         "name": "",
         "rules": [
             {
@@ -9427,12 +9301,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 700,
-        "y": 1060,
+        "x": 360,
+        "y": 740,
         "wires": [
             [
-                "1c7e85b9.7a139a",
-                "cdc799b8.3a2d18"
+                "1c7e85b9.7a139a"
             ]
         ]
     },
@@ -9440,17 +9313,17 @@
         "id": "1c7e85b9.7a139a",
         "type": "function",
         "z": "303a8ac7.4ea1c6",
+        "g": "d8d1de94.dfe9",
         "name": "",
         "func": "\n\nif(msg.statuson == true)\n{\n    msg.oncolor = \"yellow\"\n}\nelse msg.oncolor = \"black\";\n\nif(msg.red <= 80)\n{\n    msg.dimcolor = \"yellow\";\n    msg.normcolor = \"black\";\n}\nelse { \n    msg.dimcolor = \"black\";\n    msg.normcolor = \"yellow\"\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 940,
-        "y": 1180,
+        "x": 520,
+        "y": 740,
         "wires": [
             [
-                "e6f85b30.24bae8",
                 "9f8b174e.db7128",
                 "afd3f744.eebe38",
                 "3b653b55.378c04"
@@ -9458,26 +9331,10 @@
         ]
     },
     {
-        "id": "e6f85b30.24bae8",
-        "type": "debug",
-        "z": "303a8ac7.4ea1c6",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 930,
-        "y": 1060,
-        "wires": []
-    },
-    {
         "id": "afd3f744.eebe38",
         "type": "ui_button",
         "z": "303a8ac7.4ea1c6",
+        "g": "d8d1de94.dfe9",
         "name": "",
         "group": "ae60322a.3a15c",
         "order": 3,
@@ -9493,8 +9350,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 950,
-        "y": 860,
+        "x": 690,
+        "y": 720,
         "wires": [
             [
                 "8d25df5c.ebd85"
@@ -9502,26 +9359,10 @@
         ]
     },
     {
-        "id": "cdc799b8.3a2d18",
-        "type": "debug",
-        "z": "303a8ac7.4ea1c6",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 740,
-        "y": 1260,
-        "wires": []
-    },
-    {
         "id": "3b653b55.378c04",
         "type": "ui_button",
         "z": "303a8ac7.4ea1c6",
+        "g": "d8d1de94.dfe9",
         "name": "",
         "group": "ae60322a.3a15c",
         "order": 3,
@@ -9537,11 +9378,306 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 1050,
-        "y": 920,
+        "x": 700,
+        "y": 760,
         "wires": [
             [
                 "8d25df5c.ebd85"
+            ]
+        ]
+    },
+    {
+        "id": "eeb2454.b98ccb8",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "80005140.337ba",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "9d6bf743.48cb28",
+        "type": "samsung-tv-isalive",
+        "z": "303a8ac7.4ea1c6",
+        "device": "d3280bd.1460df8",
+        "name": "",
+        "x": 210,
+        "y": 900,
+        "wires": [
+            [
+                "a3233a67.d08488",
+                "80005140.337ba"
+            ],
+            [
+                "8f2949e8.868d18",
+                "eeb2454.b98ccb8"
+            ]
+        ]
+    },
+    {
+        "id": "3d351ae2.a23b96",
+        "type": "samsung-tv-token",
+        "z": "303a8ac7.4ea1c6",
+        "device": "d3280bd.1460df8",
+        "name": "",
+        "x": 340,
+        "y": 1100,
+        "wires": [
+            [
+                "61a158d3.55b2d8"
+            ]
+        ]
+    },
+    {
+        "id": "61a158d3.55b2d8",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "f0650407.a1cc08",
+        "type": "inject",
+        "z": "303a8ac7.4ea1c6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "token",
+        "payloadType": "str",
+        "x": 180,
+        "y": 1060,
+        "wires": [
+            [
+                "3d351ae2.a23b96"
+            ]
+        ]
+    },
+    {
+        "id": "15f4f9aa.c1b956",
+        "type": "samsung-tv-send",
+        "z": "303a8ac7.4ea1c6",
+        "device": "d3280bd.1460df8",
+        "name": "",
+        "key": "KEY_VOLUP",
+        "x": 410,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4e9e49c.6377c8",
+        "type": "inject",
+        "z": "303a8ac7.4ea1c6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 1220,
+        "wires": [
+            [
+                "15f4f9aa.c1b956"
+            ]
+        ]
+    },
+    {
+        "id": "58ba9882.718fe8",
+        "type": "ui_switch",
+        "z": "1d446fc4.18a0d",
+        "name": "",
+        "label": "Big TV",
+        "tooltip": "",
+        "group": "67365e98.aacf3",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "x": 190,
+        "y": 360,
+        "wires": [
+            [
+                "da1c393d.f23878"
+            ]
+        ]
+    },
+    {
+        "id": "54335120.fd63a",
+        "type": "ui_button",
+        "z": "1d446fc4.18a0d",
+        "name": "",
+        "group": "67365e98.aacf3",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Bit TV OFF!",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "off",
+        "payloadType": "str",
+        "topic": "",
+        "x": 330,
+        "y": 340,
+        "wires": [
+            [
+                "da1c393d.f23878"
+            ]
+        ]
+    },
+    {
+        "id": "da1c393d.f23878",
+        "type": "function",
+        "z": "1d446fc4.18a0d",
+        "name": "",
+        "func": "if(msg.payload == \"on\"){\n return [ msg,null];\n}\n\nif(msg.payload == \"off\"){\n return [null, msg];\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "x": 470,
+        "y": 400,
+        "wires": [
+            [
+                "c47174b1.6aafb8"
+            ],
+            [
+                "fd9629ce.9331c8"
+            ]
+        ]
+    },
+    {
+        "id": "72e2bf78.32c2f",
+        "type": "inject",
+        "z": "1d446fc4.18a0d",
+        "name": "TV OFF",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 510,
+        "y": 340,
+        "wires": [
+            [
+                "da1c393d.f23878"
+            ]
+        ]
+    },
+    {
+        "id": "fd9629ce.9331c8",
+        "type": "samsung-tv-isaliveping",
+        "z": "1d446fc4.18a0d",
+        "device": "d3280bd.1460df8",
+        "name": "",
+        "x": 740,
+        "y": 400,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c47174b1.6aafb8",
+        "type": "samsung-tv-turnon",
+        "z": "1d446fc4.18a0d",
+        "device": "d3280bd.1460df8",
+        "name": "",
+        "x": 780,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "31b4cbf9.213984",
+        "type": "inject",
+        "z": "1d446fc4.18a0d",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 640,
+        "y": 500,
+        "wires": [
+            [
+                "fd9629ce.9331c8"
             ]
         ]
     }
