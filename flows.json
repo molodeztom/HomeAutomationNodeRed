@@ -102,9 +102,7 @@
             "532bc566.df7b1c"
         ],
         "x": 14,
-        "y": 199,
-        "w": 812,
-        "h": 502
+        "y": 199
     },
     {
         "id": "7d3411b0.20fc7",
@@ -121,13 +119,10 @@
             "3a6c508.ebe3cb",
             "f571eda1.7d3f5",
             "1a1c6586.ce182a",
-            "2a103049.f6a29",
-            "a7423ddf.3105"
+            "2a103049.f6a29"
         ],
         "x": 14,
-        "y": 19,
-        "w": 892,
-        "h": 162
+        "y": 39
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -160,7 +155,9 @@
             "6c8377f8.cdd248"
         ],
         "x": 24,
-        "y": 719
+        "y": 719,
+        "w": 842,
+        "h": 642
     },
     {
         "id": "584f76f1.996908",
@@ -198,7 +195,9 @@
             "f5d3faae.391998"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 992,
+        "h": 482
     },
     {
         "id": "2f27dc68.9ff574",
@@ -217,7 +216,9 @@
             "64c76441.d5f36c"
         ],
         "x": 34,
-        "y": 519
+        "y": 519,
+        "w": 432,
+        "h": 142
     },
     {
         "id": "5c041b39.d836b4",
@@ -250,7 +251,9 @@
             "a30d9009.4e13b"
         ],
         "x": 34,
-        "y": -1
+        "y": -1,
+        "w": 1182,
+        "h": 502
     },
     {
         "id": "18ca9346.bdbedd",
@@ -293,7 +296,9 @@
             "997e000a.2be07"
         ],
         "x": 54,
-        "y": 516.5
+        "y": 516.5,
+        "w": 1632,
+        "h": 604.5
     },
     {
         "id": "73d12632.94b388",
@@ -314,7 +319,9 @@
             "541cf4bd.ec76dc"
         ],
         "x": 494,
-        "y": 519
+        "y": 519,
+        "w": 572,
+        "h": 182
     },
     {
         "id": "1b82c7fb.e55448",
@@ -337,9 +344,7 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299,
-        "w": 992,
-        "h": 162
+        "y": 299
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -363,9 +368,7 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19,
-        "w": 752,
-        "h": 262
+        "y": 19
     },
     {
         "id": "b9a71c35.b8ccf",
@@ -387,7 +390,9 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 559
+        "y": 759,
+        "w": 852,
+        "h": 162
     },
     {
         "id": "40936a6d.e4bc64",
@@ -407,7 +412,9 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 399
+        "y": 599,
+        "w": 712,
+        "h": 142
     },
     {
         "id": "3644af6d.d42f6",
@@ -424,7 +431,6 @@
             "8de8f997.bf7e18",
             "c12c999c.1ace08",
             "17d18fc0.b21c7",
-            "5734478e.ed65c8",
             "1df28e68.76cf02",
             "c70dc234.9d2b2",
             "e6e8fe31.e3e38",
@@ -432,10 +438,19 @@
             "e38e18ad.3476f8",
             "3d0abac7.6df4e6",
             "7365b52e.c6858c",
-            "529c3dd9.9b5374"
+            "529c3dd9.9b5374",
+            "64c0d9cf.dd5978",
+            "ab5cf8b5.cc97d8",
+            "467af620.a7ab78",
+            "7ed0e0d.e36ec2",
+            "fa90773d.feded8",
+            "33e7c443.634e4c",
+            "562300c7.4b952"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 772,
+        "h": 522
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -456,7 +471,9 @@
             "52626602.a80e18"
         ],
         "x": 14,
-        "y": 739
+        "y": 939,
+        "w": 1072,
+        "h": 162
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -475,7 +492,9 @@
             "eb31c6ef.67a2f8"
         ],
         "x": 34,
-        "y": 59
+        "y": 59,
+        "w": 592,
+        "h": 122
     },
     {
         "id": "35db94c.3bef86c",
@@ -492,7 +511,9 @@
             "1de0c489.49f2fb"
         ],
         "x": 734,
-        "y": 59
+        "y": 59,
+        "w": 492,
+        "h": 142
     },
     {
         "id": "7ce4548d.b8ed0c",
@@ -512,7 +533,9 @@
             "bc21088d.1042d8"
         ],
         "x": 34,
-        "y": 1499
+        "y": 1499,
+        "w": 852,
+        "h": 142
     },
     {
         "id": "c1953c38.acea1",
@@ -531,7 +554,9 @@
             "5f0f2d7a.f23d34"
         ],
         "x": 34,
-        "y": 1339
+        "y": 1339,
+        "w": 852,
+        "h": 122
     },
     {
         "id": "4cff6fb8.ecd81",
@@ -556,7 +581,9 @@
             "243db6c7.15d31a"
         ],
         "x": 34,
-        "y": 239
+        "y": 239,
+        "w": 692,
+        "h": 242
     },
     {
         "id": "6666fbc0.896914",
@@ -581,7 +608,9 @@
             "7bd02856.8f5288"
         ],
         "x": 34,
-        "y": 499
+        "y": 499,
+        "w": 952,
+        "h": 262
     },
     {
         "id": "3f11d194.8d04ee",
@@ -606,7 +635,9 @@
             "1f2409.3d5e7bf8"
         ],
         "x": 34,
-        "y": 799
+        "y": 799,
+        "w": 952,
+        "h": 262
     },
     {
         "id": "c87697c7.9b9e58",
@@ -629,7 +660,9 @@
             "2d76da21.b8b846"
         ],
         "x": 34,
-        "y": 1099
+        "y": 1099,
+        "w": 952,
+        "h": 202
     },
     {
         "id": "d8d1de94.dfe9",
@@ -658,9 +691,7 @@
             "114319b2.da6366"
         ],
         "x": 34,
-        "y": 499,
-        "w": 1292,
-        "h": 302
+        "y": 499
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -706,8 +737,8 @@
         "longitude": "0",
         "latitude": "0",
         "angleType": "deg",
-        "timeZoneOffset": "99",
-        "timeZoneDST": "0",
+        "timeZoneOffset": 99,
+        "timeZoneDST": 0,
         "stateTimeFormat": "3",
         "stateDateFormat": "12"
     },
@@ -3379,7 +3410,7 @@
         "g": "b83af794.4bec68",
         "influxdb": "e3f4c3e8.b52ee",
         "name": "Read From DB",
-        "query": "select last(*) FROM autogen.AnyI3Hours",
+        "query": "select last(*) FROM autogen.AnyI3Hours WHERE time >= 1646401680107ms and time <= 1648990080107ms fill(null)",
         "rawOutput": false,
         "precision": "",
         "retentionPolicy": "",
@@ -3411,7 +3442,7 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": "0.1",
+        "onceDelay": "1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
@@ -4480,7 +4511,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "20",
+                "threshold": "22",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -5421,23 +5452,23 @@
                 "importance": 0,
                 "time": {
                     "type": "pdsTime",
-                    "value": "sunsetStart",
+                    "value": "blueHourDuskStart",
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "num",
-                    "offset": "10",
+                    "offset": "",
                     "multiplier": 60000,
                     "days": "*",
                     "months": "*"
                 },
                 "timeMin": {
                     "type": "entered",
-                    "value": "15:30",
+                    "value": "16:00",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Beginn</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>15:30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Blaue Abendstunde Beginn</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
             },
             {
                 "index": 6,
@@ -5517,7 +5548,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "20",
+                "threshold": "22",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -5937,11 +5968,11 @@
                 "importance": 0,
                 "time": {
                     "type": "pdsTime",
-                    "value": "sunsetEnd",
+                    "value": "blueHourDuskStart",
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "num",
-                    "offset": "10",
+                    "offset": "",
                     "multiplier": 60000,
                     "days": "*",
                     "months": "*"
@@ -5955,12 +5986,12 @@
                 },
                 "timeMax": {
                     "type": "entered",
-                    "value": "21:00",
+                    "value": "20:45",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Blaue Abendstunde Beginn</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>20:45</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
             },
             {
                 "index": 4,
@@ -6442,11 +6473,11 @@
                 "importance": 0,
                 "time": {
                     "type": "pdsTime",
-                    "value": "astronomicalDusk",
+                    "value": "blueHourDuskEnd",
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "num",
-                    "offset": "15",
+                    "offset": "",
                     "multiplier": 60000,
                     "days": "*",
                     "months": "*"
@@ -6458,7 +6489,7 @@
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>astronomische Abenddämmerung</var> + 00:15<div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:45</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Blaue Abendstunde Ende</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:45</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             }
         ],
         "sunControlMode": "0",
@@ -7287,7 +7318,7 @@
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
         "x": 120,
-        "y": 440,
+        "y": 640,
         "wires": [
             [
                 "acdf657a.72a3b8",
@@ -7307,7 +7338,7 @@
         "initialize": "",
         "finalize": "",
         "x": 380,
-        "y": 440,
+        "y": 640,
         "wires": [
             [
                 "e1622e38.47b46"
@@ -7330,7 +7361,7 @@
         "org": "organisation",
         "bucket": "bucket",
         "x": 610,
-        "y": 440,
+        "y": 640,
         "wires": []
     },
     {
@@ -7410,7 +7441,7 @@
         "max": "30",
         "step": "0.5",
         "x": 600,
-        "y": 500,
+        "y": 700,
         "wires": [
             [
                 "404dde09.449bf"
@@ -7587,7 +7618,7 @@
         "repair": false,
         "outputs": 1,
         "x": 370,
-        "y": 500,
+        "y": 700,
         "wires": [
             [
                 "f05b3b99.e44618"
@@ -7777,7 +7808,7 @@
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
         "x": 120,
-        "y": 600,
+        "y": 800,
         "wires": [
             [
                 "e016da34.64e308",
@@ -7797,7 +7828,7 @@
         "initialize": "",
         "finalize": "",
         "x": 380,
-        "y": 600,
+        "y": 800,
         "wires": [
             [
                 "65e988da.f6b958"
@@ -7820,7 +7851,7 @@
         "org": "organisation",
         "bucket": "bucket",
         "x": 590,
-        "y": 600,
+        "y": 800,
         "wires": []
     },
     {
@@ -7842,7 +7873,7 @@
         "repair": false,
         "outputs": 1,
         "x": 350,
-        "y": 680,
+        "y": 880,
         "wires": [
             [
                 "3954e69e.21d60a"
@@ -7869,7 +7900,7 @@
         "max": "30",
         "step": "0.5",
         "x": 580,
-        "y": 680,
+        "y": 880,
         "wires": [
             [
                 "404dde09.449bf",
@@ -7892,7 +7923,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 770,
-        "y": 680,
+        "y": 880,
         "wires": []
     },
     {
@@ -7979,242 +8010,6 @@
         "x": 610,
         "y": 60,
         "wires": []
-    },
-    {
-        "id": "5734478e.ed65c8",
-        "type": "clock-timer",
-        "z": "265d3756.5a1d68",
-        "g": "3644af6d.d42f6",
-        "name": "",
-        "topic": "Hom/cmd/Wohnz/iSetTemp",
-        "addIdType": "none",
-        "addId": "",
-        "positionConfig": "9a5a8534.25d4d8",
-        "autoTrigger": true,
-        "autoTriggerTime": "600000",
-        "startDelayTime": 10000,
-        "contextStore": "",
-        "results": [
-            {
-                "p": "",
-                "pt": "msgTopic",
-                "v": "",
-                "vt": "topic"
-            },
-            {
-                "p": "",
-                "pt": "msgPayload",
-                "v": "",
-                "vt": "payload"
-            },
-            {
-                "p": "timeCtrl",
-                "pt": "msg",
-                "v": "",
-                "vt": "ctrlObj"
-            }
-        ],
-        "overwriteExpire": "1200000",
-        "rules": [
-            {
-                "index": 0,
-                "name": "WE 8:30 20.5 Grad",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "payload": {
-                    "type": "str",
-                    "value": "20.5",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "format": ""
-                },
-                "topic": "Hom/cmd/Wohnz/iSetTemp",
-                "importance": 0,
-                "resetOverwrite": false,
-                "time": {
-                    "type": "entered",
-                    "value": "8:30",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "6,0",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>8:30</var><div class=\"indent-time-days\"><i class=\"fa fa-calendar-o\" aria-hidden=\"true\"></i> <span>nur an folgenden Tagen</span> <var>Sa und So</var></div></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"20.5\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Hom/cmd/Wohnz/iSetTemp</var></div></div>"
-            },
-            {
-                "index": 1,
-                "name": "11:30 20.5 Grad",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "payload": {
-                    "type": "str",
-                    "value": "20.5",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "format": ""
-                },
-                "topic": "Hom/cmd/Wohnz/iSetTemp",
-                "importance": 0,
-                "resetOverwrite": false,
-                "time": {
-                    "type": "entered",
-                    "value": "11:40",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "1,2,3,4,5",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>11:40</var><div class=\"indent-time-days\"><i class=\"fa fa-calendar-o\" aria-hidden=\"true\"></i> <span>nur an folgenden Tagen</span> <var>Mo-Fr</var></div></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"20.5\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Hom/cmd/Wohnz/iSetTemp</var></div></div>"
-            },
-            {
-                "index": 2,
-                "name": "13:00 19 Grad",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "payload": {
-                    "type": "str",
-                    "value": "19",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "format": ""
-                },
-                "topic": "Hom/cmd/Wohnz/iSetTemp",
-                "importance": 0,
-                "resetOverwrite": false,
-                "time": {
-                    "type": "entered",
-                    "value": "13:00",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "1,2,3,4,5",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>13:00</var><div class=\"indent-time-days\"><i class=\"fa fa-calendar-o\" aria-hidden=\"true\"></i> <span>nur an folgenden Tagen</span> <var>Mo-Fr</var></div></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"19\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Hom/cmd/Wohnz/iSetTemp</var></div></div>"
-            },
-            {
-                "index": 3,
-                "name": "16:00 20 Grad",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "payload": {
-                    "type": "str",
-                    "value": "20.5",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "format": ""
-                },
-                "topic": "Hom/cmd/Wohnz/iSetTemp",
-                "importance": 0,
-                "resetOverwrite": false,
-                "time": {
-                    "type": "entered",
-                    "value": "16:00",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "1,2,3,4,5",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>16:00</var><div class=\"indent-time-days\"><i class=\"fa fa-calendar-o\" aria-hidden=\"true\"></i> <span>nur an folgenden Tagen</span> <var>Mo-Fr</var></div></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"20.5\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Hom/cmd/Wohnz/iSetTemp</var></div></div>"
-            },
-            {
-                "index": 4,
-                "name": "20:00 21 Grad",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "payload": {
-                    "type": "str",
-                    "value": "21",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "format": ""
-                },
-                "topic": "Hom/cmd/Wohnz/iSetTemp",
-                "importance": 0,
-                "resetOverwrite": false,
-                "time": {
-                    "type": "entered",
-                    "value": "20:00",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>20:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"21\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Hom/cmd/Wohnz/iSetTemp</var></div></div>"
-            },
-            {
-                "index": 5,
-                "name": "22:00 18 Grad",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "payload": {
-                    "type": "str",
-                    "value": "18",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "format": ""
-                },
-                "topic": "Hom/cmd/Wohnz/iSetTemp",
-                "importance": 0,
-                "resetOverwrite": false,
-                "time": {
-                    "type": "entered",
-                    "value": "22:00",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"18\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Hom/cmd/Wohnz/iSetTemp</var></div></div>"
-            }
-        ],
-        "payloadDefault": "19",
-        "payloadDefaultType": "str",
-        "payloadDefaultTimeFormat": 0,
-        "payloadDefaultOffset": 0,
-        "payloadDefaultOffsetType": "none",
-        "payloadDefaultOffsetMultiplier": 60000,
-        "x": 650,
-        "y": 160,
-        "wires": [
-            [],
-            []
-        ]
     },
     {
         "id": "1df28e68.76cf02",
@@ -8438,7 +8233,7 @@
         "initialize": "// Code added here will be run once\n// whenever the node is deployed.\n flow.set(\"iVentEss\", 0)\n flow.set(\"iVentEck\", 0)\n flow.set(\"iVentOlga\", 0)\n flow.set(\"iVentTom\", 0)",
         "finalize": "",
         "x": 480,
-        "y": 780,
+        "y": 980,
         "wires": [
             [
                 "f0b72f63.75383"
@@ -8456,7 +8251,7 @@
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
         "x": 100,
-        "y": 800,
+        "y": 1000,
         "wires": [
             [
                 "77634598.aeeb5c"
@@ -8478,7 +8273,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 960,
-        "y": 840,
+        "y": 1040,
         "wires": []
     },
     {
@@ -8491,7 +8286,7 @@
             "6c8377f8.cdd248"
         ],
         "x": 895,
-        "y": 800,
+        "y": 1000,
         "wires": []
     },
     {
@@ -8532,7 +8327,7 @@
         "to": "",
         "reg": false,
         "x": 680,
-        "y": 800,
+        "y": 1000,
         "wires": [
             [
                 "7fce1939.2cfb98",
@@ -8557,7 +8352,7 @@
         "randomUnits": "seconds",
         "drop": false,
         "x": 290,
-        "y": 800,
+        "y": 1000,
         "wires": [
             [
                 "ddb9da78.77be18"
@@ -8814,7 +8609,7 @@
                         "operator": "true",
                         "operatorText": "ist true",
                         "thresholdType": "num",
-                        "threshold": 0
+                        "threshold": "0"
                     }
                 ],
                 "level": {
@@ -8831,17 +8626,24 @@
                 "resetOverwrite": false,
                 "importance": 0,
                 "time": {
-                    "type": "entered",
-                    "value": "22:00",
-                    "operator": 0,
-                    "operatorText": "↥ bis",
+                    "type": "pdsTime",
+                    "value": "nauticalDusk",
+                    "operator": 1,
+                    "operatorText": "↧ von",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000,
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>22:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "timeMax": {
+                    "type": "entered",
+                    "value": "22:00",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000
+                },
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>nautische Abenddämmerung</var><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
                 "index": 4,
@@ -8865,7 +8667,7 @@
                 "importance": 0,
                 "time": {
                     "type": "pdsTime",
-                    "value": "amateurDusk",
+                    "value": "blueHourDuskEnd",
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "none",
@@ -8881,7 +8683,7 @@
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>amateur Abenddämmerung</var><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Blaue Abendstunde Ende</var><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             }
         ],
         "sunControlMode": "0",
@@ -8954,7 +8756,7 @@
         "payload": "0",
         "payloadType": "str",
         "x": 180,
-        "y": 860,
+        "y": 1060,
         "wires": [
             [
                 "ddb9da78.77be18"
@@ -9680,5 +9482,225 @@
                 "fd9629ce.9331c8"
             ]
         ]
+    },
+    {
+        "id": "64c0d9cf.dd5978",
+        "type": "mqtt out",
+        "z": "265d3756.5a1d68",
+        "g": "3644af6d.d42f6",
+        "name": "",
+        "topic": "Hom/cmd/Wohnz/iSetProg",
+        "qos": "0",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 640,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "ab5cf8b5.cc97d8",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "g": "3644af6d.d42f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "64c0d9cf.dd5978"
+            ]
+        ]
+    },
+    {
+        "id": "467af620.a7ab78",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "g": "3644af6d.d42f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "2",
+        "payloadType": "num",
+        "x": 410,
+        "y": 380,
+        "wires": [
+            [
+                "64c0d9cf.dd5978"
+            ]
+        ]
+    },
+    {
+        "id": "7ed0e0d.e36ec2",
+        "type": "time-inject",
+        "z": "265d3756.5a1d68",
+        "g": "3644af6d.d42f6",
+        "name": "",
+        "nameInt": "⏲ 1:00 = Zeitpunkt",
+        "positionConfig": "9a5a8534.25d4d8",
+        "props": [
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "",
+                "vt": "date",
+                "o": "",
+                "oT": "none",
+                "oM": "60000",
+                "f": 0,
+                "fS": 0,
+                "fT": "Millisekunden UNIX-Zeit",
+                "fI": "0",
+                "next": true,
+                "days": "*",
+                "months": "*",
+                "onlyOddDays": false,
+                "onlyEvenDays": false,
+                "onlyOddWeeks": false,
+                "onlyEvenWeeks": false
+            }
+        ],
+        "injectTypeSelect": "time",
+        "intervalCount": 1,
+        "intervalCountType": "num",
+        "intervalCountMultiplier": 60000,
+        "time": "1:00",
+        "timeType": "entered",
+        "offset": 0,
+        "offsetType": "none",
+        "offsetMultiplier": 60000,
+        "timeEnd": "",
+        "timeEndType": "entered",
+        "timeEndOffset": 0,
+        "timeEndOffsetType": "none",
+        "timeEndOffsetMultiplier": 60000,
+        "timeDays": "*",
+        "timeOnlyOddDays": false,
+        "timeOnlyEvenDays": false,
+        "timeOnlyOddWeeks": false,
+        "timeOnlyEvenWeeks": false,
+        "timeMonths": "*",
+        "timedatestart": "",
+        "timedateend": "",
+        "property": "",
+        "propertyType": "none",
+        "propertyCompare": "true",
+        "propertyThreshold": "",
+        "propertyThresholdType": "num",
+        "timeAlt": "",
+        "timeAltType": "entered",
+        "timeAltDays": "*",
+        "timeAltOnlyOddDays": false,
+        "timeAltOnlyEvenDays": false,
+        "timeAltOnlyOddWeeks": false,
+        "timeAltOnlyEvenWeeks": false,
+        "timeAltMonths": "*",
+        "timeAltOffset": 0,
+        "timeAltOffsetType": "none",
+        "timeAltOffsetMultiplier": 60000,
+        "once": false,
+        "onceDelay": 0.1,
+        "recalcTime": 2,
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "fa90773d.feded8"
+            ]
+        ]
+    },
+    {
+        "id": "fa90773d.feded8",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "g": "3644af6d.d42f6",
+        "name": "Program on Holiday",
+        "func": "var holiday = global.get(\"day.today.isWeekendOrHoliday\");\nif(holiday)\nmsg.payload = 2;\nelse\nmsg.payload = 1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 390,
+        "y": 480,
+        "wires": [
+            [
+                "64c0d9cf.dd5978",
+                "562300c7.4b952"
+            ]
+        ]
+    },
+    {
+        "id": "33e7c443.634e4c",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "g": "3644af6d.d42f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 480,
+        "wires": [
+            [
+                "fa90773d.feded8"
+            ]
+        ]
+    },
+    {
+        "id": "562300c7.4b952",
+        "type": "debug",
+        "z": "265d3756.5a1d68",
+        "g": "3644af6d.d42f6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 500,
+        "wires": []
     }
 ]
