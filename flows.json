@@ -440,9 +440,6 @@
             "7365b52e.c6858c",
             "529c3dd9.9b5374",
             "64c0d9cf.dd5978",
-            "ab5cf8b5.cc97d8",
-            "467af620.a7ab78",
-            "7ed0e0d.e36ec2",
             "fa90773d.feded8",
             "33e7c443.634e4c",
             "562300c7.4b952"
@@ -9498,145 +9495,6 @@
         "wires": []
     },
     {
-        "id": "ab5cf8b5.cc97d8",
-        "type": "inject",
-        "z": "265d3756.5a1d68",
-        "g": "3644af6d.d42f6",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 420,
-        "y": 420,
-        "wires": [
-            [
-                "64c0d9cf.dd5978"
-            ]
-        ]
-    },
-    {
-        "id": "467af620.a7ab78",
-        "type": "inject",
-        "z": "265d3756.5a1d68",
-        "g": "3644af6d.d42f6",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "2",
-        "payloadType": "num",
-        "x": 410,
-        "y": 380,
-        "wires": [
-            [
-                "64c0d9cf.dd5978"
-            ]
-        ]
-    },
-    {
-        "id": "7ed0e0d.e36ec2",
-        "type": "time-inject",
-        "z": "265d3756.5a1d68",
-        "g": "3644af6d.d42f6",
-        "name": "",
-        "nameInt": "⏲ 1:00 = Zeitpunkt",
-        "positionConfig": "9a5a8534.25d4d8",
-        "props": [
-            {
-                "p": "",
-                "pt": "msgPayload",
-                "v": "",
-                "vt": "date",
-                "o": "",
-                "oT": "none",
-                "oM": "60000",
-                "f": 0,
-                "fS": 0,
-                "fT": "Millisekunden UNIX-Zeit",
-                "fI": "0",
-                "next": true,
-                "days": "*",
-                "months": "*",
-                "onlyOddDays": false,
-                "onlyEvenDays": false,
-                "onlyOddWeeks": false,
-                "onlyEvenWeeks": false
-            }
-        ],
-        "injectTypeSelect": "time",
-        "intervalCount": 1,
-        "intervalCountType": "num",
-        "intervalCountMultiplier": 60000,
-        "time": "1:00",
-        "timeType": "entered",
-        "offset": 0,
-        "offsetType": "none",
-        "offsetMultiplier": 60000,
-        "timeEnd": "",
-        "timeEndType": "entered",
-        "timeEndOffset": 0,
-        "timeEndOffsetType": "none",
-        "timeEndOffsetMultiplier": 60000,
-        "timeDays": "*",
-        "timeOnlyOddDays": false,
-        "timeOnlyEvenDays": false,
-        "timeOnlyOddWeeks": false,
-        "timeOnlyEvenWeeks": false,
-        "timeMonths": "*",
-        "timedatestart": "",
-        "timedateend": "",
-        "property": "",
-        "propertyType": "none",
-        "propertyCompare": "true",
-        "propertyThreshold": "",
-        "propertyThresholdType": "num",
-        "timeAlt": "",
-        "timeAltType": "entered",
-        "timeAltDays": "*",
-        "timeAltOnlyOddDays": false,
-        "timeAltOnlyEvenDays": false,
-        "timeAltOnlyOddWeeks": false,
-        "timeAltOnlyEvenWeeks": false,
-        "timeAltMonths": "*",
-        "timeAltOffset": 0,
-        "timeAltOffsetType": "none",
-        "timeAltOffsetMultiplier": 60000,
-        "once": false,
-        "onceDelay": 0.1,
-        "recalcTime": 2,
-        "x": 150,
-        "y": 400,
-        "wires": [
-            [
-                "fa90773d.feded8"
-            ]
-        ]
-    },
-    {
         "id": "fa90773d.feded8",
         "type": "function",
         "z": "265d3756.5a1d68",
@@ -9648,7 +9506,7 @@
         "initialize": "",
         "finalize": "",
         "x": 390,
-        "y": 480,
+        "y": 420,
         "wires": [
             [
                 "64c0d9cf.dd5978",
@@ -9665,21 +9523,17 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
             }
         ],
         "repeat": "",
-        "crontab": "",
+        "crontab": "35 00 * * *",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 170,
-        "y": 480,
+        "x": 130,
+        "y": 420,
         "wires": [
             [
                 "fa90773d.feded8"
