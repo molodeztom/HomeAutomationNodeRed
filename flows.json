@@ -5266,8 +5266,8 @@
                         "threshold": "522"
                     },
                     {
-                        "condition": 1,
-                        "conditionText": "oder",
+                        "condition": 2,
+                        "conditionText": "und",
                         "valueType": "msg",
                         "value": "WeatherID",
                         "operator": "lt",
@@ -5289,7 +5289,7 @@
                 "topic": "Weather Rain Condition",
                 "resetOverwrite": false,
                 "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 502&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> < 504&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 522&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 600&nbsp;))</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Rain Condition</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 502&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> < 504&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 522&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 600&nbsp;))</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Rain Condition</var></div></div>"
             },
             {
                 "index": 3,
