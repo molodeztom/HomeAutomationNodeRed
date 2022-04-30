@@ -70,6 +70,13 @@
         "info": ""
     },
     {
+        "id": "d9d529d7.01c778",
+        "type": "tab",
+        "label": "Abwesenheit und Urlaub",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "b83af794.4bec68",
         "type": "group",
         "z": "9963931.9232c7",
@@ -155,9 +162,7 @@
             "6c8377f8.cdd248"
         ],
         "x": 24,
-        "y": 719,
-        "w": 842,
-        "h": 642
+        "y": 719
     },
     {
         "id": "584f76f1.996908",
@@ -195,9 +200,7 @@
             "f5d3faae.391998"
         ],
         "x": 14,
-        "y": 19,
-        "w": 992,
-        "h": 482
+        "y": 19
     },
     {
         "id": "2f27dc68.9ff574",
@@ -216,9 +219,7 @@
             "64c76441.d5f36c"
         ],
         "x": 34,
-        "y": 519,
-        "w": 432,
-        "h": 142
+        "y": 519
     },
     {
         "id": "5c041b39.d836b4",
@@ -251,9 +252,7 @@
             "a30d9009.4e13b"
         ],
         "x": 34,
-        "y": -1,
-        "w": 1182,
-        "h": 502
+        "y": -1
     },
     {
         "id": "18ca9346.bdbedd",
@@ -296,9 +295,7 @@
             "997e000a.2be07"
         ],
         "x": 54,
-        "y": 516.5,
-        "w": 1632,
-        "h": 604.5
+        "y": 516.5
     },
     {
         "id": "73d12632.94b388",
@@ -319,9 +316,7 @@
             "541cf4bd.ec76dc"
         ],
         "x": 494,
-        "y": 519,
-        "w": 572,
-        "h": 182
+        "y": 519
     },
     {
         "id": "1b82c7fb.e55448",
@@ -390,9 +385,7 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 759,
-        "w": 852,
-        "h": 162
+        "y": 759
     },
     {
         "id": "40936a6d.e4bc64",
@@ -412,9 +405,7 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 599,
-        "w": 712,
-        "h": 142
+        "y": 599
     },
     {
         "id": "3644af6d.d42f6",
@@ -445,9 +436,7 @@
             "562300c7.4b952"
         ],
         "x": 14,
-        "y": 19,
-        "w": 772,
-        "h": 522
+        "y": 19
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -468,9 +457,7 @@
             "52626602.a80e18"
         ],
         "x": 14,
-        "y": 939,
-        "w": 1072,
-        "h": 162
+        "y": 939
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -492,25 +479,6 @@
         "y": 59,
         "w": 592,
         "h": 122
-    },
-    {
-        "id": "35db94c.3bef86c",
-        "type": "group",
-        "z": "7e5a345d.05161c",
-        "name": "Test Status",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "58bf6223.bb576c",
-            "890df71e.b306e8",
-            "fd873bd.c5447c8",
-            "1de0c489.49f2fb"
-        ],
-        "x": 734,
-        "y": 59,
-        "w": 492,
-        "h": 142
     },
     {
         "id": "7ce4548d.b8ed0c",
@@ -4075,60 +4043,6 @@
         "wires": []
     },
     {
-        "id": "58bf6223.bb576c",
-        "type": "mqtt in",
-        "z": "7e5a345d.05161c",
-        "g": "35db94c.3bef86c",
-        "name": "",
-        "topic": "stat/RolloEsstisch/+",
-        "qos": "0",
-        "datatype": "utf8",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 850,
-        "y": 100,
-        "wires": [
-            [
-                "890df71e.b306e8"
-            ]
-        ]
-    },
-    {
-        "id": "890df71e.b306e8",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "g": "35db94c.3bef86c",
-        "name": "RolloEsstisch Status",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1080,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "fd873bd.c5447c8",
-        "type": "mqtt in",
-        "z": "7e5a345d.05161c",
-        "g": "35db94c.3bef86c",
-        "name": "",
-        "topic": "tele/RolloEsstisch/+",
-        "qos": "1",
-        "datatype": "auto",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 850,
-        "y": 160,
-        "wires": [
-            [
-                "1de0c489.49f2fb"
-            ]
-        ]
-    },
-    {
         "id": "6ac2e536.abb7ec",
         "type": "blind-control",
         "z": "7e5a345d.05161c",
@@ -4290,6 +4204,26 @@
                         "operator": "lt",
                         "operatorText": "<",
                         "thresholdType": "num",
+                        "threshold": "504"
+                    },
+                    {
+                        "condition": 1,
+                        "conditionText": "oder",
+                        "valueType": "msg",
+                        "value": "WeatherID",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "522"
+                    },
+                    {
+                        "condition": 2,
+                        "conditionText": "und",
+                        "valueType": "msg",
+                        "value": "WeatherID",
+                        "operator": "lt",
+                        "operatorText": "<",
+                        "thresholdType": "num",
                         "threshold": "600"
                     }
                 ],
@@ -4306,7 +4240,7 @@
                 "topic": "Weather Rain Condition",
                 "resetOverwrite": false,
                 "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 502&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 600</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Rain Condition</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 502&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> < 504&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 522&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 600&nbsp;))</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Rain Condition</var></div></div>"
             },
             {
                 "index": 3,
@@ -4318,10 +4252,20 @@
                     {
                         "valueType": "msg",
                         "value": "WeatherID",
+                        "operator": "equal",
+                        "operatorText": "=",
+                        "thresholdType": "num",
+                        "threshold": "202"
+                    },
+                    {
+                        "condition": 1,
+                        "conditionText": "oder",
+                        "valueType": "msg",
+                        "value": "WeatherID",
                         "operator": "gte",
                         "operatorText": ">=",
                         "thresholdType": "num",
-                        "threshold": "201"
+                        "threshold": "212"
                     },
                     {
                         "condition": 2,
@@ -4331,7 +4275,7 @@
                         "operator": "lt",
                         "operatorText": "<",
                         "thresholdType": "num",
-                        "threshold": "235"
+                        "threshold": "230"
                     }
                 ],
                 "level": {
@@ -4347,7 +4291,7 @@
                 "topic": "Weather Thunderstorm Condition",
                 "resetOverwrite": false,
                 "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 201&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 235</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Thunderstorm Condition</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> = 202&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 212&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 230&nbsp;)</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Thunderstorm Condition</var></div></div>"
             },
             {
                 "index": 4,
@@ -4359,20 +4303,20 @@
                     {
                         "valueType": "msg",
                         "value": "WeatherID",
-                        "operator": "gte",
-                        "operatorText": ">=",
+                        "operator": "equal",
+                        "operatorText": "=",
                         "thresholdType": "num",
                         "threshold": "602"
                     },
                     {
-                        "condition": 2,
-                        "conditionText": "und",
+                        "condition": 1,
+                        "conditionText": "oder",
                         "valueType": "msg",
                         "value": "WeatherID",
-                        "operator": "lt",
-                        "operatorText": "<",
+                        "operator": "equal",
+                        "operatorText": "=",
                         "thresholdType": "num",
-                        "threshold": "700"
+                        "threshold": "622"
                     }
                 ],
                 "level": {
@@ -4388,7 +4332,7 @@
                 "topic": "Weather Snow Condition",
                 "resetOverwrite": false,
                 "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 602&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 700</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>50%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Snow Condition</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> = 602&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> = 622</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>50%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Snow Condition</var></div></div>"
             },
             {
                 "index": 5,
@@ -4508,7 +4452,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "22",
+                "threshold": "17",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -4566,24 +4510,6 @@
             ],
             []
         ]
-    },
-    {
-        "id": "1de0c489.49f2fb",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "g": "35db94c.3bef86c",
-        "name": "RolloEsstisch Tele",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1070,
-        "y": 160,
-        "wires": []
     },
     {
         "id": "73de636f.d668ec",
@@ -4970,7 +4896,7 @@
         "z": "7e5a345d.05161c",
         "g": "4cff6fb8.ecd81",
         "name": "WeatherID",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5327,6 +5253,26 @@
                         "operator": "lt",
                         "operatorText": "<",
                         "thresholdType": "num",
+                        "threshold": "504"
+                    },
+                    {
+                        "condition": 1,
+                        "conditionText": "oder",
+                        "valueType": "msg",
+                        "value": "WeatherID",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "522"
+                    },
+                    {
+                        "condition": 1,
+                        "conditionText": "oder",
+                        "valueType": "msg",
+                        "value": "WeatherID",
+                        "operator": "lt",
+                        "operatorText": "<",
+                        "thresholdType": "num",
                         "threshold": "600"
                     }
                 ],
@@ -5343,7 +5289,7 @@
                 "topic": "Weather Rain Condition",
                 "resetOverwrite": false,
                 "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 502&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 600</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Rain Condition</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 502&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> < 504&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 522&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 600&nbsp;))</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Rain Condition</var></div></div>"
             },
             {
                 "index": 3,
@@ -5355,10 +5301,20 @@
                     {
                         "valueType": "msg",
                         "value": "WeatherID",
+                        "operator": "equal",
+                        "operatorText": "=",
+                        "thresholdType": "num",
+                        "threshold": "202"
+                    },
+                    {
+                        "condition": 1,
+                        "conditionText": "oder",
+                        "valueType": "msg",
+                        "value": "WeatherID",
                         "operator": "gte",
                         "operatorText": ">=",
                         "thresholdType": "num",
-                        "threshold": "201"
+                        "threshold": "212"
                     },
                     {
                         "condition": 2,
@@ -5384,7 +5340,7 @@
                 "topic": "Weather Thunderstorm Condition",
                 "resetOverwrite": false,
                 "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 201&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 230</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Thunderstorm Condition</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> = 202&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 212&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 230&nbsp;)</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Thunderstorm Condition</var></div></div>"
             },
             {
                 "index": 4,
@@ -5396,20 +5352,20 @@
                     {
                         "valueType": "msg",
                         "value": "WeatherID",
-                        "operator": "gte",
-                        "operatorText": ">=",
+                        "operator": "equal",
+                        "operatorText": "=",
                         "thresholdType": "num",
                         "threshold": "602"
                     },
                     {
-                        "condition": 2,
-                        "conditionText": "und",
+                        "condition": 1,
+                        "conditionText": "oder",
                         "valueType": "msg",
                         "value": "WeatherID",
-                        "operator": "lt",
-                        "operatorText": "<",
+                        "operator": "equal",
+                        "operatorText": "=",
                         "thresholdType": "num",
-                        "threshold": "700"
+                        "threshold": "622"
                     }
                 ],
                 "level": {
@@ -5425,7 +5381,7 @@
                 "topic": "Weather Snow Condition",
                 "resetOverwrite": false,
                 "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 602&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 700</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>50%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Snow Condition</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> = 602&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> = 622</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>50%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Snow Condition</var></div></div>"
             },
             {
                 "index": 5,
@@ -5545,7 +5501,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "22",
+                "threshold": "20",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -7911,7 +7867,7 @@
         "z": "265d3756.5a1d68",
         "g": "b9a71c35.b8ccf",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8425,7 +8381,7 @@
         "addId": "",
         "positionConfig": "9a5a8534.25d4d8",
         "autoTrigger": true,
-        "autoTriggerTime": 3600000,
+        "autoTriggerTime": "600000",
         "startDelayTime": 10000,
         "contextStore": "",
         "results": [
@@ -8466,6 +8422,37 @@
         "rules": [
             {
                 "index": 0,
+                "name": "Urlaub",
+                "version": 3,
+                "enabled": false,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "OnHoliday",
+                        "operator": "true",
+                        "operatorText": "ist true",
+                        "thresholdType": "num",
+                        "threshold": "0"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "75%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.OnHoliday</var> ist true</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>75%</var></div></div>"
+            },
+            {
+                "index": 1,
                 "name": "HolidayWeekend",
                 "version": 3,
                 "enabled": true,
@@ -8507,7 +8494,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>7:45</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
-                "index": 1,
+                "index": 2,
                 "name": "Sonnenaufgang",
                 "version": 3,
                 "enabled": true,
@@ -8554,7 +8541,7 @@
                 "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Goldene Morgenstunde Beginn</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>8:00</var> offset <var>zufällig (täglich) bis 30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
-                "index": 2,
+                "index": 3,
                 "name": "Sonnenuntergang",
                 "version": 3,
                 "enabled": true,
@@ -8594,7 +8581,7 @@
                 "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:15<div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
             },
             {
-                "index": 3,
+                "index": 4,
                 "name": "WochenendeGeschlossen",
                 "version": 3,
                 "enabled": true,
@@ -8643,7 +8630,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>nautische Abenddämmerung</var><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
-                "index": 4,
+                "index": 5,
                 "name": "WochentagGeschlossen",
                 "version": 3,
                 "enabled": true,
@@ -9556,5 +9543,121 @@
         "x": 620,
         "y": 500,
         "wires": []
+    },
+    {
+        "id": "7392e4cb.75c2fc",
+        "type": "inject",
+        "z": "d9d529d7.01c778",
+        "name": "Urlaub",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "fe410c6e.33637"
+            ]
+        ]
+    },
+    {
+        "id": "d5f2f2cf.282d1",
+        "type": "change",
+        "z": "d9d529d7.01c778",
+        "name": "SetGlobal OnHoliday",
+        "rules": [
+            {
+                "t": "set",
+                "p": "OnHoliday",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "OnHoliday",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ff2c5bca.879ec8",
+        "type": "inject",
+        "z": "d9d529d7.01c778",
+        "name": "Zuhause",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "fe410c6e.33637"
+            ]
+        ]
+    },
+    {
+        "id": "fe410c6e.33637",
+        "type": "ui_switch",
+        "z": "d9d529d7.01c778",
+        "name": "",
+        "label": "Zuhause",
+        "tooltip": "",
+        "group": "8e157408.1ce3a8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "false",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "true",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "d5f2f2cf.282d1"
+            ]
+        ],
+        "icon": "font-awesome/fa-home"
     }
 ]
