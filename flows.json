@@ -575,7 +575,7 @@
             "7ab467b8.e61238"
         ],
         "x": 34,
-        "y": 239,
+        "y": 219,
         "w": 692,
         "h": 262
     },
@@ -4829,7 +4829,7 @@
         "country": "",
         "language": "de",
         "x": 140,
-        "y": 320,
+        "y": 300,
         "wires": [
             [
                 "b907c2ad.b1417",
@@ -4854,7 +4854,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 610,
-        "y": 320,
+        "y": 300,
         "wires": []
     },
     {
@@ -4878,7 +4878,7 @@
         "to": "",
         "reg": false,
         "x": 390,
-        "y": 320,
+        "y": 300,
         "wires": [
             [
                 "54ec2f51.f58c5"
@@ -4913,7 +4913,7 @@
         "to": "",
         "reg": false,
         "x": 390,
-        "y": 360,
+        "y": 340,
         "wires": [
             [
                 "48947d58.eae5c4",
@@ -4937,7 +4937,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 610,
-        "y": 360,
+        "y": 340,
         "wires": []
     },
     {
@@ -4999,7 +4999,7 @@
         "format": "{{msg.payload.detail}}",
         "layout": "row-spread",
         "x": 370,
-        "y": 400,
+        "y": 380,
         "wires": []
     },
     {
@@ -5758,7 +5758,7 @@
         "format": "{{msg.clouds}}",
         "layout": "row-spread",
         "x": 600,
-        "y": 400,
+        "y": 380,
         "wires": []
     },
     {
@@ -8807,7 +8807,7 @@
             "f525cf20.f74e1"
         ],
         "x": 555,
-        "y": 440,
+        "y": 420,
         "wires": []
     },
     {
@@ -8936,7 +8936,7 @@
         "payload": "TempOut",
         "payloadType": "global",
         "x": 370,
-        "y": 280,
+        "y": 260,
         "wires": [
             [
                 "243db6c7.15d31a"
@@ -8957,7 +8957,7 @@
         "format": "{{msg.payload}} °C  ",
         "layout": "row-spread",
         "x": 630,
-        "y": 280,
+        "y": 260,
         "wires": []
     },
     {
@@ -9707,7 +9707,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 380,
-        "y": 460,
+        "y": 440,
         "wires": []
     }
 ]
