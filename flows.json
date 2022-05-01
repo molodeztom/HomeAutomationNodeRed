@@ -109,7 +109,9 @@
             "532bc566.df7b1c"
         ],
         "x": 14,
-        "y": 199
+        "y": 199,
+        "w": 812,
+        "h": 502
     },
     {
         "id": "7d3411b0.20fc7",
@@ -129,7 +131,9 @@
             "2a103049.f6a29"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 892,
+        "h": 142
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -4841,7 +4845,7 @@
         "z": "7e5a345d.05161c",
         "g": "4cff6fb8.ecd81",
         "name": "Nur Clouds",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4924,7 +4928,7 @@
         "z": "7e5a345d.05161c",
         "g": "4cff6fb8.ecd81",
         "name": "WeatherID",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -9694,7 +9698,7 @@
         "z": "7e5a345d.05161c",
         "g": "4cff6fb8.ecd81",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
