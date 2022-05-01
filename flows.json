@@ -571,13 +571,12 @@
             "d26a7c85.ed299",
             "f69a51fd.3a899",
             "44ca9388.fa0d3c",
-            "243db6c7.15d31a",
-            "7ab467b8.e61238"
+            "243db6c7.15d31a"
         ],
         "x": 34,
         "y": 219,
         "w": 692,
-        "h": 262
+        "h": 242
     },
     {
         "id": "6666fbc0.896914",
@@ -4834,8 +4833,7 @@
             [
                 "b907c2ad.b1417",
                 "e5d7026a.0a239",
-                "fd0a15dc.298558",
-                "7ab467b8.e61238"
+                "fd0a15dc.298558"
             ]
         ]
     },
@@ -9691,23 +9689,5 @@
             ]
         ],
         "icon": "font-awesome/fa-home"
-    },
-    {
-        "id": "7ab467b8.e61238",
-        "type": "debug",
-        "z": "7e5a345d.05161c",
-        "g": "4cff6fb8.ecd81",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 380,
-        "y": 440,
-        "wires": []
     }
 ]
