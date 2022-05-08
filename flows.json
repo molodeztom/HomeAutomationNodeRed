@@ -109,9 +109,7 @@
             "532bc566.df7b1c"
         ],
         "x": 14,
-        "y": 199,
-        "w": 812,
-        "h": 502
+        "y": 199
     },
     {
         "id": "7d3411b0.20fc7",
@@ -131,9 +129,7 @@
             "2a103049.f6a29"
         ],
         "x": 14,
-        "y": 39,
-        "w": 892,
-        "h": 142
+        "y": 39
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -166,9 +162,7 @@
             "6c8377f8.cdd248"
         ],
         "x": 24,
-        "y": 719,
-        "w": 842,
-        "h": 642
+        "y": 719
     },
     {
         "id": "584f76f1.996908",
@@ -206,9 +200,7 @@
             "f5d3faae.391998"
         ],
         "x": 14,
-        "y": 19,
-        "w": 992,
-        "h": 482
+        "y": 19
     },
     {
         "id": "2f27dc68.9ff574",
@@ -227,9 +219,7 @@
             "64c76441.d5f36c"
         ],
         "x": 34,
-        "y": 519,
-        "w": 432,
-        "h": 142
+        "y": 519
     },
     {
         "id": "5c041b39.d836b4",
@@ -262,9 +252,7 @@
             "a30d9009.4e13b"
         ],
         "x": 34,
-        "y": -1,
-        "w": 1182,
-        "h": 502
+        "y": -1
     },
     {
         "id": "18ca9346.bdbedd",
@@ -307,9 +295,7 @@
             "997e000a.2be07"
         ],
         "x": 54,
-        "y": 516.5,
-        "w": 1632,
-        "h": 604.5
+        "y": 516.5
     },
     {
         "id": "73d12632.94b388",
@@ -330,9 +316,7 @@
             "541cf4bd.ec76dc"
         ],
         "x": 494,
-        "y": 519,
-        "w": 572,
-        "h": 182
+        "y": 519
     },
     {
         "id": "1b82c7fb.e55448",
@@ -355,9 +339,7 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299,
-        "w": 992,
-        "h": 162
+        "y": 299
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -381,9 +363,7 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19,
-        "w": 752,
-        "h": 262
+        "y": 19
     },
     {
         "id": "b9a71c35.b8ccf",
@@ -457,7 +437,8 @@
             "64c0d9cf.dd5978",
             "fa90773d.feded8",
             "33e7c443.634e4c",
-            "562300c7.4b952"
+            "562300c7.4b952",
+            "a75bf925.381958"
         ],
         "x": 14,
         "y": 19,
@@ -504,9 +485,7 @@
             "eb31c6ef.67a2f8"
         ],
         "x": 34,
-        "y": 59,
-        "w": 592,
-        "h": 122
+        "y": 59
     },
     {
         "id": "7ce4548d.b8ed0c",
@@ -526,9 +505,7 @@
             "bc21088d.1042d8"
         ],
         "x": 34,
-        "y": 1499,
-        "w": 852,
-        "h": 142
+        "y": 1499
     },
     {
         "id": "c1953c38.acea1",
@@ -547,9 +524,7 @@
             "5f0f2d7a.f23d34"
         ],
         "x": 34,
-        "y": 1339,
-        "w": 852,
-        "h": 122
+        "y": 1339
     },
     {
         "id": "4cff6fb8.ecd81",
@@ -574,9 +549,7 @@
             "243db6c7.15d31a"
         ],
         "x": 34,
-        "y": 219,
-        "w": 692,
-        "h": 242
+        "y": 219
     },
     {
         "id": "6666fbc0.896914",
@@ -601,9 +574,7 @@
             "7bd02856.8f5288"
         ],
         "x": 34,
-        "y": 499,
-        "w": 952,
-        "h": 262
+        "y": 499
     },
     {
         "id": "3f11d194.8d04ee",
@@ -628,9 +599,7 @@
             "1f2409.3d5e7bf8"
         ],
         "x": 34,
-        "y": 799,
-        "w": 952,
-        "h": 262
+        "y": 799
     },
     {
         "id": "c87697c7.9b9e58",
@@ -653,9 +622,7 @@
             "2d76da21.b8b846"
         ],
         "x": 34,
-        "y": 1099,
-        "w": 952,
-        "h": 202
+        "y": 1099
     },
     {
         "id": "d8d1de94.dfe9",
@@ -684,9 +651,7 @@
             "114319b2.da6366"
         ],
         "x": 34,
-        "y": 499,
-        "w": 1292,
-        "h": 302
+        "y": 499
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -9517,7 +9482,7 @@
         "z": "265d3756.5a1d68",
         "g": "3644af6d.d42f6",
         "name": "Program on Holiday",
-        "func": "var holiday = global.get(\"day.today.isWeekendOrHoliday\");\nif(holiday)\nmsg.payload = 2;\nelse\nmsg.payload = 1;\nreturn msg;",
+        "func": "var holiday = global.get(\"day.today.isHoliday\");\nvar outTemp = global.get(\"TempOut\");\nif(holiday){\n    msg.payload = 2; //Ferien Programm\n     node.status({fill:\"red\",shape:\"ring\",text:\"holiday\"});\n}\nelse {\n    if(outTemp > 15)  {\n    msg.payload =  3; //Sommer Programm\n    node.status({fill:\"yellow\",shape:\"ring\",text: \"summer\"});\n    }\n    else  {\n    msg.payload = 1; //WinterProgramm\n    node.status({fill:\"green\",shape:\"ring\",text: \"winter\"});\n}}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9536,24 +9501,25 @@
         "type": "inject",
         "z": "265d3756.5a1d68",
         "g": "3644af6d.d42f6",
-        "name": "",
+        "name": "Temp Check",
         "props": [
             {
                 "p": "payload"
             }
         ],
         "repeat": "",
-        "crontab": "35 00 * * *",
-        "once": false,
+        "crontab": "*/30 7-21 * * *",
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
+        "x": 140,
         "y": 420,
         "wires": [
             [
-                "fa90773d.feded8"
+                "fa90773d.feded8",
+                "a75bf925.381958"
             ]
         ]
     },
@@ -9689,5 +9655,22 @@
             ]
         ],
         "icon": "font-awesome/fa-home"
+    },
+    {
+        "id": "a75bf925.381958",
+        "type": "debug",
+        "z": "265d3756.5a1d68",
+        "g": "3644af6d.d42f6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 500,
+        "wires": []
     }
 ]
