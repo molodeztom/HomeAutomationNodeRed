@@ -109,9 +109,7 @@
             "532bc566.df7b1c"
         ],
         "x": 14,
-        "y": 199,
-        "w": 812,
-        "h": 502
+        "y": 199
     },
     {
         "id": "7d3411b0.20fc7",
@@ -131,9 +129,7 @@
             "2a103049.f6a29"
         ],
         "x": 14,
-        "y": 39,
-        "w": 892,
-        "h": 142
+        "y": 39
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -166,9 +162,7 @@
             "6c8377f8.cdd248"
         ],
         "x": 24,
-        "y": 719,
-        "w": 842,
-        "h": 642
+        "y": 719
     },
     {
         "id": "584f76f1.996908",
@@ -206,9 +200,7 @@
             "f5d3faae.391998"
         ],
         "x": 14,
-        "y": 19,
-        "w": 992,
-        "h": 482
+        "y": 19
     },
     {
         "id": "2f27dc68.9ff574",
@@ -227,9 +219,7 @@
             "64c76441.d5f36c"
         ],
         "x": 34,
-        "y": 519,
-        "w": 432,
-        "h": 142
+        "y": 519
     },
     {
         "id": "5c041b39.d836b4",
@@ -262,9 +252,7 @@
             "a30d9009.4e13b"
         ],
         "x": 34,
-        "y": -1,
-        "w": 1182,
-        "h": 502
+        "y": -1
     },
     {
         "id": "18ca9346.bdbedd",
@@ -307,9 +295,7 @@
             "997e000a.2be07"
         ],
         "x": 54,
-        "y": 516.5,
-        "w": 1632,
-        "h": 604.5
+        "y": 516.5
     },
     {
         "id": "73d12632.94b388",
@@ -330,9 +316,7 @@
             "541cf4bd.ec76dc"
         ],
         "x": 494,
-        "y": 519,
-        "w": 572,
-        "h": 182
+        "y": 519
     },
     {
         "id": "1b82c7fb.e55448",
@@ -401,9 +385,7 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 759,
-        "w": 852,
-        "h": 162
+        "y": 759
     },
     {
         "id": "40936a6d.e4bc64",
@@ -423,9 +405,7 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 599,
-        "w": 712,
-        "h": 142
+        "y": 599
     },
     {
         "id": "3644af6d.d42f6",
@@ -457,9 +437,7 @@
             "a75bf925.381958"
         ],
         "x": 14,
-        "y": 19,
-        "w": 772,
-        "h": 522
+        "y": 19
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -480,9 +458,7 @@
             "52626602.a80e18"
         ],
         "x": 14,
-        "y": 939,
-        "w": 1072,
-        "h": 162
+        "y": 939
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -520,7 +496,8 @@
             "66335075.9471e",
             "b9f43bc.ca86bc8",
             "29e92fc.65284d",
-            "bc21088d.1042d8"
+            "bc21088d.1042d8",
+            "77bd98f3.c0e8c8"
         ],
         "x": 34,
         "y": 1499,
@@ -541,12 +518,13 @@
             "9541504a.3de58",
             "e9f25740.8e0928",
             "7fb09d6a.3d4694",
-            "5f0f2d7a.f23d34"
+            "5f0f2d7a.f23d34",
+            "7406f4b2.59548c"
         ],
         "x": 34,
         "y": 1339,
         "w": 852,
-        "h": 142
+        "h": 162
     },
     {
         "id": "4cff6fb8.ecd81",
@@ -5924,37 +5902,6 @@
             },
             {
                 "index": 1,
-                "name": "Hitze",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [
-                    {
-                        "valueType": "global",
-                        "value": "TempOut",
-                        "operator": "gte",
-                        "operatorText": ">=",
-                        "thresholdType": "num",
-                        "threshold": "26"
-                    }
-                ],
-                "level": {
-                    "type": "levelFixed",
-                    "value": "50%",
-                    "operator": 0,
-                    "operatorText": "↕  Absolut"
-                },
-                "slat": {
-                    "type": "none",
-                    "value": ""
-                },
-                "topic": "",
-                "resetOverwrite": false,
-                "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 26</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>50%</var></div></div>"
-            },
-            {
-                "index": 2,
                 "name": "HolidayWeekend",
                 "version": 3,
                 "enabled": true,
@@ -5996,7 +5943,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>7:45</var> + 00:01</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
-                "index": 3,
+                "index": 2,
                 "name": "SonAufgAuf ",
                 "version": 3,
                 "enabled": true,
@@ -6041,6 +5988,37 @@
                     "multiplier": 60000
                 },
                 "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Beginn</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>7:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 3,
+                "name": "Hitze",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "TempOut",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "26"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "50%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 26</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>50%</var></div></div>"
             },
             {
                 "index": 4,
@@ -6374,7 +6352,7 @@
         "blindPosDefaultType": "levelFixed",
         "slatPosDefault": "",
         "slatPosDefaultType": "none",
-        "overwriteExpire": "1200000",
+        "overwriteExpire": "7200000",
         "rules": [
             {
                 "index": 0,
@@ -6420,37 +6398,6 @@
             },
             {
                 "index": 1,
-                "name": "Hitze",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [
-                    {
-                        "valueType": "global",
-                        "value": "TempOut",
-                        "operator": "gte",
-                        "operatorText": ">=",
-                        "thresholdType": "num",
-                        "threshold": "26"
-                    }
-                ],
-                "level": {
-                    "type": "levelFixed",
-                    "value": "50%",
-                    "operator": 0,
-                    "operatorText": "↕  Absolut"
-                },
-                "slat": {
-                    "type": "none",
-                    "value": ""
-                },
-                "topic": "",
-                "resetOverwrite": false,
-                "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 26</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>50%</var></div></div>"
-            },
-            {
-                "index": 2,
                 "name": "SonAufAuf",
                 "version": 3,
                 "enabled": true,
@@ -6495,6 +6442,37 @@
                     "multiplier": 60000
                 },
                 "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Beginn</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>6:45</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 2,
+                "name": "Hitze",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "TempOut",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "25"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "50%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 25</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>50%</var></div></div>"
             },
             {
                 "index": 3,
@@ -6619,11 +6597,11 @@
                 "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Blaue Abendstunde Ende</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:45</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             }
         ],
-        "sunControlMode": "0",
+        "sunControlMode": "16",
         "sunFloorLengthType": "num",
-        "sunFloorLength": "",
-        "sunMinDelta": "",
-        "blindPosMin": "closed (min)",
+        "sunFloorLength": "200",
+        "sunMinDelta": "5",
+        "blindPosMin": "10%",
         "blindPosMinType": "levelFixed",
         "blindPosMax": "open (max)",
         "blindPosMaxType": "levelFixed",
@@ -6632,22 +6610,78 @@
         "sunSlat": "",
         "sunSlatType": "none",
         "smoothTime": "",
-        "sunTopic": "",
+        "sunTopic": "SunShading",
         "windowTopType": "num",
-        "windowTop": "",
+        "windowTop": "205",
         "windowBottomType": "num",
-        "windowBottom": "",
+        "windowBottom": "100",
         "windowAzimuthStartType": "numAzimuth",
-        "windowAzimuthStart": "",
+        "windowAzimuthStart": "153",
         "windowAzimuthEndType": "numAzimuth",
-        "windowAzimuthEnd": "",
-        "oversteers": [],
-        "oversteerTopic": "",
+        "windowAzimuthEnd": "210",
+        "oversteers": [
+            {
+                "mode": 0,
+                "valueType": "global",
+                "value": "TempOut",
+                "operator": "lt",
+                "operatorText": "<",
+                "thresholdType": "num",
+                "threshold": "20",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            },
+            {
+                "mode": 0,
+                "valueType": "pdsCalcElevation",
+                "value": "",
+                "operator": "lt",
+                "operatorText": "<",
+                "thresholdType": "numAltitude",
+                "threshold": "15",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            },
+            {
+                "mode": 0,
+                "valueType": "msg",
+                "value": "clouds",
+                "operator": "gte",
+                "operatorText": ">=",
+                "thresholdType": "num",
+                "threshold": "25",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            }
+        ],
+        "oversteerTopic": "CloudsOverwrite",
         "x": 380,
         "y": 1440,
         "wires": [
             [
-                "9541504a.3de58"
+                "9541504a.3de58",
+                "7406f4b2.59548c"
             ],
             []
         ]
@@ -8669,37 +8703,6 @@
             },
             {
                 "index": 2,
-                "name": "Hitze",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [
-                    {
-                        "valueType": "global",
-                        "value": "TempOut",
-                        "operator": "gte",
-                        "operatorText": ">=",
-                        "thresholdType": "num",
-                        "threshold": "25"
-                    }
-                ],
-                "level": {
-                    "type": "levelFixed",
-                    "value": "25%",
-                    "operator": 0,
-                    "operatorText": "↕  Absolut"
-                },
-                "slat": {
-                    "type": "none",
-                    "value": ""
-                },
-                "topic": "",
-                "resetOverwrite": false,
-                "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 25</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
-            },
-            {
-                "index": 3,
                 "name": "Sonnenaufgang",
                 "version": 3,
                 "enabled": true,
@@ -8744,6 +8747,37 @@
                     "multiplier": 60000
                 },
                 "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Goldene Morgenstunde Beginn</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>8:00</var> offset <var>zufällig (täglich) bis 30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 3,
+                "name": "Hitze",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "TempOut",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "25"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "25%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 25</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
             },
             {
                 "index": 4,
@@ -8903,7 +8937,8 @@
         "y": 1600,
         "wires": [
             [
-                "b9f43bc.ca86bc8"
+                "b9f43bc.ca86bc8",
+                "77bd98f3.c0e8c8"
             ],
             []
         ]
@@ -9054,7 +9089,7 @@
         "label": "Olga",
         "tooltip": "",
         "group": "13a03688.c43e99",
-        "order": 8,
+        "order": 9,
         "width": "6",
         "height": "1",
         "passthru": true,
@@ -9739,7 +9774,7 @@
         "z": "265d3756.5a1d68",
         "g": "3644af6d.d42f6",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -10008,6 +10043,42 @@
         "statusType": "auto",
         "x": 360,
         "y": 760,
+        "wires": []
+    },
+    {
+        "id": "77bd98f3.c0e8c8",
+        "type": "ui_text",
+        "z": "7e5a345d.05161c",
+        "g": "7ce4548d.b8ed0c",
+        "group": "13a03688.c43e99",
+        "order": 8,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Status Tom",
+        "format": "{{msg.blindCtrl.reason.description}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 670,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "7406f4b2.59548c",
+        "type": "ui_text",
+        "z": "7e5a345d.05161c",
+        "g": "c1953c38.acea1",
+        "group": "13a03688.c43e99",
+        "order": 10,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Status Olga",
+        "format": "{{msg.blindCtrl.reason.description}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 680,
+        "y": 1460,
         "wires": []
     }
 ]
