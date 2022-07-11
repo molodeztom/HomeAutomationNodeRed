@@ -242,7 +242,6 @@
             "5da76156.34c3f",
             "8c67a965.134088",
             "1a54d5c9.3e5b9a",
-            "6b77f023.4e575",
             "63b53cab.0746d4",
             "1b6c236f.f67d4d",
             "7b1463f8.f8e4cc",
@@ -251,8 +250,10 @@
             "1dea714a.68511f",
             "a30d9009.4e13b"
         ],
-        "x": 34,
-        "y": -1
+        "x": 54,
+        "y": -1,
+        "w": 1182,
+        "h": 502
     },
     {
         "id": "18ca9346.bdbedd",
@@ -292,10 +293,13 @@
             "6e793f78.19688",
             "b8c299bc.8c4e18",
             "bb147727.808968",
-            "997e000a.2be07"
+            "997e000a.2be07",
+            "61b9f71.7b9bb08"
         ],
         "x": 54,
-        "y": 516.5
+        "y": 516.5,
+        "w": 1652,
+        "h": 604.5
     },
     {
         "id": "73d12632.94b388",
@@ -474,12 +478,13 @@
             "f2c7f904.d08ef8",
             "6e5f1bdf.1f22e4",
             "73de636f.d668ec",
-            "eb31c6ef.67a2f8"
+            "eb31c6ef.67a2f8",
+            "dfcc41b0.b3ad2"
         ],
         "x": 34,
         "y": 59,
-        "w": 592,
-        "h": 122
+        "w": 642,
+        "h": 142
     },
     {
         "id": "7ce4548d.b8ed0c",
@@ -519,7 +524,8 @@
             "e9f25740.8e0928",
             "7fb09d6a.3d4694",
             "5f0f2d7a.f23d34",
-            "7406f4b2.59548c"
+            "7406f4b2.59548c",
+            "a0085f1f.0f307"
         ],
         "x": 34,
         "y": 1339,
@@ -714,7 +720,7 @@
         "id": "7f110bbf.a6e474",
         "type": "ui_base",
         "theme": {
-            "name": "theme-light",
+            "name": "theme-dark",
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
@@ -726,7 +732,8 @@
                 "default": "#097479",
                 "baseColor": "#097479",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "customTheme": {
                 "name": "Untitled Theme 1",
@@ -736,44 +743,44 @@
             },
             "themeState": {
                 "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
+                    "default": "#097479",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
                     "value": "#111111",
                     "edited": false
                 },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
                 "widget-backgroundColor": {
-                    "value": "#0094ce",
+                    "value": "#097479",
                     "edited": false
                 },
                 "widget-borderColor": {
-                    "value": "#ffffff",
+                    "value": "#333333",
                     "edited": false
                 },
                 "base-font": {
@@ -1785,7 +1792,7 @@
         "qos": "2",
         "datatype": "json",
         "broker": "19cf2a10.f9d4a6",
-        "x": 200,
+        "x": 220,
         "y": 240,
         "wires": [
             [
@@ -1808,7 +1815,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 570,
+        "x": 590,
         "y": 100,
         "wires": []
     },
@@ -1822,7 +1829,7 @@
         "qos": "2",
         "datatype": "json",
         "broker": "19cf2a10.f9d4a6",
-        "x": 170,
+        "x": 190,
         "y": 100,
         "wires": [
             [
@@ -1840,7 +1847,7 @@
         "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 170,
+        "x": 190,
         "y": 160,
         "wires": [
             [
@@ -1863,7 +1870,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 570,
+        "x": 590,
         "y": 160,
         "wires": []
     },
@@ -1951,7 +1958,7 @@
         "qos": "2",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 160,
+        "x": 180,
         "y": 300,
         "wires": [
             [
@@ -1973,7 +1980,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 850,
+        "x": 870,
         "y": 380,
         "wires": []
     },
@@ -1988,7 +1995,7 @@
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nflow.set(\"status\", \"Init\");",
         "finalize": "",
-        "x": 560,
+        "x": 580,
         "y": 380,
         "wires": [
             [
@@ -2021,7 +2028,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
+        "x": 570,
         "y": 940,
         "wires": [
             [
@@ -2038,7 +2045,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 600,
+        "x": 620,
         "y": 280,
         "wires": [
             [
@@ -2062,7 +2069,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 830,
+        "x": 850,
         "y": 300,
         "wires": []
     },
@@ -2076,7 +2083,7 @@
         "qos": "0",
         "datatype": "utf8",
         "broker": "19cf2a10.f9d4a6",
-        "x": 170,
+        "x": 190,
         "y": 40,
         "wires": [
             [
@@ -2094,39 +2101,9 @@
         "qos": "1",
         "retain": "false",
         "broker": "19cf2a10.f9d4a6",
-        "x": 1410,
+        "x": 1430,
         "y": 1000,
         "wires": []
-    },
-    {
-        "id": "6b77f023.4e575",
-        "type": "inject",
-        "z": "511989b1.670cc8",
-        "g": "5c041b39.d836b4",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "ON",
-        "payloadType": "str",
-        "x": 130,
-        "y": 440,
-        "wires": [
-            [
-                "54087a9f.9d1c24"
-            ]
-        ]
     },
     {
         "id": "550eb938.78f938",
@@ -2138,7 +2115,7 @@
         "qos": "0",
         "retain": "false",
         "broker": "19cf2a10.f9d4a6",
-        "x": 1570,
+        "x": 1590,
         "y": 940,
         "wires": []
     },
@@ -2160,7 +2137,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1110,
+        "x": 1130,
         "y": 940,
         "wires": [
             [
@@ -2191,7 +2168,7 @@
         "topic": "PrintControl.Timer",
         "payload": "IdleTimeout",
         "payloadType": "str",
-        "x": 160,
+        "x": 180,
         "y": 380,
         "wires": [
             [
@@ -2216,7 +2193,7 @@
         "ignoreCase": false,
         "repeat": false,
         "again": false,
-        "x": 720,
+        "x": 740,
         "y": 600,
         "wires": [
             [
@@ -2245,7 +2222,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 540,
+        "x": 560,
         "y": 560,
         "wires": [
             [
@@ -2291,7 +2268,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 5,
-        "x": 220,
+        "x": 240,
         "y": 580,
         "wires": [
             [
@@ -2331,7 +2308,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 530,
+        "x": 550,
         "y": 600,
         "wires": [
             [
@@ -2370,7 +2347,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 920,
+        "x": 940,
         "y": 600,
         "wires": [
             [
@@ -2389,13 +2366,13 @@
         "outwarning": "Warning",
         "outunsafe": "off",
         "warning": "5",
-        "timer": "780",
+        "timer": "1000",
         "debug": false,
         "ndebug": false,
         "ignoreCase": false,
         "repeat": false,
         "again": false,
-        "x": 750,
+        "x": 770,
         "y": 680,
         "wires": [
             [
@@ -2447,7 +2424,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 6,
-        "x": 230,
+        "x": 250,
         "y": 700,
         "wires": [
             [
@@ -2495,7 +2472,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
+        "x": 540,
         "y": 640,
         "wires": [
             [
@@ -2523,7 +2500,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
+        "x": 570,
         "y": 700,
         "wires": [
             [
@@ -2562,7 +2539,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 960,
+        "x": 980,
         "y": 680,
         "wires": [
             [
@@ -2590,7 +2567,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 530,
+        "x": 550,
         "y": 1000,
         "wires": [
             [
@@ -2622,7 +2599,7 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 250,
+        "x": 270,
         "y": 880,
         "wires": [
             [
@@ -2645,13 +2622,13 @@
         "outwarning": "Warning",
         "outunsafe": "off",
         "warning": "0",
-        "timer": "120",
+        "timer": "90",
         "debug": false,
         "ndebug": false,
         "ignoreCase": false,
         "repeat": false,
         "again": false,
-        "x": 770,
+        "x": 790,
         "y": 880,
         "wires": [
             [
@@ -2691,7 +2668,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1120,
+        "x": 1140,
         "y": 880,
         "wires": [
             [
@@ -2721,7 +2698,7 @@
         "topic": "",
         "payload": "eOctoprintDown",
         "payloadType": "str",
-        "x": 330,
+        "x": 350,
         "y": 440,
         "wires": [
             [
@@ -2746,7 +2723,7 @@
         "ignoreCase": false,
         "repeat": false,
         "again": false,
-        "x": 740,
+        "x": 760,
         "y": 780,
         "wires": [
             [
@@ -2776,7 +2753,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 520,
+        "x": 540,
         "y": 780,
         "wires": [
             [
@@ -2815,7 +2792,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 980,
+        "x": 1000,
         "y": 780,
         "wires": [
             [
@@ -2843,7 +2820,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 530,
+        "x": 550,
         "y": 820,
         "wires": [
             [
@@ -2965,7 +2942,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1400,
+        "x": 1420,
         "y": 800,
         "wires": []
     },
@@ -2980,7 +2957,7 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 850,
+        "x": 870,
         "y": 240,
         "wires": [
             [
@@ -3002,7 +2979,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1100,
+        "x": 1120,
         "y": 200,
         "wires": []
     },
@@ -3020,7 +2997,7 @@
         "retentionPolicyV18Flux": "",
         "org": "",
         "bucket": "",
-        "x": 1110,
+        "x": 1130,
         "y": 260,
         "wires": []
     },
@@ -3033,7 +3010,7 @@
         "links": [
             "3073af6c.b8faf"
         ],
-        "x": 855,
+        "x": 875,
         "y": 420,
         "wires": []
     },
@@ -3468,7 +3445,7 @@
         "z": "9963931.9232c7",
         "g": "b83af794.4bec68",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3501,8 +3478,8 @@
         "topic": "",
         "payload": "OFF",
         "payloadType": "str",
-        "x": 160,
-        "y": 960,
+        "x": 150,
+        "y": 980,
         "wires": [
             [
                 "54087a9f.9d1c24"
@@ -3531,7 +3508,7 @@
         "topic": "octoprint/bedtemp",
         "payload": "{\"temp\":30}",
         "payloadType": "json",
-        "x": 960,
+        "x": 980,
         "y": 1080,
         "wires": [
             [
@@ -4814,7 +4791,8 @@
         "y": 140,
         "wires": [
             [
-                "73de636f.d668ec"
+                "73de636f.d668ec",
+                "dfcc41b0.b3ad2"
             ]
         ]
     },
@@ -5993,7 +5971,7 @@
                 "index": 3,
                 "name": "Hitze",
                 "version": 3,
-                "enabled": true,
+                "enabled": false,
                 "isValid": true,
                 "conditions": [
                     {
@@ -6697,7 +6675,7 @@
         "createDir": true,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 910,
+        "x": 930,
         "y": 460,
         "wires": [
             []
@@ -6967,7 +6945,7 @@
         "topic": "octoprint/system",
         "payload": "ShutdownOctopi",
         "payloadType": "str",
-        "x": 1470,
+        "x": 1490,
         "y": 860,
         "wires": [
             [
@@ -8542,7 +8520,7 @@
         "topic": "octoprint/system",
         "payload": "shutdown",
         "payloadType": "str",
-        "x": 960,
+        "x": 980,
         "y": 1040,
         "wires": [
             [
@@ -8570,7 +8548,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1340,
+        "x": 1360,
         "y": 920,
         "wires": [
             [
@@ -9012,7 +8990,8 @@
         "name": "WeatherID",
         "links": [
             "fbb3d4c7.4328d8",
-            "f525cf20.f74e1"
+            "f525cf20.f74e1",
+            "a0085f1f.0f307"
         ],
         "x": 555,
         "y": 420,
@@ -10080,5 +10059,78 @@
         "x": 680,
         "y": 1460,
         "wires": []
+    },
+    {
+        "id": "a0085f1f.0f307",
+        "type": "link in",
+        "z": "7e5a345d.05161c",
+        "g": "c1953c38.acea1",
+        "name": "",
+        "links": [
+            "f69a51fd.3a899"
+        ],
+        "x": 165,
+        "y": 1440,
+        "wires": [
+            [
+                "e9f25740.8e0928"
+            ]
+        ]
+    },
+    {
+        "id": "61b9f71.7b9bb08",
+        "type": "inject",
+        "z": "511989b1.670cc8",
+        "g": "18ca9346.bdbedd",
+        "name": "ON",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1020,
+        "wires": [
+            [
+                "54087a9f.9d1c24"
+            ]
+        ]
+    },
+    {
+        "id": "dfcc41b0.b3ad2",
+        "type": "change",
+        "z": "7e5a345d.05161c",
+        "g": "bec8f6bc.d0d348",
+        "name": "Set Global On Holiday",
+        "rules": [
+            {
+                "t": "set",
+                "p": "OnHoliday",
+                "pt": "global",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 160,
+        "wires": [
+            []
+        ]
     }
 ]
