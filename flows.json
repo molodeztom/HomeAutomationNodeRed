@@ -162,7 +162,9 @@
             "6c8377f8.cdd248"
         ],
         "x": 24,
-        "y": 719
+        "y": 719,
+        "w": 842,
+        "h": 642
     },
     {
         "id": "584f76f1.996908",
@@ -200,7 +202,9 @@
             "f5d3faae.391998"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 992,
+        "h": 482
     },
     {
         "id": "2f27dc68.9ff574",
@@ -219,7 +223,9 @@
             "64c76441.d5f36c"
         ],
         "x": 34,
-        "y": 519
+        "y": 519,
+        "w": 432,
+        "h": 142
     },
     {
         "id": "5c041b39.d836b4",
@@ -251,9 +257,7 @@
             "a30d9009.4e13b"
         ],
         "x": 54,
-        "y": -1,
-        "w": 1182,
-        "h": 502
+        "y": -1
     },
     {
         "id": "18ca9346.bdbedd",
@@ -297,9 +301,7 @@
             "61b9f71.7b9bb08"
         ],
         "x": 54,
-        "y": 516.5,
-        "w": 1652,
-        "h": 604.5
+        "y": 516.5
     },
     {
         "id": "73d12632.94b388",
@@ -320,7 +322,9 @@
             "541cf4bd.ec76dc"
         ],
         "x": 494,
-        "y": 519
+        "y": 519,
+        "w": 572,
+        "h": 182
     },
     {
         "id": "1b82c7fb.e55448",
@@ -389,7 +393,9 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 759
+        "y": 759,
+        "w": 852,
+        "h": 162
     },
     {
         "id": "40936a6d.e4bc64",
@@ -409,7 +415,9 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 599
+        "y": 599,
+        "w": 712,
+        "h": 142
     },
     {
         "id": "3644af6d.d42f6",
@@ -441,7 +449,9 @@
             "a75bf925.381958"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 772,
+        "h": 522
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -462,7 +472,9 @@
             "52626602.a80e18"
         ],
         "x": 14,
-        "y": 939
+        "y": 939,
+        "w": 1072,
+        "h": 162
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -631,7 +643,8 @@
             "fb2be545.fa3808",
             "fd62f2d7.c32f7",
             "18eca755.0bbeb9",
-            "2d76da21.b8b846"
+            "2d76da21.b8b846",
+            "45946f85.a2da8"
         ],
         "x": 34,
         "y": 1099,
@@ -815,14 +828,6 @@
         }
     },
     {
-        "id": "3778d06e.5d445",
-        "type": "home-connect-auth",
-        "name": "HomeConnectAuth",
-        "simulation_mode": false,
-        "scope": "Settings",
-        "callback_url": "http://192.168.178.53:1880/homeconnect/auth/callback"
-    },
-    {
         "id": "b735724.619b39",
         "type": "ui_tab",
         "name": "Rollosteuerung",
@@ -921,6 +926,14 @@
         "useselfsignedcertificate": false,
         "sslterminated": false,
         "verboselogging": false
+    },
+    {
+        "id": "6a1e0e46.17777",
+        "type": "home-connect-auth",
+        "name": "molodez_tom",
+        "simulation_mode": false,
+        "scope": "Monitor",
+        "callback_url": "http://192.168.178.53:1880/homeconnect/auth/callback"
     },
     {
         "id": "49e2646f.c4941c",
@@ -3930,29 +3943,6 @@
         "wires": []
     },
     {
-        "id": "b20b772d.b858d8",
-        "type": "home-connect-request",
-        "z": "8c0dc70a.3a1008",
-        "auth": "3778d06e.5d445",
-        "name": "Spülmaschine",
-        "tag": "settings",
-        "operationId": "get_settings",
-        "haid": "011010386568004449",
-        "body": "",
-        "optionkey": "",
-        "programkey": "",
-        "settingkey": "",
-        "statuskey": "BSH.Common.Status.RemoteControlStartAllowed",
-        "imagekey": "",
-        "x": 340,
-        "y": 80,
-        "wires": [
-            [
-                "4dd95472.f323ec"
-            ]
-        ]
-    },
-    {
         "id": "4dd95472.f323ec",
         "type": "debug",
         "z": "8c0dc70a.3a1008",
@@ -3990,7 +3980,7 @@
         "y": 100,
         "wires": [
             [
-                "b20b772d.b858d8"
+                "541926fd.840d58"
             ]
         ]
     },
@@ -4014,10 +4004,10 @@
         "id": "541926fd.840d58",
         "type": "home-connect-request",
         "z": "8c0dc70a.3a1008",
-        "auth": "3778d06e.5d445",
+        "auth": "6a1e0e46.17777",
         "name": "",
-        "tag": "default",
-        "operationId": "get_home_appliances",
+        "tag": "status_events",
+        "operationId": "get_status",
         "haid": "",
         "body": "",
         "optionkey": "",
@@ -4025,8 +4015,8 @@
         "settingkey": "",
         "statuskey": "",
         "imagekey": "",
-        "x": 250,
-        "y": 300,
+        "x": 290,
+        "y": 240,
         "wires": [
             [
                 "dec25022.30146"
@@ -4219,6 +4209,37 @@
             },
             {
                 "index": 3,
+                "name": "starke Hitze",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "TempOut",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "30"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 30</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 4,
                 "name": "Wetter Regen",
                 "version": 3,
                 "enabled": true,
@@ -4279,7 +4300,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 502&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> < 504&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 522&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 600&nbsp;))</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Rain Condition</var></div></div>"
             },
             {
-                "index": 4,
+                "index": 5,
                 "name": "Wetter Gewitter",
                 "version": 3,
                 "enabled": true,
@@ -4330,7 +4351,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> = 202&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 212&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 230&nbsp;)</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Thunderstorm Condition</var></div></div>"
             },
             {
-                "index": 5,
+                "index": 6,
                 "name": "Wetter Schnee",
                 "version": 3,
                 "enabled": true,
@@ -4371,7 +4392,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> = 602&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> = 622</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>50%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Snow Condition</var></div></div>"
             },
             {
-                "index": 6,
+                "index": 7,
                 "name": "AbendsFastZu",
                 "version": 3,
                 "enabled": true,
@@ -4411,7 +4432,7 @@
                 "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Beginn</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>15:30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
             },
             {
-                "index": 7,
+                "index": 8,
                 "name": "SonnenuntergangZu",
                 "version": 3,
                 "enabled": true,
@@ -5300,6 +5321,37 @@
             },
             {
                 "index": 3,
+                "name": "starke Hitze",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "TempOut",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "29"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 29</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 4,
                 "name": "Wetter Regen",
                 "version": 3,
                 "enabled": true,
@@ -5360,7 +5412,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 502&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> < 504&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 522&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 600&nbsp;))</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Rain Condition</var></div></div>"
             },
             {
-                "index": 4,
+                "index": 5,
                 "name": "Wetter Gewitter",
                 "version": 3,
                 "enabled": true,
@@ -5411,7 +5463,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> = 202&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 212&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 230&nbsp;)</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Thunderstorm Condition</var></div></div>"
             },
             {
-                "index": 5,
+                "index": 6,
                 "name": "Wetter Schnee",
                 "version": 3,
                 "enabled": true,
@@ -5452,7 +5504,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> = 602&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> = 622</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>50%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Snow Condition</var></div></div>"
             },
             {
-                "index": 6,
+                "index": 7,
                 "name": "AbendsFastZu",
                 "version": 3,
                 "enabled": true,
@@ -5492,7 +5544,7 @@
                 "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Beginn</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
             },
             {
-                "index": 7,
+                "index": 8,
                 "name": "SonnenuntergangZu",
                 "version": 3,
                 "enabled": true,
@@ -5874,9 +5926,9 @@
                     "value": ""
                 },
                 "topic": "",
-                "resetOverwrite": false,
+                "resetOverwrite": true,
                 "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.BalkonOffen</var> = \"true\"</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>offen (max)</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.BalkonOffen</var> = \"true\"</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>offen (max)</var></div><div class=\"indent-resetOverwrite-text\"> <i class=\"fa fa-thumbs-o-down\" aria-hidden=\"true\"></i><span>manuelle Überschreibung verfällt wenn die Regel aktiv wird</span> </div></div>"
             },
             {
                 "index": 1,
@@ -5969,9 +6021,9 @@
             },
             {
                 "index": 3,
-                "name": "Hitze",
+                "name": "starke Hitze",
                 "version": 3,
-                "enabled": false,
+                "enabled": true,
                 "isValid": true,
                 "conditions": [
                     {
@@ -5980,12 +6032,12 @@
                         "operator": "gte",
                         "operatorText": ">=",
                         "thresholdType": "num",
-                        "threshold": "26"
+                        "threshold": "30"
                     }
                 ],
                 "level": {
                     "type": "levelFixed",
-                    "value": "50%",
+                    "value": "closed (min)",
                     "operator": 0,
                     "operatorText": "↕  Absolut"
                 },
@@ -5996,10 +6048,41 @@
                 "topic": "",
                 "resetOverwrite": false,
                 "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 26</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>50%</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 30</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
                 "index": 4,
+                "name": "Hitze",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "TempOut",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "27"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "33%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 27</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
+            },
+            {
+                "index": 5,
                 "name": "SonnenuntergangZu",
                 "version": 3,
                 "enabled": true,
@@ -6046,7 +6129,7 @@
                 "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Blaue Abendstunde Beginn</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>20:45</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
             },
             {
-                "index": 5,
+                "index": 6,
                 "name": "WochenendeGeschlossen",
                 "version": 3,
                 "enabled": true,
@@ -6088,7 +6171,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
-                "index": 6,
+                "index": 7,
                 "name": "WochentagGeschlossen",
                 "version": 3,
                 "enabled": true,
@@ -6998,8 +7081,8 @@
         "links": [
             "89de660e.32b288"
         ],
-        "x": 495,
-        "y": 1200,
+        "x": 615,
+        "y": 1180,
         "wires": [
             [
                 "1a538972.87cf07"
@@ -8289,11 +8372,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 230,
+        "x": 210,
         "y": 1140,
         "wires": [
             [
-                "b0373bec.1ade48"
+                "b0373bec.1ade48",
+                "45946f85.a2da8"
             ]
         ]
     },
@@ -8681,6 +8765,37 @@
             },
             {
                 "index": 2,
+                "name": "Hitze",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "TempOut",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "25"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "25%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 25</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
+            },
+            {
+                "index": 3,
                 "name": "Sonnenaufgang",
                 "version": 3,
                 "enabled": true,
@@ -8725,37 +8840,6 @@
                     "multiplier": 60000
                 },
                 "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Goldene Morgenstunde Beginn</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>8:00</var> offset <var>zufällig (täglich) bis 30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
-            },
-            {
-                "index": 3,
-                "name": "Hitze",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [
-                    {
-                        "valueType": "global",
-                        "value": "TempOut",
-                        "operator": "gte",
-                        "operatorText": ">=",
-                        "thresholdType": "num",
-                        "threshold": "25"
-                    }
-                ],
-                "level": {
-                    "type": "levelFixed",
-                    "value": "25%",
-                    "operator": 0,
-                    "operatorText": "↕  Absolut"
-                },
-                "slat": {
-                    "type": "none",
-                    "value": ""
-                },
-                "topic": "",
-                "resetOverwrite": false,
-                "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 25</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
             },
             {
                 "index": 4,
@@ -9590,10 +9674,12 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
+        "className": "",
         "icon": "",
         "payload": "off",
         "payloadType": "str",
         "topic": "",
+        "topicType": "str",
         "x": 330,
         "y": 340,
         "wires": [
@@ -10131,6 +10217,52 @@
         "y": 160,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "45946f85.a2da8",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "g": "c87697c7.9b9e58",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "b5c4ccb4.68aef",
+        "type": "inject",
+        "z": "1d446fc4.18a0d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 200,
+        "wires": [
+            [
+                "54335120.fd63a"
+            ]
         ]
     }
 ]
