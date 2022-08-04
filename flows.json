@@ -257,7 +257,9 @@
             "a30d9009.4e13b"
         ],
         "x": 54,
-        "y": -1
+        "y": -1,
+        "w": 1182,
+        "h": 502
     },
     {
         "id": "18ca9346.bdbedd",
@@ -301,7 +303,9 @@
             "61b9f71.7b9bb08"
         ],
         "x": 54,
-        "y": 516.5
+        "y": 516.5,
+        "w": 1652,
+        "h": 604.5
     },
     {
         "id": "73d12632.94b388",
@@ -8765,37 +8769,6 @@
             },
             {
                 "index": 2,
-                "name": "Hitze",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [
-                    {
-                        "valueType": "global",
-                        "value": "TempOut",
-                        "operator": "gte",
-                        "operatorText": ">=",
-                        "thresholdType": "num",
-                        "threshold": "25"
-                    }
-                ],
-                "level": {
-                    "type": "levelFixed",
-                    "value": "25%",
-                    "operator": 0,
-                    "operatorText": "↕  Absolut"
-                },
-                "slat": {
-                    "type": "none",
-                    "value": ""
-                },
-                "topic": "",
-                "resetOverwrite": false,
-                "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 25</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
-            },
-            {
-                "index": 3,
                 "name": "Sonnenaufgang",
                 "version": 3,
                 "enabled": true,
@@ -8840,6 +8813,37 @@
                     "multiplier": 60000
                 },
                 "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Goldene Morgenstunde Beginn</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>8:00</var> offset <var>zufällig (täglich) bis 30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 3,
+                "name": "Hitze",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "TempOut",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "25"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "25%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 25</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
             },
             {
                 "index": 4,
