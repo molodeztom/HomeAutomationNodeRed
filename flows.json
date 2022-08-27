@@ -257,9 +257,7 @@
             "a30d9009.4e13b"
         ],
         "x": 54,
-        "y": -1,
-        "w": 1182,
-        "h": 502
+        "y": -1
     },
     {
         "id": "18ca9346.bdbedd",
@@ -303,9 +301,7 @@
             "61b9f71.7b9bb08"
         ],
         "x": 54,
-        "y": 516.5,
-        "w": 1652,
-        "h": 604.5
+        "y": 516.5
     },
     {
         "id": "73d12632.94b388",
@@ -397,9 +393,7 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 759,
-        "w": 852,
-        "h": 162
+        "y": 759
     },
     {
         "id": "40936a6d.e4bc64",
@@ -419,9 +413,7 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 599,
-        "w": 712,
-        "h": 142
+        "y": 599
     },
     {
         "id": "3644af6d.d42f6",
@@ -453,9 +445,7 @@
             "a75bf925.381958"
         ],
         "x": 14,
-        "y": 19,
-        "w": 772,
-        "h": 522
+        "y": 19
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -476,9 +466,7 @@
             "52626602.a80e18"
         ],
         "x": 14,
-        "y": 939,
-        "w": 1072,
-        "h": 162
+        "y": 939
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -4486,7 +4474,7 @@
         "sunControlMode": 16,
         "sunFloorLengthType": "num",
         "sunFloorLength": "180",
-        "sunMinDelta": "5",
+        "sunMinDelta": "10",
         "blindPosMin": "15",
         "blindPosMinType": "num",
         "blindPosMax": "open (max)",
@@ -4531,7 +4519,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "numAltitude",
-                "threshold": "5",
+                "threshold": "20",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
