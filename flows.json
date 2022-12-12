@@ -3823,7 +3823,7 @@
                 "conditions": [],
                 "payload": {
                     "type": "str",
-                    "value": "2",
+                    "value": "3",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000,
@@ -3843,7 +3843,7 @@
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"2\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"3\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
             },
             {
                 "index": 6,
@@ -3854,7 +3854,7 @@
                 "conditions": [],
                 "payload": {
                     "type": "str",
-                    "value": "2",
+                    "value": "3",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000,
@@ -3874,7 +3874,7 @@
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>23:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"2\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>23:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"3\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
             }
         ],
         "payloadDefault": "",
@@ -6881,7 +6881,7 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "ValveCalculation",
-        "func": "var TempOut = 11;\nvar ClockPos = 0;\nvar fTemp = 0;\nvar payload;\nvar o=msg.payload;\n\nswitch (msg.topic){\n    case \"ClockValvePos\":\n        ClockPos = msg.payload;\n        global.set(\"HeaterVentPos\",ClockPos);\n        if(ClockPos == 0) msg.payload  = '0'\n        else return 0;\n        break;\n    case \"Sensor1/fTempA\":\n        TempOut = msg.payload;\n        fTemp = Number(TempOut);\n        global.set(\"TempOut\",fTemp);\n        return 0;\n    case \"HeaterNeeded\":\n        if (msg.payload == \"false\") msg.payload = '0'\n        else msg.payload = global.get(\"HeaterVentPos\");\n        if (global.get(\"HeaterVentPos\") == '0' ) msg.payload = 0; \n         break;\n    default:\n    break;\n}\n/*\n    if (global.get(\"TempOut\") <= '14'){\n      msg.payload = ClockPos ;\n    }    \n    else\n    {\n    msg.payload = '0';\n    }\n    */\n    return msg;\n ",
+        "func": "var TempOut = 11;\nvar ClockPos = 0;\nvar fTemp = 0;\nvar payload;\nvar o=msg.payload;\n\nswitch (msg.topic){\n    case \"ClockValvePos\":\n        ClockPos = msg.payload;\n        global.set(\"HeaterVentPos\",ClockPos);\n        if(ClockPos == 0) msg.payload  = '0'\n        else return 0;\n        break;\n    case \"Sensor1/fTempA\":\n        TempOut = msg.payload;\n        fTemp = Number(TempOut);\n        global.set(\"TempOut\",fTemp);\n        return 0;\n    case \"HeaterNeeded\":\n        if (msg.payload == \"false\") msg.payload = '0'\n        else msg.payload = global.get(\"HeaterVentPos\");\n        if (global.get(\"HeaterVentPos\") == '0' ) msg.payload = 0; \n         break;\n    default:\n    break;\n}\n\n    if (global.get(\"TempOut\") <= '20'){\n      msg.payload = ClockPos ;\n    }    \n    else\n    {\n    msg.payload = '0';\n    }\n    \n    return msg;\n ",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
