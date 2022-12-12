@@ -486,9 +486,7 @@
             "dfcc41b0.b3ad2"
         ],
         "x": 34,
-        "y": 59,
-        "w": 642,
-        "h": 142
+        "y": 59
     },
     {
         "id": "7ce4548d.b8ed0c",
@@ -509,9 +507,7 @@
             "77bd98f3.c0e8c8"
         ],
         "x": 34,
-        "y": 1499,
-        "w": 852,
-        "h": 142
+        "y": 1499
     },
     {
         "id": "c1953c38.acea1",
@@ -532,9 +528,7 @@
             "a0085f1f.0f307"
         ],
         "x": 34,
-        "y": 1339,
-        "w": 852,
-        "h": 162
+        "y": 1339
     },
     {
         "id": "4cff6fb8.ecd81",
@@ -559,9 +553,7 @@
             "243db6c7.15d31a"
         ],
         "x": 34,
-        "y": 219,
-        "w": 692,
-        "h": 242
+        "y": 219
     },
     {
         "id": "6666fbc0.896914",
@@ -583,12 +575,11 @@
             "e1e1185c.2c8d88",
             "f525cf20.f74e1",
             "4fbc55c0.c9f85c",
-            "7bd02856.8f5288"
+            "7bd02856.8f5288",
+            "20e6409a.ffe67"
         ],
-        "x": 34,
-        "y": 499,
-        "w": 952,
-        "h": 262
+        "x": 24,
+        "y": 499
     },
     {
         "id": "3f11d194.8d04ee",
@@ -613,9 +604,7 @@
             "1f2409.3d5e7bf8"
         ],
         "x": 34,
-        "y": 799,
-        "w": 952,
-        "h": 262
+        "y": 799
     },
     {
         "id": "c87697c7.9b9e58",
@@ -639,9 +628,7 @@
             "45946f85.a2da8"
         ],
         "x": 34,
-        "y": 1099,
-        "w": 952,
-        "h": 202
+        "y": 1099
     },
     {
         "id": "d8d1de94.dfe9",
@@ -667,7 +654,8 @@
             "4a72d2bb.8a626c",
             "8d25df5c.ebd85",
             "1dc7e978.c48077",
-            "114319b2.da6366"
+            "114319b2.da6366",
+            "b8fc33.612c63d"
         ],
         "x": 34,
         "y": 499
@@ -3866,7 +3854,7 @@
                 "conditions": [],
                 "payload": {
                     "type": "str",
-                    "value": "0",
+                    "value": "2",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000,
@@ -3886,7 +3874,7 @@
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>23:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"0\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>23:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"2\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
             }
         ],
         "payloadDefault": "",
@@ -4474,7 +4462,7 @@
         "sunControlMode": 16,
         "sunFloorLengthType": "num",
         "sunFloorLength": "180",
-        "sunMinDelta": "10",
+        "sunMinDelta": "5",
         "blindPosMin": "15",
         "blindPosMinType": "num",
         "blindPosMax": "open (max)",
@@ -4513,13 +4501,13 @@
                 }
             },
             {
-                "mode": 1,
+                "mode": 0,
                 "valueType": "pdsCalcElevation",
                 "value": "",
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "numAltitude",
-                "threshold": "20",
+                "threshold": "60",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -5504,7 +5492,7 @@
                 "conditions": [],
                 "level": {
                     "type": "levelFixed",
-                    "value": "33%",
+                    "value": "25%",
                     "operator": 0,
                     "operatorText": "↕  Absolut"
                 },
@@ -5533,7 +5521,7 @@
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Beginn</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Beginn</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
             },
             {
                 "index": 8,
@@ -5561,7 +5549,7 @@
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "num",
-                    "offset": "30",
+                    "offset": "60",
                     "multiplier": 60000,
                     "days": "*",
                     "months": "*"
@@ -5580,13 +5568,13 @@
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:30<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 01:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             }
         ],
         "sunControlMode": 16,
         "sunFloorLengthType": "num",
         "sunFloorLength": "200",
-        "sunMinDelta": "5",
+        "sunMinDelta": "10",
         "blindPosMin": "10%",
         "blindPosMinType": "levelFixed",
         "blindPosMax": "open (max)",
@@ -5935,7 +5923,7 @@
                         "operator": "true",
                         "operatorText": "ist true",
                         "thresholdType": "num",
-                        "threshold": 0
+                        "threshold": "0"
                     }
                 ],
                 "level": {
@@ -5952,17 +5940,24 @@
                 "resetOverwrite": false,
                 "importance": 0,
                 "time": {
-                    "type": "entered",
-                    "value": "7:45",
+                    "type": "pdsTime",
+                    "value": "sunriseEnd",
                     "operator": 0,
                     "operatorText": "↥ bis",
                     "offsetType": "num",
-                    "offset": "1",
+                    "offset": "10",
                     "multiplier": 60000,
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>7:45</var> + 00:01</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "timeMin": {
+                    "type": "entered",
+                    "value": "8:00",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000
+                },
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Ende</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>8:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
                 "index": 2,
@@ -6082,7 +6077,7 @@
                 "conditions": [],
                 "level": {
                     "type": "levelFixed",
-                    "value": "33%",
+                    "value": "25%",
                     "operator": 0,
                     "operatorText": "↕  Absolut"
                 },
@@ -6113,12 +6108,12 @@
                 },
                 "timeMax": {
                     "type": "entered",
-                    "value": "20:45",
+                    "value": "22:00",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Blaue Abendstunde Beginn</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>20:45</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Blaue Abendstunde Beginn</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
             },
             {
                 "index": 6,
@@ -6133,7 +6128,7 @@
                         "operator": "true",
                         "operatorText": "ist true",
                         "thresholdType": "num",
-                        "threshold": 0
+                        "threshold": "0"
                     }
                 ],
                 "level": {
@@ -6151,7 +6146,7 @@
                 "importance": 0,
                 "time": {
                     "type": "entered",
-                    "value": "22:00",
+                    "value": "21:45",
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "none",
@@ -6160,7 +6155,7 @@
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>21:45</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
                 "index": 7,
@@ -6467,7 +6462,7 @@
                     "value": ""
                 },
                 "topic": "",
-                "resetOverwrite": false,
+                "resetOverwrite": true,
                 "importance": 0,
                 "time": {
                     "type": "pdsTime",
@@ -6489,12 +6484,12 @@
                 },
                 "timeMax": {
                     "type": "entered",
-                    "value": "6:45",
+                    "value": "9:00",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Beginn</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>6:45</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Beginn</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div><div class=\"indent-resetOverwrite-text\"> <i class=\"fa fa-thumbs-o-down\" aria-hidden=\"true\"></i><span>manuelle Überschreibung verfällt wenn die Regel aktiv wird</span> </div></div>"
             },
             {
                 "index": 2,
@@ -7053,7 +7048,7 @@
         "z": "6f61cfd3.3d721",
         "g": "73d12632.94b388",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8684,14 +8679,14 @@
         "rules": [
             {
                 "index": 0,
-                "name": "Urlaub",
+                "name": "HolidayWeekend",
                 "version": 3,
                 "enabled": true,
                 "isValid": true,
                 "conditions": [
                     {
                         "valueType": "global",
-                        "value": "OnHoliday",
+                        "value": "day.today.isWeekendOrHoliday",
                         "operator": "true",
                         "operatorText": "ist true",
                         "thresholdType": "num",
@@ -8711,40 +8706,9 @@
                 "topic": "",
                 "resetOverwrite": false,
                 "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.OnHoliday</var> ist true</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
-            },
-            {
-                "index": 1,
-                "name": "HolidayWeekend",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [
-                    {
-                        "valueType": "global",
-                        "value": "day.today.isWeekendOrHoliday",
-                        "operator": "true",
-                        "operatorText": "ist true",
-                        "thresholdType": "num",
-                        "threshold": 0
-                    }
-                ],
-                "level": {
-                    "type": "levelFixed",
-                    "value": "closed (min)",
-                    "operator": 0,
-                    "operatorText": "↕  Absolut"
-                },
-                "slat": {
-                    "type": "none",
-                    "value": ""
-                },
-                "topic": "",
-                "resetOverwrite": false,
-                "importance": 0,
                 "time": {
-                    "type": "entered",
-                    "value": "7:45",
+                    "type": "pdsTime",
+                    "value": "sunriseStart",
                     "operator": 0,
                     "operatorText": "↥ bis",
                     "offsetType": "none",
@@ -8753,10 +8717,17 @@
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>7:45</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "timeMin": {
+                    "type": "entered",
+                    "value": "8:00",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000
+                },
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Beginn</var><div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>8:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
-                "index": 2,
+                "index": 1,
                 "name": "Sonnenaufgang",
                 "version": 3,
                 "enabled": true,
@@ -8781,7 +8752,7 @@
                     "operator": 0,
                     "operatorText": "↥ bis",
                     "offsetType": "num",
-                    "offset": "",
+                    "offset": "10",
                     "multiplier": 60000,
                     "days": "*",
                     "months": "*"
@@ -8795,15 +8766,15 @@
                 },
                 "timeMax": {
                     "type": "entered",
-                    "value": "8:00",
+                    "value": "9:00",
                     "offsetType": "randmNumCachedDay",
                     "offset": "30",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Goldene Morgenstunde Beginn</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>8:00</var> offset <var>zufällig (täglich) bis 30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Goldene Morgenstunde Beginn</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var> offset <var>zufällig (täglich) bis 30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
-                "index": 3,
+                "index": 2,
                 "name": "Hitze",
                 "version": 3,
                 "enabled": true,
@@ -8834,7 +8805,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 25</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
             },
             {
-                "index": 4,
+                "index": 3,
                 "name": "Sonnenuntergang",
                 "version": 3,
                 "enabled": true,
@@ -8858,8 +8829,8 @@
                     "value": "sunsetEnd",
                     "operator": 1,
                     "operatorText": "↧ von",
-                    "offsetType": "num",
-                    "offset": "15",
+                    "offsetType": "none",
+                    "offset": "",
                     "multiplier": 60000,
                     "days": "*",
                     "months": "*"
@@ -8871,10 +8842,10 @@
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:15<div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
             },
             {
-                "index": 5,
+                "index": 4,
                 "name": "WochenendeGeschlossen",
                 "version": 3,
                 "enabled": true,
@@ -8923,7 +8894,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>nautische Abenddämmerung</var><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
-                "index": 6,
+                "index": 5,
                 "name": "WochentagGeschlossen",
                 "version": 3,
                 "enabled": true,
@@ -9784,7 +9755,7 @@
         "z": "265d3756.5a1d68",
         "g": "3644af6d.d42f6",
         "name": "Program on Holiday",
-        "func": "var holiday = global.get(\"day.today.isHoliday\");\nvar outTemp = global.get(\"TempOut\");\nif(holiday){\n    msg.payload = 2; //Ferien Programm\n     node.status({fill:\"red\",shape:\"ring\",text:\"holiday\"});\n}\nelse {\n    if(outTemp > 15)  {\n    msg.payload =  3; //Sommer Programm\n    node.status({fill:\"yellow\",shape:\"ring\",text: \"summer\"});\n    }\n    else  {\n    msg.payload = 1; //WinterProgramm\n    node.status({fill:\"green\",shape:\"ring\",text: \"winter\"});\n}}\nreturn msg;",
+        "func": "var holiday = global.get(\"day.today.isHoliday\");\nvar outTemp = global.get(\"TempOut\");\nif(holiday){\n    msg.payload = 2; //Ferien Programm\n     node.status({fill:\"red\",shape:\"ring\",text:\"holiday\"});\n}\nelse {\n    if(outTemp > 14)  {\n    msg.payload =  3; //Sommer Programm\n    node.status({fill:\"yellow\",shape:\"ring\",text: \"summer\"});\n    }\n    else  {\n    msg.payload = 1; //WinterProgramm\n    node.status({fill:\"green\",shape:\"ring\",text: \"winter\"});\n}}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9810,7 +9781,7 @@
             }
         ],
         "repeat": "",
-        "crontab": "*/30 7-21 * * *",
+        "crontab": "*/30 7-22 * * *",
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
@@ -9893,8 +9864,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 360,
-        "y": 140,
+        "x": 440,
+        "y": 200,
         "wires": [
             []
         ]
@@ -10255,6 +10226,168 @@
             [
                 "54335120.fd63a"
             ]
+        ]
+    },
+    {
+        "id": "20e6409a.ffe67",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "g": "6666fbc0.896914",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "setWindowSettingsAzimuthEnd",
+        "payload": "100",
+        "payloadType": "num",
+        "x": 210,
+        "y": 700,
+        "wires": [
+            [
+                "6ac2e536.abb7ec"
+            ]
+        ]
+    },
+    {
+        "id": "b8fc33.612c63d",
+        "type": "clock-timer",
+        "z": "303a8ac7.4ea1c6",
+        "g": "d8d1de94.dfe9",
+        "name": "Zufall  Abwesenheit",
+        "topic": "",
+        "addIdType": "none",
+        "addId": "",
+        "positionConfig": "9a5a8534.25d4d8",
+        "autoTrigger": true,
+        "autoTriggerTime": 1200000,
+        "startDelayTime": 10000,
+        "contextStore": "",
+        "results": [
+            {
+                "p": "",
+                "pt": "msgTopic",
+                "v": "",
+                "vt": "topic"
+            },
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "",
+                "vt": "payload"
+            },
+            {
+                "p": "timeCtrl",
+                "pt": "msg",
+                "v": "",
+                "vt": "ctrlObj"
+            }
+        ],
+        "overwriteExpire": "",
+        "rules": [
+            {
+                "index": 0,
+                "name": "On",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "OnHoliday",
+                        "operator": "true",
+                        "operatorText": "ist true",
+                        "thresholdType": "num",
+                        "threshold": "0"
+                    }
+                ],
+                "payload": {
+                    "type": "json",
+                    "value": " {     \"mode\": \"color\",     \"red\": 255,     \"green\": 255,     \"blue\": 255,     \"gain\": 100,     \"turn\": \"on\",     \"transition\": 500 }",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "pdsTime",
+                    "value": "goldenHourDuskStart",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "randmNumCachedDay",
+                    "offset": "10",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.OnHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Goldene Abendstunde Beginn</var> offset <var>zufällig (täglich) bis 10</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>json</var></div></div>"
+            },
+            {
+                "index": 1,
+                "name": "Aus",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "OnHoliday",
+                        "operator": "true",
+                        "operatorText": "ist true",
+                        "thresholdType": "num",
+                        "threshold": "0"
+                    }
+                ],
+                "payload": {
+                    "type": "json",
+                    "value": " {     \"mode\": \"color\",     \"red\": 255,     \"green\": 255,     \"blue\": 255,     \"gain\": 100,     \"turn\": \"off\",     \"transition\": 500 }",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "20:15",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "randmNumCachedDay",
+                    "offset": "30",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.OnHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>20:15</var> offset <var>zufällig (täglich) bis 30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>json</var></div></div>"
+            }
+        ],
+        "payloadDefault": "",
+        "payloadDefaultType": "none",
+        "payloadDefaultTimeFormat": 0,
+        "payloadDefaultOffset": 0,
+        "payloadDefaultOffsetType": "none",
+        "payloadDefaultOffsetMultiplier": 60000,
+        "x": 990,
+        "y": 680,
+        "wires": [
+            [
+                "1dc7e978.c48077"
+            ],
+            []
         ]
     }
 ]
