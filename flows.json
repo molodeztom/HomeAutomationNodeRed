@@ -109,7 +109,9 @@
             "532bc566.df7b1c"
         ],
         "x": 14,
-        "y": 199
+        "y": 199,
+        "w": 812,
+        "h": 502
     },
     {
         "id": "7d3411b0.20fc7",
@@ -129,7 +131,9 @@
             "2a103049.f6a29"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 892,
+        "h": 142
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -159,12 +163,15 @@
             "8823d2b3.3d2ab",
             "d715f111.57f18",
             "ed0d92d3.e506c",
-            "6c8377f8.cdd248"
+            "6c8377f8.cdd248",
+            "89b41e2e.59495",
+            "fff7a262.d8778",
+            "59893d9f.a33394"
         ],
-        "x": 24,
+        "x": 44,
         "y": 719,
-        "w": 842,
-        "h": 642
+        "w": 902,
+        "h": 682
     },
     {
         "id": "584f76f1.996908",
@@ -257,7 +264,9 @@
             "a30d9009.4e13b"
         ],
         "x": 54,
-        "y": -1
+        "y": -1,
+        "w": 1182,
+        "h": 502
     },
     {
         "id": "18ca9346.bdbedd",
@@ -301,7 +310,9 @@
             "61b9f71.7b9bb08"
         ],
         "x": 54,
-        "y": 516.5
+        "y": 516.5,
+        "w": 1652,
+        "h": 604.5
     },
     {
         "id": "73d12632.94b388",
@@ -393,7 +404,9 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 759
+        "y": 759,
+        "w": 852,
+        "h": 162
     },
     {
         "id": "40936a6d.e4bc64",
@@ -413,7 +426,9 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 599
+        "y": 599,
+        "w": 712,
+        "h": 142
     },
     {
         "id": "3644af6d.d42f6",
@@ -445,7 +460,9 @@
             "a75bf925.381958"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 772,
+        "h": 522
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -466,7 +483,9 @@
             "52626602.a80e18"
         ],
         "x": 14,
-        "y": 939
+        "y": 939,
+        "w": 1072,
+        "h": 162
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -1258,7 +1277,7 @@
         "qos": "1",
         "retain": "true",
         "broker": "19cf2a10.f9d4a6",
-        "x": 740,
+        "x": 760,
         "y": 1000,
         "wires": []
     },
@@ -1280,7 +1299,7 @@
         "topic": "",
         "payload": "4",
         "payloadType": "num",
-        "x": 120,
+        "x": 140,
         "y": 1000,
         "wires": [
             [
@@ -1306,7 +1325,7 @@
         "topic": "",
         "payload": "5",
         "payloadType": "num",
-        "x": 120,
+        "x": 140,
         "y": 1060,
         "wires": [
             [
@@ -1332,7 +1351,7 @@
         "topic": "",
         "payload": "3",
         "payloadType": "num",
-        "x": 120,
+        "x": 140,
         "y": 940,
         "wires": [
             [
@@ -1362,7 +1381,7 @@
         "topic": "ValvPos",
         "payload": "0",
         "payloadType": "str",
-        "x": 130,
+        "x": 150,
         "y": 760,
         "wires": [
             [
@@ -1388,7 +1407,7 @@
         "topic": "",
         "payload": "2",
         "payloadType": "num",
-        "x": 120,
+        "x": 140,
         "y": 880,
         "wires": [
             [
@@ -1414,7 +1433,7 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 120,
+        "x": 140,
         "y": 820,
         "wires": [
             [
@@ -3556,7 +3575,7 @@
         "qos": "0",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 370,
+        "x": 390,
         "y": 1280,
         "wires": []
     },
@@ -3578,7 +3597,7 @@
         "topic": "",
         "payload": "3",
         "payloadType": "num",
-        "x": 130,
+        "x": 150,
         "y": 1280,
         "wires": [
             [
@@ -3668,7 +3687,7 @@
                 "conditions": [],
                 "payload": {
                     "type": "str",
-                    "value": "4",
+                    "value": "5",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000,
@@ -3688,7 +3707,7 @@
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>6:15</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>6:15</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"5\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
             },
             {
                 "index": 1,
@@ -3851,10 +3870,19 @@
                 "version": 3,
                 "enabled": true,
                 "isValid": true,
-                "conditions": [],
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "TempOut",
+                        "operator": "gt",
+                        "operatorText": ">",
+                        "thresholdType": "str",
+                        "threshold": "1"
+                    }
+                ],
                 "payload": {
                     "type": "str",
-                    "value": "3",
+                    "value": "0",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000,
@@ -3874,7 +3902,7 @@
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>23:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"3\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> > \"1\"</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>23:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"0\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
             }
         ],
         "payloadDefault": "",
@@ -3883,12 +3911,13 @@
         "payloadDefaultOffset": 0,
         "payloadDefaultOffsetType": "none",
         "payloadDefaultOffsetMultiplier": 60000,
-        "x": 120,
+        "x": 140,
         "y": 1160,
         "wires": [
             [
                 "8583dd1c.64052",
-                "3c079b7c.3bb374"
+                "3c079b7c.3bb374",
+                "89b41e2e.59495"
             ],
             []
         ]
@@ -3907,7 +3936,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
+        "x": 740,
         "y": 1060,
         "wires": []
     },
@@ -3918,7 +3947,7 @@
         "g": "5d7bb23e.6c04ec",
         "name": "Intervall Stufe 1 und 2",
         "info": "Intervall für Stufe 1/2",
-        "x": 520,
+        "x": 540,
         "y": 820,
         "wires": []
     },
@@ -6881,12 +6910,12 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "ValveCalculation",
-        "func": "var TempOut = 11;\nvar ClockPos = 0;\nvar fTemp = 0;\nvar payload;\nvar o=msg.payload;\n\nswitch (msg.topic){\n    case \"ClockValvePos\":\n        ClockPos = msg.payload;\n        global.set(\"HeaterVentPos\",ClockPos);\n        if(ClockPos == 0) msg.payload  = '0'\n        else return 0;\n        break;\n    case \"Sensor1/fTempA\":\n        TempOut = msg.payload;\n        fTemp = Number(TempOut);\n        global.set(\"TempOut\",fTemp);\n        return 0;\n    case \"HeaterNeeded\":\n        if (msg.payload == \"false\") msg.payload = '0'\n        else msg.payload = global.get(\"HeaterVentPos\");\n        if (global.get(\"HeaterVentPos\") == '0' ) msg.payload = 0; \n         break;\n    default:\n    break;\n}\n\n    if (global.get(\"TempOut\") <= '20'){\n      msg.payload = ClockPos ;\n    }    \n    else\n    {\n    msg.payload = '0';\n    }\n    \n    return msg;\n ",
+        "func": "var TempOut = 11;\nvar ClockPos = 0;\nvar fTemp = 0;\nvar payload;\nvar o=msg.payload;\n//We get 3 kinds of input\n//Clock sets a desired Valve Pos dependend on time it is stored. Ony if it \n//is 0 meant to switch off heating independend of heater needed the message\n//is forwarded to Valve.\n//temp only sets a global temp value for outdoor temp\n//heater needed close valve if no heater needed or open to valve position\n//set by Clock\n//msg payload is the valve position to set\n\nswitch (msg.topic){\n    case \"ClockValvePos\":\n        ClockPos = msg.payload;\n        //if out temp below -5 ommit clock pos and keep open\n        global.set(\"HeaterVentPos\",ClockPos);\n        //if 0 switch of anyway, send 0 pos directly\n        //else store value for heater needed\n        if(ClockPos == 0) msg.payload  = '0'\n        else return 0;\n        break;\n    case \"Sensor1/fTempA\":\n        TempOut = msg.payload;\n        fTemp = Number(TempOut);\n        global.set(\"TempOut\",fTemp);\n        return 0;\n    case \"HeaterNeeded\":\n        if (msg.payload == \"false\") msg.payload = '0'\n        else msg.payload = global.get(\"HeaterVentPos\");\n        if (global.get(\"HeaterVentPos\") == '0' ) msg.payload = 0;\n        //when really cold keep open\n        if (global.get(\"TempOut\") <= '-5'){\n         msg.payload = '5' ;\n    }    \n         break;\n    default:\n    break;\n}\n/*\n    if (global.get(\"TempOut\") <= '20'){\n      msg.payload = ClockPos ;\n    }    \n    else\n    {\n    msg.payload = '0';\n    }\n    */\n    \n    return msg;\n ",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 510,
+        "x": 530,
         "y": 1120,
         "wires": [
             [
@@ -6905,7 +6934,7 @@
         "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 140,
+        "x": 160,
         "y": 1220,
         "wires": [
             [
@@ -6927,7 +6956,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 700,
+        "x": 720,
         "y": 1120,
         "wires": []
     },
@@ -6940,12 +6969,13 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 320,
+        "x": 340,
         "y": 1220,
         "wires": [
             [
                 "3c079b7c.3bb374",
-                "d715f111.57f18"
+                "d715f111.57f18",
+                "59893d9f.a33394"
             ]
         ]
     },
@@ -6963,7 +6993,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 730,
+        "x": 750,
         "y": 1180,
         "wires": []
     },
@@ -6985,7 +7015,7 @@
         "topic": "",
         "payload": "1",
         "payloadType": "num",
-        "x": 130,
+        "x": 150,
         "y": 1320,
         "wires": [
             [
@@ -7048,7 +7078,7 @@
         "z": "6f61cfd3.3d721",
         "g": "73d12632.94b388",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8508,11 +8538,12 @@
         "links": [
             "7fce1939.2cfb98"
         ],
-        "x": 95,
+        "x": 115,
         "y": 1120,
         "wires": [
             [
-                "3c079b7c.3bb374"
+                "3c079b7c.3bb374",
+                "89b41e2e.59495"
             ]
         ]
     },
@@ -10388,6 +10419,67 @@
                 "1dc7e978.c48077"
             ],
             []
+        ]
+    },
+    {
+        "id": "89b41e2e.59495",
+        "type": "function",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "ValveCalculation V2",
+        "func": "var TempOut = 11;\nvar ClockPos = 0;\nvar fTemp = 0;\nvar payload;\nvar o=msg.payload;\nvar bHeaterNeeded = false;\n//We get 3 kinds of input and trigger\n//Clock set valve by time \n//Temp A Outside Temp \n//HeaterNeeded Event if one of the local valve opens\n//The events set global variables, then the calculation logic determines the actual valve pos needed\n//\n//Clock sets a desired Valve Pos dependend on time it is stored. Ony if it \n//is 0 meant to switch off heating independend of heater needed the message\n//is forwarded to Valve.\n//temp only sets a global temp value for outdoor temp\n//heater needed close valve if no heater needed or open to valve position\n//set by Clock\n//msg payload is the valve position to set\n\nswitch (msg.topic){\n    case \"ClockValvePos\":\n        ClockPos = msg.payload;\n        flow.set(\"HeaterVentPos\",ClockPos);\n        break;\n    case \"Sensor1/fTempA\":\n        TempOut = msg.payload;\n        fTemp = Number(TempOut);\n        global.set(\"TempOut\",fTemp);\n        break;\n    case \"HeaterNeeded\":\n        bHeaterNeeded = msg.payload;\n        break;\n    default:\n    break;\n}\n//determine valve pos needed\n// always open if temp out less than -2 degrees\n// open if heater needed then use value set by clock\n// close otherwise\nif (global.get(\"TempOut\") <= '-2'){\n     msg.payload = '5' ;\n    } \nelse {\n    if (bHeaterNeeded == \"false\") msg.payload = '0' ;\n    else msg.payload = flow.get(\"HeaterVentPos\");\n}\n    return msg;\n ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 800,
+        "y": 1220,
+        "wires": [
+            [
+                "fff7a262.d8778"
+            ]
+        ]
+    },
+    {
+        "id": "fff7a262.d8778",
+        "type": "debug",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "Valve Calc V2.0",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "59893d9f.a33394",
+        "type": "delay",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "2",
+        "rateUnits": "minute",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 620,
+        "y": 1360,
+        "wires": [
+            [
+                "89b41e2e.59495"
+            ]
         ]
     }
 ]
