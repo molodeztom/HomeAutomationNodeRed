@@ -136,44 +136,6 @@
         "h": 142
     },
     {
-        "id": "5d7bb23e.6c04ec",
-        "type": "group",
-        "z": "6f61cfd3.3d721",
-        "name": "Heating Valve Control",
-        "style": {
-            "label": true,
-            "fill": "#c8e7a7"
-        },
-        "nodes": [
-            "17a551f9.bcd59e",
-            "da2b6e45.21a05",
-            "3c962617.c2f8da",
-            "19222942.f62117",
-            "7b6ccd29.970414",
-            "20ca1b0c.9a8c24",
-            "a4e3b9e2.4783a8",
-            "a01343a.a42a9c",
-            "8583dd1c.64052",
-            "97b9ac13.ca45c",
-            "cb6213d.83258f",
-            "130dd598.a91e6a",
-            "3c079b7c.3bb374",
-            "a0fe78c.bc5a188",
-            "4f746528.3b88cc",
-            "8823d2b3.3d2ab",
-            "d715f111.57f18",
-            "ed0d92d3.e506c",
-            "6c8377f8.cdd248",
-            "89b41e2e.59495",
-            "fff7a262.d8778",
-            "59893d9f.a33394"
-        ],
-        "x": 44,
-        "y": 719,
-        "w": 902,
-        "h": 682
-    },
-    {
         "id": "584f76f1.996908",
         "type": "group",
         "z": "6f61cfd3.3d721",
@@ -505,7 +467,9 @@
             "dfcc41b0.b3ad2"
         ],
         "x": 34,
-        "y": 59
+        "y": 59,
+        "w": 642,
+        "h": 142
     },
     {
         "id": "7ce4548d.b8ed0c",
@@ -526,7 +490,9 @@
             "77bd98f3.c0e8c8"
         ],
         "x": 34,
-        "y": 1499
+        "y": 1499,
+        "w": 852,
+        "h": 142
     },
     {
         "id": "c1953c38.acea1",
@@ -547,7 +513,9 @@
             "a0085f1f.0f307"
         ],
         "x": 34,
-        "y": 1339
+        "y": 1339,
+        "w": 852,
+        "h": 162
     },
     {
         "id": "4cff6fb8.ecd81",
@@ -572,7 +540,9 @@
             "243db6c7.15d31a"
         ],
         "x": 34,
-        "y": 219
+        "y": 219,
+        "w": 692,
+        "h": 242
     },
     {
         "id": "6666fbc0.896914",
@@ -598,7 +568,9 @@
             "20e6409a.ffe67"
         ],
         "x": 24,
-        "y": 499
+        "y": 499,
+        "w": 962,
+        "h": 262
     },
     {
         "id": "3f11d194.8d04ee",
@@ -623,7 +595,9 @@
             "1f2409.3d5e7bf8"
         ],
         "x": 34,
-        "y": 799
+        "y": 799,
+        "w": 952,
+        "h": 262
     },
     {
         "id": "c87697c7.9b9e58",
@@ -647,7 +621,9 @@
             "45946f85.a2da8"
         ],
         "x": 34,
-        "y": 1099
+        "y": 1099,
+        "w": 952,
+        "h": 202
     },
     {
         "id": "d8d1de94.dfe9",
@@ -678,6 +654,40 @@
         ],
         "x": 34,
         "y": 499
+    },
+    {
+        "id": "5d7bb23e.6c04ec",
+        "type": "group",
+        "z": "6f61cfd3.3d721",
+        "name": "Heating Valve Control",
+        "style": {
+            "label": true,
+            "fill": "#c8e7a7"
+        },
+        "nodes": [
+            "17a551f9.bcd59e",
+            "da2b6e45.21a05",
+            "3c962617.c2f8da",
+            "19222942.f62117",
+            "7b6ccd29.970414",
+            "20ca1b0c.9a8c24",
+            "a4e3b9e2.4783a8",
+            "a01343a.a42a9c",
+            "97b9ac13.ca45c",
+            "cb6213d.83258f",
+            "130dd598.a91e6a",
+            "a0fe78c.bc5a188",
+            "8823d2b3.3d2ab",
+            "ed0d92d3.e506c",
+            "6c8377f8.cdd248",
+            "89b41e2e.59495",
+            "fff7a262.d8778",
+            "59893d9f.a33394"
+        ],
+        "x": 44,
+        "y": 719,
+        "w": 842,
+        "h": 642
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -1265,180 +1275,6 @@
         "y": 321,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "17a551f9.bcd59e",
-        "type": "mqtt out",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "",
-        "topic": "ValveControl/SetPos",
-        "qos": "1",
-        "retain": "true",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 760,
-        "y": 1000,
-        "wires": []
-    },
-    {
-        "id": "da2b6e45.21a05",
-        "type": "inject",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "4",
-        "payloadType": "num",
-        "x": 140,
-        "y": 1000,
-        "wires": [
-            [
-                "17a551f9.bcd59e"
-            ]
-        ]
-    },
-    {
-        "id": "3c962617.c2f8da",
-        "type": "inject",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "5",
-        "payloadType": "num",
-        "x": 140,
-        "y": 1060,
-        "wires": [
-            [
-                "17a551f9.bcd59e"
-            ]
-        ]
-    },
-    {
-        "id": "19222942.f62117",
-        "type": "inject",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "3",
-        "payloadType": "num",
-        "x": 140,
-        "y": 940,
-        "wires": [
-            [
-                "17a551f9.bcd59e"
-            ]
-        ]
-    },
-    {
-        "id": "7b6ccd29.970414",
-        "type": "inject",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "ValvPos",
-        "payload": "0",
-        "payloadType": "str",
-        "x": 150,
-        "y": 760,
-        "wires": [
-            [
-                "17a551f9.bcd59e"
-            ]
-        ]
-    },
-    {
-        "id": "20ca1b0c.9a8c24",
-        "type": "inject",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "2",
-        "payloadType": "num",
-        "x": 140,
-        "y": 880,
-        "wires": [
-            [
-                "17a551f9.bcd59e"
-            ]
-        ]
-    },
-    {
-        "id": "a4e3b9e2.4783a8",
-        "type": "inject",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 140,
-        "y": 820,
-        "wires": [
-            [
-                "17a551f9.bcd59e"
-            ]
         ]
     },
     {
@@ -2378,7 +2214,7 @@
         "outwarning": "Warning",
         "outunsafe": "off",
         "warning": "5",
-        "timer": "1000",
+        "timer": "3000",
         "debug": false,
         "ndebug": false,
         "ignoreCase": false,
@@ -3566,46 +3402,6 @@
         "wires": []
     },
     {
-        "id": "cb6213d.83258f",
-        "type": "mqtt out",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "",
-        "topic": "ValveControl/SetInt",
-        "qos": "0",
-        "retain": "",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 390,
-        "y": 1280,
-        "wires": []
-    },
-    {
-        "id": "97b9ac13.ca45c",
-        "type": "inject",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "3",
-        "payloadType": "num",
-        "x": 150,
-        "y": 1280,
-        "wires": [
-            [
-                "cb6213d.83258f"
-            ]
-        ]
-    },
-    {
         "id": "d5959449.a47808",
         "type": "function",
         "z": "6f61cfd3.3d721",
@@ -3640,315 +3436,6 @@
         "bucket": "",
         "x": 970,
         "y": 560,
-        "wires": []
-    },
-    {
-        "id": "a01343a.a42a9c",
-        "type": "clock-timer",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "Clock ",
-        "topic": "ValvPos",
-        "addIdType": "none",
-        "addId": "",
-        "positionConfig": "9a5a8534.25d4d8",
-        "autoTrigger": true,
-        "autoTriggerTime": "120000",
-        "startDelayTime": 10000,
-        "contextStore": "",
-        "results": [
-            {
-                "p": "",
-                "pt": "msgTopic",
-                "v": "",
-                "vt": "topic"
-            },
-            {
-                "p": "",
-                "pt": "msgPayload",
-                "v": "",
-                "vt": "payload"
-            },
-            {
-                "p": "timeCtrl",
-                "pt": "msg",
-                "v": "",
-                "vt": "ctrlObj"
-            }
-        ],
-        "overwriteExpire": "",
-        "rules": [
-            {
-                "index": 0,
-                "name": "Früh Aufheizen",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "payload": {
-                    "type": "str",
-                    "value": "5",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "format": ""
-                },
-                "topic": "ClockValvePos",
-                "importance": 0,
-                "resetOverwrite": false,
-                "time": {
-                    "type": "entered",
-                    "value": "6:15",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>6:15</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"5\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
-            },
-            {
-                "index": 1,
-                "name": "Tag Absenkung ",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "payload": {
-                    "type": "str",
-                    "value": "3",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "format": ""
-                },
-                "topic": "ClockValvePos",
-                "importance": 0,
-                "resetOverwrite": false,
-                "time": {
-                    "type": "entered",
-                    "value": "9:30",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>9:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"3\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
-            },
-            {
-                "index": 2,
-                "name": "Mittag Aufheizen",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "payload": {
-                    "type": "str",
-                    "value": "4",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "format": ""
-                },
-                "topic": "ClockValvePos",
-                "importance": 0,
-                "resetOverwrite": false,
-                "time": {
-                    "type": "entered",
-                    "value": "11:30",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>11:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
-            },
-            {
-                "index": 3,
-                "name": "Nachmittag Absenkung",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "payload": {
-                    "type": "str",
-                    "value": "3",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "format": ""
-                },
-                "topic": "ClockValvePos",
-                "importance": 0,
-                "resetOverwrite": false,
-                "time": {
-                    "type": "entered",
-                    "value": "12:30",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>12:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"3\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
-            },
-            {
-                "index": 4,
-                "name": "Abend",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "payload": {
-                    "type": "str",
-                    "value": "4",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "format": ""
-                },
-                "topic": "ClockValvePos",
-                "importance": 0,
-                "resetOverwrite": false,
-                "time": {
-                    "type": "entered",
-                    "value": "15:45",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>15:45</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
-            },
-            {
-                "index": 5,
-                "name": "Spätabend Intervall",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "payload": {
-                    "type": "str",
-                    "value": "3",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "format": ""
-                },
-                "topic": "ClockValvePos",
-                "importance": 0,
-                "resetOverwrite": false,
-                "time": {
-                    "type": "entered",
-                    "value": "22:00",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"3\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
-            },
-            {
-                "index": 6,
-                "name": "Nachtabschaltung",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [
-                    {
-                        "valueType": "global",
-                        "value": "TempOut",
-                        "operator": "gt",
-                        "operatorText": ">",
-                        "thresholdType": "str",
-                        "threshold": "1"
-                    }
-                ],
-                "payload": {
-                    "type": "str",
-                    "value": "0",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "format": ""
-                },
-                "topic": "ClockValvePos",
-                "importance": 0,
-                "resetOverwrite": false,
-                "time": {
-                    "type": "entered",
-                    "value": "23:30",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> > \"1\"</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>23:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"0\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
-            }
-        ],
-        "payloadDefault": "",
-        "payloadDefaultType": "none",
-        "payloadDefaultTimeFormat": 0,
-        "payloadDefaultOffset": 0,
-        "payloadDefaultOffsetType": "none",
-        "payloadDefaultOffsetMultiplier": 60000,
-        "x": 140,
-        "y": 1160,
-        "wires": [
-            [
-                "8583dd1c.64052",
-                "3c079b7c.3bb374",
-                "89b41e2e.59495"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "8583dd1c.64052",
-        "type": "debug",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "Heating Timer",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 740,
-        "y": 1060,
-        "wires": []
-    },
-    {
-        "id": "130dd598.a91e6a",
-        "type": "comment",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "Intervall Stufe 1 und 2",
-        "info": "Intervall für Stufe 1/2",
-        "x": 540,
-        "y": 820,
         "wires": []
     },
     {
@@ -6905,125 +6392,6 @@
         "wires": []
     },
     {
-        "id": "3c079b7c.3bb374",
-        "type": "function",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "ValveCalculation",
-        "func": "var TempOut = 11;\nvar ClockPos = 0;\nvar fTemp = 0;\nvar payload;\nvar o=msg.payload;\n//We get 3 kinds of input\n//Clock sets a desired Valve Pos dependend on time it is stored. Ony if it \n//is 0 meant to switch off heating independend of heater needed the message\n//is forwarded to Valve.\n//temp only sets a global temp value for outdoor temp\n//heater needed close valve if no heater needed or open to valve position\n//set by Clock\n//msg payload is the valve position to set\n\nswitch (msg.topic){\n    case \"ClockValvePos\":\n        ClockPos = msg.payload;\n        //if out temp below -5 ommit clock pos and keep open\n        global.set(\"HeaterVentPos\",ClockPos);\n        //if 0 switch of anyway, send 0 pos directly\n        //else store value for heater needed\n        if(ClockPos == 0) msg.payload  = '0'\n        else return 0;\n        break;\n    case \"Sensor1/fTempA\":\n        TempOut = msg.payload;\n        fTemp = Number(TempOut);\n        global.set(\"TempOut\",fTemp);\n        return 0;\n    case \"HeaterNeeded\":\n        if (msg.payload == \"false\") msg.payload = '0'\n        else msg.payload = global.get(\"HeaterVentPos\");\n        if (global.get(\"HeaterVentPos\") == '0' ) msg.payload = 0;\n        //when really cold keep open\n        if (global.get(\"TempOut\") <= '-5'){\n         msg.payload = '5' ;\n    }    \n         break;\n    default:\n    break;\n}\n/*\n    if (global.get(\"TempOut\") <= '20'){\n      msg.payload = ClockPos ;\n    }    \n    else\n    {\n    msg.payload = '0';\n    }\n    */\n    \n    return msg;\n ",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 530,
-        "y": 1120,
-        "wires": [
-            [
-                "4f746528.3b88cc",
-                "17a551f9.bcd59e"
-            ]
-        ]
-    },
-    {
-        "id": "a0fe78c.bc5a188",
-        "type": "mqtt in",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "",
-        "topic": "Sensor1/fTempA",
-        "qos": "0",
-        "datatype": "auto",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 160,
-        "y": 1220,
-        "wires": [
-            [
-                "8823d2b3.3d2ab"
-            ]
-        ]
-    },
-    {
-        "id": "4f746528.3b88cc",
-        "type": "debug",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "TestCalc",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 1120,
-        "wires": []
-    },
-    {
-        "id": "8823d2b3.3d2ab",
-        "type": "json",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "fTempA",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 340,
-        "y": 1220,
-        "wires": [
-            [
-                "3c079b7c.3bb374",
-                "d715f111.57f18",
-                "59893d9f.a33394"
-            ]
-        ]
-    },
-    {
-        "id": "d715f111.57f18",
-        "type": "debug",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "TestJsonConvOut",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 750,
-        "y": 1180,
-        "wires": []
-    },
-    {
-        "id": "ed0d92d3.e506c",
-        "type": "inject",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 150,
-        "y": 1320,
-        "wires": [
-            [
-                "cb6213d.83258f"
-            ]
-        ]
-    },
-    {
         "id": "b8c299bc.8c4e18",
         "type": "inject",
         "z": "511989b1.670cc8",
@@ -8528,24 +7896,6 @@
         "x": 895,
         "y": 1000,
         "wires": []
-    },
-    {
-        "id": "6c8377f8.cdd248",
-        "type": "link in",
-        "z": "6f61cfd3.3d721",
-        "g": "5d7bb23e.6c04ec",
-        "name": "HeaterNeeded",
-        "links": [
-            "7fce1939.2cfb98"
-        ],
-        "x": 115,
-        "y": 1120,
-        "wires": [
-            [
-                "3c079b7c.3bb374",
-                "89b41e2e.59495"
-            ]
-        ]
     },
     {
         "id": "f0b72f63.75383",
@@ -10422,20 +9772,602 @@
         ]
     },
     {
+        "id": "17a551f9.bcd59e",
+        "type": "mqtt out",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "topic": "ValveControl/SetPos",
+        "qos": "1",
+        "retain": "true",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 760,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "da2b6e45.21a05",
+        "type": "inject",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "4",
+        "payloadType": "num",
+        "x": 140,
+        "y": 1000,
+        "wires": [
+            [
+                "17a551f9.bcd59e"
+            ]
+        ]
+    },
+    {
+        "id": "3c962617.c2f8da",
+        "type": "inject",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "num",
+        "x": 140,
+        "y": 1060,
+        "wires": [
+            [
+                "17a551f9.bcd59e"
+            ]
+        ]
+    },
+    {
+        "id": "19222942.f62117",
+        "type": "inject",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "3",
+        "payloadType": "num",
+        "x": 140,
+        "y": 940,
+        "wires": [
+            [
+                "17a551f9.bcd59e"
+            ]
+        ]
+    },
+    {
+        "id": "7b6ccd29.970414",
+        "type": "inject",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ValvPos",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 150,
+        "y": 760,
+        "wires": [
+            [
+                "17a551f9.bcd59e"
+            ]
+        ]
+    },
+    {
+        "id": "20ca1b0c.9a8c24",
+        "type": "inject",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "2",
+        "payloadType": "num",
+        "x": 140,
+        "y": 880,
+        "wires": [
+            [
+                "17a551f9.bcd59e"
+            ]
+        ]
+    },
+    {
+        "id": "a4e3b9e2.4783a8",
+        "type": "inject",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 140,
+        "y": 820,
+        "wires": [
+            [
+                "17a551f9.bcd59e"
+            ]
+        ]
+    },
+    {
+        "id": "a01343a.a42a9c",
+        "type": "clock-timer",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "Clock ",
+        "topic": "ValvPos",
+        "addIdType": "none",
+        "addId": "",
+        "positionConfig": "9a5a8534.25d4d8",
+        "autoTrigger": true,
+        "autoTriggerTime": "120000",
+        "startDelayTime": 10000,
+        "contextStore": "",
+        "results": [
+            {
+                "p": "",
+                "pt": "msgTopic",
+                "v": "",
+                "vt": "topic"
+            },
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "",
+                "vt": "payload"
+            },
+            {
+                "p": "timeCtrl",
+                "pt": "msg",
+                "v": "",
+                "vt": "ctrlObj"
+            }
+        ],
+        "overwriteExpire": "",
+        "rules": [
+            {
+                "index": 0,
+                "name": "Früh Aufheizen",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "str",
+                    "value": "5",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "ClockValvePos",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "6:15",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>6:15</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"5\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
+            },
+            {
+                "index": 1,
+                "name": "Tag Absenkung ",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "str",
+                    "value": "3",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "ClockValvePos",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "9:30",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>9:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"3\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
+            },
+            {
+                "index": 2,
+                "name": "Mittag Aufheizen",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "str",
+                    "value": "4",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "ClockValvePos",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "11:30",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>11:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
+            },
+            {
+                "index": 3,
+                "name": "Nachmittag Absenkung",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "str",
+                    "value": "3",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "ClockValvePos",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "12:30",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>12:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"3\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
+            },
+            {
+                "index": 4,
+                "name": "Abend",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "str",
+                    "value": "4",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "ClockValvePos",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "15:45",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>15:45</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"4\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
+            },
+            {
+                "index": 5,
+                "name": "Spätabend Intervall",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "str",
+                    "value": "3",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "ClockValvePos",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "22:00",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"3\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
+            },
+            {
+                "index": 6,
+                "name": "Nachtabschaltung",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "TempOut",
+                        "operator": "gt",
+                        "operatorText": ">",
+                        "thresholdType": "str",
+                        "threshold": "1"
+                    }
+                ],
+                "payload": {
+                    "type": "str",
+                    "value": "0",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "ClockValvePos",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "23:30",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> > \"1\"</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>23:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"0\"</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>ClockValvePos</var></div></div>"
+            }
+        ],
+        "payloadDefault": "",
+        "payloadDefaultType": "none",
+        "payloadDefaultTimeFormat": 0,
+        "payloadDefaultOffset": 0,
+        "payloadDefaultOffsetType": "none",
+        "payloadDefaultOffsetMultiplier": 60000,
+        "x": 140,
+        "y": 1160,
+        "wires": [
+            [
+                "89b41e2e.59495"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "97b9ac13.ca45c",
+        "type": "inject",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "3",
+        "payloadType": "num",
+        "x": 150,
+        "y": 1280,
+        "wires": [
+            [
+                "cb6213d.83258f"
+            ]
+        ]
+    },
+    {
+        "id": "cb6213d.83258f",
+        "type": "mqtt out",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "topic": "ValveControl/SetInt",
+        "qos": "0",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 390,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "130dd598.a91e6a",
+        "type": "comment",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "Intervall Stufe 1 und 2",
+        "info": "Intervall für Stufe 1/2",
+        "x": 540,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "a0fe78c.bc5a188",
+        "type": "mqtt in",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "topic": "Sensor1/fTempA",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 160,
+        "y": 1220,
+        "wires": [
+            [
+                "8823d2b3.3d2ab"
+            ]
+        ]
+    },
+    {
+        "id": "8823d2b3.3d2ab",
+        "type": "json",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "fTempA",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 340,
+        "y": 1220,
+        "wires": [
+            [
+                "59893d9f.a33394"
+            ]
+        ]
+    },
+    {
+        "id": "ed0d92d3.e506c",
+        "type": "inject",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 150,
+        "y": 1320,
+        "wires": [
+            [
+                "cb6213d.83258f"
+            ]
+        ]
+    },
+    {
+        "id": "6c8377f8.cdd248",
+        "type": "link in",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "HeaterNeeded",
+        "links": [
+            "7fce1939.2cfb98"
+        ],
+        "x": 115,
+        "y": 1120,
+        "wires": [
+            [
+                "89b41e2e.59495"
+            ]
+        ]
+    },
+    {
         "id": "89b41e2e.59495",
         "type": "function",
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "ValveCalculation V2",
-        "func": "var TempOut = 11;\nvar ClockPos = 0;\nvar fTemp = 0;\nvar payload;\nvar o=msg.payload;\nvar bHeaterNeeded = false;\n//We get 3 kinds of input and trigger\n//Clock set valve by time \n//Temp A Outside Temp \n//HeaterNeeded Event if one of the local valve opens\n//The events set global variables, then the calculation logic determines the actual valve pos needed\n//\n//Clock sets a desired Valve Pos dependend on time it is stored. Ony if it \n//is 0 meant to switch off heating independend of heater needed the message\n//is forwarded to Valve.\n//temp only sets a global temp value for outdoor temp\n//heater needed close valve if no heater needed or open to valve position\n//set by Clock\n//msg payload is the valve position to set\n\nswitch (msg.topic){\n    case \"ClockValvePos\":\n        ClockPos = msg.payload;\n        flow.set(\"HeaterVentPos\",ClockPos);\n        break;\n    case \"Sensor1/fTempA\":\n        TempOut = msg.payload;\n        fTemp = Number(TempOut);\n        global.set(\"TempOut\",fTemp);\n        break;\n    case \"HeaterNeeded\":\n        bHeaterNeeded = msg.payload;\n        break;\n    default:\n    break;\n}\n//determine valve pos needed\n// always open if temp out less than -2 degrees\n// open if heater needed then use value set by clock\n// close otherwise\nif (global.get(\"TempOut\") <= '-2'){\n     msg.payload = '5' ;\n    } \nelse {\n    if (bHeaterNeeded == \"false\") msg.payload = '0' ;\n    else msg.payload = flow.get(\"HeaterVentPos\");\n}\n    return msg;\n ",
+        "func": "var TempOut = 11;\nvar ClockPos = 0;\nvar fTemp = 0;\nvar payload;\nvar o=msg.payload;\nvar bHeaterNeeded = false;\n//We get 3 kinds of input and trigger\n//Clock set valve by time \n//Temp A Outside Temp \n//HeaterNeeded Event if one of the local valve opens\n//The events set global variables, then the calculation logic determines the actual valve pos needed\n//\n//Clock sets a desired Valve Pos dependend on time it is stored. Ony if it \n//is 0 meant to switch off heating independend of heater needed the message\n//is forwarded to Valve.\n//temp only sets a global temp value for outdoor temp\n//heater needed close valve if no heater needed or open to valve position\n//set by Clock\n//msg payload is the valve position to set\nbHeaterNeeded = flow.get(\"HeaterNeeded\");\nswitch (msg.topic){\n    case \"ClockValvePos\":\n        ClockPos = msg.payload;\n        flow.set(\"HeaterVentPos\",ClockPos);\n        break;\n    case \"Sensor1/fTempA\":\n        TempOut = msg.payload;\n        fTemp = Number(TempOut);\n        global.set(\"TempOut\",fTemp);\n        break;\n    case \"HeaterNeeded\":\n        bHeaterNeeded = msg.payload;\n        flow.set(\"HeaterNeeded\",bHeaterNeeded);\n        break;\n    default:\n    break;\n}\n//determine valve pos needed\n// always open if temp out less than -2 degrees\n// open if heater needed then use value set by clock\n// close otherwise\n\nif (global.get(\"TempOut\") <= '-4'){\n     msg.payload = '5' ;\n     node.status({fill:\"white\",shape:\"ring\",text: \"ColdOutside\"});\n    } \nelse {\n\n    if (bHeaterNeeded == \"false\")\n    {\n        msg.payload = '0' ;\n        node.status({fill:\"blue\",shape:\"ring\",text: \"Heater not needed\"});\n    }\n    else \n    {\n        msg.payload = flow.get(\"HeaterVentPos\");\n        node.status({fill:\"red\",shape:\"ring\",text: \"Heater set to Clock Value\"});\n    }\n}\n    return msg;\n ",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 800,
-        "y": 1220,
+        "x": 460,
+        "y": 1120,
         "wires": [
             [
+                "17a551f9.bcd59e",
                 "fff7a262.d8778"
             ]
         ]
@@ -10446,7 +10378,7 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "Valve Calc V2.0",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -10454,8 +10386,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 820,
-        "y": 1360,
+        "x": 740,
+        "y": 1120,
         "wires": []
     },
     {
@@ -10468,14 +10400,14 @@
         "timeout": "5",
         "timeoutUnits": "seconds",
         "rate": "1",
-        "nbRateUnits": "2",
+        "nbRateUnits": "20",
         "rateUnits": "minute",
         "randomFirst": "1",
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": true,
-        "x": 620,
-        "y": 1360,
+        "x": 530,
+        "y": 1220,
         "wires": [
             [
                 "89b41e2e.59495"
