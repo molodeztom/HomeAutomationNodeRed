@@ -109,9 +109,7 @@
             "532bc566.df7b1c"
         ],
         "x": 14,
-        "y": 199,
-        "w": 812,
-        "h": 502
+        "y": 199
     },
     {
         "id": "7d3411b0.20fc7",
@@ -131,9 +129,7 @@
             "2a103049.f6a29"
         ],
         "x": 14,
-        "y": 39,
-        "w": 892,
-        "h": 142
+        "y": 39
     },
     {
         "id": "584f76f1.996908",
@@ -168,11 +164,13 @@
             "7a71ee5f.b5c6f",
             "3bd8ac1b.081bb4",
             "3ad0e3f6.35a08c",
-            "f5d3faae.391998"
+            "f5d3faae.391998",
+            "b0817e1.cd3198",
+            "f835ac14.29a9"
         ],
         "x": 14,
         "y": 19,
-        "w": 992,
+        "w": 1002,
         "h": 482
     },
     {
@@ -320,7 +318,9 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299
+        "y": 299,
+        "w": 992,
+        "h": 162
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -344,7 +344,9 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 752,
+        "h": 262
     },
     {
         "id": "b9a71c35.b8ccf",
@@ -366,9 +368,7 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 759,
-        "w": 852,
-        "h": 162
+        "y": 759
     },
     {
         "id": "40936a6d.e4bc64",
@@ -388,9 +388,7 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 599,
-        "w": 712,
-        "h": 142
+        "y": 599
     },
     {
         "id": "3644af6d.d42f6",
@@ -419,12 +417,11 @@
             "fa90773d.feded8",
             "33e7c443.634e4c",
             "562300c7.4b952",
-            "a75bf925.381958"
+            "a75bf925.381958",
+            "4f575270.86d46c"
         ],
         "x": 14,
-        "y": 19,
-        "w": 772,
-        "h": 522
+        "y": 19
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -445,9 +442,7 @@
             "52626602.a80e18"
         ],
         "x": 14,
-        "y": 939,
-        "w": 1072,
-        "h": 162
+        "y": 939
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -653,7 +648,9 @@
             "b8fc33.612c63d"
         ],
         "x": 34,
-        "y": 499
+        "y": 499,
+        "w": 1292,
+        "h": 302
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -682,12 +679,42 @@
             "6c8377f8.cdd248",
             "89b41e2e.59495",
             "fff7a262.d8778",
-            "59893d9f.a33394"
+            "59893d9f.a33394",
+            "bdbb365a.74cc18"
         ],
         "x": 44,
         "y": 719,
-        "w": 842,
+        "w": 852,
         "h": 642
+    },
+    {
+        "id": "48598788.77a428",
+        "type": "group",
+        "z": "303a8ac7.4ea1c6",
+        "name": "Esstischlampe",
+        "style": {
+            "fill": "#dbcbe7",
+            "label": true
+        },
+        "nodes": [
+            "d5fbe10f.cabbe",
+            "560b8c99.51d2e4",
+            "aba74db0.cc5fa",
+            "8a3241ff.1ce98",
+            "4b0e945f.2a447c",
+            "d4048c71.c6147",
+            "598dc7bf.230e78",
+            "1cdf209c.5f543f",
+            "8967db25.f1b4d8",
+            "8408ab6f.7b84f8",
+            "6ea779b5.a475f8",
+            "7f7def5a.ded76",
+            "b0938868.3c48e8"
+        ],
+        "x": 34,
+        "y": 819,
+        "w": 1172,
+        "h": 262
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -723,7 +750,9 @@
         "name": "HomeAutomation",
         "usetls": false,
         "tls": "",
-        "influxdbVersion": "1.x"
+        "influxdbVersion": "1.x",
+        "url": "",
+        "rejectUnauthorized": false
     },
     {
         "id": "9a5a8534.25d4d8",
@@ -1167,7 +1196,8 @@
         "y": 241,
         "wires": [
             [
-                "d47fd123.52af2"
+                "d47fd123.52af2",
+                "f835ac14.29a9"
             ]
         ],
         "info": "Switch je nach Topic \nund dann in Number wandeln "
@@ -1187,7 +1217,8 @@
         "y": 181,
         "wires": [
             [
-                "89c4be7a.d8218"
+                "89c4be7a.d8218",
+                "b0817e1.cd3198"
             ]
         ]
     },
@@ -3977,8 +4008,8 @@
         ],
         "sunControlMode": 16,
         "sunFloorLengthType": "num",
-        "sunFloorLength": "180",
-        "sunMinDelta": "5",
+        "sunFloorLength": "170",
+        "sunMinDelta": "10",
         "blindPosMin": "15",
         "blindPosMinType": "num",
         "blindPosMax": "open (max)",
@@ -4005,7 +4036,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "17",
+                "threshold": "14",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -4023,7 +4054,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "numAltitude",
-                "threshold": "60",
+                "threshold": "15",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -5021,7 +5052,7 @@
                 "importance": 0,
                 "time": {
                     "type": "pdsTime",
-                    "value": "sunsetStart",
+                    "value": "sunsetEnd",
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "num",
@@ -5037,7 +5068,7 @@
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Beginn</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:20<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
             },
             {
                 "index": 8,
@@ -5065,7 +5096,7 @@
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "num",
-                    "offset": "60",
+                    "offset": "",
                     "multiplier": 60000,
                     "days": "*",
                     "months": "*"
@@ -5079,17 +5110,17 @@
                 },
                 "timeMax": {
                     "type": "entered",
-                    "value": "22:00",
+                    "value": "21:30",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 01:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             }
         ],
         "sunControlMode": 16,
         "sunFloorLengthType": "num",
-        "sunFloorLength": "200",
+        "sunFloorLength": "140",
         "sunMinDelta": "10",
         "blindPosMin": "10%",
         "blindPosMinType": "levelFixed",
@@ -5117,7 +5148,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "20",
+                "threshold": "10",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -5135,7 +5166,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "numAltitude",
-                "threshold": "15",
+                "threshold": "10",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -5393,7 +5424,7 @@
         "blindPosDefaultType": "levelFixed",
         "slatPosDefault": "",
         "slatPosDefaultType": "none",
-        "overwriteExpire": "300000",
+        "overwriteExpire": "1200000",
         "rules": [
             {
                 "index": 0,
@@ -5524,37 +5555,6 @@
             },
             {
                 "index": 3,
-                "name": "starke Hitze",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [
-                    {
-                        "valueType": "global",
-                        "value": "TempOut",
-                        "operator": "gte",
-                        "operatorText": ">=",
-                        "thresholdType": "num",
-                        "threshold": "30"
-                    }
-                ],
-                "level": {
-                    "type": "levelFixed",
-                    "value": "closed (min)",
-                    "operator": 0,
-                    "operatorText": "↕  Absolut"
-                },
-                "slat": {
-                    "type": "none",
-                    "value": ""
-                },
-                "topic": "",
-                "resetOverwrite": false,
-                "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 30</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
-            },
-            {
-                "index": 4,
                 "name": "Hitze",
                 "version": 3,
                 "enabled": true,
@@ -5585,6 +5585,37 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 27</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
             },
             {
+                "index": 4,
+                "name": "starke Hitze",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "TempOut",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "30"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 30</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
                 "index": 5,
                 "name": "SonnenuntergangZu",
                 "version": 3,
@@ -5606,7 +5637,7 @@
                 "importance": 0,
                 "time": {
                     "type": "pdsTime",
-                    "value": "blueHourDuskStart",
+                    "value": "sunsetEnd",
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "num",
@@ -5624,12 +5655,12 @@
                 },
                 "timeMax": {
                     "type": "entered",
-                    "value": "22:00",
+                    "value": "21:30",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Blaue Abendstunde Beginn</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>22:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
             },
             {
                 "index": 6,
@@ -6163,9 +6194,9 @@
         ],
         "sunControlMode": "16",
         "sunFloorLengthType": "num",
-        "sunFloorLength": "200",
+        "sunFloorLength": "160",
         "sunMinDelta": "5",
-        "blindPosMin": "10%",
+        "blindPosMin": "25%",
         "blindPosMinType": "levelFixed",
         "blindPosMax": "open (max)",
         "blindPosMaxType": "levelFixed",
@@ -6191,7 +6222,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "20",
+                "threshold": "2",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -6209,7 +6240,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "numAltitude",
-                "threshold": "15",
+                "threshold": "10",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -6446,7 +6477,7 @@
         "z": "6f61cfd3.3d721",
         "g": "73d12632.94b388",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7344,8 +7375,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 440,
-        "y": 960,
+        "x": 460,
+        "y": 1540,
         "wires": [
             []
         ]
@@ -7369,8 +7400,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
-        "y": 1000,
+        "x": 480,
+        "y": 1580,
         "wires": [
             []
         ]
@@ -8056,7 +8087,7 @@
         "blindPosDefaultType": "levelFixed",
         "slatPosDefault": "",
         "slatPosDefaultType": "none",
-        "overwriteExpire": "1200000",
+        "overwriteExpire": "3600000",
         "rules": [
             {
                 "index": 0,
@@ -8831,8 +8862,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 480,
-        "y": 1060,
+        "x": 500,
+        "y": 1640,
         "wires": []
     },
     {
@@ -8847,8 +8878,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 440,
-        "y": 880,
+        "x": 450,
+        "y": 1500,
         "wires": []
     },
     {
@@ -8857,8 +8888,8 @@
         "z": "303a8ac7.4ea1c6",
         "device": "d3280bd.1460df8",
         "name": "",
-        "x": 210,
-        "y": 900,
+        "x": 200,
+        "y": 1500,
         "wires": [
             [
                 "a3233a67.d08488",
@@ -8876,8 +8907,8 @@
         "z": "303a8ac7.4ea1c6",
         "device": "d3280bd.1460df8",
         "name": "",
-        "x": 340,
-        "y": 1100,
+        "x": 360,
+        "y": 1680,
         "wires": [
             [
                 "61a158d3.55b2d8"
@@ -8896,8 +8927,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
-        "y": 1100,
+        "x": 600,
+        "y": 1680,
         "wires": []
     },
     {
@@ -8921,8 +8952,8 @@
         "topic": "",
         "payload": "token",
         "payloadType": "str",
-        "x": 180,
-        "y": 1060,
+        "x": 200,
+        "y": 1640,
         "wires": [
             [
                 "3d351ae2.a23b96"
@@ -8936,8 +8967,8 @@
         "device": "d3280bd.1460df8",
         "name": "",
         "key": "KEY_VOLUP",
-        "x": 410,
-        "y": 1200,
+        "x": 430,
+        "y": 1780,
         "wires": [
             []
         ]
@@ -8963,8 +8994,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
-        "y": 1220,
+        "x": 230,
+        "y": 1800,
         "wires": [
             [
                 "15f4f9aa.c1b956"
@@ -10301,7 +10332,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 340,
+        "x": 320,
         "y": 1220,
         "wires": [
             [
@@ -10400,7 +10431,7 @@
         "timeout": "5",
         "timeoutUnits": "seconds",
         "rate": "1",
-        "nbRateUnits": "20",
+        "nbRateUnits": "10",
         "rateUnits": "minute",
         "randomFirst": "1",
         "randomLast": "5",
@@ -10410,8 +10441,348 @@
         "y": 1220,
         "wires": [
             [
-                "89b41e2e.59495"
+                "89b41e2e.59495",
+                "bdbb365a.74cc18"
             ]
         ]
+    },
+    {
+        "id": "b0817e1.cd3198",
+        "type": "debug",
+        "z": "6f61cfd3.3d721",
+        "g": "584f76f1.996908",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "f835ac14.29a9",
+        "type": "debug",
+        "z": "6f61cfd3.3d721",
+        "g": "584f76f1.996908",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4f575270.86d46c",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "g": "3644af6d.d42f6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "2",
+        "payloadType": "num",
+        "x": 410,
+        "y": 460,
+        "wires": [
+            [
+                "64c0d9cf.dd5978"
+            ]
+        ]
+    },
+    {
+        "id": "bdbb365a.74cc18",
+        "type": "debug",
+        "z": "6f61cfd3.3d721",
+        "g": "5d7bb23e.6c04ec",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "d5fbe10f.cabbe",
+        "type": "mqtt in",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "Esstischlampe Status",
+        "topic": "shellies/Esstischlampe/light/0/status",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 160,
+        "y": 920,
+        "wires": [
+            [
+                "8a3241ff.1ce98"
+            ]
+        ]
+    },
+    {
+        "id": "560b8c99.51d2e4",
+        "type": "mqtt out",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "",
+        "topic": "shellies/Esstischlampe/light/0/set",
+        "qos": "",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 1040,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "aba74db0.cc5fa",
+        "type": "inject",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "Esstischlampe ON",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"brightness\":100,\"turn\":\"on\"}",
+        "payloadType": "json",
+        "x": 750,
+        "y": 860,
+        "wires": [
+            [
+                "560b8c99.51d2e4"
+            ]
+        ]
+    },
+    {
+        "id": "8a3241ff.1ce98",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "4b0e945f.2a447c",
+        "type": "inject",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "Esstischlampe OFF",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"brightness\":100,\"turn\":\"off\"}",
+        "payloadType": "json",
+        "x": 750,
+        "y": 900,
+        "wires": [
+            [
+                "560b8c99.51d2e4"
+            ]
+        ]
+    },
+    {
+        "id": "d4048c71.c6147",
+        "type": "mqtt in",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "",
+        "topic": "shellies/Wohnzimmerschalter/input_event/1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 220,
+        "y": 980,
+        "wires": [
+            [
+                "598dc7bf.230e78"
+            ]
+        ]
+    },
+    {
+        "id": "598dc7bf.230e78",
+        "type": "json",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 450,
+        "y": 980,
+        "wires": [
+            [
+                "1cdf209c.5f543f",
+                "b0938868.3c48e8"
+            ]
+        ]
+    },
+    {
+        "id": "1cdf209c.5f543f",
+        "type": "change",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.event",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 980,
+        "wires": [
+            [
+                "8967db25.f1b4d8"
+            ]
+        ]
+    },
+    {
+        "id": "8967db25.f1b4d8",
+        "type": "function",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "",
+        "func": "switch (msg.payload){\n    case \"S\":\n        msg.payload = \n        \n            {\n    \"brightness\": 100,\n    \"turn\": \"toggle\"\n}\n        break;\n    case \"SS\":\n        msg.payload = \n                {\n\n    \"brightness\": 50,\n    \"turn\": \"on\"\n                }\n        break;\n    case \"SSS\":\n        msg.payload = \n      {\n    \"brightness\": 20,\n    \"turn\": \"on\"\n\n}\n        break;\n    default:\n        msg.payload = \"anderes event\"\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 800,
+        "y": 980,
+        "wires": [
+            [
+                "560b8c99.51d2e4",
+                "8408ab6f.7b84f8"
+            ]
+        ]
+    },
+    {
+        "id": "8408ab6f.7b84f8",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "6ea779b5.a475f8",
+        "type": "mqtt in",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "",
+        "topic": "shellies/Esstischlampe/light/0/power",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 200,
+        "y": 860,
+        "wires": [
+            [
+                "7f7def5a.ded76"
+            ]
+        ]
+    },
+    {
+        "id": "7f7def5a.ded76",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "b0938868.3c48e8",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 1040,
+        "wires": []
     }
 ]
