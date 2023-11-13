@@ -42,6 +42,13 @@
         "info": ""
     },
     {
+        "id": "84f6241a.2bf668",
+        "type": "tab",
+        "label": "Shelly  Test",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "8c0dc70a.3a1008",
         "type": "tab",
         "label": "Spülmaschine",
@@ -109,7 +116,9 @@
             "532bc566.df7b1c"
         ],
         "x": 14,
-        "y": 199
+        "y": 199,
+        "w": 812,
+        "h": 502
     },
     {
         "id": "7d3411b0.20fc7",
@@ -129,7 +138,9 @@
             "2a103049.f6a29"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 892,
+        "h": 142
     },
     {
         "id": "584f76f1.996908",
@@ -169,9 +180,7 @@
             "f835ac14.29a9"
         ],
         "x": 14,
-        "y": 19,
-        "w": 1002,
-        "h": 482
+        "y": 19
     },
     {
         "id": "2f27dc68.9ff574",
@@ -190,9 +199,7 @@
             "64c76441.d5f36c"
         ],
         "x": 34,
-        "y": 519,
-        "w": 432,
-        "h": 142
+        "y": 519
     },
     {
         "id": "5c041b39.d836b4",
@@ -293,9 +300,7 @@
             "541cf4bd.ec76dc"
         ],
         "x": 494,
-        "y": 519,
-        "w": 572,
-        "h": 182
+        "y": 519
     },
     {
         "id": "1b82c7fb.e55448",
@@ -485,7 +490,7 @@
             "77bd98f3.c0e8c8"
         ],
         "x": 34,
-        "y": 1499,
+        "y": 1519,
         "w": 852,
         "h": 142
     },
@@ -683,9 +688,7 @@
             "bdbb365a.74cc18"
         ],
         "x": 44,
-        "y": 719,
-        "w": 852,
-        "h": 642
+        "y": 719
     },
     {
         "id": "48598788.77a428",
@@ -715,6 +718,35 @@
         "y": 819,
         "w": 1172,
         "h": 262
+    },
+    {
+        "id": "40f7136f.c806bc",
+        "type": "group",
+        "z": "7e5a345d.05161c",
+        "name": "Rollo Schlafzimmer",
+        "style": {
+            "fill": "#7fb7df",
+            "label": true,
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "485a5be0.812e94",
+            "f35a3142.8623c",
+            "eec0f371.5a3f3",
+            "571c071d.5ff3c8",
+            "28683cb0.557de4",
+            "24a92b79.3ccad4",
+            "3250db7c.bf4184",
+            "47b1e704.2b8a68",
+            "c25c352a.ce5a48",
+            "52f4f339.08914c",
+            "bdb4e967.1f53d8",
+            "75086919.4e5548"
+        ],
+        "x": 34,
+        "y": 1679,
+        "w": 1012,
+        "h": 302
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -974,6 +1006,27 @@
         "callback_url": "http://192.168.178.53:1880/homeconnect/auth/callback"
     },
     {
+        "id": "3ecd7f11.4d3dd",
+        "type": "mqtt-broker",
+        "name": "paul_broker",
+        "broker": "192.168.1.8",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
         "id": "49e2646f.c4941c",
         "type": "mqtt out",
         "z": "6f61cfd3.3d721",
@@ -1011,11 +1064,11 @@
         "z": "6f61cfd3.3d721",
         "g": "584f76f1.996908",
         "name": "",
-        "topic": "SensorLoc/+",
+        "topic": "Sensor0/+",
         "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
-        "x": 110,
+        "x": 100,
         "y": 61,
         "wires": [
             [
@@ -1247,7 +1300,7 @@
         "z": "6f61cfd3.3d721",
         "g": "584f76f1.996908",
         "name": "SensorLoc switch/convert",
-        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"SensorLoc/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n         return msg;\n    case \"SensorLoc/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"SensorLoc/iLight\":\n        msg.payload={\n            iLight: Number(msg.payload),\n        }\n        return msg;\n    case \"SensorLoc/fAtmo\":\n        msg.payload={\n            fAtmo: Number(msg.payload),\n        }\n        return msg;\n    case \"SensorLoc/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor0/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n         return msg;\n    case \"Sensor0/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor0/iLight\":\n        msg.payload={\n            iLight: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor0/iAtmo\":\n        msg.payload={\n            fAtmo: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor0/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1271,6 +1324,10 @@
         "measurement": "sSens1",
         "precision": "",
         "retentionPolicy": "",
+        "database": "",
+        "retentionPolicyV18Flux": "",
+        "org": "",
+        "bucket": "",
         "x": 870,
         "y": 140,
         "wires": []
@@ -2044,8 +2101,8 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "PrintControl.Timer",
-        "payload": "IdleTimeout",
+        "topic": "Printing",
+        "payload": "Status",
         "payloadType": "str",
         "x": 180,
         "y": 380,
@@ -3324,7 +3381,7 @@
         "z": "9963931.9232c7",
         "g": "b83af794.4bec68",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4054,7 +4111,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "numAltitude",
-                "threshold": "15",
+                "threshold": "12",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -5148,7 +5205,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "10",
+                "threshold": "15",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -5166,7 +5223,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "numAltitude",
-                "threshold": "10",
+                "threshold": "25",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -5617,6 +5674,48 @@
             },
             {
                 "index": 5,
+                "name": "Special Day Halloween",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "day.today.day",
+                        "operator": "equal",
+                        "operatorText": "=",
+                        "thresholdType": "num",
+                        "threshold": "31"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "33%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "entered",
+                    "value": "23:59",
+                    "operator": 0,
+                    "operatorText": "↥ bis",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.day</var> = 31</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>23:59</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div></div>"
+            },
+            {
+                "index": 6,
                 "name": "SonnenuntergangZu",
                 "version": 3,
                 "enabled": true,
@@ -5663,7 +5762,7 @@
                 "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
             },
             {
-                "index": 6,
+                "index": 7,
                 "name": "WochenendeGeschlossen",
                 "version": 3,
                 "enabled": true,
@@ -5705,7 +5804,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>21:45</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
-                "index": 7,
+                "index": 8,
                 "name": "WochentagGeschlossen",
                 "version": 3,
                 "enabled": true,
@@ -5816,8 +5915,8 @@
         "g": "c87697c7.9b9e58",
         "name": "ShutterPosition",
         "topic": "cmnd/RolloTuere/ShutterPosition",
-        "qos": "",
-        "retain": "",
+        "qos": "1",
+        "retain": "false",
         "broker": "19cf2a10.f9d4a6",
         "x": 880,
         "y": 1180,
@@ -5892,7 +5991,7 @@
         "g": "c1953c38.acea1",
         "name": "",
         "topic": "cmnd/RolloOlga/ShutterPosition",
-        "qos": "",
+        "qos": "1",
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
         "x": 730,
@@ -6222,7 +6321,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "2",
+                "threshold": "15",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -8371,7 +8470,7 @@
         "oversteers": [],
         "oversteerTopic": "",
         "x": 380,
-        "y": 1600,
+        "y": 1620,
         "wires": [
             [
                 "b9f43bc.ca86bc8",
@@ -8391,7 +8490,7 @@
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
         "x": 730,
-        "y": 1540,
+        "y": 1560,
         "wires": []
     },
     {
@@ -8450,7 +8549,8 @@
         "links": [
             "fbb3d4c7.4328d8",
             "f525cf20.f74e1",
-            "a0085f1f.0f307"
+            "a0085f1f.0f307",
+            "75086919.4e5548"
         ],
         "x": 555,
         "y": 420,
@@ -8493,7 +8593,7 @@
         "max": "100",
         "step": 1,
         "x": 410,
-        "y": 1540,
+        "y": 1560,
         "wires": [
             [
                 "b9f43bc.ca86bc8"
@@ -8511,7 +8611,7 @@
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
         "x": 170,
-        "y": 1540,
+        "y": 1560,
         "wires": [
             [
                 "29e92fc.65284d"
@@ -9500,7 +9600,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 670,
-        "y": 1600,
+        "y": 1620,
         "wires": []
     },
     {
@@ -10784,5 +10884,1165 @@
         "x": 610,
         "y": 1040,
         "wires": []
+    },
+    {
+        "id": "4ad6479.c8cc3b8",
+        "type": "mqtt in",
+        "z": "84f6241a.2bf668",
+        "name": "power readings",
+        "topic": "shellies/shelly1pm-BA1936/relay/0/power",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "3ecd7f11.4d3dd",
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "13fb1305.e290fd"
+            ]
+        ]
+    },
+    {
+        "id": "13fb1305.e290fd",
+        "type": "debug",
+        "z": "84f6241a.2bf668",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 510,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5c2ed097.9529b",
+        "type": "debug",
+        "z": "84f6241a.2bf668",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 700,
+        "y": 730,
+        "wires": []
+    },
+    {
+        "id": "abe24fc8.c374f",
+        "type": "comment",
+        "z": "84f6241a.2bf668",
+        "name": "flow to accumulate power readings",
+        "info": "",
+        "x": 350,
+        "y": 690,
+        "wires": []
+    },
+    {
+        "id": "f1974e0c.c5bde",
+        "type": "inject",
+        "z": "84f6241a.2bf668",
+        "name": "Clear",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "num",
+        "x": 389,
+        "y": 780,
+        "wires": [
+            [
+                "70dee9e2.463c68"
+            ]
+        ]
+    },
+    {
+        "id": "244f4b1.616beb4",
+        "type": "mqtt in",
+        "z": "84f6241a.2bf668",
+        "name": "Shelly - Energy",
+        "topic": "shellies/shelly1pm-BA1936/relay/0/energy",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "3ecd7f11.4d3dd",
+        "x": 290,
+        "y": 730,
+        "wires": [
+            [
+                "d0fc7a46.8e75a8"
+            ]
+        ]
+    },
+    {
+        "id": "d0fc7a46.8e75a8",
+        "type": "function",
+        "z": "84f6241a.2bf668",
+        "name": "Total Energy",
+        "func": "// Given current total energy from Shelly in msg.payload as a string\npayload = parseInt(msg.payload)\n// check that it has converted ok (so it is not not-a-number)\nif (!isNaN(payload)) {\n    let runningTotalEnergy = flow.get(\"runningTotalEnergy\") || 0\n    let previousShellyValue = flow.get(\"previousShellyValue\") || 0\n    // test whether the Shelly has reset since last input\n    if (payload < previousShellyValue) {\n        // yes it has, just add new value to the total\n        runningTotalEnergy += payload\n    } else {\n        // no so add the difference between this and last to the running total\n        runningTotalEnergy += payload - previousShellyValue\n    }\n    flow.set(\"previousShellyValue\", payload)\n    flow.set(\"runningTotalEnergy\",runningTotalEnergy)\n    // Convert watt/minutes to watt/hours\n    msg.payload = (runningTotalEnergy/60)\n} else {\n    // an illegal string passed in so ignore it, don't pass on anything\n    msg = null\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 730,
+        "wires": [
+            [
+                "5c2ed097.9529b"
+            ]
+        ]
+    },
+    {
+        "id": "c73eee2b.44d47",
+        "type": "mqtt in",
+        "z": "84f6241a.2bf668",
+        "name": "Shelly announcements",
+        "topic": "shellies/#",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "3ecd7f11.4d3dd",
+        "x": 320,
+        "y": 110,
+        "wires": [
+            [
+                "13fb1305.e290fd"
+            ]
+        ]
+    },
+    {
+        "id": "c2b8ddab.31cb4",
+        "type": "mqtt out",
+        "z": "84f6241a.2bf668",
+        "name": "",
+        "topic": "",
+        "qos": "2",
+        "retain": "false",
+        "broker": "3ecd7f11.4d3dd",
+        "x": 490,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "fee0bdf6.ce384",
+        "type": "inject",
+        "z": "84f6241a.2bf668",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "shellies/shelly1pm-BA1936/relay/0/command",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "c2b8ddab.31cb4"
+            ]
+        ]
+    },
+    {
+        "id": "7aeb348d.ebaa4c",
+        "type": "inject",
+        "z": "84f6241a.2bf668",
+        "name": "",
+        "repeat": "",
+        "crontab": "00 23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "shellies/shelly1pm-BA1936/relay/0/command",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 290,
+        "y": 300,
+        "wires": [
+            [
+                "c2b8ddab.31cb4"
+            ]
+        ]
+    },
+    {
+        "id": "4114738a.fe5d5c",
+        "type": "inject",
+        "z": "84f6241a.2bf668",
+        "name": "Report status",
+        "props": [
+            {
+                "p": "payload",
+                "v": "update",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "v": "shellies/command",
+                "vt": "string"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "shellies/command",
+        "payload": "update",
+        "payloadType": "str",
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "c2b8ddab.31cb4"
+            ]
+        ]
+    },
+    {
+        "id": "753c1c9e.1150c4",
+        "type": "inject",
+        "z": "84f6241a.2bf668",
+        "name": "ON",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 300,
+        "y": 540,
+        "wires": [
+            [
+                "e4e6cfa1.b88ea"
+            ]
+        ]
+    },
+    {
+        "id": "e4e6cfa1.b88ea",
+        "type": "function",
+        "z": "84f6241a.2bf668",
+        "name": "turn relay on/off",
+        "func": "var x = msg.payload;\nvar IP = \"192.168.1.22\";\nmsg.url= \"http://\"+ IP + \"/relay/0\";\n\nmsg.payload = \"turn=\" + x;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 560,
+        "wires": [
+            [
+                "cf4b0b9c.2e3788"
+            ]
+        ]
+    },
+    {
+        "id": "f73044cd.de8df8",
+        "type": "inject",
+        "z": "84f6241a.2bf668",
+        "name": "OFF",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 300,
+        "y": 580,
+        "wires": [
+            [
+                "e4e6cfa1.b88ea"
+            ]
+        ]
+    },
+    {
+        "id": "97ac4109.5ddb2",
+        "type": "function",
+        "z": "84f6241a.2bf668",
+        "name": "get device status",
+        "func": "\nvar IP = \"192.168.1.22\";\nmsg.url= \"http://\"+ IP + \"/status\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 550,
+        "y": 500,
+        "wires": [
+            [
+                "cf4b0b9c.2e3788"
+            ]
+        ]
+    },
+    {
+        "id": "36814aad.047cb6",
+        "type": "inject",
+        "z": "84f6241a.2bf668",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "97ac4109.5ddb2"
+            ]
+        ]
+    },
+    {
+        "id": "3434812a.ff7f9e",
+        "type": "function",
+        "z": "84f6241a.2bf668",
+        "name": "change mqtt update period",
+        "func": "var x = msg.payload;\nvar IP = \"192.168.1.22\";\nmsg.url= \"http://\"+ IP + \"/settings\";\n\nmsg.payload = \"mqtt_update_period=\" + x;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 580,
+        "y": 460,
+        "wires": [
+            [
+                "cf4b0b9c.2e3788"
+            ]
+        ]
+    },
+    {
+        "id": "cf4b0b9c.2e3788",
+        "type": "http request",
+        "z": "84f6241a.2bf668",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 800,
+        "y": 550,
+        "wires": [
+            [
+                "cf280268.e0c2a"
+            ]
+        ]
+    },
+    {
+        "id": "cf280268.e0c2a",
+        "type": "debug",
+        "z": "84f6241a.2bf668",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 990,
+        "y": 550,
+        "wires": []
+    },
+    {
+        "id": "f25f81e4.86b0a",
+        "type": "inject",
+        "z": "84f6241a.2bf668",
+        "name": "MQTT update period",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "300",
+        "payloadType": "num",
+        "x": 340,
+        "y": 460,
+        "wires": [
+            [
+                "3434812a.ff7f9e"
+            ]
+        ]
+    },
+    {
+        "id": "77129295.530c9c",
+        "type": "comment",
+        "z": "84f6241a.2bf668",
+        "name": "http requests",
+        "info": "",
+        "x": 290,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "f717b6e4.beb698",
+        "type": "mqtt in",
+        "z": "84f6241a.2bf668",
+        "name": "Relay status",
+        "topic": "shellies/shelly1pm-BA1936/relay/0",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "3ecd7f11.4d3dd",
+        "x": 290,
+        "y": 210,
+        "wires": [
+            [
+                "13fb1305.e290fd"
+            ]
+        ]
+    },
+    {
+        "id": "70dee9e2.463c68",
+        "type": "change",
+        "z": "84f6241a.2bf668",
+        "name": "Reset energy counter",
+        "rules": [
+            {
+                "t": "set",
+                "p": "runningTotalEnergy",
+                "pt": "flow",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9087142f.0b8a88",
+        "type": "function",
+        "z": "84f6241a.2bf668",
+        "name": "reboot device",
+        "func": "var IP = \"192.168.1.22\";\nmsg.url= \"http://\"+ IP + \"/reboot\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 620,
+        "wires": [
+            [
+                "cf4b0b9c.2e3788"
+            ]
+        ]
+    },
+    {
+        "id": "61fdbcd.868c344",
+        "type": "inject",
+        "z": "84f6241a.2bf668",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 300,
+        "y": 620,
+        "wires": [
+            [
+                "9087142f.0b8a88"
+            ]
+        ]
+    },
+    {
+        "id": "eb2a8afb.78f218",
+        "type": "comment",
+        "z": "84f6241a.2bf668",
+        "name": "mqtt",
+        "info": "",
+        "x": 270,
+        "y": 70,
+        "wires": []
+    },
+    {
+        "id": "485a5be0.812e94",
+        "type": "mqtt out",
+        "z": "7e5a345d.05161c",
+        "g": "40f7136f.c806bc",
+        "name": "Rollo Schlafzimmer",
+        "topic": "RolloSchlafzimmer/command/cover:0",
+        "qos": "",
+        "retain": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 870,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "f35a3142.8623c",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "g": "40f7136f.c806bc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "eec0f371.5a3f3",
+        "type": "blind-control",
+        "z": "7e5a345d.05161c",
+        "g": "40f7136f.c806bc",
+        "name": "RolloSchlafzimmer",
+        "topic": "",
+        "addIdType": "none",
+        "addId": "",
+        "positionConfig": "9a5a8534.25d4d8",
+        "autoTrigger": true,
+        "autoTriggerTime": 3600000,
+        "startDelayTime": 10000,
+        "contextStore": "",
+        "results": [
+            {
+                "p": "",
+                "pt": "msgTopic",
+                "v": "",
+                "vt": "topic"
+            },
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "pos,${level}",
+                "vt": "strPlaceholder"
+            },
+            {
+                "p": "slat",
+                "pt": "msg",
+                "v": "",
+                "vt": "slat"
+            },
+            {
+                "p": "blindCtrl",
+                "pt": "msg",
+                "v": "",
+                "vt": "ctrlObj"
+            }
+        ],
+        "blindIncrement": "1",
+        "blindOpenPos": "100",
+        "blindClosedPos": 0,
+        "blindPosReverse": false,
+        "blindPosDefault": "open (max)",
+        "blindPosDefaultType": "levelFixed",
+        "slatPosDefault": "",
+        "slatPosDefaultType": "none",
+        "overwriteExpire": "30000",
+        "rules": [
+            {
+                "index": 0,
+                "name": "Sonnenaufgang",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "pdsTime",
+                    "value": "blueHourDawnEnd",
+                    "operator": 0,
+                    "operatorText": "↥ bis",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "timeMin": {
+                    "type": "entered",
+                    "value": "6:30",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000
+                },
+                "timeMax": {
+                    "type": "entered",
+                    "value": "9:00",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Blaue Morgenstunde Ende</var><div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 1,
+                "name": "FrühFastOffen",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "66%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "entered",
+                    "value": "8:00",
+                    "operator": 0,
+                    "operatorText": "↥ bis",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>8:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>66%</var></div></div>"
+            },
+            {
+                "index": 2,
+                "name": "Hitze",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "TempOut",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "24"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "33%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "Hitze",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 24</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Hitze</var></div></div>"
+            },
+            {
+                "index": 3,
+                "name": "Wetter starke Hitze",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "TempOut",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "29"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 29</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 4,
+                "name": "Wetter Regen",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "msg",
+                        "value": "WeatherID",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "502"
+                    },
+                    {
+                        "condition": 2,
+                        "conditionText": "und",
+                        "valueType": "msg",
+                        "value": "WeatherID",
+                        "operator": "lt",
+                        "operatorText": "<",
+                        "thresholdType": "num",
+                        "threshold": "504"
+                    },
+                    {
+                        "condition": 1,
+                        "conditionText": "oder",
+                        "valueType": "msg",
+                        "value": "WeatherID",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "522"
+                    },
+                    {
+                        "condition": 2,
+                        "conditionText": "und",
+                        "valueType": "msg",
+                        "value": "WeatherID",
+                        "operator": "lt",
+                        "operatorText": "<",
+                        "thresholdType": "num",
+                        "threshold": "600"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "33%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "Weather Rain Condition",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 502&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> < 504&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 522&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 600&nbsp;))</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Rain Condition</var></div></div>"
+            },
+            {
+                "index": 5,
+                "name": "Wetter Gewitter",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "msg",
+                        "value": "WeatherID",
+                        "operator": "equal",
+                        "operatorText": "=",
+                        "thresholdType": "num",
+                        "threshold": "202"
+                    },
+                    {
+                        "condition": 1,
+                        "conditionText": "oder",
+                        "valueType": "msg",
+                        "value": "WeatherID",
+                        "operator": "gte",
+                        "operatorText": ">=",
+                        "thresholdType": "num",
+                        "threshold": "212"
+                    },
+                    {
+                        "condition": 2,
+                        "conditionText": "und",
+                        "valueType": "msg",
+                        "value": "WeatherID",
+                        "operator": "lt",
+                        "operatorText": "<",
+                        "thresholdType": "num",
+                        "threshold": "230"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "25%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "Weather Thunderstorm Condition",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> = 202&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 212&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 230&nbsp;)</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Thunderstorm Condition</var></div></div>"
+            },
+            {
+                "index": 6,
+                "name": "Abends Fast zu",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "66%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "pdsTime",
+                    "value": "sunsetEnd",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>66%</var></div></div>"
+            },
+            {
+                "index": 7,
+                "name": "Schlafenszeit Zu",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "entered",
+                    "value": "22:30",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:30</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            }
+        ],
+        "sunControlMode": "16",
+        "sunFloorLengthType": "num",
+        "sunFloorLength": "140",
+        "sunMinDelta": "10",
+        "blindPosMin": "10%",
+        "blindPosMinType": "levelFixed",
+        "blindPosMax": "open (max)",
+        "blindPosMaxType": "levelFixed",
+        "blindOpenPosOffset": 0,
+        "blindClosedPosOffset": 0,
+        "sunSlat": "",
+        "sunSlatType": "none",
+        "smoothTime": "",
+        "sunTopic": "SunShading",
+        "windowTopType": "num",
+        "windowTop": "205",
+        "windowBottomType": "num",
+        "windowBottom": "100",
+        "windowAzimuthStartType": "numAzimuth",
+        "windowAzimuthStart": "204",
+        "windowAzimuthEndType": "numAzimuth",
+        "windowAzimuthEnd": "274",
+        "oversteers": [
+            {
+                "mode": 0,
+                "valueType": "global",
+                "value": "TempOut",
+                "operator": "lt",
+                "operatorText": "<",
+                "thresholdType": "num",
+                "threshold": "0",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            },
+            {
+                "mode": 0,
+                "valueType": "pdsCalcElevation",
+                "value": "",
+                "operator": "lt",
+                "operatorText": "<",
+                "thresholdType": "numAltitude",
+                "threshold": "10",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            },
+            {
+                "mode": 0,
+                "valueType": "msg",
+                "value": "clouds",
+                "operator": "gte",
+                "operatorText": ">=",
+                "thresholdType": "num",
+                "threshold": "25",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            }
+        ],
+        "oversteerTopic": "CloudsOverwrite",
+        "x": 390,
+        "y": 1900,
+        "wires": [
+            [
+                "f35a3142.8623c",
+                "485a5be0.812e94",
+                "bdb4e967.1f53d8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "571c071d.5ff3c8",
+        "type": "ui_slider",
+        "z": "7e5a345d.05161c",
+        "g": "40f7136f.c806bc",
+        "name": "Rollo Schlafzimmer Position",
+        "label": "Schlafzimmer",
+        "tooltip": "",
+        "group": "13a03688.c43e99",
+        "order": 10,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "outs": "end",
+        "topic": "command/pos",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 900,
+        "y": 1780,
+        "wires": [
+            [
+                "28683cb0.557de4"
+            ]
+        ]
+    },
+    {
+        "id": "28683cb0.557de4",
+        "type": "function",
+        "z": "7e5a345d.05161c",
+        "g": "40f7136f.c806bc",
+        "name": "combine msg",
+        "func": "//create string with command and value\n//V0.1\nvar command = \"pos,\"\nvar value = msg.payload\nvar output= \"empty\"\nmsg.topic = \"topic\"\noutput = command + value\nmsg.payload = output\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 370,
+        "y": 1840,
+        "wires": [
+            [
+                "485a5be0.812e94"
+            ]
+        ]
+    },
+    {
+        "id": "24a92b79.3ccad4",
+        "type": "mqtt in",
+        "z": "7e5a345d.05161c",
+        "g": "40f7136f.c806bc",
+        "name": "",
+        "topic": "RolloSchlafzimmer/events/rpc",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 180,
+        "y": 1780,
+        "wires": [
+            [
+                "47b1e704.2b8a68"
+            ]
+        ]
+    },
+    {
+        "id": "3250db7c.bf4184",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "g": "40f7136f.c806bc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "47b1e704.2b8a68",
+        "type": "json",
+        "z": "7e5a345d.05161c",
+        "g": "40f7136f.c806bc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 370,
+        "y": 1780,
+        "wires": [
+            [
+                "c25c352a.ce5a48"
+            ]
+        ]
+    },
+    {
+        "id": "c25c352a.ce5a48",
+        "type": "change",
+        "z": "7e5a345d.05161c",
+        "g": "40f7136f.c806bc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.params.cover:0.current_pos",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 1780,
+        "wires": [
+            [
+                "52f4f339.08914c"
+            ]
+        ]
+    },
+    {
+        "id": "52f4f339.08914c",
+        "type": "switch",
+        "z": "7e5a345d.05161c",
+        "g": "40f7136f.c806bc",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 1780,
+        "wires": [
+            [
+                "3250db7c.bf4184",
+                "571c071d.5ff3c8"
+            ]
+        ]
+    },
+    {
+        "id": "bdb4e967.1f53d8",
+        "type": "ui_text",
+        "z": "7e5a345d.05161c",
+        "g": "40f7136f.c806bc",
+        "group": "13a03688.c43e99",
+        "order": 11,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Status Schlafzimmer",
+        "format": "{{msg.blindCtrl.reason.description}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 880,
+        "y": 1900,
+        "wires": []
+    },
+    {
+        "id": "75086919.4e5548",
+        "type": "link in",
+        "z": "7e5a345d.05161c",
+        "g": "40f7136f.c806bc",
+        "name": "WeatherID",
+        "links": [
+            "f69a51fd.3a899"
+        ],
+        "x": 215,
+        "y": 1900,
+        "wires": [
+            [
+                "eec0f371.5a3f3"
+            ]
+        ]
     }
 ]
