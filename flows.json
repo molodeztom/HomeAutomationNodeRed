@@ -227,9 +227,7 @@
             "a30d9009.4e13b"
         ],
         "x": 54,
-        "y": -1,
-        "w": 1182,
-        "h": 502
+        "y": -1
     },
     {
         "id": "18ca9346.bdbedd",
@@ -273,9 +271,7 @@
             "61b9f71.7b9bb08"
         ],
         "x": 54,
-        "y": 516.5,
-        "w": 1652,
-        "h": 604.5
+        "y": 516.5
     },
     {
         "id": "73d12632.94b388",
@@ -5137,7 +5133,7 @@
                 "importance": 0,
                 "time": {
                     "type": "pdsTime",
-                    "value": "sunsetEnd",
+                    "value": "civilDusk",
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "num",
@@ -5160,7 +5156,7 @@
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>bürgerliche Abenddämmerung</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             }
         ],
         "sunControlMode": 16,
@@ -5724,7 +5720,7 @@
                 "importance": 0,
                 "time": {
                     "type": "pdsTime",
-                    "value": "sunsetEnd",
+                    "value": "blueHourDuskStart",
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "num",
@@ -5747,7 +5743,7 @@
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Blaue Abendstunde Beginn</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>16:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
             },
             {
                 "index": 7,
@@ -6100,11 +6096,11 @@
                 "importance": 0,
                 "time": {
                     "type": "pdsTime",
-                    "value": "sunriseStart",
+                    "value": "civilDawn",
                     "operator": 0,
                     "operatorText": "↥ bis",
-                    "offsetType": "num",
-                    "offset": "10",
+                    "offsetType": "none",
+                    "offset": "",
                     "multiplier": 60000,
                     "days": "*",
                     "months": "*"
@@ -6123,7 +6119,7 @@
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Beginn</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div><div class=\"indent-resetOverwrite-text\"> <i class=\"fa fa-thumbs-o-down\" aria-hidden=\"true\"></i><span>manuelle Überschreibung verfällt wenn die Regel aktiv wird</span> </div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>bürgerliche Morgendämmerung</var><div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div><div class=\"indent-resetOverwrite-text\"> <i class=\"fa fa-thumbs-o-down\" aria-hidden=\"true\"></i><span>manuelle Überschreibung verfällt wenn die Regel aktiv wird</span> </div></div>"
             },
             {
                 "index": 2,
@@ -8247,11 +8243,11 @@
                 "importance": 0,
                 "time": {
                     "type": "pdsTime",
-                    "value": "goldenHourDawnStart",
+                    "value": "civilDawn",
                     "operator": 0,
                     "operatorText": "↥ bis",
                     "offsetType": "num",
-                    "offset": "10",
+                    "offset": "1",
                     "multiplier": 60000,
                     "days": "*",
                     "months": "*"
@@ -8270,7 +8266,7 @@
                     "offset": "30",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Goldene Morgenstunde Beginn</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var> offset <var>zufällig (täglich) bis 30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>bürgerliche Morgendämmerung</var> + 00:01<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var> offset <var>zufällig (täglich) bis 30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
                 "index": 2,
@@ -11436,7 +11432,49 @@
         "rules": [
             {
                 "index": 0,
-                "name": "Sonnenaufgang",
+                "name": "HolidayWeekend",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "day.today.isWeekendOrHoliday",
+                        "operator": "true",
+                        "operatorText": "ist true",
+                        "thresholdType": "num",
+                        "threshold": 0
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "entered",
+                    "value": "7:30",
+                    "operator": 0,
+                    "operatorText": "↥ bis",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>7:30</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 1,
+                "name": "SonAufgAuf",
                 "version": 3,
                 "enabled": true,
                 "isValid": true,
@@ -11456,7 +11494,7 @@
                 "importance": 0,
                 "time": {
                     "type": "pdsTime",
-                    "value": "blueHourDawnEnd",
+                    "value": "blueHourDawnStart",
                     "operator": 0,
                     "operatorText": "↥ bis",
                     "offsetType": "none",
@@ -11479,10 +11517,10 @@
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Blaue Morgenstunde Ende</var><div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Blaue Morgenstunde Beginn</var><div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:30</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
-                "index": 1,
+                "index": 2,
                 "name": "FrühFastOffen",
                 "version": 3,
                 "enabled": true,
@@ -11503,7 +11541,7 @@
                 "importance": 0,
                 "time": {
                     "type": "entered",
-                    "value": "8:00",
+                    "value": "7:00",
                     "operator": 0,
                     "operatorText": "↥ bis",
                     "offsetType": "none",
@@ -11512,10 +11550,10 @@
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>8:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>66%</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>7:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>66%</var></div></div>"
             },
             {
-                "index": 2,
+                "index": 3,
                 "name": "Hitze",
                 "version": 3,
                 "enabled": true,
@@ -11546,8 +11584,8 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 24</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Hitze</var></div></div>"
             },
             {
-                "index": 3,
-                "name": "Wetter starke Hitze",
+                "index": 4,
+                "name": "Starke Hitze",
                 "version": 3,
                 "enabled": true,
                 "isValid": true,
@@ -11577,7 +11615,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 29</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
-                "index": 4,
+                "index": 5,
                 "name": "Wetter Regen",
                 "version": 3,
                 "enabled": true,
@@ -11638,7 +11676,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> >= 502&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> < 504&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 522&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 600&nbsp;))</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>33%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Rain Condition</var></div></div>"
             },
             {
-                "index": 5,
+                "index": 6,
                 "name": "Wetter Gewitter",
                 "version": 3,
                 "enabled": true,
@@ -11689,7 +11727,7 @@
                 "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>msg.WeatherID</var> = 202&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span>(&nbsp;<var>msg.WeatherID</var> >= 212&nbsp;<strong>und</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>msg.WeatherID</var> < 230&nbsp;)</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div><div class=\"indent-topic-text\"> <i class=\"fa fa-tasks\" aria-hidden=\"true\"></i><span>Topic: </span> <var>Weather Thunderstorm Condition</var></div></div>"
             },
             {
-                "index": 6,
+                "index": 7,
                 "name": "Abends Fast zu",
                 "version": 3,
                 "enabled": true,
@@ -11722,7 +11760,40 @@
                 "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>66%</var></div></div>"
             },
             {
-                "index": 7,
+                "index": 8,
+                "name": "Abends Minimal",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "25%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "entered",
+                    "value": "20:00",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>20:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>25%</var></div></div>"
+            },
+            {
+                "index": 9,
                 "name": "Schlafenszeit Zu",
                 "version": 3,
                 "enabled": true,
@@ -11757,10 +11828,10 @@
         ],
         "sunControlMode": "16",
         "sunFloorLengthType": "num",
-        "sunFloorLength": "140",
+        "sunFloorLength": "170",
         "sunMinDelta": "10",
-        "blindPosMin": "10%",
-        "blindPosMinType": "levelFixed",
+        "blindPosMin": "15",
+        "blindPosMinType": "num",
         "blindPosMax": "open (max)",
         "blindPosMaxType": "levelFixed",
         "blindOpenPosOffset": 0,
@@ -11803,7 +11874,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "numAltitude",
-                "threshold": "10",
+                "threshold": "12",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -11821,7 +11892,7 @@
                 "operator": "gte",
                 "operatorText": ">=",
                 "thresholdType": "num",
-                "threshold": "25",
+                "threshold": "15",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
