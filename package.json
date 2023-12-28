@@ -2,7 +2,9 @@
     "name": "HomeAutomationNodeRed",
     "description": "NodeRed",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-contrib-homeconnect": "0.6.7"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows.json",

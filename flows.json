@@ -69,7 +69,7 @@
         "id": "8c0dc70a.3a1008",
         "type": "tab",
         "label": "Spülmaschine",
-        "disabled": true,
+        "disabled": false,
         "info": ""
     },
     {
@@ -141,7 +141,9 @@
             "532bc566.df7b1c"
         ],
         "x": 14,
-        "y": 199
+        "y": 199,
+        "w": 812,
+        "h": 502
     },
     {
         "id": "7d3411b0.20fc7",
@@ -161,7 +163,9 @@
             "2a103049.f6a29"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 892,
+        "h": 142
     },
     {
         "id": "584f76f1.996908",
@@ -252,7 +256,9 @@
             "a30d9009.4e13b"
         ],
         "x": 54,
-        "y": -1
+        "y": -1,
+        "w": 1182,
+        "h": 502
     },
     {
         "id": "18ca9346.bdbedd",
@@ -296,7 +302,9 @@
             "61b9f71.7b9bb08"
         ],
         "x": 54,
-        "y": 516.5
+        "y": 516.5,
+        "w": 1652,
+        "h": 604.5
     },
     {
         "id": "73d12632.94b388",
@@ -340,9 +348,7 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299,
-        "w": 992,
-        "h": 162
+        "y": 299
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -366,9 +372,7 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19,
-        "w": 752,
-        "h": 262
+        "y": 19
     },
     {
         "id": "b9a71c35.b8ccf",
@@ -656,9 +660,7 @@
             "b8fc33.612c63d"
         ],
         "x": 34,
-        "y": 499,
-        "w": 1292,
-        "h": 302
+        "y": 499
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -718,9 +720,7 @@
             "b0938868.3c48e8"
         ],
         "x": 34,
-        "y": 819,
-        "w": 1172,
-        "h": 262
+        "y": 819
     },
     {
         "id": "40f7136f.c806bc",
@@ -813,9 +813,7 @@
             "28e6fe851aacfbc8"
         ],
         "x": 34,
-        "y": 19,
-        "w": 492,
-        "h": 202
+        "y": 19
     },
     {
         "id": "0ac5cf038e9b4a0e",
@@ -839,9 +837,7 @@
             "831d57d5654c60ee"
         ],
         "x": 34,
-        "y": 239,
-        "w": 672,
-        "h": 242
+        "y": 239
     },
     {
         "id": "32340ff2f48f54cf",
@@ -865,9 +861,7 @@
             "aa807b1b18ee51ae"
         ],
         "x": 34,
-        "y": 519,
-        "w": 672,
-        "h": 242
+        "y": 519
     },
     {
         "id": "4b345f34f7b4d8e1",
@@ -1150,7 +1144,7 @@
         "type": "home-connect-auth",
         "name": "molodez_tom",
         "simulation_mode": false,
-        "scope": "Monitor",
+        "scope": "IdentifyAppliance",
         "callback_url": "http://192.168.178.53:1880/homeconnect/auth/callback"
     },
     {
@@ -4856,7 +4850,7 @@
         "z": "9963931.9232c7",
         "g": "7d3411b0.20fc7",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -10843,8 +10837,8 @@
         "bot": "79ccd59a.7479ec",
         "haserroroutput": true,
         "outputs": 2,
-        "x": 1120,
-        "y": 140,
+        "x": 1100,
+        "y": 200,
         "wires": [
             [],
             [
@@ -10885,7 +10879,7 @@
         "wires": [
             [
                 "86ac8dbeca355315",
-                "02f7bf0d7785e028"
+                "58bdb4f17f5f1ec7"
             ]
         ]
     },
@@ -10902,7 +10896,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 380,
-        "y": 140,
+        "y": 200,
         "wires": []
     },
     {
@@ -10914,7 +10908,7 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "lt",
+                "t": "lte",
                 "v": "16",
                 "vt": "num"
             }
@@ -10922,12 +10916,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 590,
+        "x": 410,
         "y": 80,
         "wires": [
             [
                 "c94789d46afeca1b",
-                "f962b9f4bdf4c34e",
                 "12ddd5a448fd65b2"
             ]
         ]
@@ -10950,57 +10943,7 @@
         "payload": "5",
         "payloadType": "num",
         "x": 570,
-        "y": 140,
-        "wires": [
-            [
-                "58bdb4f17f5f1ec7"
-            ]
-        ]
-    },
-    {
-        "id": "6dc6ea7fd6f50acd",
-        "type": "inject",
-        "z": "abede211eec6d1b4",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "17",
-        "payloadType": "num",
-        "x": 570,
-        "y": 180,
-        "wires": [
-            [
-                "58bdb4f17f5f1ec7"
-            ]
-        ]
-    },
-    {
-        "id": "72493ceff5a8748b",
-        "type": "inject",
-        "z": "abede211eec6d1b4",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "20",
-        "payloadType": "num",
-        "x": 570,
-        "y": 220,
+        "y": 200,
         "wires": [
             [
                 "58bdb4f17f5f1ec7"
@@ -11015,8 +10958,8 @@
         "links": [
             "e0160b9e060c6bab"
         ],
-        "x": 45,
-        "y": 200,
+        "x": 65,
+        "y": 380,
         "wires": [
             [
                 "3b1c3a9ecc5904c8"
@@ -11042,8 +10985,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 220,
-        "y": 200,
+        "x": 240,
+        "y": 380,
         "wires": [
             []
         ]
@@ -11067,12 +11010,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 940,
+        "x": 780,
         "y": 80,
         "wires": [
             [
-                "4550d5755f71c3fe",
-                "cf056c38a8bb417e"
+                "cf056c38a8bb417e",
+                "02f7bf0d7785e028"
             ]
         ]
     },
@@ -11091,7 +11034,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 760,
+        "x": 600,
         "y": 80,
         "wires": [
             [
@@ -11108,7 +11051,7 @@
         "timeout": "5",
         "timeoutUnits": "seconds",
         "rate": "1",
-        "nbRateUnits": "10",
+        "nbRateUnits": "5",
         "rateUnits": "minute",
         "randomFirst": "1",
         "randomLast": "5",
@@ -11116,11 +11059,11 @@
         "drop": true,
         "allowrate": false,
         "outputs": 1,
-        "x": 400,
+        "x": 980,
         "y": 80,
         "wires": [
             [
-                "58bdb4f17f5f1ec7"
+                "4550d5755f71c3fe"
             ]
         ]
     },
@@ -11136,8 +11079,8 @@
         "initialize": "// Code added here will be run once\n",
         "finalize": "",
         "libs": [],
-        "x": 930,
-        "y": 140,
+        "x": 870,
+        "y": 200,
         "wires": [
             [
                 "48b61167428abd17"
@@ -11149,22 +11092,22 @@
         "type": "debug",
         "z": "abede211eec6d1b4",
         "name": "debug 20",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 760,
-        "y": 220,
+        "x": 580,
+        "y": 20,
         "wires": []
     },
     {
-        "id": "f962b9f4bdf4c34e",
+        "id": "cf056c38a8bb417e",
         "type": "debug",
         "z": "abede211eec6d1b4",
-        "name": "debug 21",
+        "name": "debug 22",
         "active": false,
         "tosidebar": true,
         "console": false,
@@ -11173,23 +11116,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 960,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "cf056c38a8bb417e",
-        "type": "debug",
-        "z": "abede211eec6d1b4",
-        "name": "debug 22",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1140,
-        "y": 220,
+        "y": 20,
         "wires": []
     },
     {
@@ -11197,15 +11124,15 @@
         "type": "debug",
         "z": "abede211eec6d1b4",
         "name": "debug 28",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1140,
-        "y": 60,
+        "x": 1160,
+        "y": 140,
         "wires": []
     },
     {
@@ -12511,9 +12438,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "APower",
-        "payload": "15",
+        "payload": "17.1",
         "payloadType": "str",
-        "x": 260,
+        "x": 270,
         "y": 620,
         "wires": [
             [
@@ -12642,7 +12569,7 @@
         "type": "function",
         "z": "fd2d363b540d07e3",
         "name": "function 3",
-        "func": "var WPower1 = flow.get(\"WPower1\", \"memoryOnly\");\nvar WPower2 = flow.get(\"WPower2\", \"memoryOnly\");\nvar WPower3 = flow.get(\"WPower3\", \"memoryOnly\");\nvar sStatus = flow.get(\"WStatus\",\"memoryOnly\");\nvar WOff = 0;\nvar WOn = 5;\nvar WEinsp = 50;\nvar WWash = 70;\nvar WHeiz = 1500;\n\n//Off On\nif((WPower1 > WOn)&& (WPower1 < WEinsp)&& (sStatus == \"OFF\") ) \n{\n    sStatus = \"ON\";\n      node.status({fill:\"green\",shape:\"ring\",text: sStatus});\n}\n//Einspuelen\nif((WPower1 > WEinsp)&& (WPower1 < WWash)&& (sStatus == \"ON\") ) \n{\nsStatus = \"EINSP\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"EINSP\"});\n}\n//Heizen und Waschen\nif((WPower1 > WHeiz) ) \n{\nsStatus = \"HEIZ\";\nnode.status({fill:\"red\",shape:\"ring\",text: \"HEIZ\"});\n}\n//Waschen\nif( (WPower1 > 95 )\n && (WPower1 < 1500)\n && ((sStatus == \"HEIZ\")|| (sStatus == \"SCHLEUD\")|| (sStatus == \"EINSP\"))\n) \n{\nsStatus = \"WASH\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"WASH\"});\n}\n//Schleudern\nif((WPower1 > 150 )&& (WPower1 < 300)&& (WPower1 > WPower2) && (WPower2 > WPower3) && (sStatus == \"WASH\") ) \n{\nsStatus = \"SCHLEUD\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"SCHLEUD\"});\n}\n//Ende\nif(  (WPower1 < 8) && (WPower1 > 5)\n  && (WPower2 < 8) && (WPower2 >5)\n  && (WPower3 < 20) && (WPower3 >9)    \n  && ((sStatus == \"SCHLEUD\")|| (sStatus == \"WASH\"))\n   ) \n{\nsStatus = \"ENDE\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"ENDE\"});\n}\n//Off\nif(  (WPower1 < 4)\n  && (WPower2 < 4)\n  && (WPower3 < 4) \n  && (sStatus == \"ENDE\") ) \n{\nsStatus = \"OFF\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"Off\"});\n}\nmsg.Status = sStatus;\nmsg.WPower1 = WPower1;\nmsg.WPower2 = WPower2;\nmsg.WPower3 = WPower3;\nflow.set(\"WStatus\", sStatus);\nreturn msg;",
+        "func": "var WPower1 = flow.get(\"WPower1\", \"memoryOnly\");\nvar WPower2 = flow.get(\"WPower2\", \"memoryOnly\");\nvar WPower3 = flow.get(\"WPower3\", \"memoryOnly\");\nvar sStatus = flow.get(\"WStatus\",\"memoryOnly\");\nvar WOff = 0;\nvar WOn = 5;\nvar WEinsp = 35;\nvar WWash = 40;\nvar WHeiz = 1500;\n\n//Off On\nif((WPower1 > WOn)&& (WPower1 < WEinsp)&& (sStatus == \"OFF\") ) \n{\n    sStatus = \"ON\";\n      node.status({fill:\"green\",shape:\"ring\",text: sStatus});\n}\n//Einspuelen\nif((WPower1 > WEinsp)&& (WPower1 < WWash)&& (sStatus == \"ON\") ) \n{\nsStatus = \"EINSP\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"EINSP\"});\n}\n//Heizen und Waschen\nif((WPower1 > WHeiz) ) \n{\nsStatus = \"HEIZ\";\nnode.status({fill:\"red\",shape:\"ring\",text: \"HEIZ\"});\n}\n//Waschen\nif( (WPower1 > 95 )\n && (WPower1 < 150)\n && ((sStatus == \"HEIZ\")|| (sStatus == \"SCHLEUD\")|| (sStatus == \"EINSP\"))\n) \n{\nsStatus = \"WASH\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"WASH\"});\n}\n//Schleudern\nif((WPower1 > 150 )&& (WPower1 < 700)&& (WPower1 > WPower2) && (WPower2 > WPower3) && (sStatus == \"WASH\") ) \n{\nsStatus = \"SCHLEUD\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"SCHLEUD\"});\n}\n//Ende\nif(  (WPower1 < 12) && (WPower1 > 5)\n  && (WPower2 < 12) && (WPower2 >5)\n  && (WPower3 < 20) && (WPower3 >9)    \n  && ((sStatus == \"SCHLEUD\")|| (sStatus == \"WASH\"))\n   ) \n{\nsStatus = \"ENDE\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"ENDE\"});\n}\n//Off\nif(  (WPower1 < 3)\n  && (WPower2 < 3)\n  && (WPower3 < 3) \n  && (sStatus == \"ENDE\") ) \n{\nsStatus = \"OFF\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"Off\"});\n}\nmsg.Status = sStatus;\nmsg.WPower1 = WPower1;\nmsg.WPower2 = WPower2;\nmsg.WPower3 = WPower3;\nflow.set(\"WStatus\", sStatus);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -12685,7 +12612,7 @@
         "timeout": "5",
         "timeoutUnits": "seconds",
         "rate": "1",
-        "nbRateUnits": "10",
+        "nbRateUnits": "5",
         "rateUnits": "second",
         "randomFirst": "1",
         "randomLast": "5",
@@ -12942,7 +12869,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
+        "x": 1120,
         "y": 660,
         "wires": []
     },
@@ -12977,7 +12904,8 @@
         "wires": [
             [
                 "1dbe1728f75c04c7",
-                "2cd33b3990f310f3"
+                "2cd33b3990f310f3",
+                "6a3219e26c67a391"
             ]
         ]
     },
@@ -13160,9 +13088,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "APower",
-        "payload": "7",
+        "payload": "6.3",
         "payloadType": "str",
-        "x": 260,
+        "x": 270,
         "y": 540,
         "wires": [
             [
@@ -13198,6 +13126,135 @@
                 "dba8c59ea0918439"
             ]
         ]
+    },
+    {
+        "id": "200be19ab9be475e",
+        "type": "change",
+        "z": "fd2d363b540d07e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Waschmaschine ist fertig",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 840,
+        "wires": [
+            [
+                "d1a66b4f01d850d1"
+            ]
+        ]
+    },
+    {
+        "id": "923e4b6fe50325b5",
+        "type": "function",
+        "z": "fd2d363b540d07e3",
+        "name": "Telegram convert",
+        "func": "var text;\ntext = msg.payload;\nreturn { payload: { chatId: -4054485106, type: 'message', content: text } };",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 900,
+        "wires": [
+            [
+                "34627ac120b1ba83",
+                "472946796ea5d996"
+            ]
+        ]
+    },
+    {
+        "id": "34627ac120b1ba83",
+        "type": "telegram sender",
+        "z": "fd2d363b540d07e3",
+        "name": "TelegramSend",
+        "bot": "79ccd59a.7479ec",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 880,
+        "y": 900,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6a3219e26c67a391",
+        "type": "switch",
+        "z": "fd2d363b540d07e3",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ENDE",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 670,
+        "y": 840,
+        "wires": [
+            [
+                "200be19ab9be475e"
+            ]
+        ]
+    },
+    {
+        "id": "d1a66b4f01d850d1",
+        "type": "delay",
+        "z": "fd2d363b540d07e3",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "5",
+        "rateUnits": "minute",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1060,
+        "y": 840,
+        "wires": [
+            [
+                "923e4b6fe50325b5"
+            ]
+        ]
+    },
+    {
+        "id": "472946796ea5d996",
+        "type": "debug",
+        "z": "fd2d363b540d07e3",
+        "name": "debug 29",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 980,
+        "wires": []
     },
     {
         "id": "4dd95472.f323ec",
@@ -13262,9 +13319,9 @@
         "type": "home-connect-request",
         "z": "8c0dc70a.3a1008",
         "auth": "6a1e0e46.17777",
-        "name": "",
-        "tag": "status_events",
-        "operationId": "get_status",
+        "name": "Geschirrspüler",
+        "tag": "default",
+        "operationId": "get_home_appliances",
         "haid": "",
         "body": "",
         "optionkey": "",
@@ -13272,7 +13329,7 @@
         "settingkey": "",
         "statuskey": "",
         "imagekey": "",
-        "x": 290,
+        "x": 300,
         "y": 240,
         "wires": [
             [
@@ -13436,7 +13493,7 @@
         "type": "newSamsungTV",
         "z": "8c0dc70a.3a1008",
         "ip": "192.168.178.32",
-        "command": "KEY_VOLUP",
+        "command": "KEY_POWER",
         "name": "",
         "x": 280,
         "y": 740,
