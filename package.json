@@ -3,7 +3,16 @@
     "description": "NodeRed",
     "version": "0.0.1",
     "dependencies": {
-        "node-red-contrib-homeconnect": "0.6.7"
+        "node-red-contrib-homeconnect": "0.6.7",
+        "node-red-contrib-german-holidays": "1.0.1",
+        "node-red-contrib-influxdb": "0.6.1",
+        "node-red-contrib-mytimeout": "3.2.2",
+        "node-red-contrib-newsamsungtv": "0.1.0",
+        "node-red-contrib-samsung-tv-control": "1.4.0",
+        "node-red-contrib-sun-position": "2.2.0-beta3",
+        "node-red-contrib-telegrambot": "15.1.7",
+        "node-red-dashboard": "3.6.2",
+        "node-red-node-openweathermap": "0.5.1"
     },
     "node-red": {
         "settings": {
