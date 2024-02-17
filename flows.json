@@ -152,9 +152,7 @@
             "8d91d7c450e7b770"
         ],
         "x": 14,
-        "y": 199,
-        "w": 732,
-        "h": 502
+        "y": 199
     },
     {
         "id": "7d3411b0.20fc7",
@@ -176,9 +174,7 @@
             "98e07e5594b2e3d3"
         ],
         "x": 14,
-        "y": 39,
-        "w": 912,
-        "h": 182
+        "y": 39
     },
     {
         "id": "584f76f1.996908",
@@ -422,9 +418,7 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 759,
-        "w": 852,
-        "h": 162
+        "y": 759
     },
     {
         "id": "40936a6d.e4bc64",
@@ -444,9 +438,7 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 599,
-        "w": 712,
-        "h": 142
+        "y": 599
     },
     {
         "id": "3644af6d.d42f6",
@@ -480,9 +472,7 @@
             "1bd2faf182fb3f8a"
         ],
         "x": 14,
-        "y": 19,
-        "w": 772,
-        "h": 522
+        "y": 19
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -505,9 +495,7 @@
             "5b9db628891c8ab5"
         ],
         "x": 14,
-        "y": 1519,
-        "w": 1072,
-        "h": 162
+        "y": 1519
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -527,7 +515,9 @@
             "dfcc41b0.b3ad2"
         ],
         "x": 34,
-        "y": 59
+        "y": 59,
+        "w": 642,
+        "h": 142
     },
     {
         "id": "7ce4548d.b8ed0c",
@@ -548,7 +538,9 @@
             "77bd98f3.c0e8c8"
         ],
         "x": 34,
-        "y": 1519
+        "y": 1519,
+        "w": 852,
+        "h": 142
     },
     {
         "id": "c1953c38.acea1",
@@ -569,7 +561,9 @@
             "a0085f1f.0f307"
         ],
         "x": 34,
-        "y": 1339
+        "y": 1339,
+        "w": 852,
+        "h": 162
     },
     {
         "id": "4cff6fb8.ecd81",
@@ -594,7 +588,9 @@
             "243db6c7.15d31a"
         ],
         "x": 34,
-        "y": 219
+        "y": 219,
+        "w": 692,
+        "h": 242
     },
     {
         "id": "6666fbc0.896914",
@@ -620,7 +616,9 @@
             "20e6409a.ffe67"
         ],
         "x": 24,
-        "y": 499
+        "y": 499,
+        "w": 962,
+        "h": 262
     },
     {
         "id": "3f11d194.8d04ee",
@@ -645,7 +643,9 @@
             "1f2409.3d5e7bf8"
         ],
         "x": 34,
-        "y": 799
+        "y": 799,
+        "w": 952,
+        "h": 262
     },
     {
         "id": "c87697c7.9b9e58",
@@ -669,7 +669,9 @@
             "45946f85.a2da8"
         ],
         "x": 34,
-        "y": 1099
+        "y": 1099,
+        "w": 952,
+        "h": 202
     },
     {
         "id": "d8d1de94.dfe9",
@@ -812,7 +814,9 @@
             "7a6e01ce32748004"
         ],
         "x": 14,
-        "y": 1679
+        "y": 1679,
+        "w": 1152,
+        "h": 362
     },
     {
         "id": "9632f8fb2bd4fa59",
@@ -834,9 +838,7 @@
             "54e47a03f8e6baba"
         ],
         "x": 14,
-        "y": 939,
-        "w": 892,
-        "h": 142
+        "y": 939
     },
     {
         "id": "492449f2a284d6d7",
@@ -860,9 +862,7 @@
             "e0160b9e060c6bab"
         ],
         "x": 14,
-        "y": 1099,
-        "w": 772,
-        "h": 242
+        "y": 1099
     },
     {
         "id": "ba622014ba4332d1",
@@ -880,9 +880,7 @@
             "28e6fe851aacfbc8"
         ],
         "x": 34,
-        "y": 19,
-        "w": 492,
-        "h": 202
+        "y": 19
     },
     {
         "id": "0ac5cf038e9b4a0e",
@@ -901,9 +899,7 @@
             "37aac056560b1cc1"
         ],
         "x": 34,
-        "y": 259,
-        "w": 632,
-        "h": 82
+        "y": 259
     },
     {
         "id": "32340ff2f48f54cf",
@@ -927,9 +923,7 @@
             "aa807b1b18ee51ae"
         ],
         "x": 34,
-        "y": 359,
-        "w": 672,
-        "h": 242
+        "y": 359
     },
     {
         "id": "4b345f34f7b4d8e1",
@@ -2550,7 +2544,7 @@
         "z": "6f61cfd3.3d721",
         "g": "584f76f1.996908",
         "name": "Sensor6 switch/convert",
-        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor6/fTempB\":\n        msg.payload={\n            fTempB: Number(msg.payload),\n        }\n        return msg;\n\n    case \"Sensor6/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor6/nLux\":\n        msg.payload={\n            iLux: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nRed\":\n        msg.payload={\n            iRed: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nGreen\":\n        msg.payload={\n            iGreen: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nBlue\":\n        msg.payload={\n            iBlue: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nClear\":\n        msg.payload={\n            iClear: Number(msg.payload),\n        }\n      \n        return msg;\n   \n            case \"Sensor6/nColor\":\n        msg.payload={\n            iColor: Number(msg.payload),\n        }\n     \n        return msg;\n    case \"Sensor6/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
+        "func": "var topic=msg.topic;\nvar iLux;\nswitch(topic){\n    case \"Sensor6/fTempB\":\n        msg.payload={\n            fTempB: Number(msg.payload),\n        }\n        return msg;\n\n    case \"Sensor6/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor6/nLux\":\n        iLux = Number(msg.payload);\n        global.set(\"LuxOut\",iLux, \"file\");\n        msg.payload={\n            iLux: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nRed\":\n        msg.payload={\n            iRed: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nGreen\":\n        msg.payload={\n            iGreen: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nBlue\":\n        msg.payload={\n            iBlue: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nClear\":\n        msg.payload={\n            iClear: Number(msg.payload),\n        }\n      \n        return msg;\n   \n            case \"Sensor6/nColor\":\n        msg.payload={\n            iColor: Number(msg.payload),\n        }\n     \n        return msg;\n    case \"Sensor6/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -7980,9 +7974,27 @@
                 "valueType": "msg",
                 "value": "clouds",
                 "operator": "gte",
-                "operatorText": "≥",
+                "operatorText": ">=",
                 "thresholdType": "num",
                 "threshold": "25",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            },
+            {
+                "mode": 0,
+                "valueType": "global",
+                "value": "#:(file)::LuxOut",
+                "operator": "lt",
+                "operatorText": "<",
+                "thresholdType": "num",
+                "threshold": "10000",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -9410,9 +9422,27 @@
                 "valueType": "msg",
                 "value": "clouds",
                 "operator": "gte",
-                "operatorText": "≥",
+                "operatorText": ">=",
                 "thresholdType": "num",
                 "threshold": "25",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            },
+            {
+                "mode": 0,
+                "valueType": "global",
+                "value": "#:(file)::LuxOut",
+                "operator": "lt",
+                "operatorText": "<",
+                "thresholdType": "num",
+                "threshold": "10000",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
