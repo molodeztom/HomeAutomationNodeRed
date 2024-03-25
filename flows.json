@@ -109,14 +109,6 @@
         "env": []
     },
     {
-        "id": "25ab6fe12ab5a205",
-        "type": "tab",
-        "label": "Flow 3",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "b83af794.4bec68",
         "type": "group",
         "z": "9963931.9232c7",
@@ -274,9 +266,7 @@
             "a30d9009.4e13b"
         ],
         "x": 54,
-        "y": -1,
-        "w": 1182,
-        "h": 502
+        "y": -1
     },
     {
         "id": "18ca9346.bdbedd",
@@ -320,9 +310,7 @@
             "61b9f71.7b9bb08"
         ],
         "x": 54,
-        "y": 516.5,
-        "w": 1652,
-        "h": 604.5
+        "y": 516.5
     },
     {
         "id": "73d12632.94b388",
@@ -368,9 +356,7 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299,
-        "w": 992,
-        "h": 162
+        "y": 299
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -394,9 +380,7 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19,
-        "w": 752,
-        "h": 262
+        "y": 19
     },
     {
         "id": "b9a71c35.b8ccf",
@@ -593,12 +577,16 @@
             "d26a7c85.ed299",
             "f69a51fd.3a899",
             "44ca9388.fa0d3c",
-            "243db6c7.15d31a"
+            "243db6c7.15d31a",
+            "d70a15d40c7e6f81",
+            "9e29c6c01d7c3d23",
+            "f4842aaa5a034809",
+            "64fc421078cd82f6"
         ],
         "x": 34,
         "y": 219,
         "w": 692,
-        "h": 242
+        "h": 322
     },
     {
         "id": "6666fbc0.896914",
@@ -624,7 +612,7 @@
             "20e6409a.ffe67"
         ],
         "x": 24,
-        "y": 499,
+        "y": 519,
         "w": 962,
         "h": 262
     },
@@ -724,9 +712,7 @@
             "401fb17c76832009"
         ],
         "x": 34,
-        "y": 559,
-        "w": 1212,
-        "h": 422
+        "y": 559
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -788,9 +774,7 @@
             "b0938868.3c48e8"
         ],
         "x": 34,
-        "y": 959,
-        "w": 1172,
-        "h": 262
+        "y": 959
     },
     {
         "id": "40f7136f.c806bc",
@@ -869,7 +853,8 @@
             "5ca3e8fef88b5b22",
             "6544a9e62816a660",
             "a448e0f6c950f185",
-            "e0160b9e060c6bab"
+            "e0160b9e060c6bab",
+            "bec11c3a8731a1ef"
         ],
         "x": 14,
         "y": 1099,
@@ -959,7 +944,9 @@
             "1620464c7201262c"
         ],
         "x": 134,
-        "y": 1139
+        "y": 1139,
+        "w": 572,
+        "h": 202
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -2562,7 +2549,7 @@
         "z": "6f61cfd3.3d721",
         "g": "584f76f1.996908",
         "name": "Sensor6 switch/convert",
-        "func": "var topic=msg.topic;\nvar iLux;\nswitch(topic){\n    case \"Sensor6/fTempB\":\n        msg.payload={\n            fTempB: Number(msg.payload),\n        }\n        return msg;\n\n    case \"Sensor6/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor6/nLux\":\n        iLux = Number(msg.payload);\n        global.set(\"LuxOut\",iLux, \"file\");\n        msg.payload={\n            iLux: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nRed\":\n        msg.payload={\n            iRed: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nGreen\":\n        msg.payload={\n            iGreen: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nBlue\":\n        msg.payload={\n            iBlue: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nClear\":\n        if((Number(msg.payload) > 30000)) \n        break;\n        msg.payload={\n            iClear: Number(msg.payload),\n        }\n      \n        return msg;\n   \n            case \"Sensor6/nColor\":\n        msg.payload={\n            iColor: Number(msg.payload),\n        }\n     \n        return msg;\n    case \"Sensor6/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
+        "func": "var topic=msg.topic;\nvar iLux;\nvar iRed;\n//do not  save wrong numbers\nif((Number(msg.payload) > 65000)) \nreturn;\nswitch(topic){\n    case \"Sensor6/fTempB\":\n        msg.payload={\n            fTempB: Number(msg.payload),\n        }\n        return msg;\n\n    case \"Sensor6/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor6/nLux\":\n        iLux = Number(msg.payload);\n        global.set(\"LuxOut\",iLux, \"file\");\n        msg.payload={\n            iLux: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nRed\":\n        iRed = Number(msg.payload);\n        global.set(\"iRed\",iRed,\"file\");\n        msg.payload={\n            iRed: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nGreen\":\n        msg.payload={\n            iGreen: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nBlue\":\n        msg.payload={\n            iBlue: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nClear\":\n        if((Number(msg.payload) > 30000)) \n        break;\n        msg.payload={\n            iClear: Number(msg.payload),\n        }\n      \n        return msg;\n   \n    case \"Sensor6/nColor\":\n    //do not  save wrong numbers\n    if((Number(msg.payload) == 0)) \n    break;\n\n        msg.payload={\n            iColor: Number(msg.payload),\n        }\n     \n        return msg;\n    case \"Sensor6/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -3457,7 +3444,8 @@
             [
                 "c7376c1f34d5851e",
                 "b31b88a99f16cc44",
-                "6544a9e62816a660"
+                "6544a9e62816a660",
+                "bec11c3a8731a1ef"
             ]
         ]
     },
@@ -3474,18 +3462,21 @@
                 "t": "eq",
                 "v": "Hom/stat/Schlafz/bFensterAuf",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Hom/stat/Schlafz/bGrFensterAuf",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 1,
+        "outputs": 2,
         "x": 370,
         "y": 1260,
         "wires": [
-            [
-                "a448e0f6c950f185",
-                "e0160b9e060c6bab"
-            ]
+            [],
+            []
         ]
     },
     {
@@ -3494,7 +3485,7 @@
         "z": "265d3756.5a1d68",
         "g": "492449f2a284d6d7",
         "name": "Schlafz Fenster offen",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4446,7 +4437,7 @@
         "type": "debug",
         "z": "265d3756.5a1d68",
         "name": "debug 67",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4456,6 +4447,28 @@
         "x": 1080,
         "y": 2100,
         "wires": []
+    },
+    {
+        "id": "bec11c3a8731a1ef",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "g": "492449f2a284d6d7",
+        "name": "function 8",
+        "func": "var topic = msg.topic;\n\nswitch (topic) {\n    case \"Hom/stat/Schlafz/bFensterAuf\":\n       \n        return msg;\n    case \"Hom/stat/Schlafz/bGrFensterAuf\":\n       return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1300,
+        "wires": [
+            [
+                "a448e0f6c950f185",
+                "e0160b9e060c6bab"
+            ]
+        ]
     },
     {
         "id": "818d3c6f.201f2",
@@ -6404,7 +6417,7 @@
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
         "x": 880,
-        "y": 660,
+        "y": 680,
         "wires": []
     },
     {
@@ -6607,7 +6620,7 @@
         "broker": "19cf2a10.f9d4a6",
         "inputs": 0,
         "x": 180,
-        "y": 720,
+        "y": 740,
         "wires": [
             [
                 "4fbc55c0.c9f85c"
@@ -6637,7 +6650,7 @@
         "payload": "50",
         "payloadType": "num",
         "x": 190,
-        "y": 660,
+        "y": 680,
         "wires": [
             [
                 "6ac2e536.abb7ec"
@@ -6667,7 +6680,7 @@
         "payload": "5",
         "payloadType": "num",
         "x": 190,
-        "y": 580,
+        "y": 600,
         "wires": [
             [
                 "6ac2e536.abb7ec"
@@ -6697,7 +6710,7 @@
         "payload": "30",
         "payloadType": "num",
         "x": 190,
-        "y": 620,
+        "y": 640,
         "wires": [
             [
                 "6ac2e536.abb7ec"
@@ -6994,7 +7007,7 @@
             "89de660e.32b288"
         ],
         "x": 555,
-        "y": 660,
+        "y": 680,
         "wires": [
             [
                 "5eac9c57.76c314"
@@ -7075,7 +7088,7 @@
             "f69a51fd.3a899"
         ],
         "x": 275,
-        "y": 540,
+        "y": 560,
         "wires": [
             [
                 "6ac2e536.abb7ec"
@@ -7182,7 +7195,7 @@
         "payload": "100",
         "payloadType": "num",
         "x": 210,
-        "y": 700,
+        "y": 720,
         "wires": [
             [
                 "6ac2e536.abb7ec"
@@ -8032,7 +8045,7 @@
                 "operator": "gte",
                 "operatorText": ">=",
                 "thresholdType": "num",
-                "threshold": "25",
+                "threshold": "80",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -8046,11 +8059,11 @@
             {
                 "mode": 0,
                 "valueType": "global",
-                "value": "#:(file)::LuxOut",
+                "value": "#:(file)::iRed",
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "10000",
+                "threshold": "40000",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -8064,7 +8077,7 @@
         ],
         "oversteerTopic": "CloudsOverwrite",
         "x": 480,
-        "y": 600,
+        "y": 620,
         "wires": [
             [
                 "5eac9c57.76c314",
@@ -8579,9 +8592,27 @@
                 "valueType": "msg",
                 "value": "clouds",
                 "operator": "gte",
-                "operatorText": "≥",
+                "operatorText": ">=",
                 "thresholdType": "num",
                 "threshold": "25",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            },
+            {
+                "mode": 0,
+                "valueType": "global",
+                "value": "#:(file)::iRed",
+                "operator": "gte",
+                "operatorText": ">=",
+                "thresholdType": "num",
+                "threshold": "9000",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -9416,7 +9447,7 @@
         ],
         "sunControlMode": "16",
         "sunFloorLengthType": "num",
-        "sunFloorLength": "160",
+        "sunFloorLength": "200",
         "sunMinDelta": "5",
         "blindPosMin": "25%",
         "blindPosMinType": "levelFixed",
@@ -9435,7 +9466,7 @@
         "windowAzimuthStartType": "numAzimuth",
         "windowAzimuthStart": "153",
         "windowAzimuthEndType": "numAzimuth",
-        "windowAzimuthEnd": "210",
+        "windowAzimuthEnd": "190",
         "oversteers": [
             {
                 "mode": 0,
@@ -9444,7 +9475,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "3",
+                "threshold": "10",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -9494,11 +9525,11 @@
             {
                 "mode": 0,
                 "valueType": "global",
-                "value": "#:(file)::LuxOut",
+                "value": "#:(file)::iRed",
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "10000",
+                "threshold": "40000",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -10460,7 +10491,7 @@
         "step": 1,
         "className": "",
         "x": 510,
-        "y": 720,
+        "y": 740,
         "wires": [
             [
                 "5eac9c57.76c314"
@@ -10649,7 +10680,7 @@
         "fontSize": "",
         "color": "#000000",
         "x": 880,
-        "y": 620,
+        "y": 640,
         "wires": []
     },
     {
@@ -10967,6 +10998,106 @@
         "statusType": "auto",
         "x": 840,
         "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "d70a15d40c7e6f81",
+        "type": "ui_text",
+        "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
+        "group": "8e157408.1ce3a8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Sonne",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 590,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "9e29c6c01d7c3d23",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "#:(file)::LuxOut",
+        "payloadType": "global",
+        "x": 360,
+        "y": 460,
+        "wires": [
+            [
+                "d70a15d40c7e6f81"
+            ]
+        ]
+    },
+    {
+        "id": "f4842aaa5a034809",
+        "type": "inject",
+        "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "#:(file)::iRed",
+        "payloadType": "global",
+        "x": 350,
+        "y": 500,
+        "wires": [
+            [
+                "64fc421078cd82f6"
+            ]
+        ]
+    },
+    {
+        "id": "64fc421078cd82f6",
+        "type": "ui_text",
+        "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
+        "group": "8e157408.1ce3a8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Rot",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 590,
+        "y": 500,
         "wires": []
     },
     {
@@ -16652,72 +16783,6 @@
         "wires": [
             [
                 "114d28ff64217bc6"
-            ]
-        ]
-    },
-    {
-        "id": "7d5a5a90.1fc034",
-        "type": "inject",
-        "z": "25ab6fe12ab5a205",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "900",
-        "payloadType": "num",
-        "x": 250,
-        "y": 280,
-        "wires": [
-            [
-                "f95df7c91696202e"
-            ]
-        ]
-    },
-    {
-        "id": "1f3442a4.6911ee",
-        "type": "debug",
-        "z": "25ab6fe12ab5a205",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 750,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "f95df7c91696202e",
-        "type": "function",
-        "z": "25ab6fe12ab5a205",
-        "name": "function 4",
-        "func": "// Assuming input is in milliseconds and stored in msg.payload.time\nvar seconds = msg.payload;\n\n// Calculate hours and minutes\nvar hours = Math.floor(seconds / 3600);\nvar minutes = Math.floor((seconds % 3600) / 60);\n\n// Create formatted time object\nmsg.formattedTime = {\n    hours: hours,\n    minutes: minutes\n};\n\n// Optionally, create a formatted time string\nmsg.formattedTimeString = hours + 'h ' + minutes + 'm';\n\nreturn msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 460,
-        "y": 280,
-        "wires": [
-            [
-                "1f3442a4.6911ee"
             ]
         ]
     }
