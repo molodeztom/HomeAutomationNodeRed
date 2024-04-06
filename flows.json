@@ -211,9 +211,7 @@
             "f76db29b82c7afec"
         ],
         "x": 34,
-        "y": 19,
-        "w": 1002,
-        "h": 582
+        "y": 19
     },
     {
         "id": "2f27dc68.9ff574",
@@ -232,9 +230,7 @@
             "64c76441.d5f36c"
         ],
         "x": 54,
-        "y": 759,
-        "w": 432,
-        "h": 142
+        "y": 759
     },
     {
         "id": "5c041b39.d836b4",
@@ -331,9 +327,7 @@
             "541cf4bd.ec76dc"
         ],
         "x": 514,
-        "y": 759,
-        "w": 572,
-        "h": 182
+        "y": 759
     },
     {
         "id": "1b82c7fb.e55448",
@@ -745,9 +739,7 @@
             "bdbb365a.74cc18"
         ],
         "x": 44,
-        "y": 959,
-        "w": 852,
-        "h": 642
+        "y": 959
     },
     {
         "id": "48598788.77a428",
@@ -877,9 +869,7 @@
             "28e6fe851aacfbc8"
         ],
         "x": 34,
-        "y": 19,
-        "w": 492,
-        "h": 202
+        "y": 19
     },
     {
         "id": "0ac5cf038e9b4a0e",
@@ -898,9 +888,7 @@
             "37aac056560b1cc1"
         ],
         "x": 34,
-        "y": 259,
-        "w": 632,
-        "h": 82
+        "y": 259
     },
     {
         "id": "32340ff2f48f54cf",
@@ -924,9 +912,7 @@
             "aa807b1b18ee51ae"
         ],
         "x": 34,
-        "y": 359,
-        "w": 672,
-        "h": 242
+        "y": 359
     },
     {
         "id": "4b345f34f7b4d8e1",
@@ -944,9 +930,7 @@
             "1620464c7201262c"
         ],
         "x": 134,
-        "y": 1139,
-        "w": 572,
-        "h": 202
+        "y": 1139
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -4239,7 +4223,7 @@
         "type": "function",
         "z": "265d3756.5a1d68",
         "name": "Luftbefeuchter needed",
-        "func": "var topic=msg.topic;\nvar set = 0;\nvar act = 0;\nswitch(topic){\n    case \"Hom//Wohnz/iSetHumi\":\n        set = Number(msg.payload);\n        act = flow.get(\"iWohnzActHumi\", \"file\");\n        flow.set(\"iWohnzSetHumi\",set, \"file\");\n       break;\n        \n   case \"Hom/stat/Wohnz/iActHumi\":\n        act = Number(msg.payload.iActHumi);\n        set = flow.get(\"iWohnzSetHumi\", \"file\");\n        flow.set(\"iWohnzActHumi\",act, \"file\");\n       break;\n    }\n    msg.act = act;\n    msg.set = set;\n    if (set <= act){ \n        flow.set(\"HumiStat\", \"OFF\", \"file\");\n        msg.payload= \"OFF\";    \n        node.status({fill:\"red\",shape:\"ring\",text: \"Off\"});      \n            }\n    else {\n        flow.set(\"HumiStat\", \"ON\", \"file\");\n        msg.payload = \"ON\";\n        node.status({fill:\"green\",shape:\"ring\",text: \"ON\"});  \n    }\n    return msg;",
+        "func": "var topic=msg.topic;\nvar set = 0;\nvar act = 0;\nswitch(topic){\n    case \"Hom//Wohnz/iSetHumi\":\n        set = Number(msg.payload);\n        act = flow.get(\"iWohnzActHumi\", \"file\");\n        flow.set(\"iWohnzSetHumi\",set, \"file\");\n       break;\n        \n   case \"Hom/stat/Wohnz/iActHumi\":\n        act = Number(msg.payload.iActHumi);\n        set = flow.get(\"iWohnzSetHumi\", \"file\");\n        flow.set(\"iWohnzActHumi\",act, \"file\");\n       break;\n    }\n    msg.act = act;\n    msg.set = set;\n    if ((set <= act)|| ((global.get(\"BalkonOffen\", \"file\")) == \"true\")){ \n        flow.set(\"HumiStat\", \"OFF\", \"file\");\n        msg.payload= \"OFF\";    \n        node.status({fill:\"red\",shape:\"ring\",text: \"Off\"});      \n            }\n    else {\n        flow.set(\"HumiStat\", \"ON\", \"file\");\n        msg.payload = \"ON\";\n        node.status({fill:\"green\",shape:\"ring\",text: \"ON\"});  \n    }\n    return msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -8063,7 +8047,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "40000",
+                "threshold": "10000",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
