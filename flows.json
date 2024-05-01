@@ -144,7 +144,9 @@
             "8d91d7c450e7b770"
         ],
         "x": 14,
-        "y": 199
+        "y": 199,
+        "w": 732,
+        "h": 502
     },
     {
         "id": "7d3411b0.20fc7",
@@ -166,7 +168,9 @@
             "98e07e5594b2e3d3"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 912,
+        "h": 182
     },
     {
         "id": "584f76f1.996908",
@@ -211,7 +215,9 @@
             "f76db29b82c7afec"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 1002,
+        "h": 582
     },
     {
         "id": "2f27dc68.9ff574",
@@ -230,7 +236,9 @@
             "64c76441.d5f36c"
         ],
         "x": 54,
-        "y": 759
+        "y": 759,
+        "w": 432,
+        "h": 142
     },
     {
         "id": "5c041b39.d836b4",
@@ -262,7 +270,9 @@
             "a30d9009.4e13b"
         ],
         "x": 54,
-        "y": -1
+        "y": -1,
+        "w": 1182,
+        "h": 502
     },
     {
         "id": "18ca9346.bdbedd",
@@ -306,7 +316,9 @@
             "61b9f71.7b9bb08"
         ],
         "x": 54,
-        "y": 516.5
+        "y": 516.5,
+        "w": 1652,
+        "h": 604.5
     },
     {
         "id": "73d12632.94b388",
@@ -327,7 +339,9 @@
             "541cf4bd.ec76dc"
         ],
         "x": 514,
-        "y": 759
+        "y": 759,
+        "w": 572,
+        "h": 182
     },
     {
         "id": "1b82c7fb.e55448",
@@ -350,7 +364,9 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299
+        "y": 299,
+        "w": 992,
+        "h": 162
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -374,7 +390,9 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 752,
+        "h": 262
     },
     {
         "id": "b9a71c35.b8ccf",
@@ -706,7 +724,9 @@
             "401fb17c76832009"
         ],
         "x": 34,
-        "y": 559
+        "y": 559,
+        "w": 1212,
+        "h": 422
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -739,7 +759,9 @@
             "bdbb365a.74cc18"
         ],
         "x": 44,
-        "y": 959
+        "y": 959,
+        "w": 852,
+        "h": 642
     },
     {
         "id": "48598788.77a428",
@@ -766,7 +788,9 @@
             "b0938868.3c48e8"
         ],
         "x": 34,
-        "y": 959
+        "y": 959,
+        "w": 1172,
+        "h": 262
     },
     {
         "id": "40f7136f.c806bc",
@@ -843,15 +867,15 @@
             "ce590a0d1069ae2d",
             "9987df64e7156316",
             "5ca3e8fef88b5b22",
-            "6544a9e62816a660",
             "a448e0f6c950f185",
             "e0160b9e060c6bab",
-            "bec11c3a8731a1ef"
+            "bec11c3a8731a1ef",
+            "5c01553b5435fa0a"
         ],
         "x": 14,
         "y": 1099,
         "w": 772,
-        "h": 242
+        "h": 262
     },
     {
         "id": "ba622014ba4332d1",
@@ -869,7 +893,9 @@
             "28e6fe851aacfbc8"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 492,
+        "h": 202
     },
     {
         "id": "0ac5cf038e9b4a0e",
@@ -888,7 +914,9 @@
             "37aac056560b1cc1"
         ],
         "x": 34,
-        "y": 259
+        "y": 259,
+        "w": 632,
+        "h": 82
     },
     {
         "id": "32340ff2f48f54cf",
@@ -912,7 +940,9 @@
             "aa807b1b18ee51ae"
         ],
         "x": 34,
-        "y": 359
+        "y": 359,
+        "w": 672,
+        "h": 242
     },
     {
         "id": "4b345f34f7b4d8e1",
@@ -930,7 +960,42 @@
             "1620464c7201262c"
         ],
         "x": 134,
-        "y": 1139
+        "y": 1139,
+        "w": 572,
+        "h": 202
+    },
+    {
+        "id": "bc3df6523c98c42b",
+        "type": "group",
+        "z": "265d3756.5a1d68",
+        "name": "Luftbefeuchter Wohnzimmer",
+        "style": {
+            "stroke": "#7fb7df",
+            "label": true,
+            "fill": "#bfdbef"
+        },
+        "nodes": [
+            "f79803a413570de7",
+            "1b7db04087fe86cc",
+            "d5599294c6dead65",
+            "888771d5bf10f2ab",
+            "a8369be11ebe74cf",
+            "96617e9bd5cb6c1a",
+            "811a782081f4dc3c",
+            "ba0eeb88b7307863",
+            "62ede9f4a383c58d",
+            "3efd33a2052e6525",
+            "219c0a60e201da84",
+            "1a94b389528b9aaf",
+            "ec6ca311df51353b",
+            "5bf0eb292dccd4db",
+            "5546a3e921f1ef52",
+            "dc12148c24f84fe9"
+        ],
+        "x": 14,
+        "y": 1719,
+        "w": 1052,
+        "h": 382
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -3378,7 +3443,8 @@
         "y": 1140,
         "wires": [
             [
-                "9987df64e7156316"
+                "9987df64e7156316",
+                "5c01553b5435fa0a"
             ]
         ]
     },
@@ -3401,7 +3467,7 @@
         "repair": false,
         "outputs": 1,
         "x": 370,
-        "y": 1200,
+        "y": 1220,
         "wires": [
             [
                 "5ca3e8fef88b5b22"
@@ -3428,39 +3494,8 @@
             [
                 "c7376c1f34d5851e",
                 "b31b88a99f16cc44",
-                "6544a9e62816a660",
                 "bec11c3a8731a1ef"
             ]
-        ]
-    },
-    {
-        "id": "6544a9e62816a660",
-        "type": "switch",
-        "z": "265d3756.5a1d68",
-        "g": "492449f2a284d6d7",
-        "name": "",
-        "property": "topic",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Hom/stat/Schlafz/bFensterAuf",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "Hom/stat/Schlafz/bGrFensterAuf",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 370,
-        "y": 1260,
-        "wires": [
-            [],
-            []
         ]
     },
     {
@@ -3469,7 +3504,7 @@
         "z": "265d3756.5a1d68",
         "g": "492449f2a284d6d7",
         "name": "Schlafz Fenster offen",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3478,7 +3513,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 640,
-        "y": 1300,
+        "y": 1320,
         "wires": []
     },
     {
@@ -3492,7 +3527,7 @@
             "08d6a70148e843af"
         ],
         "x": 545,
-        "y": 1260,
+        "y": 1280,
         "wires": []
     },
     {
@@ -3743,7 +3778,7 @@
         "step": "0.5",
         "className": "",
         "x": 600,
-        "y": 1200,
+        "y": 1220,
         "wires": [
             [
                 "404dde09.449bf"
@@ -3771,6 +3806,7 @@
         "id": "f79803a413570de7",
         "type": "mqtt out",
         "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
         "name": "Wohnz Luftbefeuchter",
         "topic": "ShellyPlug1/rpc",
         "qos": "1",
@@ -3781,39 +3817,15 @@
         "correl": "",
         "expiry": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 640,
-        "y": 1840,
+        "x": 600,
+        "y": 1820,
         "wires": []
-    },
-    {
-        "id": "a4acdb3cba729d07",
-        "type": "inject",
-        "z": "265d3756.5a1d68",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"id\":0,\"src\":\"mqtt\",\"method\":\"PLUGS_UI.SetConfig\",\"params\":{\"config\":{\"leds\":{\"mode\":\"switch\",\"colors\":{\"switch:0\":{\"on\":{\"rgb\":[100,49,100],\"brightness\":100},\"off\":{\"rgb\":[100,100,20],\"brightness\":100}}},\"night_mode\":{\"enable\":true,\"brightness\":10,\"active_between\":[\"21:53\",\"21:59\"]}}}}}",
-        "payloadType": "json",
-        "x": 410,
-        "y": 1780,
-        "wires": [
-            [
-                "f79803a413570de7"
-            ]
-        ]
     },
     {
         "id": "1b7db04087fe86cc",
         "type": "change",
         "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
         "name": "",
         "rules": [
             {
@@ -3858,11 +3870,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 400,
-        "y": 1840,
+        "x": 360,
+        "y": 1820,
         "wires": [
             [
-                "c99153bc1471a70b",
                 "f79803a413570de7"
             ]
         ]
@@ -3871,6 +3882,7 @@
         "id": "d5599294c6dead65",
         "type": "inject",
         "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
         "name": "",
         "props": [
             {
@@ -3884,8 +3896,8 @@
         "topic": "",
         "payload": "NIGHT",
         "payloadType": "str",
-        "x": 150,
-        "y": 1940,
+        "x": 110,
+        "y": 1920,
         "wires": [
             [
                 "1b7db04087fe86cc"
@@ -3896,6 +3908,7 @@
         "id": "888771d5bf10f2ab",
         "type": "inject",
         "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
         "name": "",
         "props": [
             {
@@ -3909,8 +3922,8 @@
         "topic": "",
         "payload": "DAY",
         "payloadType": "str",
-        "x": 150,
-        "y": 1900,
+        "x": 110,
+        "y": 1880,
         "wires": [
             [
                 "1b7db04087fe86cc"
@@ -3921,6 +3934,7 @@
         "id": "a8369be11ebe74cf",
         "type": "clock-timer",
         "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
         "name": "",
         "topic": "",
         "addIdType": "none",
@@ -4021,11 +4035,12 @@
         "payloadDefaultOffset": 0,
         "payloadDefaultOffsetType": "none",
         "payloadDefaultOffsetMultiplier": 60000,
-        "x": 150,
-        "y": 1780,
+        "x": 110,
+        "y": 1760,
         "wires": [
             [
-                "1b7db04087fe86cc"
+                "1b7db04087fe86cc",
+                "dc12148c24f84fe9"
             ],
             []
         ]
@@ -4034,6 +4049,7 @@
         "id": "96617e9bd5cb6c1a",
         "type": "clock-timer",
         "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
         "name": "Night Mode",
         "topic": "",
         "addIdType": "none",
@@ -4135,8 +4151,8 @@
         "payloadDefaultOffset": 0,
         "payloadDefaultOffsetType": "none",
         "payloadDefaultOffsetMultiplier": 60000,
-        "x": 150,
-        "y": 1840,
+        "x": 110,
+        "y": 1820,
         "wires": [
             [
                 "1b7db04087fe86cc"
@@ -4145,31 +4161,16 @@
         ]
     },
     {
-        "id": "c99153bc1471a70b",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "name": "debug 60",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 600,
-        "y": 1900,
-        "wires": []
-    },
-    {
         "id": "811a782081f4dc3c",
         "type": "link in",
         "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
         "name": "Wohnz Luftbefeuchter",
         "links": [
             "1bd2faf182fb3f8a"
         ],
-        "x": 135,
-        "y": 2000,
+        "x": 55,
+        "y": 1960,
         "wires": [
             [
                 "62ede9f4a383c58d"
@@ -4194,6 +4195,7 @@
         "id": "ba0eeb88b7307863",
         "type": "ui_slider",
         "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
         "name": "",
         "label": "Wohnz Humi",
         "tooltip": "Luftfeuchtigkeit Wohnzimmer",
@@ -4209,12 +4211,11 @@
         "max": "70",
         "step": "5",
         "className": "",
-        "x": 390,
-        "y": 2060,
+        "x": 190,
+        "y": 1960,
         "wires": [
             [
-                "62ede9f4a383c58d",
-                "d7c0383a02e64938"
+                "62ede9f4a383c58d"
             ]
         ]
     },
@@ -4222,6 +4223,7 @@
         "id": "62ede9f4a383c58d",
         "type": "function",
         "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
         "name": "Luftbefeuchter needed",
         "func": "var topic=msg.topic;\nvar set = 0;\nvar act = 0;\nswitch(topic){\n    case \"Hom//Wohnz/iSetHumi\":\n        set = Number(msg.payload);\n        act = flow.get(\"iWohnzActHumi\", \"file\");\n        flow.set(\"iWohnzSetHumi\",set, \"file\");\n       break;\n        \n   case \"Hom/stat/Wohnz/iActHumi\":\n        act = Number(msg.payload.iActHumi);\n        set = flow.get(\"iWohnzSetHumi\", \"file\");\n        flow.set(\"iWohnzActHumi\",act, \"file\");\n       break;\n    }\n    msg.act = act;\n    msg.set = set;\n    if ((set <= act)|| ((global.get(\"BalkonOffen\", \"file\")) == \"true\")){ \n        flow.set(\"HumiStat\", \"OFF\", \"file\");\n        msg.payload= \"OFF\";    \n        node.status({fill:\"red\",shape:\"ring\",text: \"Off\"});      \n            }\n    else {\n        flow.set(\"HumiStat\", \"ON\", \"file\");\n        msg.payload = \"ON\";\n        node.status({fill:\"green\",shape:\"ring\",text: \"ON\"});  \n    }\n    return msg;",
         "outputs": 1,
@@ -4230,54 +4232,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 620,
-        "y": 2060,
+        "x": 380,
+        "y": 1960,
         "wires": [
             [
-                "f1244e919ef1cabe",
                 "1b7db04087fe86cc",
                 "5546a3e921f1ef52"
             ]
         ]
     },
     {
-        "id": "d7c0383a02e64938",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "name": "debug 65",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 2120,
-        "wires": []
-    },
-    {
-        "id": "f1244e919ef1cabe",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "name": "debug 66",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 840,
-        "y": 2060,
-        "wires": []
-    },
-    {
         "id": "3efd33a2052e6525",
         "type": "inject",
         "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
         "name": "",
         "props": [
             {
@@ -4295,8 +4263,8 @@
         "topic": "WohnzHumiON",
         "payload": "1",
         "payloadType": "num",
-        "x": 190,
-        "y": 2180,
+        "x": 150,
+        "y": 2020,
         "wires": [
             [
                 "219c0a60e201da84"
@@ -4307,6 +4275,7 @@
         "id": "219c0a60e201da84",
         "type": "function",
         "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
         "name": "Humi h counter",
         "func": "var status = flow.get(\"HumiStat\",\"file\");\nvar humicount = flow.get(\"HumiCount\", \"file\");\nvar topic=msg.topic;\n\nswitch(topic){\n    case \"WohnzHumiON\":\n      if (status == \"ON\"){\n        humicount = humicount +1;\n        flow.set(\"HumiCount\", humicount, \"file\");\n        msg.mystatus = status;\n        msg.payload = {\n          iHumiStat: Number(humicount)\n          }\n        node.status({fill:\"green\",shape:\"ring\",text: status});\n        return msg;\n      }\n      else node.status({fill:\"red\",shape:\"ring\",text: status});\n      return;\n    case \"ResetCounter\":\n      \tflow.set(\"HumiCount\", 0, \"file\");\n         msg.payload = {\n          iHumiStat: Number(0)\n          }\n        node.status({fill:\"yellow\",shape:\"ring\",text: \"reset\"});\n        return msg;\n}\n      \n\n\n",
         "outputs": 1,
@@ -4315,8 +4284,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 440,
-        "y": 2180,
+        "x": 360,
+        "y": 2020,
         "wires": [
             [
                 "5bf0eb292dccd4db"
@@ -4327,6 +4296,7 @@
         "id": "1a94b389528b9aaf",
         "type": "influxdb out",
         "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
         "influxdb": "e3f4c3e8.b52ee",
         "name": "Homematic Wohnzimmer",
         "measurement": "Wohnz",
@@ -4337,12 +4307,779 @@
         "retentionPolicyV18Flux": "",
         "org": "organisation",
         "bucket": "bucket",
-        "x": 910,
-        "y": 2180,
+        "x": 930,
+        "y": 1960,
         "wires": []
     },
     {
         "id": "ec6ca311df51353b",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ResetCounter",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 140,
+        "y": 2060,
+        "wires": [
+            [
+                "219c0a60e201da84"
+            ]
+        ]
+    },
+    {
+        "id": "5bf0eb292dccd4db",
+        "type": "delay",
+        "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "hour",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 640,
+        "y": 2020,
+        "wires": [
+            [
+                "1a94b389528b9aaf"
+            ]
+        ]
+    },
+    {
+        "id": "5546a3e921f1ef52",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
+        "name": "Luftbefeuchter Status in DB",
+        "func": "var payload = msg.payload;\nif (payload == \"ON\")\n         msg.payload = {\n          bHumiON: 1\n          }\nelse\n msg.payload = {\n          bHumiON: 0\n          }\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 1960,
+        "wires": [
+            [
+                "1a94b389528b9aaf"
+            ]
+        ]
+    },
+    {
+        "id": "bec11c3a8731a1ef",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "g": "492449f2a284d6d7",
+        "name": "function 8",
+        "func": "var topic = msg.topic;\n\nswitch (topic) {\n    case \"Hom/stat/Schlafz/bFensterAuf\":\n       \n        return msg;\n    case \"Hom/stat/Schlafz/bGrFensterAuf\":\n       return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1320,
+        "wires": [
+            [
+                "a448e0f6c950f185",
+                "e0160b9e060c6bab"
+            ]
+        ]
+    },
+    {
+        "id": "efff5a8653c62e4b",
+        "type": "mqtt in",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "topic": "Hom/stat/Flur/bTüre",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "19cf2a10.f9d4a6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1380,
+        "wires": [
+            [
+                "06b78fe126345a99",
+                "a5207ff52b2a24e8"
+            ]
+        ]
+    },
+    {
+        "id": "a5207ff52b2a24e8",
+        "type": "debug",
+        "z": "265d3756.5a1d68",
+        "name": "Flur Türe offen",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "593a9ed0df83f084",
+        "type": "mqtt in",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "topic": "Hom/stat/Küche/bFenster",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "19cf2a10.f9d4a6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 1460,
+        "wires": [
+            [
+                "4a1eb101ead5f5c2"
+            ]
+        ]
+    },
+    {
+        "id": "4a1eb101ead5f5c2",
+        "type": "debug",
+        "z": "265d3756.5a1d68",
+        "name": "Küche Fenster offen",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "ac08e4c3f92ee036",
+        "type": "influxdb out",
+        "z": "265d3756.5a1d68",
+        "influxdb": "e3f4c3e8.b52ee",
+        "name": "HomeMatic Flur",
+        "measurement": "Flur",
+        "precision": "",
+        "retentionPolicy": "two_month",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 620,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "06b78fe126345a99",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "name": "Flur Türe Status",
+        "func": "var payload = msg.payload;\nif (payload == true)\n         msg.payload = {\n          bTuereAuf: 1\n          }\nif (payload == false)\n    msg.payload = {\n        bTuereAuf: 0\n    }\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 1420,
+        "wires": [
+            [
+                "ac08e4c3f92ee036",
+                "e54497ce99ee0185"
+            ]
+        ]
+    },
+    {
+        "id": "e54497ce99ee0185",
+        "type": "debug",
+        "z": "265d3756.5a1d68",
+        "name": "debug 68",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "d3ee02f7719cd2ed",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 1420,
+        "wires": [
+            [
+                "06b78fe126345a99"
+            ]
+        ]
+    },
+    {
+        "id": "72e4b3cce1ffea0e",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 370,
+        "y": 1500,
+        "wires": [
+            [
+                "06b78fe126345a99"
+            ]
+        ]
+    },
+    {
+        "id": "dc12148c24f84fe9",
+        "type": "debug",
+        "z": "265d3756.5a1d68",
+        "g": "bc3df6523c98c42b",
+        "name": "debug 69",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "d24c2a889a0623b1",
+        "type": "mqtt out",
+        "z": "265d3756.5a1d68",
+        "name": "Schlafz Luftbefeuchter",
+        "topic": "ShellyPlug2/rpc",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 640,
+        "y": 2180,
+        "wires": []
+    },
+    {
+        "id": "3a8b059a72f7cdce",
+        "type": "change",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "ON",
+                "fromt": "str",
+                "to": "{\"id\":0,\"src\":\"mqtt\",\"method\":\"Switch.Set\",\"params\":{\"id\":0,\"on\":true}}",
+                "tot": "json"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "OFF",
+                "fromt": "str",
+                "to": "{\"id\":0,\"src\":\"mqtt\",\"method\":\"Switch.Set\",\"params\":{\"id\":0,\"on\":false}}",
+                "tot": "json"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "DAY",
+                "fromt": "str",
+                "to": "{\"id\":0,\"src\":\"mqtt\",\"method\":\"PLUGS_UI.SetConfig\",\"params\":{\"config\":{\"leds\":{\"mode\":\"switch\",\"colors\":{\"switch:0\":{\"on\":{\"rgb\":[100,100,0],\"brightness\":100},\"off\":{\"rgb\":[100,0,0],\"brightness\":100}}}}}}}",
+                "tot": "json"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "NIGHT",
+                "fromt": "str",
+                "to": "{\"id\":0,\"src\":\"mqtt\",\"method\":\"PLUGS_UI.SetConfig\",\"params\":{\"config\":{\"leds\":{\"mode\":\"switch\",\"colors\":{\"switch:0\":{\"on\":{\"rgb\":[0,0,100],\"brightness\":30},\"off\":{\"rgb\":[0,0,100],\"brightness\":30}}}}}}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 2180,
+        "wires": [
+            [
+                "d24c2a889a0623b1"
+            ]
+        ]
+    },
+    {
+        "id": "47d6882d43086e7b",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "x": 170,
+        "y": 2160,
+        "wires": [
+            [
+                "3a8b059a72f7cdce"
+            ]
+        ]
+    },
+    {
+        "id": "b52d2f3e354ce7e4",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "x": 150,
+        "y": 2200,
+        "wires": [
+            [
+                "3a8b059a72f7cdce"
+            ]
+        ]
+    },
+    {
+        "id": "3ee4b32e43d0f544",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "DAY",
+        "payloadType": "str",
+        "x": 150,
+        "y": 2240,
+        "wires": [
+            [
+                "3a8b059a72f7cdce"
+            ]
+        ]
+    },
+    {
+        "id": "3f88b754145efcb3",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "NIGHT",
+        "payloadType": "str",
+        "x": 150,
+        "y": 2280,
+        "wires": [
+            [
+                "3a8b059a72f7cdce"
+            ]
+        ]
+    },
+    {
+        "id": "6b772c7790f8c758",
+        "type": "clock-timer",
+        "z": "265d3756.5a1d68",
+        "name": "Night Mode",
+        "topic": "",
+        "addIdType": "none",
+        "addId": "",
+        "positionConfig": "9a5a8534.25d4d8",
+        "autoTrigger": true,
+        "autoTriggerTime": "60000",
+        "startDelayTime": 10000,
+        "contextStore": "",
+        "results": [
+            {
+                "p": "",
+                "pt": "msgTopic",
+                "v": "NightMode",
+                "vt": "str"
+            },
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "",
+                "vt": "payload"
+            },
+            {
+                "p": "timeCtrl",
+                "pt": "msg",
+                "v": "",
+                "vt": "ctrlObj"
+            }
+        ],
+        "overwriteExpire": "",
+        "rules": [
+            {
+                "index": 0,
+                "name": "Day",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "str",
+                    "value": "DAY",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "8:00",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>8:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"DAY\"</var></div></div>"
+            },
+            {
+                "index": 1,
+                "name": "NIGHT",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "str",
+                    "value": "NIGHT",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "21:30",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>21:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"NIGHT\"</var></div></div>"
+            }
+        ],
+        "payloadDefault": "NIGHT",
+        "payloadDefaultType": "str",
+        "payloadDefaultTimeFormat": 0,
+        "payloadDefaultOffset": 0,
+        "payloadDefaultOffsetType": "none",
+        "payloadDefaultOffsetMultiplier": 60000,
+        "x": 150,
+        "y": 2320,
+        "wires": [
+            [
+                "3a8b059a72f7cdce",
+                "cdb8955f52c79898"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5c01553b5435fa0a",
+        "type": "link out",
+        "z": "265d3756.5a1d68",
+        "g": "492449f2a284d6d7",
+        "name": "Schlafz Values",
+        "mode": "link",
+        "links": [
+            "63822450abd8c825"
+        ],
+        "x": 545,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "63822450abd8c825",
+        "type": "link in",
+        "z": "265d3756.5a1d68",
+        "name": "Schlafz Values",
+        "links": [
+            "5c01553b5435fa0a"
+        ],
+        "x": 95,
+        "y": 2400,
+        "wires": [
+            [
+                "6945deb0ca8c6b12"
+            ]
+        ]
+    },
+    {
+        "id": "6945deb0ca8c6b12",
+        "type": "ui_slider",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "label": "Schlafz Humi",
+        "tooltip": "Luftfeuchtigkeit Schlafzimmer",
+        "group": "5b512b5d.99aec4",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "Hom//Schlafz/iSetHumi",
+        "topicType": "str",
+        "min": "30",
+        "max": "70",
+        "step": "5",
+        "className": "",
+        "x": 210,
+        "y": 2400,
+        "wires": [
+            [
+                "cdb8955f52c79898"
+            ]
+        ]
+    },
+    {
+        "id": "cdb8955f52c79898",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "name": "Luftbefeuchter needed",
+        "func": "var topic=msg.topic;\nvar set = 0;\nvar act = 0;\nswitch(topic){\n    case \"Hom//Schlafz/iSetHumi\":\n        set = Number(msg.payload);\n        act = flow.get(\"iSchlafzActHumi\", \"file\");\n        flow.set(\"iSchlafzSetHumi\",set, \"file\");\n       break;\n        \n   case \"Hom/stat/Schlafz/iActHumi\":\n        act = Number(msg.payload.iActHumi);\n        set = flow.get(\"iSchlafzSetHumi\", \"file\");\n        flow.set(\"iSchlafzActHumi\",act, \"file\");\n       break;\n    \n    case \"NightMode\":\n        flow.set(\"iSchlafzHumiMode\", msg.payload, \"file\");\n        break;\n    }\n    msg.act = act;\n    msg.set = set;\n    if ((set <= act) || ((flow.get(\"iSchlafzHumiMode\") == \"NIGHT\"))){ \n        flow.set(\"SchlafzHumiStat\", \"OFF\", \"file\");\n        msg.payload= \"OFF\";    \n        node.status({fill:\"red\",shape:\"ring\",text: \"Off\"});      \n            }\n    else {\n        flow.set(\"SchlafzHumiStat\", \"ON\", \"file\");\n        msg.payload = \"ON\";\n        node.status({fill:\"green\",shape:\"ring\",text: \"ON\"});  \n    }\n    return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 2400,
+        "wires": [
+            [
+                "b9f9373889ed3769",
+                "3a8b059a72f7cdce"
+            ]
+        ]
+    },
+    {
+        "id": "b9f9373889ed3769",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "name": "Luftbefeuchter Status in DB",
+        "func": "var payload = msg.payload;\nif (payload == \"ON\")\n         msg.payload = {\n          bHumiON: 1\n          }\nelse\n msg.payload = {\n          bHumiON: 0\n          }\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 2400,
+        "wires": [
+            [
+                "4d7d2fc975c0bffa"
+            ]
+        ]
+    },
+    {
+        "id": "4d7d2fc975c0bffa",
+        "type": "influxdb out",
+        "z": "265d3756.5a1d68",
+        "influxdb": "e3f4c3e8.b52ee",
+        "name": "HomeMatic Schlafz",
+        "measurement": "Schlafz",
+        "precision": "",
+        "retentionPolicy": "two_month",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 970,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "347e58777872f0ac",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SchlafzHumiON",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 190,
+        "y": 2480,
+        "wires": [
+            [
+                "359074cb91f0b627"
+            ]
+        ]
+    },
+    {
+        "id": "359074cb91f0b627",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "name": "Schlafz Humi h counter",
+        "func": "var status = flow.get(\"SchlafzHumiStat\",\"file\");\nvar humicount = flow.get(\"SchlafzHumiCount\", \"file\");\nvar topic=msg.topic;\n\nswitch(topic){\n    case \"SchlafzHumiON\":\n      if (status == \"ON\"){\n        humicount = humicount +1;\n        flow.set(\"SchlafzHumiCount\", humicount, \"file\");\n        msg.mystatus = status;\n        msg.payload = {\n          iHumiStat: Number(humicount)\n          }\n        node.status({fill:\"green\",shape:\"ring\",text: status});\n        return msg;\n      }\n      else node.status({fill:\"red\",shape:\"ring\",text: status});\n      return;\n    case \"ResetCounter\":\n      \tflow.set(\"SchlafzHumiCount\", 0, \"file\");\n         msg.payload = {\n          iHumiStat: Number(0)\n          }\n        node.status({fill:\"yellow\",shape:\"ring\",text: \"reset\"});\n        return msg;\n}\n      \n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 2480,
+        "wires": [
+            [
+                "c003ab02fc04b33e"
+            ]
+        ]
+    },
+    {
+        "id": "ef2887267666e30e",
         "type": "inject",
         "z": "265d3756.5a1d68",
         "name": "",
@@ -4363,15 +5100,15 @@
         "payload": "1",
         "payloadType": "num",
         "x": 180,
-        "y": 2220,
+        "y": 2520,
         "wires": [
             [
-                "219c0a60e201da84"
+                "359074cb91f0b627"
             ]
         ]
     },
     {
-        "id": "5bf0eb292dccd4db",
+        "id": "c003ab02fc04b33e",
         "type": "delay",
         "z": "265d3756.5a1d68",
         "name": "",
@@ -4387,70 +5124,11 @@
         "drop": true,
         "allowrate": false,
         "outputs": 1,
-        "x": 660,
-        "y": 2180,
+        "x": 680,
+        "y": 2480,
         "wires": [
             [
-                "1a94b389528b9aaf"
-            ]
-        ]
-    },
-    {
-        "id": "5546a3e921f1ef52",
-        "type": "function",
-        "z": "265d3756.5a1d68",
-        "name": "Luftbefeuchter Status in DB",
-        "func": "var payload = msg.payload;\nif (payload == \"ON\")\n         msg.payload = {\n          bHumiON: 1\n          }\nelse\n msg.payload = {\n          bHumiON: 0\n          }\n\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 800,
-        "y": 2100,
-        "wires": [
-            [
-                "1a94b389528b9aaf",
-                "5985b3b4a09c339f"
-            ]
-        ]
-    },
-    {
-        "id": "5985b3b4a09c339f",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "name": "debug 67",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1080,
-        "y": 2100,
-        "wires": []
-    },
-    {
-        "id": "bec11c3a8731a1ef",
-        "type": "function",
-        "z": "265d3756.5a1d68",
-        "g": "492449f2a284d6d7",
-        "name": "function 8",
-        "func": "var topic = msg.topic;\n\nswitch (topic) {\n    case \"Hom/stat/Schlafz/bFensterAuf\":\n       \n        return msg;\n    case \"Hom/stat/Schlafz/bGrFensterAuf\":\n       return msg;\n}\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 1300,
-        "wires": [
-            [
-                "a448e0f6c950f185",
-                "e0160b9e060c6bab"
+                "4d7d2fc975c0bffa"
             ]
         ]
     },
@@ -7965,9 +8643,9 @@
         ],
         "sunControlMode": 16,
         "sunFloorLengthType": "num",
-        "sunFloorLength": "200",
-        "sunMinDelta": "10",
-        "blindPosMin": "15",
+        "sunFloorLength": "150",
+        "sunMinDelta": "5",
+        "blindPosMin": "120",
         "blindPosMinType": "num",
         "blindPosMax": "open (max)",
         "blindPosMaxType": "levelFixed",
@@ -7982,9 +8660,9 @@
         "windowBottomType": "num",
         "windowBottom": "100",
         "windowAzimuthStartType": "numAzimuth",
-        "windowAzimuthStart": "210",
+        "windowAzimuthStart": "212",
         "windowAzimuthEndType": "numAzimuth",
-        "windowAzimuthEnd": "274",
+        "windowAzimuthEnd": "255",
         "oversteers": [
             {
                 "mode": 0,
@@ -7993,7 +8671,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "4",
+                "threshold": "10",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -8047,7 +8725,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "10000",
+                "threshold": "7500",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -8515,7 +9193,7 @@
         "sunControlMode": 16,
         "sunFloorLengthType": "num",
         "sunFloorLength": "140",
-        "sunMinDelta": "10",
+        "sunMinDelta": "5",
         "blindPosMin": "10%",
         "blindPosMinType": "levelFixed",
         "blindPosMax": "open (max)",
@@ -8542,7 +9220,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "15",
+                "threshold": "12",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -8593,10 +9271,10 @@
                 "mode": 0,
                 "valueType": "global",
                 "value": "#:(file)::iRed",
-                "operator": "gte",
-                "operatorText": ">=",
+                "operator": "lt",
+                "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "9000",
+                "threshold": "10000",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -8742,12 +9420,12 @@
                 },
                 "timeMin": {
                     "type": "entered",
-                    "value": "8:00",
+                    "value": "7:45",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Ende</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>8:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Ende</var> + 00:10<div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>7:45</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
                 "index": 2,
@@ -9431,7 +10109,7 @@
         ],
         "sunControlMode": "16",
         "sunFloorLengthType": "num",
-        "sunFloorLength": "200",
+        "sunFloorLength": "90",
         "sunMinDelta": "5",
         "blindPosMin": "25%",
         "blindPosMinType": "levelFixed",
@@ -9513,7 +10191,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "40000",
+                "threshold": "15000",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -9628,12 +10306,12 @@
                 },
                 "timeMin": {
                     "type": "entered",
-                    "value": "8:00",
+                    "value": "7:30",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000
                 },
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Beginn</var><div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>8:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>Sonnenaufgang Beginn</var><div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>7:30</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
                 "index": 1,
@@ -10367,7 +11045,7 @@
         ],
         "sunControlMode": "16",
         "sunFloorLengthType": "num",
-        "sunFloorLength": "250",
+        "sunFloorLength": "150",
         "sunMinDelta": "10",
         "blindPosMin": "15",
         "blindPosMinType": "num",
@@ -10386,7 +11064,7 @@
         "windowAzimuthStartType": "numAzimuth",
         "windowAzimuthStart": "215",
         "windowAzimuthEndType": "numAzimuth",
-        "windowAzimuthEnd": "240",
+        "windowAzimuthEnd": "255",
         "oversteers": [
             {
                 "mode": 0,
@@ -10431,7 +11109,7 @@
                 "operator": "gte",
                 "operatorText": ">=",
                 "thresholdType": "num",
-                "threshold": "15",
+                "threshold": "50",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
