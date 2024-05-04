@@ -144,9 +144,7 @@
             "8d91d7c450e7b770"
         ],
         "x": 14,
-        "y": 199,
-        "w": 732,
-        "h": 502
+        "y": 199
     },
     {
         "id": "7d3411b0.20fc7",
@@ -168,9 +166,7 @@
             "98e07e5594b2e3d3"
         ],
         "x": 14,
-        "y": 39,
-        "w": 912,
-        "h": 182
+        "y": 39
     },
     {
         "id": "584f76f1.996908",
@@ -215,9 +211,7 @@
             "f76db29b82c7afec"
         ],
         "x": 34,
-        "y": 19,
-        "w": 1002,
-        "h": 582
+        "y": 19
     },
     {
         "id": "2f27dc68.9ff574",
@@ -236,9 +230,7 @@
             "64c76441.d5f36c"
         ],
         "x": 54,
-        "y": 759,
-        "w": 432,
-        "h": 142
+        "y": 759
     },
     {
         "id": "5c041b39.d836b4",
@@ -270,9 +262,7 @@
             "a30d9009.4e13b"
         ],
         "x": 54,
-        "y": -1,
-        "w": 1182,
-        "h": 502
+        "y": -1
     },
     {
         "id": "18ca9346.bdbedd",
@@ -316,9 +306,7 @@
             "61b9f71.7b9bb08"
         ],
         "x": 54,
-        "y": 516.5,
-        "w": 1652,
-        "h": 604.5
+        "y": 516.5
     },
     {
         "id": "73d12632.94b388",
@@ -339,9 +327,7 @@
             "541cf4bd.ec76dc"
         ],
         "x": 514,
-        "y": 759,
-        "w": 572,
-        "h": 182
+        "y": 759
     },
     {
         "id": "1b82c7fb.e55448",
@@ -364,9 +350,7 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299,
-        "w": 992,
-        "h": 162
+        "y": 299
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -390,9 +374,7 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19,
-        "w": 752,
-        "h": 262
+        "y": 19
     },
     {
         "id": "b9a71c35.b8ccf",
@@ -519,9 +501,7 @@
             "dfcc41b0.b3ad2"
         ],
         "x": 34,
-        "y": 59,
-        "w": 642,
-        "h": 142
+        "y": 59
     },
     {
         "id": "7ce4548d.b8ed0c",
@@ -542,9 +522,7 @@
             "77bd98f3.c0e8c8"
         ],
         "x": 34,
-        "y": 1519,
-        "w": 852,
-        "h": 142
+        "y": 1519
     },
     {
         "id": "c1953c38.acea1",
@@ -565,9 +543,7 @@
             "a0085f1f.0f307"
         ],
         "x": 34,
-        "y": 1339,
-        "w": 852,
-        "h": 162
+        "y": 1339
     },
     {
         "id": "4cff6fb8.ecd81",
@@ -596,9 +572,7 @@
             "64fc421078cd82f6"
         ],
         "x": 34,
-        "y": 219,
-        "w": 692,
-        "h": 322
+        "y": 219
     },
     {
         "id": "6666fbc0.896914",
@@ -624,9 +598,7 @@
             "20e6409a.ffe67"
         ],
         "x": 24,
-        "y": 519,
-        "w": 962,
-        "h": 262
+        "y": 519
     },
     {
         "id": "3f11d194.8d04ee",
@@ -651,9 +623,7 @@
             "1f2409.3d5e7bf8"
         ],
         "x": 34,
-        "y": 799,
-        "w": 952,
-        "h": 262
+        "y": 799
     },
     {
         "id": "c87697c7.9b9e58",
@@ -677,9 +647,7 @@
             "45946f85.a2da8"
         ],
         "x": 34,
-        "y": 1099,
-        "w": 952,
-        "h": 202
+        "y": 1099
     },
     {
         "id": "d8d1de94.dfe9",
@@ -724,9 +692,7 @@
             "401fb17c76832009"
         ],
         "x": 34,
-        "y": 559,
-        "w": 1212,
-        "h": 422
+        "y": 559
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -759,9 +725,7 @@
             "bdbb365a.74cc18"
         ],
         "x": 44,
-        "y": 959,
-        "w": 852,
-        "h": 642
+        "y": 959
     },
     {
         "id": "48598788.77a428",
@@ -788,9 +752,7 @@
             "b0938868.3c48e8"
         ],
         "x": 34,
-        "y": 959,
-        "w": 1172,
-        "h": 262
+        "y": 959
     },
     {
         "id": "40f7136f.c806bc",
@@ -822,9 +784,7 @@
             "7a6e01ce32748004"
         ],
         "x": 14,
-        "y": 1679,
-        "w": 1152,
-        "h": 362
+        "y": 1679
     },
     {
         "id": "9632f8fb2bd4fa59",
@@ -893,9 +853,7 @@
             "28e6fe851aacfbc8"
         ],
         "x": 34,
-        "y": 19,
-        "w": 492,
-        "h": 202
+        "y": 19
     },
     {
         "id": "0ac5cf038e9b4a0e",
@@ -914,9 +872,7 @@
             "37aac056560b1cc1"
         ],
         "x": 34,
-        "y": 259,
-        "w": 632,
-        "h": 82
+        "y": 259
     },
     {
         "id": "32340ff2f48f54cf",
@@ -940,9 +896,7 @@
             "aa807b1b18ee51ae"
         ],
         "x": 34,
-        "y": 359,
-        "w": 672,
-        "h": 242
+        "y": 359
     },
     {
         "id": "4b345f34f7b4d8e1",
@@ -960,9 +914,7 @@
             "1620464c7201262c"
         ],
         "x": 134,
-        "y": 1139,
-        "w": 572,
-        "h": 202
+        "y": 1139
     },
     {
         "id": "bc3df6523c98c42b",
@@ -990,12 +942,7 @@
             "ec6ca311df51353b",
             "5bf0eb292dccd4db",
             "5546a3e921f1ef52",
-            "dc12148c24f84fe9",
-            "f7e953dadd1c7d01",
-            "bebe2f7910ba5a9a",
-            "247f82f75fe874d8",
-            "4fe2788d4b916495",
-            "f35faa27cab017b9"
+            "dc12148c24f84fe9"
         ],
         "x": 14,
         "y": 1719,
@@ -1021,6 +968,7 @@
             "3f88b754145efcb3",
             "6b772c7790f8c758",
             "63822450abd8c825",
+            "78a32c783a9b1402",
             "6945deb0ca8c6b12",
             "cdb8955f52c79898",
             "b9f9373889ed3769",
@@ -1028,19 +976,12 @@
             "347e58777872f0ac",
             "359074cb91f0b627",
             "ef2887267666e30e",
-            "c003ab02fc04b33e",
-            "fe3e0b6012c8a090",
-            "43f0682ba81dae74",
-            "abe5b8105ab339b1",
-            "91afb4492f3f3629",
-            "532b44a36f6d3773",
-            "78a32c783a9b1402",
-            "3b72df21d2e7da6d"
+            "c003ab02fc04b33e"
         ],
         "x": 14,
         "y": 2139,
         "w": 1152,
-        "h": 582
+        "h": 402
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -4218,9 +4159,7 @@
         "y": 1960,
         "wires": [
             [
-                "62ede9f4a383c58d",
-                "f7e953dadd1c7d01",
-                "247f82f75fe874d8"
+                "62ede9f4a383c58d"
             ]
         ]
     },
@@ -4262,8 +4201,7 @@
         "y": 1960,
         "wires": [
             [
-                "62ede9f4a383c58d",
-                "4fe2788d4b916495"
+                "62ede9f4a383c58d"
             ]
         ]
     },
@@ -4285,8 +4223,7 @@
         "wires": [
             [
                 "1b7db04087fe86cc",
-                "5546a3e921f1ef52",
-                "f35faa27cab017b9"
+                "5546a3e921f1ef52"
             ]
         ]
     },
@@ -4412,8 +4349,7 @@
         "y": 2020,
         "wires": [
             [
-                "1a94b389528b9aaf",
-                "bebe2f7910ba5a9a"
+                "1a94b389528b9aaf"
             ]
         ]
     },
@@ -4656,7 +4592,7 @@
         "z": "265d3756.5a1d68",
         "g": "bc3df6523c98c42b",
         "name": "debug 69",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -4993,399 +4929,11 @@
         "links": [
             "5c01553b5435fa0a"
         ],
-        "x": 285,
-        "y": 2460,
+        "x": 345,
+        "y": 2340,
         "wires": [
             [
-                "fe3e0b6012c8a090",
                 "cdb8955f52c79898"
-            ]
-        ]
-    },
-    {
-        "id": "6945deb0ca8c6b12",
-        "type": "ui_slider",
-        "z": "265d3756.5a1d68",
-        "g": "de3e2e3aac07c809",
-        "name": "",
-        "label": "Schlafz Humi",
-        "tooltip": "Luftfeuchtigkeit Schlafzimmer",
-        "group": "5b512b5d.99aec4",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "end",
-        "topic": "Hom//Schlafz/iSetHumi",
-        "topicType": "str",
-        "min": "20",
-        "max": "70",
-        "step": "1",
-        "className": "",
-        "x": 330,
-        "y": 2500,
-        "wires": [
-            [
-                "cdb8955f52c79898",
-                "91afb4492f3f3629"
-            ]
-        ]
-    },
-    {
-        "id": "cdb8955f52c79898",
-        "type": "function",
-        "z": "265d3756.5a1d68",
-        "g": "de3e2e3aac07c809",
-        "name": "Luftbefeuchter needed",
-        "func": "var topic=msg.topic;\nvar set = 0;\nvar act = 0;\nswitch(topic){\n    case \"Hom//Schlafz/iSetHumi\":\n        set = Number(msg.payload);\n        act = flow.get(\"iSchlafzActHumi\", \"file\");\n        flow.set(\"iSchlafzSetHumi\",set, \"file\");\n       break;\n        \n   case \"Hom/stat/Schlafz/iActHumi\":\n        act = Number(msg.payload.iActHumi);\n        set = flow.get(\"iSchlafzSetHumi\", \"file\");\n        flow.set(\"iSchlafzActHumi\",act, \"file\");\n       break;\n    \n    case \"NightMode\":\n        flow.set(\"iSchlafzHumiMode\", msg.payload, \"file\");\n        break;\n    }\n    msg.act = act;\n    msg.set = set;\n    if ((set <= act) || ((flow.get(\"iSchlafzHumiMode\") == \"NIGHT\"))){ \n        flow.set(\"SchlafzHumiStat\", \"OFF\", \"file\");\n        msg.payload= \"OFF\";    \n        node.status({fill:\"red\",shape:\"ring\",text: \"Off\"});      \n            }\n    else {\n        flow.set(\"SchlafzHumiStat\", \"ON\", \"file\");\n        msg.payload = \"ON\";\n        node.status({fill:\"green\",shape:\"ring\",text: \"ON\"});  \n    }\n    return msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 540,
-        "y": 2500,
-        "wires": [
-            [
-                "b9f9373889ed3769",
-                "3a8b059a72f7cdce",
-                "43f0682ba81dae74"
-            ]
-        ]
-    },
-    {
-        "id": "b9f9373889ed3769",
-        "type": "function",
-        "z": "265d3756.5a1d68",
-        "g": "de3e2e3aac07c809",
-        "name": "Luftbefeuchter Status in DB",
-        "func": "var payload = msg.payload;\nif (payload == \"ON\"){\n         msg.payload = {\n          bHumiON: 1\n          };\n         node.status({fill:\"green\",shape:\"ring\",text: \"ON\"});\n}\nelse\n{\n msg.payload = {\n          bHumiON: 0\n          };\n         node.status({fill:\"red\",shape:\"ring\",text: \"OFF\"});\n\n}\n\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 800,
-        "y": 2500,
-        "wires": [
-            [
-                "4d7d2fc975c0bffa",
-                "abe5b8105ab339b1"
-            ]
-        ]
-    },
-    {
-        "id": "4d7d2fc975c0bffa",
-        "type": "influxdb out",
-        "z": "265d3756.5a1d68",
-        "g": "de3e2e3aac07c809",
-        "influxdb": "e3f4c3e8.b52ee",
-        "name": "HomeMatic Schlafz",
-        "measurement": "Schlafz",
-        "precision": "",
-        "retentionPolicy": "two_month",
-        "database": "database",
-        "precisionV18FluxV20": "ms",
-        "retentionPolicyV18Flux": "",
-        "org": "organisation",
-        "bucket": "bucket",
-        "x": 1050,
-        "y": 2500,
-        "wires": []
-    },
-    {
-        "id": "347e58777872f0ac",
-        "type": "inject",
-        "z": "265d3756.5a1d68",
-        "g": "de3e2e3aac07c809",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "600",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "SchlafzHumiON",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 150,
-        "y": 2640,
-        "wires": [
-            [
-                "359074cb91f0b627"
-            ]
-        ]
-    },
-    {
-        "id": "359074cb91f0b627",
-        "type": "function",
-        "z": "265d3756.5a1d68",
-        "g": "de3e2e3aac07c809",
-        "name": "Schlafz Humi h counter",
-        "func": "var status = flow.get(\"SchlafzHumiStat\",\"file\");\nvar humicount = flow.get(\"SchlafzHumiCount\", \"file\");\nvar topic=msg.topic;\n\nswitch(topic){\n    case \"SchlafzHumiON\":\n      if (status == \"ON\"){\n        humicount = humicount +1;\n        flow.set(\"SchlafzHumiCount\", humicount, \"file\");\n        msg.mystatus = status;\n        msg.payload = {\n          iHumiStat: Number(humicount)\n          }\n        node.status({fill:\"green\",shape:\"ring\",text: status});\n        return msg;\n      }\n      else node.status({fill:\"red\",shape:\"ring\",text: status});\n      return;\n    case \"ResetCounter\":\n      \tflow.set(\"SchlafzHumiCount\", 0, \"file\");\n         msg.payload = {\n          iHumiStat: Number(0)\n          }\n        node.status({fill:\"yellow\",shape:\"ring\",text: \"reset\"});\n        return msg;\n}\n      \n\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 390,
-        "y": 2640,
-        "wires": [
-            [
-                "c003ab02fc04b33e"
-            ]
-        ]
-    },
-    {
-        "id": "ef2887267666e30e",
-        "type": "inject",
-        "z": "265d3756.5a1d68",
-        "g": "de3e2e3aac07c809",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "ResetCounter",
-        "payload": "1",
-        "payloadType": "num",
-        "x": 140,
-        "y": 2680,
-        "wires": [
-            [
-                "359074cb91f0b627"
-            ]
-        ]
-    },
-    {
-        "id": "c003ab02fc04b33e",
-        "type": "delay",
-        "z": "265d3756.5a1d68",
-        "g": "de3e2e3aac07c809",
-        "name": "",
-        "pauseType": "rate",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "hour",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": true,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 640,
-        "y": 2640,
-        "wires": [
-            [
-                "4d7d2fc975c0bffa"
-            ]
-        ]
-    },
-    {
-        "id": "fe3e0b6012c8a090",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "g": "de3e2e3aac07c809",
-        "name": "debug 70",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 540,
-        "y": 2460,
-        "wires": []
-    },
-    {
-        "id": "f7e953dadd1c7d01",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "g": "bc3df6523c98c42b",
-        "name": "debug 71",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 280,
-        "y": 1900,
-        "wires": []
-    },
-    {
-        "id": "bebe2f7910ba5a9a",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "g": "bc3df6523c98c42b",
-        "name": "debug 72",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 880,
-        "y": 2020,
-        "wires": []
-    },
-    {
-        "id": "43f0682ba81dae74",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "g": "de3e2e3aac07c809",
-        "name": "debug 73",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 760,
-        "y": 2580,
-        "wires": []
-    },
-    {
-        "id": "abe5b8105ab339b1",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "g": "de3e2e3aac07c809",
-        "name": "debug 74",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1020,
-        "y": 2580,
-        "wires": []
-    },
-    {
-        "id": "91afb4492f3f3629",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "g": "de3e2e3aac07c809",
-        "name": "debug 75",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 520,
-        "y": 2580,
-        "wires": []
-    },
-    {
-        "id": "247f82f75fe874d8",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "g": "bc3df6523c98c42b",
-        "name": "debug 76",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 200,
-        "y": 2000,
-        "wires": []
-    },
-    {
-        "id": "4fe2788d4b916495",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "g": "bc3df6523c98c42b",
-        "name": "debug 77",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 480,
-        "y": 2000,
-        "wires": []
-    },
-    {
-        "id": "f35faa27cab017b9",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "g": "bc3df6523c98c42b",
-        "name": "debug 78",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 2000,
-        "wires": []
-    },
-    {
-        "id": "532b44a36f6d3773",
-        "type": "inject",
-        "z": "265d3756.5a1d68",
-        "g": "de3e2e3aac07c809",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "30",
-        "payloadType": "str",
-        "x": 110,
-        "y": 2440,
-        "wires": [
-            [
-                "6945deb0ca8c6b12"
             ]
         ]
     },
@@ -5476,7 +5024,7 @@
                 "resetOverwrite": false,
                 "time": {
                     "type": "entered",
-                    "value": "21:00",
+                    "value": "20:30",
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "none",
@@ -5485,7 +5033,7 @@
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>21:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"20\"</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>20:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"20\"</var></div></div>"
             }
         ],
         "payloadDefault": "NIGHT",
@@ -5495,7 +5043,7 @@
         "payloadDefaultOffsetType": "none",
         "payloadDefaultOffsetMultiplier": 60000,
         "x": 110,
-        "y": 2500,
+        "y": 2400,
         "wires": [
             [
                 "6945deb0ca8c6b12"
@@ -5504,33 +5052,199 @@
         ]
     },
     {
-        "id": "3b72df21d2e7da6d",
+        "id": "6945deb0ca8c6b12",
+        "type": "ui_slider",
+        "z": "265d3756.5a1d68",
+        "g": "de3e2e3aac07c809",
+        "name": "",
+        "label": "Schlafz Humi",
+        "tooltip": "Luftfeuchtigkeit Schlafzimmer",
+        "group": "5b512b5d.99aec4",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "Hom//Schlafz/iSetHumi",
+        "topicType": "str",
+        "min": "20",
+        "max": "70",
+        "step": "1",
+        "className": "",
+        "x": 330,
+        "y": 2400,
+        "wires": [
+            [
+                "cdb8955f52c79898"
+            ]
+        ]
+    },
+    {
+        "id": "cdb8955f52c79898",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "g": "de3e2e3aac07c809",
+        "name": "Luftbefeuchter needed",
+        "func": "var topic=msg.topic;\nvar set = 0;\nvar act = 0;\nswitch(topic){\n    case \"Hom//Schlafz/iSetHumi\":\n        set = Number(msg.payload);\n        act = flow.get(\"iSchlafzActHumi\", \"file\");\n        flow.set(\"iSchlafzSetHumi\",set, \"file\");\n       break;\n        \n   case \"Hom/stat/Schlafz/iActHumi\":\n        act = Number(msg.payload.iActHumi);\n        set = flow.get(\"iSchlafzSetHumi\", \"file\");\n        flow.set(\"iSchlafzActHumi\",act, \"file\");\n       break;\n    \n    case \"NightMode\":\n        flow.set(\"iSchlafzHumiMode\", msg.payload, \"file\");\n        break;\n    }\n    msg.act = act;\n    msg.set = set;\n    if ((set <= act) || ((flow.get(\"iSchlafzHumiMode\") == \"NIGHT\"))){ \n        flow.set(\"SchlafzHumiStat\", \"OFF\", \"file\");\n        msg.payload= \"OFF\";    \n        node.status({fill:\"red\",shape:\"ring\",text: \"Off\"});      \n            }\n    else {\n        flow.set(\"SchlafzHumiStat\", \"ON\", \"file\");\n        msg.payload = \"ON\";\n        node.status({fill:\"green\",shape:\"ring\",text: \"ON\"});  \n    }\n    return msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 2400,
+        "wires": [
+            [
+                "b9f9373889ed3769",
+                "3a8b059a72f7cdce"
+            ]
+        ]
+    },
+    {
+        "id": "b9f9373889ed3769",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "g": "de3e2e3aac07c809",
+        "name": "Luftbefeuchter Status in DB",
+        "func": "var payload = msg.payload;\nif (payload == \"ON\"){\n         msg.payload = {\n          bHumiON: 1\n          };\n         node.status({fill:\"green\",shape:\"ring\",text: \"ON\"});\n}\nelse\n{\n msg.payload = {\n          bHumiON: 0\n          };\n         node.status({fill:\"red\",shape:\"ring\",text: \"OFF\"});\n\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 2400,
+        "wires": [
+            [
+                "4d7d2fc975c0bffa"
+            ]
+        ]
+    },
+    {
+        "id": "4d7d2fc975c0bffa",
+        "type": "influxdb out",
+        "z": "265d3756.5a1d68",
+        "g": "de3e2e3aac07c809",
+        "influxdb": "e3f4c3e8.b52ee",
+        "name": "HomeMatic Schlafz",
+        "measurement": "Schlafz",
+        "precision": "",
+        "retentionPolicy": "two_month",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1050,
+        "y": 2400,
+        "wires": []
+    },
+    {
+        "id": "347e58777872f0ac",
         "type": "inject",
         "z": "265d3756.5a1d68",
         "g": "de3e2e3aac07c809",
         "name": "",
         "props": [
             {
-                "p": "topic",
-                "vt": "str"
+                "p": "payload"
             },
             {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "600",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SchlafzHumiON",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 150,
+        "y": 2460,
+        "wires": [
+            [
+                "359074cb91f0b627"
+            ]
+        ]
+    },
+    {
+        "id": "359074cb91f0b627",
+        "type": "function",
+        "z": "265d3756.5a1d68",
+        "g": "de3e2e3aac07c809",
+        "name": "Schlafz Humi h counter",
+        "func": "var status = flow.get(\"SchlafzHumiStat\",\"file\");\nvar humicount = flow.get(\"SchlafzHumiCount\", \"file\");\nvar topic=msg.topic;\n\nswitch(topic){\n    case \"SchlafzHumiON\":\n      if (status == \"ON\"){\n        humicount = humicount +1;\n        flow.set(\"SchlafzHumiCount\", humicount, \"file\");\n        msg.mystatus = status;\n        msg.payload = {\n          iHumiStat: Number(humicount)\n          }\n        node.status({fill:\"green\",shape:\"ring\",text: status});\n        return msg;\n      }\n      else node.status({fill:\"red\",shape:\"ring\",text: status});\n      return;\n    case \"ResetCounter\":\n      \tflow.set(\"SchlafzHumiCount\", 0, \"file\");\n         msg.payload = {\n          iHumiStat: Number(0)\n          }\n        node.status({fill:\"yellow\",shape:\"ring\",text: \"reset\"});\n        return msg;\n}\n      \n\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 2460,
+        "wires": [
+            [
+                "c003ab02fc04b33e"
+            ]
+        ]
+    },
+    {
+        "id": "ef2887267666e30e",
+        "type": "inject",
+        "z": "265d3756.5a1d68",
+        "g": "de3e2e3aac07c809",
+        "name": "",
+        "props": [
+            {
                 "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
             }
         ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "Hom/stat/Schlafz/iActHumi",
-        "payload": "{\"iActHumi\":70,\"qos\":0,\"retain\":false,\"_msgid\":\"63e55be4f356bbd9\",\"_event\":\"node:5c01553b5435fa0a\"}",
-        "payloadType": "json",
-        "x": 310,
-        "y": 2580,
+        "topic": "ResetCounter",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 140,
+        "y": 2500,
         "wires": [
             [
-                "cdb8955f52c79898",
-                "fe3e0b6012c8a090"
+                "359074cb91f0b627"
+            ]
+        ]
+    },
+    {
+        "id": "c003ab02fc04b33e",
+        "type": "delay",
+        "z": "265d3756.5a1d68",
+        "g": "de3e2e3aac07c809",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "hour",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 2460,
+        "wires": [
+            [
+                "4d7d2fc975c0bffa"
             ]
         ]
     },
