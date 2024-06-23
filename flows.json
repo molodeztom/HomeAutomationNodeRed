@@ -350,7 +350,9 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299
+        "y": 299,
+        "w": 992,
+        "h": 162
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -374,7 +376,9 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 752,
+        "h": 262
     },
     {
         "id": "b9a71c35.b8ccf",
@@ -396,9 +400,7 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 759,
-        "w": 852,
-        "h": 162
+        "y": 759
     },
     {
         "id": "40936a6d.e4bc64",
@@ -418,9 +420,7 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 599,
-        "w": 712,
-        "h": 142
+        "y": 599
     },
     {
         "id": "3644af6d.d42f6",
@@ -454,9 +454,7 @@
             "1bd2faf182fb3f8a"
         ],
         "x": 14,
-        "y": 19,
-        "w": 772,
-        "h": 522
+        "y": 19
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -479,9 +477,7 @@
             "5b9db628891c8ab5"
         ],
         "x": 14,
-        "y": 1519,
-        "w": 1072,
-        "h": 162
+        "y": 1519
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -501,7 +497,9 @@
             "dfcc41b0.b3ad2"
         ],
         "x": 34,
-        "y": 59
+        "y": 59,
+        "w": 642,
+        "h": 142
     },
     {
         "id": "7ce4548d.b8ed0c",
@@ -522,28 +520,9 @@
             "77bd98f3.c0e8c8"
         ],
         "x": 34,
-        "y": 1519
-    },
-    {
-        "id": "c1953c38.acea1",
-        "type": "group",
-        "z": "7e5a345d.05161c",
-        "name": "Rollo Olga",
-        "style": {
-            "stroke": "#92d04f",
-            "fill": "#ffefbf",
-            "label": true
-        },
-        "nodes": [
-            "9541504a.3de58",
-            "e9f25740.8e0928",
-            "7fb09d6a.3d4694",
-            "5f0f2d7a.f23d34",
-            "7406f4b2.59548c",
-            "a0085f1f.0f307"
-        ],
-        "x": 34,
-        "y": 1339
+        "y": 1319,
+        "w": 852,
+        "h": 142
     },
     {
         "id": "4cff6fb8.ecd81",
@@ -572,7 +551,9 @@
             "64fc421078cd82f6"
         ],
         "x": 34,
-        "y": 219
+        "y": 219,
+        "w": 692,
+        "h": 322
     },
     {
         "id": "6666fbc0.896914",
@@ -598,7 +579,9 @@
             "20e6409a.ffe67"
         ],
         "x": 24,
-        "y": 519
+        "y": 519,
+        "w": 962,
+        "h": 262
     },
     {
         "id": "3f11d194.8d04ee",
@@ -623,7 +606,9 @@
             "1f2409.3d5e7bf8"
         ],
         "x": 34,
-        "y": 799
+        "y": 799,
+        "w": 952,
+        "h": 262
     },
     {
         "id": "c87697c7.9b9e58",
@@ -647,7 +632,9 @@
             "45946f85.a2da8"
         ],
         "x": 34,
-        "y": 1099
+        "y": 1099,
+        "w": 952,
+        "h": 202
     },
     {
         "id": "d8d1de94.dfe9",
@@ -692,7 +679,9 @@
             "401fb17c76832009"
         ],
         "x": 34,
-        "y": 559
+        "y": 559,
+        "w": 1212,
+        "h": 422
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -752,7 +741,9 @@
             "b0938868.3c48e8"
         ],
         "x": 34,
-        "y": 959
+        "y": 959,
+        "w": 1172,
+        "h": 262
     },
     {
         "id": "40f7136f.c806bc",
@@ -783,8 +774,10 @@
             "79e70291102b361f",
             "7a6e01ce32748004"
         ],
-        "x": 14,
-        "y": 1679
+        "x": 34,
+        "y": 1859,
+        "w": 1152,
+        "h": 362
     },
     {
         "id": "9632f8fb2bd4fa59",
@@ -806,9 +799,7 @@
             "54e47a03f8e6baba"
         ],
         "x": 14,
-        "y": 939,
-        "w": 892,
-        "h": 142
+        "y": 939
     },
     {
         "id": "492449f2a284d6d7",
@@ -833,9 +824,7 @@
             "5c01553b5435fa0a"
         ],
         "x": 14,
-        "y": 1099,
-        "w": 772,
-        "h": 262
+        "y": 1099
     },
     {
         "id": "ba622014ba4332d1",
@@ -945,9 +934,7 @@
             "dc12148c24f84fe9"
         ],
         "x": 14,
-        "y": 1719,
-        "w": 1052,
-        "h": 402
+        "y": 1719
     },
     {
         "id": "de3e2e3aac07c809",
@@ -979,9 +966,41 @@
             "c003ab02fc04b33e"
         ],
         "x": 14,
-        "y": 2139,
-        "w": 1152,
-        "h": 402
+        "y": 2139
+    },
+    {
+        "id": "f65918f1b4342953",
+        "type": "group",
+        "z": "7e5a345d.05161c",
+        "name": "Rollo Olga",
+        "style": {
+            "fill": "#ffdf7f",
+            "label": true,
+            "color": "#0070c0"
+        },
+        "nodes": [
+            "a58a381aa2e38d88",
+            "05d48b7f7eb46216",
+            "039afede1f067b9d",
+            "161e741db7a72e96",
+            "45afb650ee3ca231",
+            "82735bbdda171b0b",
+            "b58ef69469567186",
+            "1f9a2da59781e10b",
+            "5a6bab5d08bdae64",
+            "b72ff891bf3f618a",
+            "49e822a74475131c",
+            "d05a8dd424d87432",
+            "75f39a461474fde6",
+            "480aa351e7d8b852",
+            "c3d2f84d0adc090d",
+            "a9f2e8e37fab03d9",
+            "a83aef368b05cde1"
+        ],
+        "x": 34,
+        "y": 1479,
+        "w": 1092,
+        "h": 362
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -1454,11 +1473,13 @@
         "z": "6f61cfd3.3d721",
         "g": "584f76f1.996908",
         "name": "SensorLoc switch/convert",
-        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor0/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n         return msg;\n    case \"Sensor0/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor0/iLight\":\n        msg.payload={\n            iLight: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor0/iAtmo\":\n        msg.payload={\n            fAtmo: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor0/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor0/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n         return msg;\n    case \"Sensor0/fHumi\":\n        if((Number(msg.payload) > 99)) \n        break;\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor0/iLight\":\n        if((Number(msg.payload) > 2)) \n        break;\n        msg.payload={\n            iLight: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor0/iAtmo\":\n        msg.payload={\n            fAtmo: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor0/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
+        "libs": [],
         "x": 370,
         "y": 61,
         "wires": [
@@ -1545,11 +1566,13 @@
         "z": "6f61cfd3.3d721",
         "g": "584f76f1.996908",
         "name": "Sensor5 switch/convert",
-        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor5/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"Sensor5/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor5/fVolt\":\n        msg.payload={\n            fVolt: Number(msg.payload),\n        }\n        msg.retentionPolicy= \"half_year\"\n        return msg;\n    case \"Sensor5/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
+        "func": "var topic=msg.topic;\nswitch(topic){\n    case \"Sensor5/fTempA\":\n        msg.payload={\n            fTempA: Number(msg.payload),\n        }\n        \n        return msg;\n    case \"Sensor5/fHumi\":\n        if((Number(msg.payload) > 99)) \n        break;\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor5/fVolt\":\n        msg.payload={\n            fVolt: Number(msg.payload),\n        }\n        msg.retentionPolicy= \"half_year\"\n        return msg;\n    case \"Sensor5/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
+        "libs": [],
         "x": 380,
         "y": 401,
         "wires": [
@@ -2026,7 +2049,7 @@
         "z": "6f61cfd3.3d721",
         "g": "5d7bb23e.6c04ec",
         "name": "ValveCalculation V2",
-        "func": "var TempOut = 11;\nvar ClockPos = 0;\nvar fTemp = 0;\nvar payload;\n//var o=msg.payload;\nvar bHeaterNeeded = false;\n//We get 3 kinds of input and trigger\n//Clock set valve by time \n//Temp A Outside Temp \n//HeaterNeeded Event if one of the local valve opens\n//The events set global variables, then the calculation logic determines the actual valve pos needed\n//\n//Clock sets a desired Valve Pos dependend on time it is stored. Ony if it \n//is 0 meant to switch off heating independend of heater needed the message\n//is forwarded to Valve.\n//temp only sets a global temp value for outdoor temp\n//heater needed close valve if no heater needed or open to valve position\n//set by Clock\n//msg payload is the valve position to set\nbHeaterNeeded = flow.get(\"HeaterNeeded\", \"memoryOnly\");\nswitch (msg.topic){\n    case \"ClockValvePos\":\n        ClockPos = msg.payload;\n        flow.set(\"HeaterVentPos\",ClockPos);\n        break;\n    case \"Sensor1/fTempA\":\n        TempOut = msg.payload;\n       // fTemp = Number(TempOut);\n       // global.set(\"TempOut\",fTemp, \"file\");\n        break;\n    case \"HeaterNeeded\":\n        bHeaterNeeded = msg.payload;\n        flow.set(\"HeaterNeeded\",bHeaterNeeded, \"memoryOnly\");\n        break;\n    default:\n    break;\n}\n//determine valve pos needed\n// always open if temp out less than -2 degrees\n// open if heater needed then use value set by clock\n// close otherwise\n\nif (global.get(\"TempOut\",\"file\") <= '-4'){\n     msg.payload = '5' ;\n     node.status({fill:\"white\",shape:\"ring\",text: \"ColdOutside\"});\n    } \nelse {\n  \n    if (bHeaterNeeded == false) \n    {\n        msg.payload = '0' ;\n        node.status({fill:\"blue\",shape:\"ring\",text: \"Heater not needed\"});\n    }\n    else \n    {\n        msg.payload = flow.get(\"HeaterVentPos\");\n        node.status({fill:\"red\",shape:\"ring\",text: \"Heater set to Clock Value\"});\n    }\n}\n    return msg;\n ",
+        "func": "var TempOut = 11;\nvar ClockPos = 0;\nvar fTemp = 0;\nvar payload;\n//var o=msg.payload;\nvar bHeaterNeeded = false;\n//We get 3 kinds of input and trigger\n//Clock set valve by time \n//Temp A Outside Temp \n//HeaterNeeded Event if one of the local valve opens\n//The events set global variables, then the calculation logic determines the actual valve pos needed\n//\n//Clock sets a desired Valve Pos dependend on time it is stored. Ony if it \n//is 0 meant to switch off heating independend of heater needed the message\n//is forwarded to Valve.\n//temp only sets a global temp value for outdoor temp\n//heater needed close valve if no heater needed or open to valve position\n//set by Clock\n//msg payload is the valve position to set\nbHeaterNeeded = flow.get(\"HeaterNeeded\", \"file\");\nswitch (msg.topic){\n    case \"ClockValvePos\":\n        ClockPos = msg.payload;\n        flow.set(\"HeaterVentPos\",ClockPos);\n        break;\n    case \"Sensor1/fTempA\":\n        TempOut = msg.payload;\n       // fTemp = Number(TempOut);\n       // global.set(\"TempOut\",fTemp, \"file\");\n        break;\n    case \"HeaterNeeded\":\n        bHeaterNeeded = msg.payload;\n        flow.set(\"HeaterNeeded\",bHeaterNeeded, \"file\");\n        break;\n    default:\n    break;\n}\n//determine valve pos needed\n// always open if temp out less than -2 degrees\n// open if heater needed then use value set by clock\n// close otherwise\n\nif (global.get(\"TempOut\",\"file\") <= '-4'){\n     msg.payload = '5' ;\n     node.status({fill:\"white\",shape:\"ring\",text: \"ColdOutside\"});\n    } \nelse {\n  \n    if (bHeaterNeeded == false) \n    {\n        msg.payload = '0' ;\n        node.status({fill:\"blue\",shape:\"ring\",text: \"Heater not needed\"});\n    }\n    else \n    {\n        msg.payload = flow.get(\"HeaterVentPos\");\n        node.status({fill:\"red\",shape:\"ring\",text: \"Heater set to Clock Value\"});\n    }\n}\n    return msg;\n ",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -2584,7 +2607,7 @@
         "z": "6f61cfd3.3d721",
         "g": "584f76f1.996908",
         "name": "Sensor6 switch/convert",
-        "func": "var topic=msg.topic;\nvar iLux;\nvar iRed;\n//do not  save wrong numbers\nif((Number(msg.payload) > 65000)) \nreturn;\nswitch(topic){\n    case \"Sensor6/fTempB\":\n        msg.payload={\n            fTempB: Number(msg.payload),\n        }\n        return msg;\n\n    case \"Sensor6/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor6/nLux\":\n        iLux = Number(msg.payload);\n        global.set(\"LuxOut\",iLux, \"file\");\n        msg.payload={\n            iLux: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nRed\":\n        iRed = Number(msg.payload);\n        global.set(\"iRed\",iRed,\"file\");\n        msg.payload={\n            iRed: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nGreen\":\n        msg.payload={\n            iGreen: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nBlue\":\n        msg.payload={\n            iBlue: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nClear\":\n        if((Number(msg.payload) > 30000)) \n        break;\n        msg.payload={\n            iClear: Number(msg.payload),\n        }\n      \n        return msg;\n   \n    case \"Sensor6/nColor\":\n    //do not  save wrong numbers\n    if((Number(msg.payload) == 0)) \n    break;\n\n        msg.payload={\n            iColor: Number(msg.payload),\n        }\n     \n        return msg;\n    case \"Sensor6/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
+        "func": "var topic=msg.topic;\nvar iLux;\nvar iRed;\n//do not  save wrong numbers\nif((Number(msg.payload) > 65000)) \nreturn;\nswitch(topic){\n    case \"Sensor6/fTempB\":\n        msg.payload={\n            fTempB: Number(msg.payload),\n        }\n        return msg;\n\n    case \"Sensor6/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload) + 1,\n        }\n        return msg;\n    case \"Sensor6/nLux\":\n        iLux = Number(msg.payload);\n        global.set(\"LuxOut\",iLux, \"file\");\n        msg.payload={\n            iLux: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nRed\":\n        iRed = Number(msg.payload);\n        global.set(\"iRed\",iRed,\"file\");\n        msg.payload={\n            iRed: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nGreen\":\n        msg.payload={\n            iGreen: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nBlue\":\n        msg.payload={\n            iBlue: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nClear\":\n        if((Number(msg.payload) > 30000)) \n        break;\n        msg.payload={\n            iClear: Number(msg.payload),\n        }\n      \n        return msg;\n   \n    case \"Sensor6/nColor\":\n    //do not  save wrong numbers\n    if((Number(msg.payload) == 0)) \n    break;\n\n        msg.payload={\n            iColor: Number(msg.payload),\n        }\n     \n        return msg;\n    case \"Sensor6/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -3169,7 +3192,7 @@
         "type": "inject",
         "z": "265d3756.5a1d68",
         "g": "5e94d88a.fb01e8",
-        "name": "",
+        "name": "Trigger calculation at start",
         "props": [
             {
                 "p": "payload"
@@ -3181,12 +3204,12 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
+        "once": true,
+        "onceDelay": "2",
         "topic": "Hom/stat/Wohnz/iVentEck",
         "payload": "5",
         "payloadType": "str",
-        "x": 180,
+        "x": 170,
         "y": 1640,
         "wires": [
             [
@@ -5231,7 +5254,7 @@
         "pauseType": "rate",
         "timeout": "5",
         "timeoutUnits": "seconds",
-        "rate": "1",
+        "rate": "4",
         "nbRateUnits": "1",
         "rateUnits": "hour",
         "randomFirst": "1",
@@ -7502,8 +7525,13 @@
         "g": "3f11d194.8d04ee",
         "name": "ShutterPosition",
         "topic": "cmnd/RolloWohnzimmer/ShutterPosition",
-        "qos": "",
-        "retain": "",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
         "broker": "19cf2a10.f9d4a6",
         "x": 880,
         "y": 940,
@@ -7652,20 +7680,6 @@
         ]
     },
     {
-        "id": "9541504a.3de58",
-        "type": "mqtt out",
-        "z": "7e5a345d.05161c",
-        "g": "c1953c38.acea1",
-        "name": "",
-        "topic": "cmnd/RolloOlga/ShutterPosition",
-        "qos": "1",
-        "retain": "",
-        "broker": "19cf2a10.f9d4a6",
-        "x": 730,
-        "y": 1380,
-        "wires": []
-    },
-    {
         "id": "fd62f2d7.c32f7",
         "type": "link in",
         "z": "7e5a345d.05161c",
@@ -7739,7 +7753,7 @@
         "retain": "",
         "broker": "19cf2a10.f9d4a6",
         "x": 730,
-        "y": 1560,
+        "y": 1360,
         "wires": []
     },
     {
@@ -7769,7 +7783,8 @@
             "fbb3d4c7.4328d8",
             "f525cf20.f74e1",
             "a0085f1f.0f307",
-            "75086919.4e5548"
+            "75086919.4e5548",
+            "b58ef69469567186"
         ],
         "x": 555,
         "y": 420,
@@ -7804,29 +7819,10 @@
         "broker": "19cf2a10.f9d4a6",
         "inputs": 0,
         "x": 170,
-        "y": 1560,
+        "y": 1360,
         "wires": [
             [
                 "29e92fc.65284d"
-            ]
-        ]
-    },
-    {
-        "id": "5f0f2d7a.f23d34",
-        "type": "mqtt in",
-        "z": "7e5a345d.05161c",
-        "g": "c1953c38.acea1",
-        "name": "",
-        "topic": "stat/RolloOlga/SHUTTER1",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "19cf2a10.f9d4a6",
-        "inputs": 0,
-        "x": 170,
-        "y": 1380,
-        "wires": [
-            [
-                "7fb09d6a.3d4694"
             ]
         ]
     },
@@ -7887,23 +7883,6 @@
         "wires": [
             [
                 "719dd77e.126428"
-            ]
-        ]
-    },
-    {
-        "id": "a0085f1f.0f307",
-        "type": "link in",
-        "z": "7e5a345d.05161c",
-        "g": "c1953c38.acea1",
-        "name": "",
-        "links": [
-            "f69a51fd.3a899"
-        ],
-        "x": 165,
-        "y": 1440,
-        "wires": [
-            [
-                "e9f25740.8e0928"
             ]
         ]
     },
@@ -7995,8 +7974,8 @@
         "correl": "",
         "expiry": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 1030,
-        "y": 1920,
+        "x": 1050,
+        "y": 2100,
         "wires": []
     },
     {
@@ -8010,8 +7989,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 850,
-        "y": 1920,
+        "x": 870,
+        "y": 2100,
         "wires": [
             [
                 "485a5be0.812e94",
@@ -8032,8 +8011,8 @@
         "nl": false,
         "rap": false,
         "inputs": 0,
-        "x": 170,
-        "y": 1780,
+        "x": 190,
+        "y": 1960,
         "wires": [
             [
                 "47b1e704.2b8a68"
@@ -8049,8 +8028,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 370,
-        "y": 1780,
+        "x": 390,
+        "y": 1960,
         "wires": [
             [
                 "166a9b8664b09914",
@@ -8078,8 +8057,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 730,
-        "y": 1780,
+        "x": 750,
+        "y": 1960,
         "wires": [
             [
                 "52f4f339.08914c"
@@ -8102,8 +8081,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 170,
-        "y": 1920,
+        "x": 190,
+        "y": 2100,
         "wires": [
             [
                 "b4458220578284d6"
@@ -8119,8 +8098,8 @@
         "links": [
             "f69a51fd.3a899"
         ],
-        "x": 215,
-        "y": 2000,
+        "x": 235,
+        "y": 2180,
         "wires": [
             [
                 "eec0f371.5a3f3"
@@ -8877,7 +8856,7 @@
         "autoTrigger": true,
         "autoTriggerTime": "600000",
         "startDelayTime": 10000,
-        "contextStore": "",
+        "contextStore": "file",
         "results": [
             {
                 "p": "",
@@ -9424,7 +9403,7 @@
         "addId": "",
         "positionConfig": "9a5a8534.25d4d8",
         "autoTrigger": true,
-        "autoTriggerTime": "600000",
+        "autoTriggerTime": "300000",
         "startDelayTime": 10000,
         "contextStore": "",
         "results": [
@@ -9931,406 +9910,6 @@
         ]
     },
     {
-        "id": "e9f25740.8e0928",
-        "type": "blind-control",
-        "z": "7e5a345d.05161c",
-        "g": "c1953c38.acea1",
-        "name": "RolloOlga",
-        "topic": "",
-        "addIdType": "none",
-        "addId": "",
-        "positionConfig": "9a5a8534.25d4d8",
-        "autoTrigger": true,
-        "autoTriggerTime": "600000",
-        "startDelayTime": 10000,
-        "contextStore": "",
-        "results": [
-            {
-                "p": "",
-                "pt": "msgTopic",
-                "v": "",
-                "vt": "topic"
-            },
-            {
-                "p": "",
-                "pt": "msgPayload",
-                "v": "",
-                "vt": "level"
-            },
-            {
-                "p": "slat",
-                "pt": "msg",
-                "v": "",
-                "vt": "slat"
-            },
-            {
-                "p": "blindCtrl",
-                "pt": "msg",
-                "v": "",
-                "vt": "ctrlObj"
-            }
-        ],
-        "blindIncrement": "1",
-        "blindOpenPos": "100",
-        "blindClosedPos": 0,
-        "blindPosReverse": false,
-        "blindPosDefault": "open (max)",
-        "blindPosDefaultType": "levelFixed",
-        "slatPosDefault": "",
-        "slatPosDefaultType": "none",
-        "overwriteExpire": "7200000",
-        "rules": [
-            {
-                "index": 0,
-                "name": "HolidayWeekend",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [
-                    {
-                        "valueType": "global",
-                        "value": "day.today.isWeekendOrHoliday",
-                        "operator": "true",
-                        "operatorText": "ist true",
-                        "thresholdType": "num",
-                        "threshold": 0
-                    }
-                ],
-                "level": {
-                    "type": "levelFixed",
-                    "value": "closed (min)",
-                    "operator": 0,
-                    "operatorText": "↕  Absolut"
-                },
-                "slat": {
-                    "type": "none",
-                    "value": ""
-                },
-                "topic": "",
-                "resetOverwrite": false,
-                "importance": 0,
-                "time": {
-                    "type": "entered",
-                    "value": "7:45",
-                    "operator": 0,
-                    "operatorText": "↥ bis",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>7:45</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
-            },
-            {
-                "index": 1,
-                "name": "SonAufAuf",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "level": {
-                    "type": "levelFixed",
-                    "value": "closed (min)",
-                    "operator": 0,
-                    "operatorText": "↕  Absolut"
-                },
-                "slat": {
-                    "type": "none",
-                    "value": ""
-                },
-                "topic": "",
-                "resetOverwrite": true,
-                "importance": 0,
-                "time": {
-                    "type": "pdsTime",
-                    "value": "civilDawn",
-                    "operator": 0,
-                    "operatorText": "↥ bis",
-                    "offsetType": "none",
-                    "offset": "",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "timeMin": {
-                    "type": "entered",
-                    "value": "6:00",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000
-                },
-                "timeMax": {
-                    "type": "entered",
-                    "value": "9:00",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>bürgerliche Morgendämmerung</var><div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div><div class=\"indent-resetOverwrite-text\"> <i class=\"fa fa-thumbs-o-down\" aria-hidden=\"true\"></i><span>manuelle Überschreibung verfällt wenn die Regel aktiv wird</span> </div></div>"
-            },
-            {
-                "index": 2,
-                "name": "Hitze",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [
-                    {
-                        "valueType": "global",
-                        "value": "#:(file)::TempOut",
-                        "operator": "gte",
-                        "operatorText": "≥",
-                        "thresholdType": "num",
-                        "threshold": "25"
-                    }
-                ],
-                "level": {
-                    "type": "levelFixed",
-                    "value": "50%",
-                    "operator": 0,
-                    "operatorText": "↕ absolute"
-                },
-                "slat": {
-                    "type": "none",
-                    "value": ""
-                },
-                "topic": "",
-                "resetOverwrite": false,
-                "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> ≥ 25</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>blind position: </span> ↕ absolute <var>50%</var></div></div>"
-            },
-            {
-                "index": 3,
-                "name": "SonnenuntergangZu",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "level": {
-                    "type": "levelFixed",
-                    "value": "50%",
-                    "operator": 0,
-                    "operatorText": "↕  Absolut"
-                },
-                "slat": {
-                    "type": "none",
-                    "value": ""
-                },
-                "topic": "",
-                "resetOverwrite": false,
-                "importance": 0,
-                "time": {
-                    "type": "pdsTime",
-                    "value": "sunsetEnd",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "num",
-                    "offset": "15",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "timeMax": {
-                    "type": "entered",
-                    "value": "21:00",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:15<div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>50%</var></div></div>"
-            },
-            {
-                "index": 4,
-                "name": "WochenendeGeschlossen",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [
-                    {
-                        "valueType": "global",
-                        "value": "day.today.isWeekendOrHoliday",
-                        "operator": "true",
-                        "operatorText": "ist true",
-                        "thresholdType": "num",
-                        "threshold": 0
-                    }
-                ],
-                "level": {
-                    "type": "levelFixed",
-                    "value": "closed (min)",
-                    "operator": 0,
-                    "operatorText": "↕  Absolut"
-                },
-                "slat": {
-                    "type": "none",
-                    "value": ""
-                },
-                "topic": "",
-                "resetOverwrite": false,
-                "importance": 0,
-                "time": {
-                    "type": "entered",
-                    "value": "22:00",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
-            },
-            {
-                "index": 5,
-                "name": "WochentagGeschlossen",
-                "version": 3,
-                "enabled": true,
-                "isValid": true,
-                "conditions": [],
-                "level": {
-                    "type": "levelFixed",
-                    "value": "closed (min)",
-                    "operator": 0,
-                    "operatorText": "↕  Absolut"
-                },
-                "slat": {
-                    "type": "none",
-                    "value": ""
-                },
-                "topic": "",
-                "resetOverwrite": false,
-                "importance": 0,
-                "time": {
-                    "type": "pdsTime",
-                    "value": "blueHourDuskEnd",
-                    "operator": 1,
-                    "operatorText": "↧ von",
-                    "offsetType": "num",
-                    "offset": "",
-                    "multiplier": 60000,
-                    "days": "*",
-                    "months": "*"
-                },
-                "timeMax": {
-                    "type": "entered",
-                    "value": "21:45",
-                    "offsetType": "none",
-                    "offset": "1",
-                    "multiplier": 60000
-                },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Blaue Abendstunde Ende</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:45</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
-            }
-        ],
-        "sunControlMode": "16",
-        "sunFloorLengthType": "num",
-        "sunFloorLength": "90",
-        "sunMinDelta": "5",
-        "blindPosMin": "25%",
-        "blindPosMinType": "levelFixed",
-        "blindPosMax": "open (max)",
-        "blindPosMaxType": "levelFixed",
-        "blindOpenPosOffset": "",
-        "blindClosedPosOffset": "",
-        "sunSlat": "",
-        "sunSlatType": "none",
-        "smoothTime": "",
-        "sunTopic": "SunShading",
-        "windowTopType": "num",
-        "windowTop": "205",
-        "windowBottomType": "num",
-        "windowBottom": "100",
-        "windowAzimuthStartType": "numAzimuth",
-        "windowAzimuthStart": "153",
-        "windowAzimuthEndType": "numAzimuth",
-        "windowAzimuthEnd": "190",
-        "oversteers": [
-            {
-                "mode": 0,
-                "valueType": "global",
-                "value": "#:(file)::TempOut",
-                "operator": "lt",
-                "operatorText": "<",
-                "thresholdType": "num",
-                "threshold": "10",
-                "onlySunInWindow": true,
-                "blindPos": {
-                    "type": "levelFixed",
-                    "value": "open (max)"
-                },
-                "slatPos": {
-                    "type": "none",
-                    "value": ""
-                }
-            },
-            {
-                "mode": 0,
-                "valueType": "pdsCalcElevation",
-                "value": "",
-                "operator": "lt",
-                "operatorText": "<",
-                "thresholdType": "numAltitude",
-                "threshold": "10",
-                "onlySunInWindow": true,
-                "blindPos": {
-                    "type": "levelFixed",
-                    "value": "open (max)"
-                },
-                "slatPos": {
-                    "type": "none",
-                    "value": ""
-                }
-            },
-            {
-                "mode": 0,
-                "valueType": "msg",
-                "value": "clouds",
-                "operator": "gte",
-                "operatorText": ">=",
-                "thresholdType": "num",
-                "threshold": "25",
-                "onlySunInWindow": true,
-                "blindPos": {
-                    "type": "levelFixed",
-                    "value": "open (max)"
-                },
-                "slatPos": {
-                    "type": "none",
-                    "value": ""
-                }
-            },
-            {
-                "mode": 0,
-                "valueType": "global",
-                "value": "#:(file)::iRed",
-                "operator": "lt",
-                "operatorText": "<",
-                "thresholdType": "num",
-                "threshold": "15000",
-                "onlySunInWindow": true,
-                "blindPos": {
-                    "type": "levelFixed",
-                    "value": "open (max)"
-                },
-                "slatPos": {
-                    "type": "none",
-                    "value": ""
-                }
-            }
-        ],
-        "oversteerTopic": "CloudsOverwrite",
-        "x": 380,
-        "y": 1440,
-        "wires": [
-            [
-                "9541504a.3de58",
-                "7406f4b2.59548c"
-            ],
-            []
-        ]
-    },
-    {
         "id": "66335075.9471e",
         "type": "blind-control",
         "z": "7e5a345d.05161c",
@@ -10704,7 +10283,7 @@
         "oversteers": [],
         "oversteerTopic": "",
         "x": 380,
-        "y": 1620,
+        "y": 1420,
         "wires": [
             [
                 "b9f43bc.ca86bc8",
@@ -11238,12 +10817,12 @@
             }
         ],
         "oversteerTopic": "CloudsOverwrite",
-        "x": 350,
-        "y": 2000,
+        "x": 370,
+        "y": 2180,
         "wires": [
             [
-                "485a5be0.812e94",
-                "bdb4e967.1f53d8"
+                "bdb4e967.1f53d8",
+                "485a5be0.812e94"
             ],
             []
         ]
@@ -11353,38 +10932,10 @@
         "step": 1,
         "className": "",
         "x": 410,
-        "y": 1560,
+        "y": 1360,
         "wires": [
             [
                 "b9f43bc.ca86bc8"
-            ]
-        ]
-    },
-    {
-        "id": "7fb09d6a.3d4694",
-        "type": "ui_slider",
-        "z": "7e5a345d.05161c",
-        "g": "c1953c38.acea1",
-        "name": "Rollo Olga Position",
-        "label": "Olga",
-        "tooltip": "",
-        "group": "13a03688.c43e99",
-        "order": 9,
-        "width": "6",
-        "height": "1",
-        "passthru": true,
-        "outs": "end",
-        "topic": "cmd/RolloOlga/ShutterPosition",
-        "topicType": "msg",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "className": "",
-        "x": 410,
-        "y": 1380,
-        "wires": [
-            [
-                "9541504a.3de58"
             ]
         ]
     },
@@ -11408,8 +10959,8 @@
         "max": "100",
         "step": 1,
         "className": "",
-        "x": 620,
-        "y": 1920,
+        "x": 640,
+        "y": 2100,
         "wires": [
             [
                 "28683cb0.557de4",
@@ -11568,29 +11119,7 @@
         "fontSize": "",
         "color": "#000000",
         "x": 670,
-        "y": 1620,
-        "wires": []
-    },
-    {
-        "id": "7406f4b2.59548c",
-        "type": "ui_text",
-        "z": "7e5a345d.05161c",
-        "g": "c1953c38.acea1",
-        "group": "13a03688.c43e99",
-        "order": 10,
-        "width": "6",
-        "height": "1",
-        "name": "",
-        "label": "Status Olga",
-        "format": "{{msg.blindCtrl.reason.description}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 680,
-        "y": 1460,
+        "y": 1420,
         "wires": []
     },
     {
@@ -11611,8 +11140,8 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 1040,
-        "y": 2000,
+        "x": 1060,
+        "y": 2180,
         "wires": []
     },
     {
@@ -11650,8 +11179,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 380,
-        "y": 1720,
+        "x": 400,
+        "y": 1900,
         "wires": []
     },
     {
@@ -11668,8 +11197,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
-        "y": 1880,
+        "x": 580,
+        "y": 2060,
         "wires": []
     },
     {
@@ -11690,8 +11219,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 530,
-        "y": 1780,
+        "x": 550,
+        "y": 1960,
         "wires": [
             [
                 "c25c352a.ce5a48",
@@ -11713,8 +11242,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 700,
-        "y": 1720,
+        "x": 720,
+        "y": 1900,
         "wires": []
     },
     {
@@ -11735,8 +11264,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 360,
-        "y": 1920,
+        "x": 380,
+        "y": 2100,
         "wires": [
             [
                 "571c071d.5ff3c8",
@@ -11757,8 +11286,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1000,
-        "y": 1880,
+        "x": 1020,
+        "y": 2060,
         "wires": []
     },
     {
@@ -11767,15 +11296,15 @@
         "z": "7e5a345d.05161c",
         "g": "40f7136f.c806bc",
         "name": "debug 58",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 840,
-        "y": 1860,
+        "x": 860,
+        "y": 2040,
         "wires": []
     },
     {
@@ -11877,6 +11406,763 @@
         "x": 590,
         "y": 500,
         "wires": []
+    },
+    {
+        "id": "a58a381aa2e38d88",
+        "type": "mqtt out",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "Rollo Olga",
+        "topic": "RolloOlga/command/cover:0",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 1030,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "05d48b7f7eb46216",
+        "type": "function",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "combine msg",
+        "func": "//create string with command and value\n//V0.1\nvar command = \"pos,\"\nvar value = msg.payload\nvar output= \"empty\"\nmsg.topic = \"topic\"\noutput = command + value\nmsg.payload = output\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 1720,
+        "wires": [
+            [
+                "a58a381aa2e38d88",
+                "75f39a461474fde6"
+            ]
+        ]
+    },
+    {
+        "id": "039afede1f067b9d",
+        "type": "mqtt in",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "",
+        "topic": "RolloOlga/status/cover:0",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "19cf2a10.f9d4a6",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 170,
+        "y": 1580,
+        "wires": [
+            [
+                "161e741db7a72e96"
+            ]
+        ]
+    },
+    {
+        "id": "161e741db7a72e96",
+        "type": "json",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 390,
+        "y": 1580,
+        "wires": [
+            [
+                "1f9a2da59781e10b",
+                "b72ff891bf3f618a"
+            ]
+        ]
+    },
+    {
+        "id": "45afb650ee3ca231",
+        "type": "change",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.current_pos",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 1580,
+        "wires": [
+            [
+                "82735bbdda171b0b"
+            ]
+        ]
+    },
+    {
+        "id": "82735bbdda171b0b",
+        "type": "switch",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 190,
+        "y": 1720,
+        "wires": [
+            [
+                "d05a8dd424d87432"
+            ]
+        ]
+    },
+    {
+        "id": "b58ef69469567186",
+        "type": "link in",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "WeatherID",
+        "links": [
+            "f69a51fd.3a899"
+        ],
+        "x": 235,
+        "y": 1780,
+        "wires": [
+            [
+                "a83aef368b05cde1"
+            ]
+        ]
+    },
+    {
+        "id": "1f9a2da59781e10b",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "debug 70",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "5a6bab5d08bdae64",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "debug 71",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "b72ff891bf3f618a",
+        "type": "switch",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "",
+        "property": "payload.state",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "stopped",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "open",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "closed",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 550,
+        "y": 1580,
+        "wires": [
+            [
+                "45afb650ee3ca231",
+                "49e822a74475131c"
+            ],
+            [
+                "45afb650ee3ca231"
+            ],
+            [
+                "45afb650ee3ca231"
+            ]
+        ]
+    },
+    {
+        "id": "49e822a74475131c",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "debug 72",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "d05a8dd424d87432",
+        "type": "delay",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 1720,
+        "wires": [
+            [
+                "5a6bab5d08bdae64",
+                "c3d2f84d0adc090d"
+            ]
+        ]
+    },
+    {
+        "id": "75f39a461474fde6",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "debug 73",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 1680,
+        "wires": []
+    },
+    {
+        "id": "480aa351e7d8b852",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "debug 74",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "c3d2f84d0adc090d",
+        "type": "ui_slider",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "Rollo Olga Position",
+        "label": "Olga",
+        "tooltip": "",
+        "group": "13a03688.c43e99",
+        "order": 9,
+        "width": "6",
+        "height": "1",
+        "passthru": true,
+        "outs": "end",
+        "topic": "command/pos",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 610,
+        "y": 1720,
+        "wires": [
+            [
+                "05d48b7f7eb46216",
+                "480aa351e7d8b852"
+            ]
+        ]
+    },
+    {
+        "id": "a9f2e8e37fab03d9",
+        "type": "ui_text",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "group": "13a03688.c43e99",
+        "order": 10,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Status Olga",
+        "format": "{{msg.blindCtrl.reason.description}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1030,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "a83aef368b05cde1",
+        "type": "blind-control",
+        "z": "7e5a345d.05161c",
+        "g": "f65918f1b4342953",
+        "name": "RolloOlga",
+        "topic": "",
+        "addIdType": "none",
+        "addId": "",
+        "positionConfig": "9a5a8534.25d4d8",
+        "autoTrigger": true,
+        "autoTriggerTime": "600000",
+        "startDelayTime": 10000,
+        "contextStore": "",
+        "results": [
+            {
+                "p": "",
+                "pt": "msgTopic",
+                "v": "",
+                "vt": "topic"
+            },
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "pos,${level}",
+                "vt": "strPlaceholder"
+            },
+            {
+                "p": "slat",
+                "pt": "msg",
+                "v": "",
+                "vt": "slat"
+            },
+            {
+                "p": "blindCtrl",
+                "pt": "msg",
+                "v": "",
+                "vt": "ctrlObj"
+            }
+        ],
+        "blindIncrement": "1",
+        "blindOpenPos": "100",
+        "blindClosedPos": 0,
+        "blindPosReverse": false,
+        "blindPosDefault": "open (max)",
+        "blindPosDefaultType": "levelFixed",
+        "slatPosDefault": "",
+        "slatPosDefaultType": "none",
+        "overwriteExpire": "7200000",
+        "rules": [
+            {
+                "index": 0,
+                "name": "HolidayWeekend",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "day.today.isWeekendOrHoliday",
+                        "operator": "true",
+                        "operatorText": "ist true",
+                        "thresholdType": "num",
+                        "threshold": 0
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "entered",
+                    "value": "7:45",
+                    "operator": 0,
+                    "operatorText": "↥ bis",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>7:45</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 1,
+                "name": "SonAufAuf",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": true,
+                "importance": 0,
+                "time": {
+                    "type": "pdsTime",
+                    "value": "civilDawn",
+                    "operator": 0,
+                    "operatorText": "↥ bis",
+                    "offsetType": "none",
+                    "offset": "",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "timeMin": {
+                    "type": "entered",
+                    "value": "6:00",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000
+                },
+                "timeMax": {
+                    "type": "entered",
+                    "value": "9:00",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>bürgerliche Morgendämmerung</var><div class=\"indent-time-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>frühestens (min)</span> <var>6:00</var></div><div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>9:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div><div class=\"indent-resetOverwrite-text\"> <i class=\"fa fa-thumbs-o-down\" aria-hidden=\"true\"></i><span>manuelle Überschreibung verfällt wenn die Regel aktiv wird</span> </div></div>"
+            },
+            {
+                "index": 2,
+                "name": "Hitze",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "#:(file)::TempOut",
+                        "operator": "gte",
+                        "operatorText": "≥",
+                        "thresholdType": "num",
+                        "threshold": "25"
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "50%",
+                    "operator": 0,
+                    "operatorText": "↕ absolute"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> ≥ 25</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>blind position: </span> ↕ absolute <var>50%</var></div></div>"
+            },
+            {
+                "index": 3,
+                "name": "SonnenuntergangZu",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "50%",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "pdsTime",
+                    "value": "sunsetEnd",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "num",
+                    "offset": "15",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "timeMax": {
+                    "type": "entered",
+                    "value": "21:00",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Ende</var> + 00:15<div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:00</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>50%</var></div></div>"
+            },
+            {
+                "index": 4,
+                "name": "WochenendeGeschlossen",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "day.today.isWeekendOrHoliday",
+                        "operator": "true",
+                        "operatorText": "ist true",
+                        "thresholdType": "num",
+                        "threshold": 0
+                    }
+                ],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "entered",
+                    "value": "22:00",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.today.isWeekendOrHoliday</var> ist true</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            },
+            {
+                "index": 5,
+                "name": "WochentagGeschlossen",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "level": {
+                    "type": "levelFixed",
+                    "value": "closed (min)",
+                    "operator": 0,
+                    "operatorText": "↕  Absolut"
+                },
+                "slat": {
+                    "type": "none",
+                    "value": ""
+                },
+                "topic": "",
+                "resetOverwrite": false,
+                "importance": 0,
+                "time": {
+                    "type": "pdsTime",
+                    "value": "blueHourDuskEnd",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "num",
+                    "offset": "",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "timeMax": {
+                    "type": "entered",
+                    "value": "21:45",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Blaue Abendstunde Ende</var> - 00:00<div class=\"indent-time-text\"><i class=\"fa fa-step-forward\" aria-hidden=\"true\"></i> <span>spätestens (max)</span> <var>21:45</var></div></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+            }
+        ],
+        "sunControlMode": "16",
+        "sunFloorLengthType": "num",
+        "sunFloorLength": "90",
+        "sunMinDelta": "5",
+        "blindPosMin": "25%",
+        "blindPosMinType": "levelFixed",
+        "blindPosMax": "open (max)",
+        "blindPosMaxType": "levelFixed",
+        "blindOpenPosOffset": "30",
+        "blindClosedPosOffset": "80",
+        "sunSlat": "",
+        "sunSlatType": "none",
+        "smoothTime": "",
+        "sunTopic": "SunShading",
+        "windowTopType": "num",
+        "windowTop": "205",
+        "windowBottomType": "num",
+        "windowBottom": "100",
+        "windowAzimuthStartType": "numAzimuth",
+        "windowAzimuthStart": "153",
+        "windowAzimuthEndType": "numAzimuth",
+        "windowAzimuthEnd": "190",
+        "oversteers": [
+            {
+                "mode": 0,
+                "valueType": "global",
+                "value": "#:(file)::TempOut",
+                "operator": "lt",
+                "operatorText": "<",
+                "thresholdType": "num",
+                "threshold": "10",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            },
+            {
+                "mode": 0,
+                "valueType": "pdsCalcElevation",
+                "value": "",
+                "operator": "lt",
+                "operatorText": "<",
+                "thresholdType": "numAltitude",
+                "threshold": "10",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            },
+            {
+                "mode": 0,
+                "valueType": "msg",
+                "value": "clouds",
+                "operator": "gte",
+                "operatorText": ">=",
+                "thresholdType": "num",
+                "threshold": "25",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            },
+            {
+                "mode": 0,
+                "valueType": "global",
+                "value": "#:(file)::iRed",
+                "operator": "lt",
+                "operatorText": "<",
+                "thresholdType": "num",
+                "threshold": "15000",
+                "onlySunInWindow": true,
+                "blindPos": {
+                    "type": "levelFixed",
+                    "value": "open (max)"
+                },
+                "slatPos": {
+                    "type": "none",
+                    "value": ""
+                }
+            }
+        ],
+        "oversteerTopic": "CloudsOverwrite",
+        "x": 340,
+        "y": 1780,
+        "wires": [
+            [
+                "a58a381aa2e38d88",
+                "a9f2e8e37fab03d9"
+            ],
+            []
+        ]
     },
     {
         "id": "e093d6cc.660ef8",
