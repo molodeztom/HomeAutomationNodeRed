@@ -351,7 +351,9 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299
+        "y": 299,
+        "w": 992,
+        "h": 162
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -375,7 +377,9 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 752,
+        "h": 262
     },
     {
         "id": "b9a71c35.b8ccf",
@@ -674,7 +678,9 @@
             "401fb17c76832009"
         ],
         "x": 34,
-        "y": 559
+        "y": 559,
+        "w": 1212,
+        "h": 422
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -734,7 +740,9 @@
             "b0938868.3c48e8"
         ],
         "x": 34,
-        "y": 959
+        "y": 959,
+        "w": 1172,
+        "h": 262
     },
     {
         "id": "40f7136f.c806bc",
@@ -835,9 +843,7 @@
             "28e6fe851aacfbc8"
         ],
         "x": 34,
-        "y": 19,
-        "w": 492,
-        "h": 202
+        "y": 19
     },
     {
         "id": "0ac5cf038e9b4a0e",
@@ -856,9 +862,7 @@
             "37aac056560b1cc1"
         ],
         "x": 34,
-        "y": 259,
-        "w": 632,
-        "h": 82
+        "y": 259
     },
     {
         "id": "32340ff2f48f54cf",
@@ -882,9 +886,7 @@
             "aa807b1b18ee51ae"
         ],
         "x": 34,
-        "y": 359,
-        "w": 672,
-        "h": 242
+        "y": 359
     },
     {
         "id": "4b345f34f7b4d8e1",
@@ -902,9 +904,7 @@
             "1620464c7201262c"
         ],
         "x": 134,
-        "y": 1139,
-        "w": 572,
-        "h": 202
+        "y": 1139
     },
     {
         "id": "bc3df6523c98c42b",
@@ -1027,9 +1027,31 @@
             "16f3d121ff896e83"
         ],
         "x": 34,
-        "y": 599,
-        "w": 652,
-        "h": 262
+        "y": 599
+    },
+    {
+        "id": "61105c945b3dbdf6",
+        "type": "group",
+        "z": "f9aa4d8908cf3153",
+        "name": "Weihnachtsbaum",
+        "style": {
+            "stroke": "#3f93cf",
+            "label": true,
+            "color": "#0070c0",
+            "fill": "#ffff00"
+        },
+        "nodes": [
+            "46c340e550e6a541",
+            "dad10dfe1ff17c1b",
+            "a0374dac5c451e6c",
+            "af4f39c2cb753003",
+            "331427707e2f11a5",
+            "392c733344f14512",
+            "caaaeef37fbc1551",
+            "a23fc24ad2c7b0c6"
+        ],
+        "x": 34,
+        "y": 879
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -1258,7 +1280,8 @@
         "order": 4,
         "disp": true,
         "width": "6",
-        "collapse": false
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "67365e98.aacf3",
@@ -3291,7 +3314,7 @@
         "z": "265d3756.5a1d68",
         "g": "3644af6d.d42f6",
         "name": "Program on Holiday",
-        "func": "var holiday = global.get(\"day.today.isHoliday\");\nvar outTemp = global.get(\"TempOut\", \"file\");\nif(holiday){\n    msg.payload = 2; //Ferien Programm\n     node.status({fill:\"red\",shape:\"ring\",text:\"holiday\"});\n}\nelse {\n    if(outTemp > 14)  {\n    msg.payload =  3; //Sommer Programm\n    node.status({fill:\"yellow\",shape:\"ring\",text: \"summer\"});\n    }\n    else  {\n    msg.payload = 1; //WinterProgramm\n    node.status({fill:\"green\",shape:\"ring\",text: \"winter\"});\n}}\nreturn msg;",
+        "func": "var holiday = global.get(\"day.today.isHoliday\");\nvar outTemp = global.get(\"TempOut\", \"file\");\nif(holiday){\n    msg.payload = 2; //Ferien Programm\n     node.status({fill:\"red\",shape:\"ring\",text:\"2: holiday\"});\n}\nelse {\n    if(outTemp > 14)  {\n    msg.payload =  3; //Sommer Programm\n    node.status({fill:\"yellow\",shape:\"ring\",text: \"3: summer\"});\n    }\n    else  {\n    msg.payload = 1; //WinterProgramm\n    node.status({fill:\"green\",shape:\"ring\",text: \"1: winter\"});\n}}\nreturn msg;",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -3340,7 +3363,7 @@
         "z": "265d3756.5a1d68",
         "g": "3644af6d.d42f6",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3357,7 +3380,7 @@
         "z": "265d3756.5a1d68",
         "g": "3644af6d.d42f6",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7025,7 +7048,9 @@
         "x": 160,
         "y": 660,
         "wires": [
-            []
+            [
+                "3b155418.9a8f0c"
+            ]
         ]
     },
     {
@@ -7051,7 +7076,7 @@
         "z": "9963931.9232c7",
         "g": "b83af794.4bec68",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7704,7 +7729,7 @@
         "g": "c87697c7.9b9e58",
         "name": "ShutterPosition",
         "topic": "cmnd/RolloTuere/ShutterPosition",
-        "qos": "0",
+        "qos": "1",
         "retain": "false",
         "respTopic": "",
         "contentType": "",
@@ -8879,7 +8904,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "7500",
+                "threshold": "3000",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -9790,16 +9815,26 @@
                         "valueType": "global",
                         "value": "day.weekNumber",
                         "operator": "gte",
-                        "operatorText": "≥",
+                        "operatorText": ">=",
                         "thresholdType": "num",
                         "threshold": "48"
+                    },
+                    {
+                        "condition": 1,
+                        "conditionText": "oder",
+                        "valueType": "global",
+                        "value": "day.weekNumber",
+                        "operator": "lt",
+                        "operatorText": "<",
+                        "thresholdType": "num",
+                        "threshold": "2"
                     }
                 ],
                 "level": {
                     "type": "num",
-                    "value": "46",
+                    "value": "52",
                     "operator": 0,
-                    "operatorText": "↕ absolute"
+                    "operatorText": "↕  Absolut"
                 },
                 "slat": {
                     "type": "none",
@@ -9812,14 +9847,14 @@
                     "type": "entered",
                     "value": "16:00",
                     "operator": 1,
-                    "operatorText": "↧ from",
+                    "operatorText": "↧ von",
                     "offsetType": "none",
                     "offset": "1",
                     "multiplier": 60000,
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.weekNumber</var> ≥ 48</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ from <var>16:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>blind position: </span> ↕ absolute <var>46</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.day.weekNumber</var> >= 48&nbsp;<strong>oder</strong><br/><span class=\"indent-enh-text\" >&nbsp;</span><var>global.day.weekNumber</var> < 2</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>16:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>52</var></div></div>"
             },
             {
                 "index": 8,
@@ -10827,7 +10862,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "15",
+                "threshold": "22",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -12201,7 +12236,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "8000",
+                "threshold": "6000",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -12494,9 +12529,11 @@
         "g": "d8d1de94.dfe9",
         "name": "",
         "topic": "shellies/Wohnzimmerschalter/input_event/2",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
+        "nl": false,
+        "rap": false,
         "inputs": 0,
         "x": 220,
         "y": 600,
@@ -12600,8 +12637,13 @@
         "g": "d8d1de94.dfe9",
         "name": "Regalbeleuchtung Set",
         "topic": "shellies/Regalbeleuchtung/color/0/set",
-        "qos": "",
-        "retain": "",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
         "broker": "19cf2a10.f9d4a6",
         "x": 1120,
         "y": 640,
@@ -12653,7 +12695,7 @@
         "z": "303a8ac7.4ea1c6",
         "g": "d8d1de94.dfe9",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -12699,9 +12741,11 @@
         "g": "d8d1de94.dfe9",
         "name": "Shelly On Off Status",
         "topic": "shellies/Regalbeleuchtung/color/0/status",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
+        "nl": false,
+        "rap": false,
         "inputs": 0,
         "x": 150,
         "y": 660,
@@ -12760,9 +12804,11 @@
         "g": "48598788.77a428",
         "name": "Esstischlampe Status",
         "topic": "shellies/Esstischlampe/light/0/status",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
+        "nl": false,
+        "rap": false,
         "inputs": 0,
         "x": 160,
         "y": 1060,
@@ -12779,8 +12825,13 @@
         "g": "48598788.77a428",
         "name": "",
         "topic": "shellies/Esstischlampe/light/0/set",
-        "qos": "",
-        "retain": "",
+        "qos": "2",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
         "broker": "19cf2a10.f9d4a6",
         "x": 1040,
         "y": 1120,
@@ -12802,7 +12853,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"brightness\":100,\"turn\":\"on\"}",
+        "payload": "{\"brightness\":56,\"turn\":\"on\"}",
         "payloadType": "json",
         "x": 750,
         "y": 1000,
@@ -12849,7 +12900,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"brightness\":100,\"turn\":\"off\"}",
+        "payload": "{\"brightness\":90,\"turn\":\"off\"}",
         "payloadType": "json",
         "x": 750,
         "y": 1040,
@@ -12866,9 +12917,11 @@
         "g": "48598788.77a428",
         "name": "",
         "topic": "shellies/Wohnzimmerschalter/input_event/1",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "19cf2a10.f9d4a6",
+        "nl": false,
+        "rap": false,
         "inputs": 0,
         "x": 220,
         "y": 1120,
@@ -12951,15 +13004,16 @@
         "type": "debug",
         "z": "303a8ac7.4ea1c6",
         "g": "48598788.77a428",
-        "name": "",
+        "name": "mqtt IN",
         "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
+        "x": 960,
         "y": 1180,
         "wires": []
     },
@@ -12970,9 +13024,11 @@
         "g": "48598788.77a428",
         "name": "",
         "topic": "shellies/Esstischlampe/light/0/power",
-        "qos": "2",
-        "datatype": "auto",
+        "qos": "0",
+        "datatype": "auto-detect",
         "broker": "19cf2a10.f9d4a6",
+        "nl": false,
+        "rap": false,
         "inputs": 0,
         "x": 200,
         "y": 1000,
@@ -13155,7 +13211,7 @@
         "g": "d8d1de94.dfe9",
         "name": "Regal Ein/Aus",
         "group": "ae60322a.3a15c",
-        "order": 0,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -13184,7 +13240,7 @@
         "g": "d8d1de94.dfe9",
         "name": "",
         "group": "ae60322a.3a15c",
-        "order": 3,
+        "order": 1,
         "width": "3",
         "height": "1",
         "passthru": false,
@@ -13213,7 +13269,7 @@
         "g": "d8d1de94.dfe9",
         "name": "",
         "group": "ae60322a.3a15c",
-        "order": 3,
+        "order": 2,
         "width": "3",
         "height": "1",
         "passthru": false,
@@ -13261,7 +13317,7 @@
         "z": "303a8ac7.4ea1c6",
         "g": "d8d1de94.dfe9",
         "name": "ON",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -13528,7 +13584,7 @@
         "z": "303a8ac7.4ea1c6",
         "g": "d8d1de94.dfe9",
         "name": "OFF",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14065,7 +14121,7 @@
         "z": "f9aa4d8908cf3153",
         "g": "0ac5cf038e9b4a0e",
         "name": "",
-        "topic": "ShellyPlug1/rpc",
+        "topic": "ShellyPlug6/rpc",
         "qos": "1",
         "retain": "false",
         "respTopic": "",
@@ -14130,7 +14186,10 @@
         "x": 350,
         "y": 300,
         "wires": [
-            []
+            [
+                "8c8efc274d12449f",
+                "1a6b3cb24b179f60"
+            ]
         ]
     },
     {
@@ -14861,6 +14920,649 @@
         "info": "Schaltet waipu Stick ab um  Netzwerk usw zu resetten.",
         "x": 600,
         "y": 640,
+        "wires": []
+    },
+    {
+        "id": "d8e0365a68890c54",
+        "type": "inject",
+        "z": "f9aa4d8908cf3153",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "x": 150,
+        "y": 240,
+        "wires": [
+            [
+                "37aac056560b1cc1"
+            ]
+        ]
+    },
+    {
+        "id": "1a6b3cb24b179f60",
+        "type": "debug",
+        "z": "f9aa4d8908cf3153",
+        "name": "debug 79",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "46c340e550e6a541",
+        "type": "mqtt out",
+        "z": "f9aa4d8908cf3153",
+        "g": "61105c945b3dbdf6",
+        "name": "",
+        "topic": "ShellyPlug5/rpc",
+        "qos": "1",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 600,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "dad10dfe1ff17c1b",
+        "type": "inject",
+        "z": "f9aa4d8908cf3153",
+        "g": "61105c945b3dbdf6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"id\":0,\"src\":\"mqtt\",\"method\":\"PLUGS_UI.SetConfig\",\"params\":{\"config\":{\"leds\":{\"mode\":\"switch\",\"colors\":{\"switch:0\":{\"on\":{\"rgb\":[100,49,100],\"brightness\":100},\"off\":{\"rgb\":[100,100,20],\"brightness\":100}}},\"night_mode\":{\"enable\":true,\"brightness\":10,\"active_between\":[\"21:53\",\"21:59\"]}}}}}",
+        "payloadType": "json",
+        "x": 390,
+        "y": 920,
+        "wires": [
+            [
+                "46c340e550e6a541"
+            ]
+        ]
+    },
+    {
+        "id": "a0374dac5c451e6c",
+        "type": "debug",
+        "z": "f9aa4d8908cf3153",
+        "g": "61105c945b3dbdf6",
+        "name": "debug 80",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "af4f39c2cb753003",
+        "type": "clock-timer",
+        "z": "f9aa4d8908cf3153",
+        "g": "61105c945b3dbdf6",
+        "name": "",
+        "topic": "",
+        "addIdType": "none",
+        "addId": "",
+        "positionConfig": "9a5a8534.25d4d8",
+        "autoTrigger": true,
+        "autoTriggerTime": "60000",
+        "startDelayTime": 10000,
+        "contextStore": "",
+        "results": [
+            {
+                "p": "",
+                "pt": "msgTopic",
+                "v": "",
+                "vt": "topic"
+            },
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "",
+                "vt": "payload"
+            },
+            {
+                "p": "timeCtrl",
+                "pt": "msg",
+                "v": "",
+                "vt": "ctrlObj"
+            }
+        ],
+        "overwriteExpire": "",
+        "rules": [
+            {
+                "index": 0,
+                "name": "Weihnachststern ein",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "str",
+                    "value": "ON",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "16:00",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "num",
+                    "offset": "0",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*",
+                    "dateStart": "2024-12-24",
+                    "dateEnd": "2025-01-25"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>16:00</var> - 00:00<div class=\"indent-time-datelimit\"><i class=\"fa fa-calendar-o\" aria-hidden=\"true\"></i> <span>nur von</span> <var>12-24</var> <span> bis</span> <var>01-25</var></div></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"ON\"</var></div></div>"
+            },
+            {
+                "index": 1,
+                "name": "",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "str",
+                    "value": "OFF",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "22:00",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "1,2,3,4",
+                    "months": "*",
+                    "dateStart": "2024-12-24",
+                    "dateEnd": "2025-01-25"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var><div class=\"indent-time-days\"><i class=\"fa fa-calendar-o\" aria-hidden=\"true\"></i> <span>nur an folgenden Tagen</span> <var>Mo-Do</var></div><div class=\"indent-time-datelimit\"><i class=\"fa fa-calendar-o\" aria-hidden=\"true\"></i> <span>nur von</span> <var>12-24</var> <span> bis</span> <var>01-25</var></div></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"OFF\"</var></div></div>"
+            },
+            {
+                "index": 2,
+                "name": "Off Weekend",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "none",
+                    "value": "",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "23:55",
+                    "operator": 0,
+                    "operatorText": "↥ bis",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "5,6,0",
+                    "months": "*",
+                    "dateStart": "2024-12-24",
+                    "dateEnd": "2025-01-25"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↥ bis <var>23:55</var><div class=\"indent-time-days\"><i class=\"fa fa-calendar-o\" aria-hidden=\"true\"></i> <span>nur an folgenden Tagen</span> <var>Fr-So</var></div><div class=\"indent-time-datelimit\"><i class=\"fa fa-calendar-o\" aria-hidden=\"true\"></i> <span>nur von</span> <var>12-24</var> <span> bis</span> <var>01-25</var></div></div><div>Kein Payload</div>"
+            }
+        ],
+        "payloadDefault": "OFF",
+        "payloadDefaultType": "str",
+        "payloadDefaultTimeFormat": 0,
+        "payloadDefaultOffset": 0,
+        "payloadDefaultOffsetType": "none",
+        "payloadDefaultOffsetMultiplier": 60000,
+        "x": 130,
+        "y": 920,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "331427707e2f11a5",
+        "type": "change",
+        "z": "f9aa4d8908cf3153",
+        "g": "61105c945b3dbdf6",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "ON",
+                "fromt": "str",
+                "to": "{\"id\":0,\"src\":\"mqtt\",\"method\":\"Switch.Set\",\"params\":{\"id\":0,\"on\":true}}",
+                "tot": "json"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "OFF",
+                "fromt": "str",
+                "to": "{\"id\":0,\"src\":\"mqtt\",\"method\":\"Switch.Set\",\"params\":{\"id\":0,\"on\":false}}",
+                "tot": "json"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "DAY",
+                "fromt": "str",
+                "to": "{\"id\":0,\"src\":\"mqtt\",\"method\":\"PLUGS_UI.SetConfig\",\"params\":{\"config\":{\"leds\":{\"mode\":\"switch\",\"colors\":{\"switch:0\":{\"on\":{\"rgb\":[0,100,0],\"brightness\":100},\"off\":{\"rgb\":[0,0,100],\"brightness\":100}}}}}}}",
+                "tot": "json"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "NIGHT",
+                "fromt": "str",
+                "to": "{\"id\":0,\"src\":\"mqtt\",\"method\":\"PLUGS_UI.SetConfig\",\"params\":{\"config\":{\"leds\":{\"mode\":\"switch\",\"colors\":{\"switch:0\":{\"on\":{\"rgb\":[0,0,0],\"brightness\":0},\"off\":{\"rgb\":[0,0,0],\"brightness\":0}}}}}}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 980,
+        "wires": [
+            [
+                "a0374dac5c451e6c",
+                "46c340e550e6a541"
+            ]
+        ]
+    },
+    {
+        "id": "392c733344f14512",
+        "type": "clock-timer",
+        "z": "f9aa4d8908cf3153",
+        "g": "61105c945b3dbdf6",
+        "name": "Night Mode",
+        "topic": "",
+        "addIdType": "none",
+        "addId": "",
+        "positionConfig": "9a5a8534.25d4d8",
+        "autoTrigger": true,
+        "autoTriggerTime": "60000",
+        "startDelayTime": 10000,
+        "contextStore": "",
+        "results": [
+            {
+                "p": "",
+                "pt": "msgTopic",
+                "v": "",
+                "vt": "topic"
+            },
+            {
+                "p": "",
+                "pt": "msgPayload",
+                "v": "",
+                "vt": "payload"
+            },
+            {
+                "p": "timeCtrl",
+                "pt": "msg",
+                "v": "",
+                "vt": "ctrlObj"
+            }
+        ],
+        "overwriteExpire": "",
+        "rules": [
+            {
+                "index": 0,
+                "name": "Day",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "str",
+                    "value": "DAY",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "9:05",
+                    "operator": 1,
+                    "operatorText": "↧ from",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ from <var>9:05</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload: </span> <var>\"DAY\"</var></div></div>"
+            },
+            {
+                "index": 1,
+                "name": "NIGHT",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "str",
+                    "value": "NIGHT",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "18:45",
+                    "operator": 1,
+                    "operatorText": "↧ from",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ from <var>18:45</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload: </span> <var>\"NIGHT\"</var></div></div>",
+                "timeData": 0
+            }
+        ],
+        "payloadDefault": "NIGHT",
+        "payloadDefaultType": "str",
+        "payloadDefaultTimeFormat": 0,
+        "payloadDefaultOffset": 0,
+        "payloadDefaultOffsetType": "none",
+        "payloadDefaultOffsetMultiplier": 60000,
+        "x": 130,
+        "y": 980,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "caaaeef37fbc1551",
+        "type": "inject",
+        "z": "f9aa4d8908cf3153",
+        "g": "61105c945b3dbdf6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "NIGHT",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1080,
+        "wires": [
+            [
+                "331427707e2f11a5"
+            ]
+        ]
+    },
+    {
+        "id": "a23fc24ad2c7b0c6",
+        "type": "inject",
+        "z": "f9aa4d8908cf3153",
+        "g": "61105c945b3dbdf6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "DAY",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1040,
+        "wires": [
+            [
+                "331427707e2f11a5"
+            ]
+        ]
+    },
+    {
+        "id": "7a6cea8d8ec0b5c8",
+        "type": "inject",
+        "z": "f9aa4d8908cf3153",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1140,
+        "wires": [
+            [
+                "331427707e2f11a5"
+            ]
+        ]
+    },
+    {
+        "id": "2f1bb20e10a28fd2",
+        "type": "inject",
+        "z": "f9aa4d8908cf3153",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "x": 110,
+        "y": 1180,
+        "wires": [
+            [
+                "331427707e2f11a5"
+            ]
+        ]
+    },
+    {
+        "id": "3326dc4516b02909",
+        "type": "ui_switch",
+        "z": "f9aa4d8908cf3153",
+        "name": "",
+        "label": "Christbaum",
+        "tooltip": "",
+        "group": "ae60322a.3a15c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 130,
+        "y": 1220,
+        "wires": [
+            [
+                "d7f551bf6378408b",
+                "f23d1cdf6918bd30"
+            ]
+        ]
+    },
+    {
+        "id": "d7f551bf6378408b",
+        "type": "change",
+        "z": "f9aa4d8908cf3153",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "ON",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "bool",
+                "to": "OFF",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 1220,
+        "wires": [
+            [
+                "6c26389b973f4567",
+                "331427707e2f11a5"
+            ]
+        ]
+    },
+    {
+        "id": "6c26389b973f4567",
+        "type": "debug",
+        "z": "f9aa4d8908cf3153",
+        "name": "debug 81",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "f23d1cdf6918bd30",
+        "type": "debug",
+        "z": "f9aa4d8908cf3153",
+        "name": "debug 82",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 1280,
         "wires": []
     },
     {
