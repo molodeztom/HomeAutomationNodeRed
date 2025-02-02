@@ -263,7 +263,9 @@
             "a30d9009.4e13b"
         ],
         "x": 54,
-        "y": -1
+        "y": -1,
+        "w": 1182,
+        "h": 502
     },
     {
         "id": "18ca9346.bdbedd",
@@ -307,7 +309,9 @@
             "61b9f71.7b9bb08"
         ],
         "x": 54,
-        "y": 516.5
+        "y": 516.5,
+        "w": 1652,
+        "h": 604.5
     },
     {
         "id": "73d12632.94b388",
@@ -401,9 +405,7 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 759,
-        "w": 852,
-        "h": 162
+        "y": 759
     },
     {
         "id": "40936a6d.e4bc64",
@@ -423,9 +425,7 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 599,
-        "w": 712,
-        "h": 142
+        "y": 599
     },
     {
         "id": "3644af6d.d42f6",
@@ -459,9 +459,7 @@
             "1bd2faf182fb3f8a"
         ],
         "x": 14,
-        "y": 19,
-        "w": 772,
-        "h": 522
+        "y": 19
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -484,9 +482,7 @@
             "5b9db628891c8ab5"
         ],
         "x": 14,
-        "y": 1519,
-        "w": 1072,
-        "h": 162
+        "y": 1519
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -674,8 +670,7 @@
             "3da7835372f92593",
             "5c40e7a216b4c613",
             "79e79ac4f740a2e1",
-            "77d544823668d60d",
-            "401fb17c76832009"
+            "77d544823668d60d"
         ],
         "x": 34,
         "y": 559,
@@ -737,12 +732,15 @@
             "8408ab6f.7b84f8",
             "6ea779b5.a475f8",
             "7f7def5a.ded76",
-            "b0938868.3c48e8"
+            "73f6d13a86f5a5fe",
+            "3c742c50ddb82a78",
+            "22488e72b78c78a8",
+            "9450f1731fc4de3d"
         ],
         "x": 34,
-        "y": 959,
-        "w": 1172,
-        "h": 262
+        "y": 979,
+        "w": 1212,
+        "h": 322
     },
     {
         "id": "40f7136f.c806bc",
@@ -796,9 +794,7 @@
             "54e47a03f8e6baba"
         ],
         "x": 14,
-        "y": 939,
-        "w": 892,
-        "h": 142
+        "y": 939
     },
     {
         "id": "492449f2a284d6d7",
@@ -823,9 +819,7 @@
             "5c01553b5435fa0a"
         ],
         "x": 14,
-        "y": 1099,
-        "w": 772,
-        "h": 262
+        "y": 1099
     },
     {
         "id": "ba622014ba4332d1",
@@ -935,9 +929,7 @@
             "dc12148c24f84fe9"
         ],
         "x": 14,
-        "y": 1719,
-        "w": 1052,
-        "h": 402
+        "y": 1719
     },
     {
         "id": "de3e2e3aac07c809",
@@ -969,9 +961,7 @@
             "c003ab02fc04b33e"
         ],
         "x": 14,
-        "y": 2139,
-        "w": 1152,
-        "h": 402
+        "y": 2139
     },
     {
         "id": "f65918f1b4342953",
@@ -12638,7 +12628,7 @@
         "name": "Regalbeleuchtung Set",
         "topic": "shellies/Regalbeleuchtung/color/0/set",
         "qos": "2",
-        "retain": "true",
+        "retain": "false",
         "respTopic": "",
         "contentType": "",
         "userProps": "",
@@ -12811,7 +12801,7 @@
         "rap": false,
         "inputs": 0,
         "x": 160,
-        "y": 1060,
+        "y": 1080,
         "wires": [
             [
                 "8a3241ff.1ce98"
@@ -12825,16 +12815,16 @@
         "g": "48598788.77a428",
         "name": "",
         "topic": "shellies/Esstischlampe/light/0/set",
-        "qos": "2",
-        "retain": "true",
+        "qos": "1",
+        "retain": "false",
         "respTopic": "",
         "contentType": "",
         "userProps": "",
         "correl": "",
         "expiry": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 1040,
-        "y": 1120,
+        "x": 1080,
+        "y": 1140,
         "wires": []
     },
     {
@@ -12856,7 +12846,7 @@
         "payload": "{\"brightness\":56,\"turn\":\"on\"}",
         "payloadType": "json",
         "x": 750,
-        "y": 1000,
+        "y": 1020,
         "wires": [
             [
                 "560b8c99.51d2e4"
@@ -12877,7 +12867,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 490,
-        "y": 1040,
+        "y": 1060,
         "wires": []
     },
     {
@@ -12900,10 +12890,10 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"brightness\":90,\"turn\":\"off\"}",
+        "payload": "{\"brightness\":0,\"turn\":\"off\"}",
         "payloadType": "json",
         "x": 750,
-        "y": 1040,
+        "y": 1060,
         "wires": [
             [
                 "560b8c99.51d2e4"
@@ -12924,7 +12914,7 @@
         "rap": false,
         "inputs": 0,
         "x": 220,
-        "y": 1120,
+        "y": 1140,
         "wires": [
             [
                 "598dc7bf.230e78"
@@ -12941,11 +12931,10 @@
         "action": "",
         "pretty": false,
         "x": 450,
-        "y": 1120,
+        "y": 1140,
         "wires": [
             [
-                "1cdf209c.5f543f",
-                "b0938868.3c48e8"
+                "1cdf209c.5f543f"
             ]
         ]
     },
@@ -12970,10 +12959,11 @@
         "to": "",
         "reg": false,
         "x": 630,
-        "y": 1120,
+        "y": 1140,
         "wires": [
             [
-                "8967db25.f1b4d8"
+                "8967db25.f1b4d8",
+                "9450f1731fc4de3d"
             ]
         ]
     },
@@ -12983,7 +12973,7 @@
         "z": "303a8ac7.4ea1c6",
         "g": "48598788.77a428",
         "name": "",
-        "func": "switch (msg.payload){\n    case \"S\":\n        msg.payload = \n        \n            {\n    \"brightness\": 40,\n    \"turn\": \"toggle\"\n}\n        break;\n    case \"SS\":\n        msg.payload = \n                {\n\n    \"brightness\": 80,\n    \"turn\": \"on\"\n                }\n        break;\n    case \"SSS\":\n        msg.payload = \n      {\n    \"brightness\": 20,\n    \"turn\": \"on\"\n\n}\n        break;\n    default:\n        msg.payload = \"anderes event\"\n}\n\nreturn msg;",
+        "func": "// Erlaubtes Zeitfenster\nconst startHour = 6; // 6:00 Uhr\nconst endHour = 1;   // 1:00 Uhr\n\n// Aktuelle Zeit abrufen\nconst now = new Date();\nconst currentHour = now.getHours();\n\n\nswitch (msg.payload){\n    case \"S\":\n        msg.payload = \n        \n            {\n    \"brightness\": 40,\n    \"turn\": \"toggle\"\n}\n        break;\n    case \"SS\":\n        msg.payload = \n                {\n\n    \"brightness\": 80,\n    \"turn\": \"on\"\n                }\n        break;\n    case \"SSS\":\n        msg.payload = \n      {\n    \"brightness\": 20,\n    \"turn\": \"on\"\n\n}\n        break;\n    default:\n        msg.payload = \"anderes event\"\n}\nif (currentHour >= startHour || currentHour < endHour) {\nreturn msg;\n}\nelse {\n    msg.payload = \"ausserhalb Zeitbereich\"\n}",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -12991,7 +12981,7 @@
         "finalize": "",
         "libs": [],
         "x": 800,
-        "y": 1120,
+        "y": 1140,
         "wires": [
             [
                 "560b8c99.51d2e4",
@@ -13005,7 +12995,7 @@
         "z": "303a8ac7.4ea1c6",
         "g": "48598788.77a428",
         "name": "mqtt IN",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -13013,8 +13003,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 960,
-        "y": 1180,
+        "x": 1040,
+        "y": 1260,
         "wires": []
     },
     {
@@ -13031,7 +13021,7 @@
         "rap": false,
         "inputs": 0,
         "x": 200,
-        "y": 1000,
+        "y": 1020,
         "wires": [
             [
                 "7f7def5a.ded76"
@@ -13052,24 +13042,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 490,
-        "y": 1000,
-        "wires": []
-    },
-    {
-        "id": "b0938868.3c48e8",
-        "type": "debug",
-        "z": "303a8ac7.4ea1c6",
-        "g": "48598788.77a428",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 610,
-        "y": 1180,
+        "y": 1020,
         "wires": []
     },
     {
@@ -13317,7 +13290,7 @@
         "z": "303a8ac7.4ea1c6",
         "g": "d8d1de94.dfe9",
         "name": "ON",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -13387,8 +13360,7 @@
         "y": 820,
         "wires": [
             [
-                "f9d6935864aab449",
-                "1dc7e978.c48077"
+                "f9d6935864aab449"
             ]
         ]
     },
@@ -13470,8 +13442,7 @@
         "y": 860,
         "wires": [
             [
-                "6c481a11bf50ef2a",
-                "1dc7e978.c48077"
+                "6c481a11bf50ef2a"
             ]
         ]
     },
@@ -13584,7 +13555,7 @@
         "z": "303a8ac7.4ea1c6",
         "g": "d8d1de94.dfe9",
         "name": "OFF",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -13666,34 +13637,180 @@
         ]
     },
     {
-        "id": "401fb17c76832009",
-        "type": "inject",
+        "id": "73f6d13a86f5a5fe",
+        "type": "clock-timer",
         "z": "303a8ac7.4ea1c6",
-        "g": "d8d1de94.dfe9",
+        "g": "48598788.77a428",
         "name": "",
-        "props": [
+        "topic": "",
+        "addIdType": "none",
+        "addId": "",
+        "positionConfig": "9a5a8534.25d4d8",
+        "autoTrigger": true,
+        "autoTriggerTime": 1200000,
+        "startDelayTime": 10000,
+        "contextStore": "",
+        "results": [
             {
-                "p": "payload"
+                "p": "",
+                "pt": "msgTopic",
+                "v": "",
+                "vt": "topic"
             },
             {
-                "p": "topic",
-                "vt": "str"
+                "p": "",
+                "pt": "msgPayload",
+                "v": "",
+                "vt": "payload"
+            },
+            {
+                "p": "timeCtrl",
+                "pt": "msg",
+                "v": "",
+                "vt": "ctrlObj"
             }
         ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 800,
-        "y": 760,
+        "overwriteExpire": "",
+        "rules": [
+            {
+                "index": 0,
+                "name": "Mitternacht aus",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "json",
+                    "value": "{\"brightness\":0,\"turn\":\"off\"}",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "02:15",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>02:15</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>{\"brightness\":0,\"turn\":\"off\"}</var></div></div>"
+            }
+        ],
+        "payloadDefault": "",
+        "payloadDefaultType": "none",
+        "payloadDefaultTimeFormat": 0,
+        "payloadDefaultOffset": 0,
+        "payloadDefaultOffsetType": "none",
+        "payloadDefaultOffsetMultiplier": 60000,
+        "x": 790,
+        "y": 1260,
         "wires": [
             [
-                "79e79ac4f740a2e1"
+                "560b8c99.51d2e4",
+                "8408ab6f.7b84f8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3c742c50ddb82a78",
+        "type": "ui_switch",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "",
+        "label": "Esstischlampe",
+        "tooltip": "",
+        "group": "ae60322a.3a15c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 140,
+        "y": 1200,
+        "wires": [
+            [
+                "22488e72b78c78a8"
             ]
         ]
+    },
+    {
+        "id": "22488e72b78c78a8",
+        "type": "change",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "Esstischlampe Manuell",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "{\"brightness\":56,\"turn\":\"on\"}",
+                "tot": "json"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "bool",
+                "to": "{\"brightness\":0,\"turn\":\"off\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 1200,
+        "wires": [
+            [
+                "560b8c99.51d2e4"
+            ]
+        ]
+    },
+    {
+        "id": "9450f1731fc4de3d",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "g": "48598788.77a428",
+        "name": "debug 84",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 1200,
+        "wires": []
     },
     {
         "id": "17cb0817cb05a53a",
@@ -15467,7 +15584,7 @@
         "label": "Christbaum",
         "tooltip": "",
         "group": "ae60322a.3a15c",
-        "order": 4,
+        "order": 5,
         "width": 0,
         "height": 0,
         "passthru": false,
