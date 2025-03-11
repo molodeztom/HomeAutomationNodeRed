@@ -212,7 +212,9 @@
             "046b6a144903991f"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 1002,
+        "h": 582
     },
     {
         "id": "2f27dc68.9ff574",
@@ -231,7 +233,9 @@
             "64c76441.d5f36c"
         ],
         "x": 54,
-        "y": 759
+        "y": 759,
+        "w": 432,
+        "h": 142
     },
     {
         "id": "5c041b39.d836b4",
@@ -263,9 +267,7 @@
             "a30d9009.4e13b"
         ],
         "x": 54,
-        "y": -1,
-        "w": 1182,
-        "h": 502
+        "y": -1
     },
     {
         "id": "18ca9346.bdbedd",
@@ -309,9 +311,7 @@
             "61b9f71.7b9bb08"
         ],
         "x": 54,
-        "y": 516.5,
-        "w": 1652,
-        "h": 604.5
+        "y": 516.5
     },
     {
         "id": "73d12632.94b388",
@@ -332,7 +332,9 @@
             "541cf4bd.ec76dc"
         ],
         "x": 514,
-        "y": 759
+        "y": 759,
+        "w": 572,
+        "h": 182
     },
     {
         "id": "1b82c7fb.e55448",
@@ -355,9 +357,7 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299,
-        "w": 992,
-        "h": 162
+        "y": 299
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -381,9 +381,7 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19,
-        "w": 752,
-        "h": 262
+        "y": 19
     },
     {
         "id": "b9a71c35.b8ccf",
@@ -405,7 +403,9 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 759
+        "y": 759,
+        "w": 852,
+        "h": 162
     },
     {
         "id": "40936a6d.e4bc64",
@@ -425,7 +425,9 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 599
+        "y": 599,
+        "w": 712,
+        "h": 142
     },
     {
         "id": "3644af6d.d42f6",
@@ -459,7 +461,9 @@
             "1bd2faf182fb3f8a"
         ],
         "x": 14,
-        "y": 19
+        "y": 19,
+        "w": 772,
+        "h": 522
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -482,7 +486,9 @@
             "5b9db628891c8ab5"
         ],
         "x": 14,
-        "y": 1519
+        "y": 1519,
+        "w": 1072,
+        "h": 162
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -502,7 +508,9 @@
             "dfcc41b0.b3ad2"
         ],
         "x": 34,
-        "y": 59
+        "y": 59,
+        "w": 642,
+        "h": 142
     },
     {
         "id": "7ce4548d.b8ed0c",
@@ -523,7 +531,9 @@
             "77bd98f3.c0e8c8"
         ],
         "x": 34,
-        "y": 1319
+        "y": 1319,
+        "w": 852,
+        "h": 142
     },
     {
         "id": "4cff6fb8.ecd81",
@@ -552,7 +562,9 @@
             "64fc421078cd82f6"
         ],
         "x": 34,
-        "y": 219
+        "y": 219,
+        "w": 692,
+        "h": 322
     },
     {
         "id": "6666fbc0.896914",
@@ -578,7 +590,9 @@
             "20e6409a.ffe67"
         ],
         "x": 24,
-        "y": 519
+        "y": 519,
+        "w": 962,
+        "h": 262
     },
     {
         "id": "3f11d194.8d04ee",
@@ -603,7 +617,9 @@
             "1f2409.3d5e7bf8"
         ],
         "x": 34,
-        "y": 799
+        "y": 799,
+        "w": 952,
+        "h": 262
     },
     {
         "id": "c87697c7.9b9e58",
@@ -629,7 +645,9 @@
             "3adbcc4a84edfcd0"
         ],
         "x": 34,
-        "y": 1099
+        "y": 1099,
+        "w": 952,
+        "h": 202
     },
     {
         "id": "d8d1de94.dfe9",
@@ -673,9 +691,7 @@
             "77d544823668d60d"
         ],
         "x": 34,
-        "y": 559,
-        "w": 1212,
-        "h": 422
+        "y": 559
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -708,7 +724,9 @@
             "bdbb365a.74cc18"
         ],
         "x": 44,
-        "y": 959
+        "y": 959,
+        "w": 852,
+        "h": 642
     },
     {
         "id": "48598788.77a428",
@@ -738,9 +756,7 @@
             "9450f1731fc4de3d"
         ],
         "x": 34,
-        "y": 979,
-        "w": 1212,
-        "h": 322
+        "y": 979
     },
     {
         "id": "40f7136f.c806bc",
@@ -772,7 +788,9 @@
             "7a6e01ce32748004"
         ],
         "x": 34,
-        "y": 1859
+        "y": 1859,
+        "w": 1152,
+        "h": 362
     },
     {
         "id": "9632f8fb2bd4fa59",
@@ -794,7 +812,9 @@
             "54e47a03f8e6baba"
         ],
         "x": 14,
-        "y": 939
+        "y": 939,
+        "w": 892,
+        "h": 142
     },
     {
         "id": "492449f2a284d6d7",
@@ -819,7 +839,9 @@
             "5c01553b5435fa0a"
         ],
         "x": 14,
-        "y": 1099
+        "y": 1099,
+        "w": 772,
+        "h": 262
     },
     {
         "id": "ba622014ba4332d1",
@@ -929,7 +951,9 @@
             "dc12148c24f84fe9"
         ],
         "x": 14,
-        "y": 1719
+        "y": 1719,
+        "w": 1052,
+        "h": 402
     },
     {
         "id": "de3e2e3aac07c809",
@@ -961,7 +985,9 @@
             "c003ab02fc04b33e"
         ],
         "x": 14,
-        "y": 2139
+        "y": 2139,
+        "w": 1152,
+        "h": 402
     },
     {
         "id": "f65918f1b4342953",
@@ -993,7 +1019,9 @@
             "a83aef368b05cde1"
         ],
         "x": 34,
-        "y": 1479
+        "y": 1479,
+        "w": 1092,
+        "h": 362
     },
     {
         "id": "6cbee2f8d8c21bd4",
@@ -5066,7 +5094,16 @@
                 "version": 3,
                 "enabled": true,
                 "isValid": true,
-                "conditions": [],
+                "conditions": [
+                    {
+                        "valueType": "global",
+                        "value": "#:(file)::SchlafzFensterOffen",
+                        "operator": "false",
+                        "operatorText": "ist false",
+                        "thresholdType": "num",
+                        "threshold": 0
+                    }
+                ],
                 "payload": {
                     "type": "str",
                     "value": "55",
@@ -5089,10 +5126,41 @@
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>9:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"55\"</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.SchlafzFensterOffen</var> ist false</div><div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>9:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"55\"</var></div></div>"
             },
             {
                 "index": 1,
+                "name": "evening spread essential oil",
+                "version": 3,
+                "enabled": true,
+                "isValid": true,
+                "conditions": [],
+                "payload": {
+                    "type": "str",
+                    "value": "70",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "format": ""
+                },
+                "topic": "",
+                "importance": 0,
+                "resetOverwrite": false,
+                "time": {
+                    "type": "entered",
+                    "value": "22:00",
+                    "operator": 1,
+                    "operatorText": "↧ von",
+                    "offsetType": "none",
+                    "offset": "1",
+                    "multiplier": 60000,
+                    "days": "*",
+                    "months": "*"
+                },
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"70\"</var></div></div>"
+            },
+            {
+                "index": 2,
                 "name": "NIGHT",
                 "version": 3,
                 "enabled": true,
@@ -5111,7 +5179,7 @@
                 "resetOverwrite": false,
                 "time": {
                     "type": "entered",
-                    "value": "20:30",
+                    "value": "22:30",
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "none",
@@ -5120,7 +5188,7 @@
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>20:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"20\"</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:30</var></div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"20\"</var></div></div>"
             }
         ],
         "payloadDefault": "NIGHT",
@@ -8814,7 +8882,7 @@
         "sunFloorLengthType": "num",
         "sunFloorLength": "150",
         "sunMinDelta": "5",
-        "blindPosMin": "120",
+        "blindPosMin": "20",
         "blindPosMinType": "num",
         "blindPosMax": "open (max)",
         "blindPosMaxType": "levelFixed",
@@ -8894,7 +8962,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "3000",
+                "threshold": "4000",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -10852,7 +10920,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "22",
+                "threshold": "20",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -13941,7 +14009,7 @@
             {
                 "t": "set",
                 "p": "#:(file)::SchlafzFensterOffen",
-                "pt": "flow",
+                "pt": "global",
                 "to": "payload",
                 "tot": "msg"
             }
@@ -13991,7 +14059,7 @@
         "z": "abede211eec6d1b4",
         "name": "Window Open",
         "property": "#:(file)::SchlafzFensterOffen",
-        "propertyType": "flow",
+        "propertyType": "global",
         "rules": [
             {
                 "t": "true"
