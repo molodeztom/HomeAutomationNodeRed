@@ -570,12 +570,15 @@
             "64fc421078cd82f6",
             "a9be7b68c5721056",
             "903004fdd5351c7c",
-            "33a4057f229bea4b"
+            "33a4057f229bea4b",
+            "2ab037059ce84651",
+            "bac6a59486f40e0a",
+            "75dd037a5ef0cecd"
         ],
         "x": 34,
         "y": 219,
         "w": 732,
-        "h": 362
+        "h": 442
     },
     {
         "id": "6666fbc0.896914",
@@ -12327,7 +12330,7 @@
                 "operator": "gte",
                 "operatorText": ">=",
                 "thresholdType": "num",
-                "threshold": "50",
+                "threshold": "90",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -12401,7 +12404,8 @@
         "y": 540,
         "wires": [
             [
-                "903004fdd5351c7c"
+                "903004fdd5351c7c",
+                "bac6a59486f40e0a"
             ]
         ]
     },
@@ -12452,6 +12456,64 @@
                 "a9be7b68c5721056"
             ]
         ]
+    },
+    {
+        "id": "2ab037059ce84651",
+        "type": "influxdb out",
+        "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
+        "influxdb": "e3f4c3e8.b52ee",
+        "name": "Sunlight calc",
+        "measurement": "sSens6",
+        "precision": "",
+        "retentionPolicy": "two_month",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 670,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "bac6a59486f40e0a",
+        "type": "function",
+        "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
+        "name": "function 9",
+        "func": "msg.payload={\n    fSunlightCalc: Number(msg.payload.correctedValue),\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 580,
+        "wires": [
+            [
+                "75dd037a5ef0cecd",
+                "2ab037059ce84651"
+            ]
+        ]
+    },
+    {
+        "id": "75dd037a5ef0cecd",
+        "type": "debug",
+        "z": "7e5a345d.05161c",
+        "g": "4cff6fb8.ecd81",
+        "name": "debug 86",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 620,
+        "wires": []
     },
     {
         "id": "e093d6cc.660ef8",
