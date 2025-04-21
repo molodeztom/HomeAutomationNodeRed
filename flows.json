@@ -144,9 +144,7 @@
             "8d91d7c450e7b770"
         ],
         "x": 14,
-        "y": 199,
-        "w": 732,
-        "h": 502
+        "y": 199
     },
     {
         "id": "7d3411b0.20fc7",
@@ -168,9 +166,7 @@
             "98e07e5594b2e3d3"
         ],
         "x": 14,
-        "y": 39,
-        "w": 912,
-        "h": 182
+        "y": 39
     },
     {
         "id": "584f76f1.996908",
@@ -216,9 +212,7 @@
             "f257374dd538a4ec"
         ],
         "x": 34,
-        "y": 19,
-        "w": 1002,
-        "h": 582
+        "y": 19
     },
     {
         "id": "2f27dc68.9ff574",
@@ -237,9 +231,7 @@
             "64c76441.d5f36c"
         ],
         "x": 54,
-        "y": 759,
-        "w": 432,
-        "h": 142
+        "y": 759
     },
     {
         "id": "5c041b39.d836b4",
@@ -336,9 +328,7 @@
             "541cf4bd.ec76dc"
         ],
         "x": 514,
-        "y": 759,
-        "w": 572,
-        "h": 182
+        "y": 759
     },
     {
         "id": "1b82c7fb.e55448",
@@ -361,9 +351,7 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299,
-        "w": 992,
-        "h": 162
+        "y": 299
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -387,9 +375,7 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19,
-        "w": 752,
-        "h": 262
+        "y": 19
     },
     {
         "id": "b9a71c35.b8ccf",
@@ -411,9 +397,7 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 759,
-        "w": 852,
-        "h": 162
+        "y": 759
     },
     {
         "id": "40936a6d.e4bc64",
@@ -433,9 +417,7 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 599,
-        "w": 712,
-        "h": 142
+        "y": 599
     },
     {
         "id": "3644af6d.d42f6",
@@ -469,9 +451,7 @@
             "1bd2faf182fb3f8a"
         ],
         "x": 14,
-        "y": 19,
-        "w": 772,
-        "h": 522
+        "y": 19
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -494,9 +474,7 @@
             "5b9db628891c8ab5"
         ],
         "x": 14,
-        "y": 1519,
-        "w": 1072,
-        "h": 162
+        "y": 1519
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -709,9 +687,7 @@
             "77d544823668d60d"
         ],
         "x": 34,
-        "y": 559,
-        "w": 1212,
-        "h": 422
+        "y": 559
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -744,9 +720,7 @@
             "bdbb365a.74cc18"
         ],
         "x": 44,
-        "y": 959,
-        "w": 852,
-        "h": 642
+        "y": 959
     },
     {
         "id": "48598788.77a428",
@@ -776,9 +750,7 @@
             "9450f1731fc4de3d"
         ],
         "x": 34,
-        "y": 979,
-        "w": 1212,
-        "h": 322
+        "y": 979
     },
     {
         "id": "40f7136f.c806bc",
@@ -810,7 +782,7 @@
             "7a6e01ce32748004"
         ],
         "x": 54,
-        "y": 2339,
+        "y": 2239,
         "w": 1152,
         "h": 362
     },
@@ -834,9 +806,7 @@
             "54e47a03f8e6baba"
         ],
         "x": 14,
-        "y": 939,
-        "w": 892,
-        "h": 142
+        "y": 939
     },
     {
         "id": "492449f2a284d6d7",
@@ -861,9 +831,7 @@
             "5c01553b5435fa0a"
         ],
         "x": 14,
-        "y": 1099,
-        "w": 772,
-        "h": 262
+        "y": 1099
     },
     {
         "id": "ba622014ba4332d1",
@@ -973,9 +941,7 @@
             "dc12148c24f84fe9"
         ],
         "x": 14,
-        "y": 1719,
-        "w": 1052,
-        "h": 402
+        "y": 1719
     },
     {
         "id": "de3e2e3aac07c809",
@@ -1007,9 +973,7 @@
             "c003ab02fc04b33e"
         ],
         "x": 14,
-        "y": 2139,
-        "w": 1152,
-        "h": 402
+        "y": 2139
     },
     {
         "id": "f65918f1b4342953",
@@ -8135,7 +8099,7 @@
         "expiry": "",
         "broker": "19cf2a10.f9d4a6",
         "x": 1070,
-        "y": 2580,
+        "y": 2480,
         "wires": []
     },
     {
@@ -8150,7 +8114,7 @@
         "initialize": "",
         "finalize": "",
         "x": 890,
-        "y": 2580,
+        "y": 2480,
         "wires": [
             [
                 "485a5be0.812e94",
@@ -8172,7 +8136,7 @@
         "rap": false,
         "inputs": 0,
         "x": 210,
-        "y": 2440,
+        "y": 2340,
         "wires": [
             [
                 "47b1e704.2b8a68"
@@ -8189,7 +8153,7 @@
         "action": "",
         "pretty": false,
         "x": 410,
-        "y": 2440,
+        "y": 2340,
         "wires": [
             [
                 "166a9b8664b09914",
@@ -8218,7 +8182,7 @@
         "to": "",
         "reg": false,
         "x": 770,
-        "y": 2440,
+        "y": 2340,
         "wires": [
             [
                 "52f4f339.08914c"
@@ -8242,7 +8206,7 @@
         "repair": false,
         "outputs": 1,
         "x": 210,
-        "y": 2580,
+        "y": 2480,
         "wires": [
             [
                 "b4458220578284d6"
@@ -8259,7 +8223,7 @@
             "f69a51fd.3a899"
         ],
         "x": 255,
-        "y": 2660,
+        "y": 2560,
         "wires": [
             [
                 "eec0f371.5a3f3"
@@ -8917,7 +8881,7 @@
         "windowAzimuthStartType": "numAzimuth",
         "windowAzimuthStart": "221",
         "windowAzimuthEndType": "numAzimuth",
-        "windowAzimuthEnd": "255",
+        "windowAzimuthEnd": "261",
         "oversteers": [
             {
                 "mode": 0,
@@ -8926,7 +8890,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "11",
+                "threshold": "14",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -8944,7 +8908,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "numAltitude",
-                "threshold": "30",
+                "threshold": "10",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -10896,7 +10860,7 @@
                 "importance": 0,
                 "time": {
                     "type": "entered",
-                    "value": "22:30",
+                    "value": "22:00",
                     "operator": 1,
                     "operatorText": "↧ von",
                     "offsetType": "none",
@@ -10905,7 +10869,7 @@
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:30</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>22:00</var></div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             }
         ],
         "sunControlMode": "16",
@@ -10929,7 +10893,7 @@
         "windowAzimuthStartType": "numAzimuth",
         "windowAzimuthStart": "215",
         "windowAzimuthEndType": "numAzimuth",
-        "windowAzimuthEnd": "255",
+        "windowAzimuthEnd": "261",
         "oversteers": [
             {
                 "mode": 0,
@@ -10938,25 +10902,7 @@
                 "operator": "lt",
                 "operatorText": "<",
                 "thresholdType": "num",
-                "threshold": "20",
-                "onlySunInWindow": true,
-                "blindPos": {
-                    "type": "levelFixed",
-                    "value": "open (max)"
-                },
-                "slatPos": {
-                    "type": "none",
-                    "value": ""
-                }
-            },
-            {
-                "mode": 0,
-                "valueType": "pdsCalcElevation",
-                "value": "",
-                "operator": "lt",
-                "operatorText": "<",
-                "thresholdType": "numAltitude",
-                "threshold": "10",
+                "threshold": "13",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -10971,10 +10917,10 @@
                 "mode": 0,
                 "valueType": "msg",
                 "value": "clouds",
-                "operator": "gte",
-                "operatorText": ">=",
+                "operator": "gt",
+                "operatorText": ">",
                 "thresholdType": "num",
-                "threshold": "50",
+                "threshold": "80",
                 "onlySunInWindow": true,
                 "blindPos": {
                     "type": "levelFixed",
@@ -10989,8 +10935,8 @@
                 "mode": 0,
                 "valueType": "global",
                 "value": "#:(file)::iSunlight",
-                "operator": "gte",
-                "operatorText": ">=",
+                "operator": "lt",
+                "operatorText": "<",
                 "thresholdType": "num",
                 "threshold": "5000",
                 "onlySunInWindow": true,
@@ -11006,7 +10952,7 @@
         ],
         "oversteerTopic": "CloudsOverwrite",
         "x": 390,
-        "y": 2660,
+        "y": 2560,
         "wires": [
             [
                 "bdb4e967.1f53d8",
@@ -11149,7 +11095,7 @@
         "step": 1,
         "className": "",
         "x": 660,
-        "y": 2580,
+        "y": 2480,
         "wires": [
             [
                 "28683cb0.557de4",
@@ -11330,7 +11276,7 @@
         "fontSize": "",
         "color": "#000000",
         "x": 1080,
-        "y": 2660,
+        "y": 2560,
         "wires": []
     },
     {
@@ -11346,7 +11292,7 @@
         "country": "",
         "language": "de",
         "x": 140,
-        "y": 300,
+        "y": 320,
         "wires": [
             [
                 "b907c2ad.b1417",
@@ -11369,7 +11315,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 420,
-        "y": 2380,
+        "y": 2280,
         "wires": []
     },
     {
@@ -11387,7 +11333,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 600,
-        "y": 2540,
+        "y": 2440,
         "wires": []
     },
     {
@@ -11409,7 +11355,7 @@
         "repair": false,
         "outputs": 1,
         "x": 570,
-        "y": 2440,
+        "y": 2340,
         "wires": [
             [
                 "c25c352a.ce5a48",
@@ -11432,7 +11378,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 740,
-        "y": 2380,
+        "y": 2280,
         "wires": []
     },
     {
@@ -11454,7 +11400,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 400,
-        "y": 2580,
+        "y": 2480,
         "wires": [
             [
                 "571c071d.5ff3c8",
@@ -11476,7 +11422,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1040,
-        "y": 2540,
+        "y": 2440,
         "wires": []
     },
     {
@@ -11493,7 +11439,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 880,
-        "y": 2520,
+        "y": 2420,
         "wires": []
     },
     {
@@ -12393,7 +12339,7 @@
         "z": "7e5a345d.05161c",
         "g": "4cff6fb8.ecd81",
         "name": "Sunlight correction",
-        "func": "//The measured sunlight is relative to the lightsensor position\n//Later in the day e.g. after 12:00 there is less light even\n//when it is bright sunshine\n//This funktion corrects that by applying a correction depending\n//on time of day. The Rollo function nodes then are all adjusted\n//to open Rollo when sunlight is more than 5000\n// Get current hours and minutes\nvar now = new Date();\nvar hours = now.getHours();\nvar minutes = now.getMinutes();\n\n\n// Calculate current time in decimal hours (e.g., 14.5 for 14:30)\nvar currentTime = hours + (minutes / 60);\n\n// Define the correction intervals\nvar intervals = [\n    { start: 9, end: 12, correction: -20000 },\n    { start: 12, end: 15, correction: -6000 },\n    { start: 15, end: 16, correction: -1000 },\n    { start: 16, end: 19, correction: -0 }\n];\n\n// Default correction (outside any interval)\nvar correction = 0;\nvar activeInterval = \"Kein Intervall\";\n\n// Find the appropriate interval\nfor (var i = 0; i < intervals.length; i++) {\n    if (currentTime >= intervals[i].start && currentTime < intervals[i].end) {\n        correction = intervals[i].correction;\n        activeInterval = intervals[i].start + \"-\" + intervals[i].end + \" Uhr\";\n        break;\n    }\n}\n\n// Get the original iRed value from global context\nvar iRed = global.get(\"iRed\", \"file\") || 0; // Fallback to 0 if not set\n//var iRed = msg.payload.value;\n// Apply the correction\nvar correctedValue = Number(iRed) + correction;\n\n// Store the corrected value in global context\n\nglobal.set(\"iSunlight\", correctedValue, \"file\");\n\n// Prepare the output message\nmsg.payload = {\n    value: correctedValue,\n    originalValue: iRed,\n    correctedValue: correctedValue,\n    correctionApplied: correction,\n    currentTime: now.toLocaleTimeString(),\n    activeInterval: activeInterval\n};\nmsg.topic = \"iRed corrected\";\n\n//in global speichern\n//global.set(\"iSunlight\", correctedValue, \"file\");\n\n// You can also add the values to the message object if needed\nmsg.iRed = iRed;\nmsg.iSunlight = correctedValue;\n\nreturn msg;\n",
+        "func": "//The measured sunlight is relative to the lightsensor position\n//Later in the day e.g. after 12:00 there is less light even\n//when it is bright sunshine\n//This funktion corrects that by applying a correction depending\n//on time of day. The Rollo function nodes then are all adjusted\n//to open Rollo when sunlight is more than 5000\n// Get current hours and minutes\nvar now = new Date();\nvar hours = now.getHours();\nvar minutes = now.getMinutes();\n\n\n// Calculate current time in decimal hours (e.g., 14.5 for 14:30)\nvar currentTime = hours + (minutes / 60);\n\n// Define the correction intervals\nvar intervals = [\n    { start: 9, end: 12, correction: -20000 },\n    { start: 12, end: 14, correction: -6000 },\n    { start: 14, end: 15, correction: -5000 },\n    { start: 15, end: 16, correction: -1000 },\n    { start: 16, end: 19, correction: -0 }\n];\n\n// Default correction (outside any interval)\nvar correction = 0;\nvar activeInterval = \"Kein Intervall\";\n\n// Find the appropriate interval\nfor (var i = 0; i < intervals.length; i++) {\n    if (currentTime >= intervals[i].start && currentTime < intervals[i].end) {\n        correction = intervals[i].correction;\n        activeInterval = intervals[i].start + \"-\" + intervals[i].end + \" Uhr\";\n        break;\n    }\n}\n\n// Get the original iRed value from global context\nvar iRed = global.get(\"iRed\", \"file\") || 0; // Fallback to 0 if not set\n//var iRed = msg.payload.value;\n// Apply the correction\nvar correctedValue = Number(iRed) + correction;\nif (correctedValue < 0) correctedValue = 0;\n\n// Store the corrected value in global context\n\nglobal.set(\"iSunlight\", correctedValue, \"file\");\n\n// Prepare the output message\nmsg.payload = {\n    value: correctedValue,\n    originalValue: iRed,\n    correctedValue: correctedValue,\n    correctionApplied: correction,\n    currentTime: now.toLocaleTimeString(),\n    activeInterval: activeInterval\n};\nmsg.topic = \"iRed corrected\";\n\n//in global speichern\n//global.set(\"iSunlight\", correctedValue, \"file\");\n\n// You can also add the values to the message object if needed\nmsg.iRed = iRed;\nmsg.iSunlight = correctedValue;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
