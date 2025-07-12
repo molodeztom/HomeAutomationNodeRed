@@ -351,7 +351,9 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299
+        "y": 299,
+        "w": 992,
+        "h": 162
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -375,7 +377,9 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19
+        "y": 19,
+        "w": 752,
+        "h": 262
     },
     {
         "id": "b9a71c35.b8ccf",
@@ -397,9 +401,7 @@
             "ae0f7157.7d2e7"
         ],
         "x": 14,
-        "y": 759,
-        "w": 852,
-        "h": 162
+        "y": 759
     },
     {
         "id": "40936a6d.e4bc64",
@@ -419,9 +421,7 @@
             "e1622e38.47b46"
         ],
         "x": 14,
-        "y": 599,
-        "w": 712,
-        "h": 142
+        "y": 599
     },
     {
         "id": "3644af6d.d42f6",
@@ -455,9 +455,7 @@
             "1bd2faf182fb3f8a"
         ],
         "x": 14,
-        "y": 19,
-        "w": 772,
-        "h": 522
+        "y": 19
     },
     {
         "id": "5e94d88a.fb01e8",
@@ -480,9 +478,7 @@
             "5b9db628891c8ab5"
         ],
         "x": 14,
-        "y": 1519,
-        "w": 1072,
-        "h": 162
+        "y": 1519
     },
     {
         "id": "bec8f6bc.d0d348",
@@ -502,7 +498,9 @@
             "dfcc41b0.b3ad2"
         ],
         "x": 34,
-        "y": 59
+        "y": 59,
+        "w": 642,
+        "h": 142
     },
     {
         "id": "7ce4548d.b8ed0c",
@@ -523,7 +521,9 @@
             "77bd98f3.c0e8c8"
         ],
         "x": 54,
-        "y": 1659
+        "y": 1659,
+        "w": 852,
+        "h": 142
     },
     {
         "id": "4cff6fb8.ecd81",
@@ -562,7 +562,9 @@
             "59131d0b27cb4454"
         ],
         "x": 34,
-        "y": 219
+        "y": 219,
+        "w": 1132,
+        "h": 502
     },
     {
         "id": "6666fbc0.896914",
@@ -588,7 +590,9 @@
             "20e6409a.ffe67"
         ],
         "x": 44,
-        "y": 799
+        "y": 799,
+        "w": 962,
+        "h": 282
     },
     {
         "id": "3f11d194.8d04ee",
@@ -613,7 +617,9 @@
             "1f2409.3d5e7bf8"
         ],
         "x": 54,
-        "y": 1079
+        "y": 1079,
+        "w": 952,
+        "h": 262
     },
     {
         "id": "c87697c7.9b9e58",
@@ -639,7 +645,9 @@
             "3adbcc4a84edfcd0"
         ],
         "x": 54,
-        "y": 1419
+        "y": 1419,
+        "w": 952,
+        "h": 202
     },
     {
         "id": "d8d1de94.dfe9",
@@ -683,7 +691,9 @@
             "77d544823668d60d"
         ],
         "x": 34,
-        "y": 559
+        "y": 559,
+        "w": 1212,
+        "h": 422
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -746,7 +756,9 @@
             "9450f1731fc4de3d"
         ],
         "x": 34,
-        "y": 979
+        "y": 979,
+        "w": 1212,
+        "h": 322
     },
     {
         "id": "40f7136f.c806bc",
@@ -778,7 +790,9 @@
             "7a6e01ce32748004"
         ],
         "x": 54,
-        "y": 2239
+        "y": 2239,
+        "w": 1152,
+        "h": 362
     },
     {
         "id": "9632f8fb2bd4fa59",
@@ -800,9 +814,7 @@
             "54e47a03f8e6baba"
         ],
         "x": 14,
-        "y": 939,
-        "w": 892,
-        "h": 142
+        "y": 939
     },
     {
         "id": "492449f2a284d6d7",
@@ -827,9 +839,7 @@
             "5c01553b5435fa0a"
         ],
         "x": 14,
-        "y": 1099,
-        "w": 772,
-        "h": 262
+        "y": 1099
     },
     {
         "id": "ba622014ba4332d1",
@@ -939,9 +949,7 @@
             "dc12148c24f84fe9"
         ],
         "x": 14,
-        "y": 1719,
-        "w": 1052,
-        "h": 402
+        "y": 1719
     },
     {
         "id": "de3e2e3aac07c809",
@@ -973,9 +981,7 @@
             "c003ab02fc04b33e"
         ],
         "x": 14,
-        "y": 2139,
-        "w": 1152,
-        "h": 402
+        "y": 2139
     },
     {
         "id": "f65918f1b4342953",
@@ -1007,7 +1013,9 @@
             "a83aef368b05cde1"
         ],
         "x": 54,
-        "y": 1859
+        "y": 1859,
+        "w": 1092,
+        "h": 362
     },
     {
         "id": "6cbee2f8d8c21bd4",
@@ -1056,6 +1064,24 @@
         ],
         "x": 34,
         "y": 879
+    },
+    {
+        "id": "dc25bf4967e950a5",
+        "type": "group",
+        "z": "265d3756.5a1d68",
+        "name": "Telegram Meldungen",
+        "style": {
+            "fill": "#c8e7a7",
+            "label": true
+        },
+        "nodes": [
+            "85420c4cf1a56911",
+            "936806ef9b079fa1",
+            "9938609afa841d09",
+            "07b3c0bb03bbd976"
+        ],
+        "x": 14,
+        "y": 2559
     },
     {
         "id": "19cf2a10.f9d4a6",
@@ -2647,7 +2673,7 @@
         "z": "6f61cfd3.3d721",
         "g": "584f76f1.996908",
         "name": "Sensor6 switch/convert",
-        "func": "var topic=msg.topic;\nvar iLux;\nvar iRed;\n//do not  save wrong numbers\nif((Number(msg.payload) > 65000)) \nreturn;\nswitch(topic){\n    case \"Sensor6/fTempB\":\n        msg.payload={\n            fTempB: Number(msg.payload),\n        }\n        return msg;\n\n    case \"Sensor6/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload) + 1,\n        }\n        return msg;\n    case \"Sensor6/nLux\":\n        iLux = Number(msg.payload);\n        global.set(\"LuxOut\",iLux, \"file\");\n        msg.payload={\n            iLux: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nRed\":\n        iRed = Number(msg.payload);\n        global.set(\"iRed\",iRed,\"file\");\n        msg.payload={\n            iRed: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nGreen\":\n        msg.payload={\n            iGreen: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nBlue\":\n        msg.payload={\n            iBlue: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nClear\":\n        if((Number(msg.payload) > 30000)) \n        break;\n        msg.payload={\n            iClear: Number(msg.payload),\n        }\n      \n        return msg;\n   \n    case \"Sensor6/nColor\":\n    //do not  save wrong numbers\n    if((Number(msg.payload) == 0)) \n    break;\n\n        msg.payload={\n            iColor: Number(msg.payload),\n        }\n     \n        return msg;\n    case \"Sensor6/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
+        "func": "var topic=msg.topic;\nvar iLux;\nvar iRed;\n//do not  save wrong numbers\nif((Number(msg.payload) > 65000)) \nreturn;\nswitch(topic){\n    case \"Sensor6/fTempB\":\n        msg.payload={\n            fTempB: Number(msg.payload),\n        }\n        return msg;\n\n    case \"Sensor6/fHumi\":\n        msg.payload={\n            fHumi: Number(msg.payload),\n        }\n        return msg;\n    case \"Sensor6/nLux\":\n        iLux = Number(msg.payload);\n        global.set(\"LuxOut\",iLux, \"file\");\n        msg.payload={\n            iLux: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nRed\":\n        iRed = Number(msg.payload);\n        global.set(\"iRed\",iRed,\"file\");\n        msg.payload={\n            iRed: Number(msg.payload),\n        }\n             \n        return msg;\n    case \"Sensor6/nGreen\":\n        msg.payload={\n            iGreen: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nBlue\":\n        msg.payload={\n            iBlue: Number(msg.payload),\n        }\n       \n        return msg;\n    case \"Sensor6/nClear\":\n        if((Number(msg.payload) > 30000)) \n        break;\n        msg.payload={\n            iClear: Number(msg.payload),\n        }\n      \n        return msg;\n   \n    case \"Sensor6/nColor\":\n    //do not  save wrong numbers\n    if((Number(msg.payload) == 0)) \n    break;\n\n        msg.payload={\n            iColor: Number(msg.payload),\n        }\n     \n        return msg;\n    case \"Sensor6/Err\":\n        msg.payload={\n            Err: Number(msg.payload),\n        }\n        return msg;\n}\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
@@ -5389,6 +5415,7 @@
         "id": "85420c4cf1a56911",
         "type": "mqtt in",
         "z": "265d3756.5a1d68",
+        "g": "dc25bf4967e950a5",
         "name": "CCU Warn",
         "topic": "Hom/stat/CCU/Warn/#",
         "qos": "0",
@@ -5398,8 +5425,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 120,
-        "y": 2640,
+        "x": 100,
+        "y": 2660,
         "wires": [
             [
                 "936806ef9b079fa1",
@@ -5411,6 +5438,7 @@
         "id": "936806ef9b079fa1",
         "type": "debug",
         "z": "265d3756.5a1d68",
+        "g": "dc25bf4967e950a5",
         "name": "debug 89",
         "active": true,
         "tosidebar": true,
@@ -5420,14 +5448,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 320,
-        "y": 2580,
+        "x": 300,
+        "y": 2600,
         "wires": []
     },
     {
         "id": "9938609afa841d09",
         "type": "function",
         "z": "265d3756.5a1d68",
+        "g": "dc25bf4967e950a5",
         "name": "Generate text",
         "func": "\n// Erstellt ein neues msg-Objekt mit dem Original als payload\nvar text = `Gerät ${msg.payload.DeviceName}: Fehler: ${msg.payload.ErrorType}`;\nreturn { payload: { chatId: -4054485106, type: 'message', content: text } };\n",
         "outputs": 1,
@@ -5436,42 +5465,25 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 2640,
+        "x": 320,
+        "y": 2660,
         "wires": [
             [
-                "f0f0949afd98b1ad",
                 "07b3c0bb03bbd976"
             ]
         ]
     },
     {
-        "id": "f0f0949afd98b1ad",
-        "type": "debug",
-        "z": "265d3756.5a1d68",
-        "name": "Text Out",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 540,
-        "y": 2580,
-        "wires": []
-    },
-    {
         "id": "07b3c0bb03bbd976",
         "type": "telegram sender",
         "z": "265d3756.5a1d68",
+        "g": "dc25bf4967e950a5",
         "name": "Telegram Send",
         "bot": "79ccd59a.7479ec",
         "haserroroutput": false,
         "outputs": 1,
-        "x": 560,
-        "y": 2640,
+        "x": 540,
+        "y": 2660,
         "wires": [
             []
         ]
@@ -8690,16 +8702,16 @@
                         "valueType": "global",
                         "value": "#:(file)::TempOut",
                         "operator": "gte",
-                        "operatorText": "≥",
+                        "operatorText": ">=",
                         "thresholdType": "num",
-                        "threshold": "30"
+                        "threshold": "29"
                     }
                 ],
                 "level": {
                     "type": "levelFixed",
                     "value": "closed (min)",
                     "operator": 0,
-                    "operatorText": "↕ absolute"
+                    "operatorText": "↕  Absolut"
                 },
                 "slat": {
                     "type": "none",
@@ -8708,7 +8720,7 @@
                 "topic": "",
                 "resetOverwrite": false,
                 "importance": 0,
-                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> ≥ 30</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>blind position: </span> ↕ absolute <var>closed (min)</var></div></div>"
+                "description": "<div><i class=\"fa fa-code-fork\" aria-hidden=\"true\"></i> <var>global.TempOut</var> >= 29</div><div><div class=\"indent-level-text\"> <i class=\"fa fa-angle-down\" aria-hidden=\"true\"></i><span>Rollladenposition: </span> ↕  Absolut <var>geschlossen (min)</var></div></div>"
             },
             {
                 "index": 4,
@@ -12430,7 +12442,7 @@
         "z": "7e5a345d.05161c",
         "g": "4cff6fb8.ecd81",
         "name": "Sunlight correction",
-        "func": "//The measured sunlight is relative to the lightsensor position\n//Later in the day e.g. after 12:00 there is less light even\n//when it is bright sunshine\n//This funktion corrects that by applying a correction depending\n//on time of day. The Rollo function nodes then are all adjusted\n//to open Rollo when sunlight is more than 5000\n// Get current hours and minutes\nvar now = new Date();\nvar hours = now.getHours();\nvar minutes = now.getMinutes();\n\n\n// Calculate current time in decimal hours (e.g., 14.5 for 14:30)\nvar currentTime = hours + (minutes / 60);\n\n// Define the correction intervals\nvar intervals = [\n    { start: 9, end: 12, correction: -20000 },\n    { start: 12, end: 14, correction: -9000 },\n    { start: 14, end: 15, correction: -8000 },\n    { start: 15, end: 16, correction: -1500 },\n    { start: 16, end: 17, correction: -1000 },\n    { start: 17, end: 18, correction: -500 },\n    { start: 18, end: 19, correction: -0 }\n];\n\n// Default correction (outside any interval)\nvar correction = 0;\nvar activeInterval = \"Kein Intervall\";\n\n// Find the appropriate interval\nfor (var i = 0; i < intervals.length; i++) {\n    if (currentTime >= intervals[i].start && currentTime < intervals[i].end) {\n        correction = intervals[i].correction;\n        activeInterval = intervals[i].start + \"-\" + intervals[i].end + \" Uhr\";\n        break;\n    }\n}\n\n// Get the original iRed value from global context\nvar iRed = global.get(\"iRed\", \"file\") || 0; // Fallback to 0 if not set\n//var iRed = msg.payload.value;\n// Apply the correction\nvar correctedValue = Number(iRed) + correction;\nif (correctedValue < 0) correctedValue = 0;\n\n// Store the corrected value in global context\n\nglobal.set(\"iSunlight\", correctedValue, \"file\");\n\n// Prepare the output message\nmsg.payload = {\n    value: correctedValue,\n    originalValue: iRed,\n    correctedValue: correctedValue,\n    correctionApplied: correction,\n    currentTime: now.toLocaleTimeString(),\n    activeInterval: activeInterval\n};\nmsg.topic = \"iRed corrected\";\n\n//in global speichern\n//global.set(\"iSunlight\", correctedValue, \"file\");\n\n// You can also add the values to the message object if needed\nmsg.iRed = iRed;\nmsg.iSunlight = correctedValue;\n\nreturn msg;\n",
+        "func": "//The measured sunlight is relative to the lightsensor position\n//Later in the day e.g. after 12:00 there is less light even\n//when it is bright sunshine\n//This funktion corrects that by applying a correction depending\n//on time of day. The Rollo function nodes then are all adjusted\n//to open Rollo when sunlight is more than 5000\n// Get current hours and minutes\nvar now = new Date();\nvar hours = now.getHours();\nvar minutes = now.getMinutes();\n\n\n// Calculate current time in decimal hours (e.g., 14.5 for 14:30)\nvar currentTime = hours + (minutes / 60);\n\n// Define the correction intervals\nvar intervals = [\n    { start: 9, end: 12, correction: -20000 },\n    { start: 12, end: 14, correction: -9000 },\n    { start: 14, end: 15, correction: -8000 },\n    { start: 15, end: 16, correction: -2500 },\n    { start: 16, end: 17, correction: -1000 },\n    { start: 17, end: 18, correction: -500 },\n    { start: 18, end: 19, correction: -0 }\n];\n\n// Default correction (outside any interval)\nvar correction = 0;\nvar activeInterval = \"Kein Intervall\";\n\n// Find the appropriate interval\nfor (var i = 0; i < intervals.length; i++) {\n    if (currentTime >= intervals[i].start && currentTime < intervals[i].end) {\n        correction = intervals[i].correction;\n        activeInterval = intervals[i].start + \"-\" + intervals[i].end + \" Uhr\";\n        break;\n    }\n}\n\n// Get the original iRed value from global context\nvar iRed = global.get(\"iRed\", \"file\") || 0; // Fallback to 0 if not set\n//var iRed = msg.payload.value;\n// Apply the correction\nvar correctedValue = Number(iRed) + correction;\nif (correctedValue < 0) correctedValue = 0;\n\n// Store the corrected value in global context\n\nglobal.set(\"iSunlight\", correctedValue, \"file\");\n\n// Prepare the output message\nmsg.payload = {\n    value: correctedValue,\n    originalValue: iRed,\n    correctedValue: correctedValue,\n    correctionApplied: correction,\n    currentTime: now.toLocaleTimeString(),\n    activeInterval: activeInterval\n};\nmsg.topic = \"iRed corrected\";\n\n//in global speichern\n//global.set(\"iSunlight\", correctedValue, \"file\");\n\n// You can also add the values to the message object if needed\nmsg.iRed = iRed;\nmsg.iSunlight = correctedValue;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -14171,6 +14183,221 @@
         "wires": []
     },
     {
+        "id": "741ea785f527ec4a",
+        "type": "mqtt in",
+        "z": "303a8ac7.4ea1c6",
+        "name": "",
+        "topic": "ShellyKuecheSchalter/status/input:0",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "19cf2a10.f9d4a6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 1360,
+        "wires": [
+            [
+                "ca0fdba4c52a2f44",
+                "fa56d9553cc0505f"
+            ]
+        ]
+    },
+    {
+        "id": "ca0fdba4c52a2f44",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "name": "debug 90",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "383874889dd10b28",
+        "type": "mqtt in",
+        "z": "303a8ac7.4ea1c6",
+        "name": "",
+        "topic": "ShellyKuecheSchalter/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "19cf2a10.f9d4a6",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 1440,
+        "wires": [
+            [
+                "7c3d3e13810f141f"
+            ]
+        ]
+    },
+    {
+        "id": "7c3d3e13810f141f",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "name": "debug 91",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "38b0f7f88b5f9117",
+        "type": "mqtt out",
+        "z": "303a8ac7.4ea1c6",
+        "name": "",
+        "topic": "ShellyKuecheLampen/rpc",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "19cf2a10.f9d4a6",
+        "x": 690,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "f382da0bc1a24d24",
+        "type": "inject",
+        "z": "303a8ac7.4ea1c6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"method\":\"Switch.Set\",\"params\":{\"id\":0,\"on\":true}}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 1560,
+        "wires": [
+            [
+                "38b0f7f88b5f9117"
+            ]
+        ]
+    },
+    {
+        "id": "fded63a5250cb393",
+        "type": "debug",
+        "z": "303a8ac7.4ea1c6",
+        "name": "debug 92",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "4d28429e268d7ae6",
+        "type": "inject",
+        "z": "303a8ac7.4ea1c6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"method\":\"Switch.Set\",\"params\":{\"id\":0,\"on\":false}}",
+        "payloadType": "json",
+        "x": 130,
+        "y": 1620,
+        "wires": [
+            [
+                "38b0f7f88b5f9117"
+            ]
+        ]
+    },
+    {
+        "id": "206603df418a29e1",
+        "type": "function",
+        "z": "303a8ac7.4ea1c6",
+        "name": "function 9",
+        "func": "const inputState = msg.payload.state;\n\nmsg.payload = {\n    method: \"Switch.Set\",\n    params: {\n        id:0,\n        on: inputState\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1480,
+        "wires": [
+            [
+                "fded63a5250cb393",
+                "38b0f7f88b5f9117"
+            ]
+        ]
+    },
+    {
+        "id": "fa56d9553cc0505f",
+        "type": "delay",
+        "z": "303a8ac7.4ea1c6",
+        "name": "Leichte Verzögerung",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "2",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 220,
+        "y": 1500,
+        "wires": [
+            [
+                "206603df418a29e1"
+            ]
+        ]
+    },
+    {
         "id": "17cb0817cb05a53a",
         "type": "link in",
         "z": "abede211eec6d1b4",
@@ -14661,10 +14888,7 @@
         "x": 350,
         "y": 300,
         "wires": [
-            [
-                "8c8efc274d12449f",
-                "1a6b3cb24b179f60"
-            ]
+            []
         ]
     },
     {
@@ -15457,8 +15681,8 @@
         "correl": "",
         "expiry": "",
         "broker": "19cf2a10.f9d4a6",
-        "x": 600,
-        "y": 980,
+        "x": 660,
+        "y": 960,
         "wires": []
     },
     {
@@ -15482,9 +15706,7 @@
         "x": 390,
         "y": 920,
         "wires": [
-            [
-                "46c340e550e6a541"
-            ]
+            []
         ]
     },
     {
@@ -15706,8 +15928,7 @@
         "y": 980,
         "wires": [
             [
-                "a0374dac5c451e6c",
-                "46c340e550e6a541"
+                "a0374dac5c451e6c"
             ]
         ]
     },
@@ -16045,7 +16266,7 @@
         "type": "debug",
         "z": "fd2d363b540d07e3",
         "name": "debug 12",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -16061,7 +16282,7 @@
         "type": "mqtt in",
         "z": "fd2d363b540d07e3",
         "name": "",
-        "topic": "WaschmaschineTrockner/status/switch:0",
+        "topic": "ShellyPlug5/status/switch:0",
         "qos": "0",
         "datatype": "json",
         "broker": "19cf2a10.f9d4a6",
@@ -16069,7 +16290,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 220,
+        "x": 170,
         "y": 160,
         "wires": [
             [
@@ -16122,7 +16343,7 @@
         "type": "debug",
         "z": "fd2d363b540d07e3",
         "name": "APower",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -16174,7 +16395,7 @@
         "type": "debug",
         "z": "fd2d363b540d07e3",
         "name": "debug 14",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -16380,7 +16601,7 @@
         "type": "debug",
         "z": "fd2d363b540d07e3",
         "name": "debug 23",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
