@@ -263,7 +263,9 @@
             "a30d9009.4e13b"
         ],
         "x": 54,
-        "y": -1
+        "y": -1,
+        "w": 1182,
+        "h": 502
     },
     {
         "id": "18ca9346.bdbedd",
@@ -307,7 +309,9 @@
             "61b9f71.7b9bb08"
         ],
         "x": 54,
-        "y": 516.5
+        "y": 516.5,
+        "w": 1652,
+        "h": 604.5
     },
     {
         "id": "73d12632.94b388",
@@ -351,9 +355,7 @@
             "89de660e.32b288"
         ],
         "x": 34,
-        "y": 299,
-        "w": 992,
-        "h": 162
+        "y": 299
     },
     {
         "id": "25c55a9c.73b9c6",
@@ -377,9 +379,7 @@
             "d5fc8000.9e0ab"
         ],
         "x": 34,
-        "y": 19,
-        "w": 752,
-        "h": 262
+        "y": 19
     },
     {
         "id": "b9a71c35.b8ccf",
@@ -498,9 +498,7 @@
             "dfcc41b0.b3ad2"
         ],
         "x": 34,
-        "y": 59,
-        "w": 642,
-        "h": 142
+        "y": 59
     },
     {
         "id": "7ce4548d.b8ed0c",
@@ -521,9 +519,7 @@
             "77bd98f3.c0e8c8"
         ],
         "x": 54,
-        "y": 1659,
-        "w": 852,
-        "h": 142
+        "y": 1659
     },
     {
         "id": "4cff6fb8.ecd81",
@@ -562,9 +558,7 @@
             "59131d0b27cb4454"
         ],
         "x": 34,
-        "y": 219,
-        "w": 1132,
-        "h": 502
+        "y": 219
     },
     {
         "id": "6666fbc0.896914",
@@ -590,9 +584,7 @@
             "20e6409a.ffe67"
         ],
         "x": 44,
-        "y": 799,
-        "w": 962,
-        "h": 282
+        "y": 799
     },
     {
         "id": "3f11d194.8d04ee",
@@ -617,9 +609,7 @@
             "1f2409.3d5e7bf8"
         ],
         "x": 54,
-        "y": 1079,
-        "w": 952,
-        "h": 262
+        "y": 1079
     },
     {
         "id": "c87697c7.9b9e58",
@@ -645,9 +635,7 @@
             "3adbcc4a84edfcd0"
         ],
         "x": 54,
-        "y": 1419,
-        "w": 952,
-        "h": 202
+        "y": 1419
     },
     {
         "id": "d8d1de94.dfe9",
@@ -691,9 +679,7 @@
             "77d544823668d60d"
         ],
         "x": 34,
-        "y": 559,
-        "w": 1212,
-        "h": 422
+        "y": 559
     },
     {
         "id": "5d7bb23e.6c04ec",
@@ -756,9 +742,7 @@
             "9450f1731fc4de3d"
         ],
         "x": 34,
-        "y": 979,
-        "w": 1212,
-        "h": 322
+        "y": 979
     },
     {
         "id": "40f7136f.c806bc",
@@ -790,9 +774,7 @@
             "7a6e01ce32748004"
         ],
         "x": 54,
-        "y": 2239,
-        "w": 1152,
-        "h": 362
+        "y": 2239
     },
     {
         "id": "9632f8fb2bd4fa59",
@@ -897,7 +879,9 @@
             "e2bd8d200d5e2702",
             "707583bc79fdf095",
             "242b1a5b6365a506",
-            "aa807b1b18ee51ae"
+            "aa807b1b18ee51ae",
+            "59eee3219cd0741c",
+            "f141a2268b7a2faa"
         ],
         "x": 34,
         "y": 359
@@ -918,7 +902,9 @@
             "1620464c7201262c"
         ],
         "x": 134,
-        "y": 1139
+        "y": 1139,
+        "w": 572,
+        "h": 202
     },
     {
         "id": "bc3df6523c98c42b",
@@ -1013,9 +999,7 @@
             "a83aef368b05cde1"
         ],
         "x": 54,
-        "y": 1859,
-        "w": 1092,
-        "h": 362
+        "y": 1859
     },
     {
         "id": "6cbee2f8d8c21bd4",
@@ -12425,7 +12409,7 @@
         "z": "7e5a345d.05161c",
         "g": "c87697c7.9b9e58",
         "name": "debug 76",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -14928,7 +14912,7 @@
         "topic": "",
         "payload": "{\"id\":0,\"src\":\"mqtt\",\"method\":\"PLUGS_UI.SetConfig\",\"params\":{\"config\":{\"leds\":{\"mode\":\"switch\",\"colors\":{\"switch:0\":{\"on\":{\"rgb\":[100,49,100],\"brightness\":100},\"off\":{\"rgb\":[100,100,20],\"brightness\":100}}},\"night_mode\":{\"enable\":true,\"brightness\":10,\"active_between\":[\"21:53\",\"21:59\"]}}}}}",
         "payloadType": "json",
-        "x": 390,
+        "x": 450,
         "y": 400,
         "wires": [
             [
@@ -15002,7 +14986,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 380,
+        "x": 370,
         "y": 460,
         "wires": [
             [
@@ -15235,14 +15219,14 @@
                     "type": "pdsTime",
                     "value": "sunsetStart",
                     "operator": 1,
-                    "operatorText": "↧ from",
+                    "operatorText": "↧ von",
                     "offsetType": "num",
                     "offset": "-10",
                     "multiplier": 60000,
                     "days": "*",
                     "months": "*"
                 },
-                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ from <var>sunset start</var> - 00:10</div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload: </span> <var>\"ON\"</var></div></div>"
+                "description": "<div><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i> ↧ von <var>Sonnenuntergang Beginn</var> - 00:10</div><div><div class=\"indent-payload-text\"><i class=\"fa fa-step-backward\" aria-hidden=\"true\"></i> <span>Payload:</span> <var>\"ON\"</var></div></div>"
             },
             {
                 "index": 1,
@@ -16262,11 +16246,71 @@
         "wires": []
     },
     {
+        "id": "59eee3219cd0741c",
+        "type": "inject",
+        "z": "f9aa4d8908cf3153",
+        "g": "32340ff2f48f54cf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "x": 370,
+        "y": 520,
+        "wires": [
+            [
+                "e2bd8d200d5e2702"
+            ]
+        ]
+    },
+    {
+        "id": "f141a2268b7a2faa",
+        "type": "inject",
+        "z": "f9aa4d8908cf3153",
+        "g": "32340ff2f48f54cf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "x": 370,
+        "y": 560,
+        "wires": [
+            [
+                "e2bd8d200d5e2702"
+            ]
+        ]
+    },
+    {
         "id": "932446c71fa5d2ea",
         "type": "debug",
         "z": "fd2d363b540d07e3",
         "name": "debug 12",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -16343,7 +16387,7 @@
         "type": "debug",
         "z": "fd2d363b540d07e3",
         "name": "APower",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -16395,7 +16439,7 @@
         "type": "debug",
         "z": "fd2d363b540d07e3",
         "name": "debug 14",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -16762,7 +16806,7 @@
         "type": "function",
         "z": "fd2d363b540d07e3",
         "name": "function 3",
-        "func": "var WPower1 = flow.get(\"WPower1\", \"memoryOnly\");\nvar WPower2 = flow.get(\"WPower2\", \"memoryOnly\");\nvar WPower3 = flow.get(\"WPower3\", \"memoryOnly\");\nvar sStatus = flow.get(\"WStatus\",\"memoryOnly\");\nvar WOff = 0;\nvar WOn = 5;\nvar WEinsp = 35;\nvar WWash = 40;\nvar WHeiz = 1500;\nvar nSchleud;\n\n//Off On\nif((WPower1 > WOn)&& (WPower1 < WEinsp)&& (sStatus == \"OFF\") ) \n{\n    sStatus = \"ON\";\n    flow.set(\"NoSchleuder\", 0, \"memoryOnly\");\n    node.status({fill:\"green\",shape:\"ring\",text: sStatus});\n}\n//Einspuelen Spitze von 40 -50 W einige Minuten gleichmäßig bei ca 19 -42 W ohne Täler leicht stufig steigend\nif((WPower1 > WEinsp)&& (WPower1 < WWash)&& (sStatus == \"ON\") ) \n{\nsStatus = \"EINSP\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"EINSP\"});\n}\n//Heizen und Waschen\nif((WPower1 > WHeiz) ) \n{\nsStatus = \"HEIZ\";\nnode.status({fill:\"red\",shape:\"ring\",text: \"HEIZ\"});\n}\n//Waschen Rechtecksignal mit ca 35 W unterschied 15 W bis 50 W\nif( (WPower1 > 42 )\n && (WPower1 < 150)\n && ((sStatus == \"HEIZ\")|| (sStatus == \"SCHLEUD\")|| (sStatus == \"EINSP\"))\n) \n{\nsStatus = \"WASH\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"WASH\"});\n}\n//Schleudern\nif((WPower1 > 150 )&& (WPower1 < 700)&& (WPower1 > WPower2) && (WPower2 > WPower3) && (sStatus == \"WASH\") ) \n{\n  sStatus = \"SCHLEUD\";\n  nSchleud = flow.get(\"NoSchleuder\",\"memoryOnly\");\n  nSchleud++;\n  flow.set(\"NoSchleuder\", '1', \"memoryOnly\");\n  node.status({fill:\"yellow\",shape:\"ring\",text: \"SCHLEUD\"});\n}\n//Ende\nif(  (WPower1 < 10) && (WPower1 > 3)\n  && (WPower2 < 10) && (WPower2 >3)\n  && (WPower3 < 10) && (WPower3 >3)    \n  && ((nSchleud > 1))\n   ) \n{\nsStatus = \"ENDE\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"ENDE\"});\n}\n//Off\nif(  (WPower1 < 3)\n  && (WPower2 < 3)\n  && (WPower3 < 3) \n  && (sStatus == \"ENDE\") ) \n{\nsStatus = \"OFF\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"Off\"});\n}\nmsg.Status = sStatus;\nmsg.WPower1 = WPower1;\nmsg.WPower2 = WPower2;\nmsg.WPower3 = WPower3;\nflow.set(\"WStatus\", sStatus);\nreturn msg;",
+        "func": "\nvar WOff = 4;\nvar WOn = 5;\nvar WEinsp = 35;\nvar WWash = 40;\nvar WHeiz = 1500;\n\n\n// --- Historie lesen (mit Defaults) ---\nlet WPower1 = Number(flow.get(\"WPower1\", \"memoryOnly\") ?? 0); // aktuellster\nlet WPower2 = Number(flow.get(\"WPower2\", \"memoryOnly\") ?? 0);\nlet WPower3 = Number(flow.get(\"WPower3\", \"memoryOnly\") ?? 0);\n\nlet sStatus = flow.get(\"WStatus\", \"memoryOnly\") || \"OFF\";\nlet nSchleud = Number(flow.get(\"NoSchleuder\", \"memoryOnly\") ?? 0);\n\n//Off On\nif((WPower1 > WOn)&& (WPower1 < WEinsp)&& (sStatus == \"OFF\") ) \n{\n    sStatus = \"ON\";\n     node.status({fill:\"green\",shape:\"ring\",text: sStatus});\n}\n//Einspuelen Spitze von 40 -50 W einige Minuten gleichmäßig bei ca 19 -42 W ohne Täler leicht stufig steigend\nif((WPower1 > WEinsp)&& (WPower1 < WWash)&& (sStatus == \"ON\") ) \n{\nsStatus = \"EINSP\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"EINSP\"});\n}\n//Heizen und Waschen\nif((WPower1 > WHeiz) ) \n{\nsStatus = \"HEIZ\";\nnode.status({fill:\"red\",shape:\"ring\",text: \"HEIZ\"});\n}\n//Waschen Rechtecksignal mit ca 35 W unterschied 15 W bis 50 W\nif( (WPower1 > 42 )\n && (WPower1 < 150)\n && ((sStatus == \"HEIZ\")|| (sStatus == \"SCHLEUD\")|| (sStatus == \"EINSP\"))\n) \n{\nsStatus = \"WASH\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"WASH\"});\n}\n//Schleudern\nif((WPower1 > 150 )&& (WPower1 < 700)&& (WPower1 > WPower2) && (WPower2 > WPower3) && (sStatus == \"WASH\") ) \n{\n  sStatus = \"SCHLEUD\";\n  nSchleud = flow.get(\"NoSchleuder\",\"memoryOnly\");\n  nSchleud++;\n  flow.set(\"NoSchleuder\", nSchleud, \"memoryOnly\");\n  node.status({fill:\"yellow\",shape:\"ring\",text: \"SCHLEUD\"});\n}\n//Ende\nif(  (WPower1 < 10) && (WPower1 > 3)\n  && (WPower2 < 10) && (WPower2 >3)\n  && (WPower3 < 10) && (WPower3 >3)    \n  && ((nSchleud > 1))\n   ) \n{\nsStatus = \"ENDE\";\nnSchleud = 0;\nflow.set(\"NoSchleuder\", nSchleud, \"memoryOnly\");\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"ENDE\"});\n}\n//Off\nif(  (WPower1 < WOff)\n  && (WPower2 < WOff)\n  && (WPower3 < WOff) \n  && (sStatus == \"ENDE\") ) \n{\nsStatus = \"OFF\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"Off\"});\n}\nmsg.Status = sStatus;\nmsg.WPower1 = WPower1;\nmsg.WPower2 = WPower2;\nmsg.WPower3 = WPower3;\nflow.set(\"WStatus\", sStatus);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -16785,7 +16829,7 @@
         "type": "debug",
         "z": "fd2d363b540d07e3",
         "name": "debug 24",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17108,7 +17152,7 @@
         "type": "debug",
         "z": "fd2d363b540d07e3",
         "name": "debug 26",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17424,7 +17468,7 @@
         "type": "debug",
         "z": "fd2d363b540d07e3",
         "name": "debug 29",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
