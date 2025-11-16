@@ -109,6 +109,13 @@
         "env": []
     },
     {
+        "id": "tab-washer-energy",
+        "type": "tab",
+        "label": "Washer Energy Aggregation",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "b83af794.4bec68",
         "type": "group",
         "z": "9963931.9232c7",
@@ -3028,7 +3035,7 @@
         "z": "265d3756.5a1d68",
         "g": "3644af6d.d42f6",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -8129,7 +8136,7 @@
         "z": "7e5a345d.05161c",
         "g": "c87697c7.9b9e58",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -16317,8 +16324,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 500,
-        "y": 160,
+        "x": 160,
+        "y": 100,
         "wires": []
     },
     {
@@ -16341,8 +16348,7 @@
                 "932446c71fa5d2ea",
                 "3f1d8884e279b0c6",
                 "793adb97f3ea1668",
-                "fc74106d1efe0edb",
-                "b8237608d193d01a"
+                "fc74106d1efe0edb"
             ]
         ]
     },
@@ -16395,8 +16401,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 660,
-        "y": 220,
+        "x": 160,
+        "y": 260,
         "wires": []
     },
     {
@@ -16446,8 +16452,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
-        "y": 280,
+        "x": 160,
+        "y": 320,
         "wires": []
     },
     {
@@ -16460,7 +16466,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "msg.payload.aenergy.by_minute[0]",
+                "to": "msg.payload.aenergy.total",
                 "tot": "msg"
             },
             {
@@ -16481,7 +16487,8 @@
         "wires": [
             [
                 "101823c9ca9b2557",
-                "2cd33b3990f310f3"
+                "2cd33b3990f310f3",
+                "6027851375625928"
             ]
         ]
     },
@@ -16494,62 +16501,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 640,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "b8237608d193d01a",
-        "type": "change",
-        "z": "fd2d363b540d07e3",
-        "name": "AEnergy3",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "msg.payload.aenergy.by_minute[2]",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "AEnergy3",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 360,
-        "y": 420,
-        "wires": [
-            [
-                "8dd061fb659fa6b9",
-                "2cd33b3990f310f3"
-            ]
-        ]
-    },
-    {
-        "id": "8dd061fb659fa6b9",
-        "type": "debug",
-        "z": "fd2d363b540d07e3",
-        "name": "debug 16",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 680,
-        "y": 440,
+        "x": 160,
+        "y": 400,
         "wires": []
     },
     {
@@ -16557,15 +16514,15 @@
         "type": "function",
         "z": "fd2d363b540d07e3",
         "name": "SensorLoc switch/convert",
-        "func": "var topic=msg.topic;\nvar WPower3;\nvar WPower2;\nvar WPower1;\nswitch(topic){\n    case \"APower\":\n  \n        msg.payload={\n            APower: Number(msg.payload),\n        }\n         return msg;\n    case \"PlugTemp\":\n        msg.payload={\n            PlugTemp: Number(msg.payload),\n        }\n        return msg;\n    case \"AEnergy1\":\n        msg.payload={\n            AEnergy1: Number(msg.payload),\n        }\n        return msg;\n    case \"AEnergy3\":\n        msg.payload={\n            AEnergy3: Number(msg.payload),\n        }\n        return msg;\n    case \"Status\":\n        msg.payload={\n            Status: (msg.payload),\n        }\n        return msg;\n}\n",
+        "func": "var topic=msg.topic;\nvar WPower3;\nvar WPower2;\nvar WPower1;\n\nlet TotalEnergy = Number(flow.get(\"TotalEnergy\", \"file\") ?? 0);\n\nswitch(topic){\n    case \"APower\":\n        msg.payload={\n            APower: (msg.payload),\n        }\n         return msg;\n    case \"PlugTemp\":\n        msg.payload={\n            PlugTemp: Number(msg.payload),\n        }\n        return msg;\n    case \"AEnergy31\":\n        TotalEnergy = (Number(msg.payload)) / 1000;\n        // Auf 1 Nachkommastelle runden (numerisch, kein String!)\n        TotalEnergy = Math.round(TotalEnergy * 10) / 10;\n        flow.set(\"TotalEnergy\", TotalEnergy, \"file\");\n        msg.payload={\n            AEnergy1: TotalEnergy,\n        }\n        return msg;\n\n    case \"Status\":\n        msg.payload={\n            Status: (msg.payload),\n        }\n        return msg;\n}\n/*\n    case \"AEnergy3\":\n        msg.payload={\n            AEnergy3: Number(msg.payload),\n        }\n        return msg; */\n",
         "outputs": 1,
         "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
-        "y": 300,
+        "x": 870,
+        "y": 380,
         "wires": [
             [
                 "59a205b0f76d6d19",
@@ -16586,8 +16543,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1030,
-        "y": 160,
+        "x": 1130,
+        "y": 380,
         "wires": []
     },
     {
@@ -16605,10 +16562,7 @@
         "x": 700,
         "y": 520,
         "wires": [
-            [
-                "855ccb2273c8f2ed",
-                "5a2811c094b67555"
-            ]
+            []
         ]
     },
     {
@@ -16639,22 +16593,6 @@
                 "03ad92e3ee7c83cd"
             ]
         ]
-    },
-    {
-        "id": "855ccb2273c8f2ed",
-        "type": "debug",
-        "z": "fd2d363b540d07e3",
-        "name": "debug 23",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 960,
-        "y": 520,
-        "wires": []
     },
     {
         "id": "fc0d99079dd24f2f",
@@ -16704,7 +16642,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "APower",
-        "payload": "65",
+        "payload": "58",
         "payloadType": "str",
         "x": 260,
         "y": 660,
@@ -16806,7 +16744,7 @@
         "type": "function",
         "z": "fd2d363b540d07e3",
         "name": "function 3",
-        "func": "\nvar WOff = 4;\nvar WOn = 5;\nvar WEinsp = 35;\nvar WWash = 40;\nvar WHeiz = 1500;\n\n\n// --- Historie lesen (mit Defaults) ---\nlet WPower1 = Number(flow.get(\"WPower1\", \"memoryOnly\") ?? 0); // aktuellster\nlet WPower2 = Number(flow.get(\"WPower2\", \"memoryOnly\") ?? 0);\nlet WPower3 = Number(flow.get(\"WPower3\", \"memoryOnly\") ?? 0);\n\nlet sStatus = flow.get(\"WStatus\", \"memoryOnly\") || \"OFF\";\nlet nSchleud = Number(flow.get(\"NoSchleuder\", \"memoryOnly\") ?? 0);\n\n//Off On\nif((WPower1 > WOn)&& (WPower1 < WEinsp)&& (sStatus == \"OFF\") ) \n{\n    sStatus = \"ON\";\n     node.status({fill:\"green\",shape:\"ring\",text: sStatus});\n}\n//Einspuelen Spitze von 40 -50 W einige Minuten gleichmäßig bei ca 19 -42 W ohne Täler leicht stufig steigend\nif((WPower1 > WEinsp)&& (WPower1 < WWash)&& (sStatus == \"ON\") ) \n{\nsStatus = \"EINSP\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"EINSP\"});\n}\n//Heizen und Waschen\nif((WPower1 > WHeiz) ) \n{\nsStatus = \"HEIZ\";\nnode.status({fill:\"red\",shape:\"ring\",text: \"HEIZ\"});\n}\n//Waschen Rechtecksignal mit ca 35 W unterschied 15 W bis 50 W\nif( (WPower1 > 42 )\n && (WPower1 < 150)\n && ((sStatus == \"HEIZ\")|| (sStatus == \"SCHLEUD\")|| (sStatus == \"EINSP\"))\n) \n{\nsStatus = \"WASH\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"WASH\"});\n}\n//Schleudern\nif((WPower1 > 150 )&& (WPower1 < 700)&& (WPower1 > WPower2) && (WPower2 > WPower3) && (sStatus == \"WASH\") ) \n{\n  sStatus = \"SCHLEUD\";\n  nSchleud = flow.get(\"NoSchleuder\",\"memoryOnly\");\n  nSchleud++;\n  flow.set(\"NoSchleuder\", nSchleud, \"memoryOnly\");\n  node.status({fill:\"yellow\",shape:\"ring\",text: \"SCHLEUD\"});\n}\n//Ende\nif(  (WPower1 < 10) && (WPower1 > 3)\n  && (WPower2 < 10) && (WPower2 >3)\n  && (WPower3 < 10) && (WPower3 >3)    \n  && ((nSchleud > 1))\n   ) \n{\nsStatus = \"ENDE\";\nnSchleud = 0;\nflow.set(\"NoSchleuder\", nSchleud, \"memoryOnly\");\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"ENDE\"});\n}\n//Off\nif(  (WPower1 < WOff)\n  && (WPower2 < WOff)\n  && (WPower3 < WOff) \n  && (sStatus == \"ENDE\") ) \n{\nsStatus = \"OFF\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"Off\"});\n}\nmsg.Status = sStatus;\nmsg.WPower1 = WPower1;\nmsg.WPower2 = WPower2;\nmsg.WPower3 = WPower3;\nflow.set(\"WStatus\", sStatus);\nreturn msg;",
+        "func": "\nvar WOff = 4;\nvar WOn = 5;\nvar WEinsp = 35;\nvar WWash = 40;\nvar WHeiz = 1500;\n\n\n// --- Historie lesen (mit Defaults) ---\nlet WPower1 = Number(flow.get(\"WPower1\", \"memoryOnly\") ?? 0); // aktuellster\nlet WPower2 = Number(flow.get(\"WPower2\", \"memoryOnly\") ?? 0);\nlet WPower3 = Number(flow.get(\"WPower3\", \"memoryOnly\") ?? 0);\n\nlet sStatus = flow.get(\"WStatus\", \"memoryOnly\") || \"OFF\";\nlet nSchleud = Number(flow.get(\"NoSchleuder\", \"memoryOnly\") ?? 0);\n//Off\nif ((WPower1 < 2)\n  && (WPower2 < 2)\n  && (WPower3 < 2)\n  ) {\n  sStatus = \"OFF\";\n  node.status({ fill: \"yellow\", shape: \"ring\", text: \"Off\" });\n}\n\n//Off\nif(  (WPower1 < WOff)\n  && (WPower2 < WOff)\n  && (WPower3 < WOff) \n  && (sStatus == \"ENDE\") ) \n{\nsStatus = \"OFF\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"Off\"});\n}\n//Off On\nif((WPower1 > WOn)&& (WPower1 < WEinsp)&& (sStatus == \"OFF\") ) \n{\n    sStatus = \"ON\";\n     node.status({fill:\"green\",shape:\"ring\",text: sStatus});\n}\n//Einspuelen Spitze von 40 -50 W einige Minuten gleichmäßig bei ca 19 -42 W ohne Täler leicht stufig steigend\nif((WPower1 > WEinsp)&& (WPower1 < WWash)&& (sStatus == \"ON\") ) \n{\nsStatus = \"EINSP\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"EINSP\"});\n}\n//Heizen und Waschen\nif((WPower1 > WHeiz) ) \n{\nsStatus = \"HEIZ\";\nnode.status({fill:\"red\",shape:\"ring\",text: \"HEIZ\"});\n}\n//Waschen Rechtecksignal mit ca 35 W unterschied 15 W bis 50 W\nif( (WPower1 > 42 )\n && (WPower1 < 150)\n && ((sStatus == \"HEIZ\")|| (sStatus == \"SCHLEUD\")|| (sStatus == \"EINSP\"))\n) \n{\nsStatus = \"WASH\";\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"WASH\"});\n}\n//Schleudern\nif((WPower1 > 150 )&& (WPower1 < 700)&& (WPower1 > WPower2) && (WPower2 > WPower3) && (sStatus == \"WASH\") ) \n{\n  sStatus = \"SCHLEUD\";\n  nSchleud = flow.get(\"NoSchleuder\",\"memoryOnly\");\n  nSchleud++;\n  flow.set(\"NoSchleuder\", nSchleud, \"memoryOnly\");\n  node.status({fill:\"yellow\",shape:\"ring\",text: \"SCHLEUD\"});\n}\n//Ende\nif(  (WPower1 < 10) && (WPower1 > 3)\n  && (WPower2 < 10) && (WPower2 >3)\n  && (WPower3 < 10) && (WPower3 >3)    \n  && ((nSchleud > 1))\n   ) \n{\nsStatus = \"ENDE\";\nnSchleud = 0;\nflow.set(\"NoSchleuder\", nSchleud, \"memoryOnly\");\nnode.status({fill:\"yellow\",shape:\"ring\",text: \"ENDE\"});\n}\n\nmsg.Status = sStatus;\nmsg.WPower1 = WPower1;\nmsg.WPower2 = WPower2;\nmsg.WPower3 = WPower3;\nflow.set(\"WStatus\", sStatus);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -16818,7 +16756,6 @@
         "wires": [
             [
                 "f530481c98003bf9",
-                "f05f320d3ce9dbc7",
                 "d460f6c77d05fc3d",
                 "7f699fbdf6c36d8b"
             ]
@@ -16829,7 +16766,7 @@
         "type": "debug",
         "z": "fd2d363b540d07e3",
         "name": "debug 24",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -16837,7 +16774,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
+        "x": 1100,
         "y": 600,
         "wires": []
     },
@@ -17095,23 +17032,6 @@
         ]
     },
     {
-        "id": "f05f320d3ce9dbc7",
-        "type": "debug",
-        "z": "fd2d363b540d07e3",
-        "name": "debug 25",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "Status",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1120,
-        "y": 660,
-        "wires": []
-    },
-    {
         "id": "d460f6c77d05fc3d",
         "type": "change",
         "z": "fd2d363b540d07e3",
@@ -17137,13 +17057,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 920,
+        "x": 910,
         "y": 720,
         "wires": [
             [
                 "1dbe1728f75c04c7",
-                "2cd33b3990f310f3",
-                "6a3219e26c67a391"
+                "2cd33b3990f310f3"
             ]
         ]
     },
@@ -17152,7 +17071,7 @@
         "type": "debug",
         "z": "fd2d363b540d07e3",
         "name": "debug 26",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -17297,7 +17216,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "APower",
-        "payload": "9",
+        "payload": "38",
         "payloadType": "num",
         "x": 260,
         "y": 580,
@@ -17326,9 +17245,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "APower",
-        "payload": "6.3",
+        "payload": "7",
         "payloadType": "str",
-        "x": 270,
+        "x": 260,
         "y": 540,
         "wires": [
             [
@@ -17475,8 +17394,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 880,
-        "y": 980,
+        "x": 860,
+        "y": 960,
         "wires": []
     },
     {
@@ -17485,15 +17404,15 @@
         "z": "fd2d363b540d07e3",
         "influxdb": "e3f4c3e8.b52ee",
         "name": "WaschmTrockner",
-        "measurement": "WaschmTrockner",
+        "measurement": "Waschmaschine",
         "precision": "",
-        "retentionPolicy": "two_month",
+        "retentionPolicy": "two_years",
         "database": "",
         "retentionPolicyV18Flux": "",
         "org": "",
         "bucket": "",
-        "x": 1030,
-        "y": 80,
+        "x": 1150,
+        "y": 280,
         "wires": []
     },
     {
@@ -17523,30 +17442,127 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 890,
-        "y": 340,
+        "x": 910,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6027851375625928",
+        "type": "function",
+        "z": "fd2d363b540d07e3",
+        "name": "Washer Energy Aggregator (kWh → Month/Year)",
+        "func": "/****************************************************\n * Input : msg.topic === \"AEnergy1\"\n *          msg.payload = Energie in Wh (kumuliert)\n * Output[0]: payload = {\n *    AEnergy1_total: <kWh 3 Dez>,\n *    AEnergy1_month: <kWh 3 Dez>,\n *    AEnergy1_year : <kWh 3 Dez>\n * }\n * Output[1]: payload = <delta kWh> (3 Dez)\n ****************************************************/\n\n// === MANUELLER RESET über Inject ===\n// Wenn msg.topic === \"ENERGY_RESET\": Monat/Jahr auf 0 setzen und 0er in Influx schreiben\nif (msg.topic === \"ENERGY_RESET\") {\n  const CK = \"energy_ctx_v3\"; // <- exakt denselben Context-Key wie im Aggregator verwenden\n  let s = flow.get(CK,\"file\") || { prevTotal: null, monthKey: \"\", yearKey: \"\", monthSum: 0, yearSum: 0 };\n\n  const now = new Date();\n  s.monthKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, \"0\")}`;\n  s.yearKey = String(now.getFullYear());\n  s.monthSum = 0;\n  s.yearSum = 0;\n\n  flow.set(CK, s, \"file\");\n\n  // Ausgang 0: Felder für Influx (werden auf 0 geschrieben)\n  const outFields = {\n    payload: {\n      AEnergy1_month: 0.000,   // kWh (3 Dez)\n      AEnergy1_year: 0.000    // kWh (3 Dez)\n      // AEnergy1_total lassen wir weg (kommt vom Plug)\n    }\n  };\n  // Ausgang 1: Delta = 0\n  const outDelta = { payload: 0.000 };\n\n  return [outFields, outDelta];\n}\n\nif (msg.topic !== \"AEnergy1\") return null;\n\n\nconst wh = Number(msg.payload);\nif (!isFinite(wh) || wh < 0) return null;\n\n// ---- Wh → kWh, mit 3 Nachkommastellen ----\nconst totalKWh = Math.round((wh / 1000) * 1000) / 1000;   // 0.734 kWh\n\n// Zeit-Infos\nconst now = new Date();\nconst yearKey = String(now.getFullYear());\nconst monthKey = `${yearKey}-${String(now.getMonth() + 1).padStart(2, \"0\")}`;\n\nconst CK = \"energy_ctx_v3\";\nlet s = flow.get(CK ,\"file\") || {\n  prevTotal: null,\n  monthKey,\n  yearKey,\n  monthSum: 0,\n  yearSum: 0\n};\n\n// Monats-/Jahreswechsel\nif (s.monthKey !== monthKey) { s.monthKey = monthKey; s.monthSum = 0; }\nif (s.yearKey !== yearKey) { s.yearKey = yearKey; s.yearSum = 0; }\n\n// Delta in kWh (ebenfalls mit 3 Nachkommastellen)\nlet delta = 0;\nif (s.prevTotal === null) {\n  s.prevTotal = totalKWh;\n} else {\n  delta = totalKWh - s.prevTotal;\n  const MAX_DELTA = 20; // kWh\n  if (delta < 0 || delta > MAX_DELTA) delta = 0;\n  s.prevTotal = totalKWh;\n}\n\n// Summen\nif (delta > 0) {\n  s.monthSum += delta;\n  s.yearSum += delta;\n}\nflow.set(CK, s, \"file\");\n\n// ---- Werte runden (3 Nachkommastellen, Zahl) ----\nconst round3 = v => Math.round(v * 1000) / 1000;\nconst monthKWh = round3(s.monthSum);\nconst yearKWh = round3(s.yearSum);\nconst deltaKWh = round3(delta);\n\n// ---- Output für Influx ----\nconst outFields = {\n  payload: {\n    AEnergy1_total: totalKWh,  // z. B. 0.734\n    AEnergy1_month: monthKWh,\n    AEnergy1_year: yearKWh\n  }\n};\n\n// Delta separat\nconst outDelta = { payload: deltaKWh };\n\nreturn [outFields, outDelta];\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 180,
         "wires": [
             [
-                "28115d885de4692b",
+                "44f3e441521c5ef5",
                 "1c7dd834b7f8830b"
+            ],
+            [
+                "3753911817e33c8c"
             ]
         ]
     },
     {
-        "id": "28115d885de4692b",
+        "id": "44f3e441521c5ef5",
         "type": "debug",
         "z": "fd2d363b540d07e3",
-        "name": "debug 48",
+        "name": "debug 93",
         "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1140,
-        "y": 340,
+        "x": 1080,
+        "y": 120,
         "wires": []
+    },
+    {
+        "id": "3753911817e33c8c",
+        "type": "debug",
+        "z": "fd2d363b540d07e3",
+        "name": "debug 94",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "b10172e9a5c7279d",
+        "type": "inject",
+        "z": "fd2d363b540d07e3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "AEnergy1",
+        "payload": "77110",
+        "payloadType": "num",
+        "x": 160,
+        "y": 460,
+        "wires": [
+            [
+                "fc74106d1efe0edb"
+            ]
+        ]
+    },
+    {
+        "id": "2abd948ceb0516fa",
+        "type": "inject",
+        "z": "fd2d363b540d07e3",
+        "name": "Reset",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ENERGY_RESET",
+        "payload": "",
+        "payloadType": "date",
+        "x": 430,
+        "y": 160,
+        "wires": [
+            [
+                "6027851375625928"
+            ]
+        ]
     },
     {
         "id": "4dd95472.f323ec",
