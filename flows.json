@@ -1332,12 +1332,20 @@
         "hidden": false
     },
     {
-        "id": "fd0259eef2520d3a",
+        "id": "e1cc4fba26402572",
         "type": "home-connect-auth",
-        "name": "NodeRedTom2",
+        "name": "NodeRed2HomeConnect",
         "simulation_mode": false,
-        "scope": "",
-        "callback_url": "http://192.168.178.53:1880/homeconnect/auth/callback"
+        "scope": "IdentifyApplication",
+        "callback_url": "https://api.home-connect.com/security/oauth/authorize"
+    },
+    {
+        "id": "ad20e7032bab73da",
+        "type": "home-connect-auth",
+        "name": "NodeRed2Home2",
+        "simulation_mode": true,
+        "scope": "IdentifyAppliance",
+        "callback_url": "http://192.168.178.53:1880/homeconnect/oauth2/auth/callback"
     },
     {
         "id": "49e2646f.c4941c",
@@ -17453,7 +17461,7 @@
         "type": "function",
         "z": "fd2d363b540d07e3",
         "name": "Washer Energy Aggregator (kWh → Month/Year)",
-        "func": "/****************************************************\n * Input : msg.topic === \"AEnergy1\"\n *          msg.payload = Energie in Wh (kumuliert)\n * Output[0]: payload = {\n *    AEnergy1_total: <kWh 3 Dez>,\n *    AEnergy1_month: <kWh 3 Dez>,\n *    AEnergy1_year : <kWh 3 Dez>\n * }\n * Output[1]: payload = <delta kWh> (3 Dez)\n ****************************************************/\n\n// === MANUELLER RESET über Inject ===\n// Wenn msg.topic === \"ENERGY_RESET\": Monat/Jahr auf 0 setzen und 0er in Influx schreiben\nif (msg.topic === \"ENERGY_RESET\") {\n  const CK = \"energy_ctx_v3\"; // <- exakt denselben Context-Key wie im Aggregator verwenden\n  let s = flow.get(CK,\"file\") || { prevTotal: null, monthKey: \"\", yearKey: \"\", monthSum: 0, yearSum: 0 };\n\n  const now = new Date();\n  s.monthKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, \"0\")}`;\n  s.yearKey = String(now.getFullYear());\n  s.monthSum = 0;\n  s.yearSum = 0;\n\n  flow.set(CK, s, \"file\");\n\n  // Ausgang 0: Felder für Influx (werden auf 0 geschrieben)\n  const outFields = {\n    payload: {\n      AEnergy1_month: 0.000,   // kWh (3 Dez)\n      AEnergy1_year: 0.000    // kWh (3 Dez)\n      // AEnergy1_total lassen wir weg (kommt vom Plug)\n    }\n  };\n  // Ausgang 1: Delta = 0\n  const outDelta = { payload: 0.000 };\n\n  return [outFields, outDelta];\n}\n\nif (msg.topic !== \"AEnergy1\") return null;\n\n\nconst wh = Number(msg.payload);\nif (!isFinite(wh) || wh < 0) return null;\n\n// ---- Wh → kWh, mit 3 Nachkommastellen ----\nconst totalKWh = Math.round((wh / 1000) * 1000) / 1000;   // 0.734 kWh\n\n// Zeit-Infos\nconst now = new Date();\nconst yearKey = String(now.getFullYear());\nconst monthKey = `${yearKey}-${String(now.getMonth() + 1).padStart(2, \"0\")}`;\n\nconst CK = \"energy_ctx_v3\";\nlet s = flow.get(CK ,\"file\") || {\n  prevTotal: null,\n  monthKey,\n  yearKey,\n  monthSum: 0,\n  yearSum: 0\n};\n\n// Monats-/Jahreswechsel\nif (s.monthKey !== monthKey) { s.monthKey = monthKey; s.monthSum = 0; }\nif (s.yearKey !== yearKey) { s.yearKey = yearKey; s.yearSum = 0; }\n\n// Delta in kWh (ebenfalls mit 3 Nachkommastellen)\nlet delta = 0;\nif (s.prevTotal === null) {\n  s.prevTotal = totalKWh;\n} else {\n  delta = totalKWh - s.prevTotal;\n  const MAX_DELTA = 20; // kWh\n  if (delta < 0 || delta > MAX_DELTA) delta = 0;\n  s.prevTotal = totalKWh;\n}\n\n// Summen\nif (delta > 0) {\n  s.monthSum += delta;\n  s.yearSum += delta;\n}\nflow.set(CK, s, \"file\");\n\n// ---- Werte runden (3 Nachkommastellen, Zahl) ----\nconst round3 = v => Math.round(v * 1000) / 1000;\nconst monthKWh = round3(s.monthSum);\nconst yearKWh = round3(s.yearSum);\nconst deltaKWh = round3(delta);\n\n// ---- Output für Influx ----\nconst outFields = {\n  payload: {\n    AEnergy1_total: totalKWh,  // z. B. 0.734\n    AEnergy1_month: monthKWh,\n    AEnergy1_year: yearKWh\n  }\n};\n\n// Delta separat\nconst outDelta = { payload: deltaKWh };\n\nreturn [outFields, outDelta];\n",
+        "func": "/****************************************************\n * Input : msg.topic === \"AEnergy1\"\n *          msg.payload = Energie in Wh (kumuliert)\n * Output[0]: payload = {\n *    AEnergy1_total: <kWh 3 Dez>,\n *    AEnergy1_day  : <kWh 3 Dez>,   // *** NEU ***\n *    AEnergy1_month: <kWh 3 Dez>,\n *    AEnergy1_year : <kWh 3 Dez>\n * }\n * Output[1]: payload = <delta kWh> (3 Dez)\n ****************************************************/\nfunction initState(now) {\n  const y = now.getFullYear();\n  const m = String(now.getMonth() + 1).padStart(2, \"0\");\n  const d = String(now.getDate()).padStart(2, \"0\");\n\n  return {\n    prevTotal: null,\n    yearKey: String(y),\n    monthKey: `${y}-${m}`,\n    dayKey: `${y}-${m}-${d}`,\n    yearSum: 0,\n    monthSum: 0,\n    daySum: 0\n  };\n}\n// === MANUELLER RESET über Inject ===\n// Wenn msg.topic === \"ENERGY_RESET\": Monat/Jahr/Tag auf 0 setzen und 0er in Influx schreiben\nif (msg.topic === \"ENERGY_RESET\") {\n  const CK = \"energy_ctx_v4\";\n  let s = flow.get(CK, \"file\") || { prevTotal: null, monthKey: \"\", yearKey: \"\", monthSum: 0, yearSum: 0, dayKey: \"\", daySum: 0 };\n\n  const now = new Date();\n  const yearKey  = String(now.getFullYear);\n  const monthKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, \"0\")}`;\n  const dayKey   = `${monthKey}-${String(now.getDate()).padStart(2, \"0\")}`; // *** NEU ***\n\n  s.monthKey = monthKey;\n  s.yearKey  = String(now.getFullYear());\n  s.dayKey   = dayKey;   // *** NEU ***\n  s.monthSum = 0;\n  s.yearSum  = 0;\n  s.daySum   = 0;        // *** NEU ***\n\n  flow.set(CK, s, \"file\");\n\n  // Ausgang 0: Felder für Influx (werden auf 0 geschrieben)\n  const outFields = {\n    payload: {\n      AEnergy1_month: 0.000,  // kWh (3 Dez)\n      AEnergy1_year : 0.000,  // kWh (3 Dez)\n      AEnergy1_day  : 0.000   // *** NEU ***\n      // AEnergy1_total lassen wir weg (kommt vom Plug)\n    }\n  };\n  // Ausgang 1: Delta = 0\n  const outDelta = { payload: 0.000 };\n\n  return [outFields, outDelta];\n}\n\nif (msg.topic !== \"AEnergy1\") return null;\n\nconst wh = Number(msg.payload);\nif (!isFinite(wh) || wh < 0) return null;\n\n// ---- Wh → kWh, mit 3 Nachkommastellen ----\nconst totalKWh = Math.round((wh / 1000) * 1000) / 1000;   // 0.734 kWh\n\n// Zeit-Infos\nconst now = new Date();\nconst yearKey  = String(now.getFullYear());\nconst monthKey = `${yearKey}-${String(now.getMonth() + 1).padStart(2, \"0\")}`;\nconst dayKey   = `${monthKey}-${String(now.getDate()).padStart(2, \"0\")}`; // *** NEU ***\n\nconst CK = \"energy_ctx_v4\";\nlet s = flow.get(CK, \"file\") || {\n  prevTotal: null,\n  dayKey,\n  daySum: 0,\n  monthKey,\n  yearKey,\n  monthSum: 0,\n  yearSum: 0\n};\n\n// Tages-/Monats-/Jahreswechsel\nif (s.dayKey !== dayKey) {     // *** NEU ***\n  s.dayKey = dayKey;\n  s.daySum = 0;\n}\nif (s.monthKey !== monthKey) {\n  s.monthKey = monthKey;\n  s.monthSum = 0;\n}\nif (s.yearKey !== yearKey) {\n  s.yearKey = yearKey;\n  s.yearSum = 0;\n}\n\n// Delta in kWh (ebenfalls mit 3 Nachkommastellen)\nlet delta = 0;\nif (s.prevTotal === null) {\n  s.prevTotal = totalKWh;\n} else {\n  delta = totalKWh - s.prevTotal;\n  const MAX_DELTA = 20; // kWh\n  if (delta < 0 || delta > MAX_DELTA) delta = 0;\n  s.prevTotal = totalKWh;\n}\n\n// Summen\nif (delta > 0) {\n  s.daySum   += delta;   // *** NEU ***\n  s.monthSum += delta;\n  s.yearSum  += delta;\n}\nflow.set(CK, s, \"file\");\n\n// ---- Werte runden (3 Nachkommastellen, Zahl) ----\nconst round3   = v => Math.round(v * 1000) / 1000;\nconst dayKWh   = round3(s.daySum);   // *** NEU ***\nconst monthKWh = round3(s.monthSum);\nconst yearKWh  = round3(s.yearSum);\nconst deltaKWh = round3(delta);\n\n// ---- Output für Influx ----\nconst outFields = {\n  payload: {\n    AEnergy1_total: totalKWh,  // z. B. 0.734\n    AEnergy1_day  : dayKWh,    // *** NEU ***\n    AEnergy1_month: monthKWh,\n    AEnergy1_year : yearKWh\n  }\n};\n\n// Delta separat\nconst outDelta = { payload: deltaKWh };\n\nreturn [outFields, outDelta];\n",
         "outputs": 2,
         "timeout": "",
         "noerr": 0,
@@ -17561,48 +17569,6 @@
         "wires": [
             [
                 "6027851375625928"
-            ]
-        ]
-    },
-    {
-        "id": "4dd95472.f323ec",
-        "type": "debug",
-        "z": "8c0dc70a.3a1008",
-        "name": "Spülmaschine",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "e4dabaed.0bac08",
-        "type": "inject",
-        "z": "8c0dc70a.3a1008",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "x": 170,
-        "y": 60,
-        "wires": [
-            [
-                "4419e545f249d53e"
             ]
         ]
     },
@@ -17818,65 +17784,6 @@
                 "ec60b9ae.61c308"
             ]
         ]
-    },
-    {
-        "id": "4419e545f249d53e",
-        "type": "home-connect-request",
-        "z": "8c0dc70a.3a1008",
-        "auth": "fd0259eef2520d3a",
-        "name": " NodeRed Tom2",
-        "tag": "programs",
-        "operationId": "get_selected_program",
-        "haid": "011010386568004449",
-        "body": "",
-        "optionkey": "",
-        "programkey": "",
-        "settingkey": "",
-        "commandkey": "",
-        "statuskey": "",
-        "imagekey": "",
-        "x": 360,
-        "y": 60,
-        "wires": [
-            [
-                "4dd95472.f323ec"
-            ]
-        ]
-    },
-    {
-        "id": "709325df680d84e5",
-        "type": "home-connect-event",
-        "z": "8c0dc70a.3a1008",
-        "d": true,
-        "auth": "fd0259eef2520d3a",
-        "name": "",
-        "haid": "011010386568004449",
-        "x": 130,
-        "y": 260,
-        "wires": [
-            [
-                "fd97fd149b0e42c3",
-                "11ad241b29d34aa7",
-                "b5fdd1b17767d308",
-                "c8800fa32cf16ddc"
-            ]
-        ]
-    },
-    {
-        "id": "fd97fd149b0e42c3",
-        "type": "debug",
-        "z": "8c0dc70a.3a1008",
-        "name": "debug 31",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 360,
-        "y": 220,
-        "wires": []
     },
     {
         "id": "6434aa4aa8985f4e",
@@ -18112,141 +18019,71 @@
         ]
     },
     {
-        "id": "11ad241b29d34aa7",
+        "id": "1ec43066f9073107",
         "type": "debug",
         "z": "8c0dc70a.3a1008",
-        "name": "debug 36",
-        "active": false,
+        "name": "debug 95",
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload.value",
-        "targetType": "msg",
+        "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 360,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "b5fdd1b17767d308",
-        "type": "debug",
-        "z": "8c0dc70a.3a1008",
-        "name": "debug 37",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload.key",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 360,
+        "x": 480,
         "y": 180,
         "wires": []
     },
     {
-        "id": "c8800fa32cf16ddc",
-        "type": "switch",
+        "id": "d1eeb5049576a10e",
+        "type": "home-connect-request",
         "z": "8c0dc70a.3a1008",
-        "name": "Remaining Time",
-        "property": "payload.key",
-        "propertyType": "msg",
-        "rules": [
+        "auth": "ad20e7032bab73da",
+        "name": "test",
+        "tag": "appliances",
+        "operationId": "get_home_appliances",
+        "haid": "",
+        "body": "",
+        "optionkey": "",
+        "programkey": "",
+        "settingkey": "",
+        "commandkey": "",
+        "statuskey": "",
+        "imagekey": "",
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "1ec43066f9073107"
+            ]
+        ]
+    },
+    {
+        "id": "b665639f0e584fc8",
+        "type": "inject",
+        "z": "8c0dc70a.3a1008",
+        "name": "",
+        "props": [
             {
-                "t": "eq",
-                "v": "BSH.Common.Option.RemainingProgramTime",
+                "p": "payload"
+            },
+            {
+                "p": "topic",
                 "vt": "str"
             }
         ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 460,
-        "y": 260,
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 100,
         "wires": [
             [
-                "fad4823531c9344d"
-            ]
-        ]
-    },
-    {
-        "id": "fad4823531c9344d",
-        "type": "change",
-        "z": "8c0dc70a.3a1008",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "payload.value",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 660,
-        "y": 260,
-        "wires": [
-            [
-                "22855ceef6d88513",
-                "7cf77139865f634b"
-            ]
-        ]
-    },
-    {
-        "id": "22855ceef6d88513",
-        "type": "debug",
-        "z": "8c0dc70a.3a1008",
-        "name": "debug 38",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 800,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "b4fdfd3b2452cc74",
-        "type": "debug",
-        "z": "8c0dc70a.3a1008",
-        "name": "debug 39",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1040,
-        "y": 260,
-        "wires": []
-    },
-    {
-        "id": "7cf77139865f634b",
-        "type": "function",
-        "z": "8c0dc70a.3a1008",
-        "name": "to hours minutes",
-        "func": "// Assuming input is in milliseconds and stored in msg.payload.time\nvar seconds = msg.payload;\n\n// Calculate hours and minutes\nvar hours = Math.floor(seconds / 3600);\nvar minutes = Math.floor((seconds % 3600) / 60);\n\n// Create formatted time object\nmsg.formattedTime = {\n    hours: hours,\n    minutes: minutes\n};\n\n// Optionally, create a formatted time string\nmsg.formattedTimeString = hours + 'h ' + minutes + 'm';\n\nreturn msg;\n\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 880,
-        "y": 260,
-        "wires": [
-            [
-                "b4fdfd3b2452cc74"
+                "d1eeb5049576a10e"
             ]
         ]
     },
